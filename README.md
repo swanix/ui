@@ -1,12 +1,14 @@
 # Genomic
 Vanilla UI framework using Genomic Design methodology. Work in progress... 
 
-## Genomic Design System
+Genomic Design System
+
+```
 –––––––––––––––––––––––––––––
 core -> modules -> layout
 –––––––––––––––––––––––––––––
 
-## Sass Architecture
+Sass Architecture
 
 sass/
 |
@@ -33,6 +35,6 @@ sass/
 |   |– _layout-all.scss    # LAYOUT Package
 |
 `– styles.scss             # GLOBAL UI Package
-
+```
 
 
