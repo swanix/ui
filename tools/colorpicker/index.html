@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><html class="no-js" lang="en" > <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- Global --> 
+  <title>Swan - Color Picker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Favicon --> 
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-touch-icon" />
+  <!-- Styles and fonts --> 
+  <link href="../../css/swan.css" media="screen" rel="stylesheet" type="text/css"> 
+  <link href="js/ntc/ntc.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="js/farbtastic/farbtastic.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!-- Javascripts  -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/farbtastic/farbtastic.js"></script> 
+  <script src="js/ntc/ntc.js"></script> 
+  <script src="js/ntc/ntc-picker.js"></script> 
+</head>
+<body>
+  <section>
+    <header>
+        <h1>Swan</h1>
+        <h2><small>User Interface</small></h2>
+    </header>
+    <article>
+        <div id="ntc">
+          <h1>Name that Color</h1>
+          <hr>
+          <div id="picker"></div>
+          <div id="colortag">
+            <h2 id="colorname">Your Color</h2>
+            <div id="colorpick"></div>
+            <div id="colorbox"><div id="colorsolid"></div></div>
+            <div id="colorpanel">
+              <div id="colorhex">Your Color:</div>
+              <input type="text" id="colorinp" class="inputbox" value="" maxlength="10" />
+              <div id="colorrgb"></div>
+            </div>
+            <p id="colorlegend">Outer box: Your selected color. Inner box: Actual color of closest match.</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <hr>
+        <div><h5>Powered by Chirag Mehta</h5></div>
+    </article>
+  </section>
+</body>
+</html>
