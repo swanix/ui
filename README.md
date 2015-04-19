@@ -28,8 +28,9 @@ sass/
 |   |– patterns/           # Common layout Patterns
 |   |– _layout.scss        # LAYOUT Package
 |
-`– styles.scss             # GLOBAL UI Package
-
+| -------------------------------------------------
+`– swan.scss               # SWAN Package
+  -------------------------------------------------
 ```
 
 
