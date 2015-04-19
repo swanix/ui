@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------------*/
+/*--------------------- CUSTOM STYLES ---------------------------*/
+/*-----------------------------------------------------------------*/
+
+.level {
+  @include row();
+  @include outer-container;
+}
+
+.header {
+  background:$purple;
+  height: 100px;
+  text-align: center;
+  @include span-columns(12);
+}
+
+.slider {
+  background:$purple;
+  text-align: center;
+  padding: 30px 0 0 50px;
+  @include span-columns(12);
+}
+
+.content {
+  background:$white;
+  @include omega;
+  @include span-columns(9);
+}
+
+.sidebar {
+  //background:$gray-light-purple;
+  @include span-columns(3);
+}
+
+footer {
+  background:$purple;
+  height:80px;
+  bottom:0;
+  color: $white;
+  margin-top: 35px;
+  @include span-columns(12);
+}
+

@@ -1,0 +1,58 @@
+/*-----------------------------------------------------------------*/
+/*-------------------------- DEMO PAGE ---------------------------*/
+/*-----------------------------------------------------------------*/
+
+header {
+  text-align: center;
+  margin-bottom: em(50);
+}
+
+header h1 {
+  font-size: em(120);
+  margin-bottom: em(0);
+
+}
+
+header h2 {
+  font-size: em(22);
+  margin-top: em(-12);
+  letter-spacing: 12px;
+  margin-left: 12px; 
+  text-transform: uppercase;
+
+}
+
+section {
+  padding: em(40) em(40) ;
+  @include row();
+  @include outer-container;
+}
+
+.header {
+  height: 100px;
+  text-align: center;
+  @include span-columns(12);
+}
+
+.slider {
+  text-align: center;
+  padding: 30px 0 0 50px;
+  @include span-columns(12);
+}
+
+.content {
+  @include omega;
+  @include span-columns(12);
+}
+
+.sidebar {
+  @include span-columns(3);
+}
+
+footer {
+  height:80px;
+  bottom:0;
+  margin-top: 35px;
+  @include span-columns(12);
+}
+

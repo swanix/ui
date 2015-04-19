@@ -1,0 +1,79 @@
+
+// Basic Palette
+
+$white: #FFFFFF;
+$purple: #813986;
+$purple-dark: #702C75;
+$purple-light: #9B44A2;
+$purple-light-extra: #d4cdd4;
+$gray: #AAAAAA;
+$gray-medium: #727272;
+$gray-dark: #333333;
+$gray-light: #E3E3E3;
+$gray-light-extra: #F7F7F7;
+$gray-light-purple: #EBEBFA;
+$yellow: #FBB244;
+$orange: #F06C28;
+$red: #E92123;
+$red-dark: #C5002D; 
+$red-light: #FEECEC;
+$red-light-extra: #FFB5B5;
+$blue-sky:#79ADD1;
+
+// Backgrounds 
+
+$color-bg-body: $white;
+$color-bg-growl: $white;
+$color-bg-widget: $white;
+$color-bg-widget-overlay: $white;
+$color-bg-widget-shadow: $gray-light;
+$color-bg-state-default: $gray-light;
+$color-bg-state-hover: $gray-light-extra;
+$color-bg-state-active: $white;
+$color-bg-state-highlight: $gray-light-extra;
+$color-bg-state-error: $red-light;
+$color-bg-tabview: $white;
+$color-bg-input-text: $white; 
+$color-bg-error: $white;
+$color-bg-btn-primary: $purple;
+$color-bg-btn-primary-hover: $purple-light;
+$color-bg-btn-primary-disabled: $purple-light-extra;
+$color-bg-nav-hover:$purple-light;
+$color-bg-nav:$purple;
+
+
+// Text Colors
+
+$color-text-menu: #CA9CCE;
+$color-text: $gray-medium;
+$color-text-bold: $gray-dark;
+$color-text-link: $blue-sky;
+$color-text-link-hover: $blue-sky;
+$color-text-heading: $blue-sky;
+$color-text-error: $red-dark;
+$color-text-growl: $purple;
+$color-text-light: $white;
+$color-text-btn-primary: $white;
+$color-text-nav: $white;
+$color-text-nav-hover: $white;
+
+// Borders
+
+$color-border: $gray-light;
+$color-border-light: $white;
+$color-border-hover: $gray-light;
+$color-border-input: $gray-light;
+$color-border-input-focus: $yellow;
+$color-border-btn-primary: $purple-light;
+$color-border-error: $red-light-extra;
+
+// Shadows
+
+h1, h2, h3, h4, h5, h6	{ 
+	color:$color-text-heading;
+	}
+
+a {
+	color: $color-text-link;
+	}
+

@@ -1,0 +1,165 @@
+/*-----------------------------------------------------------------*/
+/*--------------------- DEFAULT HTML TAGS -------------------------*/
+/*-----------------------------------------------------------------*/
+
+body {
+	font-family: "Lato-Regular", sans-serif;
+	color: $color-text;
+	}
+
+h1, h2, h3, h4, h5, h6	{ 
+	font-family: "Armata-Regular", sans-serif;
+	font-weight: normal;
+	color:$color-text-heading;
+	}
+
+p { 
+	font-size: 90%;
+	line-height: em(30);
+	word-spacing: em(1);
+	}
+
+a {
+	color: $color-text-link;
+	text-decoration: none;
+	}
+
+small { 
+	font-size: 65%;
+	}
+
+blockquote {
+	line-height: 1.5; 
+	border-left: 1px solid #292929;
+	padding-left: em(20);
+	font-style: italic;
+	font-size: 90%;
+	}
+
+q {
+	font-size: 22px;
+	line-height: 1.5; 
+	}
+
+hr {
+	border: solid 1px $gray-light;
+	}
+
+ul, ol {
+
+	}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	}
+
+/*------------------- TABLES --------------------*/
+
+table {  
+	border: 1px solid #d3dbf1; 
+	border-collapse:collapse;
+	width:100%;
+	margin: 0px auto;
+	text-align: left;
+	} 
+
+thead { 
+	height:40px; display:none;
+	}
+
+tbody { 
+	height:40px;
+	}
+
+tfoot { 
+	height:30px;
+	}
+
+table caption { 
+	font-size:12px; 
+	margin:8px; 
+	} 
+	
+th {
+	border-bottom: 1px solid #d3dbf1;
+	border-top: 1px solid #d3dbf1;
+	letter-spacing: 2px;
+	text-align: left;
+	padding: 4px 4px 6px 12px;
+	}
+
+td {
+	border-bottom: 1px solid #d3dbf1;
+	padding: 0px 6px 0px 12px;
+	font-size:13px;
+	}
+
+
+/*------------------- FORMS --------------------
+
+form { }
+
+legend { 
+	font-size:18px; 
+	font-weight:bold; 
+	margin:10px 0px; 
+	color:$purple-light; 
+	}
+
+fieldset { 
+	border: 1px;
+	}
+
+label { 
+	color:#01215a;
+	}
+
+select {
+	width: 100%; 
+	margin:10px 0px;
+	}
+
+option { }
+
+input[type="text"] { 
+	width:100%;
+	border:2px solid #d3dbf1;
+	height:30px;
+	font-size:1em;
+	padding:3px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	}
+
+input[type="password"] { 
+	width:310px !important;
+	border:2px solid #d3dbf1;
+	height:30px;
+	font-size:1.2em;
+	padding:3px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	}
+
+textarea { 
+	width:100%;
+	border:2px solid #d3dbf1;
+	font-size:1em;
+	padding:5px 5px;
+	margin:0px 5px 10px 5px;
+	margin:10px 5px;
+	color:#62758b;
+	height: auto;
+	min-height: 50px;
+
+	}
+
+input:focus, textarea:focus {
+	border:2px solid #bcc5df;
+	}
+
+label {
+	color: $purple-light;
+}
+*/
