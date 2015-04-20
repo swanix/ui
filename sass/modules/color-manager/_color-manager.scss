@@ -1,0 +1,87 @@
+// -------------------------------------------------------
+// COLOR MANAGER
+// -------------------------------------------------------
+
+// MY PALETTE ::::::::::::::::::::::::::::::::::::::::
+
+$white: #FFFFFF;
+$blue-baked: #79ADD1;
+$gray-dove: #727272;
+$rose-charm: #D1798D;
+
+// DEFAULT HTML ::::::::::::::::::::::::::::::::::::::::::
+
+// Texts ------------
+
+body {
+	color: $gray-dove ;}
+h1, h2, h3, h4, h5, h6	{ 
+	color: $blue-baked ;}
+p {
+	color: $gray-dove ;}
+a { 
+	color: $blue-baked ;}
+a:hover { 
+	color: $blue-baked ;}
+small { 
+	color: $gray-dove ;}
+ul, ol, li {
+	color: $gray-dove ;}
+dl, dt, dd {
+	color: $gray-dove;
+	}
+blockquote {
+	border-left-color: $gray-dove ;
+	color: $gray-dove ;
+	background-color: $gray-alabaster ;}
+q {
+	border-left-color: $gray-dove ;
+	color: $gray-dove ;
+	background-color: $gray-alabaster ;}
+cite {
+	border-left-color: $gray-dove ;
+	color: $gray-dove ;
+	background-color: $gray-alabaster ;}
+hr {
+	border-color: null ;}
+
+// Forms ---------
+
+legend { 
+	color: $blue-baked ;}
+fieldset { 
+	border-color: $gray-water ;}
+label { 
+	color: $blue-baked ;}
+input[type="text"] { 
+	border-color: null ;
+	color: null ;}
+input[type="password"] { 
+	border-color: $gray-water ;
+	color: null ;}
+textarea { 
+	border-color: null ;
+	color: null ;}
+input:focus, textarea:focus {
+	border-color:$gray-pigeon ;}
+
+// Tables ---------
+
+table {  
+	border-color: $gray-water ;
+	color: $gray-dove ; } 
+th {
+	border-bottom-color: $gray-water;
+	border-top-color: $gray-water;
+	background-color: $gray-alabaster;}
+td {
+	border-bottom-color: $gray-water;
+	background-color: $white;}
+
+
+
+
+
+// CUSTOM elements :::::::::::::::::::::::::::::::::
+
+// Sidebar

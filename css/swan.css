@@ -391,35 +391,71 @@ html {
 /*-----------------------------------------------------------------*/
 body {
   font-family: "Lato-Regular", sans-serif;
+  line-height: 1.875em;
+  word-spacing: 0.0625em;
   color: #727272; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Armata-Regular", sans-serif;
   font-weight: normal;
-  color: #9B44A2; }
+  color: #727272; }
 
 p {
   font-size: 90%;
   line-height: 1.875em;
-  word-spacing: 0.0625em; }
+  word-spacing: 0.0625em;
+  color: #727272; }
 
 a {
-  color: #9B44A2;
+  color: #79ADD1;
   text-decoration: none; }
 
+a:hover {
+  color: #79ADD1;
+  text-decoration: none; }
+
+ul, ol, li {
+  font-size: 95%;
+  color: #727272; }
+
+dl, dt, dd {
+  font-size: 95%;
+  color: #727272; }
+
 small {
-  font-size: 65%; }
+  font-size: 65%;
+  color: #727272; }
 
 blockquote {
   line-height: 1.5;
-  border-left: 1px solid #292929;
-  padding-left: 1.25em;
+  border-left: 1px solid #727272;
+  padding: 15px 15px 15px 20px;
   font-style: italic;
-  font-size: 90%; }
+  font-size: 90%;
+  color: #727272;
+  background-color: #F7F7F7; }
 
 q {
-  font-size: 22px;
-  line-height: 1.5; }
+  display: block;
+  line-height: 1.5;
+  border-left: 1px solid #727272;
+  padding: 15px 15px 15px 20px;
+  font-style: italic;
+  font-size: 90%;
+  margin: 15px 40px 15px 40px;
+  color: #727272;
+  background-color: #F7F7F7; }
+
+cite {
+  display: block;
+  line-height: 1.5;
+  border-left: 1px solid #727272;
+  padding: 15px 15px 15px 20px;
+  font-style: italic;
+  font-size: 90%;
+  margin: 15px 40px 15px 40px;
+  color: #727272;
+  background-color: #F7F7F7; }
 
 hr {
   border: solid 1px #E3E3E3; }
@@ -437,8 +473,7 @@ table {
   text-align: left; }
 
 thead {
-  height: 40px;
-  display: none; }
+  height: 40px; }
 
 tbody {
   height: 40px; }
@@ -455,80 +490,64 @@ th {
   border-top: 1px solid #d3dbf1;
   letter-spacing: 2px;
   text-align: left;
-  padding: 4px 4px 6px 12px; }
+  padding: 4px 4px 6px 12px;
+  background-color: #F7F7F7; }
 
 td {
   border-bottom: 1px solid #d3dbf1;
   padding: 0px 6px 0px 12px;
   font-size: 13px; }
 
-/*------------------- FORMS --------------------
+/* ------------------- FORMS -------------------- */
+legend {
+  font-size: 18px;
+  margin: 10px 0px;
+  color: #79ADD1; }
 
-form { }
-
-legend { 
-	font-size:18px; 
-	font-weight:bold; 
-	margin:10px 0px; 
-	color:$purple-light; 
-	}
-
-fieldset { 
-	border: 1px;
-	}
-
-label { 
-	color:#01215a;
-	}
-
-select {
-	width: 100%; 
-	margin:10px 0px;
-	}
-
-option { }
-
-input[type="text"] { 
-	width:100%;
-	border:2px solid #d3dbf1;
-	height:30px;
-	font-size:1em;
-	padding:3px 5px;
-	margin:10px 5px;
-	color:#62758b;
-	}
-
-input[type="password"] { 
-	width:310px !important;
-	border:2px solid #d3dbf1;
-	height:30px;
-	font-size:1.2em;
-	padding:3px 5px;
-	margin:10px 5px;
-	color:#62758b;
-	}
-
-textarea { 
-	width:100%;
-	border:2px solid #d3dbf1;
-	font-size:1em;
-	padding:5px 5px;
-	margin:0px 5px 10px 5px;
-	margin:10px 5px;
-	color:#62758b;
-	height: auto;
-	min-height: 50px;
-
-	}
-
-input:focus, textarea:focus {
-	border:2px solid #bcc5df;
-	}
+fieldset {
+  border: 1px solid #d3dbf1;
+  padding: 5px 40px 40px 35px; }
 
 label {
-	color: $purple-light;
-}
-*/
+  color: #79ADD1; }
+
+select {
+  width: 100%;
+  margin: 10px 0px; }
+
+input[type="text"] {
+  width: 100%;
+  border: 2px solid #d3dbf1;
+  height: 30px;
+  font-size: 1em;
+  padding: 3px 5px;
+  margin: 10px 5px;
+  color: #62758b; }
+
+input[type="password"] {
+  width: 310px !important;
+  border: 2px solid #d3dbf1;
+  height: 30px;
+  font-size: 1.5em;
+  padding: 3px 5px 3px 5px;
+  margin: 10px 5px;
+  color: #62758b;
+  letter-spacing: 3px; }
+
+textarea {
+  width: 100%;
+  border: 2px solid #d3dbf1;
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 0px 5px 10px 5px;
+  margin: 10px 5px;
+  height: auto;
+  min-height: 50px;
+  color: #62758b; }
+
+input:focus, textarea:focus {
+  border: 2px solid #bcc5df; }
+
 /*-----------------------------------------------------------------*/
 /*--------------------- CUSTOM STYLES ---------------------------*/
 /*-----------------------------------------------------------------*/
@@ -774,11 +793,72 @@ img {
   opacity: 0.99; }
 
 /* MODULES COMPONENTS */
+body {
+  color: #727272; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #79ADD1; }
 
+p {
+  color: #727272; }
+
 a {
   color: #79ADD1; }
+
+a:hover {
+  color: #79ADD1; }
+
+small {
+  color: #727272; }
+
+ul, ol, li {
+  color: #727272; }
+
+dl, dt, dd {
+  color: #727272; }
+
+blockquote {
+  border-left-color: #727272;
+  color: #727272;
+  background-color: #F7F7F7; }
+
+q {
+  border-left-color: #727272;
+  color: #727272;
+  background-color: #F7F7F7; }
+
+cite {
+  border-left-color: #727272;
+  color: #727272;
+  background-color: #F7F7F7; }
+
+legend {
+  color: #79ADD1; }
+
+fieldset {
+  border-color: #d3dbf1; }
+
+label {
+  color: #79ADD1; }
+
+input[type="password"] {
+  border-color: #d3dbf1; }
+
+input:focus, textarea:focus {
+  border-color: #bcc5df; }
+
+table {
+  border-color: #d3dbf1;
+  color: #727272; }
+
+th {
+  border-bottom-color: #d3dbf1;
+  border-top-color: #d3dbf1;
+  background-color: #F7F7F7; }
+
+td {
+  border-bottom-color: #d3dbf1;
+  background-color: #FFFFFF; }
 
 /*-----------------------------------------------------------------*/
 /*--------------------- CUSTOM FONTS ---------------------------*/
@@ -826,7 +906,6 @@ header h1 {
 
 header h2 {
   font-size: 1.375em;
-  margin-top: -0.75em;
   letter-spacing: 12px;
   margin-left: 12px;
   text-transform: uppercase; }
