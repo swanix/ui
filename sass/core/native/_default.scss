@@ -3,20 +3,17 @@
 /*-----------------------------------------------------------------*/
 
 body {
-	font-family: "Lato-Regular", sans-serif;
-	line-height: em(30);
-	word-spacing: em(1);
+	font-family: "Raleway-Medium", sans-serif;
 	color: $gray-dove;
 	}
 
 h1, h2, h3, h4, h5, h6	{ 
-	font-family: "Armata-Regular", sans-serif;
 	font-weight: normal;
 	color:$gray-dove;
 	}
 
 p { 
-	font-size: 90%;
+	font-size:0.9em;
 	line-height: em(30);
 	word-spacing: em(1);
 	color: $gray-dove;
