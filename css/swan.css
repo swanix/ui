@@ -426,39 +426,33 @@ html {
 /*--------------------- CUSTOM FONTS ---------------------------*/
 /*-----------------------------------------------------------------*/
 @font-face {
-  font-family: 'latobold';
-  src: url("../fonts/lato-bold-webfont.eot");
-  src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'latoregular';
-  src: url("../fonts/lato-regular-webfont.eot");
-  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'armataregular';
-  src: url("../fonts/armata-regular_0-webfont.eot");
-  src: url("../fonts/armata-regular_0-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/armata-regular_0-webfont.woff") format("woff"), url("../fonts/armata-regular_0-webfont.ttf") format("truetype"), url("../fonts/armata-regular_0-webfont.svg#armataregular") format("svg");
+  font-family: 'Raleway-Thin';
+  src: url("../fonts/Raleway-Thin.otf");
   font-weight: normal;
   font-style: normal; }
 /*-----------------------------------------------------------------*/
 /*--------------------- DEFAULT HTML TAGS -------------------------*/
 /*-----------------------------------------------------------------*/
 body {
-  font-family: "Lato-Regular", sans-serif;
-  line-height: 1.875em;
-  word-spacing: 0.0625em;
+  font-family: "Raleway-Medium", sans-serif;
   color: #727272; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Armata-Regular", sans-serif;
   font-weight: normal;
   color: #727272; }
 
 p {
-  font-size: 90%;
+  font-size: 0.9em;
   line-height: 1.875em;
   word-spacing: 0.0625em;
   color: #727272; }
@@ -888,27 +882,53 @@ tbody {
 tfoot {
   background-color: none; }
 
-/*-----------------------------------------------------------------*/
-/*--------------------- CUSTOM FONTS ---------------------------*/
-/*-----------------------------------------------------------------*/
 @font-face {
-  font-family: 'latobold';
-  src: url("../fonts/lato-bold-webfont.eot");
-  src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-family: 'Raleway-Bold';
+  src: "url('../fonts/Raleway-Bold.otf')";
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'latoregular';
-  src: url("../fonts/lato-regular-webfont.eot");
-  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-family: 'Raleway-Medium';
+  src: "url('../fonts/Raleway-Bold.otf')";
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'armataregular';
-  src: url("../fonts/armata-regular_0-webfont.eot");
-  src: url("../fonts/armata-regular_0-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/armata-regular_0-webfont.woff") format("woff"), url("../fonts/armata-regular_0-webfont.ttf") format("truetype"), url("../fonts/armata-regular_0-webfont.svg#armataregular") format("svg");
+  font-family: 'Raleway-Thin';
+  src: "url('../fonts/Raleway-Thin.otf')";
   font-weight: normal;
   font-style: normal; }
+body {
+  font-family: "Raleway-Medium", sans-serif;
+  font-style: italic; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-style: normal; }
+
+p {
+  font-style: normal; }
+
+a {
+  font-style: normal; }
+
+small {
+  font-style: normal; }
+
+ul, ol, li {
+  font-style: normal; }
+
+dl, dt, dd {
+  font-style: normal; }
+
+blockquote {
+  font-style: italic; }
+
+q {
+  font-style: italic; }
+
+cite {
+  font-style: normal; }
+
 /* LAYOUT COMPONENTS */
 /*-----------------------------------------------------------------*/
 /*----------------------- MEDIA QUERIES ---------------------------*/
@@ -930,13 +950,14 @@ header {
 
 header h1 {
   font-size: 7.5em;
-  margin-bottom: 0em; }
+  margin-bottom: 0; }
 
 header h2 {
   font-size: 1.375em;
   letter-spacing: 12px;
   margin-left: 12px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: -20px; }
 
 #colorinp {
   width: 200px;
