@@ -6,6 +6,7 @@
 @import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
+@import "vendor/nanoscroller";
 
 // Native components
 
@@ -15,8 +16,8 @@
 @import "native/default";
 @import "native/custom";
 @import "native/styleguide";
-@import "native/nanoscroller";
+@import "native/custom-scroll";
 
 // Other Vendor components
 
-@import "vendor/nanoscroller";
+

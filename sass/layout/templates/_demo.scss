@@ -21,6 +21,13 @@ header h2 {
 
 }
 
+//Color picker tool styles
+#colorinp {
+  width: 200px;
+  margin-top: 0px; 
+}
+// End color picker tool
+
 section {
   padding: em(40) em(40) ;
   @include row();
