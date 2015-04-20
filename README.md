@@ -14,8 +14,8 @@ Sass Architecture v0.1 (Alpha)
 sass/
 |
 |– core/
+|   |– native/             # Native libraries
 |   |– vendor/             # Vendor libraries
-|   |– native/             # Vendor libraries
 |   |– _core.scss          # CORE Package
 |
 |– modules/
@@ -24,8 +24,8 @@ sass/
 |   |– _modules.scss       # MODULES package
 |
 |– layout/
-|   |– templates/          # Final Templates
 |   |– patterns/           # Common layout Patterns
+|   |– templates/          # Final Templates
 |   |– _layout.scss        # LAYOUT Package
 |
 | -------------------------------------------------

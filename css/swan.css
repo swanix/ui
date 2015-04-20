@@ -526,7 +526,7 @@ table {
   border: 1px solid #d3dbf1;
   border-collapse: collapse;
   width: 100%;
-  margin: 0px auto;
+  margin: 10px auto 30px auto;
   text-align: left; }
 
 thead {
@@ -556,6 +556,9 @@ td {
   font-size: 13px; }
 
 /* ------------------- FORMS -------------------- */
+form {
+  color: #727272; }
+
 legend {
   font-size: 18px;
   margin: 10px 0px;
@@ -563,7 +566,8 @@ legend {
 
 fieldset {
   border: 1px solid #d3dbf1;
-  padding: 5px 40px 40px 35px; }
+  padding: 5px 40px 40px 35px;
+  margin-bottom: 30px; }
 
 label {
   color: #79ADD1; }
@@ -794,9 +798,11 @@ img {
 
 /* MODULES COMPONENTS */
 body {
-  color: #727272; }
+  color: #727272;
+  background-color: #FFFFFF; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3,
+h4, h5, h6 {
   color: #79ADD1; }
 
 p {
@@ -832,6 +838,9 @@ cite {
   color: #727272;
   background-color: #F7F7F7; }
 
+hr {
+  border-color: #E3E3E3; }
+
 legend {
   color: #79ADD1; }
 
@@ -841,10 +850,20 @@ fieldset {
 label {
   color: #79ADD1; }
 
-input[type="password"] {
-  border-color: #d3dbf1; }
+input[type="text"] {
+  border-color: #d3dbf1;
+  color: #62758b; }
 
-input:focus, textarea:focus {
+input[type="password"] {
+  border-color: #d3dbf1;
+  color: #62758b; }
+
+textarea {
+  border-color: #d3dbf1;
+  color: #62758b; }
+
+input:focus,
+textarea:focus {
   border-color: #bcc5df; }
 
 table {
@@ -859,6 +878,15 @@ th {
 td {
   border-bottom-color: #d3dbf1;
   background-color: #FFFFFF; }
+
+thead {
+  background-color: none; }
+
+tbody {
+  background-color: none; }
+
+tfoot {
+  background-color: none; }
 
 /*-----------------------------------------------------------------*/
 /*--------------------- CUSTOM FONTS ---------------------------*/

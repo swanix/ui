@@ -1,87 +1,131 @@
-// -------------------------------------------------------
-// COLOR MANAGER
-// -------------------------------------------------------
 
-// MY PALETTE ::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------------
+// COLOR MANAGER by Sebastian Serna - 2015
+// ------------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::::::::
 
-$white: #FFFFFF;
-$blue-baked: #79ADD1;
-$gray-dove: #727272;
-$rose-charm: #D1798D;
 
-// DEFAULT HTML ::::::::::::::::::::::::::::::::::::::::::
+// MY PALETTE 
+// -----------------------------------------oooooo
 
-// Texts ------------
+		$white: 			#FFFFFF ;
+		$blue-baked: 		#79ADD1 ;
+		$gray-dove: 		#727272 ;
+		$gray-lynch: 		#62758b ;
+		$gray-water: 		#d3dbf1 ;
+		$gray-pigeon: 		#bcc5df ;
+		$gray-light: 		#E3E3E3 ;
+		$gray-alabaster: 	#F7F7F7 ;
+		$gray-mercury: 		#E3E3E3 ;
+		$purple: 			#813986 ;
+		$purple-dark: 		#702C75 ;
+		$purple-light: 		#9B44A2 ;
+
+
+// TEXTS 
+// -----------------------------------------oooooo
 
 body {
-	color: $gray-dove ;}
-h1, h2, h3, h4, h5, h6	{ 
-	color: $blue-baked ;}
+	color: 					$gray-dove ;
+	background-color:   	$white ;}
+	// -----------------------------------
+h1, h2, h3, 
+h4, h5, h6	{ 
+	color: 					$blue-baked ;}
+	// -----------------------------------
 p {
-	color: $gray-dove ;}
+	color: 					$gray-dove ;}
+	// -----------------------------------
 a { 
-	color: $blue-baked ;}
+	color: 					$blue-baked ;}
+	// -----------------------------------
 a:hover { 
-	color: $blue-baked ;}
+	color: 					$blue-baked ;}
+	// -----------------------------------
 small { 
-	color: $gray-dove ;}
+	color: 					$gray-dove ;}
+	// -----------------------------------
 ul, ol, li {
-	color: $gray-dove ;}
+	color: 					$gray-dove ;}
+	// -----------------------------------
 dl, dt, dd {
-	color: $gray-dove;
-	}
+	color: 					$gray-dove ;}
+	// -----------------------------------
 blockquote {
-	border-left-color: $gray-dove ;
-	color: $gray-dove ;
-	background-color: $gray-alabaster ;}
+	border-left-color: 		$gray-dove ;
+	color: 					$gray-dove ;
+	background-color: 		$gray-alabaster ;}
+	// -----------------------------------
 q {
-	border-left-color: $gray-dove ;
-	color: $gray-dove ;
-	background-color: $gray-alabaster ;}
+	border-left-color: 		$gray-dove ;
+	color: 					$gray-dove ;
+	background-color: 		$gray-alabaster ;}
+	// -----------------------------------
 cite {
-	border-left-color: $gray-dove ;
-	color: $gray-dove ;
-	background-color: $gray-alabaster ;}
+	border-left-color: 		$gray-dove ;
+	color: 					$gray-dove ;
+	background-color: 		$gray-alabaster ;}
+	// -----------------------------------
 hr {
-	border-color: null ;}
+	border-color: 			$gray-light ;}
+	// -----------------------------------
 
-// Forms ---------
+
+
+// FORMS 
+// -----------------------------------------oooooo
 
 legend { 
-	color: $blue-baked ;}
+	color: 					$blue-baked ;}
+	// -----------------------------------
 fieldset { 
-	border-color: $gray-water ;}
+	border-color: 			$gray-water ;}
+	// -----------------------------------
 label { 
-	color: $blue-baked ;}
+	color: 					$blue-baked ;}
+	// -----------------------------------
 input[type="text"] { 
-	border-color: null ;
-	color: null ;}
+	border-color: 			$gray-water ;
+	color: 					$gray-lynch ;}
+	// -----------------------------------
 input[type="password"] { 
-	border-color: $gray-water ;
-	color: null ;}
+	border-color: 			$gray-water ;
+	color: 					$gray-lynch;}
+	// -----------------------------------
 textarea { 
-	border-color: null ;
-	color: null ;}
-input:focus, textarea:focus {
-	border-color:$gray-pigeon ;}
+	border-color: 			$gray-water ;
+	color: 					$gray-lynch ;}
+	// -----------------------------------
+input:focus, 
+textarea:focus {
+	border-color: 			$gray-pigeon ;} 
+	// -----------------------------------
 
-// Tables ---------
+
+
+// TABLES 
+// -----------------------------------------oooooo
 
 table {  
-	border-color: $gray-water ;
-	color: $gray-dove ; } 
+	border-color: 			$gray-water ;
+	color: 					$gray-dove ;} 
+	// -----------------------------------
 th {
-	border-bottom-color: $gray-water;
-	border-top-color: $gray-water;
-	background-color: $gray-alabaster;}
+	border-bottom-color: 	$gray-water ;
+	border-top-color: 		$gray-water ;
+	background-color: 		$gray-alabaster ;}
+	// -----------------------------------
 td {
-	border-bottom-color: $gray-water;
-	background-color: $white;}
+	border-bottom-color: 	$gray-water ;
+	background-color: 		$white ;}
+	// -----------------------------------
+thead { 
+	background-color: 		none ;}
+	// -----------------------------------
+tbody { 
+	background-color: 		none ;}
+	// -----------------------------------
+tfoot { 
+	background-color: 		none ;}
+	// -----------------------------------
 
-
-
-
-
-// CUSTOM elements :::::::::::::::::::::::::::::::::
-
-// Sidebar
