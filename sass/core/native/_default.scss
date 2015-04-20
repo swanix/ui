@@ -4,49 +4,85 @@
 
 body {
 	font-family: "Lato-Regular", sans-serif;
-	color: $color-text;
+	line-height: em(30);
+	word-spacing: em(1);
+	color: $gray-dove;
 	}
 
 h1, h2, h3, h4, h5, h6	{ 
 	font-family: "Armata-Regular", sans-serif;
 	font-weight: normal;
-	color:$color-text-heading;
+	color:$gray-dove;
 	}
 
 p { 
 	font-size: 90%;
 	line-height: em(30);
 	word-spacing: em(1);
+	color: $gray-dove;
 	}
 
 a {
-	color: $color-text-link;
+	color: $blue-baked;
 	text-decoration: none;
+	}
+
+a:hover {
+	color: $blue-baked;
+	text-decoration: none;
+	}
+
+ul, ol, li {
+	font-size: 95%;
+	color: $gray-dove;
+	}
+
+dl, dt, dd {
+	font-size: 95%;
+	color: $gray-dove;
 	}
 
 small { 
 	font-size: 65%;
+	color: $gray-dove;
 	}
 
 blockquote {
 	line-height: 1.5; 
-	border-left: 1px solid #292929;
-	padding-left: em(20);
+	border-left: 1px solid $gray-dove;
+	padding: 15px 15px 15px 20px;
 	font-style: italic;
 	font-size: 90%;
+	color: $gray-dove;
+	background-color: $gray-alabaster;
 	}
 
 q {
-	font-size: 22px;
+	display:block;
 	line-height: 1.5; 
+	border-left: 1px solid $gray-dove;
+	padding: 15px 15px 15px 20px;	
+	font-style: italic;
+	font-size: 90%;
+	margin: 15px 40px 15px 40px;
+	color: $gray-dove;
+	background-color: $gray-alabaster;
+	}
+
+cite {
+	display:block;
+	line-height: 1.5; 
+	border-left: 1px solid $gray-dove;
+	padding: 15px 15px 15px 20px;
+	font-style: italic;
+	font-size: 90%;
+	margin: 15px 40px 15px 40px;
+	color: $gray-dove;
+	background-color: $gray-alabaster;
 	}
 
 hr {
 	border: solid 1px $gray-light;
-	}
-
-ul, ol {
-
 	}
 
 img {
@@ -57,7 +93,7 @@ img {
 /*------------------- TABLES --------------------*/
 
 table {  
-	border: 1px solid #d3dbf1; 
+	border: 1px solid $gray-water; 
 	border-collapse:collapse;
 	width:100%;
 	margin: 0px auto;
@@ -65,7 +101,7 @@ table {
 	} 
 
 thead { 
-	height:40px; display:none;
+	height:40px;
 	}
 
 tbody { 
@@ -82,37 +118,38 @@ table caption {
 	} 
 	
 th {
-	border-bottom: 1px solid #d3dbf1;
-	border-top: 1px solid #d3dbf1;
+	border-bottom: 1px solid $gray-water;
+	border-top: 1px solid $gray-water;
 	letter-spacing: 2px;
 	text-align: left;
 	padding: 4px 4px 6px 12px;
+	background-color: $gray-alabaster;
 	}
 
 td {
-	border-bottom: 1px solid #d3dbf1;
+	border-bottom: 1px solid $gray-water;
 	padding: 0px 6px 0px 12px;
 	font-size:13px;
 	}
 
 
-/*------------------- FORMS --------------------
+/* ------------------- FORMS -------------------- */
 
 form { }
 
 legend { 
 	font-size:18px; 
-	font-weight:bold; 
 	margin:10px 0px; 
-	color:$purple-light; 
+	color:$blue-baked; 
 	}
 
 fieldset { 
-	border: 1px;
+	border: 1px solid $gray-water;
+	padding: 5px 40px 40px 35px;
 	}
 
 label { 
-	color:#01215a;
+	color:$blue-baked;
 	}
 
 select {
@@ -124,42 +161,37 @@ option { }
 
 input[type="text"] { 
 	width:100%;
-	border:2px solid #d3dbf1;
+	border:2px solid $gray-water;
 	height:30px;
 	font-size:1em;
 	padding:3px 5px;
 	margin:10px 5px;
-	color:#62758b;
+	color:$gray-lynch;
 	}
 
 input[type="password"] { 
 	width:310px !important;
-	border:2px solid #d3dbf1;
+	border:2px solid $gray-water;
 	height:30px;
-	font-size:1.2em;
-	padding:3px 5px;
+	font-size:1.5em;
+	padding:3px 5px 3px 5px;
 	margin:10px 5px;
-	color:#62758b;
+	color:$gray-lynch;
+	letter-spacing:3px;
 	}
 
 textarea { 
 	width:100%;
-	border:2px solid #d3dbf1;
+	border:2px solid $gray-water;
 	font-size:1em;
 	padding:5px 5px;
 	margin:0px 5px 10px 5px;
 	margin:10px 5px;
-	color:#62758b;
 	height: auto;
 	min-height: 50px;
-
+	color:$gray-lynch;
 	}
 
 input:focus, textarea:focus {
-	border:2px solid #bcc5df;
+	border:2px solid $gray-pigeon;
 	}
-
-label {
-	color: $purple-light;
-}
-*/

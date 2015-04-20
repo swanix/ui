@@ -19,8 +19,8 @@ sass/
 |   |– _core.scss          # CORE Package
 |
 |– modules/
-|   |– vendor/             # Vendor Modules
-|   |– native/             # Native Modules
+|   |– color-manager/      # Color Manager Module
+|   |– typo-manager/       # Typo Manager Module
 |   |– _modules.scss       # MODULES package
 |
 |– layout/
