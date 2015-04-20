@@ -96,7 +96,7 @@ table {
 	border: 1px solid $gray-water; 
 	border-collapse:collapse;
 	width:100%;
-	margin: 0px auto;
+	margin: 10px auto 30px auto;
 	text-align: left;
 	} 
 
@@ -135,7 +135,7 @@ td {
 
 /* ------------------- FORMS -------------------- */
 
-form { }
+form { color:$gray-dove; }
 
 legend { 
 	font-size:18px; 
@@ -146,6 +146,7 @@ legend {
 fieldset { 
 	border: 1px solid $gray-water;
 	padding: 5px 40px 40px 35px;
+	margin-bottom:30px;
 	}
 
 label { 
