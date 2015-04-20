@@ -1,0 +1,71 @@
+
+// -----------------------------------------------------------
+// TYPO MANAGER by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// MY TYPOGRAPHY
+// -----------------------------------------------------------
+
+$raleway-medium: "url('../fonts/Raleway-Bold.otf')" ;
+$raleway-bold: "url('../fonts/Raleway-Bold.otf')"  ;
+$raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
+
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: $raleway-bold ;
+    font-weight: normal ;
+    font-style: normal ;
+  }
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: $raleway-medium ;
+    font-weight: normal ;
+    font-style: normal ;
+  }
+
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: $raleway-thin ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+// TEXTS 
+// -----------------------------------------------------------
+
+body {
+    font-family:            "Raleway-Medium", sans-serif ;           
+    font-style:             italic ;}
+    // -----------------------------------
+h1, h2, h3, 
+h4, h5, h6 {   
+    font-style:             normal ;}
+    // -----------------------------------
+p {
+    font-style:             normal ;}
+    // -----------------------------------
+a { 
+    font-style:             normal ;}
+    // -----------------------------------
+small { 
+    font-style:             normal ;}
+    // -----------------------------------
+ul, ol, li {
+    font-style:             normal ;}
+    // -----------------------------------
+dl, dt, dd {
+    font-style:             normal ;}
+    // -----------------------------------
+blockquote {
+    font-style:             italic ;}
+    // -----------------------------------
+q {
+    font-style:             italic ;}
+    // -----------------------------------
+cite {
+    font-style:             normal ;}
+    // -----------------------------------
+
