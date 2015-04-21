@@ -892,17 +892,17 @@ tfoot {
 
 @font-face {
   font-family: 'Raleway-Medium';
-  src: "url('../fonts/Raleway-Bold.otf')";
+  src: url("../fonts/Raleway-Medium.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Raleway-Thin';
-  src: "url('../fonts/Raleway-Thin.otf')";
+  src: url("../fonts/Raleway-Thin.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Aldo-PC';
-  src: "url('../fonts/AldoPC.ttf')";
+  src: url("../fonts/AldoPC.ttf");
   font-weight: normal;
   font-style: normal; }
 body {
