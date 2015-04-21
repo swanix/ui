@@ -7,28 +7,23 @@
 // MY TYPOGRAPHY
 // -----------------------------------------------------------
 
-$aldo-pc: "url('../fonts/AldoPC.ttf')" ;
-$raleway-medium: "url('../fonts/Raleway-Bold.otf')" ;
-$raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
-
-
 @font-face {
     font-family: 'Raleway-Medium';
-    src: $raleway-medium ;
+    src: url('../fonts/Raleway-Medium.otf') ;
     font-weight: normal ;
     font-style: normal ;
   }
 
 @font-face {
     font-family: 'Raleway-Thin';
-    src: $raleway-thin ;
+    src: url('../fonts/Raleway-Thin.otf') ;
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'Aldo-PC';
-    src: $aldo-pc ;
+    src: url('../fonts/AldoPC.ttf') ;
     font-weight: normal;
     font-style: normal;
   }
