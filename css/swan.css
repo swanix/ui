@@ -588,7 +588,7 @@ input[type="text"] {
   color: #62758b; }
 
 input[type="password"] {
-  width: 310px !important;
+  width: 100%;
   border: 2px solid #d3dbf1;
   height: 30px;
   font-size: 1.5em;
