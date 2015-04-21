@@ -1,24 +1,29 @@
-/*-----------------------------------------------------------------*/
-/*--------------------- CUSTOM FONTS ---------------------------*/
-/*-----------------------------------------------------------------*/
 
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: url('../fonts/Raleway-Bold.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
+// NATIVE TYPOGRAPHY
+// -----------------------------------------------------------
+
+$aldo-pc: "url('../fonts/AldoPC.ttf')" ;
+$raleway-medium: "url('../fonts/Raleway-Bold.otf')" ;
+$raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
+
 
 @font-face {
     font-family: 'Raleway-Medium';
-    src: url('../fonts/Raleway-Medium.otf');
-    font-weight: normal;
-    font-style: normal;
+    src: $raleway-medium ;
+    font-weight: normal ;
+    font-style: normal ;
   }
 
 @font-face {
     font-family: 'Raleway-Thin';
-    src: url('../fonts/Raleway-Thin.otf');
+    src: $raleway-thin ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Aldo-PC';
+    src: $aldo-pc ;
     font-weight: normal;
     font-style: normal;
   }
