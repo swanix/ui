@@ -7,17 +7,10 @@
 // MY TYPOGRAPHY
 // -----------------------------------------------------------
 
+$aldo-pc: "url('../fonts/AldoPC.ttf')" ;
 $raleway-medium: "url('../fonts/Raleway-Bold.otf')" ;
-$raleway-bold: "url('../fonts/Raleway-Bold.otf')"  ;
 $raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
 
-
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: $raleway-bold ;
-    font-weight: normal ;
-    font-style: normal ;
-  }
 
 @font-face {
     font-family: 'Raleway-Medium';
@@ -33,18 +26,27 @@ $raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Aldo-PC';
+    src: $aldo-pc ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
 // TEXTS 
 // -----------------------------------------------------------
 
 body {
     font-family:            "Raleway-Medium", sans-serif ;           
-    font-style:             italic ;}
+    font-style:             normal ;}
     // -----------------------------------
 h1, h2, h3, 
-h4, h5, h6 {   
+h4, h5, h6 {
+    font-family:            "Raleway-Medium", sans-serif ;     
     font-style:             normal ;}
     // -----------------------------------
 p {
+    font-family:            "Raleway-Medium", sans-serif ;  
     font-style:             normal ;}
     // -----------------------------------
 a { 

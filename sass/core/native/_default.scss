@@ -7,12 +7,14 @@ body {
 	color: $gray-dove;
 	}
 
-h1, h2, h3, h4, h5, h6	{ 
+h1, h2, h3, h4, h5, h6	{
+	font-family: "Raleway-Medium", sans-serif; 
 	font-weight: normal;
 	color:$gray-dove;
 	}
 
 p { 
+	font-family: "Raleway-Medium", sans-serif;
 	font-size:0.9em;
 	line-height: em(30);
 	word-spacing: em(1);
@@ -29,14 +31,20 @@ a:hover {
 	text-decoration: none;
 	}
 
-ul, ol, li {
-	font-size: 95%;
+ul, ol {
+	font-size:0.9em;
 	color: $gray-dove;
 	}
 
+li {
+	font-size:1em;
+	line-height: 25px;
+	}
+
 dl, dt, dd {
-	font-size: 95%;
+	font-size:0.9em;
 	color: $gray-dove;
+	line-height: 25px;
 	}
 
 small { 
@@ -95,6 +103,8 @@ table {
 	width:100%;
 	margin: 10px auto 30px auto;
 	text-align: left;
+	font-size:0.9em;
+	color: $gray-dove;
 	} 
 
 thead { 
@@ -119,16 +129,21 @@ th {
 	border-top: 1px solid $gray-water;
 	letter-spacing: 2px;
 	text-align: left;
-	padding: 4px 4px 6px 12px;
+	padding: 8px 4px 4px 12px;
 	background-color: $gray-alabaster;
+	line-height: 25px;
 	}
 
 td {
 	border-bottom: 1px solid $gray-water;
-	padding: 0px 6px 0px 12px;
+	padding: 10px 6px 10px 12px;
 	font-size:13px;
+	line-height: 25px;
 	}
 
+tr {
+	
+	}
 
 /* ------------------- FORMS -------------------- */
 

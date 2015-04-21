@@ -422,22 +422,19 @@ html {
   /* Target only IE7 and IE8 with this hack */
   opacity: 0.99; }
 
-/*-----------------------------------------------------------------*/
-/*--------------------- CUSTOM FONTS ---------------------------*/
-/*-----------------------------------------------------------------*/
-@font-face {
-  font-family: 'Raleway-Bold';
-  src: url("../fonts/Raleway-Bold.otf");
-  font-weight: normal;
-  font-style: normal; }
 @font-face {
   font-family: 'Raleway-Medium';
-  src: url("../fonts/Raleway-Medium.otf");
+  src: "url('../fonts/Raleway-Bold.otf')";
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Raleway-Thin';
-  src: url("../fonts/Raleway-Thin.otf");
+  src: "url('../fonts/Raleway-Thin.otf')";
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aldo-PC';
+  src: "url('../fonts/AldoPC.ttf')";
   font-weight: normal;
   font-style: normal; }
 /*-----------------------------------------------------------------*/
@@ -448,10 +445,12 @@ body {
   color: #727272; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway-Medium", sans-serif;
   font-weight: normal;
   color: #727272; }
 
 p {
+  font-family: "Raleway-Medium", sans-serif;
   font-size: 0.9em;
   line-height: 1.875em;
   word-spacing: 0.0625em;
@@ -465,13 +464,18 @@ a:hover {
   color: #79ADD1;
   text-decoration: none; }
 
-ul, ol, li {
-  font-size: 95%;
+ul, ol {
+  font-size: 0.9em;
   color: #727272; }
 
+li {
+  font-size: 1em;
+  line-height: 25px; }
+
 dl, dt, dd {
-  font-size: 95%;
-  color: #727272; }
+  font-size: 0.9em;
+  color: #727272;
+  line-height: 25px; }
 
 small {
   font-size: 65%;
@@ -521,7 +525,9 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 10px auto 30px auto;
-  text-align: left; }
+  text-align: left;
+  font-size: 0.9em;
+  color: #727272; }
 
 thead {
   height: 40px; }
@@ -541,13 +547,15 @@ th {
   border-top: 1px solid #d3dbf1;
   letter-spacing: 2px;
   text-align: left;
-  padding: 4px 4px 6px 12px;
-  background-color: #F7F7F7; }
+  padding: 8px 4px 4px 12px;
+  background-color: #F7F7F7;
+  line-height: 25px; }
 
 td {
   border-bottom: 1px solid #d3dbf1;
-  padding: 0px 6px 0px 12px;
-  font-size: 13px; }
+  padding: 10px 6px 10px 12px;
+  font-size: 13px;
+  line-height: 25px; }
 
 /* ------------------- FORMS -------------------- */
 form {
@@ -883,11 +891,6 @@ tfoot {
   background-color: none; }
 
 @font-face {
-  font-family: 'Raleway-Bold';
-  src: "url('../fonts/Raleway-Bold.otf')";
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'Raleway-Medium';
   src: "url('../fonts/Raleway-Bold.otf')";
   font-weight: normal;
@@ -897,15 +900,22 @@ tfoot {
   src: "url('../fonts/Raleway-Thin.otf')";
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Aldo-PC';
+  src: "url('../fonts/AldoPC.ttf')";
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: "Raleway-Medium", sans-serif;
-  font-style: italic; }
+  font-style: normal; }
 
 h1, h2, h3,
 h4, h5, h6 {
+  font-family: "Raleway-Medium", sans-serif;
   font-style: normal; }
 
 p {
+  font-family: "Raleway-Medium", sans-serif;
   font-style: normal; }
 
 a {
