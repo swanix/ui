@@ -29,7 +29,7 @@ sass/
 |   |– _layout.scss        # LAYOUT Package
 |
 | -------------------------------------------------
-`– swan.scss               # SWAN Package
+`– styles.scss             # SWAN Package
   -------------------------------------------------
 ```
 

@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/**** SWAN PROJECT ****/
+/**** BASE PROJECT ****/
 /* CORE COMPONENTS */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -597,6 +596,91 @@ input[type="password"] {
   color: #62758b;
   letter-spacing: 3px; }
 
+input[type="password"] {
+  width: 100%;
+  border: 2px solid #d3dbf1;
+  height: 30px;
+  font-size: 1.5em;
+  padding: 3px 5px 3px 5px;
+  margin: 10px 5px;
+  color: #62758b;
+  letter-spacing: 3px; }
+
+input[type="submit"] {
+  max-width: 500px;
+  height: 40px;
+  padding: 5px 20px;
+  vertical-align: middle;
+  color: white;
+  background-color: #79ADD1;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="submit"]:hover {
+  vertical-align: middle;
+  color: white;
+  background-color: #5F9BC4;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="reset"] {
+  max-width: 500px;
+  height: 40px;
+  padding: 5px 20px;
+  vertical-align: middle;
+  color: white;
+  background-color: #79ADD1;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="reset"]:hover {
+  vertical-align: middle;
+  color: white;
+  background-color: #5F9BC4;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+button {
+  max-width: 500px;
+  height: 40px;
+  padding: 5px 20px;
+  vertical-align: middle;
+  color: white;
+  background-color: #79ADD1;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+button:hover {
+  vertical-align: middle;
+  color: white;
+  background-color: #5F9BC4;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
 textarea {
   width: 100%;
   border: 2px solid #d3dbf1;
@@ -868,6 +952,36 @@ input:focus,
 textarea:focus {
   border-color: #bcc5df; }
 
+input[type="submit"] {
+  border-color: none;
+  background-color: #79ADD1;
+  color: #FFFFFF; }
+
+input[type="submit"]:hover {
+  border-color: none;
+  background-color: #5F9BC4;
+  color: #FFFFFF; }
+
+input[type="reset"] {
+  border-color: none;
+  background-color: #79ADD1;
+  color: #FFFFFF; }
+
+input[type="reset"]:hover {
+  border-color: none;
+  background-color: #5F9BC4;
+  color: #FFFFFF; }
+
+button {
+  border-color: none;
+  background-color: #79ADD1;
+  color: #FFFFFF; }
+
+button:hover {
+  border-color: none;
+  background-color: #5F9BC4;
+  color: #FFFFFF; }
+
 table {
   border-color: #d3dbf1;
   color: #727272; }
@@ -1036,4 +1150,4 @@ footer {
   footer:last-child {
     margin-right: 0; }
 
-/*# sourceMappingURL=swan.css.map */
+/*# sourceMappingURL=styles.css.map */
