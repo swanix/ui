@@ -9,6 +9,7 @@
 
 $white:             #FFFFFF ;
 $blue-baked:        #79ADD1 ;
+$blue-fountain:     #5F9BC4 ;
 $gray-dove:         #727272 ;
 $gray-lynch:        #62758b ;
 $gray-water:        #d3dbf1 ;
@@ -97,6 +98,36 @@ input:focus,
 textarea:focus {
     border-color:           $gray-pigeon ;} 
     // -----------------------------------
+input[type="submit"] { 
+    border-color:           none ;
+    background-color:       $blue-baked; 
+    color:                  $white ;}
+    // -----------------------------------
+input[type="submit"]:hover { 
+    border-color:           none ;
+    background-color:       $blue-fountain; 
+    color:                  $white ;}
+    // -----------------------------------
+input[type="reset"] { 
+    border-color:           none ;
+    background-color:       $blue-baked; 
+    color:                  $white ;}
+    // -----------------------------------  
+input[type="reset"]:hover { 
+    border-color:           none ;
+    background-color:       $blue-fountain; 
+    color:                  $white ;}
+    // -----------------------------------
+button { 
+    border-color:           none ;
+    background-color:       $blue-baked; 
+    color:                  $white ;}
+    // -----------------------------------    
+button:hover { 
+    border-color:           none ;
+    background-color:       $blue-fountain; 
+    color:                  $white ;}
+    // -----------------------------------    
 
 // TABLES 
 // -----------------------------------------------------------
