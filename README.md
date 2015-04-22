@@ -1,5 +1,4 @@
 ![alt text](https://github.com/zemiotic/swan/blob/master/images/logo.png "Swan - User Interface")
-
 Neutral UI framework based on Genomic Design methodology. Work in progress... 
 
 
@@ -9,7 +8,7 @@ Genomic Design System
 core -> modules -> layout
 –––––––––––––––––––––––––––––
 
-Sass Architecture v0.1 (Alpha)
+Sass Architecture v0.2 (Alpha)
 
 sass/
 |
