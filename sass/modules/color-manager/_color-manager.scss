@@ -8,6 +8,7 @@
 // -----------------------------------------------------------
 
 $white:             #FFFFFF ;
+$aqua-haze:         #F5F7FA ;
 $blue-baked:        #79ADD1 ;
 $blue-fountain:     #5F9BC4 ;
 $gray-dove:         #727272 ;
@@ -119,14 +120,14 @@ input[type="reset"]:hover {
     color:                  $white ;}
     // -----------------------------------
 button { 
-    border-color:           none ;
-    background-color:       $blue-baked; 
-    color:                  $white ;}
+    border-color:           $gray-water ;
+    background-color:       $aqua-haze; 
+    color:                  $gray-dove ;}
     // -----------------------------------    
 button:hover { 
-    border-color:           none ;
-    background-color:       $blue-fountain; 
-    color:                  $white ;}
+    border-color:           $gray-dove ;
+    background-color:       $white; 
+    color:                  $gray-dove ;}
     // -----------------------------------    
 
 // TABLES 
@@ -153,5 +154,13 @@ tbody {
     // -----------------------------------
 tfoot { 
     background-color:       none ;}
+    // -----------------------------------
+
+// CUSTOM MODULES 
+// -----------------------------------------------------------
+
+.typo-preview td {
+    border-left-color:      $gray-water ;
+    color:                  $blue-baked ;}
     // -----------------------------------
 
