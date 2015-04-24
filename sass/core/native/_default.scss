@@ -263,9 +263,9 @@ button {
 	height: 40px;
 	padding: 5px 20px;
 	vertical-align: middle;
-	color: white;
-	background-color: $blue-baked;
-	border: none;
+	color: $gray-dove;
+	background-color: $white;
+	border: solid 1px $gray-water;
 	-o-transition:.2s;
 	-ms-transition:.2s;
 	-moz-transition:.2s;
@@ -277,7 +277,7 @@ button:hover {
 	vertical-align: middle;
 	color: white;
 	background-color: $blue-fountain;
-	border: none;
+	border: solid 1px $gray-water;
 	-o-transition:.2s;
 	-ms-transition:.2s;
 	-moz-transition:.2s;

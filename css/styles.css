@@ -436,6 +436,18 @@ html {
   src: "url('../fonts/AldoPC.ttf')";
   font-weight: normal;
   font-style: normal; }
+.typo-preview table {
+  width: 50%;
+  margin: 10px 0 30px 0; }
+
+.typo-preview td {
+  font-family: "Raleway-Medium";
+  font-size: 4em;
+  padding: 0.7em 0.2em;
+  border-left: 1px solid #d3dbf1;
+  text-align: center;
+  color: #79ADD1; }
+
 /*-----------------------------------------------------------------*/
 /*--------------------- DEFAULT HTML TAGS -------------------------*/
 /*-----------------------------------------------------------------*/
@@ -661,9 +673,9 @@ button {
   height: 40px;
   padding: 5px 20px;
   vertical-align: middle;
-  color: white;
-  background-color: #79ADD1;
-  border: none;
+  color: #727272;
+  background-color: #FFFFFF;
+  border: solid 1px #d3dbf1;
   -o-transition: .2s;
   -ms-transition: .2s;
   -moz-transition: .2s;
@@ -674,7 +686,7 @@ button:hover {
   vertical-align: middle;
   color: white;
   background-color: #5F9BC4;
-  border: none;
+  border: solid 1px #d3dbf1;
   -o-transition: .2s;
   -ms-transition: .2s;
   -moz-transition: .2s;
@@ -973,14 +985,14 @@ input[type="reset"]:hover {
   color: #FFFFFF; }
 
 button {
-  border-color: none;
-  background-color: #79ADD1;
-  color: #FFFFFF; }
+  border-color: #d3dbf1;
+  background-color: #F5F7FA;
+  color: #727272; }
 
 button:hover {
-  border-color: none;
-  background-color: #5F9BC4;
-  color: #FFFFFF; }
+  border-color: #727272;
+  background-color: #FFFFFF;
+  color: #727272; }
 
 table {
   border-color: #d3dbf1;
@@ -1003,6 +1015,10 @@ tbody {
 
 tfoot {
   background-color: none; }
+
+.typo-preview td {
+  border-left-color: #d3dbf1;
+  color: #79ADD1; }
 
 @font-face {
   font-family: 'Raleway-Medium';
@@ -1052,6 +1068,9 @@ q {
 
 cite {
   font-style: normal; }
+
+.typo-preview td {
+  font-family: "Raleway-Medium"; }
 
 /* LAYOUT COMPONENTS */
 /*-----------------------------------------------------------------*/

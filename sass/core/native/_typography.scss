@@ -26,4 +26,21 @@ $raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
     src: $aldo-pc ;
     font-weight: normal;
     font-style: normal;
-  }
+    }
+    
+
+.typo-preview table {
+    width: 50% ;
+    margin: 10px 0 30px 0;
+    }
+
+.typo-preview td {
+    font-family: 'Raleway-Medium' ;
+    font-size: 4em ;
+    padding: 0.7em 0.2em;
+    border-left: 1px solid $gray-water;
+    text-align: center;
+    color:$blue-baked;
+    }
+
+
