@@ -206,8 +206,7 @@ input[type="password"] {
 
 input[type="submit"] { 
 	max-width:500px;
-	height: 40px;
-	padding: 5px 20px;
+	padding: 0.5em 0.7em;
 	vertical-align: middle;
 	color: white;
 	background-color: $blue-baked;
@@ -233,8 +232,7 @@ input[type="submit"]:hover {
 
 input[type="reset"] { 
 	max-width:500px;
-	height: 40px;
-	padding: 5px 20px;
+	padding: 0.5em 0.7em;
 	vertical-align: middle;
 	color: white;
 	background-color: $blue-baked;
@@ -260,8 +258,7 @@ input[type="reset"]:hover {
 
 button {
 	max-width:500px;
-	height: 40px;
-	padding: 5px 20px;
+	padding: 0.5em 0.7em;
 	vertical-align: middle;
 	color: $gray-dove;
 	background-color: $white;
