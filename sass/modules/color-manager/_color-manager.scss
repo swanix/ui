@@ -30,6 +30,9 @@ body {
     color:                  $gray-dove ;
     background-color:       $white ;}
     // -----------------------------------
+hr {
+    border-color:           $gray-light ;}
+    // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
     color:                  $blue-baked ;}
@@ -67,7 +70,8 @@ cite {
     color:                  $gray-dove ;
     background-color:       $gray-alabaster ;}
     // -----------------------------------
-hr {
+pre {
+    color:                  $gray-dove ; 
     border-color:           $gray-light ;}
     // -----------------------------------
 
@@ -85,43 +89,48 @@ label {
     // -----------------------------------
 input[type="text"] { 
     border-color:           $gray-water ;
-    color:                  $gray-lynch ;}
+    background-color:       $white ; 
+    color:                  $gray-dove ;}
     // -----------------------------------
 input[type="password"] { 
     border-color:           $gray-water ;
-    color:                  $gray-lynch;}
+    background-color:       $white ; 
+    color:                  $gray-dove ;}
     // -----------------------------------
 textarea { 
     border-color:           $gray-water ;
-    color:                  $gray-lynch ;}
+    background-color:       $white ; 
+    color:                  $gray-dove ;}
     // -----------------------------------
 input:focus, 
 textarea:focus {
+    color:                  $gray-dove ;
+    background-color:       white ; 
     border-color:           $gray-pigeon ;} 
     // -----------------------------------
 input[type="submit"] { 
     border-color:           none ;
-    background-color:       $blue-baked; 
+    background-color:       $blue-baked ; 
     color:                  $white ;}
     // -----------------------------------
 input[type="submit"]:hover { 
     border-color:           none ;
-    background-color:       $blue-fountain; 
+    background-color:       $blue-fountain ; 
     color:                  $white ;}
     // -----------------------------------
 input[type="reset"] { 
     border-color:           none ;
-    background-color:       $blue-baked; 
+    background-color:       $blue-baked ; 
     color:                  $white ;}
     // -----------------------------------  
 input[type="reset"]:hover { 
     border-color:           none ;
-    background-color:       $blue-fountain; 
+    background-color:       $blue-fountain ; 
     color:                  $white ;}
     // -----------------------------------
 button { 
     border-color:           $gray-water ;
-    background-color:       $aqua-haze; 
+    background-color:       $aqua-haze ; 
     color:                  $gray-dove ;}
     // -----------------------------------    
 button:hover { 

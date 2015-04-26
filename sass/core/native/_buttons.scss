@@ -1,18 +1,94 @@
+// -----------------------------------------------------------
+// NATIVE BUTTON STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+input[type="submit"] { 
+    max-width:8em;
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: white;
+    background-color: $blue-baked;
+    }
 
-// NATIVE PALETTE 
-// ----------------------------------------------------------- ////
+input[type="submit"]:hover { 
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: white;
+    background-color: $blue-fountain;
+    }
 
-$white:             #FFFFFF ;
-$blue-baked:        #79ADD1 ;
-$gray-dove:         #727272 ;
-$gray-lynch:        #62758b ;
-$gray-water:        #d3dbf1 ;
-$gray-pigeon:       #bcc5df ;
-$gray-light:        #E3E3E3 ;
-$gray-alabaster:    #F7F7F7 ;
-$gray-mercury:      #E3E3E3 ;
-$purple:            #813986 ;
-$purple-dark:       #702C75 ;
-$purple-light:      #9B44A2 ;
+input[type="reset"] { 
+    max-width:8em;
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: white;
+    background-color: $blue-baked;
+    }
 
+input[type="reset"]:hover { 
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: white;
+    background-color: $blue-fountain;
+    }
+
+button {
+    max-width:8em;
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: $gray-dove;
+    border: solid 1px $gray-water;
+    background-color: $white;
+    }
+
+button:hover {
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    color: white;
+    border: solid 1px $gray-water;
+    background-color: $blue-fountain;
+    }
