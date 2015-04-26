@@ -1,0 +1,50 @@
+// -----------------------------------------------------------
+// NATIVE TABLE STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+table {  
+    border-collapse:collapse;
+    width:100%;
+    margin: 1em auto 1em auto;
+    text-align: left;
+    font-size:0.9em;
+    color: $gray-dove;
+    border: 1px solid $gray-water; 
+    } 
+
+thead { 
+    height:2em;
+    }
+
+tbody { 
+    height:2em;
+    }
+
+tfoot { 
+    height:2em;
+    }
+
+table caption { 
+    font-size: 80%; 
+    margin:1em; 
+    } 
+	
+th {
+    text-align: left;
+    padding: 1em 0.8em;
+    border-right: 1px solid $gray-water;
+    border-bottom: 1px solid $gray-water;
+    border-top: 1px solid $gray-water;
+    background-color: $gray-alabaster;
+	}
+
+td {
+    padding: 1em 0.8em;
+    border-right: 1px solid $gray-water;
+    border-bottom: 1px solid $gray-water;
+    }
+
+tr {
+    
+    }

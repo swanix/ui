@@ -1,46 +1,124 @@
-
-// NATIVE TYPOGRAPHY
 // -----------------------------------------------------------
-
-$aldo-pc: "url('../fonts/AldoPC.ttf')" ;
-$raleway-medium: "url('../fonts/Raleway-Bold.otf')" ;
-$raleway-thin: "url('../fonts/Raleway-Thin.otf')" ;
-
+// NATIVE TYPOGRAPHY STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @font-face {
     font-family: 'Raleway-Medium';
-    src: $raleway-medium ;
+    src: url('../fonts/Raleway-Medium.otf') ;
     font-weight: normal ;
     font-style: normal ;
-  }
+    }
 
 @font-face {
     font-family: 'Raleway-Thin';
-    src: $raleway-thin ;
+    src: url('../fonts/Raleway-Thin.otf') ;
     font-weight: normal;
     font-style: normal;
-  }
+    }
 
 @font-face {
     font-family: 'Aldo-PC';
-    src: $aldo-pc ;
+    src: url('../fonts/AldoPC.ttf') ;
     font-weight: normal;
     font-style: normal;
     }
     
+// TEXTS 
+// -----------------------------------------------------------+
 
-.typo-preview table {
-    width: 50% ;
-    margin: 10px 0 30px 0;
+body {
+    font-family: "Raleway-Medium", sans-serif;
+    color: $gray-dove;
     }
 
-.typo-preview td {
-    font-family: 'Raleway-Medium' ;
-    font-size: 4em ;
-    padding: 0.7em 0.2em;
-    border-left: 1px solid $gray-water;
-    text-align: center;
-    color:$blue-baked;
+h1, h2, h3, h4, h5, h6  {
+    font-family: "Raleway-Medium", sans-serif; 
+    font-weight: normal;
+    color:$gray-dove;
     }
 
+p { 
+    font-family: "Raleway-Medium", sans-serif;
+    line-height: 1.8em;
+    font-size: 1em;
+    color: $gray-dove;
+    }
+
+a {
+    text-decoration: none;
+    color: $blue-baked;
+    }
+
+a:hover {
+    text-decoration: none;
+    color: $blue-baked;
+    }
+
+ul, ol {
+    color: $gray-dove;
+    }
+
+li {
+    font-size:1em;
+    line-height: 1.8em;
+    }
+
+dl, dt, dd {
+    font-size:1em;
+    line-height: 1.8em;
+    color: $gray-dove;
+    }
+
+small { 
+    font-size: 65%;
+    color: $gray-dove;
+    }
+
+blockquote {
+    line-height: 1.8em; 
+    padding: 1em 2em;
+    font-style: italic;
+    font-size: 90%;
+    color: $gray-dove;
+    border-left: 1px solid $gray-dove;
+    background-color: $gray-alabaster;
+    }
+
+q {
+    display:inline-block;
+    padding-left: 0.5em;
+    margin-left:0.5em;
+    font-style: italic;
+    font-size: 90%;
+    color: $gray-dove;
+    border-left: 1px solid $gray-dove;
+    background-color: $gray-alabaster;
+    }
+
+cite {
+    display:inline-block;
+    padding-left: 0.5em;
+    margin-left:0.5em;
+    font-style: italic;
+    color: $gray-dove;
+    border-left: 1px solid $gray-dove;
+    background-color: $gray-alabaster;
+    }
+
+pre, code, samp, kbd {
+    box-shadow: none;
+    }
+
+code {
+    font-family: monospace, monospace;
+    font-size: 0.8em;
+    }
+
+pre {
+    padding: 1em 0;
+    line-height: 1.5em;
+    color: $gray-dove;
+    border: 1px solid $gray-light;
+    }
 
