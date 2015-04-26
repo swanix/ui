@@ -1,19 +1,11 @@
 // -----------------------------------------------------------
-// BODY / IMAGES & HORIZONTAL RULE
+// BODY STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 body {
 	font-family: "Raleway-Medium", sans-serif;
 	color: $gray-dove;
+	background: white;
 	}
 
-hr {
-	border: solid 1px $gray-light;
-	}
-
-img {
-	display: inline-block;
-	max-width:100%;
-	height:auto; 
-	}

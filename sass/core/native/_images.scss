@@ -1,11 +1,10 @@
 // -----------------------------------------------------------
-// LAYOUT PACKAGE
+// IMAGES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Patterns
-@import "patterns/media-queries";
-
-
-// Templates
-@import "templates/index";
+img {
+	display: inline-block;
+	max-width:100%;
+	height:auto; 
+	}

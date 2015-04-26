@@ -30,9 +30,6 @@ body {
     color:                  $gray-dove ;
     background-color:       $white ;}
     // -----------------------------------
-hr {
-    border-color:           $gray-light ;}
-    // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
     color:                  $blue-baked ;}
@@ -72,6 +69,9 @@ cite {
     // -----------------------------------
 pre {
     color:                  $gray-dove ; 
+    border-color:           $gray-light ;}
+    // -----------------------------------
+hr {
     border-color:           $gray-light ;}
     // -----------------------------------
 
@@ -167,15 +167,6 @@ tfoot {
 
 // CUSTOM MODULES 
 // -----------------------------------------------------------
-
-.typo-preview td {
-    border-left-color:      $gray-water ;
-    color:                  $blue-baked ;}
-    // -----------------------------------
-.icon-preview td {
-    border-left-color:      $gray-water ;
-    color:                  $gray-dove ;}
-    // -----------------------------------
 
 .gray {
     color:                  $gray-dove ;}
