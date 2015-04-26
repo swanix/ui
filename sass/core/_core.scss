@@ -1,17 +1,18 @@
-
-/* CORE COMPONENTS */ 
+// -----------------------------------------------------------
+// CORE PACKAGE
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // Vendor components
-
 @import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
 
 // Native components
-
 @import "native/color";
 @import "native/typography";
 @import "native/body";
+@import "native/images";
 @import "native/forms";
 @import "native/buttons";
 @import "native/tables";
