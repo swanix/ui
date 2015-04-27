@@ -52,14 +52,4 @@ section {
   @include span-columns(12);
 }
 
-.sidebar {
-  @include span-columns(3);
-}
-
-footer {
-  height:80px;
-  bottom:0;
-  margin-top: 35px;
-  @include span-columns(12);
-}
 
