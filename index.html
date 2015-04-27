@@ -18,13 +18,13 @@
         <div class="north">
             <img src="images/logo.png" width="140" height="60" alt="Logo">
         </div>
-        <div class="west">
+        <div class="west scroll">
             <h2>West Panel</h2>
             <p>
                 Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum.
             </p>
         </div>
-        <div class="center">
+        <div class="center scroll">
             <h2>Center Panel</h2>
             <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
             <hr>
@@ -837,7 +837,7 @@
                 </div>
             </div>
         </div>
-        <div class="east">
+        <div class="east scroll">
             <h2>East Panel</h2>
             <p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum.</p>
         </div>
@@ -855,14 +855,18 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.sizes.js"></script>
     <script src="js/jlayout.border.js"></script>
-    <script src="js/jquery.jlayout.js"></script>
+    <script src="js/jquery.jlayout.js"></script> 
+    <script src="js/jquery.nicescroll.min.js"></script> 
     <script type="text/javascript">
+
         $('body').addClass('noscroll');
-        
-         jQuery(function($)
-         {
+
+        $(document).ready(function() {  
+            $(".scroll").niceScroll({cursorcolor:"#d3dbf1"});
+        })
+
+         jQuery(function($) {
            var container = $('.layout');
-        
            function relayout() {
              container.layout({resize: false});
            }
