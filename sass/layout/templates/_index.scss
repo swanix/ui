@@ -1,26 +1,51 @@
-/*-----------------------------------------------------------------*/
-/*-------------------------- DEMO PAGE ---------------------------*/
-/*-----------------------------------------------------------------*/
+// -----------------------------------------------------------
+// INDEX LAYOUT
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-header {
-  text-align: center;
-  margin-bottom: em(50);
+.noscroll {
+  overflow: hidden;
+  }
+
+.display-block {
+  display: block;
 }
 
-header h1 {
-  font-size: em(120);
-  margin-bottom: 0;
+.layout {
+  height: 100%;
+  }
 
-}
+.center, .east, .west, .north, .south {
+  border: 1px solid $gray-water;
+  display: inline-block;
+  overflow: auto;
+  }
 
-header h2 {
-  font-size: em(22);
-  letter-spacing: 12px;
-  margin-left: 12px; 
-  text-transform: uppercase;
-  margin-top: -20px;
+.north {
+  height: 3.2em;
+  padding: 0.5em;
+  }
 
-}
+.south {
+  height: 3em;
+  padding: 0.5em;
+  background: white;
+  }
+
+.center {
+  padding: 1em;
+  }
+
+.east {
+  width: 15em;
+  padding: 0.5em;
+  }
+
+.west{
+  width: 15em;
+  padding: 0.5em;
+  }
+
 
 //Color picker tool styles
 #colorinp {
@@ -28,28 +53,5 @@ header h2 {
   margin-top: 0px; 
 }
 // End color picker tool
-
-section {
-  padding: em(40) em(40) ;
-  @include row();
-  @include outer-container;
-}
-
-.header {
-  height: 100px;
-  text-align: center;
-  @include span-columns(12);
-}
-
-.slider {
-  text-align: center;
-  padding: 30px 0 0 50px;
-  @include span-columns(12);
-}
-
-.content {
-  @include omega;
-  @include span-columns(12);
-}
 
 
