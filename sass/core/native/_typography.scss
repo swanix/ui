@@ -29,34 +29,35 @@
 
 body {
     font-family: "Raleway-Medium", sans-serif;
-    color: $gray-dove;
     }
 
 h1, h2, h3, h4, h5, h6  {
     font-family: "Raleway-Medium", sans-serif; 
     font-weight: normal;
-    color:$gray-dove;
     }
 
 p { 
     font-family: "Raleway-Medium", sans-serif;
     line-height: 1.8em;
     font-size: 0.9em;
-    color: $gray-dove;
     }
 
 a {
     text-decoration: none;
-    color: $blue-baked;
     }
 
 a:hover {
     text-decoration: none;
-    color: $blue-baked;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
     }
 
 ul, ol {
-    color: $gray-dove;
     }
 
 li {
@@ -67,12 +68,10 @@ li {
 dl, dt, dd {
     font-size:1em;
     line-height: 1.8em;
-    color: $gray-dove;
     }
 
 small { 
     font-size: 65%;
-    color: $gray-dove;
     }
 
 blockquote {
@@ -80,9 +79,6 @@ blockquote {
     padding: 1em 2em;
     font-style: italic;
     font-size: 90%;
-    color: $gray-dove;
-    border-left: 1px solid $gray-dove;
-    background-color: $gray-alabaster;
     }
 
 q {
@@ -91,9 +87,6 @@ q {
     margin-left:0.5em;
     font-style: italic;
     font-size: 90%;
-    color: $gray-dove;
-    border-left: 1px solid $gray-dove;
-    background-color: $gray-alabaster;
     }
 
 cite {
@@ -101,9 +94,6 @@ cite {
     padding-left: 0.5em;
     margin-left:0.5em;
     font-style: italic;
-    color: $gray-dove;
-    border-left: 1px solid $gray-dove;
-    background-color: $gray-alabaster;
     }
 
 pre, code, samp, kbd {
@@ -118,10 +108,8 @@ code {
 pre {
     padding: 1em 0;
     line-height: 1.5em;
-    color: $gray-dove;
-    border: 1px solid $gray-light;
     }
 
 hr {
-    border: solid 1px $gray-light;
+
     }

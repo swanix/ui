@@ -4,155 +4,148 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// MY PALETTE 
+// SWAN PALETTE 
 // -----------------------------------------------------------
 
-$white:             #FFFFFF ;
-$aqua-haze:         #F5F7FA ;
-$blue-baked:        #79ADD1 ;
-$blue-fountain:     #5F9BC4 ;
-$gray-dove:         #727272 ;
-$gray-lynch:        #62758b ;
-$gray-water:        #d3dbf1 ;
-$gray-pigeon:       #bcc5df ;
-$gray-light:        #E3E3E3 ;
-$gray-alabaster:    #F7F7F7 ;
-$gray-mercury:      #E3E3E3 ;
-$purple:            #813986 ;
-$purple-dark:       #702C75 ;
-$purple-light:      #9B44A2 ;
+$white:             #FFFFFF ; // HTML name color: White
+$white-smoke:       #F5F5F5 ; // HTML name color: WhiteSmoke
+$gainsboro:         #DCDCDC ; // HTML name color: Gainsboro
+$gray:              #808080 ; // HTML name color: Gray
+$light-slategray:   #778899 ; // HTML name color: LightSlateGray
+$slategray:         #708090 ; // HTML name color: SlateGray
+
 
 
 // TEXTS 
 // -----------------------------------------------------------
 
 body {
-    color:                  $gray-dove ;
+    color:                  $gray ;
     background-color:       $white ;}
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
-    color:                  $blue-baked ;}
+    color:                  $light-slategray ;}
     // -----------------------------------
 p {
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 a { 
-    color:                  $blue-baked ;}
+    color:                  $light-slategray ;}
     // -----------------------------------
 a:hover { 
-    color:                  $blue-baked ;}
+    color:                  $slategray ;}
     // -----------------------------------
 small { 
-    color:                  $gray-dove ;}
+    color:                  inherit ;}
     // -----------------------------------
 ul, ol, li {
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 dl, dt, dd {
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 blockquote {
-    border-left-color:      $gray-dove ;
-    color:                  $gray-dove ;
-    background-color:       $gray-alabaster ;}
+    border-left: 1px solid  $gray ;
+    color:                  $gray ;
+    background-color:       $white-smoke ;}
     // -----------------------------------
 q {
-    border-left-color:      $gray-dove ;
-    color:                  $gray-dove ;
-    background-color:       $gray-alabaster ;}
+    border-left: 1px solid  $gray ;
+    color:                  $gray ;
+    background-color:       $white-smoke ;}
     // -----------------------------------
 cite {
-    border-left-color:      $gray-dove ;
-    color:                  $gray-dove ;
-    background-color:       $gray-alabaster ;}
+    border-left: 1px solid  $gray ;
+    color:                  $gray ;
+    background-color:       $white-smoke ;}
     // -----------------------------------
 pre {
-    color:                  $gray-dove ; 
-    border-color:           $gray-light ;}
+    color:                  $gray ; 
+    border: 1px solid       $gainsboro ;}
     // -----------------------------------
 hr {
-    border-color:           $gray-light ;}
+    border: 1px solid       $gainsboro ;}
     // -----------------------------------
 
 // FORMS 
 // -----------------------------------------------------------
 
 legend { 
-    color:                  $blue-baked ;}
+    color:                  $light-slategray ;}
     // -----------------------------------
 fieldset { 
-    border-color:           $gray-water ;}
+    border: 1px solid       $gainsboro ;}
     // -----------------------------------
 label { 
-    color:                  $blue-baked ;}
+    color:                  $light-slategray ;}
     // -----------------------------------
 input[type="text"] { 
-    border-color:           $gray-water ;
+    border: 2px solid       $gainsboro ;
     background-color:       $white ; 
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 input[type="password"] { 
-    border-color:           $gray-water ;
+    border: 2px solid       $gainsboro ;
     background-color:       $white ; 
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 textarea { 
-    border-color:           $gray-water ;
+    border: 2px solid       $gainsboro ;
     background-color:       $white ; 
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 input:focus, 
 textarea:focus {
-    color:                  $gray-dove ;
+    color:                  $gray ;
     background-color:       white ; 
-    border-color:           $gray-pigeon ;} 
+    border: 2px solid       $light-slategray ;} 
     // -----------------------------------
 input[type="submit"] { 
-    border-color:           none ;
-    background-color:       $blue-baked ; 
+    border:                 none ;
+    background-color:       $light-slategray ; 
     color:                  $white ;}
     // -----------------------------------
 input[type="submit"]:hover { 
-    border-color:           none ;
-    background-color:       $blue-fountain ; 
+    border:                 none ;
+    background-color:       $slategray ; 
     color:                  $white ;}
     // -----------------------------------
 input[type="reset"] { 
-    border-color:           none ;
-    background-color:       $blue-baked ; 
+    border:                 none ;
+    background-color:       $light-slategray ; 
     color:                  $white ;}
     // -----------------------------------  
 input[type="reset"]:hover { 
-    border-color:           none ;
-    background-color:       $blue-fountain ; 
+    border:                 none ;
+    background-color:       $slategray ; 
     color:                  $white ;}
     // -----------------------------------
 button { 
-    border-color:           $gray-water ;
-    background-color:       $aqua-haze ; 
-    color:                  $gray-dove ;}
+    border: 1px solid       $gainsboro ;
+    background-color:       $white-smoke ; 
+    color:                  $gray ;}
     // -----------------------------------    
 button:hover { 
-    border-color:           $blue-baked ;
+    border: 1px solid       $light-slategray ;
     background-color:       $white; 
-    color:                  $blue-baked ;}
+    color:                  $slategray ;}
     // -----------------------------------    
 
 // TABLES 
 // -----------------------------------------------------------
 
 table {  
-    border-color:           $gray-water ;
-    color:                  $gray-dove ;} 
+    border: 1px solid       $gainsboro ;
+    color:                  $gray ;} 
     // -----------------------------------
 th {
-    border-bottom-color:    $gray-water ;
-    border-top-color:       $gray-water ;
-    background-color:       $gray-alabaster ;}
+    border-bottom:1px solid $gainsboro ;
+    border-top:1px solid    $gainsboro ;
+    background-color:       $white-smoke ;}
     // -----------------------------------
 td {
-    border-bottom-color:    $gray-water ;
+    border-bottom:1px solid $gainsboro ;
     background-color:       $white ;}
     // -----------------------------------
 thead { 
@@ -165,46 +158,57 @@ tfoot {
     background-color:       none ;}
     // -----------------------------------
 
-// LAYOUTS COLOR (JLAYOUTS) 
-// -----------------------------------------------------------
-
-.north {
-    color:                  inherit ;
-    border:  1px solid      $gray-water ;
-    background-color:       $white ;}
-    // -----------------------------------
-.center {
-    color:                  inherit ;
-    border:  1px solid      $gray-water ;
-    background-color:       $white ;}
-    // -----------------------------------
-.west {
-    color:                  inherit ;
-    border:  1px solid      $gray-water ;
-    background-color:       $white ;}
-    // -----------------------------------
-.east {
-    color:                  inherit;
-    border:  1px solid      $gray-water ;
-    background-color:       $white;}
-    // -----------------------------------
-.south {
-    color:                  inherit;
-    border:  1px solid      $gray-water ;
-    background-color:       $white ;}
-    // -----------------------------------
 
 
 // CUSTOM MODULES 
 // -----------------------------------------------------------
 
+
+
+// LAYOUTS COLOR (JLAYOUTS) 
+// -----------------------------------------------------------
+
+.north {
+    color:                  inherit ;
+    border:  1px solid      $gainsboro ;
+    background-color:       $white ;}
+    // -----------------------------------
+.center {
+    color:                  inherit ;
+    border:  1px solid      $gainsboro ;
+    background-color:       $white ;}
+    // -----------------------------------
+.west {
+    color:                  inherit ;
+    border:  1px solid      $gainsboro ;
+    background-color:       $white ;}
+    // -----------------------------------
+.east {
+    color:                  inherit;
+    border:  1px solid      $gainsboro ;
+    background-color:       $white;}
+    // -----------------------------------
+.south {
+    color:                  inherit;
+    border:  1px solid      $gainsboro ;
+    background-color:       $white ;}
+    // -----------------------------------
+
+
+// CUSTOM COLOR CLASSES 
+// -----------------------------------------------------------
+
 .gray {
-    color:                  $gray-dove ;}
+    color:                  $gray ;}
     // -----------------------------------
 .white {
-    color:                  $white ;}
+    color:                  $white !important ;}
     // -----------------------------------
-.green {
-    color:                  green ;}
-    // -----------------------------------
+
+
+.demo-item { //for icon preview
+    border:1px solid        $gainsboro ;
+    background-color:       $white ;   
+    }
+
 

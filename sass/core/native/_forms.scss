@@ -3,20 +3,17 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-form { color:$gray-dove; }
+form { }
 
 legend { 
     font-size:1.2em; 
-    color:$blue-baked; 
     }
 
 fieldset { 
     padding: 1em 2em;
-    border: 1px solid $gray-water;
     }
 
 label { 
-    color:$blue-baked;
     }
 
 select {
@@ -31,9 +28,6 @@ input[type="text"] {
     height:2em;
     font-size:1em;
     padding:0 0.5em;
-    color:$gray-dove;
-    border:2px solid $gray-water;
-    background: white;
     }
 
 input[type="password"] { 
@@ -42,9 +36,6 @@ input[type="password"] {
     font-size:1em;
     padding:0 0.5em;
     letter-spacing:3px;
-    color:$gray-dove;
-    border:2px solid $gray-water;
-    background: white;
     }
 
 textarea { 
@@ -53,15 +44,10 @@ textarea {
     padding:0 0.5em;
     height: auto;
     min-height: 5em;
-    color:$gray-dove;
-    border:2px solid $gray-water;
-    background: white;
 	}
 
 input:focus, textarea:focus {
-    color:$gray-dove;
-    border:2px solid $gray-pigeon;
-    background: white;
+
     }
 
 
