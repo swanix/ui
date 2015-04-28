@@ -165,6 +165,36 @@ tfoot {
     background-color:       none ;}
     // -----------------------------------
 
+// LAYOUTS COLOR (JLAYOUTS) 
+// -----------------------------------------------------------
+
+.north {
+    color:                  inherit ;
+    border:  1px solid      $gray-water ;
+    background-color:       $white ;}
+    // -----------------------------------
+.center {
+    color:                  inherit ;
+    border:  1px solid      $gray-water ;
+    background-color:       $white ;}
+    // -----------------------------------
+.west {
+    color:                  inherit ;
+    border:  1px solid      $gray-water ;
+    background-color:       $white ;}
+    // -----------------------------------
+.east {
+    color:                  inherit;
+    border:  1px solid      $gray-water ;
+    background-color:       $white;}
+    // -----------------------------------
+.south {
+    color:                  inherit;
+    border:  1px solid      $gray-water ;
+    background-color:       $white ;}
+    // -----------------------------------
+
+
 // CUSTOM MODULES 
 // -----------------------------------------------------------
 
@@ -177,5 +207,4 @@ tfoot {
 .green {
     color:                  green ;}
     // -----------------------------------
-
 
