@@ -28,40 +28,32 @@
   }
 
 .center, .east, .west, .north, .south {
-  border: 1px solid $gray-water;
-  background: $white;
   display: inline-block;
   overflow: auto;
   }
 
 .north {
   height: 3.2em;
-  //padding: 0.5em;
   }
 
 .south {
   height: 3.2em;
-  //padding: 0.5em;
   }
 
 .center {
-  //padding: 1em;
   }
 
 .east {
   width: 15em;
-  //padding: 0.5em;
   }
 
 .west{
   width: 15em;
-  //padding: 0.5em;
   }
 
 .layout-inner {
   width: 84%;
   height: 80%;
-  background-color: white;
   border: 0px;
 }
 
