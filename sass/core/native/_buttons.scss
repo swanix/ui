@@ -15,8 +15,6 @@ input[type="submit"] {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: white;
-    background-color: $blue-baked;
     }
 
 input[type="submit"]:hover { 
@@ -29,8 +27,6 @@ input[type="submit"]:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: white;
-    background-color: $blue-fountain;
     }
 
 input[type="reset"] { 
@@ -45,8 +41,6 @@ input[type="reset"] {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: white;
-    background-color: $blue-baked;
     }
 
 input[type="reset"]:hover { 
@@ -59,8 +53,6 @@ input[type="reset"]:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: white;
-    background-color: $blue-fountain;
     }
 
 button {
@@ -74,9 +66,6 @@ button {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: $gray-dove;
-    border: solid 1px $gray-water;
-    background-color: $white;
     }
 
 button:hover {
@@ -88,7 +77,4 @@ button:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    color: white;
-    border: solid 1px $gray-water;
-    background-color: $blue-fountain;
     }
