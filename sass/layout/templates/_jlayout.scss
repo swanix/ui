@@ -1,7 +1,9 @@
 // -----------------------------------------------------------
-// INDEX LAYOUT
+//  JLAYOUT STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Custom Styles
 
 .noscroll {
   overflow: hidden;
@@ -11,40 +13,66 @@
   display: block;
 }
 
+.box {
+  margin: 1em;
+}
+
+.logo-app {
+  margin:5px 0 0 10px;
+}
+
+// End Custom Styles
+
 .layout {
   height: 100%;
   }
 
 .center, .east, .west, .north, .south {
   border: 1px solid $gray-water;
+  background: $white;
   display: inline-block;
   overflow: auto;
   }
 
 .north {
   height: 3.2em;
-  padding: 0.5em;
+  //padding: 0.5em;
   }
 
 .south {
-  height: 3em;
-  padding: 0.5em;
-  background: white;
+  height: 3.2em;
+  //padding: 0.5em;
   }
 
 .center {
-  padding: 1em;
+  //padding: 1em;
   }
 
 .east {
   width: 15em;
-  padding: 0.5em;
+  //padding: 0.5em;
   }
 
 .west{
   width: 15em;
-  padding: 0.5em;
+  //padding: 0.5em;
   }
+
+.layout-inner {
+  width: 84%;
+  height: 80%;
+  background-color: white;
+  border: 0px;
+}
+
+.layout-inner .west, .layout-inner .east {
+  width: 25%;
+}
+
+.layout-inner .south, .layout-inner .north {
+  height: 20%;
+}
+
 
 
 //Color picker tool styles
