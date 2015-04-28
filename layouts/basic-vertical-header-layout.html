@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><html class="no-js" lang="en" ><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Global --> 
+    <title>Basic Vertical Header Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Favicon --> 
+    <link rel="shortcut icon" href="http://open.zemiotic.com/swan/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://open.zemiotic.com/swan/images/apple-touch-icon" />
+    <!-- Styles and fonts --> 
+    <link href="http://open.zemiotic.com/swan/css/styles.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="layout" data-layout='{"type": "border"}'>
+        <div class="north">
+            North Panel
+        </div>
+        <div class="center">
+            Center Panel
+        </div>
+    </div>
+    <!-- Javascripts -->  
+    <script src="http://open.zemiotic.com/swan/js/jquery-1.11.1.min.js"></script>
+    <script src="http://open.zemiotic.com/swan/js/jquery.sizes.js"></script>
+    <script src="http://open.zemiotic.com/swan/js/jlayout.border.js"></script>
+    <script src="http://open.zemiotic.com/swan/js/jquery.jlayout.js"></script>
+
+    <script type="text/javascript">
+
+        $('body').addClass('noscroll');
+
+         jQuery(function($) {
+           var container = $('.layout');
+           function relayout() {
+             container.layout({resize: false});
+           }
+           relayout();
+        
+           $(window).resize(relayout);
+         });
+
+    </script>
+</body>
+</html>
