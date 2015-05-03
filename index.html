@@ -19,15 +19,15 @@
             <div class="logo-app"><img src="images/logo-app.png" alt="Logo"></div>
         </div>
         <div class="west">
-            <div class="nano">     
-                <div class="nano-content">
+            <div class="nano">
+                <div class="nano-content"> 
                     <div class="box">
-                    <h2>West Panel</h2>
+                        <h2>West Panel</h2>
                         <p>
                             Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum.
                         </p>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
         <div class="center">
@@ -889,19 +889,20 @@
 
     <script type="text/javascript">
 
-        $('body').addClass('noscroll');
-
-        $(".nano").nanoScroller();
-
-         jQuery(function($) {
-           var container = $('.layout');
-           function relayout() {
+        jQuery(function($) {
+            var container = $('.layout');
+            function relayout() {
              container.layout({resize: false});
-           }
-           relayout();
-        
-           $(window).resize(relayout);
-         });
+            }
+            relayout();
+
+            $(window).resize(relayout);
+        });
+
+        $(document).ready(function() {
+            $('body').addClass('noscroll');
+            $(".nano").nanoScroller();
+        });
 
     </script>
 </body>
