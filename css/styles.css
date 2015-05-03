@@ -1,2 +1,1341 @@
-@charset "UTF-8";/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}@font-face{font-family:'Raleway-Medium';src:url("../fonts/Raleway-Medium.otf");font-weight:normal;font-style:normal}@font-face{font-family:'Raleway-Thin';src:url("../fonts/Raleway-Thin.otf");font-weight:normal;font-style:normal}@font-face{font-family:'Aldo-PC';src:url("../fonts/AldoPC.ttf");font-weight:normal;font-style:normal}body{font-family:"Raleway-Medium", sans-serif}h1,h2,h3,h4,h5,h6{font-family:"Raleway-Medium", sans-serif;font-weight:normal}p{font-family:"Raleway-Medium", sans-serif;line-height:1.8em;font-size:0.9em}a{text-decoration:none}a:hover{text-decoration:none;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}li{font-size:1em;line-height:1.8em}dl,dt,dd{font-size:1em;line-height:1.8em}small{font-size:65%}blockquote{line-height:1.8em;padding:1em 2em;font-style:italic;font-size:90%}q{display:inline-block;padding-left:0.5em;margin-left:0.5em;font-style:italic;font-size:90%}cite{display:inline-block;padding-left:0.5em;margin-left:0.5em;font-style:italic}pre,code,samp,kbd{box-shadow:none}code{font-family:monospace, monospace;font-size:0.8em}pre{padding:1em 0;line-height:1.5em}body{font-family:"Raleway-Medium", sans-serif}html,body{width:100%;height:100%;padding:0}img{display:inline-block;max-width:100%;height:auto}legend{font-size:1.2em}fieldset{padding:1em 2em}select{width:100%;margin:0.5em 0}input[type="text"]{width:100%;height:2em;font-size:1em;padding:0 0.5em}input[type="password"]{width:100%;height:2em;font-size:1em;padding:0 0.5em;letter-spacing:3px}textarea{width:100%;font-size:1em;padding:0 0.5em;height:auto;min-height:5em}input[type="submit"]{max-width:8em;padding:0.5em 0.7em;vertical-align:middle;border:none;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}input[type="submit"]:hover{vertical-align:middle;border:none;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}input[type="reset"]{max-width:8em;padding:0.5em 0.7em;vertical-align:middle;border:none;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}input[type="reset"]:hover{vertical-align:middle;border:none;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}button{max-width:8em;padding:0.5em 0.7em;vertical-align:middle;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}button:hover{vertical-align:middle;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s}table{border-collapse:collapse;width:100%;margin:1em auto 1em auto;text-align:left;font-size:0.9em}thead{height:2em}tbody{height:2em}tfoot{height:2em}table caption{font-size:80%;margin:1em}th{text-align:left;padding:1em 0.8em}td{padding:1em 0.8em}body{color:gray;background-color:#fff}h1,h2,h3,h4,h5,h6{color:#789}p{color:gray}a{color:#789}a:hover{color:#708090}small{color:inherit}ul,ol,li{color:gray}dl,dt,dd{color:gray}blockquote{border-left:1px solid gray;color:gray;background-color:#F5F5F5}q{border-left:1px solid gray;color:gray;background-color:#F5F5F5}cite{border-left:1px solid gray;color:gray;background-color:#F5F5F5}pre{color:gray;border:1px solid #DCDCDC}hr{border:1px solid #DCDCDC}legend{color:#789}fieldset{border:1px solid #DCDCDC}label{color:#789}input[type="text"]{border:2px solid #DCDCDC;background-color:#fff;color:gray}input[type="password"]{border:2px solid #DCDCDC;background-color:#fff;color:gray}textarea{border:2px solid #DCDCDC;background-color:#fff;color:gray}input:focus,textarea:focus{color:gray;background-color:#fff;border:2px solid #789}input[type="submit"]{border:none;background-color:#789;color:#fff}input[type="submit"]:hover{border:none;background-color:#708090;color:#fff}input[type="reset"]{border:none;background-color:#789;color:#fff}input[type="reset"]:hover{border:none;background-color:#708090;color:#fff}button{border:1px solid #DCDCDC;background-color:#F5F5F5;color:gray}button:hover{border:1px solid #789;background-color:#fff;color:#708090}table{border:1px solid #DCDCDC;color:gray}th{border-bottom:1px solid #DCDCDC;border-top:1px solid #DCDCDC;background-color:#F5F5F5}td{border-bottom:1px solid #DCDCDC;background-color:#fff}thead{background-color:none}tbody{background-color:none}tfoot{background-color:none}.north{color:inherit;border:1px solid #DCDCDC;background-color:#fff}.center{color:inherit;border:1px solid #DCDCDC;background-color:#fff}.west{color:inherit;border:1px solid #DCDCDC;background-color:#fff}.east{color:inherit;border:1px solid #DCDCDC;background-color:#fff}.south{color:inherit;border:1px solid #DCDCDC;background-color:#fff}.gray{color:gray}.white{color:#fff !important}.demo-item{border:1px solid #DCDCDC;background-color:#fff}@font-face{font-family:'Raleway-Medium';src:url("../fonts/Raleway-Medium.otf");font-weight:normal;font-style:normal}@font-face{font-family:'Raleway-Thin';src:url("../fonts/Raleway-Thin.otf");font-weight:normal;font-style:normal}@font-face{font-family:'Aldo-PC';src:url("../fonts/AldoPC.ttf");font-weight:normal;font-style:normal}body{font-family:"Raleway-Medium",sans-serif;font-style:normal}h1,h2,h3,h4,h5,h6{font-family:"Raleway-Medium",sans-serif;font-style:normal}p{font-family:"Raleway-Medium",sans-serif;font-style:normal}a{font-style:normal}small{font-style:normal}ul,ol,li{font-style:normal}dl,dt,dd{font-style:normal}blockquote{font-style:italic}q{font-style:italic}cite{font-style:normal}.typo-preview td{font-family:"Raleway-Medium"}@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?3vly5m");src:url("../fonts/icomoon.eot?#iefix3vly5m") format("embedded-opentype"),url("../fonts/icomoon.woff?3vly5m") format("woff"),url("../fonts/icomoon.ttf?3vly5m") format("truetype"),url("../fonts/icomoon.svg?3vly5m#icomoon") format("svg");font-weight:normal;font-style:normal}.small{font-size:1em}.medium{font-size:1.5em}.large{font-size:2.5em}.xlarge{font-size:3.5em}.left{float:left;margin-right:1em}.right{float:right;margin-left:1em}.gutter-bottom{margin-bottom:1em}.demo-item{width:140px;height:130px;padding-top:0.5em;display:inline-block;text-align:center;margin-bottom:0.4em}[class^="icon-"],[class*=" icon-"]{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-eye:before{content:"\e000"}.icon-paper-clip:before{content:"\e001"}.icon-mail:before{content:"\e002"}.icon-toggle:before{content:"\e003"}.icon-layout:before{content:"\e004"}.icon-link:before{content:"\e005"}.icon-bell:before{content:"\e006"}.icon-lock:before{content:"\e007"}.icon-unlock:before{content:"\e008"}.icon-ribbon:before{content:"\e009"}.icon-image:before{content:"\e010"}.icon-signal:before{content:"\e011"}.icon-target:before{content:"\e012"}.icon-clipboard:before{content:"\e013"}.icon-clock:before{content:"\e014"}.icon-watch:before{content:"\e015"}.icon-air-play:before{content:"\e016"}.icon-camera:before{content:"\e017"}.icon-video:before{content:"\e018"}.icon-disc:before{content:"\e019"}.icon-printer:before{content:"\e020"}.icon-monitor:before{content:"\e021"}.icon-server:before{content:"\e022"}.icon-cog:before{content:"\e023"}.icon-heart:before{content:"\e024"}.icon-paragraph:before{content:"\e025"}.icon-align-justify:before{content:"\e026"}.icon-align-left:before{content:"\e027"}.icon-align-center:before{content:"\e028"}.icon-align-right:before{content:"\e029"}.icon-book:before{content:"\e030"}.icon-layers:before{content:"\e031"}.icon-stack:before{content:"\e032"}.icon-stack-2:before{content:"\e033"}.icon-paper:before{content:"\e034"}.icon-paper-stack:before{content:"\e035"}.icon-search:before{content:"\e036"}.icon-zoom-in:before{content:"\e037"}.icon-zoom-out:before{content:"\e038"}.icon-reply:before{content:"\e039"}.icon-circle-plus:before{content:"\e040"}.icon-circle-minus:before{content:"\e041"}.icon-circle-check:before{content:"\e042"}.icon-circle-cross:before{content:"\e043"}.icon-square-plus:before{content:"\e044"}.icon-square-minus:before{content:"\e045"}.icon-square-check:before{content:"\e046"}.icon-square-cross:before{content:"\e047"}.icon-microphone:before{content:"\e048"}.icon-record:before{content:"\e049"}.icon-skip-back:before{content:"\e050"}.icon-rewind:before{content:"\e051"}.icon-play:before{content:"\e052"}.icon-pause:before{content:"\e053"}.icon-stop:before{content:"\e054"}.icon-fast-forward:before{content:"\e055"}.icon-skip-forward:before{content:"\e056"}.icon-shuffle:before{content:"\e057"}.icon-repeat:before{content:"\e058"}.icon-folder:before{content:"\e059"}.icon-umbrella:before{content:"\e060"}.icon-moon:before{content:"\e061"}.icon-thermometer:before{content:"\e062"}.icon-drop:before{content:"\e063"}.icon-sun:before{content:"\e064"}.icon-cloud:before{content:"\e065"}.icon-cloud-upload:before{content:"\e066"}.icon-cloud-download:before{content:"\e067"}.icon-upload:before{content:"\e068"}.icon-download:before{content:"\e069"}.icon-location:before{content:"\e070"}.icon-location-2:before{content:"\e071"}.icon-map:before{content:"\e072"}.icon-battery:before{content:"\e073"}.icon-head:before{content:"\e074"}.icon-briefcase:before{content:"\e075"}.icon-speech-bubble:before{content:"\e076"}.icon-anchor:before{content:"\e077"}.icon-globe:before{content:"\e078"}.icon-box:before{content:"\e079"}.icon-reload:before{content:"\e080"}.icon-share:before{content:"\e081"}.icon-marquee:before{content:"\e082"}.icon-marquee-plus:before{content:"\e083"}.icon-marquee-minus:before{content:"\e084"}.icon-tag:before{content:"\e085"}.icon-power:before{content:"\e086"}.icon-command:before{content:"\e087"}.icon-alt:before{content:"\e088"}.icon-esc:before{content:"\e089"}.icon-bar-graph:before{content:"\e090"}.icon-bar-graph-2:before{content:"\e091"}.icon-pie-graph:before{content:"\e092"}.icon-star:before{content:"\e093"}.icon-arrow-left:before{content:"\e094"}.icon-arrow-right:before{content:"\e095"}.icon-arrow-up:before{content:"\e096"}.icon-arrow-down:before{content:"\e097"}.icon-volume:before{content:"\e098"}.icon-mute:before{content:"\e099"}.icon-content-right:before{content:"\e100"}.icon-content-left:before{content:"\e101"}.icon-grid:before{content:"\e102"}.icon-grid-2:before{content:"\e103"}.icon-columns:before{content:"\e104"}.icon-loader:before{content:"\e105"}.icon-bag:before{content:"\e106"}.icon-ban:before{content:"\e107"}.icon-flag:before{content:"\e108"}.icon-trash:before{content:"\e109"}.icon-expand:before{content:"\e110"}.icon-contract:before{content:"\e111"}.icon-maximize:before{content:"\e112"}.icon-minimize:before{content:"\e113"}.icon-plus:before{content:"\e114"}.icon-minus:before{content:"\e115"}.icon-check:before{content:"\e116"}.icon-cross:before{content:"\e117"}.icon-move:before{content:"\e118"}.icon-delete:before{content:"\e119"}.icon-menu:before{content:"\e120"}.icon-archive:before{content:"\e121"}.icon-inbox:before{content:"\e122"}.icon-outbox:before{content:"\e123"}.icon-file:before{content:"\e124"}.icon-file-add:before{content:"\e125"}.icon-file-subtract:before{content:"\e126"}.icon-help:before{content:"\e127"}.icon-open:before{content:"\e128"}.icon-ellipsis:before{content:"\e129"}.noscroll{overflow:hidden}.display-block{display:block}.box{margin:1em}.logo-app{margin:5px 0 0 10px}.layout{height:100%}.center,.east,.west,.north,.south{display:inline-block;overflow:auto}.north{height:3.2em}.south{height:3.2em}.east{width:15em}.west{width:15em}.layout-inner{width:84%;height:80%;border:0px}.layout-inner .west,.layout-inner .east{width:25%}.layout-inner .south,.layout-inner .north{height:20%}#colorinp{width:200px;margin-top:0px}
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/** initial setup **/
+.nano {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.nano > .nano-content {
+  position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.nano > .nano-content:focus {
+  outline: thin dotted; }
+
+.nano > .nano-content::-webkit-scrollbar {
+  display: none; }
+
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block; }
+
+.nano > .nano-pane {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: .01;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.nano > .nano-pane > .nano-slider {
+  background: #444;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0 1px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility: visible\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: 0.99; }
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url("../fonts/Raleway-Thin.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aldo-PC';
+  src: url("../fonts/AldoPC.ttf");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: "Raleway-Medium", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway-Medium", sans-serif;
+  font-weight: normal; }
+
+p {
+  font-family: "Raleway-Medium", sans-serif;
+  line-height: 1.8em;
+  font-size: 0.9em; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+li {
+  font-size: 1em;
+  line-height: 1.8em; }
+
+dl, dt, dd {
+  font-size: 1em;
+  line-height: 1.8em; }
+
+small {
+  font-size: 65%; }
+
+blockquote {
+  line-height: 1.8em;
+  padding: 1em 2em;
+  font-style: italic;
+  font-size: 90%; }
+
+q {
+  display: inline-block;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
+  font-style: italic;
+  font-size: 90%; }
+
+cite {
+  display: inline-block;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
+  font-style: italic; }
+
+pre, code, samp, kbd {
+  box-shadow: none; }
+
+code {
+  font-family: monospace, monospace;
+  font-size: 0.8em; }
+
+pre {
+  padding: 1em 0;
+  line-height: 1.5em; }
+
+body {
+  font-family: "Raleway-Medium", sans-serif; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+legend {
+  font-size: 1.2em; }
+
+fieldset {
+  padding: 1em 2em; }
+
+select {
+  width: 100%;
+  margin: 0.5em 0; }
+
+input[type="text"] {
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  padding: 0 0.5em; }
+
+input[type="password"] {
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  padding: 0 0.5em;
+  letter-spacing: 3px; }
+
+textarea {
+  width: 100%;
+  font-size: 1em;
+  padding: 0 0.5em;
+  height: auto;
+  min-height: 5em; }
+
+input[type="submit"] {
+  max-width: 8em;
+  padding: 0.5em 0.7em;
+  vertical-align: middle;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="submit"]:hover {
+  vertical-align: middle;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="reset"] {
+  max-width: 8em;
+  padding: 0.5em 0.7em;
+  vertical-align: middle;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+input[type="reset"]:hover {
+  vertical-align: middle;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+button {
+  max-width: 8em;
+  padding: 0.5em 0.7em;
+  vertical-align: middle;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+button:hover {
+  vertical-align: middle;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em auto 1em auto;
+  text-align: left;
+  font-size: 0.9em; }
+
+thead {
+  height: 2em; }
+
+tbody {
+  height: 2em; }
+
+tfoot {
+  height: 2em; }
+
+table caption {
+  font-size: 80%;
+  margin: 1em; }
+
+th {
+  text-align: left;
+  padding: 1em 0.8em; }
+
+td {
+  padding: 1em 0.8em; }
+
+body {
+  color: #808080;
+  background-color: #FFFFFF; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: #778899; }
+
+p {
+  color: #808080; }
+
+a {
+  color: #778899; }
+
+a:hover {
+  color: #708090; }
+
+small {
+  color: inherit; }
+
+ul, ol, li {
+  color: #808080; }
+
+dl, dt, dd {
+  color: #808080; }
+
+blockquote {
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
+
+q {
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
+
+cite {
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
+
+pre {
+  color: #808080;
+  border: 1px solid #DCDCDC; }
+
+hr {
+  border: 1px solid #DCDCDC; }
+
+legend {
+  color: #778899; }
+
+fieldset {
+  border: 1px solid #DCDCDC; }
+
+label {
+  color: #778899; }
+
+input[type="text"] {
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
+
+input[type="password"] {
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
+
+textarea {
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
+
+input:focus,
+textarea:focus {
+  color: #808080;
+  background-color: white;
+  border: 2px solid #778899; }
+
+input[type="submit"] {
+  border: none;
+  background-color: #778899;
+  color: #FFFFFF; }
+
+input[type="submit"]:hover {
+  border: none;
+  background-color: #708090;
+  color: #FFFFFF; }
+
+input[type="reset"] {
+  border: none;
+  background-color: #778899;
+  color: #FFFFFF; }
+
+input[type="reset"]:hover {
+  border: none;
+  background-color: #708090;
+  color: #FFFFFF; }
+
+button {
+  border: 1px solid #DCDCDC;
+  background-color: #F5F5F5;
+  color: #808080; }
+
+button:hover {
+  border: 1px solid #778899;
+  background-color: #FFFFFF;
+  color: #708090; }
+
+table {
+  border: 1px solid #DCDCDC;
+  color: #808080; }
+
+th {
+  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #DCDCDC;
+  background-color: #F5F5F5; }
+
+td {
+  border-bottom: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+thead {
+  background-color: none; }
+
+tbody {
+  background-color: none; }
+
+tfoot {
+  background-color: none; }
+
+.north {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+.center {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+.west {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+.east {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+.south {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+.gray {
+  color: #808080; }
+
+.white {
+  color: #FFFFFF !important; }
+
+.demo-item {
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url("../fonts/Raleway-Thin.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aldo-PC';
+  src: url("../fonts/AldoPC.ttf");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: "Raleway-Medium", sans-serif;
+  font-style: normal; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Raleway-Medium", sans-serif;
+  font-style: normal; }
+
+p {
+  font-family: "Raleway-Medium", sans-serif;
+  font-style: normal; }
+
+a {
+  font-style: normal; }
+
+small {
+  font-style: normal; }
+
+ul, ol, li {
+  font-style: normal; }
+
+dl, dt, dd {
+  font-style: normal; }
+
+blockquote {
+  font-style: italic; }
+
+q {
+  font-style: italic; }
+
+cite {
+  font-style: normal; }
+
+.typo-preview td {
+  font-family: "Raleway-Medium"; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?3vly5m");
+  src: url("../fonts/icomoon.eot?#iefix3vly5m") format("embedded-opentype"), url("../fonts/icomoon.woff?3vly5m") format("woff"), url("../fonts/icomoon.ttf?3vly5m") format("truetype"), url("../fonts/icomoon.svg?3vly5m#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.small {
+  font-size: 1em; }
+
+.medium {
+  font-size: 1.5em; }
+
+.large {
+  font-size: 2.5em; }
+
+.xlarge {
+  font-size: 3.5em; }
+
+.left {
+  float: left;
+  margin-right: 1em; }
+
+.right {
+  float: right;
+  margin-left: 1em; }
+
+.gutter-bottom {
+  margin-bottom: 1em; }
+
+.demo-item {
+  width: 140px;
+  height: 130px;
+  padding-top: 0.5em;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0.4em; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-eye:before {
+  content: "\e000"; }
+
+.icon-paper-clip:before {
+  content: "\e001"; }
+
+.icon-mail:before {
+  content: "\e002"; }
+
+.icon-toggle:before {
+  content: "\e003"; }
+
+.icon-layout:before {
+  content: "\e004"; }
+
+.icon-link:before {
+  content: "\e005"; }
+
+.icon-bell:before {
+  content: "\e006"; }
+
+.icon-lock:before {
+  content: "\e007"; }
+
+.icon-unlock:before {
+  content: "\e008"; }
+
+.icon-ribbon:before {
+  content: "\e009"; }
+
+.icon-image:before {
+  content: "\e010"; }
+
+.icon-signal:before {
+  content: "\e011"; }
+
+.icon-target:before {
+  content: "\e012"; }
+
+.icon-clipboard:before {
+  content: "\e013"; }
+
+.icon-clock:before {
+  content: "\e014"; }
+
+.icon-watch:before {
+  content: "\e015"; }
+
+.icon-air-play:before {
+  content: "\e016"; }
+
+.icon-camera:before {
+  content: "\e017"; }
+
+.icon-video:before {
+  content: "\e018"; }
+
+.icon-disc:before {
+  content: "\e019"; }
+
+.icon-printer:before {
+  content: "\e020"; }
+
+.icon-monitor:before {
+  content: "\e021"; }
+
+.icon-server:before {
+  content: "\e022"; }
+
+.icon-cog:before {
+  content: "\e023"; }
+
+.icon-heart:before {
+  content: "\e024"; }
+
+.icon-paragraph:before {
+  content: "\e025"; }
+
+.icon-align-justify:before {
+  content: "\e026"; }
+
+.icon-align-left:before {
+  content: "\e027"; }
+
+.icon-align-center:before {
+  content: "\e028"; }
+
+.icon-align-right:before {
+  content: "\e029"; }
+
+.icon-book:before {
+  content: "\e030"; }
+
+.icon-layers:before {
+  content: "\e031"; }
+
+.icon-stack:before {
+  content: "\e032"; }
+
+.icon-stack-2:before {
+  content: "\e033"; }
+
+.icon-paper:before {
+  content: "\e034"; }
+
+.icon-paper-stack:before {
+  content: "\e035"; }
+
+.icon-search:before {
+  content: "\e036"; }
+
+.icon-zoom-in:before {
+  content: "\e037"; }
+
+.icon-zoom-out:before {
+  content: "\e038"; }
+
+.icon-reply:before {
+  content: "\e039"; }
+
+.icon-circle-plus:before {
+  content: "\e040"; }
+
+.icon-circle-minus:before {
+  content: "\e041"; }
+
+.icon-circle-check:before {
+  content: "\e042"; }
+
+.icon-circle-cross:before {
+  content: "\e043"; }
+
+.icon-square-plus:before {
+  content: "\e044"; }
+
+.icon-square-minus:before {
+  content: "\e045"; }
+
+.icon-square-check:before {
+  content: "\e046"; }
+
+.icon-square-cross:before {
+  content: "\e047"; }
+
+.icon-microphone:before {
+  content: "\e048"; }
+
+.icon-record:before {
+  content: "\e049"; }
+
+.icon-skip-back:before {
+  content: "\e050"; }
+
+.icon-rewind:before {
+  content: "\e051"; }
+
+.icon-play:before {
+  content: "\e052"; }
+
+.icon-pause:before {
+  content: "\e053"; }
+
+.icon-stop:before {
+  content: "\e054"; }
+
+.icon-fast-forward:before {
+  content: "\e055"; }
+
+.icon-skip-forward:before {
+  content: "\e056"; }
+
+.icon-shuffle:before {
+  content: "\e057"; }
+
+.icon-repeat:before {
+  content: "\e058"; }
+
+.icon-folder:before {
+  content: "\e059"; }
+
+.icon-umbrella:before {
+  content: "\e060"; }
+
+.icon-moon:before {
+  content: "\e061"; }
+
+.icon-thermometer:before {
+  content: "\e062"; }
+
+.icon-drop:before {
+  content: "\e063"; }
+
+.icon-sun:before {
+  content: "\e064"; }
+
+.icon-cloud:before {
+  content: "\e065"; }
+
+.icon-cloud-upload:before {
+  content: "\e066"; }
+
+.icon-cloud-download:before {
+  content: "\e067"; }
+
+.icon-upload:before {
+  content: "\e068"; }
+
+.icon-download:before {
+  content: "\e069"; }
+
+.icon-location:before {
+  content: "\e070"; }
+
+.icon-location-2:before {
+  content: "\e071"; }
+
+.icon-map:before {
+  content: "\e072"; }
+
+.icon-battery:before {
+  content: "\e073"; }
+
+.icon-head:before {
+  content: "\e074"; }
+
+.icon-briefcase:before {
+  content: "\e075"; }
+
+.icon-speech-bubble:before {
+  content: "\e076"; }
+
+.icon-anchor:before {
+  content: "\e077"; }
+
+.icon-globe:before {
+  content: "\e078"; }
+
+.icon-box:before {
+  content: "\e079"; }
+
+.icon-reload:before {
+  content: "\e080"; }
+
+.icon-share:before {
+  content: "\e081"; }
+
+.icon-marquee:before {
+  content: "\e082"; }
+
+.icon-marquee-plus:before {
+  content: "\e083"; }
+
+.icon-marquee-minus:before {
+  content: "\e084"; }
+
+.icon-tag:before {
+  content: "\e085"; }
+
+.icon-power:before {
+  content: "\e086"; }
+
+.icon-command:before {
+  content: "\e087"; }
+
+.icon-alt:before {
+  content: "\e088"; }
+
+.icon-esc:before {
+  content: "\e089"; }
+
+.icon-bar-graph:before {
+  content: "\e090"; }
+
+.icon-bar-graph-2:before {
+  content: "\e091"; }
+
+.icon-pie-graph:before {
+  content: "\e092"; }
+
+.icon-star:before {
+  content: "\e093"; }
+
+.icon-arrow-left:before {
+  content: "\e094"; }
+
+.icon-arrow-right:before {
+  content: "\e095"; }
+
+.icon-arrow-up:before {
+  content: "\e096"; }
+
+.icon-arrow-down:before {
+  content: "\e097"; }
+
+.icon-volume:before {
+  content: "\e098"; }
+
+.icon-mute:before {
+  content: "\e099"; }
+
+.icon-content-right:before {
+  content: "\e100"; }
+
+.icon-content-left:before {
+  content: "\e101"; }
+
+.icon-grid:before {
+  content: "\e102"; }
+
+.icon-grid-2:before {
+  content: "\e103"; }
+
+.icon-columns:before {
+  content: "\e104"; }
+
+.icon-loader:before {
+  content: "\e105"; }
+
+.icon-bag:before {
+  content: "\e106"; }
+
+.icon-ban:before {
+  content: "\e107"; }
+
+.icon-flag:before {
+  content: "\e108"; }
+
+.icon-trash:before {
+  content: "\e109"; }
+
+.icon-expand:before {
+  content: "\e110"; }
+
+.icon-contract:before {
+  content: "\e111"; }
+
+.icon-maximize:before {
+  content: "\e112"; }
+
+.icon-minimize:before {
+  content: "\e113"; }
+
+.icon-plus:before {
+  content: "\e114"; }
+
+.icon-minus:before {
+  content: "\e115"; }
+
+.icon-check:before {
+  content: "\e116"; }
+
+.icon-cross:before {
+  content: "\e117"; }
+
+.icon-move:before {
+  content: "\e118"; }
+
+.icon-delete:before {
+  content: "\e119"; }
+
+.icon-menu:before {
+  content: "\e120"; }
+
+.icon-archive:before {
+  content: "\e121"; }
+
+.icon-inbox:before {
+  content: "\e122"; }
+
+.icon-outbox:before {
+  content: "\e123"; }
+
+.icon-file:before {
+  content: "\e124"; }
+
+.icon-file-add:before {
+  content: "\e125"; }
+
+.icon-file-subtract:before {
+  content: "\e126"; }
+
+.icon-help:before {
+  content: "\e127"; }
+
+.icon-open:before {
+  content: "\e128"; }
+
+.icon-ellipsis:before {
+  content: "\e129"; }
+
+/*-----------------------------------------------------------------*/
+/*--------------------- NANO SCROLLER ---------------------------*/
+/*-----------------------------------------------------------------*/
+.nano {
+  width: 100%; }
+
+.nano > .nano-content {
+  padding: none; }
+
+.nano > .nano-pane {
+  background: #FFFFFF; }
+
+.nano > .nano-pane > .nano-slider {
+  background: #DCDCDC; }
+
+.noscroll {
+  overflow: hidden; }
+
+.display-block {
+  display: block; }
+
+.box {
+  margin: 1em; }
+
+.logo-app {
+  margin: 5px 0 0 10px; }
+
+.layout {
+  height: 100%; }
+
+.center, .east, .west, .north, .south {
+  display: inline-block;
+  overflow: auto; }
+
+.north {
+  height: 3.2em; }
+
+.south {
+  height: 3.2em; }
+
+.east {
+  width: 15em; }
+
+.west {
+  width: 15em; }
+
+.layout-inner {
+  width: 84%;
+  height: 80%;
+  border: 0px; }
+
+.layout-inner .west, .layout-inner .east {
+  width: 25%; }
+
+.layout-inner .south, .layout-inner .north {
+  height: 20%; }
+
+#colorinp {
+  width: 200px;
+  margin-top: 0px; }
+
 /*# sourceMappingURL=styles.css.map */
