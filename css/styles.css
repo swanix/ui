@@ -621,6 +621,18 @@ th {
 td {
   padding: 1em 0.8em; }
 
+.gray {
+  color: #808080; }
+
+.white {
+  color: #FFFFFF; }
+
+.red {
+  color: red; }
+
+.green {
+  color: green; }
+
 body {
   color: #808080;
   background-color: #FFFFFF; }
@@ -776,11 +788,13 @@ tfoot {
   border: 1px solid #DCDCDC;
   background-color: #FFFFFF; }
 
-.gray {
-  color: #808080; }
+.nano > .nano-pane {
+  background: #FFFFFF; }
 
-.white {
-  color: #FFFFFF !important; }
+.nano >
+.nano-pane >
+.nano-slider {
+  background: #DCDCDC; }
 
 .demo-item {
   border: 1px solid #DCDCDC;
@@ -1277,20 +1291,11 @@ cite {
 .icon-ellipsis:before {
   content: "\e129"; }
 
-/*-----------------------------------------------------------------*/
-/*--------------------- NANO SCROLLER ---------------------------*/
-/*-----------------------------------------------------------------*/
 .nano {
   width: 100%; }
 
 .nano > .nano-content {
   padding: none; }
-
-.nano > .nano-pane {
-  background: #FFFFFF; }
-
-.nano > .nano-pane > .nano-slider {
-  background: #DCDCDC; }
 
 .noscroll {
   overflow: hidden; }

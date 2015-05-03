@@ -14,6 +14,20 @@ $gray:              #808080 ; // HTML name color: Gray
 $light-slategray:   #778899 ; // HTML name color: LightSlateGray
 $slategray:         #708090 ; // HTML name color: SlateGray
 
+// COLOR CLASSES 
+
+.gray { 
+    color:          $gray ;}
+    // -----------------------------------
+.white { 
+    color:          $white ;}
+    // -----------------------------------
+.red { 
+    color:          red ;}
+    // -----------------------------------
+.green { 
+    color:          green ;}
+    // -----------------------------------
 
 
 // TEXTS 
@@ -164,7 +178,6 @@ tfoot {
 // -----------------------------------------------------------
 
 
-
 // LAYOUTS COLOR (JLAYOUTS) 
 // -----------------------------------------------------------
 
@@ -184,31 +197,39 @@ tfoot {
     background-color:       $white ;}
     // -----------------------------------
 .east {
-    color:                  inherit;
+    color:                  inherit ;
     border:  1px solid      $gainsboro ;
-    background-color:       $white;}
+    background-color:       $white ;}
     // -----------------------------------
 .south {
-    color:                  inherit;
+    color:                  inherit ;
     border:  1px solid      $gainsboro ;
     background-color:       $white ;}
     // -----------------------------------
 
-
-// CUSTOM COLOR CLASSES 
+// NANO SCROLLER 
 // -----------------------------------------------------------
 
-.gray {
-    color:                  $gray ;}
-    // -----------------------------------
-.white {
-    color:                  $white !important ;}
-    // -----------------------------------
+.nano > .nano-pane { 
+    background:            $white ;} 
+    // -----------------------------------     
+.nano > 
+.nano-pane > 
+.nano-slider { 
+    background:           $gainsboro ;}
+    // -----------------------------------   
 
 
-.demo-item { //for icon preview
+// OTHER
+// -----------------------------------------------------------
+
+//for icon preview
+
+.demo-item { 
     border:1px solid        $gainsboro ;
-    background-color:       $white ;   
-    }
+    background-color:       $white ;}
+    // -----------------------------------
+
+
 
 
