@@ -1,0 +1,31 @@
+
+// -----------------------------------------------------------
+// BUTTON MANAGER by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// CUSTOM SHAPES 
+// -----------------------------------------------------------
+
+.rounded {
+    border-radius:              50px; 
+    -moz-border-radius:         50px; 
+    -webkit-border-radius:      50px;
+    padding-left:               30px;
+    padding-right:              30px;
+    min-width:                  100px;
+    ;}
+    // -----------------------------------
+
+.circle-button {
+    display:                    inline-block ;
+    width:                      50px ;
+    height:                     50px ;
+    border-radius:              50% ; 
+    -moz-border-radius:         50% ; 
+    -webkit-border-radius:      50% ;
+    text-align:                 center;
+    border:                     1px solid;  
+    ;}
+    // -----------------------------------
