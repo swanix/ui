@@ -17,161 +17,193 @@ $slategray:         #708090 ; // HTML name color: SlateGray
 // COLOR CLASSES 
 
 .gray { 
-    color:          $gray ;}
-    // -----------------------------------
+    color:          $gray;
+    }
+
 .white { 
-    color:          $white ;}
-    // -----------------------------------
+    color:          $white;
+    }
+
 .red { 
-    color:          red ;}
-    // -----------------------------------
+    color:          red;
+    }
+
 .green { 
-    color:          green ;}
-    // -----------------------------------
+    color:          green;
+    }
 
 
 // TEXTS 
 // -----------------------------------------------------------
 
 body {
-    color:                  $gray ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  $gray;
+    background-color:       $white;
+    }
+
 h1, h2, h3, 
 h4, h5, h6 { 
-    color:                  $light-slategray ;}
-    // -----------------------------------
+    color:                  $light-slategray;
+    }
+
 p {
-    color:                  $gray ;}
-    // -----------------------------------
+    color:                  $gray;
+    }
+
 a { 
-    color:                  $light-slategray ;}
-    // -----------------------------------
+    color:                  $light-slategray;
+    }
+
 a:hover { 
-    color:                  $slategray ;}
-    // -----------------------------------
+    color:                  $slategray;
+    }
+
 small { 
-    color:                  inherit ;}
-    // -----------------------------------
+    color:                  inherit;
+    }
+
 ul, ol, li {
-    color:                  $gray ;}
-    // -----------------------------------
+    color:                  $gray;
+    }
+
 dl, dt, dd {
-    color:                  $gray ;}
-    // -----------------------------------
+    color:                  $gray;
+    }
+
 blockquote {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $white-smoke ;}
-    // -----------------------------------
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $white-smoke;
+    }
+
 q {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $white-smoke ;}
-    // -----------------------------------
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $white-smoke;
+    }
+
 cite {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $white-smoke ;}
-    // -----------------------------------
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $white-smoke;
+    }
+
 pre {
-    color:                  $gray ; 
-    border: 1px solid       $gainsboro ;}
-    // -----------------------------------
+    color:                  $gray; 
+    border: 1px solid       $gainsboro;
+    }
+
 hr {
-    border: 1px solid       $gainsboro ;}
-    // -----------------------------------
+    border: 1px solid       $gainsboro;
+   }
 
 // FORMS 
 // -----------------------------------------------------------
 
 legend { 
-    color:                  $light-slategray ;}
-    // -----------------------------------
+    color:                  $light-slategray;
+    }
+
 fieldset { 
-    border: 1px solid       $gainsboro ;}
-    // -----------------------------------
+    border: 1px solid       $gainsboro;
+    }
+
 label { 
-    color:                  $light-slategray ;}
-    // -----------------------------------
+    color:                  $light-slategray;
+    }
+
 input[type="text"] { 
-    border: 2px solid       $gainsboro ;
-    background-color:       $white ; 
-    color:                  $gray ;}
-    // -----------------------------------
+    border: 2px solid       $gainsboro;
+    background-color:       $white; 
+    color:                  $gray;
+    }
+
 input[type="password"] { 
-    border: 2px solid       $gainsboro ;
-    background-color:       $white ; 
-    color:                  $gray ;}
-    // -----------------------------------
+    border: 2px solid       $gainsboro;
+    background-color:       $white; 
+    color:                  $gray;
+    }
+
 textarea { 
-    border: 2px solid       $gainsboro ;
-    background-color:       $white ; 
-    color:                  $gray ;}
-    // -----------------------------------
+    border: 2px solid       $gainsboro;
+    background-color:       $white; 
+    color:                  $gray;
+    }
+
 input:focus, 
 textarea:focus {
-    color:                  $gray ;
-    background-color:       white ; 
-    border: 2px solid       $light-slategray ;} 
-    // -----------------------------------
+    color:                  $gray;
+    background-color:       white; 
+    border: 2px solid       $light-slategray;
+    } 
+
 input[type="submit"] { 
-    border:                 none ;
-    background-color:       $light-slategray ; 
-    color:                  $white ;}
-    // -----------------------------------
+    border:                 none;
+    background-color:       $light-slategray; 
+    color:                  $white;
+    }
+
 input[type="submit"]:hover { 
-    border:                 none ;
-    background-color:       $slategray ; 
-    color:                  $white ;}
-    // -----------------------------------
+    border:                 none;
+    background-color:       $slategray; 
+    color:                  $white;
+    }
+
 input[type="reset"] { 
-    border:                 none ;
-    background-color:       $light-slategray ; 
-    color:                  $white ;}
-    // -----------------------------------  
+    border:                 none;
+    background-color:       $light-slategray; 
+    color:                  $white;
+    }
+
 input[type="reset"]:hover { 
-    border:                 none ;
-    background-color:       $slategray ; 
-    color:                  $white ;}
-    // -----------------------------------
+    border:                 none;
+    background-color:       $slategray; 
+    color:                  $white;
+    }
+
 button { 
-    border: 1px solid       $gainsboro ;
-    background-color:       $white-smoke ; 
-    color:                  $gray ;}
-    // -----------------------------------    
+    border: 1px solid       $gainsboro;
+    background-color:       $white-smoke; 
+    color:                  $gray;
+    }
+
 button:hover { 
-    border: 1px solid       $light-slategray ;
+    border: 1px solid       $light-slategray;
     background-color:       $white; 
-    color:                  $slategray ;}
-    // -----------------------------------    
+    color:                  $slategray;
+    }
+
 
 // TABLES 
 // -----------------------------------------------------------
 
 table {  
-    border: 1px solid       $gainsboro ;
-    color:                  $gray ;} 
-    // -----------------------------------
-th {
-    border-bottom:1px solid $gainsboro ;
-    border-top:1px solid    $gainsboro ;
-    background-color:       $white-smoke ;}
-    // -----------------------------------
-td {
-    border-bottom:1px solid $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
-thead { 
-    background-color:       none ;}
-    // -----------------------------------
-tbody { 
-    background-color:       none ;}
-    // -----------------------------------
-tfoot { 
-    background-color:       none ;}
-    // -----------------------------------
+    border: 1px solid       $gainsboro;
+    color:                  $gray;
+    }
 
+th {
+    border-bottom:1px solid $gainsboro;
+    border-top:1px solid    $gainsboro;
+    background-color:       $white-smoke;
+    }
+
+td {
+    border-bottom:1px solid $gainsboro;
+    background-color:       $white;
+    }
+
+thead { 
+    background-color:       none;
+    }
+
+tbody { 
+    background-color:       none;
+    }
+
+tfoot { 
+    background-color:       none;
+    }
 
 
 // CUSTOM MODULES 
@@ -182,42 +214,48 @@ tfoot {
 // -----------------------------------------------------------
 
 .north {
-    color:                  inherit ;
-    border:  1px solid      $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  inherit;
+    border:  1px solid      $gainsboro;
+    background-color:       $white; 
+    }
+
 .center {
-    color:                  inherit ;
-    border:  1px solid      $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  inherit;
+    border:  1px solid      $gainsboro;
+    background-color:       $white; 
+    }
+
 .west {
-    color:                  inherit ;
-    border:  1px solid      $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  inherit;
+    border:  1px solid      $gainsboro;
+    background-color:       $white;
+    }
+
 .east {
-    color:                  inherit ;
-    border:  1px solid      $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  inherit;
+    border:  1px solid      $gainsboro;
+    background-color:       $white; 
+    }
+
 .south {
-    color:                  inherit ;
-    border:  1px solid      $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  inherit;
+    border:  1px solid      $gainsboro;
+    background-color:       $white; 
+    }
+
 
 // NANO SCROLLER 
 // -----------------------------------------------------------
 
 .nano > .nano-pane { 
-    background:            $white ;} 
-    // -----------------------------------     
+    background:            $white; 
+    } 
+    
 .nano > 
 .nano-pane > 
 .nano-slider { 
-    background:           $gainsboro ;}
-    // -----------------------------------   
+    background:           $gainsboro; 
+    }
 
 
 // OTHER
@@ -226,9 +264,10 @@ tfoot {
 //for icon preview
 
 .demo-item { 
-    border:1px solid        $gainsboro ;
-    background-color:       $white ;}
-    // -----------------------------------
+    color:                  $gray;
+    border:1px solid        $gainsboro;
+    background-color:       $white; 
+    }
 
 
 
