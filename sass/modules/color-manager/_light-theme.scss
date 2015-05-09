@@ -19,15 +19,15 @@ $slategray:         #708090 ; // HTML name color: SlateGray
 .gray { 
     color:          $gray;
     }
-
+    // -----------------------------------
 .white { 
     color:          $white;
     }
-
+    // -----------------------------------
 .red { 
     color:          red;
     }
-
+    // -----------------------------------
 .green { 
     color:          green;
     }
@@ -40,59 +40,59 @@ body {
     color:                  $gray;
     background-color:       $white;
     }
-
+    // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
     color:                  $light-slategray;
     }
-
+    // -----------------------------------
 p {
     color:                  $gray;
     }
-
+    // -----------------------------------
 a { 
     color:                  $light-slategray;
     }
-
+    // -----------------------------------
 a:hover { 
     color:                  $slategray;
     }
-
+    // -----------------------------------
 small { 
     color:                  inherit;
     }
-
+    // -----------------------------------
 ul, ol, li {
     color:                  $gray;
     }
-
+    // -----------------------------------
 dl, dt, dd {
     color:                  $gray;
     }
-
+    // -----------------------------------
 blockquote {
     border-left: 1px solid  $gray;
     color:                  $gray;
     background-color:       $white-smoke;
     }
-
+    // -----------------------------------
 q {
     border-left: 1px solid  $gray;
     color:                  $gray;
     background-color:       $white-smoke;
     }
-
+    // -----------------------------------
 cite {
     border-left: 1px solid  $gray;
     color:                  $gray;
     background-color:       $white-smoke;
     }
-
+    // -----------------------------------
 pre {
     color:                  $gray; 
     border: 1px solid       $gainsboro;
     }
-
+    // -----------------------------------
 hr {
     border: 1px solid       $gainsboro;
    }
@@ -103,70 +103,70 @@ hr {
 legend { 
     color:                  $light-slategray;
     }
-
+    // -----------------------------------
 fieldset { 
     border: 1px solid       $gainsboro;
     }
-
+    // -----------------------------------
 label { 
     color:                  $light-slategray;
     }
-
+    // -----------------------------------
 input[type="text"] { 
     border: 2px solid       $gainsboro;
     background-color:       $white; 
     color:                  $gray;
     }
-
+    // -----------------------------------
 input[type="password"] { 
     border: 2px solid       $gainsboro;
     background-color:       $white; 
     color:                  $gray;
     }
-
+    // -----------------------------------
 textarea { 
     border: 2px solid       $gainsboro;
     background-color:       $white; 
     color:                  $gray;
     }
-
+    // -----------------------------------
 input:focus, 
 textarea:focus {
     color:                  $gray;
     background-color:       white; 
     border: 2px solid       $light-slategray;
     } 
-
+    // -----------------------------------
 input[type="submit"] { 
     border:                 none;
     background-color:       $light-slategray; 
     color:                  $white;
     }
-
+    // -----------------------------------
 input[type="submit"]:hover { 
     border:                 none;
     background-color:       $slategray; 
     color:                  $white;
     }
-
+    // -----------------------------------
 input[type="reset"] { 
     border:                 none;
     background-color:       $light-slategray; 
     color:                  $white;
     }
-
+    // -----------------------------------
 input[type="reset"]:hover { 
     border:                 none;
     background-color:       $slategray; 
     color:                  $white;
     }
-
+    // -----------------------------------
 button { 
     border: 1px solid       $gainsboro;
     background-color:       $white-smoke; 
     color:                  $gray;
     }
-
+    // -----------------------------------
 button:hover { 
     border: 1px solid       $light-slategray;
     background-color:       $white; 
@@ -181,26 +181,26 @@ table {
     border: 1px solid       $gainsboro;
     color:                  $gray;
     }
-
+    // -----------------------------------
 th {
     border-bottom:1px solid $gainsboro;
     border-top:1px solid    $gainsboro;
     background-color:       $white-smoke;
     }
-
+    // -----------------------------------
 td {
     border-bottom:1px solid $gainsboro;
     background-color:       $white;
     }
-
+    // -----------------------------------
 thead { 
     background-color:       none;
     }
-
+    // -----------------------------------
 tbody { 
     background-color:       none;
     }
-
+    // -----------------------------------
 tfoot { 
     background-color:       none;
     }
@@ -218,25 +218,25 @@ tfoot {
     border:  1px solid      $gainsboro;
     background-color:       $white; 
     }
-
+    // -----------------------------------
 .center {
     color:                  inherit;
     border:  1px solid      $gainsboro;
     background-color:       $white; 
     }
-
+    // -----------------------------------
 .west {
     color:                  inherit;
     border:  1px solid      $gainsboro;
     background-color:       $white;
     }
-
+    // -----------------------------------
 .east {
     color:                  inherit;
     border:  1px solid      $gainsboro;
     background-color:       $white; 
     }
-
+    // -----------------------------------
 .south {
     color:                  inherit;
     border:  1px solid      $gainsboro;
@@ -250,7 +250,7 @@ tfoot {
 .nano > .nano-pane { 
     background:            $white; 
     } 
-    
+    // -----------------------------------  
 .nano > 
 .nano-pane > 
 .nano-slider { 
