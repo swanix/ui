@@ -7,32 +7,36 @@
 // SWAN PALETTE 
 // -----------------------------------------------------------
 
-$white:             #FFFFFF ; 
-$gray-light:        #dfe0e6 ;
-$gray:              #88898c ; 
-$gray-shadow:       #323438 ;
-$gray-dark:         #222326 ; 
-$gray-black:        #121314 ; 
+$white:             #FFFFFF; 
+$gray-light:        #dfe0e6;
+$gray:              #88898c; 
+$gray-shadow:       #323438;
+$gray-dark:         #222326; 
+$gray-black:        #121314; 
 
-$white-smoke:       #F5F5F5 ; // HTML name color: WhiteSmoke
-$gainsboro:         #DCDCDC ; // HTML name color: Gainsboro
-$light-slategray:   #778899 ; // HTML name color: LightSlateGray
-$slategray:         #708090 ; // HTML name color: SlateGray
+$white-smoke:       #F5F5F5; // HTML name color: WhiteSmoke
+$gainsboro:         #DCDCDC; // HTML name color: Gainsboro
+$light-slategray:   #778899; // HTML name color: LightSlateGray
+$slategray:         #708090; // HTML name color: SlateGray
 
 
 // COLOR CLASSES 
 
 .gray { 
-    color:          $gray ;}
+    color:          $gray; 
+    }
     // -----------------------------------
 .white { 
-    color:          $white ;}
+    color:          $white; 
+    }
     // -----------------------------------
 .red { 
-    color:          red ;}
+    color:          red; 
+    }
     // -----------------------------------
 .green { 
-    color:          green ;}
+    color:          green; 
+    }
     // -----------------------------------
 
 
@@ -40,142 +44,174 @@ $slategray:         #708090 ; // HTML name color: SlateGray
 // -----------------------------------------------------------
 
 body {
-    color:                  $gray ;
-    background-color:       $gray-black ;}
+    color:                  $gray;
+    background-color:       $gray-black; 
+    }
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
-    color:                  $white ;}
+    color:                  $white; 
+    }
     // -----------------------------------
 p {
-    color:                  $gray ;}
+    color:                  $gray; 
+    }
     // -----------------------------------
 a { 
-    color:                  $white ;}
+    color:                  $white; 
+    }
     // -----------------------------------
 a:hover { 
-    color:                  $light-slategray ;}
+    color:                  $light-slategray; 
+    }
     // -----------------------------------
 small { 
-    color:                  $gray ;}
+    color:                  $gray; 
+    }
     // -----------------------------------
 ul, ol, li {
-    color:                  $gray ;}
+    color:                  $gray; 
+    }
     // -----------------------------------
 dl, dt, dd {
-    color:                  $gray ;}
+    color:                  $gray; 
+    }
     // -----------------------------------
 blockquote {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $gray-dark ;}
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 q {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $gray-dark ;}
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 cite {
-    border-left: 1px solid  $gray ;
-    color:                  $gray ;
-    background-color:       $gray-dark ;}
+    border-left: 1px solid  $gray;
+    color:                  $gray;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 pre {
-    color:                  $gray ; 
-    border: 1px solid       $gray-dark ;}
+    color:                  $gray; 
+    border: 1px solid       $gray-dark; 
+    }
     // -----------------------------------
 hr {
-    border: 1px solid       $gray-shadow ;}
+    border: 1px solid       $gray-shadow; 
+    }
     // -----------------------------------
 
 // FORMS 
 // -----------------------------------------------------------
 
 legend { 
-    color:                  $white ;}
+    color:                  $white; 
+    }
     // -----------------------------------
 fieldset { 
-    border: 1px solid       $gray-dark ;}
+    border: 1px solid       $gray-dark; 
+    }
     // -----------------------------------
 label { 
-    color:                  $white ;}
+    color:                  $white; 
+    }
     // -----------------------------------
 input[type="text"] { 
-    border: 2px solid       $gray-shadow ;
-    background-color:       $gray-dark ; 
-    color:                  $gray ;}
+    border: 2px solid       $gray-shadow;
+    background-color:       $gray-dark; 
+    color:                  $gray; 
+    }
     // -----------------------------------
 input[type="password"] { 
-    border: 2px solid       $gray-shadow ;
-    background-color:       $gray-dark ; 
-    color:                  $gray ;}
+    border: 2px solid       $gray-shadow;
+    background-color:       $gray-dark; 
+    color:                  $gray; 
+    }
     // -----------------------------------
 textarea { 
-    border: 2px solid       $gray-shadow ;
-    background-color:       $gray-dark ; 
-    color:                  $gray ;}
+    border: 2px solid       $gray-shadow;
+    background-color:       $gray-dark; 
+    color:                  $gray; 
+    }
     // -----------------------------------
 input:focus, 
 textarea:focus {
-    color:                  $white ;
-    background-color:       $gray-dark ; 
-    border: 2px solid       $gray ;} 
+    color:                  $white;
+    background-color:       $gray-dark; 
+    border: 2px solid       $gray; 
+    } 
     // -----------------------------------
 input[type="submit"] { 
-    border:                 none ;
-    background-color:       $light-slategray ; 
-    color:                  $white ;}
+    border:                 none;
+    background-color:       $light-slategray; 
+    color:                  $white; 
+    }
     // -----------------------------------
 input[type="submit"]:hover { 
-    border:                 none ;
-    background-color:       $slategray ; 
-    color:                  $white ;}
+    border:                 none;
+    background-color:       $slategray; 
+    color:                  $white; 
+    }
     // -----------------------------------
 input[type="reset"] { 
-    border:                 none ;
-    background-color:       $light-slategray ; 
-    color:                  $white ;}
+    border:                 none;
+    background-color:       $light-slategray; 
+    color:                  $white; 
+    }
     // -----------------------------------  
 input[type="reset"]:hover { 
-    border:                 none ;
-    background-color:       $slategray ; 
-    color:                  $white ;}
+    border:                 none;
+    background-color:       $slategray; 
+    color:                  $white; 
+    }
     // -----------------------------------
 button { 
-    border: 1px solid       $gray-shadow ;
-    background-color:       $gray-dark ; 
-    color:                  $gray ;}
+    border: 1px solid       $gray-shadow;
+    background-color:       $gray-dark; 
+    color:                  $gray; 
+    }
     // -----------------------------------    
 button:hover { 
-    border: 1px solid       $light-slategray ;
-    background-color:       $gray-black ; 
-    color:                  $white ;}
+    border: 1px solid       $light-slategray;
+    background-color:       $gray-black; 
+    color:                  $white; 
+    }
     // -----------------------------------    
 
 // TABLES 
 // -----------------------------------------------------------
 
 table {  
-    border: 1px solid       $gray-shadow ;
-    color:                  $gray ;} 
+    border: 1px solid       $gray-shadow;
+    color:                  $gray; 
+    } 
     // -----------------------------------
 th {
-    border-bottom:1px solid $gray-shadow ;
-    border-top:1px solid    $gray-shadow ;
-    background-color:       $gray-black ;}
+    border-bottom:1px solid $gray-shadow;
+    border-top:1px solid    $gray-shadow;
+    background-color:       $gray-black; 
+    }
     // -----------------------------------
 td {
-    border-bottom:1px solid $gray-shadow ;
-    background-color:       $gray-black ;}
+    border-bottom:1px solid $gray-shadow;
+    background-color:       $gray-black; 
+    }
     // -----------------------------------
 thead { 
-    background-color:       none ;}
+    background-color:       none; 
+    }
     // -----------------------------------
 tbody { 
-    background-color:       none ;}
+    background-color:       none; 
+    }
     // -----------------------------------
 tfoot { 
-    background-color:       none ;}
+    background-color:       none; 
+    }
     // -----------------------------------
 
 
@@ -188,41 +224,48 @@ tfoot {
 // -----------------------------------------------------------
 
 .north {
-    color:                  inherit ;
-    border:  1px solid      $gray-black ;
-    background-color:       $gray-dark ;}
+    color:                  inherit;
+    border:  1px solid      $gray-black;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 .center {
-    color:                  inherit ;
-    border:  1px solid      $gray-black ;
-    background-color:       $gray-black ;}
+    color:                  inherit;
+    border:  1px solid      $gray-black;
+    background-color:       $gray-black; 
+    }
     // -----------------------------------
 .west {
-    color:                  inherit ;
-    border:  1px solid      $gray-black ;
-    background-color:       $gray-dark ;}
+    color:                  inherit;
+    border:  1px solid      $gray-black;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 .east {
-    color:                  inherit ;
-    border:  1px solid      $gray-black ;
-    background-color:       $gray-dark ;}
+    color:                  inherit;
+    border:  1px solid      $gray-black;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 .south {
-    color:                  inherit ;
-    border:  1px solid      $gray-black ;
-    background-color:       $gray-dark ;}
+    color:                  inherit;
+    border:  1px solid      $gray-black;
+    background-color:       $gray-dark; 
+    }
     // -----------------------------------
 
 // NANO SCROLLER 
 // -----------------------------------------------------------
 
 .nano > .nano-pane { 
-    background:            $gray-dark ;} 
+    background:            $gray-dark; 
+    } 
     // -----------------------------------     
 .nano > 
 .nano-pane > 
 .nano-slider { 
-    background:           $gray-shadow ;}
+    background:           $gray-shadow; 
+    }
     // -----------------------------------   
 
 
@@ -232,15 +275,17 @@ tfoot {
 //for icon preview
 
 .demo-item { 
-    border:1px solid        $gray-shadow ;
-    background-color:       $gray-dark ;
-    color:                  $white ;}
+    border:1px solid        $gray-shadow;
+    background-color:       $gray-dark;
+    color:                  $white; 
+    }
     // -----------------------------------
 
 .demo-item:hover { 
-    border:1px solid        $light-slategray ;
-    background-color:       $gray-dark ;
-    color:                  $white ;}
+    border:1px solid        $light-slategray;
+    background-color:       $gray-dark;
+    color:                  $white; 
+    }
     // -----------------------------------
 
 
