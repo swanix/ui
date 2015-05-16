@@ -9,11 +9,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?3vly5m');
-    src:url('../fonts/icomoon.eot?#iefix3vly5m') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?3vly5m') format('woff'),
-        url('../fonts/icomoon.ttf?3vly5m') format('truetype'),
-        url('../fonts/icomoon.svg?3vly5m#icomoon') format('svg');
+    src:$url-icon-font-eot;
+    src:$url-icon-font-eot-iefix format('embedded-opentype'),
+        $url-icon-font-woff format('woff'),
+        $url-icon-font-ttf format('truetype'),
+        $url-icon-font-svg format('svg');
     font-weight: normal;
     font-style: normal;
 }
