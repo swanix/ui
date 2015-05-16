@@ -2,42 +2,21 @@
 // NATIVE TYPOGRAPHY STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-@font-face {
-    font-family: 'Raleway-Medium';
-    src: url('../fonts/Raleway-Medium.otf') ;
-    font-weight: normal ;
-    font-style: normal ;
-    }
-
-@font-face {
-    font-family: 'Raleway-Thin';
-    src: url('../fonts/Raleway-Thin.otf') ;
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'Aldo-PC';
-    src: url('../fonts/AldoPC.ttf') ;
-    font-weight: normal;
-    font-style: normal;
-    }
     
 // TEXTS 
 // -----------------------------------------------------------+
 
 body {
-    font-family: "Raleway-Medium", sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
     }
 
 h1, h2, h3, h4, h5, h6  {
-    font-family: "Raleway-Medium", sans-serif; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
     font-weight: normal;
     }
 
 p { 
-    font-family: "Raleway-Medium", sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
     line-height: 1.8em;
     font-size: 0.9em;
     }
