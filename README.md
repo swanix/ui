@@ -24,6 +24,7 @@ sass/
 |   |– typo-manager/       # Typo Manager Module
 |   |– icon-manager/       # Icon Manager Module
 |   |– button-manager/     # Button Manager Module
+|   |– scroll-manager/     # Scroll Manager Module
 |   |– your-module/        # Your custom module
 |   |– _modules.scss       # MODULES package
 |
