@@ -341,7 +341,6 @@ textarea {
   min-height: 5em; }
 
 input[type="submit"] {
-  max-width: 8em;
   padding: 0.5em 0.7em;
   vertical-align: middle;
   border: none;
@@ -361,7 +360,6 @@ input[type="submit"]:hover {
   transition: .2s; }
 
 input[type="reset"] {
-  max-width: 8em;
   padding: 0.5em 0.7em;
   vertical-align: middle;
   border: none;
