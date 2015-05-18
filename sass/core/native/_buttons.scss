@@ -4,7 +4,6 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 input[type="submit"] { 
-    max-width:8em;
     padding: 0.5em 0.7em;
     vertical-align: middle;
     border: none;
@@ -30,7 +29,6 @@ input[type="submit"]:hover {
     }
 
 input[type="reset"] { 
-    max-width:8em;
     padding: 0.5em 0.7em;
     vertical-align: middle;
     border: none;
