@@ -333,6 +333,12 @@ input[type="password"] {
   padding: 0 0.5em;
   letter-spacing: 3px; }
 
+input[type="email"] {
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  padding: 0 0.5em; }
+
 textarea {
   width: 100%;
   font-size: 1em;
@@ -493,6 +499,16 @@ label {
   color: #778899; }
 
 input[type="text"] {
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
+
+input[type="text"]:disabled {
+  border: 2px solid #DCDCDC;
+  background-color: #F5F5F5;
+  color: #808080; }
+
+input[type="email"] {
   border: 2px solid #DCDCDC;
   background-color: #FFFFFF;
   color: #808080; }

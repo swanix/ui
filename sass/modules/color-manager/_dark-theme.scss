@@ -126,6 +126,18 @@ input[type="text"] {
     color:                  $gray; 
     }
     // -----------------------------------
+input[type="text"]:disabled { 
+    border: 2px solid       $gray-shadow;
+    background-color:       $gray-shadow; 
+    color:                  $gray-light;
+    }
+    // -----------------------------------
+input[type="email"] { 
+    border: 2px solid       $gray-shadow;
+    background-color:       $gray-dark; 
+    color:                  $gray;
+    }
+    // -----------------------------------
 input[type="password"] { 
     border: 2px solid       $gray-shadow;
     background-color:       $gray-dark; 

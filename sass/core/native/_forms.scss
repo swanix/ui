@@ -38,16 +38,21 @@ input[type="password"] {
     letter-spacing:3px;
     }
 
+input[type="email"] { 
+    width:100%;
+    height:2em;
+    font-size:1em;
+    padding:0 0.5em;
+    }
+
 textarea { 
     width:100%;
     font-size:1em;
     padding:0 0.5em;
     height: auto;
     min-height: 5em;
-	}
+    }
 
 input:focus, textarea:focus {
 
     }
-
-

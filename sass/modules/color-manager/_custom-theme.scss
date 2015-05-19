@@ -118,6 +118,18 @@ input[type="text"] {
     color:                  $gray;
     }
     // -----------------------------------
+input[type="text"]:disabled { 
+    border: 2px solid       $gainsboro;
+    background-color:       $white-smoke; 
+    color:                  $gray;
+    }
+    // -----------------------------------
+input[type="email"] { 
+    border: 2px solid       $gainsboro;
+    background-color:       $white; 
+    color:                  $gray;
+    }
+    // -----------------------------------
 input[type="password"] { 
     border: 2px solid       $gainsboro;
     background-color:       $white; 
