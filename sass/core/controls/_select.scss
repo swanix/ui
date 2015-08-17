@@ -1,12 +1,9 @@
 // -----------------------------------------------------------
-// LAYOUT PACKAGE
+// SELECT STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Patterns
-//@import "patterns/media-queries";
-
-
-// Templates
-@import "templates/jlayout";
-@import "templates/home-page";
+select {
+    width: 100%; 
+    margin:0.5em 0;
+    }

@@ -1,12 +1,16 @@
 // -----------------------------------------------------------
-// LAYOUT PACKAGE
+// NATIVE BUTTON STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Patterns
-//@import "patterns/media-queries";
+textarea { 
+    width:100%;
+    font-size:1em;
+    padding:0 0.5em;
+    height: auto;
+    min-height: 5em;
+    }
 
+textarea:focus {
 
-// Templates
-@import "templates/jlayout";
-@import "templates/home-page";
+    }

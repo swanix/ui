@@ -5,17 +5,26 @@
 
 // Vendor components
 @import "vendor/normalize";
-@import "vendor/bourbon/bourbon";
-//@import "vendor/neat/neat";
+@import "vendor/bourbon/bourbon"; // Sass Mixins library
+@import "vendor/neat/neat"; // Sass Grid
 @import "vendor/nanoscroller";
 
-// Native components
-@import "native/typography";
-@import "native/body";
-@import "native/images";
-@import "native/forms";
-@import "native/buttons";
-@import "native/tables";
+// Base components
+@import "base/body";
+@import "base/typography";
+@import "base/images";
+@import "base/tables";
 
 
-
+// User interface controls
+@import "controls/base-form";
+@import "controls/buttons";
+@import "controls/checkboxes";
+@import "controls/progress";
+@import "controls/radio-buttons";
+@import "controls/scrollbars";
+@import "controls/select";
+@import "controls/sliders";
+@import "controls/switches";
+@import "controls/text-input";
+@import "controls/textarea-input";

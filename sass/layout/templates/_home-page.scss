@@ -1,0 +1,58 @@
+// -----------------------------------------------------------
+//  HOME PAGE TEMPLATE
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+#main-container {
+  @include outer-container(930px);
+}
+
+#header {
+  @include span-columns(12);
+  background: green;
+  min-height: 160px;
+}
+
+  #logo {
+    @include span-columns(2 of 12);
+    background: #000;
+  }
+
+  #main-menu {
+    @include span-columns(10 of 12);
+    background: blue;
+    min-height: 80px;
+  }
+
+#slideshow {
+  @include span-columns(12);
+  background: blue;
+  min-height: 350px;
+}
+
+#latest-news {
+  @include span-columns(12);
+  background: red;
+  min-height: 300px;
+}
+
+// News item
+
+.NewsSummary {
+  @include span-columns(4 of 12);
+  background: black;
+  min-height: 300px;
+  padding: 20px;
+}
+
+.NewsSummaryLink {
+  margin-bottom: 10px;
+}
+
+.NewsSummary{
+    @media screen and (max-width: 768px){
+        @include span-columns(12 of 12);
+        margin-bottom: 15px;
+    }
+}
+

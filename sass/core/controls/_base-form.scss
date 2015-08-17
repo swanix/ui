@@ -1,12 +1,21 @@
 // -----------------------------------------------------------
-// LAYOUT PACKAGE
+// BASE FORM STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Patterns
-//@import "patterns/media-queries";
+form { }
+
+legend { 
+    font-size:1.2em; 
+    }
+
+fieldset { 
+    padding: 1em 2em;
+    }
+
+label { 
+    }
 
 
-// Templates
-@import "templates/jlayout";
-@import "templates/home-page";
+option { }
+

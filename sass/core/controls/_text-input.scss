@@ -1,27 +1,7 @@
 // -----------------------------------------------------------
-// NATIVE FORM STYLES
+// INPUT TEXTS STYLES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-form { }
-
-legend { 
-    font-size:1.2em; 
-    }
-
-fieldset { 
-    padding: 1em 2em;
-    }
-
-label { 
-    }
-
-select {
-    width: 100%; 
-    margin:0.5em 0;
-    }
-
-option { }
 
 input[type="text"] { 
     width:100%;
@@ -45,14 +25,7 @@ input[type="email"] {
     padding:0 0.5em;
     }
 
-textarea { 
-    width:100%;
-    font-size:1em;
-    padding:0 0.5em;
-    height: auto;
-    min-height: 5em;
-    }
 
-input:focus, textarea:focus {
+input:focus {
 
     }
