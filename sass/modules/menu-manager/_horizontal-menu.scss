@@ -8,20 +8,32 @@
 
 .main-menu {
     @include span-columns(10 of 12);
+    min-height: 60px;
+    margin-top: 30px;
+    background: $gainsboro;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;    
+
     @media screen and (max-width: 768px){
         @include span-columns(8 of 12);
         margin-top: 0px;
     }
 }
 
-.main-menu {
-    min-height: 60px;
-    margin-top: 30px;
-    background: $gainsboro;
-}
-
 .main-menu li {
     list-style: none;
     float: left;
     margin-right: 30px;
+}
+
+.main-menu ul {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.social-links {
+    margin-top: 5px;
 }

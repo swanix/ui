@@ -438,7 +438,7 @@ button:hover {
 
 .btn {
   max-width: 8em;
-  padding: 0.5em 0.7em;
+  padding: 0.7em 0.7em;
   vertical-align: middle;
   display: inline-block;
   -o-transition: .2s;
@@ -1192,7 +1192,13 @@ cite {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%; }
+  width: 82.94039%;
+  min-height: 60px;
+  margin-top: 30px;
+  background: #DCDCDC;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
   .main-menu:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -1205,15 +1211,19 @@ cite {
       .main-menu:last-child {
         margin-right: 0; } }
 
-.main-menu {
-  min-height: 60px;
-  margin-top: 30px;
-  background: #DCDCDC; }
-
 .main-menu li {
   list-style: none;
   float: left;
   margin-right: 30px; }
+
+.main-menu ul {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+  display: inline-block; }
+
+.social-links {
+  margin-top: 5px; }
 
 .noscroll {
   overflow: hidden; }
@@ -1287,7 +1297,8 @@ cite {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%; }
+  width: 14.70196%;
+  padding: 20px 0 0 30px; }
   .logo:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -1304,10 +1315,31 @@ cite {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background: #DDD;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: center;
+  overflow: hidden; }
   .slideshow:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .slideshow {
+      width: 150%;
+      overflow: hidden; } }
+
+.slideshow img {
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-top-right-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-topright: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px; }
+  @media screen and (max-width: 768px) {
+    .slideshow img {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      position: relative;
+      left: 100%;
+      margin-left: -200%; } }
 
 .content-area {
   float: left;
@@ -1350,7 +1382,13 @@ cite {
   height: 80px;
   padding: 10px;
   margin-top: 20px;
-  background: #DCDCDC; }
+  background: #DCDCDC;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
   .footer:last-child {
     margin-right: 0; }
 
@@ -1362,13 +1400,22 @@ cite {
   background: #DDD;
   margin-top: 20px;
   height: 120px;
-  padding: 30px 10px 0 30px; }
+  padding: 30px 10px 0 30px;
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-top-right-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-topright: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px; }
   .subheader:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .subheader {
       height: 70px;
-      padding: 5px 10px 10px 20px; } }
+      padding: 5px 10px 10px 20px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px; } }
 
 .section-title {
   float: left;
@@ -1405,6 +1452,19 @@ cite {
       .content:last-child {
         margin-right: 0; } }
 
+.content-image {
+  background: #fff; }
+
+.content-image img {
+  -webkit-border-top-right-radius: 40px;
+  -moz-border-radius-topright: 40px;
+  border-top-right-radius: 40px; }
+  @media screen and (max-width: 768px) {
+    .content-image img {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px; } }
+
 .content-title {
   background: #DDD;
   padding: 10px 30px; }
@@ -1417,7 +1477,7 @@ cite {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  background: #F2F2F2;
+  background: #DDD;
   padding: 0 10px 30px 10px; }
   .sidebar:last-child {
     margin-right: 0; }
@@ -1429,6 +1489,11 @@ cite {
       width: 100%; }
       .sidebar:last-child {
         margin-right: 0; } }
+
+.banner img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
 
 .panel {
   margin-top: 10px; }
