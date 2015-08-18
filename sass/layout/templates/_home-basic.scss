@@ -9,9 +9,19 @@
     margin-top: 20px;
     height: 120px;
     padding: 30px 10px 0 30px;
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
     @media screen and (max-width: 768px){
         height: 70px;
         padding: 5px 10px 10px 20px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
         }
     }
 
@@ -34,7 +44,18 @@
     }
 
     .content-image {
+        background: #fff;
+      }
 
+    .content-image img {
+        -webkit-border-top-right-radius: 40px;
+        -moz-border-radius-topright: 40px;
+        border-top-right-radius: 40px;
+        @media screen and (max-width: 768px){
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            }
       }
 
     .content-title {
@@ -49,11 +70,17 @@
 
 .sidebar {
     @include span-columns(4 of 12);
-    background: #F2F2F2;
+    background: #DDD;
     padding: 0 10px 30px 10px;
     @media screen and (max-width: 768px){
         @include span-columns(12 of 12);
         }
+    }
+
+    .banner img {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
     }
 
     .panel {

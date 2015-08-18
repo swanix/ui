@@ -19,6 +19,7 @@
 
   .logo {
     @include span-columns(2 of 12);
+    padding: 20px 0 0 30px;
     @media screen and (max-width: 768px){
         @include span-columns(4 of 12);
         }
@@ -26,9 +27,35 @@
 
 .slideshow {
   @include span-columns(12);
-  background: #DDD;
   margin-top: 20px;
+  text-align: center;
+  overflow: hidden; 
+
+    @media screen and (max-width: 768px){
+        width: 150%;
+        overflow: hidden;
+        }
   }
+
+
+.slideshow img {
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    @media screen and (max-width: 768px){
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        position: relative;
+        left:100%;
+        margin-left: -200%;
+        }
+  }
+
 
 .content-area {
   @include span-columns(12);
@@ -61,5 +88,11 @@
   padding: 10px;
   margin-top:20px;
   background: $gainsboro;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   }
 
