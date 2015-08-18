@@ -108,3 +108,27 @@ button:hover {
     }
     // -----------------------------------
 
+.btn {
+    max-width:8em;
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    display: inline-block;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+.btn:hover {
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }

@@ -1,0 +1,19 @@
+
+// -----------------------------------------------------------
+// MENU MANAGER by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+//sizes
+
+.main-menu {
+    min-height: 60px;
+    margin-top: 30px;
+    background: $gainsboro;
+}
+
+.main-menu li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}

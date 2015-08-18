@@ -3,36 +3,37 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-#main-container {
-  @include outer-container(930px);
+.main-container {
+  @include outer-container(980px);
 }
 
-#header {
+.header {
   @include span-columns(12);
-  background: green;
-  min-height: 160px;
 }
 
-  #logo {
+  .logo {
     @include span-columns(2 of 12);
-    background: #000;
+    @media screen and (max-width: 768px){
+        @include span-columns(4 of 12);
+    }
   }
 
-  #main-menu {
+  .main-menu {
     @include span-columns(10 of 12);
-    background: blue;
-    min-height: 80px;
+    @media screen and (max-width: 768px){
+        @include span-columns(8 of 12);
+        margin-top: 0px;
+    }
   }
 
-#slideshow {
+.slideshow {
   @include span-columns(12);
-  background: blue;
-  min-height: 350px;
+  background: #DDD;
+  margin-top: 20px;
 }
 
-#latest-news {
+.latest-news {
   @include span-columns(12);
-  background: red;
   min-height: 300px;
 }
 
@@ -40,9 +41,9 @@
 
 .NewsSummary {
   @include span-columns(4 of 12);
-  background: black;
   min-height: 300px;
   padding: 20px;
+  background: $gainsboro;
 }
 
 .NewsSummaryLink {
@@ -54,5 +55,13 @@
         @include span-columns(12 of 12);
         margin-bottom: 15px;
     }
+}
+
+.footer {
+  @include span-columns(12);
+  min-height: 80px;
+  padding: 10px;
+  margin-top:20px;
+  background: $gainsboro;
 }
 

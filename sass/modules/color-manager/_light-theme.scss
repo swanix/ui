@@ -13,6 +13,7 @@ $gainsboro:         #DCDCDC ; // HTML name color: Gainsboro
 $gray:              #808080 ; // HTML name color: Gray
 $light-slategray:   #778899 ; // HTML name color: LightSlateGray
 $slategray:         #708090 ; // HTML name color: SlateGray
+$black:             #000000 ;
 
 // COLOR CLASSES 
 
@@ -32,6 +33,13 @@ $slategray:         #708090 ; // HTML name color: SlateGray
     color:          green;
     }
 
+.gray-light {
+    color:          $gainsboro;    
+    }
+
+.bg-gray-light {
+    background-color:  $gainsboro;      
+    }
 
 // TEXTS 
 // -----------------------------------------------------------
@@ -43,7 +51,7 @@ body {
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 { 
-    color:                  $light-slategray;
+    color:                  $black;
     }
     // -----------------------------------
 p {
@@ -51,11 +59,11 @@ p {
     }
     // -----------------------------------
 a { 
-    color:                  $light-slategray;
+    color:                  $black;
     }
     // -----------------------------------
 a:hover { 
-    color:                  $slategray;
+    color:                  $black;
     }
     // -----------------------------------
 small { 
@@ -185,6 +193,18 @@ button:hover {
     color:                  $slategray;
     }
 
+.btn { 
+    border: 1px solid       $gainsboro;
+    background-color:       $white-smoke; 
+    color:                  $gray;
+    }
+    // -----------------------------------
+.btn:hover { 
+    border: 1px solid       $light-slategray;
+    background-color:       $white; 
+    color:                  $slategray;
+    }
+
 
 // TABLES 
 // -----------------------------------------------------------
@@ -280,7 +300,5 @@ tfoot {
     border:1px solid        $gainsboro;
     background-color:       $white; 
     }
-
-
 
 
