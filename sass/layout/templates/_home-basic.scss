@@ -1,0 +1,68 @@
+// -----------------------------------------------------------
+//  BASIC PAGE TEMPLATE
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.subheader {
+    @include span-columns(12);
+    background: #DDD;
+    margin-top: 20px;
+    height: 120px;
+    padding: 30px 10px 0 30px;
+    @media screen and (max-width: 768px){
+        height: 70px;
+        padding: 5px 10px 10px 20px;
+        }
+    }
+
+.section-title {
+    @include span-columns(8 of 12); 
+    }
+
+.section-options {
+    @include span-columns(4 of 12);
+    color: #fff;   
+    min-height: 65px; 
+   }
+
+.content {
+    @include span-columns(8 of 12);
+    background: #F2F2F2;
+    @media screen and (max-width: 768px){
+        @include span-columns(12 of 12);
+        }
+    }
+
+    .content-image {
+
+      }
+
+    .content-title {
+        background: #DDD;
+        padding: 10px 30px;
+      }
+
+    .content-body {
+      padding: 0 30px 40px 30px ;
+
+      }
+
+.sidebar {
+    @include span-columns(4 of 12);
+    background: #F2F2F2;
+    padding: 0 10px 30px 10px;
+    @media screen and (max-width: 768px){
+        @include span-columns(12 of 12);
+        }
+    }
+
+    .panel {
+        margin-top: 10px;
+        }
+
+    .panel-title {
+        background: #DDD;
+        padding: 2px;
+        }
+
+
