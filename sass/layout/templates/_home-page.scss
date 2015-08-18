@@ -5,37 +5,35 @@
 
 .main-container {
   @include outer-container(980px);
-}
+  margin-bottom: -80px; 
+  }
+
+.main-container {
+  content: "";
+  display: block;
+  }
 
 .header {
   @include span-columns(12);
-}
+  }
 
   .logo {
     @include span-columns(2 of 12);
     @media screen and (max-width: 768px){
         @include span-columns(4 of 12);
+        }
     }
-  }
-
-  .main-menu {
-    @include span-columns(10 of 12);
-    @media screen and (max-width: 768px){
-        @include span-columns(8 of 12);
-        margin-top: 0px;
-    }
-  }
 
 .slideshow {
   @include span-columns(12);
   background: #DDD;
   margin-top: 20px;
-}
+  }
 
-.latest-news {
+.content-area {
   @include span-columns(12);
   min-height: 300px;
-}
+  }
 
 // News item
 
@@ -43,25 +41,25 @@
   @include span-columns(4 of 12);
   min-height: 300px;
   padding: 20px;
-  background: $gainsboro;
-}
+  background: #F2F2F2;
+  }
 
 .NewsSummaryLink {
   margin-bottom: 10px;
-}
+  }
 
 .NewsSummary{
     @media screen and (max-width: 768px){
         @include span-columns(12 of 12);
         margin-bottom: 15px;
+        }
     }
-}
 
 .footer {
-  @include span-columns(12);
-  min-height: 80px;
+  @include span-columns(12 of 12);
+  height: 80px;
   padding: 10px;
   margin-top:20px;
   background: $gainsboro;
-}
+  }
 

@@ -2,3 +2,18 @@
 // UTILITIES
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.to-right {
+	float:right;
+}
+
+.to-left {
+	float:left;
+}
+
+.to-center {
+	text-align:center;
+}
+
+$border-box-sizing: true !default;
+
