@@ -1,4 +1,4 @@
-![alt text](https://github.com/zemiotic/swan/blob/master/images/logo.png "Swan - User Interface")
+![alt text](https://github.com/zemiotic/swan/blob/master/img/logo.png "Swan - User Interface")
 
 Experimental UI framework. Work in progress... 
 
@@ -9,7 +9,7 @@ STRUCTURE
 core -> layout -> modules
 –––––––––––––––––––––––––––––
 
-Sass Architecture v0.5 (Alpha)
+Sass Architecture v0.7 (Alpha)
 
 sass/
 |
@@ -20,19 +20,18 @@ sass/
 |   |– _core.scss          # CORE Package
 |
 |– layout/
-|   |– patterns/           # Common layout Patterns
-|   |– templates/          # Final Templates
+|   |– templates/          # Page Templates
 |   |– _layout.scss        # LAYOUT Package
 |
 |– modules/
-|   |– url-manager/        # Url Manager Module
-|   |– color-manager/      # Color Manager Module
-|   |– typo-manager/       # Typo Manager Module
-|   |– icon-manager/       # Icon Manager Module
+|   |– color/              # Color Manager Module
+|   |– fonts/              # Fonts Manager Module
+|   |– icons/              # Icon Manager Module
+|   |– urls/               # Url Manager Module
 |   |– _modules.scss       # MODULES package
 |
 | -------------------------------------------------
-`– styles.scss             # Style Package
+`– theme.scss              # THEME Final Package
   -------------------------------------------------
 ```
 
