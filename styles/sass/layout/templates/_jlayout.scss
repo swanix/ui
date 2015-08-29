@@ -1,0 +1,73 @@
+// -----------------------------------------------------------
+//  JLAYOUT STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Custom Styles
+
+.noscroll {
+  overflow: hidden;
+  }
+
+.display-block {
+  display: block;
+}
+
+.logo-app {
+  margin:5px 0 0 10px;
+}
+
+// End Custom Styles
+
+.layout {
+  height: 100%;
+  }
+
+.center, .east, .west, .north, .south {
+  display: inline-block;
+  overflow: auto;
+  }
+
+.north {
+  height: 3.2em;
+  }
+
+.south {
+  height: 3.2em;
+  }
+
+.center {
+  }
+
+.east {
+  width: 15em;
+  }
+
+.west{
+  width: 15em;
+  }
+
+.layout-inner {
+  width: 84%;
+  height: 80%;
+  border: 0px;
+}
+
+.layout-inner .west, .layout-inner .east {
+  width: 25%;
+}
+
+.layout-inner .south, .layout-inner .north {
+  height: 20%;
+}
+
+
+
+//Color picker tool styles
+#colorinp {
+  width: 200px;
+  margin-top: 0px; 
+}
+// End color picker tool
+
+

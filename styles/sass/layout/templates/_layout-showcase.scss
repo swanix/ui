@@ -1,0 +1,23 @@
+// -----------------------------------------------------------
+//  SHOWCASE TEMPLATE
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+.main-container {
+  @include outer-container(980px);
+  margin-bottom: -80px; 
+  }
+
+.top-bar {
+  @include span-columns(12);
+}
+
+.logo-app {
+  margin: 1em;
+}
+
+.content-area {
+  @include span-columns(12);
+  padding: 1em;
+}
