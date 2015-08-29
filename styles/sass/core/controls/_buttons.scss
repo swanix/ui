@@ -1,0 +1,146 @@
+// -----------------------------------------------------------
+// BUTTON STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+input[type="submit"] { 
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+input[type="submit"]:hover { 
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+input[type="reset"] { 
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+input[type="reset"]:hover { 
+    vertical-align: middle;
+    border: none;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+button {
+    max-width:8em;
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+button:hover {
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+// -----------------------------------------------------------
+// SPECIAL BUTTONS by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// CUSTOM SHAPES 
+// -----------------------------------------------------------
+
+.rounded {
+    border-radius:              50px; 
+    -moz-border-radius:         50px; 
+    -webkit-border-radius:      50px;
+    padding-left:               40px;
+    padding-right:              40px;
+    min-width:                  100px;
+    }
+    // -----------------------------------
+
+.circle {
+    display:                    inline-block ;
+    width:                      50px ;
+    height:                     50px ;
+    border-radius:              50% ; 
+    -moz-border-radius:         50% ; 
+    -webkit-border-radius:      50% ;
+    text-align:                 center;
+    border:                     1px solid;  
+    }
+
+.small {
+    width:                      25px ;
+    height:                     25px ;
+
+    }
+
+
+    // -----------------------------------
+
+.btn {
+    max-width:8em;
+    padding: 0.7em 0.7em;
+    vertical-align: middle;
+    display: inline-block;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+.btn:hover {
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    }
+
+.text-small {
+    font-size: 0.9em;
+}
