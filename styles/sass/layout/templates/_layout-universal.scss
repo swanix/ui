@@ -3,27 +3,27 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Variables
+$layout-border: none; // Development purposes only
 
-$h-small:  5em ;
-$h-medium: 10em ;
-$h-large:  25em ;
-$h-xlarge: 35em ;
-$layout-border: 0px solid #1ae0ef; // Para visiualizar el layout
+// Size Variables for Height
 
-// Sizes -- Se debe mejorar, aún está muy ambiguo 
+$size-xs:  3em ;
+$size-s:   5em ;
+$size-m:   10em ;
+$size-l:   25em ;
+$size-xl:  35em ;
 
-.h-small {  height: $h-small; }
-.h-medium { height: $h-medium; }
-.h-large {  height: $h-large; }
-.h-xlarge { height: $h-xlarge; }
+$width-sidebar-tiny: 4em;
 
-// Fluid or Centered
+// Size classes
 
-.fluid {     @include outer-container(2000px); }
-.centered {  @include outer-container(980px);  }
+.size--XS    {  height: $size-xs; }
+.size--S     {  height: $size-s; }
+.size--M     {  height: $size-m; }
+.size--L     {  height: $size-l; }
+.size--XL    {  height: $size-xl; }
 
-// Fixed
+// Fixed positions
 
 .fixed--top {
     width: 100%;
@@ -38,16 +38,16 @@ $layout-border: 0px solid #1ae0ef; // Para visiualizar el layout
     z-index: 20;    
 }
 
-.margin--top {
-    margin-top: $h-small;
+.fixed--left {
+    position: fixed;
+    top: 0;
+    z-index: 20;
 }
 
-.margin--bottom {
-    margin-bottom: $h-small;
-}
-
-.pad {
-    @include pad(1.5em);
+.fixed--right {
+    position: fixed;
+    right: 0;
+    z-index: 20;   
 }
 
 //Mixim for mobile portrait
@@ -58,9 +58,14 @@ $layout-border: 0px solid #1ae0ef; // Para visiualizar el layout
         }
 }
 
-// Layouts
+// Layout by default is 980px centered
 
-.layout {
+.layout { 
+    @include outer-container(980px); 
+}
+
+.layout--fluid { 
+    @include outer-container(2000px);
 }
 
 .layout__header {
@@ -78,6 +83,32 @@ $layout-border: 0px solid #1ae0ef; // Para visiualizar el layout
     outline:$layout-border;
 }
 
+.layout__content {
+    @include span-columns(8, block-collapse);
+    outline:$layout-border;
+    @include  mobile-portrait;
+}
+
+.layout__content--full {
+    @include span-columns(12);
+    outline:$layout-border;
+    @include  mobile-portrait;
+}
+
+.layout__sidebar { 
+    @include span-columns(4);
+    @include omega;
+    outline:$layout-border;
+    @include  mobile-portrait;
+}
+
+.layout__sidebar--tiny { 
+    width: $width-sidebar-tiny;
+    height: 100%;
+    text-align: center;
+    outline:$layout-border;
+}
+
 .layout__footer {
     @include span-columns(12);
     outline:$layout-border;
@@ -85,19 +116,24 @@ $layout-border: 0px solid #1ae0ef; // Para visiualizar el layout
 
 // Content units in Columns
 
-.col--1  { @include span-columns(1 of 12, table); outline:$layout-border; }
-.col--2  { @include span-columns(2 of 12, table); outline:$layout-border; }
-.col--3  { @include span-columns(3 of 12, table); outline:$layout-border; }
-.col--4  { @include span-columns(4 of 12, table); outline:$layout-border; }
-.col--5  { @include span-columns(5 of 12, table); outline:$layout-border; }
-.col--6  { @include span-columns(6 of 12, table); outline:$layout-border; }
-.col--7  { @include span-columns(7 of 12, table); outline:$layout-border; }
-.col--8  { @include span-columns(8 of 12, table); outline:$layout-border; }
-.col--9  { @include span-columns(9 of 12, table); outline:$layout-border; }
-.col--10 { @include span-columns(10 of 12, table); outline:$layout-border; }
-.col--11 { @include span-columns(11 of 12, table); outline:$layout-border; }
-.col--12 { @include span-columns(12 of 12, table); outline:$layout-border; }
+.col--1  { @include span-columns(1); outline:$layout-border; }
+.col--2  { @include span-columns(2); outline:$layout-border; }
+.col--3  { @include span-columns(3); outline:$layout-border; }
+.col--4  { @include span-columns(4); outline:$layout-border; }
+.col--5  { @include span-columns(5); outline:$layout-border; }
+.col--6  { @include span-columns(6); outline:$layout-border; }
+.col--7  { @include span-columns(7); outline:$layout-border; }
+.col--8  { @include span-columns(8); outline:$layout-border; }
+.col--9  { @include span-columns(9); outline:$layout-border; }
+.col--10 { @include span-columns(10); outline:$layout-border; }
+.col--11 { @include span-columns(11); outline:$layout-border; }
+.col--12 { @include span-columns(12); outline:$layout-border; }
 
-.layout__sidebar { @include  mobile-portrait;}
-.layout__content { @include  mobile-portrait;}
+
+// Gaps when layout elements are fixed (improve soon)
+
+.gap--top    { margin-top: $width-sidebar-tiny ; }
+.gap--left   { padding-left: $width-sidebar-tiny; }
+.gap--right  { padding-right: $width-sidebar-tiny ; }
+.gap--bottom { margin-bottom: $width-sidebar-tiny ; }
 
