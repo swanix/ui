@@ -496,7 +496,7 @@ textarea {
   min-height: 5em; }
 
 .gray {
-  color: #88898c; }
+  color: #808080; }
 
 .white {
   color: #FFFFFF; }
@@ -507,98 +507,99 @@ textarea {
 .green {
   color: green; }
 
-.gradient--dark {
-  background-color: #000000;
-  background-image: -webkit-linear-gradient(bottom, #000000, #323438);
-  background-image: linear-gradient(to top,#000000, #323438); }
+.gray-light {
+  color: #DCDCDC; }
+
+.bg-gray-light {
+  background-color: #DCDCDC; }
 
 body {
-  color: #88898c;
-  background-color: #121314; }
+  color: #808080;
+  background-color: #FFFFFF; }
 
 h1, h2, h3,
 h4, h5, h6 {
-  color: #FFFFFF; }
+  color: #708090; }
 
 p {
-  color: #88898c; }
+  color: #808080; }
 
 a {
-  color: #FFFFFF; }
+  color: #000000; }
 
 a:hover {
-  color: #778899; }
+  color: #000000; }
 
 small {
-  color: #88898c; }
+  color: inherit; }
 
 ul, ol, li {
-  color: #88898c; }
+  color: #808080; }
 
 dl, dt, dd {
-  color: #88898c; }
+  color: #808080; }
 
 blockquote {
-  border-left: 1px solid #88898c;
-  color: #88898c;
-  background-color: #222326; }
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
 
 q {
-  border-left: 1px solid #88898c;
-  color: #88898c;
-  background-color: #222326; }
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
 
 cite {
-  border-left: 1px solid #88898c;
-  color: #88898c;
-  background-color: #222326; }
+  border-left: 1px solid #808080;
+  color: #808080;
+  background-color: #F5F5F5; }
 
 pre {
-  color: #88898c;
-  border: 1px solid #222326; }
+  color: #808080;
+  border: 1px solid #DCDCDC; }
 
 hr {
-  border: 1px solid #323438; }
+  border: 1px solid #DCDCDC; }
 
 legend {
-  color: #FFFFFF; }
+  color: #778899; }
 
 fieldset {
-  border: 1px solid #222326; }
+  border: 1px solid #DCDCDC; }
 
 label {
-  color: #FFFFFF; }
+  color: #778899; }
 
 input[type="text"] {
-  border: 2px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
 
 input[type="text"]:disabled {
-  border: 2px solid #323438;
-  background-color: #323438;
-  color: #dfe0e6; }
+  border: 2px solid #DCDCDC;
+  background-color: #F5F5F5;
+  color: #808080; }
 
 input[type="email"] {
-  border: 2px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
 
 input[type="password"] {
-  border: 2px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
 
 textarea {
-  border: 2px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  color: #808080; }
 
 input:focus,
 textarea:focus {
-  color: #FFFFFF;
-  background-color: #222326;
-  border: 2px solid #88898c; }
+  color: #808080;
+  background-color: white;
+  border: 2px solid #778899; }
 
 input[type="submit"] {
   border: none;
@@ -621,37 +622,37 @@ input[type="reset"]:hover {
   color: #FFFFFF; }
 
 button {
-  border: 1px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 1px solid #DCDCDC;
+  background-color: #F5F5F5;
+  color: #808080; }
 
 button:hover {
   border: 1px solid #778899;
-  background-color: #121314;
-  color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #708090; }
 
 .btn {
-  border: 1px solid #323438;
-  background-color: #222326;
-  color: #88898c; }
+  border: 1px solid #DCDCDC;
+  background-color: #F5F5F5;
+  color: #808080; }
 
 .btn:hover {
   border: 1px solid #778899;
-  background-color: #121314;
-  color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #708090; }
 
 table {
-  border: 1px solid #323438;
-  color: #88898c; }
+  border: 1px solid #DCDCDC;
+  color: #808080; }
 
 th {
-  border-bottom: 1px solid #323438;
-  border-top: 1px solid #323438;
-  background-color: #121314; }
+  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #DCDCDC;
+  background-color: #F5F5F5; }
 
 td {
-  border-bottom: 1px solid #323438;
-  background-color: #121314; }
+  border-bottom: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
 thead {
   background-color: none; }
@@ -662,53 +663,43 @@ tbody {
 tfoot {
   background-color: none; }
 
-.layout {
-  background-color: #121314; }
+.north {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
-.layout--fluid {
-  background-color: #121314; }
+.center {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
-.layout__header {
-  background-color: #222326; }
+.west {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
-.layout__subheader {
-  background-color: #121314; }
+.east {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
-.layout__contentarea {
-  background-color: #121314; }
-
-.layout__content {
-  background-color: #121314; }
-
-.layout__content--full {
-  background-color: #121314; }
-
-.layout__sidebar {
-  background-color: #121314; }
-
-.layout__sidebar--tiny {
-  background-color: #222326; }
-
-.layout__footer {
-  background-color: #222326; }
+.south {
+  color: inherit;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
 .nano > .nano-pane {
-  background: #222326; }
+  background: #FFFFFF; }
 
 .nano >
 .nano-pane >
 .nano-slider {
-  background: #323438; }
+  background: #DCDCDC; }
 
 .demo-item {
-  border: 1px solid #323438;
-  background-color: #222326;
-  color: #FFFFFF; }
-
-.demo-item:hover {
-  border: 1px solid #778899;
-  background-color: #222326;
-  color: #FFFFFF; }
+  color: #808080;
+  border: 1px solid #DCDCDC;
+  background-color: #FFFFFF; }
 
 @font-face {
   font-family: 'Aldo';
