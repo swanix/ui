@@ -41,6 +41,9 @@ $black:             #000000 ;
     background-color:  $gainsboro;      
     }
 
+.gradient--dark { @include linear-gradient(to top, #000000, #323438); }
+
+
 // TEXTS 
 // -----------------------------------------------------------
 

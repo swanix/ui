@@ -29,6 +29,7 @@ $slategray:         #708090; // HTML name color: SlateGray
 // GRADIENTS
 
 .gradient--dark { @include linear-gradient(to top, #000000, #323438); }
+.gradient--dark { @include linear-gradient(to top, red, green); }
 
 // TEXTS 
 // -----------------------------------------------------------
