@@ -6,15 +6,18 @@
 
 'use strict';
 
-
 var gulp = require( 'gulp' ),
 	plumber = require( 'gulp-plumber'),
 	sass = require( 'gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	autoprefixer = require('gulp-autoprefixer'),
+  minifyCSS = require('gulp-minify-css'),
+  rename = require('gulp-rename'),
 	uglify = require( 'gulp-uglify'),
 	concat = require( 'gulp-concat'),
-	sassdoc = require('sassdoc');
+	sassdoc = require('sassdoc'),
+  browserSync = require('browser-sync').create();
+
 
 //-----------------------------------------------------
 // Sass compiler variables
@@ -22,7 +25,7 @@ var gulp = require( 'gulp' ),
 
 var input = 'styles/sass/**/*.scss';
 var output = 'styles/css/';
-var outputMin = 'dist/css/';
+var projectroot = './*.html';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
@@ -35,20 +38,30 @@ var sassOptions = {
 gulp.task ('sass' , function() {
      return gulp
      	.src(input)
-        .pipe(plumber())
+      .pipe(plumber())
      	.pipe(sourcemaps.init())
 	    .pipe(sass(sassOptions))
     	.pipe(autoprefixer())
-	    .pipe(gulp.dest(output));
+	    .pipe(gulp.dest(output))
+      .pipe(minifyCSS())
+      .pipe(rename('styles.min.css'))
+      .pipe(gulp.dest(output))
+      .pipe(browserSync.stream());
 });
 
-gulp.task ('sass:min' , function() {
-     return gulp
-     	.src(input)
-	    .pipe(sass({outputStyle: 'compressed'}))
-	    .pipe(concat('theme.min.css'))
-	    .pipe(gulp.dest(output));
+
+//-----------------------------------------------------
+// Browser Sync task (static server)
+//-----------------------------------------------------
+
+gulp.task ('browser-sync' , function() {
+    browserSync.init([ output, projectroot ], {
+        server: { 
+          baseDir: "./"
+        }
+    });
 });
+
 
 //-----------------------------------------------------
 // Sass Docs task
@@ -68,9 +81,9 @@ gulp.task('sassdoc', function () {
 gulp.task ('mergejs' , function() {
 	gulp.src ('scripts/all/*.js')
 	  .pipe(plumber())
-      .pipe(concat('scripts.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('scripts/'));
+    .pipe(concat('scripts.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('scripts/'));
 });
 
 //-----------------------------------------------------
@@ -89,12 +102,8 @@ gulp.task('prod', ['sassdoc'], function () {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', function() {
-  return gulp
-    .watch(input, ['sass'])
-    .on('change', function(event) {
-      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-    });
+gulp.task('watch', ['sass' , 'browser-sync'], function() {
+    gulp.watch(input, ['sass']);
 });
 
 
