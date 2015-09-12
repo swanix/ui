@@ -11,3 +11,7 @@
 ehthumbs.db
 Thumbs.db
 *.scssc
+
+# Ignore Node.js modules
+
+node_modules/*
