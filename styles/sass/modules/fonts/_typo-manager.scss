@@ -8,29 +8,22 @@
 // -----------------------------------------------------------
 
 
-@font-face {
-    font-family: 'Aldo';
-    src: url('../../fonts/Aldo.ttf');
-    font-weight: normal;
-    font-style: normal;
-    }
-
 // TEXTS 
 // -----------------------------------------------------------
 
 body {
-    font-family:            "Raleway-Medium", sans-serif ;           
+    font-family: Tahoma, Geneva, sans-serif;           
     font-style:             normal;
     }
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 {
-    font-family:            "Aldo", sans-serif ;     
+    font-family: Tahoma, Geneva, sans-serif;  
     font-style:             normal;
     }
     // -----------------------------------
 p {
-    font-family:            "Raleway-Medium", sans-serif ;  
+    font-family: Tahoma, Geneva, sans-serif; 
     font-style:             normal;
     }
     // -----------------------------------
@@ -67,6 +60,6 @@ cite {
 // -----------------------------------------------------------
 
 .typo-preview td {
-    font-family:            'Raleway-Medium';
+    font-family: Tahoma, Geneva, sans-serif;
     }
     // -----------------------------------

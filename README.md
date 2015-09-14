@@ -6,10 +6,10 @@ Experimental UI framework. Work in progress...
 ```
 STRUCTURE
 –––––––––––––––––––––––––––––
-core -> layout -> modules
+core -> modules
 –––––––––––––––––––––––––––––
 
-Sass Architecture v0.7 (Alpha)
+Sass Architecture v0.9 (Alpha)
 
 sass/
 |
@@ -19,19 +19,15 @@ sass/
 |   |– vendor/             # Vendor libraries
 |   |– _core.scss          # CORE Package
 |
-|– layout/
-|   |– templates/          # Page Templates
-|   |– _layout.scss        # LAYOUT Package
-|
 |– modules/
+|   |– layout/             # Layout Manager Module
 |   |– color/              # Color Manager Module
 |   |– fonts/              # Fonts Manager Module
 |   |– icons/              # Icon Manager Module
-|   |– urls/               # Url Manager Module
 |   |– _modules.scss       # MODULES package
 |
 | -------------------------------------------------
-`– theme.scss              # THEME Final Package
+`– styles.scss              # Styles Final Package
   -------------------------------------------------
 ```
 

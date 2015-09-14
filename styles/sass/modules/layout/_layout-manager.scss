@@ -139,3 +139,17 @@ $width-sidebar-tiny: 4em;
 .gap--right  { padding-right: $width-sidebar-tiny ; }
 .gap--bottom { margin-bottom: $width-sidebar-tiny ; }
 
+// Center styles
+
+.content--center {
+    text-align: center;
+}
+
+.logo--center {
+    text-align: center;
+    padding-top: 7.5em;
+}
+
+.global-pad {
+    padding: 1em;
+}
