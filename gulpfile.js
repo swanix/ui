@@ -16,7 +16,7 @@ var gulp = require( 'gulp' ),
 	uglify = require( 'gulp-uglify'),
 	concat = require( 'gulp-concat'),
 	sassdoc = require('sassdoc'),
-  browserSync = require('browser-sync').create();
+  browserSync = require('browser-sync');
 
 
 //-----------------------------------------------------

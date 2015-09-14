@@ -1,0 +1,343 @@
+
+// -----------------------------------------------------------
+// COLOR MANAGER by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// SWAN PALETTE 
+// -----------------------------------------------------------
+
+
+$white-smoke:       #F5F5F5 ; // HTML name color: WhiteSmoke
+$gainsboro:         #DCDCDC ; // HTML name color: Gainsboro
+$gray:              #808080 ; // HTML name color: Gray
+$light-slategray:   #778899 ; // HTML name color: LightSlateGray
+$slategray:         #708090 ; // HTML name color: SlateGray
+
+// GRAYSCALE PALETTE variables (white to black)
+
+$white:             #FFFFFF ; // White (HTML color: white)
+$gray1:             #F7F7F7 ;
+$gray2:             #F2F2F2 ;
+$gray3:             #D3D3D3 ;
+$gray4:             #B2B2B2 ;
+$gray5:             #808080 ; // Gray medium (HTML color: gray)
+$gray6:             #505050 ;
+$gray7:             #383838 ;
+$gray8:             #242424 ;
+$gray9:             #131313 ;
+$black:             #000000 ; // Black (HTML color: black)
+
+// FONT COLOR CLASSES 
+
+.white   { color:   $white; } // White (HTML color: white)
+.gray1   { color:   $gray1; }
+.gray2   { color:   $gray2; }
+.gray3   { color:   $gray3; }
+.gray4   { color:   $gray4; }
+.gray5   { color:   $gray5; } // Gray medium (HTML color: gray)
+.gray6   { color:   $gray6; }
+.gray7   { color:   $gray7; }
+.gray8   { color:   $gray8; }
+.gray9   { color:   $gray9; }
+.black   { color:   $black; } // Black (HTML color: black)
+
+
+// BG COLOR CLASSES 
+
+.bg-white   { background:   $white; } // White (HTML color: white)
+.bg-gray1   { background:   $gray1; }
+.bg-gray2   { background:   $gray2; }
+.bg-gray3   { background:   $gray3; }
+.bg-gray4   { background:   $gray4; color: $gray6; }
+.bg-gray5   { background:   $gray5; color: $white; } // Gray medium (HTML color: gray)
+.bg-gray6   { background:   $gray6; color: $white; }
+.bg-gray7   { background:   $gray7; color: $white; }
+.bg-gray8   { background:   $gray8; color: $white; }
+.bg-gray9   { background:   $gray9; color: $white; }
+.bg-black   { background:   $black; color: $white; } // Black (HTML color: black)
+
+.gray-light { color:          $gainsboro; }
+
+.bg-gray-light { background-color:  $gainsboro; }
+
+.gradient--dark { @include linear-gradient(to top, #000000, #323438); }
+
+.color-item {     
+    height:3em;
+    line-height:3em;
+    text-align:center;
+    margin-bottom: 0.2em;
+    border: solid 1px $gray3;
+}
+
+// TEXTS 
+// -----------------------------------------------------------
+
+body {
+    color:                  $gray5;
+    background-color:       $white;
+    }
+    // -----------------------------------
+h1, h2, h3, 
+h4, h5, h6 { 
+    color:                  $black;
+    }
+    // -----------------------------------
+p {
+    color:                  $gray5;
+    }
+    // -----------------------------------
+a { 
+    color:                  $black;
+    }
+    // -----------------------------------
+a:hover { 
+    color:                  $gray5;
+    }
+    // -----------------------------------
+small { 
+    color:                  inherit;
+    }
+    // -----------------------------------
+ul, ol, li {
+    color:                  $gray5;
+    }
+    // -----------------------------------
+dl, dt, dd {
+    color:                  $gray5;
+    }
+    // -----------------------------------
+blockquote {
+    border-left: 1px solid  $gray3;
+    color:                  $gray5;
+    background-color:       $gray1;
+    }
+    // -----------------------------------
+q {
+    border-left: 1px solid  $gray3;
+    color:                  $gray;
+    background-color:       $gray1;
+    }
+    // -----------------------------------
+cite {
+    border-left: 1px solid  $gray3;
+    color:                  $gray;
+    background-color:       $gray1;
+    }
+    // -----------------------------------
+pre {
+    color:                  $gray; 
+    border: 1px solid       $gray3;
+    }
+    // -----------------------------------
+hr {
+    border: 1px solid       $gray2;
+   }
+
+// FORMS 
+// -----------------------------------------------------------
+
+legend { 
+    color:                  $black;
+    }
+    // -----------------------------------
+fieldset { 
+    border: 1px solid       $gray3;
+    }
+    // -----------------------------------
+label { 
+    color:                  $black;
+    }
+    // -----------------------------------
+input[type="text"] { 
+    border: 2px solid       $gray3;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+    // -----------------------------------
+input[type="text"]:disabled { 
+    border: 2px solid       $gray2;
+    background-color:       $gray1; 
+    color:                  $gray5;
+    }
+    // -----------------------------------
+input[type="email"] { 
+    border: 2px solid       $gray3;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+    // -----------------------------------
+input[type="password"] { 
+    border: 2px solid       $gray3;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+    // -----------------------------------
+textarea { 
+    border: 2px solid       $gray3;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+    // -----------------------------------
+input:focus, 
+textarea:focus {
+    color:                  $gray7;
+    background-color:       $white; 
+    border: 2px solid       $gray4;
+    } 
+    // -----------------------------------
+input[type="submit"] { 
+    border:                 none;
+    background-color:       $white; 
+    color:                  $white;
+    }
+    // -----------------------------------
+input[type="submit"]:hover { 
+    border:                 none;
+    background-color:       $white; 
+    color:                  $white;
+    }
+    // -----------------------------------
+input[type="reset"] { 
+    border:                 none;
+    background-color:       $gray5; 
+    color:                  $white;
+    }
+    // -----------------------------------
+input[type="reset"]:hover { 
+    border:                 none;
+    background-color:       $gray8; 
+    color:                  $white;
+    }
+    // -----------------------------------
+button { 
+    border: 1px solid       $gray3;
+    background-color:       $gray1; 
+    color:                  $gray5;
+    }
+    // -----------------------------------
+button:hover { 
+    border: 1px solid       $gray5;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+
+.btn { 
+    border: 1px solid       $gray3;
+    background-color:       $gray1; 
+    color:                  $gray5;
+    }
+    // -----------------------------------
+.btn:hover { 
+    border: 1px solid       $gray5;
+    background-color:       $white; 
+    color:                  $gray7;
+    }
+
+
+// TABLES 
+// -----------------------------------------------------------
+
+table {  
+    border: 1px solid       $gray3;
+    color:                  $gray7;
+    }
+    // -----------------------------------
+th {
+    border-bottom:1px solid $gray3;
+    border-top:1px solid    $gray3;
+    background-color:       $gray1;
+    }
+    // -----------------------------------
+td {
+    border-bottom:1px solid $gray3;
+    background-color:       $white;
+    }
+    // -----------------------------------
+thead { 
+    background-color:       none;
+    }
+    // -----------------------------------
+tbody { 
+    background-color:       none;
+    }
+    // -----------------------------------
+tfoot { 
+    background-color:       none;
+    }
+
+
+// CUSTOM MODULES 
+// -----------------------------------------------------------
+
+
+// LAYOUT COLORS
+// -----------------------------------------------------------
+
+.layout { 
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout--fluid { 
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__header {
+    background-color:        none; 
+    }
+    // -----------------------------------
+.layout__subheader {
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__contentarea {
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__content {
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__content--full {
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__sidebar { 
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__sidebar--tiny { 
+    background-color:       none; 
+    }
+    // -----------------------------------
+.layout__footer {
+    background-color:       none; 
+    }
+
+
+// NANO SCROLLER 
+// -----------------------------------------------------------
+
+.nano > .nano-pane { 
+    background:            $white; 
+    } 
+    // -----------------------------------  
+.nano > 
+.nano-pane > 
+.nano-slider { 
+    background:           $gray3; 
+    }
+
+
+// OTHER
+// -----------------------------------------------------------
+
+//for icon preview
+
+.demo-item { 
+    color:                  $gray5;
+    border:1px solid        $gray3;
+    }
+
+
