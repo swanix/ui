@@ -605,7 +605,7 @@ textarea {
 }
 
 .layout {
-  max-width: 980px;
+  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -623,6 +623,18 @@ textarea {
 }
 
 .layout--fluid::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.layout--centered {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout--centered::after {
   clear: both;
   content: "";
   display: table;
@@ -924,7 +936,7 @@ textarea {
   padding-top: 7.5em;
 }
 
-.global-pad {
+.with-pad {
   padding: 1em;
 }
 
@@ -1021,14 +1033,6 @@ textarea {
 .bg-black {
   background: #000000;
   color: #FFFFFF;
-}
-
-.gray-light {
-  color: #DCDCDC;
-}
-
-.bg-gray-light {
-  background-color: #DCDCDC;
 }
 
 .gradient--dark {

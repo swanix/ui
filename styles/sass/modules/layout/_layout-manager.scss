@@ -63,11 +63,15 @@ $width-sidebar-tiny: 4em;
 // Layout by default is 980px centered
 
 .layout { 
-    @include outer-container(980px); 
+    @include outer-container(2000px);
 }
 
 .layout--fluid { 
     @include outer-container(2000px);
+}
+
+.layout--centered { 
+    @include outer-container(980px);
 }
 
 .layout__header {
@@ -150,6 +154,6 @@ $width-sidebar-tiny: 4em;
     padding-top: 7.5em;
 }
 
-.global-pad {
+.with-pad {
     padding: 1em;
 }
