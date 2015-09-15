@@ -40,7 +40,7 @@ gulp.task ('sass' , function() {
      	.src(input)
       .pipe(plumber())
      	.pipe(sourcemaps.init())
-	    .pipe(sass(sassOptions))
+	    .pipe(sass(sassOptions).on('error', sass.logError))
     	.pipe(autoprefixer())
 	    .pipe(gulp.dest(output))
       .pipe(minifyCSS())
