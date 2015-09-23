@@ -8,11 +8,12 @@ $layout-border: none; // Development purposes only
 
 // Size Variables for Height
 
-$size-xs:  3em ;
-$size-s:   5em ;
-$size-m:   10em ;
-$size-l:   25em ;
-$size-xl:  35em ;
+$size-xs:   3em ;
+$size-s:    5em ;
+$size-m:    8em ;
+$size-l:    22em ;
+$size-xl:   32em ;
+$size-xxl:  45em ;
 
 $width-sidebar-tiny: 4em;
 
@@ -24,6 +25,7 @@ $width-sidebar-tiny: 4em;
 .size--M     {  height: $size-m; }
 .size--L     {  height: $size-l; }
 .size--XL    {  height: $size-xl; }
+.size--XXL   {  height: $size-xxl; }
 
 // Fixed positions
 
@@ -63,7 +65,9 @@ $width-sidebar-tiny: 4em;
 // Layout by default is 980px centered
 
 .layout { 
-    @include outer-container(2000px);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .layout--fluid { 
@@ -149,11 +153,26 @@ $width-sidebar-tiny: 4em;
     text-align: center;
 }
 
-.logo--center {
+.logo--hero {
     text-align: center;
     padding-top: 7.5em;
 }
 
-.with-pad {
-    padding: 1em;
+.logo--centered {
+    text-align: center;
+    padding-top: 0.8em;
 }
+
+.pad {
+    padding: 0.5em 1em 1em 1em;
+}
+
+.pad--M {
+    padding: 1em 2em 2em 2em;
+}
+
+.pad--L {
+    padding: 1em 3em 3em 3em;
+}
+
+
