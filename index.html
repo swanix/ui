@@ -14,13 +14,17 @@
     <link href="styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="header" class="layout--fluid">
-    <div class="layout__header size--L logo--center bg-gray2">
-        <img src="img/logo-app.png" alt="Logo">
+<div id="app" class="layout">
+    <div id="navigation" class="layout--fluid size--XS bg--black pad">
+     Swan
     </div>
-</div>
-<div id="contentarea" class="layout--centered">
-        <section class="layout__content with-pad ">
+    <div id="header" class="layout--fluid">
+        <div class="layout__header size--L logo--hero bg--gray2">
+            <img src="img/logo-app.png" alt="Logo">
+        </div>
+    </div>
+    <div id="contentarea" class="layout--centered">
+        <section class="layout__content pad ">
             <img src="img/hero-banner.jpg" alt="Swan Project Photo by Laura Kangur">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -233,18 +237,18 @@
             <br /> <br />
             <hr>
         </section>
-        <section class="layout__sidebar with-pad">
-            <div class="color-item bg-white"><small>$white: #FFFFFF</small></div>
-            <div class="color-item bg-gray1"><small>$gray1: #F7F7F7</small></div>
-            <div class="color-item bg-gray2"><small>$gray2: #F2F2F2</small></div>
-            <div class="color-item bg-gray3"><small>$gray3: #D3D3D3</small></div>
-            <div class="color-item bg-gray4"><small>$gray4: #B2B2B2</small></div>
-            <div class="color-item bg-gray5"><small>$gray5: #808080</small></div>
-            <div class="color-item bg-gray6"><small>$gray6: #505050</small></div>
-            <div class="color-item bg-gray7"><small>$gray7: #383838</small></div>
-            <div class="color-item bg-gray8"><small>$gray8: #242424</small></div>
-            <div class="color-item bg-gray9"><small>$gray9: #131313</small></div>
-            <div class="color-item bg-black"><small>$black: #000000</small></div>
+        <section class="layout__sidebar pad">
+            <div class="color__item bg--white"><small>$white: #FFFFFF</small></div>
+            <div class="color__item bg--gray1"><small>$gray1: #F7F7F7</small></div>
+            <div class="color__item bg--gray2"><small>$gray2: #F2F2F2</small></div>
+            <div class="color__item bg--gray3"><small>$gray3: #D3D3D3</small></div>
+            <div class="color__item bg--gray4"><small>$gray4: #B2B2B2</small></div>
+            <div class="color__item bg--gray5"><small>$gray5: #808080</small></div>
+            <div class="color__item bg--gray6"><small>$gray6: #505050</small></div>
+            <div class="color__item bg--gray7"><small>$gray7: #383838</small></div>
+            <div class="color__item bg--gray8"><small>$gray8: #242424</small></div>
+            <div class="color__item bg--gray9"><small>$gray9: #131313</small></div>
+            <div class="color__item bg--black"><small>$black: #000000</small></div>
 
             <h2>Icon System</h2>
             <h4>(Powered by Icomoon)</h4>
@@ -767,15 +771,17 @@
                 </div>
             </div>
         </section>
-               
-    <div class="layout__footer">
-        <button class="circle-button"><span class="icon-rewind medium"></span></button>
-        <button class="circle-button"><span class="icon-play medium"></span></button>
-        <button class="circle-button"><span class="icon-fast-forward medium"></span></button>
-        <button><span class="icon-layers medium"></span></button>
-        <button><span class="icon-align-left medium"></span></button>
-        <button><span class="icon-align-center medium"></span></button>
-        <button><span class="icon-align-right medium"></span></button>
+    </div>
+    <div id="footer" class="layout--centered">
+        <div class="layout__footer">
+            <button class="circle-button"><span class="icon-rewind medium"></span></button>
+            <button class="circle-button"><span class="icon-play medium"></span></button>
+            <button class="circle-button"><span class="icon-fast-forward medium"></span></button>
+            <button><span class="icon-layers medium"></span></button>
+            <button><span class="icon-align-left medium"></span></button>
+            <button><span class="icon-align-center medium"></span></button>
+            <button><span class="icon-align-right medium"></span></button>
+        </div>
     </div>
 </div>
 <!-- Javascripts -->  

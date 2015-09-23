@@ -14,21 +14,22 @@
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="main-container">
+    <div id="app" class="layout">
         <!-- Header :::::::::::::::::::::: -->
-        <div class="header">    
-            <div class="logo">
+        <div id="header" class="layout--centered size--M bg--gray1">    
+            <div class="logo col--2 pad">
                 <a href="#">
-                    <span class="icon-sun xlarge"></span>
+                    <img src="../img/logo-app.png" alt="Logo" width="80">
                 </a>
             </div>
-            <div class="main-menu">
+            <div class="main-menu col--10">
                 <ul>
                     <li>Section 1</li>
                     <li>Section 2</li>
                     <li>Section 3</li>
                     <li>Section 4</li>
                     <li>Section 5</li>
+                    <li>Section 6</li>
                 </ul>
                 <div class="social-links">
                     <a href="#" class="btn circle">
@@ -44,7 +45,7 @@
             </div>
         </div>    
         <!-- Subheader :::::::::::::::::::::: -->
-        <div class="subheader">
+        <div id="subheader" class="layout--centered size--M rounded--top bg--gray2">
             <div class="section-title">
                 <h2>Section Title</h2>   
             </div>    
@@ -53,11 +54,11 @@
             </div>  
         </div>
         <!-- Content Area :::::::::::::::::::::: --> 
-        <div class="content-area">
+        <div id="contentarea" class="layout--centered">
             <!-- Content :::::::::::::::::::::: -->
-            <div class="content">
+            <div class="layout__content rounded--bottom bg--gray3">
                 <div class="content-image">
-                    <img src="http://lorempixel.com/650/300/city/">
+                    <img src="http://placehold.it/650x300" class="rounded--topRight">
                 </div>
                 <div class="content-title">
                     <h1>Content Title</h1> 
@@ -74,9 +75,9 @@
               </div>
             </div>
             <!-- Sidebar :::::::::::::::::::::: -->
-            <div class="sidebar">
+            <div class="layout__sidebar rounded--bottom bg--gray4">
                 <div class="banner">
-                    <img src="http://lorempixel.com/380/380/fashion/">
+                    <img src="http://placehold.it/380x350">
                 </div>
                 <div class="panel">
                     <div class="panel-title">
@@ -94,12 +95,11 @@
                             <li><a href="#">Related content Link 8</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- Footer :::::::::::::::::::::: -->        
-        <div class="footer">
+        <div id="footer" class="layout--centered bg--gray8">
              <p class="to-center">Swan Project - 2015</p>
         </div>
     </div>
