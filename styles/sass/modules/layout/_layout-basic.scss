@@ -1,0 +1,101 @@
+// -----------------------------------------------------------
+// BASIC PAGE LAYOUT MANAGER V0.1 Alpha by Sebastian Serna 
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+//Mixim for mobile portrait
+
+@mixin mobile-portrait  {      
+    @media screen and (max-width: 768px){
+        @include span-columns(12 of 12);
+        }
+}
+
+.layout_main {
+	@include outer-container(980px);
+}
+
+.layout_header {
+	@include span-columns(12);
+	height: $size-m;
+    @media screen and (max-width: 768px){
+		height: $size-s;
+    }
+}
+
+	.menu-main {
+		@include span-columns(10);
+		height: 3.5em;
+		background: $gray8;
+		margin-top: 2em;
+	    font-size: 0.9rem;
+	    border:solid 1px $gray7; 
+	    text-transform: uppercase;   
+
+	    @media screen and (max-width: 768px){
+	        @include span-columns(8 of 12);
+	        margin-top: 0px;
+	        display: none;
+	    }
+	}
+
+	.menu-main li {
+	    list-style: none;
+	    float: left;
+	    margin-right: 20px;
+	}
+
+	.menu-main li a {
+
+	}
+
+	.menu-main ul {
+	    list-style: none;
+	    float: left;
+	    margin-right: 20px;
+	    display: inline-block;
+}
+
+.layout_subheader {
+	@include span-columns(12);
+	height: $size-m;
+	background: $gray7;
+}
+
+.layout_subheader h2 {
+	color: $gray4;
+}
+
+.layout_content {
+	@include span-columns(12);
+
+}
+	.content {
+	    @include span-columns(8, block-collapse);
+	    background: $gray1;
+    	@include  mobile-portrait;
+	}
+
+		.content-body {
+    		padding: 0 2em;
+		}
+
+	.sidebar {
+	    @include span-columns(4);
+	    @include omega;
+	    background: $gray9;
+    	@include  mobile-portrait;
+	}
+
+	.sidebar h3 {
+	    color: $gray2;
+	}
+
+	.sidebar a {
+		color: $gray3;
+	}
+
+.layout_footer {
+	@include span-columns(12);
+}
+

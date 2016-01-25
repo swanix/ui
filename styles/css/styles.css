@@ -2015,6 +2015,179 @@ cite {
   }
 }
 
+.layout_main {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout_main::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.layout_header {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+  height: 8em;
+}
+
+.layout_header:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .layout_header {
+    height: 5em;
+  }
+}
+
+.menu-main {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 83.33333%;
+  height: 3.5em;
+  background: #242424;
+  margin-top: 2em;
+  font-size: 0.9rem;
+  border: solid 1px #383838;
+  text-transform: uppercase;
+}
+
+.menu-main:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-main {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 66.66667%;
+    margin-top: 0px;
+    display: none;
+  }
+  .menu-main:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu-main li {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+
+.menu-main ul {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.layout_subheader {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+  height: 8em;
+  background: #383838;
+}
+
+.layout_subheader:last-child {
+  margin-right: 0;
+}
+
+.layout_subheader h2 {
+  color: #B2B2B2;
+}
+
+.layout_content {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.layout_content:last-child {
+  margin-right: 0;
+}
+
+.content {
+  float: left;
+  display: block;
+  width: 66.66667%;
+  background: #F7F7F7;
+}
+
+.content:last-child {
+  width: 66.66667%;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .content:last-child {
+    margin-right: 0;
+  }
+}
+
+.content-body {
+  padding: 0 2em;
+}
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%;
+  margin-right: 0;
+  background: #131313;
+}
+
+.sidebar:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .sidebar:last-child {
+    margin-right: 0;
+  }
+}
+
+.sidebar h3 {
+  color: #F2F2F2;
+}
+
+.sidebar a {
+  color: #D3D3D3;
+}
+
+.layout_footer {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.layout_footer:last-child {
+  margin-right: 0;
+}
+
 .menu {
   height: 3.5em;
   margin-top: 30px;
