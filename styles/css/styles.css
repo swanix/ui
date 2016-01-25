@@ -2015,6 +2015,10 @@ cite {
   }
 }
 
+body {
+  background: #000000;
+}
+
 .layout_main {
   max-width: 980px;
   margin-left: auto;
@@ -2045,6 +2049,33 @@ cite {
   }
 }
 
+.logo-main {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%;
+  height: 8em;
+  padding: 0.5em;
+}
+
+.logo-main:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-main {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+  }
+  .logo-main:last-child {
+    margin-right: 0;
+  }
+}
+
 .menu-main {
   float: left;
   display: block;
@@ -2056,6 +2087,10 @@ cite {
   font-size: 0.9rem;
   border: solid 1px #383838;
   text-transform: uppercase;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 .menu-main:last-child {
@@ -2067,7 +2102,7 @@ cite {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 66.66667%;
+    width: 0%;
     margin-top: 0px;
     display: none;
   }
@@ -2095,11 +2130,21 @@ cite {
   margin-right: 0%;
   width: 100%;
   height: 8em;
-  background: #383838;
+  background: #242424;
+  padding: 1em 2em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .layout_subheader:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .layout_subheader {
+    height: 5em;
+    padding: 0.2em 1em;
+  }
 }
 
 .layout_subheader h2 {
@@ -2121,7 +2166,10 @@ cite {
   float: left;
   display: block;
   width: 66.66667%;
-  background: #F7F7F7;
+  background: #FFFFFF;
+  padding-bottom: 2em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .content:last-child {
@@ -2134,14 +2182,47 @@ cite {
     display: block;
     margin-right: 0%;
     width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .content:last-child {
     margin-right: 0;
   }
 }
 
+.content-image {
+  background: #242424;
+}
+
+.content-image img {
+  border-top-right-radius: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .content-image img {
+    border-top-right-radius: 1.2em;
+    border-top-left-radius: 1.2em;
+  }
+}
+
+.content-title {
+  padding: 0 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .content-title {
+    padding: 0 1em;
+  }
+}
+
 .content-body {
   padding: 0 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .content-body {
+    padding: 0 1.5em;
+  }
 }
 
 .sidebar {
@@ -2150,7 +2231,9 @@ cite {
   margin-right: 0%;
   width: 33.33333%;
   margin-right: 0;
-  background: #131313;
+  background: #242424;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .sidebar:last-child {
@@ -2169,6 +2252,20 @@ cite {
   }
 }
 
+.banner img {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+  }
+}
+
 .sidebar h3 {
   color: #F2F2F2;
 }
@@ -2178,6 +2275,9 @@ cite {
 }
 
 .layout_footer {
+  margin-top: 2em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   float: left;
   display: block;
   margin-right: 0%;
@@ -2225,42 +2325,4 @@ cite {
 
 .menu__social {
   margin-top: 5px;
-}
-
-.rounded {
-  border-radius: 1em;
-}
-
-.rounded--top {
-  -webkit-border-top-left-radius: 1em;
-  -webkit-border-top-right-radius: 1em;
-  -moz-border-radius-topleft: 1em;
-  -moz-border-radius-topright: 1em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
-.rounded--topLeft {
-  border-top-left-radius: 1em;
-}
-
-.rounded--topRight {
-  border-top-right-radius: 1em;
-}
-
-.rounded--bottom {
-  -webkit-border-bottom-left-radius: 1em;
-  -webkit-border-bottom-right-radius: 1em;
-  -moz-border-radius-bottomleft: 1em;
-  -moz-border-radius-bottomright: 1em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
-.rounded--bottomLeft {
-  border-bottom-left-radius: 1em;
-}
-
-.rounded--bottomRight {
-  border-bottom-right-radius: 1em;
 }

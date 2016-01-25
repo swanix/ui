@@ -3,17 +3,20 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-//Mixim for mobile portrait
 
-@mixin mobile-portrait  {      
-    @media screen and (max-width: 768px){
-        @include span-columns(12 of 12);
-        }
+// MAIN LAYOUT CONTAINER
+// -----------------------------------------------------------
+
+body {
+	background: $black;
 }
 
 .layout_main {
 	@include outer-container(980px);
 }
+
+// HEADER
+// -----------------------------------------------------------
 
 .layout_header {
 	@include span-columns(12);
@@ -23,6 +26,17 @@
     }
 }
 
+	.logo-main {
+		@include span-columns(2);
+		height: $size-m;
+		padding: 0.5em;
+	    @media screen and (max-width: 768px){
+	    	@include span-columns(12);
+			text-align: center;
+			padding: 0.5em;
+	    }
+	}
+
 	.menu-main {
 		@include span-columns(10);
 		height: 3.5em;
@@ -31,9 +45,10 @@
 	    font-size: 0.9rem;
 	    border:solid 1px $gray7; 
 	    text-transform: uppercase;   
-
+		@include border-top-radius(0.5em);
+		@include border-bottom-radius(0.5em);		
 	    @media screen and (max-width: 768px){
-	        @include span-columns(8 of 12);
+	        @include span-columns(0 of 12);
 	        margin-top: 0px;
 	        display: none;
 	    }
@@ -56,15 +71,27 @@
 	    display: inline-block;
 }
 
+// SUBHEADER
+// -----------------------------------------------------------
+
 .layout_subheader {
 	@include span-columns(12);
 	height: $size-m;
-	background: $gray7;
+	background: $gray8;
+	padding: 1em 2em;
+	@include border-top-radius(1em);
+    @media screen and (max-width: 768px){
+		height: $size-s;
+		padding: 0.2em 1em;
+    }
 }
 
 .layout_subheader h2 {
 	color: $gray4;
 }
+
+// CONTENT
+// -----------------------------------------------------------
 
 .layout_content {
 	@include span-columns(12);
@@ -72,20 +99,62 @@
 }
 	.content {
 	    @include span-columns(8, block-collapse);
-	    background: $gray1;
-    	@include  mobile-portrait;
+	    background: $white;
+	    padding-bottom: 2em;
+		@include border-bottom-radius(1em);
+	    @media screen and (max-width: 768px){
+	        @include span-columns(12 of 12);
+			@include border-bottom-radius(0);
+	        }
 	}
+		.content-image {
+			background: $gray8;
+		    @media screen and (max-width: 768px){
+		        }
+		}	
+
+		.content-image img {
+			border-top-right-radius: 2em;
+		    @media screen and (max-width: 768px){
+				border-top-right-radius: 1.2em;
+				border-top-left-radius: 1.2em;
+		        }
+		}	
+
+		.content-title {
+    		padding: 0 2em;
+		    @media screen and (max-width: 768px){
+				padding: 0 1em;
+		        }
+		}	
 
 		.content-body {
     		padding: 0 2em;
+		    @media screen and (max-width: 768px){
+				padding: 0 1.5em;
+		        }
 		}
 
 	.sidebar {
 	    @include span-columns(4);
 	    @include omega;
-	    background: $gray9;
-    	@include  mobile-portrait;
+	    background: $gray8;
+		@include border-bottom-radius(1em);
+	    @media screen and (max-width: 768px){
+	        @include span-columns(12 of 12);
+	        }
 	}
+
+		.banner img {
+			border-top-left-radius: 2em;
+			border-top-right-radius: 2em;
+		    @media screen and (max-width: 768px){
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+				border-bottom-right-radius: 1.2em;
+				border-bottom-left-radius: 1.2em;
+		        }
+		}
 
 	.sidebar h3 {
 	    color: $gray2;
@@ -95,7 +164,12 @@
 		color: $gray3;
 	}
 
+// FOOTER
+// -----------------------------------------------------------
+
 .layout_footer {
+	margin-top: 2em;
+	@include border-top-radius(1em);
 	@include span-columns(12);
 }
 
