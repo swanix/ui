@@ -51,7 +51,6 @@ $black:             #000000 ; // Black (HTML color: black)
 .bg--black   { background:   $black; color: $white; } // Black (HTML color: black)
 
 
-.gradient--dark { @include linear-gradient(to top, #000000, #323438); }
 
 .color__item {     
     height:3em;
@@ -212,7 +211,7 @@ button:hover {
     background-color:       $white; 
     color:                  $gray7;
     }
-
+    // -----------------------------------
 .btn { 
     border: 1px solid       $gray3;
     background-color:       $gray1; 
@@ -224,7 +223,18 @@ button:hover {
     background-color:       $white; 
     color:                  $gray7;
     }
-
+    // -----------------------------------
+.btn-dark { 
+    border: 2px solid       $gray7;
+    background-color:       $gray9; 
+    color:                  $gray4;
+    }
+    // -----------------------------------
+.btn-dark:hover { 
+    border: 2px solid       $gray5;
+    background-color:       $black; 
+    color:                  $white;
+    }
 
 // TABLES 
 // -----------------------------------------------------------
