@@ -3,6 +3,9 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+// ::::: Breakpoints
+
+$mobile: new-breakpoint(max-width 768px 4);
 
 $color-start: rgba(0,0,0,0.8) 30%;
 $color-end: rgba(178,178,178,0.3) 90%; 
@@ -11,8 +14,8 @@ $color-end: rgba(178,178,178,0.3) 90%;
 // -----------------------------------------------------------
 
 body {
-  background: #000000 url("http://www.cinefilia.org.co/uploads/images/background/bg-body-blue.jpg") no-repeat fixed center center;
-    @media screen and (max-width: 768px){
+  //background: #000000 url("http://www.cinefilia.org.co/uploads/images/background/bg-body-blue.jpg") no-repeat fixed center center;
+    @include media($mobile){
 		background:none;
 		background-color: $gray9;
     }
@@ -28,7 +31,7 @@ body {
 .layout_header {
 	@include span-columns(12);
 	height: $size-m;
-	margin-bottom:1em;
+	//margin-bottom:1em;
     @media screen and (max-width: 768px){
 		height: $size-xs;
     }
@@ -37,7 +40,7 @@ body {
 	.logo-main {
 		@include span-columns(2);
 		padding: 0.5em;
-	    @media screen and (max-width: 768px){
+	    @include media($mobile){
 	    	@include span-columns(2);
 			text-align: center;
 			padding: 0.5em;
@@ -48,7 +51,7 @@ body {
 	.logo-main img {
 		margin: 0.8em 0 0 1.5em;
 		width: 50%;
-	    @media screen and (max-width: 768px){
+	    @include media($mobile){
 			width: 3.4em;
 	    }
 	}
@@ -66,7 +69,7 @@ body {
 		@include border-bottom-radius(0.8em);	
 		@include background(linear-gradient(top, $color-start, $color-end));
 		box-shadow: 0 2px 4px darken($black, 10%);    
-		@media screen and (max-width: 768px){
+		@include media($mobile){
 	        @include span-columns(0 of 12);
 	        margin-top: 0px;
 	        display: none;
@@ -98,11 +101,13 @@ body {
 	.menu-mobile {
 		display: none;
 		font-family: AldoPC;
-		box-shadow: 0 2px 4px darken($black, 10%);    
-		@media screen and (max-width: 768px){
+		//box-shadow: 0 2px 4px darken($black, 10%);    
+		@include media($mobile){
 	        display: block;
 	    }
 	}
+
+/* SLIDING PANEL START */
 
 .sliding-panel-content {  
   $action-color: #477DCA !default;
@@ -181,6 +186,8 @@ body {
   }
 }
 
+/* SLIDING PANEL END */
+
 // Fixed positions
 
 .fixed--top {
@@ -189,7 +196,7 @@ body {
     top: 0;
     z-index: 20;
     height: $size-xs;
-	background: $gray8;    
+	background: $gray9;    
 }
 
 .fixed--bottom {
@@ -247,9 +254,32 @@ body {
 
 .submenu {
 	@include span-columns(8 of 8);
-    @media screen and (max-width: 768px){
+    @include media($mobile){
 		display: none;
     }	
+}
+
+.menu-categories ul {
+	list-style:none;
+	float:left;
+}
+
+.menu-categories li {
+	font-family: AldoPC;
+	float:left;
+	margin-right: 2em;
+	color: $gray3;
+    @include media($mobile){
+
+    }	
+}
+
+.menu-categories li a {
+	color: $gray3;
+}
+
+.menu-categories li a:hover {
+	color: $gray1;
 }
 
 
@@ -262,7 +292,7 @@ body {
 	@include background(linear-gradient(top, $gray8, $black));
 	padding: 1em 2em;
 	@include border-top-radius(2em);
-    @media screen and (max-width: 768px){
+    @include media($mobile){
     	text-align: center;
 		height: 3.8em;
 		margin-top: 1em;
@@ -292,7 +322,7 @@ body {
 	    @include span-columns(8, block-collapse);
 	    background: $white;
 		@include border-bottom-radius(1em);
-	    @media screen and (max-width: 768px){
+	    @include media($mobile){
 	        @include span-columns(12 of 12);
 			@include border-bottom-radius(0);
 	        }
@@ -310,14 +340,14 @@ body {
 		.content-image {
 			background: $gray8;
 			width: 100%;
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 		        }
 		}	
 
 		.content-image img {
 			border-top-right-radius: 2em;
 			height: auto;
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 				border-top-right-radius: 0em;
 				border-top-left-radius: 0em;
 				height: auto;
@@ -327,20 +357,20 @@ body {
 		.content-title {
     		padding: 0 2em;
     		font-size: 0.8em;
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 				padding: 0 1.5em;
 		        }
 		}	
 
 		.content-body {
     		padding: 0 2em;
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 				padding: 0 1.5em;
 		        }
 		}
 
 		.content-body p {
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 				font-size: 1em;
 				line-height: 1.5em;
 		        }
@@ -352,14 +382,14 @@ body {
 	    background: $gray8;
 	    padding-bottom: 2em;
 		@include border-bottom-radius(1em);
-	    @media screen and (max-width: 768px){
+	    @include media($mobile){
 	        @include span-columns(12 of 12);
 	        }
 	}
 
 		.banner img {
 			margin-bottom: 1em;
-		    @media screen and (max-width: 768px){
+		    @include media($mobile){
 		    	width: 100%;
 		    	height: auto;
 				margin-top: 1.5em;
@@ -396,7 +426,7 @@ body {
 		font-size: 1em;
 		line-height: 1.2em;
 		display:inline;
-	    @media screen and (max-width: 768px){
+	    @include media($mobile){
 			//margin: 0.1em 0.5em 0 0;
 	        }
 	}
@@ -451,7 +481,7 @@ body {
 	background: $gray8;
 	overflow: auto;
 	padding: 1em;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		padding: 0.5em;
 	    }
 }
@@ -462,7 +492,7 @@ body {
     border: 1px solid $gray7;
     margin: 0.5em 0;
     display: table;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 	    @include span-columns(12 of 12);
 	    @include border-top-radius(0.5em);
 		@include border-bottom-radius(0);
@@ -472,7 +502,7 @@ body {
 .card-image, .card-summary {
 	display: table-cell;
 	vertical-align: top;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		@include span-columns(12 of 12);
 
 	    }
@@ -482,7 +512,7 @@ body {
 	margin: 1em 0.5em 1em 0.5em;
 	@include border-top-radius(0.5em);
 	@include border-bottom-radius(0.5em);
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		margin: 0;
 		@include border-bottom-radius(0);
 		@include span-columns(12 of 12);
@@ -520,7 +550,7 @@ body {
 .card-footer {
 	@include span-columns(8 of 8);
 	display:block;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		@include span-columns(12 of 12);
 	    }	
 }
@@ -531,10 +561,10 @@ body {
 .card-course {
 	@include span-columns(8 of 8);
 	padding-bottom: 2em;
-		display:block;
-		@media screen and (max-width: 768px){
-			@include span-columns(12 of 12);
-		    }		
+	display:block;
+	@include media($mobile){
+		@include span-columns(12 of 12);
+	    }		
 	}
 
 .card-course-title {
@@ -547,7 +577,7 @@ body {
 
 .card-course-image {
 	@include span-columns(3 of 8);
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		@include span-columns(12 of 12);
 	    }	
 }
@@ -560,7 +590,7 @@ body {
 	@include span-columns(5 of 8);
 	font-size: 0.9em;
 	padding-left:1em;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		padding-left:0;
 		@include span-columns(12 of 12);
 	    }	
@@ -573,7 +603,7 @@ body {
 
 .card-course-footer {
 	@include span-columns(8 of 8);
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		@include span-columns(12 of 12);
 	    }
 }
@@ -600,7 +630,7 @@ body {
     background: #F5F5F5 ;
     display:inline-block;
     text-transform: uppercase;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		font-size: 0.8em;
 		@include span-columns(5 of 12);
 	    }	
@@ -639,7 +669,7 @@ body {
     background: #F5F5F5;
     display:inline-block;
     text-transform: uppercase;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		font-size: 0.8em;
 		@include span-columns(7 of 12);
 	    }
@@ -702,7 +732,7 @@ body {
     font-size:16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		font-size: 0.8em;
 		@include span-columns(12 of 12);
 	    }
@@ -783,7 +813,7 @@ body {
 	line-height: $size-xs;
 	padding-left:1em;
 	@include border-bottom-radius(1em);
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 		line-height: 3em;
 		@include border-bottom-radius(0);
 		@include span-columns(12 of 12);
@@ -899,13 +929,13 @@ button:hover {
 /* Sample FormBuilder CSS base */
 
 .contactform table {
-	border: 0px solid $white !important;
+	border: 0px solid $white;
 }
 
 .contactform td {
 	padding: 0.4em 0.5em;
 	border:none;
-	@media screen and (max-width: 768px){
+	@include media($mobile){
 	    @include span-columns(12 of 12);
 	    @include border-top-radius(0.5em);
 		@include border-bottom-radius(0);
@@ -919,5 +949,144 @@ button:hover {
 	    @include span-columns(12 of 12);
 	    }
 }
+
+// ScrollNav Styles
+
+.month, .year, .day {
+    font-size:0.7em;
+    color: #808080;
+}
+
+.scroll-nav {
+ /* top: 15em;*/
+  background: #000;
+}
+
+.scroll-nav.fixed .scroll-nav__wrapper {
+   /* width: 100%;*/
+    position: fixed;
+    top: 0;
+    z-index: 20; 
+    background: #000;
+}
+
+.scroll-nav__wrapper {
+background:#000;
+}
+
+.scroll-nav__wrapper li {
+  display:inline-block;
+  list-style:none;
+   font-family:AldoPC;
+  /*font-size:0.8em;*/
+}
+
+.scroll-nav__wrapper ol {
+  padding-left:0;
+}
+.scroll-nav__heading {
+
+}
+.scroll-nav__heading:before {
+
+}
+
+.scroll-nav__list {
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+.scroll-nav__item {
+
+}
+.scroll-nav__item:before {
+  color: #fff;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+
+}
+.scroll-nav__item.active {
+  background: #fff;
+}
+
+.scroll-nav__item.active a {
+  color: #000;
+}
+
+.scroll-nav__item.active a:hover {
+  color: #000;
+}
+
+.scroll-nav__link {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding-left: 42px;
+}
+.scroll-nav__link:hover {
+  color: #fff;
+}
+
+.content {
+
+}
+
+.all-yours {
+  max-width: 580px;
+  margin: 0 auto 20px;
+}
+
+
+
+@media screen and (min-width: 40.625em) {
+
+}
+@media screen and (min-width: 60em) {
+
+  .content {
+    /*margin-left: 210px;*/
+    /*padding: 30px;*/
+  }
+
+  .scroll-nav__wrapper {
+    /*padding: 15px 10px;*/
+  }
+
+  .scroll-nav__heading {
+
+  }
+  .scroll-nav__heading:before {
+
+  }
+
+  .scroll-nav__item {
+
+  }
+  .scroll-nav__item.active {
+
+  }
+  .scroll-nav__item:before {
+    width: 30px;
+  }
+
+  .scroll-nav__link {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .feature {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 33.33333%;
+    padding: 0 10px;
+  }
+}
+
 
 

@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'AldoPC';
-    src: url('../../fonts/aldoPC.ttf');
+    src: url('../../fonts/AldoPC.ttf');
     font-weight: normal;
     font-style: normal;
     }
@@ -24,7 +24,7 @@ body {
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 {
-    font-family: AldoPC;
+    font-family: AldoPC, Tahoma, sans-serif ;
     font-style:             normal;
     }
     // -----------------------------------
@@ -34,6 +34,7 @@ p {
     }
     // -----------------------------------
 a { 
+    font-family: AldoPC, Tahoma, sans-serif ;
     font-style:             normal;
     }
     // -----------------------------------
@@ -42,6 +43,7 @@ small {
     }
     // -----------------------------------
 ul, ol, li {
+    font-family: AldoPC, Tahoma, sans-serif ;
     font-style:             normal;
     }
     // -----------------------------------

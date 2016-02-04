@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon" />
     <!-- Styles and fonts --> 
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../scripts/all/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
     <div id="app" class="layout_main">
@@ -44,47 +44,90 @@
                     </a>   
                 </div>
             </div>
-            <div class="menu-mobile fixed--top bg--gray8">
+        </div>  
 
-                <div class="menu-left">
-                    <a href="#">
-                        <img src="../img/logo-app.png" alt="Logo">
-                    </a>                    
-                </div>
+        <header class="menu-mobile fixed--top">
+          <a id="cd-logo" href="#0"><img src="../img/logo-app.png" alt="Home"></a>
+          <a id="cd-menu-trigger" href="#0">
+            <span class="cd-menu-text">Menu</span>
+            <span class="cd-menu-icon"></span>
+          </a>
+        </header>
 
-                <div class="menu-center">
-                    <h2>Section Title</h2>
-                </div>
 
-                <div class="menu-right">
-                    <button type="button" class="js-menu-trigger sliding-panel-button">
-                      <span class="icon-menu small"></span>
-                    </button>
-                </div>
+        <nav id="cd-lateral-nav">
+          <ul class="cd-navigation">
+            <li class="item-has-children">
+              <a href="#0">Services</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Brand</a></li>
+                <li><a href="#0">Web Apps</a></li>
+                <li><a href="#0">Mobile Apps</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
 
-                <nav class="js-menu sliding-panel-content">
-                  <ul>
-                    <li><a href="javascript:void(0)">Item 1</a></li>
-                    <li><a href="javascript:void(0)">Item 2</a></li>
-                    <li><a href="javascript:void(0)">Item 3</a></li>
-                  </ul>
-                </nav>
+            <li class="item-has-children">
+              <a href="#0">Products</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Product 1</a></li>
+                <li><a href="#0">Product 2</a></li>
+                <li><a href="#0">Product 3</a></li>
+                <li><a href="#0">Product 4</a></li>
+                <li><a href="#0">Product 5</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
 
-                <div class="js-menu-screen sliding-panel-fade-screen"></div>
-            </div>
+            <li class="item-has-children">
+              <a href="#0">Stockists</a>
+              <ul class="sub-menu">
+                <li><a href="#0">London</a></li>
+                <li><a href="#0">New York</a></li>
+                <li><a href="#0">Milan</a></li>
+                <li><a href="#0">Paris</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+          </ul> <!-- cd-navigation -->
 
-        </div>    
-        <!-- Subheader :::::::::::::::::::::: -->
-        <div id="subheader" class="layout_subheader">
-            <div class="section-title">
-                <h2>ACTUALIDAD</h2>   
-            </div>    
-            <div class="section-options">
-                
-            </div>  
-        </div>
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Tour</a></li>
+            <li><a href="#0">Login</a></li>
+            <li><a href="#0">Register</a></li>
+            <li><a href="#0">Pricing</a></li>
+            <li><a href="#0">Support</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a class="current" href="#0">Journal</a></li>
+            <li><a href="#0">FAQ</a></li>
+            <li><a href="#0">Terms &amp; Conditions</a></li>
+            <li><a href="#0">Careers</a></li>
+            <li><a href="#0">Students</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <div class="cd-navigation socials social-links">
+            <a href="#" class="btn-dark circle">
+                <span class="icon-ribbon medium"></span>
+            </a>
+            <a href="#" class="btn-dark circle">
+                <span class="icon-heart medium"></span>
+            </a>
+            <a href="#" class="btn-dark circle">
+                <span class="icon-printer medium"></span>
+            </a>  
+          </div> <!-- socials -->
+        </nav>
+
         <!-- Content Area :::::::::::::::::::::: --> 
-        <div id="contentarea" class="layout_content">
+        <div id="contentarea" class="layout_content cd-main-content">
+            <!-- Subheader :::::::::::::::::::::: -->
+            <div id="subheader" class="layout_subheader">
+                <div class="section-title">
+                    <h2>ACTUALIDAD</h2>   
+                </div>    
+                <div class="section-options">
+                    
+                </div>  
+            </div>
             <!-- Content :::::::::::::::::::::: -->
             <div class="content">
                 <div class="content-image">
@@ -171,39 +214,7 @@
     < Volver
 </div>
 
-<div class="card">
-    <div class="card-image">
-        <img src="{$root->url}uploads/images/cursos/{$item->fielddefs.imagen.value|cms_escape}" />
-    </div>
-    <div class="card-summary">
-        <ul>
-            <li><b>Fecha: </b>{$item->fielddefs.fecha.value|cms_escape}</li>
-            <li><b>Horario: </b>{$item->fielddefs.horario.value|cms_escape}</li>
-            <li><b>Días: </b>{$item->fielddefs.dias.value|cms_escape}</li>
-            <li><b>Lugar: </b>{$item->fielddefs.lugar.value|cms_escape}</li>
-            <li><b>Intensidad: </b>{$item->fielddefs.intensidad.value|cms_escape}</li>
-            <li><b>Docentes: </b>{$item->fielddefs.docentes.value|cms_escape}</li>
-            <li><b>Inversión: </b>{$item->fielddefs.inversion.value|cms_escape}</li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="card-footer">
-        
-        
-    </div>
-<div style="width:620px;height:50px;clear:both;">
- <a href="/cursos-dialog" rel="shadowbox;width=650;height=550" >
-    <div class="btn-medium">
-        Preinscribirse
-    </div>
-</a>
- <a href="{$item->url}">
-    <div class="btn-content">
-        Ver Contenidos del Curso
-    </div>
-</a>
-</div>
-</div>
+
 
                 
             </div>
@@ -260,24 +271,15 @@
                 </div>
             </div>
         </div>
-
-
         <!-- Footer :::::::::::::::::::::: -->        
         <div id="footer" class="layout_footer">
              <p class="to-center">Swan Project - 2015</p>
         </div>
     </div>
 
-<script type="text/javascript">
-    
-$(document).ready(function(){
-  $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
-    e.preventDefault();
-  });
-});
 
-</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/all/main.js"></script>
 
 </body>
 </html>

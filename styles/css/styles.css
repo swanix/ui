@@ -290,6 +290,11 @@ html, body {
   padding: 0;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: Tahoma, Geneva, sans-serif;
 }
@@ -1357,7 +1362,7 @@ cite {
 
 @font-face {
   font-family: 'AldoPC';
-  src: url("../../fonts/aldoPC.ttf");
+  src: url("../../fonts/AldoPC.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -1369,7 +1374,7 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: AldoPC;
+  font-family: AldoPC, Tahoma, sans-serif;
   font-style: normal;
 }
 
@@ -1379,6 +1384,7 @@ p {
 }
 
 a {
+  font-family: AldoPC, Tahoma, sans-serif;
   font-style: normal;
 }
 
@@ -1387,6 +1393,7 @@ small {
 }
 
 ul, ol, li {
+  font-family: AldoPC, Tahoma, sans-serif;
   font-style: normal;
 }
 
@@ -2075,10 +2082,6 @@ cite {
   }
 }
 
-body {
-  background: #000000 url("http://www.cinefilia.org.co/uploads/images/background/bg-body-blue.jpg") no-repeat fixed center center;
-}
-
 @media screen and (max-width: 768px) {
   body {
     background: none;
@@ -2104,7 +2107,6 @@ body {
   margin-right: 0%;
   width: 100%;
   height: 8em;
-  margin-bottom: 1em;
 }
 
 .layout_header:last-child {
@@ -2134,7 +2136,7 @@ body {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 16.66667%;
+    width: 50%;
     text-align: center;
     padding: 0.5em;
     display: none;
@@ -2219,7 +2221,6 @@ body {
 .menu-mobile {
   display: none;
   font-family: AldoPC;
-  box-shadow: 0 2px 4px black;
 }
 
 @media screen and (max-width: 768px) {
@@ -2228,6 +2229,7 @@ body {
   }
 }
 
+/* SLIDING PANEL START */
 .sliding-panel-content {
   position: fixed;
   top: 0px;
@@ -2310,13 +2312,14 @@ body {
   height: 1.3em;
 }
 
+/* SLIDING PANEL END */
 .fixed--top {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 20;
   height: 3em;
-  background: #242424;
+  background: #131313;
 }
 
 .fixed--bottom {
@@ -2404,6 +2407,26 @@ body {
   .submenu {
     display: none;
   }
+}
+
+.menu-categories ul {
+  list-style: none;
+  float: left;
+}
+
+.menu-categories li {
+  font-family: AldoPC;
+  float: left;
+  margin-right: 2em;
+  color: #D3D3D3;
+}
+
+.menu-categories li a {
+  color: #D3D3D3;
+}
+
+.menu-categories li a:hover {
+  color: #F7F7F7;
 }
 
 .layout_subheader {
@@ -3243,7 +3266,7 @@ button:hover {
 
 /* Sample FormBuilder CSS base */
 .contactform table {
-  border: 0px solid #FFFFFF !important;
+  border: 0px solid #FFFFFF;
 }
 
 .contactform td {
@@ -3280,6 +3303,104 @@ button:hover {
   a
 .contactform input[type="submit"]:last-child {
     margin-right: 0;
+  }
+}
+
+.month, .year, .day {
+  font-size: 0.7em;
+  color: #808080;
+}
+
+.scroll-nav {
+  /* top: 15em;*/
+  background: #000;
+}
+
+.scroll-nav.fixed .scroll-nav__wrapper {
+  /* width: 100%;*/
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background: #000;
+}
+
+.scroll-nav__wrapper {
+  background: #000;
+}
+
+.scroll-nav__wrapper li {
+  display: inline-block;
+  list-style: none;
+  font-family: AldoPC;
+  /*font-size:0.8em;*/
+}
+
+.scroll-nav__wrapper ol {
+  padding-left: 0;
+}
+
+.scroll-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.scroll-nav__item:before {
+  color: #fff;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+}
+
+.scroll-nav__item.active {
+  background: #fff;
+}
+
+.scroll-nav__item.active a {
+  color: #000;
+}
+
+.scroll-nav__item.active a:hover {
+  color: #000;
+}
+
+.scroll-nav__link {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding-left: 42px;
+}
+
+.scroll-nav__link:hover {
+  color: #fff;
+}
+
+.all-yours {
+  max-width: 580px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 60em) {
+  .content {
+    /*margin-left: 210px;*/
+    /*padding: 30px;*/
+  }
+  .scroll-nav__wrapper {
+    /*padding: 15px 10px;*/
+  }
+  .scroll-nav__item:before {
+    width: 30px;
+  }
+  .scroll-nav__link {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .feature {
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 33.33333%;
+    padding: 0 10px;
   }
 }
 
@@ -3321,3 +3442,353 @@ button:hover {
 .menu__social {
   margin-top: 5px;
 }
+
+/* OFFCANVAS MENU */
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-main-content {
+  /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.cd-main-content.lateral-menu-is-open {
+  /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
+  -webkit-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  transform: translateX(-260px);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #4e6361;
+  z-index: 3;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+header.lateral-menu-is-open {
+  /* translate to show the lateral menu */
+  -webkit-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  transform: translateX(-260px);
+}
+
+header.is-fixed {
+  position: fixed;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 70px;
+  }
+}
+
+#cd-logo {
+  display: block;
+  float: left;
+  margin: 0px 0 0 5px;
+  width: 4em;
+  height: auto;
+}
+
+#cd-logo img {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-logo {
+    margin: 22px 0 0 30px;
+  }
+}
+
+#cd-top-nav {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  height: 100%;
+  display: none;
+}
+
+#cd-top-nav ul {
+  height: 100%;
+  padding-top: 18px;
+}
+
+#cd-top-nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#cd-top-nav a {
+  display: inline-block;
+  padding: .5em;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#cd-top-nav a.current {
+  background-color: #242e30;
+}
+
+.no-touch #cd-top-nav a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-top-nav {
+    display: block;
+  }
+}
+
+#cd-menu-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  border-bottom-left-radius: 0.8em;
+  border-top-left-radius: 0.8em;
+  background-color: #242424;
+}
+
+#cd-menu-trigger .cd-menu-text {
+  height: 100%;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 600;
+  display: none;
+}
+
+#cd-menu-trigger .cd-menu-icon {
+  /* this span is the central line in the menu menu */
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 18px;
+  height: 2px;
+  background-color: #FFF;
+  /* these are the upper and lower lines in the menu menu */
+}
+
+#cd-menu-trigger .cd-menu-icon::before, #cd-menu-trigger .cd-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: inherit;
+  left: 0;
+}
+
+#cd-menu-trigger .cd-menu-icon::before {
+  bottom: 5px;
+}
+
+#cd-menu-trigger .cd-menu-icon::after {
+  top: 5px;
+}
+
+#cd-menu-trigger.is-clicked .cd-menu-icon {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#cd-menu-trigger.is-clicked .cd-menu-icon::before, #cd-menu-trigger.is-clicked .cd-menu-icon::after {
+  background-color: white;
+}
+
+#cd-menu-trigger.is-clicked .cd-menu-icon::before {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#cd-menu-trigger.is-clicked .cd-menu-icon::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-menu-trigger {
+    width: 110px;
+    padding-left: 1.25em;
+  }
+  #cd-menu-trigger .cd-menu-text {
+    display: inline-block;
+    line-height: 70px;
+  }
+  #cd-menu-trigger .cd-menu-icon {
+    left: auto;
+    right: 1.25em;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+#cd-lateral-nav {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 1;
+  width: 260px;
+  background-color: #242424;
+  overflow-y: auto;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0.4s;
+  transition: transform 0.4s 0s, visibility 0s 0.4s;
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+#cd-lateral-nav .cd-navigation {
+  margin: 10px 0 16px;
+}
+
+#cd-lateral-nav .sub-menu {
+  padding: 0 10px 20px 15px;
+  display: none;
+}
+
+#cd-lateral-nav a {
+  display: block;
+  line-height: 2em;
+  padding: 0 16px 0 32px;
+  color: #aab5b7;
+}
+
+#cd-lateral-nav a.current {
+  background-color: #383838;
+  color: #FFF;
+}
+
+.no-touch #cd-lateral-nav a:hover {
+  color: #FFF;
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-lateral-nav .cd-navigation {
+    margin: 20px 0;
+  }
+}
+
+#cd-lateral-nav.lateral-menu-is-open {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
+  transition: transform 0.4s 0s, visibility 0s 0s;
+  /* smooth the scrolling on touch devices - webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+#cd-lateral-nav li, ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* style menu items which have a submenu  */
+#cd-lateral-nav .item-has-children > a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* this is the right arrow to show that the item has a submenu  */
+}
+
+#cd-lateral-nav .item-has-children > a::after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 1em;
+  background: url("../img/cd-arrow.svg") no-repeat center center;
+  background-size: 8px 11px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+#cd-lateral-nav .item-has-children > a.submenu-open::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+#cd-lateral-nav .socials {
+  padding: 0 32px;
+}
+
+#cd-lateral-nav .socials::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#cd-lateral-nav .socials a {
+  float: left;
+  padding: 10px 0;
+  margin-right: .5em;
+}
+
+/* OFFCANVAS MENU */
