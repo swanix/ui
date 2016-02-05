@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon" />
     <!-- Styles and fonts --> 
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="../scripts/all/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
     <div id="app" class="layout_main">
@@ -32,36 +33,108 @@
                     <li>Section 6</li>
                 </ul>
                 <div class="social-links">
-                    <a href="#" class="btn circle">
+                    <a href="#" class="btn-dark circle">
                         <span class="icon-ribbon medium"></span>
                     </a>
-                    <a href="#" class="btn circle">
+                    <a href="#" class="btn-dark circle">
                         <span class="icon-heart medium"></span>
                     </a>
-                    <a href="#" class="btn circle">
+                    <a href="#" class="btn-dark circle">
                         <span class="icon-printer medium"></span>
                     </a>   
                 </div>
             </div>
-        </div>    
-        <!-- Subheader :::::::::::::::::::::: -->
-        <div id="subheader" class="layout_subheader">
-            <div class="section-title">
-                <h2>Section Title</h2>   
-            </div>    
-            <div class="section-options">
-                
-            </div>  
-        </div>
+        </div>  
+
+        <header class="menu-mobile fixed--top">
+          <a id="cd-logo" href="#0"><img src="../img/logo-app.png" alt="Home"></a>
+          <a id="cd-menu-trigger" href="#0">
+            <span class="cd-menu-text">Menu</span>
+            <span class="cd-menu-icon"></span>
+          </a>
+        </header>
+
+
+        <nav id="cd-lateral-nav">
+          <ul class="cd-navigation">
+            <li class="item-has-children">
+              <a href="#0">Services</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Brand</a></li>
+                <li><a href="#0">Web Apps</a></li>
+                <li><a href="#0">Mobile Apps</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+
+            <li class="item-has-children">
+              <a href="#0">Products</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Product 1</a></li>
+                <li><a href="#0">Product 2</a></li>
+                <li><a href="#0">Product 3</a></li>
+                <li><a href="#0">Product 4</a></li>
+                <li><a href="#0">Product 5</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+
+            <li class="item-has-children">
+              <a href="#0">Stockists</a>
+              <ul class="sub-menu">
+                <li><a href="#0">London</a></li>
+                <li><a href="#0">New York</a></li>
+                <li><a href="#0">Milan</a></li>
+                <li><a href="#0">Paris</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+          </ul> <!-- cd-navigation -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Tour</a></li>
+            <li><a href="#0">Login</a></li>
+            <li><a href="#0">Register</a></li>
+            <li><a href="#0">Pricing</a></li>
+            <li><a href="#0">Support</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a class="current" href="#0">Journal</a></li>
+            <li><a href="#0">FAQ</a></li>
+            <li><a href="#0">Terms &amp; Conditions</a></li>
+            <li><a href="#0">Careers</a></li>
+            <li><a href="#0">Students</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <div class="cd-navigation socials social-links">
+            <a href="#" class="btn-dark circle">
+                <span class="icon-ribbon medium"></span>
+            </a>
+            <a href="#" class="btn-dark circle">
+                <span class="icon-heart medium"></span>
+            </a>
+            <a href="#" class="btn-dark circle">
+                <span class="icon-printer medium"></span>
+            </a>  
+          </div> <!-- socials -->
+        </nav>
+
         <!-- Content Area :::::::::::::::::::::: --> 
-        <div id="contentarea" class="layout_content">
+        <div id="contentarea" class="layout_content cd-main-content">
+            <!-- Subheader :::::::::::::::::::::: -->
+            <div id="subheader" class="layout_subheader">
+                <div class="section-title">
+                    <h2>ACTUALIDAD</h2>   
+                </div>    
+                <div class="section-options">
+                    
+                </div>  
+            </div>
             <!-- Content :::::::::::::::::::::: -->
             <div class="content">
                 <div class="content-image">
-                    <img src="http://placehold.it/650x300">
+                    <img src="http://www.cinefilia.org.co/uploads/images/2016/header-cursos-2016-1.jpg">
                 </div>
                 <div class="content-title">
-                    <h1>Content Title</h1> 
+                    <h1>¿Por qué en Medellín no hacemos tanto cine como en otras ciudades?</h1> 
                 </div>
 
                 <div class="content-body">
@@ -71,28 +144,128 @@
                 <p>Sed sollicitudin, odio a pulvinar pharetra, mauris magna ultrices nisi, sit amet sagittis nisl metus nec ipsum. Etiam viverra rhoncus congue. Mauris auctor tortor vitae facilisis sollicitudin. Sed at felis feugiat, vulputate justo sit amet, sodales quam. Maecenas pharetra velit in nisl fermentum, nec porta urna elementum. Cras mattis tortor eget semper blandit. Proin quis sagittis lacus. Morbi non quam vel quam mattis tincidunt nec a elit. Aenean quis ornare turpis. Nullam ac bibendum est. Integer pellentesque arcu a quam mollis, et viverra nibh maximus. </p>
 
                 <p>Quisque eu nisi nulla. Quisque posuere ut erat non euismod. Aliquam a risus lectus. Sed lorem ligula, mattis eu gravida eu, facilisis ut odio. Integer ultricies purus eu ligula auctor sagittis. In interdum lectus ligula, vitae vulputate leo laoreet id. Nam tincidunt felis sit amet mollis volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum nunc id enim finibus, vitae imperdiet mi laoreet. Integer quis risus ut metus posuere vestibulum. Sed tempus auctor mi at egestas. Nam eu feugiat orci. Nullam eget finibus quam, nec ultricies mi. Vestibulum faucibus pellentesque consectetur.</p> 
+
+<div class="cards">
+  <div class="card">
+    <a href="#">
+        <div class="card-image">
+          <img src="http://www.cinefilia.org.co/uploads/news/id155/articulo-mini.jpg" alt="">
+        </div>
+        <div class="card-summary">
+          <h3>Abierta convocatoria al 3er Laboratorio Internacional de Guion</h3>
+          <p>Hasta el 23 de julio se recibirán las historias que quieran ser postuladas.</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="http://www.cinefilia.org.co/uploads/news/id154/articulo-mini.jpg" alt="">
+    </div>
+    <div class="card-summary">
+      <h3><a href="#">En memoria de Orson Welles</a></h3>
+      <p>Cinefilia le rinde homenaje a este director en la conmemoración de los 100 años de su nacimiento.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="http://www.cinefilia.org.co/uploads/news/id152/sobrecine-mini.jpg" alt="">
+    </div>
+    <div class="card-summary">
+      <h3><a href="#">La discusión sobre el cine en Medellín está abierta</a></h3>
+      <p>Este joven director plantea algunas preguntas al porqué en Medellín no hacemos tanto cine como en otras ciudades..</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="http://www.cinefilia.org.co/uploads/news/id152/sobrecine-mini.jpg" alt="">
+    </div>
+    <div class="card-summary">
+      <h3><a href="#">La discusión sobre el cine en Medellín está abierta</a></h3>
+      <p>Este joven director plantea algunas preguntas al porqué en Medellín no hacemos tanto cine como en otras ciudades..</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="http://www.cinefilia.org.co/uploads/news/id152/sobrecine-mini.jpg" alt="">
+    </div>
+    <div class="card-summary">
+      <h3><a href="#">La discusión sobre el cine en Medellín está abierta</a></h3>
+      <p>Este joven director plantea algunas preguntas al porqué en Medellín no hacemos tanto cine como en otras ciudades..</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="http://www.cinefilia.org.co/uploads/news/id152/sobrecine-mini.jpg" alt="">
+    </div>
+    <div class="card-summary">
+      <h3><a href="#">La discusión sobre el cine en Medellín está abierta</a></h3>
+      <p>Este joven director plantea algunas preguntas al porqué en Medellín no hacemos tanto cine como en otras ciudades..</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="return">
+    < Volver
+</div>
+
+
+
                 
-              </div>
+            </div>
             </div>
             <!-- Sidebar :::::::::::::::::::::: -->
             <div class="sidebar">
-                <div class="banner">
-                    <img src="http://placehold.it/380x350">
+                <div class="banner" style="display:none;">
+                    <img src="http://placehold.it/380x320/242424/ffffff/">
                 </div>
                 <div class="panel">
                     <div class="panel-title">
                         <h3 class="to-center">Related Content<h3/>
                     </div>
                     <div class="panel-content">
-                        <ul>
-                            <li><a href="#">Related content Link 1</a></li>
-                            <li><a href="#">Related content Link 2</a></li>
-                            <li><a href="#">Related content Link 3</a></li>
-                            <li><a href="#">Related content Link 4</a></li>
-                            <li><a href="#">Related content Link 5</a></li>
-                            <li><a href="#">Related content Link 6</a></li>
-                            <li><a href="#">Related content Link 7</a></li>
-                            <li><a href="#">Related content Link 8</a></li>
+                        <ul class="listview">
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>El IV FICME entregó más de 30 millones en premios</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>Narrar en la Era Digital - Guion de Web Series. Curso de Verano</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>Abierta convocatoria al 3er Laboratorio Internacional de Guion</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>La discusión sobre el cine en Medellín está abierta: Mauricio Maldonado</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>Seminario intensivo: el 'casting' en el cine</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="http://lorempixum.com/50/50/nature/1" >
+                                    <h3>¿Por qué en Medellín no hacemos tanto cine como en otras ciudades?</h3>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -103,5 +276,10 @@
              <p class="to-center">Swan Project - 2015</p>
         </div>
     </div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/all/main.js"></script>
+
 </body>
 </html>
