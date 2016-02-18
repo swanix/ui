@@ -1,4 +1,4 @@
-![alt text](https://github.com/zemiotic/swan/blob/master/img/logo.png "Swan - User Interface")
+![alt text](https://github.com/zemiotic/swan/blob/master/images/logo.png "Swan - User Interface")
 
 Experimental UI framework. Work in progress... 
 
