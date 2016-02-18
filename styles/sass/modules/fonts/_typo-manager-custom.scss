@@ -1,0 +1,73 @@
+
+// -----------------------------------------------------------
+// TYPO MANAGER by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// MY TYPOGRAPHY
+// -----------------------------------------------------------
+
+@font-face {
+    font-family: 'AldoPC';
+    src: url('../../fonts/AldoPC.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+// TEXTS 
+// -----------------------------------------------------------
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;           
+    font-style:             normal;
+    }
+    // -----------------------------------
+h1, h2, h3, 
+h4, h5, h6 {
+    font-family: AldoPC, Tahoma, sans-serif ;
+    font-style:             normal;
+    }
+    // -----------------------------------
+p {
+    font-family: Tahoma, Geneva, sans-serif; 
+    font-style:             normal;
+    }
+    // -----------------------------------
+a { 
+    font-family: AldoPC, Tahoma, sans-serif ;
+    font-style:             normal;
+    }
+    // -----------------------------------
+small { 
+    font-style:             normal;
+    }
+    // -----------------------------------
+ul, ol, li {
+    font-family: AldoPC, Tahoma, sans-serif ;
+    font-style:             normal;
+    }
+    // -----------------------------------
+dl, dt, dd {
+    font-style:             normal;
+    }
+    // -----------------------------------
+blockquote {
+    font-style:             italic;
+    }
+    // -----------------------------------
+q {
+    font-style:             italic;
+    }
+    // -----------------------------------
+cite {
+    font-style:             normal;
+    }
+    // -----------------------------------
+
+// CUSTOM MODULES 
+// -----------------------------------------------------------
+
+.typo-preview td {
+    font-family: Tahoma, Geneva, sans-serif;
+    }
+    // -----------------------------------
