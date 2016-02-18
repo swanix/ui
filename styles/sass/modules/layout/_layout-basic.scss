@@ -14,7 +14,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 // -----------------------------------------------------------
 
 body {
-  //background: #000000 url("http://www.cinefilia.org.co/uploads/images/background/bg-body-blue.jpg") no-repeat fixed center center;
+  background: $gray7 url("../../images/bg-body.jpg") no-repeat fixed center center;
     @include media($mobile){
 		background:none;
 		background-color: $gray9;
@@ -55,20 +55,16 @@ body {
 			width: 3.4em;
 	    }
 	}
-
-	.menu-main {
+	header.navigation {
 		@include span-columns(10);
-		font-family: AldoPC;
-		height: 3.5em;
-		background: $gray8;
-		margin-top: 2.5em;
-	    font-size: 0.9rem;
-	    border:solid 1px $gray6; 
-	    text-transform: uppercase;   
-		@include border-top-radius(0.8em);
-		@include border-bottom-radius(0.8em);	
-		@include background(linear-gradient(top, $color-start, $color-end));
-		box-shadow: 0 2px 4px darken($black, 10%);    
+		@include media($mobile){
+	        @include span-columns(0 of 12);
+	        margin-top: 0px;
+	        display: none;
+	    }	
+	}
+	.navigation-wrapper, .navigation {
+		@include span-columns(10);
 		@include media($mobile){
 	        @include span-columns(0 of 12);
 	        margin-top: 0px;
@@ -76,27 +72,6 @@ body {
 	    }
 	}
 
-	.menu-main li {
-	    list-style: none;
-	    float: left;
-	    margin-right: 20px;
-	    color: $gray2;
-	}
-
-	.menu-main li a {
-		color: $gray2;
-	}
-
-	.menu-main li a:hover {
-		color: $white;
-	}
-
-	.menu-main ul {
-	    list-style: none;
-	    float: left;
-	    margin-right: 20px;
-	    display: inline-block;
-}
 
 	.menu-mobile {
 		display: none;
@@ -106,87 +81,6 @@ body {
 	        display: block;
 	    }
 	}
-
-/* SLIDING PANEL START */
-
-.sliding-panel-content {  
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $sliding-panel-border-color: $dark-gray;
-  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
-  $sliding-panel-color: #fff;
-  $sliding-panel-border: 1px solid $sliding-panel-border-color;
-  $sliding-panel-background-hover: $action-color;
-  $sliding-panel-color-hover: #fff;
-  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
-
-  @include position(fixed, 0px auto 0px 0px);
-  @include size(220px 100%);
-  @include transform(translateX(-220px));
-  @include transition(all 0.25s linear);
-  background: $sliding-panel-background;
-  z-index: 999999;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  li a {
-    border-bottom: $sliding-panel-border;
-    color: $sliding-panel-color;
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-
-    &:focus {
-      background-color: $sliding-panel-background-focus;
-    }
-
-    &:hover {
-      background-color: $sliding-panel-background-hover;
-      color: $sliding-panel-color-hover;
-    }
-  }
-
-  &.is-visible {
-    @include transform(translateX(0));
-  }
-}
-
-.sliding-panel-fade-screen {
-  @include position(fixed, 0px 0px 0px 0px);
-  @include transition;
-  background: black;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 999998;
-
-  &.is-visible {
-    opacity: 0.4;
-    visibility: visible;
-  }
-}
-
-.sliding-panel-button {
-  padding: 10px 16px;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  outline: none;
-
-  img {
-    height: 1.3em;
-  }
-}
-
-/* SLIDING PANEL END */
 
 // Fixed positions
 
