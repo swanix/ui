@@ -303,12 +303,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
+  margin: 1em 0;
 }
 
 p {
   font-family: Tahoma, Geneva, sans-serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
   font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
 a {
@@ -574,7 +576,7 @@ textarea {
 }
 
 .size--M {
-  height: 8em;
+  height: 9em;
 }
 
 .size--L {
@@ -612,6 +614,10 @@ textarea {
   position: fixed;
   right: 0;
   z-index: 20;
+}
+
+.hide {
+  display: none;
 }
 
 .layout {
@@ -1071,7 +1077,7 @@ h4, h5, h6 {
 }
 
 p {
-  color: #808080;
+  color: #505050;
 }
 
 a {
@@ -1368,6 +1374,14 @@ cite {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'oswald_regularregular';
+  src: url("../../fonts/oswald-regular-webfont.eot");
+  src: url("../../fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/oswald-regular-webfont.woff2") format("woff2"), url("../../fonts/oswald-regular-webfont.woff") format("woff"), url("../../fonts/oswald-regular-webfont.ttf") format("truetype"), url("../../fonts/oswald-regular-webfont.svg#oswald_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Tahoma, Geneva, sans-serif;
   font-style: normal;
@@ -1375,17 +1389,15 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: AldoPC, Tahoma, sans-serif;
-  font-style: normal;
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
 }
 
 p {
   font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
 }
 
 a {
-  font-family: AldoPC, Tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
   font-style: normal;
 }
 
@@ -1412,6 +1424,14 @@ q {
 
 cite {
   font-style: normal;
+}
+
+nav li a {
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+}
+
+.nav a {
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
 }
 
 .typo-preview td {
@@ -2013,7 +2033,7 @@ cite {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
 }
 
 .small {
@@ -2084,7 +2104,7 @@ cite {
 }
 
 body {
-  background: #383838 url("../../images/bg-body.jpg") no-repeat fixed center center;
+  background: #000000 url("../../images/bg-body.jpg") no-repeat fixed center center;
 }
 
 @media screen and (max-width: 768px) {
@@ -2111,7 +2131,7 @@ body {
   display: block;
   margin-right: 0%;
   width: 100%;
-  height: 8em;
+  height: 9em;
 }
 
 .layout_header:last-child {
@@ -2121,6 +2141,31 @@ body {
 @media screen and (max-width: 768px) {
   .layout_header {
     height: 3em;
+  }
+}
+
+header.navigation {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 83.33333%;
+}
+
+header.navigation:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header.navigation {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 0%;
+    margin-top: 0px;
+    display: none;
+  }
+  header.navigation:last-child {
+    margin-right: 0;
   }
 }
 
@@ -2152,38 +2197,13 @@ body {
 }
 
 .logo-main img {
-  margin: 0.8em 0 0 1.5em;
-  width: 50%;
+  margin: 0.8em 0 0 1em;
+  width: 70%;
 }
 
 @media screen and (max-width: 768px) {
   .logo-main img {
     width: 3.4em;
-  }
-}
-
-header.navigation {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 83.33333%;
-}
-
-header.navigation:last-child {
-  margin-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  header.navigation {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 0%;
-    margin-top: 0px;
-    display: none;
-  }
-  header.navigation:last-child {
-    margin-right: 0;
   }
 }
 
@@ -2214,13 +2234,23 @@ header.navigation:last-child {
 
 .menu-mobile {
   display: none;
-  font-family: AldoPC;
 }
 
 @media screen and (max-width: 768px) {
   .menu-mobile {
+    float: left;
     display: block;
+    margin-right: 0%;
+    width: 100%;
+    margin-top: 0px;
   }
+  .menu-mobile:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-title {
+  margin-top: 2em;
 }
 
 .fixed--top {
@@ -2250,93 +2280,10 @@ header.navigation:last-child {
   z-index: 20;
 }
 
-.menu-left {
-  text-align: left;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 25%;
-}
-
-.menu-left:last-child {
-  margin-right: 0;
-}
-
-.menu-left button, .menu-right button {
-  height: 3em;
-}
-
-.menu-center {
-  text-align: center;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 50%;
-}
-
-.menu-center:last-child {
-  margin-right: 0;
-}
-
-.menu-center h2 {
-  color: #B2B2B2;
-  text-transform: uppercase;
-  font-size: 1.2em;
-}
-
-.menu-right {
-  text-align: right;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 25%;
-}
-
-.menu-right:last-child {
-  margin-right: 0;
-}
-
 .ic-social {
   display: inline-block;
   margin-right: 0.3em;
   margin-top: 0.2em;
-}
-
-.submenu {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 100%;
-}
-
-.submenu:last-child {
-  margin-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .submenu {
-    display: none;
-  }
-}
-
-.menu-categories ul {
-  list-style: none;
-  float: left;
-}
-
-.menu-categories li {
-  font-family: AldoPC;
-  float: left;
-  margin-right: 2em;
-  color: #D3D3D3;
-}
-
-.menu-categories li a {
-  color: #D3D3D3;
-}
-
-.menu-categories li a:hover {
-  color: #F7F7F7;
 }
 
 .layout_subheader {
@@ -2344,7 +2291,7 @@ header.navigation:last-child {
   display: block;
   margin-right: 0%;
   width: 100%;
-  height: 8em;
+  height: 9em;
   background: -webkit-linear-gradient(top, #242424, #000000);
   background: linear-gradient(to bottom, #242424, #000000);
   padding: 1em 2em;
@@ -3693,44 +3640,6 @@ Main components
   font-weight: normal;
 }
 
-.logo-main {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 16.66667%;
-  padding: 0.5em;
-}
-
-.logo-main:last-child {
-  margin-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .logo-main {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 50%;
-    text-align: center;
-    padding: 0.5em;
-    display: none;
-  }
-  .logo-main:last-child {
-    margin-right: 0;
-  }
-}
-
-.logo-main img {
-  margin: 0.8em 0 0 1.5em;
-  width: 50%;
-}
-
-@media screen and (max-width: 768px) {
-  .logo-main img {
-    width: 3.4em;
-  }
-}
-
 header.navigation {
   float: left;
   display: block;
@@ -4123,4 +4032,109 @@ header.navigation .search-bar form button[type=submit] img {
     box-sizing: border-box;
     display: block;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.fxd {
+  padding-left: 6.8em;
+}
+
+.wrap {
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  z-index: 10;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0.5em 1.8em 2em 1.8em;
+  background: #FFFFFF;
+  color: #fff;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 50px;
+  padding: 30px 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subMenu {
+  height: 50px;
+  z-index: 1000;
+  width: 100%;
+  background: #383838;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 150px;
+  }
+  .subMenu {
+    height: 100px;
+    background: #383838;
+    position: fixed;
+    padding-top: 50px;
+  }
+  .subNavBtn {
+    display: block;
+    height: 25px;
+    width: 2em;
+    float: left;
+    margin: 0px 0px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px 20% 0 20%;
+    text-align: center;
+    color: #fff;
+  }
+  .fxd {
+    padding-left: 0;
+  }
+}
+
+.subNavBtn {
+  display: block;
+  height: 50px;
+  width: auto;
+  min-width: 4em;
+  float: left;
+  margin: 0px 0px 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+.subMenu a:hover {
+  color: #FFFFFF;
+}
+
+.active {
+  background: #000000;
+}
+
+.end {
+  margin: 0;
 }
