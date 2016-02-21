@@ -303,12 +303,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
+  margin: 1em 0;
 }
 
 p {
   font-family: Tahoma, Geneva, sans-serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
   font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
 a {
@@ -574,7 +576,7 @@ textarea {
 }
 
 .size--M {
-  height: 8em;
+  height: 9em;
 }
 
 .size--L {
@@ -612,6 +614,10 @@ textarea {
   position: fixed;
   right: 0;
   z-index: 20;
+}
+
+.hide {
+  display: none;
 }
 
 .layout {
@@ -1071,7 +1077,7 @@ h4, h5, h6 {
 }
 
 p {
-  color: #808080;
+  color: #505050;
 }
 
 a {
@@ -1368,6 +1374,17 @@ cite {
   font-style: normal;
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'oswald_regularregular';
+  src: url("../../fonts/oswald-regular-webfont.eot");
+  src: url("../../fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/oswald-regular-webfont.woff2") format("woff2"), url("../../fonts/oswald-regular-webfont.woff") format("woff"), url("../../fonts/oswald-regular-webfont.ttf") format("truetype"), url("../../fonts/oswald-regular-webfont.svg#oswald_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+>>>>>>> dev
 body {
   font-family: Tahoma, Geneva, sans-serif;
   font-style: normal;
@@ -1375,17 +1392,28 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
+<<<<<<< HEAD
   font-family: AldoPC, Tahoma, sans-serif;
   font-style: normal;
+=======
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+>>>>>>> dev
 }
 
 p {
   font-family: Tahoma, Geneva, sans-serif;
+<<<<<<< HEAD
   font-style: normal;
 }
 
 a {
   font-family: AldoPC, Tahoma, sans-serif;
+=======
+}
+
+a {
+  font-family: Tahoma, sans-serif;
+>>>>>>> dev
   font-style: normal;
 }
 
@@ -1414,6 +1442,17 @@ cite {
   font-style: normal;
 }
 
+<<<<<<< HEAD
+=======
+nav li a {
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+}
+
+.nav a {
+  font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+}
+
+>>>>>>> dev
 .typo-preview td {
   font-family: Tahoma, Geneva, sans-serif;
 }
@@ -2013,7 +2052,11 @@ cite {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   text-align: center;
+<<<<<<< HEAD
   padding-top: 0.5em;
+=======
+  padding-top: 0.2em;
+>>>>>>> dev
 }
 
 .small {
@@ -2084,9 +2127,14 @@ cite {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 body {
   background: #383838 url("../../images/bg-body.jpg") no-repeat fixed center center;
+=======
+body {
+  background: #000000 url("../../images/bg-body.jpg") no-repeat fixed center center;
+>>>>>>> dev
 }
 
 @media screen and (max-width: 768px) {
@@ -2096,7 +2144,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> dev
 .layout_main {
   max-width: 980px;
   margin-left: auto;
@@ -2114,7 +2165,11 @@ body {
   display: block;
   margin-right: 0%;
   width: 100%;
+<<<<<<< HEAD
   height: 8em;
+=======
+  height: 9em;
+>>>>>>> dev
 }
 
 .layout_header:last-child {
@@ -2124,21 +2179,36 @@ body {
 @media screen and (max-width: 768px) {
   .layout_header {
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 5em;
   }
 }
 
 .menu-main {
+=======
+    height: 3em;
+  }
+}
+
+header.navigation {
+>>>>>>> dev
   float: left;
   display: block;
   margin-right: 0%;
   width: 83.33333%;
+<<<<<<< HEAD
   height: 3.5em;
   background: #242424;
   margin-top: 2em;
   font-size: 0.9rem;
   border: solid 1px #383838;
   text-transform: uppercase;
+=======
+}
+
+header.navigation:last-child {
+  margin-right: 0;
+>>>>>>> dev
 }
 
 .menu-main:last-child {
@@ -2162,14 +2232,19 @@ body {
 
 @media screen and (max-width: 768px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   .menu-main {
+=======
+  header.navigation {
+>>>>>>> dev
     float: left;
     display: block;
     margin-right: 0%;
-    width: 66.66667%;
+    width: 0%;
     margin-top: 0px;
     display: none;
   }
+<<<<<<< HEAD
   .menu-main:last-child {
 =======
   .logo-main {
@@ -2183,22 +2258,139 @@ body {
   }
   .logo-main:last-child {
 >>>>>>> master
+=======
+  header.navigation:last-child {
+>>>>>>> dev
     margin-right: 0;
   }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu-main li {
   list-style: none;
+=======
+.logo-main {
+>>>>>>> dev
   float: left;
-  margin-right: 20px;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%;
+  padding: 0.5em;
 }
 
+<<<<<<< HEAD
 .menu-main ul {
   list-style: none;
+=======
+.logo-main:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-main {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    text-align: center;
+    padding: 0.5em;
+    display: none;
+  }
+  .logo-main:last-child {
+    margin-right: 0;
+  }
+}
+
+.logo-main img {
+  margin: 0.8em 0 0 1em;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-main img {
+    width: 3.4em;
+  }
+}
+
+.navigation-wrapper, .navigation {
+>>>>>>> dev
   float: left;
-  margin-right: 20px;
+  display: block;
+  margin-right: 0%;
+  width: 83.33333%;
+}
+
+.navigation-wrapper:last-child, .navigation:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-wrapper, .navigation {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 0%;
+    margin-top: 0px;
+    display: none;
+  }
+  .navigation-wrapper:last-child, .navigation:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-mobile {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .menu-mobile:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-title {
+  margin-top: 2em;
+}
+
+.fixed--top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  height: 3em;
+  background: #131313;
+}
+
+.fixed--bottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+
+.fixed--left {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.fixed--right {
+  position: fixed;
+  right: 0;
+  z-index: 20;
+}
+
+.ic-social {
   display: inline-block;
+  margin-right: 0.3em;
+  margin-top: 0.2em;
 }
 
 .layout_subheader {
@@ -2206,6 +2398,7 @@ body {
   display: block;
   margin-right: 0%;
   width: 100%;
+<<<<<<< HEAD
   height: 8em;
   background: #383838;
 }
@@ -2561,6 +2754,68 @@ header.navigation:last-child {
   width: 66.66667%;
 }
 
+=======
+  height: 9em;
+  background: -webkit-linear-gradient(top, #242424, #000000);
+  background: linear-gradient(to bottom, #242424, #000000);
+  padding: 1em 2em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.layout_subheader:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .layout_subheader {
+    text-align: center;
+    height: 3.8em;
+    margin-top: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 0.1em 1.2em;
+    display: none;
+  }
+}
+
+.layout_subheader h2 {
+  color: #808080;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .layout_subheader h2 {
+    font-size: 1.5em;
+  }
+}
+
+.layout_content {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.layout_content:last-child {
+  margin-right: 0;
+}
+
+.content {
+  float: left;
+  display: block;
+  width: 66.66667%;
+  background: #FFFFFF;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.content:last-child {
+  width: 66.66667%;
+}
+
+>>>>>>> dev
 @media screen and (max-width: 768px) {
   .content {
     float: left;
@@ -3850,6 +4105,7 @@ Main components
   font-weight: normal;
 }
 
+<<<<<<< HEAD
 .logo-main {
   float: left;
   display: block;
@@ -3888,6 +4144,8 @@ Main components
   }
 }
 
+=======
+>>>>>>> dev
 header.navigation {
   float: left;
   display: block;
@@ -4280,4 +4538,112 @@ header.navigation .search-bar form button[type=submit] img {
     box-sizing: border-box;
     display: block;
   }
+<<<<<<< HEAD
+=======
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.fxd {
+  padding-left: 6.8em;
+}
+
+.wrap {
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  z-index: 10;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0.5em 1.8em 2em 1.8em;
+  background: #FFFFFF;
+  color: #fff;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 50px;
+  padding: 30px 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subMenu {
+  height: 50px;
+  z-index: 1000;
+  width: 100%;
+  background: #383838;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 150px;
+  }
+  .subMenu {
+    height: 100px;
+    background: #383838;
+    position: fixed;
+    padding-top: 50px;
+  }
+  .subNavBtn {
+    display: block;
+    height: 25px;
+    width: 2em;
+    float: left;
+    margin: 0px 0px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px 20% 0 20%;
+    text-align: center;
+    color: #fff;
+  }
+  .fxd {
+    padding-left: 0;
+  }
+}
+
+.subNavBtn {
+  display: block;
+  height: 50px;
+  width: auto;
+  min-width: 4em;
+  float: left;
+  margin: 0px 0px 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+.subMenu a:hover {
+  color: #FFFFFF;
+}
+
+.active {
+  background: #000000;
+}
+
+.end {
+  margin: 0;
+>>>>>>> dev
 }

@@ -1,0 +1,123 @@
+// -----------------------------------------------------------
+// MENU SCROLL by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// Based on Smint http://www.outyear.co.uk/smint/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// Original Markup
+
+* {margin: 0; padding: 0; outline: 0;}
+
+.fxd {
+  padding-left:6.8em;
+}
+
+.wrap {
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.section {
+  z-index: 10;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0.5em 1.8em 2em 1.8em;
+  background: $white;
+  color: #fff;
+  border-bottom: 1px solid $gray3;
+}
+
+
+.inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 50px;
+  padding:30px 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.inner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.subMenu {
+  height: 50px;
+  z-index: 1000;
+  width: 100%;
+  background: $gray7;
+}
+
+  @media screen and (max-width: 480px){
+    
+    body {
+      padding-top:150px;
+    }
+
+    .subMenu {
+      height:100px;
+      background:$gray7;
+      position:fixed;
+      padding-top:50px;
+
+    }  
+
+  .subNavBtn {
+    display: block;
+    height: 25px;
+    width: 2em;
+    float: left;
+    margin: 0px 0px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px 20% 0 20%;
+    text-align: center;
+    color: #fff;
+    }  
+
+    .fxd {
+      padding-left:0;
+    }
+
+  }
+
+
+.subNavBtn {
+  display: block;
+  height: 50px;
+  width: auto;
+  min-width: 4em;
+  float: left;
+  margin: 0px 0px 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 50px;
+  
+  color: #fff;
+}
+.subMenu a:hover {
+  //background: $gray8;
+  color: $white;
+}
+
+.active {
+  background: $black;
+}
+.end {
+  margin: 0;
+}
+
+
+
+
