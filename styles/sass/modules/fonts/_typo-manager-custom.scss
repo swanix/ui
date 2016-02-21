@@ -7,12 +7,26 @@
 // MY TYPOGRAPHY
 // -----------------------------------------------------------
 
+
 @font-face {
     font-family: 'AldoPC';
     src: url('../../fonts/AldoPC.ttf');
     font-weight: normal;
     font-style: normal;
     }
+
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../../fonts/oswald-regular-webfont.eot');
+    src: url('../../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 // TEXTS 
 // -----------------------------------------------------------
@@ -24,17 +38,17 @@ body {
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 {
-    font-family: AldoPC, Tahoma, sans-serif ;
-    font-style:             normal;
+    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+    //font-style:             normal;
     }
     // -----------------------------------
 p {
     font-family: Tahoma, Geneva, sans-serif; 
-    font-style:             normal;
+    //font-style:             normal;
     }
     // -----------------------------------
 a { 
-    font-family: AldoPC, Tahoma, sans-serif ;
+    font-family: Tahoma, sans-serif ;
     font-style:             normal;
     }
     // -----------------------------------
@@ -61,6 +75,14 @@ q {
     // -----------------------------------
 cite {
     font-style:             normal;
+    }
+    // -----------------------------------
+nav li a {
+    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+    }
+    // -----------------------------------
+.nav a {
+    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
     }
     // -----------------------------------
 

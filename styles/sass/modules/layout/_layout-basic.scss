@@ -14,7 +14,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 // -----------------------------------------------------------
 
 body {
-  background: $gray7 url("../../images/bg-body.jpg") no-repeat fixed center center;
+  background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
     @include media($mobile){
 		background:none;
 		background-color: $gray9;
@@ -24,6 +24,7 @@ body {
 .layout_main {
 	@include outer-container(980px);
 }
+
 
 // HEADER
 // -----------------------------------------------------------
@@ -37,24 +38,6 @@ body {
     }
 }
 
-	.logo-main {
-		@include span-columns(2);
-		padding: 0.5em;
-	    @include media($mobile){
-	    	@include span-columns(2);
-			text-align: center;
-			padding: 0.5em;
-			display: none;
-	    }
-	}
-
-	.logo-main img {
-		margin: 0.8em 0 0 1.5em;
-		width: 50%;
-	    @include media($mobile){
-			width: 3.4em;
-	    }
-	}
 	header.navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -63,6 +46,26 @@ body {
 	        display: none;
 	    }	
 	}
+
+  .logo-main {
+    @include span-columns(2);
+    padding: 0.5em;
+      @include media($mobile){
+        @include span-columns(2);
+      text-align: center;
+      padding: 0.5em;
+      display: none;
+      }
+  }
+
+  .logo-main img {
+    margin: 0.8em 0 0 1em;
+    width: 70%;
+      @include media($mobile){
+      width: 3.4em;
+      }
+  }
+
 	.navigation-wrapper, .navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -72,15 +75,17 @@ body {
 	    }
 	}
 
-
 	.menu-mobile {
 		display: none;
-		font-family: AldoPC;
-		//box-shadow: 0 2px 4px darken($black, 10%);    
 		@include media($mobile){
-	        display: block;
+	        @include span-columns(12 of 12);
+	        margin-top: 0px;
 	    }
 	}
+
+.section-title {
+	margin-top:2em;
+}
 
 // Fixed positions
 
@@ -113,31 +118,6 @@ body {
 
 // Menu mobile
 
-.menu-left {
-	text-align:left;
-	@include span-columns(3);
-}
-
-.menu-left button, .menu-right button {
-	height: $size-xs;
-}
-
-.menu-center {
-	text-align:center;
-	@include span-columns(6);
-}
-
-.menu-center h2 {
-	color: $gray4;
-	text-transform: uppercase;
-	font-size: 1.2em;
-}
-
-
-.menu-right {
-	text-align:right;
-	@include span-columns(3);
-}
 
 .ic-social {
 	display:inline-block;
@@ -145,36 +125,6 @@ body {
 	margin-top: 0.2em;
 }
 
-
-.submenu {
-	@include span-columns(8 of 8);
-    @include media($mobile){
-		display: none;
-    }	
-}
-
-.menu-categories ul {
-	list-style:none;
-	float:left;
-}
-
-.menu-categories li {
-	font-family: AldoPC;
-	float:left;
-	margin-right: 2em;
-	color: $gray3;
-    @include media($mobile){
-
-    }	
-}
-
-.menu-categories li a {
-	color: $gray3;
-}
-
-.menu-categories li a:hover {
-	color: $gray1;
-}
 
 
 // SUBHEADER
