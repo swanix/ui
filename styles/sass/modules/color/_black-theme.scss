@@ -7,30 +7,6 @@
 // SWAN PALETTE 
 // -----------------------------------------------------------
 
-$white:             #FFFFFF; 
-$gray-light:        #dfe0e6;
-$gray:              #88898c; 
-$gray-shadow:       #323438;
-$gray-dark:         #222326; 
-$gray-black:        #121314; 
-
-$white-smoke:       #F5F5F5; // HTML name color: WhiteSmoke
-$gainsboro:         #DCDCDC; // HTML name color: Gainsboro
-$light-slategray:   #778899; // HTML name color: LightSlateGray
-$slategray:         #708090; // HTML name color: SlateGray
-
-// COLOR CLASSES 
-
-.gray  { color:          $gray; }
-.white { color:          $white; }
-.red   { color:          red; }
-.green { color:          green; }
-
-// GRADIENTS
-
-.gradient--dark { @include linear-gradient(to top, #000000, #323438); }
-.gradient--dark { @include linear-gradient(to top, red, green); }
-
 // TEXTS 
 // -----------------------------------------------------------
 

@@ -4,11 +4,48 @@
 // Based on Bourbon - Refills http://refills.bourbon.io/
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+$mobile: new-breakpoint(max-width 768px 4);
+
+$color-start: rgba(0,0,0,0.8) 30%;
+$color-end: rgba(178,178,178,0.3) 90%; 
+
+
+.logo {
+  @include span-columns(2);
+  padding: 0.5em;
+    @include media($mobile){
+      display: none;
+    }
+}
+
+.logo img {
+  margin: 0.8em 0 0 1em;
+  width: 70%;
+    @include media($mobile){
+    width: 3.4em;
+    }
+}
+
+.logo-mobile {
+  @include span-columns(2);
+  padding: 0.5em;
+    @include media($mobile){
+      @include span-columns(2);
+    }
+}
+
+.logo-mobile img {
+  width: 40%;
+    @include media($mobile){
+    width: 3.4em;
+    }
+}
+
 // Custom Markup
 
 .top-menu-item {
-   margin-right: 20px;
-   margin-left: 20px;
+   padding-right: 20px;
+   padding-left: 20px;
    padding-top:10px;
 } 
 
@@ -20,51 +57,25 @@
     float: left;
 }
 
-.navigation {
-    text-transform: uppercase;
-    background:$gray8;
-    @include border-top-radius(0.8em);
-    @include border-bottom-radius(0.8em);   
-    @include background(linear-gradient(top, $color-start, $color-end));
-    box-shadow: 0 2px 4px darken($black, 10%);
-    border:solid 1px $gray6; 
-    margin-top: 2.5em;
-    height: 3em; 
-    padding-left:1em; 
+.menu-mobile {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  height: $size-xs;
+  background: $gray9; 
+  @include media($mobile){
+        height:50px;
+        background:$gray6;
+        @include span-columns(12 of 12);
+        margin-top: 0px;
+    }
 }
-
-.navigation li a {
-    font-size: 0.85em;  
-    font-weight: normal; 
-}
-
-.navigation li a:hover {
-    //background:$gray8;
-}
-
-  header.navigation {
-    @include span-columns(10);
-    @include media($mobile){
-          @include span-columns(0 of 12);
-          margin-top: 0px;
-          display: none;
-      } 
-  }
-  .navigation-wrapper, .navigation {
-    @include span-columns(10);
-    @include media($mobile){
-          @include span-columns(0 of 12);
-          margin-top: 0px;
-          display: none;
-      }
-  }
-
-
-
 
 // Original Markup
 
-header.navigation {
+.main-navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -87,25 +98,6 @@ header.navigation {
 
   @include span-columns(10);
   z-index: 999;
-
-  .navigation-wrapper {
-    @include clearfix;
-    @include outer-container;
-    position: relative;
-    z-index: 9999;
-  }
-
-  .logo {
-    float: left;
-    max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
-
-    img {
-      max-height: $navigation-height;
-      padding: 0.8em 0;
-    }
-  }
 
   // Mobile view
 
@@ -397,4 +389,29 @@ header.navigation {
       }
     }
   }
+}
+
+.main-navigation {
+    text-transform: uppercase;
+    @include border-top-radius(0.8em);
+    @include border-bottom-radius(0.8em);   
+    @include background(linear-gradient(top, $color-start, $color-end));
+    box-shadow: 0 2px 4px darken($black, 10%);
+    border:solid 1px $gray6; 
+    margin-top: 2.5em;
+    height: 3em; 
+    padding-left:1em; 
+    @include span-columns(10);
+    @include media($mobile){
+          display: none;
+      } 
+}
+
+.main-navigation li a {
+    font-size: 0.85em;  
+    font-weight: normal; 
+}
+
+.main-navigation li a:hover {
+    //background:$gray8;
 }

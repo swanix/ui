@@ -1,0 +1,77 @@
+// -----------------------------------------------------------
+// PAGINATION by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// PAGINATION
+// -----------------------------------------------------------
+
+.pages{
+ overflow:hidden;
+  background-color: #1A1A1A;
+  height: 50px;
+ height: 50px;clear: both;
+ color: #1A1A1A;
+ text-align: center;
+}
+
+.pages .inside{
+ margin-left:auto;
+ margin-right:auto;
+  overflow: auto;
+ text-align: center;
+}
+
+.pages a{
+  background: $black;
+  color: #7a7b77;
+  display: block;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  margin: 5px;
+  width: 35px;
+}
+
+.pages a:hover {
+  background: $gray7;
+  color: $gray2;
+}
+
+
+.pages a.selected{
+  background: #3C3C3C;
+  color: #ffffff;
+}
+
+.pages a.aimg{
+  background-image:none !important;
+ background-repeat:no-repeat;
+  background-repeat:no-repeat;
+  padding-left: 8px;
+}
+#bread{
+  width:237px;
+  height:51px;
+  margin-left:auto;
+ margin-right:auto;
+}
+
+.return {
+  background: $gray9;
+  line-height: $size-xs;
+  padding-left:1em;
+  @include border-bottom-radius(1em);
+  @include media($mobile){
+    line-height: 3em;
+    @include border-bottom-radius(0);
+    @include span-columns(12 of 12);
+      }
+
+}
+
+.return a {
+  color: $gray3;
+  width: 100%;
+  height: $size-xs;
+}
