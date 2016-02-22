@@ -1,0 +1,53 @@
+// -----------------------------------------------------------
+//  MAIN CONTENT V0.2 Alpha by Sebastian Serna 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+    .content-image {
+        width: 100%;
+        @include media($mobile){
+            }
+    }   
+
+    .content-image img {
+        border-top-right-radius: 2em;
+        height: auto;
+        @include media($mobile){
+            border-top-right-radius: 0em;
+            border-top-left-radius: 0em;
+            height: auto;
+            }
+    }   
+
+    .content-title {
+        padding: 0 2em;
+        font-size: 0.8em;
+        @include media($mobile){
+            padding: 0 1.5em;
+            }
+    }   
+
+    .content-body {
+        padding: 0 2em;
+        @include media($mobile){
+            padding: 0 1.5em;
+            }
+    }
+
+    .content-body p {
+        @include media($mobile){
+            font-size: 1em;
+            line-height: 1.5em;
+            }
+    }
+
+
+    .banner img {
+        margin-bottom: 1em;
+        @include media($mobile){
+            width: 100%;
+            height: auto;
+            margin-top: 1.5em;
+            }
+    }
+

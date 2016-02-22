@@ -1,0 +1,39 @@
+// -----------------------------------------------------------
+// MENU HORIZONTAL STICKY by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// Powered by Jquery Sticky http://stickyjs.com/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.sub-navigation {
+  background:$gray7;
+  color: $gray4;
+  height: 3em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.sub-navigation ul {
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+}
+
+.sub-navigation li {
+  float: left;
+  list-style: none;
+  padding: 0.5em 0.8em;
+}
+
+.sub-navigation a {
+  padding: 0.5em 0.8em;
+  color: $gray4;
+}
+
+.sub-navigation a:hover {
+  color: $white;
+}
+
+.sub-navigation .active {
+  background: $black;
+  color: $white;
+}

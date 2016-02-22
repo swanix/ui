@@ -143,7 +143,6 @@ Main components
     /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
     min-height: 100%;
     position: relative;
-    //background-color: $background;
     z-index: $content-zindex;
     
     //we assign a top padding since the header is in position absolute or fixed

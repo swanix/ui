@@ -7,6 +7,8 @@
 // SWAN PALETTE 
 // -----------------------------------------------------------
 
+$mobile: new-breakpoint(max-width 768px 4);
+
 .color__item {     
     height:3em;
     line-height:3em;
@@ -243,7 +245,15 @@ tfoot {
     }
     // -----------------------------------
 .layout__subheader {
-    background-color:       none; 
+    padding: 1em 2em;
+    @include border-top-radius(2em);
+    @include background(linear-gradient(top, $gray8, $black));
+    }
+
+.layout__subheader h2 {
+    color: $gray5;
+    text-transform: uppercase;
+    font-size: 2em;
     }
     // -----------------------------------
 .layout__contentarea {
@@ -251,25 +261,68 @@ tfoot {
     }
     // -----------------------------------
 .layout__content {
-    background-color:       none; 
+    background-color:       $white; 
+    @include border-bottom-radius(1em);
     }
+
+.layout__content h4 {
+    background: $gray8;
+    color: $white;
+    padding: 0.7em 0 0.7em 1em;
+    @include border-bottom-radius(0.5em);
+    @include border-top-radius(0.5em); 
+    }
+
     // -----------------------------------
 .layout__content--full {
     background-color:       none; 
     }
     // -----------------------------------
 .layout__sidebar { 
-    background-color:       none; 
+    background: $gray8;
+    padding-bottom: 2em;
+    @include border-bottom-radius(1em);
     }
+
+.layout__sidebar h3 {
+    color: $gray2;
+    }
+
+.layout__sidebar a {
+    color: $gray5;
+    }
+
+.panel-title {
+    @include background(linear-gradient(top, $gray8, $gray9));
+    line-height: 3em;
+    text-transform: uppercase;
+    @include border-top-radius(0.5em);
+    }
+
+.panel-title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
     // -----------------------------------
 .layout__sidebar--tiny { 
     background-color:       none; 
     }
     // -----------------------------------
 .layout__footer {
-    background-color:       none; 
+    margin-top: 2em;
+    @include border-top-radius(1em);
+    background: $gray8;
     }
+    // -----------------------------------
 
+body {
+  background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
+    @include media($mobile){
+        background:none;
+        background-color: $gray9;
+    }
+}
 
 // NANO SCROLLER 
 // -----------------------------------------------------------

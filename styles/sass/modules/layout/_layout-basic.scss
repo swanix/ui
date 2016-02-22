@@ -81,6 +81,18 @@ body {
 	        @include span-columns(12 of 12);
 	        margin-top: 0px;
 	    }
+	.navigation {
+		@include media($mobile){
+	        display: none;
+	    }
+	}
+
+	nav .subsection {
+
+	        padding-top: 70px !important;
+
+	}
+
 	}
 
 .section-title {
