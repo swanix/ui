@@ -13,7 +13,7 @@
     <!-- Styles and fonts --> 
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
   </head>
-  <body>   
+  <body>  
     <div id="app" class="layout_main layout--centered">
       <!-- Header :::::::::::::::::::::: -->
       <div id="header" class="layout__header">
@@ -56,7 +56,7 @@
               </ul>
             </nav>
             <div class="navigation-tools">
-              <div class="search-bar">
+              <div class="social-bar">
                 <a href="#" class="btn-dark circle">
                   <img src="../images/ic-social-facebook.png" alt="Facebook">
                 </a>
@@ -69,47 +69,51 @@
               </div>
             </div>
         </div>
-        <!-- Mobile Navigation :::::::::::::::::::::: -->
-            <header class="menu-mobile">
-            <div class="logo-mobile">
-              <a href="#">
-              <img src="../images/logo-app.png" alt="Logo">
-              </a>
-            </div>
-              <a id="cd-menu-trigger" href="#0">
-              <span class="cd-menu-text">Menu</span>
-              <span class="cd-menu-icon"></span>
-              </a>
-            </header>
-            <nav id="cd-lateral-nav" role="navigation">
+      </div>
+      <!-- Mobile Navigation :::::::::::::::::::::: -->
+        <!-- Mobile header :::::::::::::::::::::: -->
+        <div class="header__mobile">
+          <div class="logo-mobile">
+            <a href="#"><img src="../images/logo-app.png" alt="Logo"></a>
+          </div>
+          <div class="header__mobile--title">
+            <h2>Section Title</h2>
+          </div>
+          <div class="offcanvas-panel-show">
+          <button type="button" class="offcanvas-panel-button">
+            <span class="icon-menu medium"></span>
+          </button>
+          </div>
+        </div>
+        <!-- Offcanvas panel :::::::::::::::::::::: -->
+        <div class="offcanvas-panel-content">
+          <div class="offcanvas-panel-close">
+            <span class="icon-cross medium"></span>
+          </div>
+            <nav role="navigation">
               <ul id="js-navigation-menu" class="navigation-menu show">
-                <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
                 <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-                <li class="nav-link more">
-                  <a href="javascript:void(0)">More</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Submenu tab</a></li>
-                    <li><a href="javascript:void(0)">Another tab</a></li>
-                    <li class="more">
-                      <a href="javascript:void(0)">tab with submenu</a>
-                      <ul class="submenu">
-                        <li><a href="javascript:void(0)">Sub-submenu tab</a></li>
-                        <li><a href="javascript:void(0)">Another tab</a></li>
-                      </ul>
-                    </li>
-                    <li class="more">
-                      <a href="javascript:void(0)">Another submenu</a>
-                      <ul class="submenu">
-                        <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                        <li><a href="javascript:void(0)">An tab</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+                <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Work</a></li>
+                <li class="nav-link more"><a href="javascript:void(0)">More</a></li>
+                <li class="nav-link active-nav-tab"><a href="javascript:void(0)">Contact</a></li>
               </ul>
             </nav>
-      </div>
+            <div class="social-bar">
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-facebook.png" alt="Facebook">
+              </a>
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-twitter.png" alt="Twitter">
+              </a>
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-youtube.png" alt="Youtube">
+              </a>  
+            </div>
+        </div>
+        <div class="offcanvas-panel-fade-screen"></div>
+      <!-- Mobile Navigation End :::::::::::::::::::::: -->
       <!-- Content Area :::::::::::::::::::::: --> 
       <div id="contentarea" class="layout__contentarea">
         <!-- Subheader :::::::::::::::::::::: -->
@@ -130,7 +134,8 @@
               <li><a href="#2" data-scroll-nav="2">Section 2</a></li>
               <li><a href="#3" data-scroll-nav="3">Section 3</a></li>
             </ul>
-          </nav>  
+          </nav> 
+          <div class="content-body"> 
             <div data-scroll-index="0">
                 <h2>Section 0</h2>
 
@@ -162,6 +167,7 @@
                 <p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
             </div>
           <!-- Tabs End :::::::::::::::::::::: -->
+          </div>
         </div>
         <!-- Sidebar :::::::::::::::::::::: -->
         <div class="layout__sidebar">
@@ -222,10 +228,10 @@
         <h5 class="to-center gray5">Swan Project - 2015</h5>
       </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../scripts/all/offcanvas.js"></script>
+
+    <script src="../scripts/all/jquery-1.11.1.min.js"></script>
     <script src="../scripts/all/scrollIt.min.js"></script>
-    <script src="../scripts/all/jquery.sticky.js"></script>  
+    <script src="../scripts/all/jquery.sticky.js"></script> 
 
     <script type="text/javascript">
 
@@ -233,9 +239,17 @@
       $.scrollIt();
     });  
 
-
     $(document).ready( function() {
-      $(".sub-navigation").sticky({topSpacing:0});
+        if(window.matchMedia('(min-width: 768px)').matches) {
+          $(".sub-navigation").sticky({topSpacing:0});
+        }      
+    });
+
+    $(document).ready(function(){
+      $('.offcanvas-panel-button,.offcanvas-panel-fade-screen,.offcanvas-panel-close').on('click touchstart',function (e) {
+        $('.offcanvas-panel-content,.offcanvas-panel-fade-screen').toggleClass('is-visible');
+        e.preventDefault();
+      });
     });
 
 
@@ -243,13 +257,13 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-    var menuToggle = $('#js-mobile-menu').unbind();
-    $('#js-navigation-menu').removeClass("hide");
-    menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-    if($('#js-navigation-menu').is(':hidden')) {
-    $('#js-navigation-menu').removeAttr('style');
+      var menuToggle = $('#js-mobile-menu').unbind();
+      $('#js-navigation-menu').removeClass("hide");
+      menuToggle.on('click', function(e) {
+      e.preventDefault();
+      $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+      $('#js-navigation-menu').removeAttr('style');
     }
     });
     });

@@ -26,21 +26,6 @@ $color-end: rgba(178,178,178,0.3) 90%;
     }
 }
 
-.logo-mobile {
-  @include span-columns(2);
-  padding: 0.5em;
-    @include media($mobile){
-      @include span-columns(2);
-    }
-}
-
-.logo-mobile img {
-  width: 40%;
-    @include media($mobile){
-    width: 3.4em;
-    }
-}
-
 // Custom Markup
 
 .top-menu-item {
@@ -328,9 +313,9 @@ $color-end: rgba(178,178,178,0.3) 90%;
     }
   }
 
-  // Search bar
+  // Social bar
 
-  .search-bar {
+  .social-bar {
     $search-bar-border-color: $base-border-color;
     $search-bar-border: 1px solid $search-bar-border-color;
     $search-bar-background: lighten($search-bar-border-color, 10%);
