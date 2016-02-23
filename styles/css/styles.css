@@ -2832,6 +2832,11 @@ nav li a {
   }
 }
 
+.tab-section {
+  border-bottom: 1px solid #D3D3D3;
+  padding-bottom: 1em;
+}
+
 .tabs {
   position: relative;
   width: 100%;
