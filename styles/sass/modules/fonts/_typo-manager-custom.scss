@@ -7,7 +7,6 @@
 // MY TYPOGRAPHY
 // -----------------------------------------------------------
 
-
 @font-face {
     font-family: 'AldoPC';
     src: url('../../fonts/AldoPC.ttf');
@@ -38,12 +37,19 @@ body {
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 {
+
     font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
     //font-style:             normal;
+
     }
     // -----------------------------------
 p {
     font-family: Tahoma, Geneva, sans-serif; 
+    font-style:             normal;
+    }
+    // -----------------------------------
+a { 
+    font-family: AldoPC, Tahoma, sans-serif ;
     //font-style:             normal;
     }
     // -----------------------------------
@@ -77,6 +83,7 @@ cite {
     font-style:             normal;
     }
     // -----------------------------------
+
 nav li a {
     font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
     }
@@ -85,6 +92,7 @@ nav li a {
     font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
     }
     // -----------------------------------
+
 
 // CUSTOM MODULES 
 // -----------------------------------------------------------
