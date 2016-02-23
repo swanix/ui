@@ -14,15 +14,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 // -----------------------------------------------------------
 
 body {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background: $gray7 url("../../images/bg-body.jpg") no-repeat fixed center center;
-=======
   background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
->>>>>>> dev
-=======
-  background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
->>>>>>> master
     @include media($mobile){
 		background:none;
 		background-color: $gray9;
@@ -33,14 +25,7 @@ body {
 	@include outer-container(980px);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
-=======
-
->>>>>>> master
 // HEADER
 // -----------------------------------------------------------
 
@@ -53,30 +38,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	.logo-main {
-		@include span-columns(2);
-		padding: 0.5em;
-	    @include media($mobile){
-	    	@include span-columns(2);
-			text-align: center;
-			padding: 0.5em;
-			display: none;
-	    }
-	}
-
-	.logo-main img {
-		margin: 0.8em 0 0 1.5em;
-		width: 50%;
-	    @include media($mobile){
-			width: 3.4em;
-	    }
-	}
-=======
->>>>>>> dev
-=======
->>>>>>> master
 	header.navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -85,11 +46,6 @@ body {
 	        display: none;
 	    }	
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
 
   .logo-main {
     @include span-columns(2);
@@ -110,10 +66,6 @@ body {
       }
   }
 
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> master
 	.navigation-wrapper, .navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -123,29 +75,12 @@ body {
 	    }
 	}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-	.menu-mobile {
-		display: none;
-		font-family: AldoPC;
-		//box-shadow: 0 2px 4px darken($black, 10%);    
-		@include media($mobile){
-	        display: block;
-	    }
-	}
-
-=======
-=======
->>>>>>> master
 	.menu-mobile {
 		display: none;
 		@include media($mobile){
 	        @include span-columns(12 of 12);
 	        margin-top: 0px;
 	    }
-<<<<<<< HEAD
-=======
 	.navigation {
 		@include media($mobile){
 	        display: none;
@@ -158,17 +93,12 @@ body {
 
 	}
 
->>>>>>> master
 	}
 
 .section-title {
 	margin-top:2em;
 }
 
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> master
 // Fixed positions
 
 .fixed--top {
@@ -200,37 +130,6 @@ body {
 
 // Menu mobile
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.menu-left {
-	text-align:left;
-	@include span-columns(3);
-}
-
-.menu-left button, .menu-right button {
-	height: $size-xs;
-}
-
-.menu-center {
-	text-align:center;
-	@include span-columns(6);
-}
-
-.menu-center h2 {
-	color: $gray4;
-	text-transform: uppercase;
-	font-size: 1.2em;
-}
-
-
-.menu-right {
-	text-align:right;
-	@include span-columns(3);
-}
-=======
->>>>>>> dev
-=======
->>>>>>> master
 
 .ic-social {
 	display:inline-block;
@@ -239,42 +138,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.submenu {
-	@include span-columns(8 of 8);
-    @include media($mobile){
-		display: none;
-    }	
-}
-
-.menu-categories ul {
-	list-style:none;
-	float:left;
-}
-
-.menu-categories li {
-	font-family: AldoPC;
-	float:left;
-	margin-right: 2em;
-	color: $gray3;
-    @include media($mobile){
-
-    }	
-}
-
-.menu-categories li a {
-	color: $gray3;
-}
-
-.menu-categories li a:hover {
-	color: $gray1;
-}
-
-=======
->>>>>>> dev
-=======
->>>>>>> master
 
 // SUBHEADER
 // -----------------------------------------------------------

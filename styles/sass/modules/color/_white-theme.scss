@@ -1,4 +1,3 @@
-
 // -----------------------------------------------------------
 // COLOR MANAGER by Sebastian Serna - 2015
 // -----------------------------------------------------------
@@ -7,54 +6,6 @@
 // SWAN PALETTE 
 // -----------------------------------------------------------
 
-<<<<<<< HEAD
-// GRAYSCALE PALETTE variables (white to black)
-
-$white:             #FFFFFF ; // White (HTML color: white)
-$gray1:             #F7F7F7 ;
-$gray2:             #F2F2F2 ;
-$gray3:             #D3D3D3 ;
-$gray4:             #B2B2B2 ;
-$gray5:             #808080 ; // Gray medium (HTML color: gray)
-$gray6:             #505050 ;
-$gray7:             #383838 ;
-$gray8:             #242424 ;
-$gray9:             #131313 ;
-$black:             #000000 ; // Black (HTML color: black)
-
-// FONT COLOR CLASSES 
-
-.white   { color:   $white; } // White (HTML color: white)
-.gray1   { color:   $gray1; }
-.gray2   { color:   $gray2; }
-.gray3   { color:   $gray3; }
-.gray4   { color:   $gray4; }
-.gray5   { color:   $gray5; } // Gray medium (HTML color: gray)
-.gray6   { color:   $gray6; }
-.gray7   { color:   $gray7; }
-.gray8   { color:   $gray8; }
-.gray9   { color:   $gray9; }
-.black   { color:   $black; } // Black (HTML color: black)
-
-
-// BG COLOR CLASSES 
-
-.bg--white   { background:   $white; } // White (HTML color: white)
-.bg--gray1   { background:   $gray1; }
-.bg--gray2   { background:   $gray2; }
-.bg--gray3   { background:   $gray3; }
-.bg--gray4   { background:   $gray4; color: $gray6; }
-.bg--gray5   { background:   $gray5; color: $white; } // Gray medium (HTML color: gray)
-.bg--gray6   { background:   $gray6; color: $white; }
-.bg--gray7   { background:   $gray7; color: $white; }
-.bg--gray8   { background:   $gray8; color: $white; }
-.bg--gray9   { background:   $gray9; color: $white; }
-.bg--black   { background:   $black; color: $white; } // Black (HTML color: black)
-
-
-
-=======
->>>>>>> master
 .color__item {     
     height:3em;
     line-height:3em;
