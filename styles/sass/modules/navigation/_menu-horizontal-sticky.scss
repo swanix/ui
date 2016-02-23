@@ -7,38 +7,151 @@
 .sub-navigation {
   background:$gray7;
   color: $gray4;
-  height: 3em;
-  font-size: 0.9em;
+  height: auto;
+  font-size: 0.65em;
   text-transform: uppercase;
   @include media($mobile){
     @include position(fixed, auto 0 0 auto);
     width:100%;
+    font-size: 0.5em;
   }
 
 }
 
-.sub-navigation ul {
+
+.icontab {
+  margin-right: 0.5em;
+  font-size: 1em;
+
+}
+
+  @include media($mobile){
+
+    .tabs span {
+      display: block;
+      margin-top: 0.5em;
+    }
+    .icontab {
+      text-align: center;
+      font-size: 1.8em;
+      margin-right: 0;
+    }
+
+    .tabs a {
+      overflow: auto;
+    }
+
+    .tabs nav a:hover {
+      color: $gray4 !important;
+    }
+
+  }
+
+
+
+// Tabs (based on http://tympanus.net/codrops/2014/03/21/responsive-full-width-tabs/) 
+
+
+.tabs {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-weight: 300;
+  background:$gray7;
+}
+
+/* Nav */
+.tabs nav li {
+  text-align: center;
+}
+
+.tabs nav ul {
   padding: 0;
-  overflow: auto;
   margin: 0;
-}
-
-.sub-navigation li {
-  float: left;
   list-style: none;
-  padding: 0.5em 0.8em;
+  display: inline-block;
 }
 
-.sub-navigation a {
-  padding: 0.5em 0.8em;
+.tabs nav ul li {
+  border: 1px solid $gray6;
+  border-bottom: none;
+  border-top: none;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.tabs nav li.tab-current {
+  border: 1px solid $gray6;
+  box-shadow: inset 0 2px $gray6;
+  border-bottom: none;
+  z-index: 100;
+}
+
+.tabs nav li.tab-current:before,
+.tabs nav li.tab-current:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  right: 100%;
+  bottom: 0;
+  width: 1000px;
+  background: #47a3da;
+}
+
+.tabs nav li.tab-current:after {
+  right: auto;
+  left: 100%;
+  width: 4000px;
+}
+
+.tabs nav a {
   color: $gray4;
+  display: block;
+  font-size: 1.45em;
+  line-height: 2.5;
+  padding: 0 1.25em;
+  white-space: nowrap;
 }
 
-.sub-navigation a:hover {
+.tabs nav a:hover {
   color: $white;
 }
 
-.sub-navigation .active {
+.tabs nav li.tab-current a {
+  color: #47a3da;
+}
+
+  .tabs nav a:before {
+    margin-right: 0;
+  }
+
+  .tabs nav ul,
+  .tabs nav ul li a {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tabs nav ul li {
+    width: 20%;
+    width: calc(25% + 1px);
+    margin: 0 0 0 -1px;
+  }
+
+  .tabs nav ul li:last-child {
+    border-right: none;
+  }
+
+
+.active {
   background: $black;
-  color: $white;
 }
+
+.active nav li a {
+  color: $white !important;
+}
+
+
+
+
+

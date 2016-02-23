@@ -125,8 +125,8 @@
           </div>
         </div>      
         <!-- Content :::::::::::::::::::::: -->     
-        <div class="layout__content cd-main-content">
-         <!-- Tabs :::::::::::::::::::::: -->
+        <div class="layout__content">
+         <!-- Tabs :::::::::::::::::::::: 
           <nav class="sub-navigation">
             <ul>
               <li><a href="#0" data-scroll-nav="0">Section 0</a></li>
@@ -134,7 +134,39 @@
               <li><a href="#2" data-scroll-nav="2">Section 2</a></li>
               <li><a href="#3" data-scroll-nav="3">Section 3</a></li>
             </ul>
-          </nav> 
+          </nav> -->
+
+        <div class="tabs">
+          <nav class="sub-navigation">
+            <ul>
+              <li>
+                <a href="#0" data-scroll-nav="0">
+                  <span class="icontab icon-paper"></span>
+                  <span>Section 0</span>
+                </a>
+              </li>
+              <li>
+                <a href="#1" data-scroll-nav="1">
+                  <span class="icontab icon-head"></span>
+                  <span>Section 1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#2" data-scroll-nav="2">
+                  <span class="icontab icon-map"></span>
+                  <span>Section 2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#3" data-scroll-nav="3">
+                  <span class="icontab icon-clipboard"></span>
+                  <span>Section 3</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
           <div class="content-body"> 
             <div data-scroll-index="0">
                 <h2>Section 0</h2>
@@ -256,18 +288,19 @@
     </script>  
 
     <script type="text/javascript">
-    $(document).ready(function() {
-      var menuToggle = $('#js-mobile-menu').unbind();
-      $('#js-navigation-menu').removeClass("hide");
-      menuToggle.on('click', function(e) {
-      e.preventDefault();
-      $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-      $('#js-navigation-menu').removeAttr('style');
-    }
-    });
-    });
-    });
+      $(document).ready(function() {
+        var menuToggle = $('#js-mobile-menu').unbind();
+        $('#js-navigation-menu').removeClass("show");
+
+        menuToggle.on('click', function(e) {
+          e.preventDefault();
+          $('#js-navigation-menu').slideToggle(function(){
+            if($('#js-navigation-menu').is(':hidden')) {
+              $('#js-navigation-menu').removeAttr('style');
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>
