@@ -2331,13 +2331,19 @@ nav li a {
 .offcanvas-panel-content nav li {
   list-style: none;
   line-height: 3.5em;
-  padding-left: 2.5em;
   border-bottom: 1px solid #242424;
   color: #B2B2B2;
 }
 
 .offcanvas-panel-content nav a {
   color: #B2B2B2;
+  padding-left: 2.5em;
+  display: block;
+}
+
+.offcanvas-panel-content nav a:hover {
+  background: #383838;
+  color: #FFFFFF;
 }
 
 .offcanvas-panel-content .social-bar {
@@ -2835,6 +2841,7 @@ nav li a {
 .tab-section {
   border-bottom: 1px solid #D3D3D3;
   padding-bottom: 1em;
+  padding-top: 2.5em;
 }
 
 .tabs {

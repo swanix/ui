@@ -14,6 +14,7 @@
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
   </head>
   <body>  
+    <!-- App Start :::::::::::::::::::::: -->   
     <div id="app" class="layout_main layout--centered">
       <!-- Header :::::::::::::::::::::: -->
       <div id="header" class="layout__header">
@@ -28,7 +29,7 @@
             <nav role="navigation">
               <ul id="js-navigation-menu" class="navigation-menu show">
                 <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+                <li class="nav-link active-nav-item"><a href="javascript:void(0)">About Us</a></li>
                 <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
                 <li class="nav-link"><a href="javascript:void(0)">Work</a></li>
                 <li class="nav-link more">
@@ -72,7 +73,7 @@
       </div>
       <!-- Mobile Navigation :::::::::::::::::::::: -->
         <!-- Mobile header :::::::::::::::::::::: -->
-        <div class="header__mobile">
+        <div id="header-mobile" class="header__mobile">
           <div class="logo-mobile">
             <a href="#"><img src="../images/logo-app.png" alt="Logo"></a>
           </div>
@@ -84,35 +85,36 @@
             <span class="icon-menu medium"></span>
           </button>
           </div>
-        </div>
-        <!-- Offcanvas panel :::::::::::::::::::::: -->
-        <div class="offcanvas-panel-content">
-          <div class="offcanvas-panel-close">
-            <span class="icon-cross medium"></span>
-          </div>
-            <nav role="navigation">
-              <ul id="js-navigation-menu" class="navigation-menu show">
-                <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Work</a></li>
-                <li class="nav-link more"><a href="javascript:void(0)">More</a></li>
-                <li class="nav-link active-nav-tab"><a href="javascript:void(0)">Contact</a></li>
-              </ul>
-            </nav>
-            <div class="social-bar">
-              <a href="#" class="btn-dark circle">
-                <img src="../images/ic-social-facebook.png" alt="Facebook">
-              </a>
-              <a href="#" class="btn-dark circle">
-                <img src="../images/ic-social-twitter.png" alt="Twitter">
-              </a>
-              <a href="#" class="btn-dark circle">
-                <img src="../images/ic-social-youtube.png" alt="Youtube">
-              </a>  
+          <!-- Offcanvas panel :::::::::::::::::::::: -->
+          <div class="offcanvas-panel-content">
+            <div class="offcanvas-panel-close">
+              <span class="icon-cross medium"></span>
             </div>
+              <nav role="navigation">
+                <ul id="js-navigation-menu" class="navigation-menu show">
+                  <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
+                  <li class="nav-link active-nav-item"><a href="javascript:void(0)">About Us</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)">Work</a></li>
+                  <li class="nav-link more"><a href="javascript:void(0)">More</a></li>
+                  <li class="nav-link active-nav-tab"><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="social-bar">
+                <a href="#" class="btn-dark circle">
+                  <img src="../images/ic-social-facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="btn-dark circle">
+                  <img src="../images/ic-social-twitter.png" alt="Twitter">
+                </a>
+                <a href="#" class="btn-dark circle">
+                  <img src="../images/ic-social-youtube.png" alt="Youtube">
+                </a>  
+              </div>
+          </div>
+          <!-- Offcanvas panel End :::::::::::::::::::::: -->
+          <div class="offcanvas-panel-fade-screen"></div>
         </div>
-        <div class="offcanvas-panel-fade-screen"></div>
       <!-- Mobile Navigation End :::::::::::::::::::::: -->
       <!-- Content Area :::::::::::::::::::::: --> 
       <div id="contentarea" class="layout__contentarea">
@@ -125,47 +127,38 @@
           </div>
         </div>      
         <!-- Content :::::::::::::::::::::: -->     
-        <div class="layout__content">
-         <!-- Tabs :::::::::::::::::::::: 
-          <nav class="sub-navigation">
-            <ul>
-              <li><a href="#0" data-scroll-nav="0">Section 0</a></li>
-              <li><a href="#1" data-scroll-nav="1">Section 1</a></li>
-              <li><a href="#2" data-scroll-nav="2">Section 2</a></li>
-              <li><a href="#3" data-scroll-nav="3">Section 3</a></li>
-            </ul>
-          </nav> -->
-
-        <div class="tabs">
-          <nav class="sub-navigation">
-            <ul>
-              <li>
-                <a href="#0" data-scroll-nav="0">
-                  <span class="icontab icon-paper"></span>
-                  <span>Section 0</span>
-                </a>
-              </li>
-              <li>
-                <a href="#1" data-scroll-nav="1">
-                  <span class="icontab icon-head"></span>
-                  <span>Section 1</span>
-                </a>
-              </li>
-              <li>
-                <a href="#2" data-scroll-nav="2">
-                  <span class="icontab icon-map"></span>
-                  <span>Section 2</span>
-                </a>
-              </li>
-              <li>
-                <a href="#3" data-scroll-nav="3">
-                  <span class="icontab icon-clipboard"></span>
-                  <span>Section 3</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <div id="content" class="layout__content">
+        <!-- Tabs :::::::::::::::::::::: -->
+          <div class="tabs">
+            <nav class="sub-navigation">
+              <ul>
+                <li>
+                  <a href="#0" data-scroll-nav="0">
+                    <span class="icontab icon-paper"></span>
+                    <span>Section 0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#1" data-scroll-nav="1">
+                    <span class="icontab icon-head"></span>
+                    <span>Section 1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#2" data-scroll-nav="2">
+                    <span class="icontab icon-map"></span>
+                    <span>Section 2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#3" data-scroll-nav="3">
+                    <span class="icontab icon-clipboard"></span>
+                    <span>Section 3</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
           <div class="content-body"> 
             <div class="tab-section" data-scroll-index="0">
@@ -210,7 +203,7 @@
           </div>
         </div>
         <!-- Sidebar :::::::::::::::::::::: -->
-        <div class="layout__sidebar">
+        <div id="sidebar" class="layout__sidebar">
           <div class="banner" style="display:none;">
             <img src="http://placehold.it/380x320/242424/ffffff/">
           </div>
@@ -268,31 +261,29 @@
         <h5 class="to-center gray5">Swan Project - 2015</h5>
       </div>
     </div>
+    <!-- App End :::::::::::::::::::::: -->   
 
     <script src="../scripts/all/jquery-1.11.1.min.js"></script>
     <script src="../scripts/all/scrollIt.min.js"></script>
     <script src="../scripts/all/jquery.sticky.js"></script> 
 
     <script type="text/javascript">
+      $(function(){
+        $.scrollIt();
+      });  
 
-    $(function(){
-      $.scrollIt();
-    });  
-
-    $(document).ready( function() {
-        if(window.matchMedia('(min-width: 768px)').matches) {
-          $(".sub-navigation").sticky({topSpacing:0});
-        }      
-    });
-
-    $(document).ready(function(){
-      $('.offcanvas-panel-button,.offcanvas-panel-fade-screen,.offcanvas-panel-close').on('click touchstart',function (e) {
-        $('.offcanvas-panel-content,.offcanvas-panel-fade-screen').toggleClass('is-visible');
-        e.preventDefault();
+      $(document).ready( function() {
+          if(window.matchMedia('(min-width: 768px)').matches) {
+            $(".sub-navigation").sticky({topSpacing:0});
+          }      
       });
-    });
 
-
+      $(document).ready(function(){
+        $('.offcanvas-panel-button,.offcanvas-panel-fade-screen,.offcanvas-panel-close').on('click touchstart',function (e) {
+          $('.offcanvas-panel-content,.offcanvas-panel-fade-screen').toggleClass('is-visible');
+          e.preventDefault();
+        });
+      });
     </script>  
 
     <script type="text/javascript">
