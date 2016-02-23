@@ -110,14 +110,21 @@ body {
 .offcanvas-panel-content nav li {
     list-style: none;
     line-height: 3.5em;
-    padding-left:2.5em;
     border-bottom:1px solid $gray8;
     color:$gray4;
 }
 
 .offcanvas-panel-content nav a {
     color:$gray4;
+    padding-left:2.5em;
+    display: block;
 }
+
+.offcanvas-panel-content nav a:hover {
+    background:$gray7;
+    color:$white;
+}
+
 
 .offcanvas-panel-content .social-bar {
     width: 100%;
