@@ -1,448 +1,155 @@
 // -----------------------------------------------------------
 // MENU SIDEBAR OFF CANVAS by Sebastian Serna - 2016
 // -----------------------------------------------------------
-// Based on CodyHouse menu by Claudia Romano - 2014
-// https://codyhouse.co/gem/secondary-expandable-navigation/
+// Based on Bourbon - Refills http://refills.bourbon.io/
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// 3 partial files merged here: _layout.css, _mixins.css, _variables.css
-// 1 main file here: style.css
-
-/* OFFCANVAS MENU */
-
-// _layout.css
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-// breakpoints
-
-$S:     320px;   
-$M:     768px;     
-$L:     1170px;     
-
-// media queries
-
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
-  }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
+body {
+  @include media($mobile){
+    padding-top:50px;
   }
 }
 
-// super light grid - it works with the .cd-container class inside style.scss
+// HEADER MOBILE :::::::::::::::
 
-@mixin column($percentage, $float-direction:left) {
-  width: 100% * $percentage;
-  float: $float-direction;
+.header__mobile {
+    @include span-columns(12);
+    @include position(fixed, 0 0 auto auto);
+    z-index: 999999;
+    width: 100%;
+    display:none;
+    background:$gray8;
+      @include media($mobile){
+        display: block;
+      }  
 }
 
-// _mixins.css
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+// LOGO MOBILE :::::::::::::::
 
-// rem fallback - credits: http://zerosixthree.se/
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
+.logo-mobile {
+  padding-left: 0.5em;
+  padding-top:0.1em;
+  @include span-columns(2);
+  //@include position(fixed, 0 auto auto 0);
 }
 
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+.logo-mobile img {
+  width: 2.8em;
 }
 
-// center vertically and/or horizontally an absolute positioned element
+// SECTION TITLE :::::::::::::::
 
-@mixin center($xy:xy) {
-  @if $xy == xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    @include transform(translateX(-50%) translateY(-50%));
-  }
-  @else if $xy == x {
-    left: 50%;
-    right: auto;
-    @include transform(translateX(-50%));
-  }
-  @else if $xy == y {
-    top: 50%;
-    bottom: auto;
-    @include transform(translateY(-50%));
-  }
+.header__mobile--title {
+    @include span-columns(8);
+    text-align: center;
 }
 
-// border radius
-
-@mixin border-radius($radius:.25em) {
-  border-radius: $radius;
-}
-
-// _variables.css
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-// colors
-
-$main-text: #4e6361; // main text
-$link: #6cac70; // anchor tags
-$background: #f5f4e9; // body background color
-
-$color-1: #4e6361; // green dark
-$color-2: #242e30; // green darker
-$color-3: #aab5b7; // green light
-
-// fonts 
-
-$primary-font: 'Titillium Web', sans-serif;
-
-// z-index 
-
-$secondary-nav: 1;
-$content-zindex: 2;
-$header-zindex: 3;
-
-// header height 
-
-$header-S: 50px;
-$header-M: 70px;
-
-
-// _style.scss
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-/* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
-
-.cd-img-replace { /* replace text with a background-image */
-    display: inline-block;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-}
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-
-.cd-main-content {
-    /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
-    min-height: 100%;
-    position: relative;
-    z-index: $content-zindex;
-    
-    //we assign a top padding since the header is in position absolute or fixed
-    //padding-top: $header-S;
-
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-
-    @include transition-property(transform);
-    @include transition-duration(.4s);
-
-    &.lateral-menu-is-open {
-        /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-        @include transform(translateX(-260px));
-    }
-
-    @include MQ(M) {
-        //padding-top: $header-M;
-    }
-}
-
-.header {
-
+.header__mobile--title h2 {
+    margin:0;
+    margin-top:0.8em;
+    font-size: 1.2em;
     text-transform: uppercase;
-
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-
-    @include transition-property(transform);
-    @include transition-duration(.4s);
-
-    &.lateral-menu-is-open {
-        /* translate to show the lateral menu */
-        @include transform(translateX(-260px));
-    }
-    
-    //assign this class to the header if you want a fixed navigation
-    &.is-fixed {
-        position: fixed;
-    }
-
-    @include MQ(M) {
-        height: $header-M;
-    }
+    color:$gray3;
 }
 
-#cd-logo {
-    display: block;
-    float: left;
-    margin: 0px 0 0 5px;
-    width: 4em;
-    height: auto;
+// SHOW BUTTON :::::::::::::::
 
-    img {
-        display: block;
-    }
-
-    @include MQ(M) {
-        margin: 22px 0 0 30px;
-    }
+.offcanvas-panel-show {
+    @include span-columns(2);
+    height:50px;
+    text-align: right;
 }
 
-#cd-top-nav {
-    position: absolute;
-    top: 0;
-    right: 120px;
-    height: 100%;
-
-    display: none;
-
-    ul {
-        height: 100%;
-        padding-top: 18px;
-    }
-
-    li {
-        display: inline-block;
-        margin-right: 1em;
-    }
-
-    a {
-        display: inline-block;
-        padding: .5em;
-        color: #FFF;
-        text-transform: uppercase;
-        font-weight: 600;
-
-        &.current {
-            background-color: $color-2;
-        }
-
-        .no-touch &:hover {
-            color: rgba(#FFF, .7);
-        }
-    }
-
-    @include MQ(M) {
-        display: block;
-    }
+.offcanvas-panel-button {
+    width:50px;
+    height:50px;
+    text-align: center;
+    @include border-left-radius(50%);
+    background: $black;
+    border:1px solid $black;
+    color: $white;   
 }
 
-#cd-menu-trigger {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    @include border-left-radius(1.5em);
-    background-color: $gray8;
+// PANEL OFFCANVAS :::::::::::::::
 
-    .cd-menu-text {
-        height: 100%;
+// CLOSE BUTTON
 
-        text-transform: uppercase;
-        color: #FFF;
-        font-weight: 600;
-
-        display: none;
-    }
-
-    .cd-menu-icon {
-        /* this span is the central line in the menu menu */
-        display: inline-block;
-        position: absolute;
-        @include center; // mixin inside partials > _mixings.scss
-        width: 18px;
-        height: 2px;
-        background-color: #FFF;
-        
-        /* these are the upper and lower lines in the menu menu */
-        &::before, &:after {
-            content: '';
-            width: 100%;
-            height: 100%; 
-            position: absolute;
-            background-color: inherit;
-            left: 0;
-        }
-        
-        &::before {
-            bottom: 5px;
-        }
-
-        &::after {
-            top: 5px;
-        }
-    }
-
-    &.is-clicked {
-        .cd-menu-icon {
-            background-color: rgba(#FFF, 0);
-
-            &::before, &::after {
-                background-color: rgba(#FFF, 1);
-            }
-
-            &::before {
-                bottom: 0;
-                @include transform(rotate(45deg));
-            }
-
-            &::after {
-                top: 0;
-                @include transform(rotate(-45deg));
-            }
-        }
-    }
-
-    @include MQ(M) {
-        width: 110px;
-        padding-left: 1.25em;
-
-        .cd-menu-text {
-            display: inline-block;
-            line-height: $header-M;
-        }
-
-        .cd-menu-icon {
-            left: auto;
-            right: 1.25em;
-            @include transform(translateX(0));
-        }
-    }
+.offcanvas-panel-close {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding-top:0.6em;
+  text-align: center;
+  background:$gray7;
+  color: $white;
+  @include border-right-radius(50%);
 }
 
-#cd-lateral-nav {
-    text-transform: uppercase;
-    position: fixed;
-    height: 100%;
-    right: 0;
-    top: 0;
-    visibility: hidden;
+.offcanvas-panel-content {  
+  $sliding-panel-width: 250px;
 
-    /* the secondary navigation is covered by the main element */
-    z-index: $secondary-nav; // see partials > _variables.scss
+  @include position(fixed, 0 0 0 auto);
+  @include size($sliding-panel-width 100%);
+  @include transform(translateX($sliding-panel-width));
+  @include transition(all 0.20s linear);
+  background:$gray9;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999;
 
-    width: 260px;
-    background-color: $gray8;
-
-    overflow-y: auto;
-
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-
-    -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
-    -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
-    transition: transform .4s 0s, visibility 0s .4s;
-
-    /* this creates the subtle slide in animation of the navigation */
-    @include transform(translateX(80px));
-
-    .cd-navigation {
-        margin: 10px 0 16px;
-    }
-
-    .sub-menu {
-        padding: 0 10px 20px 15px;
-        display: none;
-    }
-
-    a {
-        display: block;
-        line-height: 2em;
-        padding: 0 16px 0 32px;
-        color: $color-3;
-
-        &.current {
-            background-color: $gray7;
-            color: #FFF;
-        }
-
-        .no-touch &:hover {
-            color: #FFF;
-        }
-    } 
-
-    @include MQ(M) {
-        .cd-navigation {
-            margin: 20px 0;
-        }
-    }
-
-    &.lateral-menu-is-open {
-        @include transform(translateX(0));
-        visibility: visible;
-        -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
-        -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
-        transition: transform .4s 0s, visibility 0s 0s;
-
-        /* smooth the scrolling on touch devices - webkit browsers */
-        -webkit-overflow-scrolling: touch;
-    }
+  &.is-visible {
+    @include transform(translateX(0));
+  }
 }
 
-#cd-lateral-nav li, ul {
-    list-style: none;
+.offcanvas-panel-content nav ul {
     padding-left:0;
-}
-
-/* style menu items which have a submenu  */
-#cd-lateral-nav .item-has-children > a {
-    position: relative;
     text-transform: uppercase;
-    font-weight: 600;
-
-    /* this is the right arrow to show that the item has a submenu  */
-    &::after {
-        content: '';
-        display: block;
-        height: 11px;
-        width: 8px;
-        position: absolute;
-        @include center(y);
-        right: 1em;
-        background: url('../img/cd-arrow.svg') no-repeat center center;
-        background-size: 8px 11px;
-
-        @include transition-property(transform);
-        @include transition-duration(.2s);
-    }
-
-    &.submenu-open::after {
-        @include transform(translateY(-50%) rotate(90deg));
-
-    }
 }
 
-#cd-lateral-nav .socials {
-    @include clearfix;
-    padding: 0 32px;
-
-    a {
-        float: left;
-        padding: 10px 0;
-        margin-right: .5em;
-
-    }
+.offcanvas-panel-content nav li {
+    list-style: none;
+    line-height: 3.5em;
+    padding-left:2.5em;
+    border-bottom:1px solid $gray8;
+    color:$gray4;
 }
 
-/* OFFCANVAS MENU */
+.offcanvas-panel-content nav a {
+    color:$gray4;
+}
+
+.offcanvas-panel-content .social-bar {
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    bottom:20px;
+}
+
+.offcanvas-panel-content .social-bar a {
+    margin-right:0.5em;
+    margin-left:0.5em;
+}
+
+// FADE SCREEN :::::::::::::::
+
+.offcanvas-panel-fade-screen {
+  @include position(fixed, 0 0 0 0);
+  @include transition;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.no-scroll {
+    overflow:hidden;
+}
+
+
+// Based on code by Diego Eis
