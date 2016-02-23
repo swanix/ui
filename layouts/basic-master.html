@@ -12,72 +12,19 @@
     <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon" />
     <!-- Styles and fonts --> 
     <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet" type="text/css">
-<style type="text/css">
-  .container nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #fff;
-  }
-.cbp-contentslider {
-    border: 4px solid #47a3da;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    background: #fff;
-}
-
-.main, .container > header {
-    margin: 0 auto;
-    max-width: 70em;
-    padding: 0;
-    width: 100%;
-}
-<<<<<<< HEAD
-=======
-
-
-.main-nav,
-.main {
-  position: relative; 
-}
-.main-nav {
-  background: #808080;
-  height: 80px;
-  z-index: 150;
-  margin-bottom: -80px;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
-}
-
-.main-nav-scrolled {
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-.main {
-  background: #808080;
-  padding: 110px 50px 50px;
-  column-count: 2;
-  column-gap: 40px;
-}
-
-
-
->>>>>>> master
-</style>
   </head>
-  <body>   
-    <div id="app" class="layout_main">
+  <body>  
+    <div id="app" class="layout_main layout--centered">
       <!-- Header :::::::::::::::::::::: -->
-      <div id="header" class="layout_header sTop">
-        <div class="logo-main">
-          <a class="logo" href="#">
+      <div id="header" class="layout__header">
+        <!-- Logo :::::::::::::::::::::: -->
+        <div class="logo">
+          <a href="#">
           <img src="../images/logo-app.png" alt="Logo">
           </a>
         </div>
-        <header class="navigation" role="banner">
-          <div class="navigation-wrapper">
+        <!-- Main Navigation :::::::::::::::::::::: -->
+        <div class="main-navigation" role="banner">
             <nav role="navigation">
               <ul id="js-navigation-menu" class="navigation-menu show">
                 <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
@@ -109,7 +56,7 @@
               </ul>
             </nav>
             <div class="navigation-tools">
-              <div class="search-bar">
+              <div class="social-bar">
                 <a href="#" class="btn-dark circle">
                   <img src="../images/ic-social-facebook.png" alt="Facebook">
                 </a>
@@ -121,86 +68,75 @@
                 </a>  
               </div>
             </div>
-          </div>
-        </header>
-        <header class="header menu-mobile fixed--top">
-          <a id="cd-logo" href="#0"><img src="../images/logo-app.png" alt="Home"></a>
-          <a id="cd-menu-trigger" href="#0">
-          <span class="cd-menu-text">Menu</span>
-          <span class="cd-menu-icon"></span>
-          </a>
-        </header>
-        <nav id="cd-lateral-nav" role="navigation">
-          <ul id="js-navigation-menu" class="navigation-menu show">
-            <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-            <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-            <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-            <li class="nav-link more">
-              <a href="javascript:void(0)">More</a>
-              <ul class="submenu">
-                <li><a href="javascript:void(0)">Submenu tab</a></li>
-                <li><a href="javascript:void(0)">Another tab</a></li>
-                <li class="more">
-                  <a href="javascript:void(0)">tab with submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu tab</a></li>
-                    <li><a href="javascript:void(0)">Another tab</a></li>
-                  </ul>
-                </li>
-                <li class="more">
-                  <a href="javascript:void(0)">Another submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                    <li><a href="javascript:void(0)">An tab</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> master
+      <!-- Mobile Navigation :::::::::::::::::::::: -->
+        <!-- Mobile header :::::::::::::::::::::: -->
+        <div class="header__mobile">
+          <div class="logo-mobile">
+            <a href="#"><img src="../images/logo-app.png" alt="Logo"></a>
+          </div>
+          <div class="header__mobile--title">
+            <h2>Section Title</h2>
+          </div>
+          <div class="offcanvas-panel-show">
+          <button type="button" class="offcanvas-panel-button">
+            <span class="icon-menu medium"></span>
+          </button>
+          </div>
+        </div>
+        <!-- Offcanvas panel :::::::::::::::::::::: -->
+        <div class="offcanvas-panel-content">
+          <div class="offcanvas-panel-close">
+            <span class="icon-cross medium"></span>
+          </div>
+            <nav role="navigation">
+              <ul id="js-navigation-menu" class="navigation-menu show">
+                <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Work</a></li>
+                <li class="nav-link more"><a href="javascript:void(0)">More</a></li>
+                <li class="nav-link active-nav-tab"><a href="javascript:void(0)">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="social-bar">
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-facebook.png" alt="Facebook">
+              </a>
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-twitter.png" alt="Twitter">
+              </a>
+              <a href="#" class="btn-dark circle">
+                <img src="../images/ic-social-youtube.png" alt="Youtube">
+              </a>  
+            </div>
+        </div>
+        <div class="offcanvas-panel-fade-screen"></div>
+      <!-- Mobile Navigation End :::::::::::::::::::::: -->
       <!-- Content Area :::::::::::::::::::::: --> 
-      <div id="contentarea" class="layout_content cd-main-content">
+      <div id="contentarea" class="layout__contentarea">
         <!-- Subheader :::::::::::::::::::::: -->
-        <div id="subheader" class="layout_subheader">
+        <div id="subheader" class="layout__subheader">
           <div class="section-title">
             <h2>SECTION TITLE</h2>
           </div>
           <div class="section-options">
           </div>
-<<<<<<< HEAD
-        </div>
-        <!-- Content :::::::::::::::::::::: -->     
-        <div class="content">
-          <!-- Tabs :::::::::::::::::::::: -->
-          <div class="tabs">
-
-            <div class="subMenu nav subsection" >
-              <div class="">
-                <a href="#sTop" class="subNavBtn" data-scroll-nav="0">Section 0</a>
-                <a href="#s1" class="subNavBtn" data-scroll-nav="1">Section 1</a> 
-                <a href="#s2" class="subNavBtn" data-scroll-nav="2">Section 2</a>
-                <a href="#s3" class="subNavBtn" data-scroll-nav="3">Section 3</a>
-              </div>
-            </div>
-
-=======
         </div>      
         <!-- Content :::::::::::::::::::::: -->     
-        <div class="content">
-          <!-- Tabs :::::::::::::::::::::: -->
-          <nav class="subMenu nav subsection" style="background:yellow;">
-              <a href="#sTop" class="subNavBtn" data-scroll-nav="0">Section 0</a>
-              <a href="#s1" class="subNavBtn" data-scroll-nav="1">Section 1</a> 
-              <a href="#s2" class="subNavBtn" data-scroll-nav="2">Section 2</a>
-              <a href="#s3" class="subNavBtn" data-scroll-nav="3">Section 3</a>
-          </nav>  
->>>>>>> master
-            <div class="section" data-scroll-index="0">
+        <div class="layout__content cd-main-content">
+         <!-- Tabs :::::::::::::::::::::: -->
+          <nav class="sub-navigation">
+            <ul>
+              <li><a href="#0" data-scroll-nav="0">Section 0</a></li>
+              <li><a href="#1" data-scroll-nav="1">Section 1</a></li>
+              <li><a href="#2" data-scroll-nav="2">Section 2</a></li>
+              <li><a href="#3" data-scroll-nav="3">Section 3</a></li>
+            </ul>
+          </nav> 
+          <div class="content-body"> 
+            <div data-scroll-index="0">
                 <h2>Section 0</h2>
 
                 <img src="../images/hero-banner.jpg" alt="Swan Project Photo by Laura Kangur">
@@ -209,14 +145,14 @@
                 <p>Nullam quis ligula bibendum, laoreet metus et, bibendum purus. Morbi efficitur, elit id viverra blandit, lacus ante aliquet mauris, consectetur viverra orci sapien ut felis. Sed consequat id lectus eu volutpat. Mauris vel lectus vel orci laoreet egestas eget nec ex. Aliquam iaculis sem ut dolor dapibus tincidunt. In elementum aliquam felis vitae euismod. Curabitur semper mauris ac turpis sodales consequat. Morbi in ultricies urna, non hendrerit ligula. Etiam nec ornare augue, vel tempor orci. Praesent mattis, eros sed suscipit fermentum, odio orci tristique ligula, at ultricies nibh justo vel elit. Vestibulum eget faucibus orci. Sed auctor sapien turpis. Aliquam vitae condimentum orci, id fringilla ligula. Praesent efficitur purus ipsum, et convallis sem pretium ac. Mauris rhoncus feugiat aliquet. Integer et massa turpis.</p>
             </div>
 
-            <div class="section s1" data-scroll-index="1">
+            <div data-scroll-index="1">
                 <h2>Section 1</h2>
                 <p>Quisque odio lacus, tempor dignissim mattis ac, auctor laoreet mi. Nullam tortor ligula, fermentum nec ultricies id, fermentum ac tortor. Cras sed ipsum ut arcu fermentum fringilla a id orci. Sed bibendum scelerisque tincidunt. Nulla vel lectus fringilla, mattis elit a, aliquam odio. Morbi quis lacus tempor, faucibus nisi id, bibendum nunc. Fusce fermentum interdum nisi ut rutrum. Proin libero sapien, bibendum feugiat justo quis, vulputate feugiat justo. Nunc ac metus mattis, volutpat dolor eget, aliquet odio. Nulla posuere enim quis erat ornare molestie. Cras bibendum, nisi vitae cursus finibus, urna nisi pharetra enim, eget aliquet augue ante vestibulum metus. Quisque mattis tempus tempor. </p>
                 <p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
                 <p>Sed nisl diam, pulvinar non justo non, commodo molestie augue. Aenean malesuada tortor sit amet mattis semper. Nam nibh mauris, condimentum id dictum eget, porta eget ex. Vivamus non congue purus. Sed at ultrices justo. Etiam aliquam ligula eu ligula facilisis, et pretium purus vehicula.</p>
             </div>
 
-            <div class="section s2" data-scroll-index="2">
+            <div data-scroll-index="2">
                 <h2>Section 2</h2>
                 <p><a href="#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
                 <p><a href="#sTop" class="intLink">Internal Link: Back to Top</a></p>
@@ -225,20 +161,16 @@
                 <p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
             </div>
 
-            <div class="section s3" data-scroll-index="3">
+            <div data-scroll-index="3">
                 <h2>Section 3</h2>
                 <p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
                 <p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
             </div>
-<<<<<<< HEAD
-            
-          </div>
-=======
->>>>>>> master
           <!-- Tabs End :::::::::::::::::::::: -->
+          </div>
         </div>
         <!-- Sidebar :::::::::::::::::::::: -->
-        <div class="sidebar">
+        <div class="layout__sidebar">
           <div class="banner" style="display:none;">
             <img src="http://placehold.it/380x320/242424/ffffff/">
           </div>
@@ -292,28 +224,32 @@
         </div>
       </div>
       <!-- Footer :::::::::::::::::::::: -->        
-      <div id="footer" class="layout_footer size--S ">
+      <div id="footer" class="layout__footer">
         <h5 class="to-center gray5">Swan Project - 2015</h5>
       </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../scripts/all/offcanvas.js"></script>
+
+    <script src="../scripts/all/jquery-1.11.1.min.js"></script>
     <script src="../scripts/all/scrollIt.min.js"></script>
-    <script src="../scripts/all/jquery.sticky.js"></script>  
+    <script src="../scripts/all/jquery.sticky.js"></script> 
 
     <script type="text/javascript">
 
     $(function(){
       $.scrollIt();
-<<<<<<< HEAD
-    });      
-=======
     });  
 
->>>>>>> master
-
     $(document).ready( function() {
-      $(".subsection").sticky({topSpacing:0});
+        if(window.matchMedia('(min-width: 768px)').matches) {
+          $(".sub-navigation").sticky({topSpacing:0});
+        }      
+    });
+
+    $(document).ready(function(){
+      $('.offcanvas-panel-button,.offcanvas-panel-fade-screen,.offcanvas-panel-close').on('click touchstart',function (e) {
+        $('.offcanvas-panel-content,.offcanvas-panel-fade-screen').toggleClass('is-visible');
+        e.preventDefault();
+      });
     });
 
 
@@ -321,13 +257,13 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-    var menuToggle = $('#js-mobile-menu').unbind();
-    $('#js-navigation-menu').removeClass("hide");
-    menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-    if($('#js-navigation-menu').is(':hidden')) {
-    $('#js-navigation-menu').removeAttr('style');
+      var menuToggle = $('#js-mobile-menu').unbind();
+      $('#js-navigation-menu').removeClass("hide");
+      menuToggle.on('click', function(e) {
+      e.preventDefault();
+      $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+      $('#js-navigation-menu').removeAttr('style');
     }
     });
     });

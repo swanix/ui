@@ -3,6 +3,12 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+// ::::: Breakpoints
+
+$mobile: new-breakpoint(max-width 768px 4);
+
+$color-start: rgba(0,0,0,0.8) 30%;
+$color-end: rgba(178,178,178,0.3) 90%; 
 
 $layout-border: none; // Development purposes only
 
@@ -90,6 +96,9 @@ $width-sidebar-tiny: 4em;
 .layout__subheader {
     @include span-columns(12);
     outline:$layout-border;
+    @include media($mobile){
+        display: none;
+        }
 }
 
 .layout__contentarea {
@@ -181,4 +190,7 @@ $width-sidebar-tiny: 4em;
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master

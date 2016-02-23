@@ -15,10 +15,14 @@ $color-end: rgba(178,178,178,0.3) 90%;
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: $gray7 url("../../images/bg-body.jpg") no-repeat fixed center center;
 =======
   background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
 >>>>>>> dev
+=======
+  background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
+>>>>>>> master
     @include media($mobile){
 		background:none;
 		background-color: $gray9;
@@ -30,9 +34,13 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> dev
+=======
+
+>>>>>>> master
 // HEADER
 // -----------------------------------------------------------
 
@@ -45,6 +53,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	.logo-main {
 		@include span-columns(2);
@@ -66,6 +75,8 @@ body {
 	}
 =======
 >>>>>>> dev
+=======
+>>>>>>> master
 	header.navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -75,7 +86,10 @@ body {
 	    }	
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 
   .logo-main {
     @include span-columns(2);
@@ -96,7 +110,10 @@ body {
       }
   }
 
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> master
 	.navigation-wrapper, .navigation {
 		@include span-columns(10);
 		@include media($mobile){
@@ -106,6 +123,7 @@ body {
 	    }
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	.menu-mobile {
@@ -118,19 +136,39 @@ body {
 	}
 
 =======
+=======
+>>>>>>> master
 	.menu-mobile {
 		display: none;
 		@include media($mobile){
 	        @include span-columns(12 of 12);
 	        margin-top: 0px;
 	    }
+<<<<<<< HEAD
+=======
+	.navigation {
+		@include media($mobile){
+	        display: none;
+	    }
+	}
+
+	nav .subsection {
+
+	        padding-top: 70px !important;
+
+	}
+
+>>>>>>> master
 	}
 
 .section-title {
 	margin-top:2em;
 }
 
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> master
 // Fixed positions
 
 .fixed--top {
@@ -163,6 +201,7 @@ body {
 // Menu mobile
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu-left {
 	text-align:left;
 	@include span-columns(3);
@@ -190,6 +229,8 @@ body {
 }
 =======
 >>>>>>> dev
+=======
+>>>>>>> master
 
 .ic-social {
 	display:inline-block;
@@ -198,6 +239,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .submenu {
 	@include span-columns(8 of 8);
@@ -231,6 +273,8 @@ body {
 
 =======
 >>>>>>> dev
+=======
+>>>>>>> master
 
 // SUBHEADER
 // -----------------------------------------------------------

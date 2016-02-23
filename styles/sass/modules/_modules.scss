@@ -4,13 +4,14 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // Modules
-
+@import "color/zone-system";
+@import "color/custom-theme";
 @import "layout/layout-manager";
-@import "color/white-theme";
 @import "fonts/typo-manager";
 @import "fonts/typo-manager-custom";
 @import "icons/icon-manager";
 @import "buttons/button-manager";
+<<<<<<< HEAD
 @import "layout/footer";
 @import "layout/layout-basic";
 <<<<<<< HEAD
@@ -23,3 +24,12 @@
 @import "navigation/menu-scroll";
 //@import "navigation/menu-tabs";
 >>>>>>> dev
+=======
+@import "layout/content";
+@import "navigation/menu-offcanvas";
+@import "navigation/menu-horizontal";
+@import "navigation/menu-horizontal-sticky";
+@import "navigation/listview";
+@import "navigation/cards";
+@import "navigation/pagination";
+>>>>>>> master
