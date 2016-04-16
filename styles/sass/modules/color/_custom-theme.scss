@@ -47,7 +47,7 @@ small {
     }
     // -----------------------------------
 ul, ol, li {
-    color:                  $gray5;
+    color:                  $gray6;
     }
     // -----------------------------------
 dl, dt, dd {
@@ -245,7 +245,7 @@ tfoot {
     }
     // -----------------------------------
 .layout__subheader {
-    padding: 1em 2em;
+    padding: 1em 2em 0 0;
     @include border-top-radius(2em);
     @include background(linear-gradient(top, $gray8, $black));
     }
@@ -254,6 +254,8 @@ tfoot {
     color: $gray5;
     text-transform: uppercase;
     font-size: 2em;
+    padding-left:1em;
+    padding-bottom:0.5em;
     }
     // -----------------------------------
 .layout__contentarea {
@@ -320,7 +322,7 @@ body {
   background: $black url("../../images/bg-body.jpg") no-repeat fixed center center;
     @include media($mobile){
         background:none;
-        background-color: $gray9;
+        background-color: $white;
     }
 }
 

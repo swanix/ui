@@ -66,3 +66,91 @@
 .text-small {
     font-size: 0.9em;
 }
+
+.btn-medium-action {
+    background: #66348E none repeat scroll 0 0;
+    border: 2px solid #7F54A0;
+    border-radius: 10px;
+    color: #dcdcdc;
+    display: inline-block;
+    font-family: AldoPC;
+    font-size: 1em;
+    height: 50px;
+    line-height: 29px;
+    margin-top: 3px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    width: 95%;
+    text-align: center;
+    padding-right:1em;
+    padding-top: 0.5em;
+    margin: 0.5em;
+}
+
+.btn-medium-action:hover {
+    background: #46105B none repeat scroll 0 0;
+    border: 2px solid #66348E;
+    border-radius: 10px;
+    color: #dcdcdc;
+    display: inline-block;
+    font-family: AldoPC;
+    font-size: 1em;
+    height: 50px;
+    margin-top: 3px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    width: 95%;
+    margin: 0.5em;
+}
+
+// Boton preinscripcion
+
+.btn-medium-register {
+    background: #000000 none repeat scroll 0 0;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    color: #dcdcdc;
+    display: inline-block;
+    font-family: AldoPC;
+    font-size: 1em;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 3px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    width: 150px;
+    z-index: 3000;
+    @include media($mobile){
+        width: 100%;
+        text-align: center;
+     }       
+}
+
+
+.btn-medium-register:hover {
+    background: $gray8 none repeat scroll 0 0;
+    border: 2px solid #4E9CD5;
+    border-radius: 10px;
+    color: #dcdcdc;
+    display: inline-block;
+    font-family: AldoPC;
+    font-size: 1em;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 3px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    width: 150px;
+    @include media($mobile){
+        width: 100%;
+        text-align: center;
+     } 
+}
