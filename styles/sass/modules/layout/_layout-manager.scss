@@ -125,6 +125,10 @@ $width-sidebar-tiny: 4em;
     @include  mobile-portrait;
 }
 
+.layout__sidebar h3 {
+    font-size: 1em;
+}
+
 .layout__sidebar--tiny { 
     width: $width-sidebar-tiny;
     height: 100%;
@@ -186,4 +190,51 @@ $width-sidebar-tiny: 4em;
 
 .pad--L {
     padding: 1em 3em 3em 3em;
+}
+
+.sidebar__mainpanel {
+    overflow:auto;
+    background:#242424;
+}
+
+.sidebar__mainpanel p, .sidebar__mainpanel li {
+    color:$gray3 !important;
+}
+
+.gap-right {
+    margin-right: 1em !important;
+}
+
+// Responsive video
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+// Responsive video 2 (es el mismo que el anterior pero con diferente class)
+
+.video-mobile {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-mobile iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }

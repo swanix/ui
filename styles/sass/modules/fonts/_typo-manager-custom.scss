@@ -13,7 +13,7 @@
     font-weight: normal;
     font-style: normal;
     }
-
+/*
 @font-face {
     font-family: 'oswald_regularregular';
     src: url('../../fonts/oswald-regular-webfont.eot');
@@ -25,7 +25,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 // TEXTS 
 // -----------------------------------------------------------
@@ -37,8 +37,7 @@ body {
     // -----------------------------------
 h1, h2, h3, 
 h4, h5, h6 {
-
-    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+    font-family: 'Oswald', sans-serif;
     //font-style:             normal;
 
     }
@@ -49,7 +48,7 @@ p {
     }
     // -----------------------------------
 a { 
-    font-family: AldoPC, Tahoma, sans-serif ;
+    font-family: Tahoma, Geneva, sans-serif; 
     //font-style:             normal;
     }
     // -----------------------------------
@@ -63,7 +62,7 @@ small {
     }
     // -----------------------------------
 ul, ol, li {
-    font-family: AldoPC, Tahoma, sans-serif ;
+    font-family: Tahoma, Geneva, sans-serif ;
     font-style:             normal;
     }
     // -----------------------------------
@@ -85,11 +84,11 @@ cite {
     // -----------------------------------
 
 nav li a {
-    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+    font-family: 'Oswald', sans-serif;
     }
     // -----------------------------------
 .nav a {
-    font-family: 'oswald_regularregular', Tahoma, Geneva, sans-serif;
+    font-family: 'Oswald', sans-serif;
     }
     // -----------------------------------
 

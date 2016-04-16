@@ -53,6 +53,7 @@
 .card-summary h3 {
   margin-bottom: 0;
   color: $gray3;
+  font-size: 1em;
 }
 
 .card-summary p {
@@ -280,3 +281,55 @@
 #summary-corto {
     margin-bottom:10px;
 }  
+
+// Revisar, estilos provisionales
+
+#cards-home   {
+    overflow: auto;
+    margin-top:-10px;
+}
+
+
+#cards-home  .card {
+    @include span-columns(4 of 12);
+    background: $black;
+    border: 1px solid $gray7;
+    margin: 0.5em 0;
+  @include media($mobile){
+      @include span-columns(12 of 12);
+      @include border-top-radius(0.5em);
+      @include border-bottom-radius(0);
+      }
+}
+
+#cards-home  .card a {
+    height: 365px;
+    overflow: hidden;
+    padding-top:15px;
+  @include media($mobile){
+
+      }
+}
+
+#cards-home .card-summary {
+  @include span-columns(12 of 12);
+  @include media($mobile){
+    
+      }
+}
+
+#cards-home .card-image {
+  @include span-columns(12 of 12);
+  @include media($mobile){
+    
+      }
+}
+
+#cards-home img{
+  //width: 92%;
+  @include span-columns(12 of 12);
+  height: auto;
+  @include media($mobile){
+    
+      }
+}

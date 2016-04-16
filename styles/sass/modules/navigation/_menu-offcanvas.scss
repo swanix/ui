@@ -92,6 +92,7 @@ body {
   @include size($sliding-panel-width 100%);
   @include transform(translateX($sliding-panel-width));
   @include transition(all 0.20s linear);
+  border-left: 2px solid $gray7;
   background:$gray9;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
@@ -121,7 +122,7 @@ body {
 }
 
 .offcanvas-panel-content nav a:hover {
-    background:$gray7;
+    background:$gray8;
     color:$white;
 }
 
@@ -157,5 +158,11 @@ body {
 .no-scroll {
     overflow:hidden;
 }
+
+.offcanvas-panel-content .active-nav-item {
+  background: $gray7;
+  color: $white;
+}
+
 
 // Based on code by Diego Eis
