@@ -5,15 +5,14 @@
 
 // Modules
 @import "color/zone-system";
-@import "color/custom-theme";
+@import "color/white-theme";
 @import "layout/layout-manager";
 @import "fonts/typo-manager";
-@import "fonts/typo-manager-custom";
 @import "icons/icon-manager";
 @import "buttons/button-manager";
 @import "layout/content";
 @import "navigation/menu-offcanvas";
-@import "navigation/menu-horizontal";
+@import "navigation/menu-horizontal-flat";
 @import "navigation/menu-horizontal-sticky";
 @import "navigation/menu-horizontal-tabs";
 @import "navigation/listview";

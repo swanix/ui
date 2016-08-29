@@ -697,7 +697,7 @@ small {
 }
 
 ul, ol, li {
-  color: #505050;
+  color: #808080;
 }
 
 dl, dt, dd {
@@ -881,19 +881,7 @@ tfoot {
 }
 
 .layout__subheader {
-  padding: 1em 2em 0 0;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  background: -webkit-linear-gradient(top, #242424, #000000);
-  background: linear-gradient(to bottom, #242424, #000000);
-}
-
-.layout__subheader h2 {
-  color: #808080;
-  text-transform: uppercase;
-  font-size: 2em;
-  padding-left: 1em;
-  padding-bottom: 0.5em;
+  background-color: none;
 }
 
 .layout__contentarea {
@@ -901,19 +889,7 @@ tfoot {
 }
 
 .layout__content {
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
-.layout__content h4 {
-  background: #242424;
-  color: #FFFFFF;
-  padding: 0.7em 0 0.7em 1em;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  background-color: none;
 }
 
 .layout__content--full {
@@ -921,32 +897,7 @@ tfoot {
 }
 
 .layout__sidebar {
-  background: #242424;
-  padding-bottom: 2em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
-.layout__sidebar h3 {
-  color: #F2F2F2;
-}
-
-.layout__sidebar a {
-  color: #808080;
-}
-
-.panel-title {
-  background: -webkit-linear-gradient(top, #242424, #131313);
-  background: linear-gradient(to bottom, #242424, #131313);
-  line-height: 3em;
-  text-transform: uppercase;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-}
-
-.panel-title h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  background-color: none;
 }
 
 .layout__sidebar--tiny {
@@ -954,21 +905,7 @@ tfoot {
 }
 
 .layout__footer {
-  margin-top: 2em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  background: #242424;
-}
-
-body {
-  background: #000000 url("../../images/bg-body.jpg") no-repeat fixed center center;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background: none;
-    background-color: #FFFFFF;
-  }
+  background-color: none;
 }
 
 .nano > .nano-pane {
@@ -1481,87 +1418,6 @@ q {
 
 cite {
   font-style: normal;
-}
-
-.typo-preview td {
-  font-family: Tahoma, Geneva, sans-serif;
-}
-
-@font-face {
-  font-family: 'AldoPC';
-  src: url("../../fonts/AldoPC.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*
-@font-face {
-    font-family: 'oswald_regularregular';
-    src: url('../../fonts/oswald-regular-webfont.eot');
-    src: url('../../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/oswald-regular-webfont.woff2') format('woff2'),
-         url('../../fonts/oswald-regular-webfont.woff') format('woff'),
-         url('../../fonts/oswald-regular-webfont.ttf') format('truetype'),
-         url('../../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
-body {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
-}
-
-p {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
-}
-
-a {
-  font-family: Tahoma, Geneva, sans-serif;
-}
-
-a {
-  font-family: Tahoma, sans-serif;
-  font-style: normal;
-}
-
-small {
-  font-style: normal;
-}
-
-ul, ol, li {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
-}
-
-dl, dt, dd {
-  font-style: normal;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-q {
-  font-style: italic;
-}
-
-cite {
-  font-style: normal;
-}
-
-nav li a {
-  font-family: 'Oswald', sans-serif;
-}
-
-.nav a {
-  font-family: 'Oswald', sans-serif;
 }
 
 .typo-preview td {
@@ -2848,7 +2704,7 @@ nav li a {
 
 .main-navigation .active-nav-item a {
   padding-bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: #383838;
   color: #FFFFFF !important;
 }
 
@@ -3054,14 +2910,7 @@ nav li a {
 
 .main-navigation {
   text-transform: uppercase;
-  border-top-left-radius: 0.8em;
-  border-top-right-radius: 0.8em;
-  border-bottom-left-radius: 0.8em;
-  border-bottom-right-radius: 0.8em;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 30%, rgba(178, 178, 178, 0.3) 90%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 30%, rgba(178, 178, 178, 0.3) 90%);
-  box-shadow: 0 2px 4px black;
-  border: solid 1px #505050;
+  background: #000000;
   margin-top: 2.5em;
   height: 3em;
   padding-left: 1em;
@@ -3084,6 +2933,7 @@ nav li a {
 .main-navigation li a {
   font-size: 0.7em !important;
   font-weight: normal;
+  height: 4em;
 }
 
 .sub-navigation {
@@ -3365,8 +3215,6 @@ nav li a {
   color: #FFFFFF;
 }
 
-<<<<<<< HEAD
-=======
 .cards {
   background: #242424;
   overflow: auto;
@@ -3853,7 +3701,6 @@ nav li a {
   margin-right: 0;
 }
 
->>>>>>> dev
 .pages {
   overflow: hidden;
   background-color: #1A1A1A;
