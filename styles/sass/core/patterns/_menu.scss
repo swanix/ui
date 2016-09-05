@@ -5,20 +5,27 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .logo {
-  @include span-columns(1 of 12);
-  //background: $gray4;
+  @include span-columns(1);
   @include media($mobile){
-      @include span-columns(12 of 12);
+      @include span-columns(2 of 12);
+      }
+}
+
+.logo img {
+  @include media($mobile){
+      width: 40px;
+      height: auto;
+      margin: em(5) em(10);
       }
 }
 
 .menu {
-    @include span-columns(6 of 12);
+    @include span-columns(5);
     @include shift(5);
     background: $gray8;
     @include media($mobile){
-        @include span-columns(12 of 12);
         @include shift(0);
+        display: none;
         }
 }
 
@@ -53,3 +60,109 @@
     color: white;
     background: $gray7;
 }
+
+// MOBILE MENU
+// Based on Refills
+
+.menu-mobile {  
+  $menu-mobile-width: 250px;
+  @include position(fixed, 0 0 0 auto);
+  @include size($menu-mobile-width 100%);
+  @include transform(translateX($menu-mobile-width));
+  border-left: 2px solid $gray7;
+  background: $gray9;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999;
+
+  &.is-visible {
+    @include transition(all 0.20s linear);
+    @include transform(translateX(0));
+  }
+
+}
+
+.menu-mobile-fade-screen {
+  @include position(fixed, 0 0 0 0);
+  @include transition;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.is-visible {
+    @include transition(all 0.20s linear);
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+
+// MENU ITEMS
+
+.menu-mobile ul {
+    margin: 0; padding: 0;
+    float: right;
+    @include media($mobile){
+      float: left;
+      }
+}
+
+.menu-mobile ul li {
+    display: inline;
+    @include media($mobile){
+        display: block;
+        }
+}
+
+.menu-mobile ul li a {
+    float: left; 
+    text-decoration: none;
+    color: $gray4; 
+    padding: 10.5px 11px;
+    background: $gray8;
+}
+ 
+.menu-mobile ul li a:visited {
+    color: white;
+}
+ 
+.menu-mobile ul li a:hover, .menu-mobile ul li .active {
+    color: white;
+    background: $gray7;
+}
+
+
+// SHOW BUTTON :::::::::::::::
+
+
+.menu-mobile-button {
+  display: none;
+  @include media($mobile){
+    display: inline-block;
+    float: right;
+    width:50px;
+    height:50px;
+    text-align: center;
+    background: $gray9;
+    border:1px solid $black;
+    color: $white;
+    }
+}
+
+// CLOSE BUTTON :::::::::::::::
+
+.menu-mobile-close {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding-top:1em;
+  text-align: center;
+  background:$gray7;
+  color: $white;
+  display: none;
+  @include media($mobile){
+    display: block; 
+    }  
+}
+

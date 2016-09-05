@@ -93,7 +93,7 @@ button:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    background: $gray3;
+    background: $gray2;
     height: $size-xs;
     display: inline-block;
     }
@@ -111,8 +111,12 @@ button:hover {
     }
 
 
-.button a, a:visited {
-    color: $gray8;
+.button a:visited {
+    color: $gray9;
+    }
+
+.button a {
+    color: $gray9;
     }
 
 // CUSTOM SHAPES 
@@ -135,7 +139,7 @@ button:hover {
     -moz-border-radius:         50% ; 
     -webkit-border-radius:      50% ;
     text-align:                 center;
-    border:                     1px solid;  
+    border:                     2px solid;  
     }
 
 .small {
@@ -174,6 +178,8 @@ button:hover {
     transition:.2s;
     // End transition
     }
+
+
 
 .text-small {
     font-size: 0.9em;

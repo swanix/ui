@@ -34,6 +34,7 @@ p {
 
 a {
     text-decoration: none;
+    color: $gray9;
     }
 
 a:hover {
@@ -45,6 +46,10 @@ a:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    }
+
+a:visited {
+    color: $gray7;
     }
 
 ul, ol {
