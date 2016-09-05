@@ -4,11 +4,6 @@
 // Based on Bourbon - Refills http://refills.bourbon.io/
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-$mobile: new-breakpoint(max-width 768px 4);
-
-$color-start: rgba(0,0,0,0.8) 30%;
-$color-end: rgba(178,178,178,0.3) 90%; 
-
 
 .logo {
   @include span-columns(2);
@@ -60,7 +55,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 
 // Original Markup
 
-.main-navigation {
+.menu {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -86,7 +81,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 
   // Mobile view
 
-  .navigation-menu-button {
+  .menu-button {
     color: $navigation-color;
     display: block;
     float: right;
@@ -119,7 +114,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
     }
   }
 
-  ul.navigation-menu {
+  ul.menu {
     clear: both;
     display: none;
     margin: 0 auto;
@@ -141,7 +136,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
 
   // The nav items
 
-  ul li.nav-link {
+  ul li.menu-item {
     //background: $navigation-background;
     display: block;
     line-height: 3em;
@@ -177,7 +172,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
     }
   }
 
-  .active-nav-item a {
+  .menu-item-active a {
     //border-bottom: 1px solid $navigation-active-link-color;
     padding-bottom: 0;
     background:$gray7;
@@ -187,7 +182,7 @@ $color-end: rgba(178,178,178,0.3) 90%;
  
   // Sub menus
 
-  li.more.nav-link {
+  li.more.menu-item {
     padding-right: 0;
 
     @include media($horizontal-bar-mode) {
@@ -300,85 +295,9 @@ $color-end: rgba(178,178,178,0.3) 90%;
     }
   }
 
-  // Elements on the far right
+// ORDENAR
 
-  .navigation-tools {
-    //background: #505050;
-    clear: both;
-    display: block;
-    height: 3em;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      clear: none;
-      float: right;
-    }
-  }
-
-  // Social bar
-
-  .social-bar {
-    $search-bar-border-color: $base-border-color;
-    $search-bar-border: 1px solid $search-bar-border-color;
-    $search-bar-background: lighten($search-bar-border-color, 10%);
-
-    float: left;
-    padding: 0.1em 0.85em 0.7em 0.6em;
-    width: 40%;
-
-    form {
-      position: relative;
-
-      input[type=search] {
-        background: $navigation-search-background;
-        border: $navigation-search-border;
-        border-radius: $base-border-radius * 2;
-        box-sizing: border-box;
-        color: $navigation-color;
-        font-size: 0.9em;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.8em;
-        width: 100%;
-
-        @include media($horizontal-bar-mode) {
-          width: 100%;
-        }
-      }
-
-      button[type=submit] {
-        background: $navigation-search-background;
-        border: none;
-        bottom: 0.3em;
-        left: auto;
-        outline: none;
-        padding: 0 9px;
-        position: absolute;
-        right: 0.3em;
-        top: 0.3em;
-
-        img {
-          height: 12px;
-          opacity: 0.7;
-          padding: 1px;
-        }
-      }
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: inline-block;
-      position: relative;
-      width: 11em;
-
-      input {
-        box-sizing: border-box;
-        display: block;
-      }
-    }
-  }
-}
-
-.main-navigation {
+.menu {
     text-transform: uppercase;
     background: $black;
     //margin-top: 2.5em;
@@ -390,12 +309,12 @@ $color-end: rgba(178,178,178,0.3) 90%;
       } 
 }
 
-.main-navigation li a {
+.menu li a {
     font-size: 0.7em !important;  
     font-weight: normal; 
     height: 4em;
 }
 
-.main-navigation li a:hover {
+.menu li a:hover {
     //background:$gray8;
 }

@@ -1,0 +1,55 @@
+// -----------------------------------------------------------
+// MENU HORIZONTAL by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// Based on Bourbon - Refills http://refills.bourbon.io/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.logo {
+  @include span-columns(1 of 12);
+  //background: $gray4;
+  @include media($mobile){
+      @include span-columns(12 of 12);
+      }
+}
+
+.menu {
+    @include span-columns(6 of 12);
+    @include shift(5);
+    background: $gray8;
+    @include media($mobile){
+        @include span-columns(12 of 12);
+        @include shift(0);
+        }
+}
+
+.menu ul {
+    margin: 0; padding: 0;
+    float: right;
+    @include media($mobile){
+      float: left;
+      }
+}
+
+.menu ul li {
+    display: inline;
+    @include media($mobile){
+        display: block;
+        }
+}
+
+.menu ul li a {
+    float: left; 
+    text-decoration: none;
+    color: $gray4; 
+    padding: 10.5px 11px;
+    background: $gray8;
+}
+ 
+.menu ul li a:visited {
+    color: white;
+}
+ 
+.menu ul li a:hover, .menu ul li .active {
+    color: white;
+    background: $gray7;
+}

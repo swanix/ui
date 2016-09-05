@@ -17,3 +17,8 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;	
 }
+
+main, header, section, footer {
+	//display:block;
+	overflow: auto;
+}

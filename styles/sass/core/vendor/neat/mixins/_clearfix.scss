@@ -2,24 +2,24 @@
 
 /// Provides an easy way to include a clearfix for containing floats.
 ///
-/// @link http://cssmojo.com/latest_new_clearfix_so_far/
+/// @link http://goo.gl/yP5hiZ
 ///
-/// @example scss - Usage
+/// @example scss
 ///   .element {
 ///     @include clearfix;
 ///   }
 ///
-/// @example css - CSS Output
+/// @example css
 ///   .element::after {
 ///     clear: both;
 ///     content: "";
-///     display: table;
+///     display: block;
 ///   }
 
 @mixin clearfix {
   &::after {
     clear: both;
     content: "";
-    display: table;
+    display: block;
   }
 }
