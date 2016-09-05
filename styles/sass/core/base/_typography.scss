@@ -8,19 +8,28 @@
 
 body {
     font-family: Tahoma, Geneva, sans-serif;
+    color: $gray5;
     }
+
+h1 {
+    font-size: 4em;
+}
 
 h1, h2, h3, h4, h5, h6  {
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: normal;
-    margin: 1em 0;
+    color: $gray7;
+    padding-bottom: 0.5em;
+    margin: 0;
     }
 
 p { 
     font-family: Tahoma, Geneva, sans-serif;
     line-height: 1.5em;
     font-size: 0.9em;
-    margin-bottom: 1em;
+    margin: 0;
+    padding-bottom: 1em;
+    color: $gray5;
     }
 
 a {
@@ -95,3 +104,5 @@ pre {
 hr {
 
     }
+
+

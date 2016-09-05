@@ -1,7 +1,7 @@
 {
-  "name": "swan",
-  "version": "1.0.0",
-  "description": "UI framework",
+  "name": "Swan",
+  "version": "0.2",
+  "description": "Experimental UI framework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/zemiotic/swan.git"
   },
-  "author": "Sebastian Serna",
+  "author": "Sebastian Serna <sebastian@zemiotic.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zemiotic/swan/issues"

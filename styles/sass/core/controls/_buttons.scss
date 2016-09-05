@@ -82,6 +82,38 @@ button:hover {
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+.button {
+    min-width:2em;
+    padding: 0.8em 2em;
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    background: $gray3;
+    height: $size-xs;
+    display: inline-block;
+    }
+
+.button:hover {
+    vertical-align: middle;
+    // Transition
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    // End transition
+    background: $gray4;
+    }
+
+
+.button a, a:visited {
+    color: $gray8;
+    }
 
 // CUSTOM SHAPES 
 // -----------------------------------------------------------
