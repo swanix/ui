@@ -44,10 +44,9 @@ $width-sidebar-tiny: 4em;
 
 .layout-header {
 	@include span-columns(12);
-	//background: $gray3;	
   @include media($mobile){
-    
-    }
+    background: $black;
+  }
 }
 
 // Main content section
@@ -62,6 +61,8 @@ $width-sidebar-tiny: 4em;
 .layout-footer {
 	@include span-columns(12);
 	background: $gray8;
+  text-align: center;
+  padding: 2em 1em;
 }
 
 // Other classes
@@ -73,14 +74,14 @@ $width-sidebar-tiny: 4em;
 .content-center {
   @include outer-container(980px); 
   @include media($mobile){
-    @include outer-container();
+   
     }
 }
 
 // Hero unit
 
 .hero {
-  background: $gray4;
+  background: $gray3;
   background-size: none;
   text-align: center;
   height: $size-xl;
@@ -91,7 +92,7 @@ $width-sidebar-tiny: 4em;
 
 .hero-content {
   @include outer-container(980px);
-  background: $gray4;
+  //background: $gray2;
   padding: 7em 8em 3em 8em;
   @include media($mobile){
     padding: 3em 2em 7em 2em;
@@ -147,6 +148,7 @@ $width-sidebar-tiny: 4em;
     @include media($mobile){
       @include span-columns(12 of 12);
       padding: 0 0.8em;
+      display: none;
       }
   }
 
