@@ -1,30 +1,38 @@
 // -----------------------------------------------------------
-// MENU HORIZONTAL by Sebastian Serna - 2015
+// MENU HORIZONTAL by Sebastian Serna - 2016
 // -----------------------------------------------------------
-// Based on Bourbon - Refills http://refills.bourbon.io/
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+.navigation {
+  overflow: auto;
+  background: $gray8;
+}
+
+
 .logo {
-  @include span-columns(1);
+  @include span-columns(3 of 12);
+  //background: blue;
   @include media($mobile){
-      @include span-columns(2 of 12);
+      @include span-columns(5 of 12);
       }
 }
 
 .logo img {
+  max-height: em(38);
+  margin: em(8) em(0) em(0) em(10) ;
   @include media($mobile){
-      width: 40px;
-      height: auto;
-      margin: em(5) em(10);
+      max-height: em(40);
+      margin: em(5) em(0) em(0) em(5);
       }
 }
 
 .menu {
-    @include span-columns(5);
-    @include shift(5);
-    background: $gray8;
+    @include span-columns(9 of 12);
+    @include omega();
+    padding-right:em(20);
+    //background: blue;
     @include media($mobile){
-        @include shift(0);
         display: none;
         }
 }
@@ -48,7 +56,7 @@
     float: left; 
     text-decoration: none;
     color: $gray4; 
-    padding: 10.5px 11px;
+    padding: 1em 1.5em;
     background: $gray8;
 }
  
@@ -116,10 +124,11 @@
 }
 
 .menu-mobile ul li a {
+    width: 100%;
     float: left; 
     text-decoration: none;
     color: $gray4; 
-    padding: 10.5px 11px;
+    padding: 1em 2em;
     background: $gray8;
 }
  

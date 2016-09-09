@@ -32,18 +32,19 @@ $width-sidebar-tiny: 4em;
 .size-xl    {  height: $size-xl; }
 .size-xxl   {  height: $size-xxl; }
 
-
-
 // Containers
 
 .layout {
-	overflow:auto;
+	//overflow:auto;
 }
 
 // Header section
 
 .layout-header {
-	@include span-columns(12);
+  //padding-top: em(50);
+  //min-height: $size-m ;
+	//@include span-columns(12);
+  //background: $gray8;
   @include media($mobile){
     background: $black;
   }
@@ -71,13 +72,11 @@ $width-sidebar-tiny: 4em;
   @include span-columns(12);
 }
 
-.content-center {
+.centered {
   @include outer-container(980px); 
   @include media($mobile){
-   
     }
 }
-
 // Hero unit
 
 .hero {
