@@ -18,37 +18,38 @@
 </head>
 <body>
 <div class="layout">
+    <!-- Layout Header :::::::::::::::::::: -->
     <header class="layout-header">
-      <div class="content-center">
+      <div class="navigation">
         <!-- Logo -->
-        <div class="logo">
-            <a href="#"><img src="images/logo-app.png" alt="Swan"></a>
-        </div>
-        <!-- Main Menu -->
+        <a class="logo" href="javascript:void(0)"><img src="images/logo-white.png" alt=""></a>
         <nav id="menu-main" class="menu" role="navigation">
-          <div class="menu-mobile-close">X</div>
+          <!-- Menu -->
+          <div class="menu-mobile-close">✕</div>
           <ul class="menu-items">
-            <li class="menu-item"><a href="#">Overview</a></li>
-            <li class="menu-item"><a href="#">Elements</a></li>
-            <li class="menu-item"><a href="#">Layouts</a></li>
-            <li class="menu-item"><a href="#">Themes</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Overview</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Elements</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Layouts</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Themes</a></li>
             <li class="menu-item active"><a href="#">Contribute</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Contact</a></li>
           </ul>
-        </nav> 
+        </nav>         
         <button type="button" class="menu-mobile-button">☰</button> 
       </div>
       <div class="menu-mobile-fade-screen"></div>
     </header>
+    <!-- Layout Main Content :::::::::::::::::::: -->
     <main class="layout-main" role="main">
         <header class="hero">
             <div class="hero-content">
               <h1>Swan</h1>
               <h4>Universal Interface</h4>
               <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
-              <a href="#" class="button">Download</a>
+              <a href="javascript:void(0)" class="button">Download</a>
             </div>
         </header>
-        <article class="content-center bg--white">
+        <article class="centered bg--white">
           <section class="content-row">
             <article class="summary">
               <header class="summary-image">
@@ -60,7 +61,7 @@
                   <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
                 </section>
                 <footer class="summary-footer">
-                  <a href="#" class="button">Read More</a>
+                  <a href="javascript:void(0)" class="button">Read More</a>
                 </footer>
               </div>
             </article>
@@ -74,7 +75,7 @@
                   <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
                 </section>
                 <footer class="summary-footer">
-                  <a href="#" class="button">Read More</a>
+                  <a href="javascript:void(0)" class="button">Read More</a>
                 </footer>
               </div>
             </article>
@@ -88,21 +89,22 @@
                   <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
                 </section>
                 <footer class="summary-footer">
-                  <a href="#" class="button">Read More</a>
+                  <a href="javascript:void(0)" class="button">Read More</a>
                 </footer>
               </div>
             </article>
           </section>
         </article>
     </main>
+    <!-- Layout Footer :::::::::::::::::::: -->
     <footer class="layout-footer">
         <div class="content-center">
           <p>Swan UI Ⓒ 2016</P>
           <!-- Social buttons -->
           <div class="social-links">
-            <span class="btn circle"><a href="#"><img src="images/ic-social-facebook.png" alt="Facebook"></a></span>
-            <span  class="btn circle"><a href="#"><img src="images/ic-social-twitter.png" alt="Twitter"></a></span>
-            <span class="btn circle"><a href="#"><img src="images/ic-social-youtube.png" alt="Youtube"></a></span>
+            <span class="btn circle"><a href="javascript:void(0)"><img src="images/ic-social-facebook.png" alt="Facebook"></a></span>
+            <span  class="btn circle"><a href="javascript:void(0)"><img src="images/ic-social-twitter.png" alt="Twitter"></a></span>
+            <span class="btn circle"><a href="javascript:void(0)"><img src="images/ic-social-youtube.png" alt="Youtube"></a></span>
           </div>
         </div>
     </footer>
@@ -110,29 +112,14 @@
 
 <!-- Javascripts -->  
 <script src="scripts/all/jquery-1.11.1.min.js"></script>
+<script src="scripts/all/swan.menu.js"></script>
 
 <script type="text/javascript">
 
-$(document).ready(function(){
-  $('.menu-mobile-button,.menu-mobile-fade-screen,.menu-mobile-close').on('click touchstart',function (e) {
-    $('.menu-mobile,.menu-mobile-fade-screen').toggleClass('is-visible');
-    e.preventDefault();
-  });
-});
 
-$(window).resize(function(){
-   console.log('resize called');
-   var width = $(window).width();
-   if(width <= 768){
-       $('#menu-main').removeClass('menu').addClass('menu-mobile');
-   }
-   else{
-       $('#menu-main').removeClass('menu-mobile').addClass('menu');
-   }
-})
-.resize();//trigger the resize event on page load.
 
 </script>
+
 
 </body>
 </html>
