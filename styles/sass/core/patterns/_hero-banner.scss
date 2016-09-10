@@ -1,0 +1,25 @@
+// -----------------------------------------------------------
+// HERO BANNER by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Hero banner
+
+.hero {
+  background-size: none;
+  text-align: center;
+  height: $size-xl;
+  background: $hero-bg;
+  @include media($mobile){
+    height: auto;
+    }
+}
+
+.hero-content {
+  @include outer-container(980px);
+  padding: 7em 8em 3em 8em;
+  background: $hero-content-bg;
+  @include media($mobile){
+    padding: 3em 2em 7em 2em;
+    }
+}

@@ -1,0 +1,49 @@
+// -----------------------------------------------------------
+// BASE LAYOUT
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// Containers
+
+.layout {
+	overflow:auto;
+  background: $layout-bg;
+}
+
+// Header section
+
+.layout-header {
+	@include span-columns(12);
+  background: $header-bg;
+  @include media($mobile){
+    background: $header-bg;
+  }
+}
+
+// Main content section
+
+.layout-main {
+	@include span-columns(12);
+  background: $main-bg;
+}
+
+// Footer section
+
+.layout-footer {
+	@include span-columns(12);
+  text-align: center;
+  padding: 2em 1em;
+  background: $footer-bg;
+}
+
+// Other classes
+
+.centered {
+  @include outer-container(980px); 
+  @include media($mobile){
+    }
+}
+
+
+

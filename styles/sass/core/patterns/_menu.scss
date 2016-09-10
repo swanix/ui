@@ -6,13 +6,14 @@
 
 .navigation {
   overflow: auto;
-  background: $gray8;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background: $navigation-bg;
 }
 
 
 .logo {
   @include span-columns(3 of 12);
-  //background: blue;
   @include media($mobile){
       @include span-columns(5 of 12);
       }
@@ -31,7 +32,7 @@
     @include span-columns(9 of 12);
     @include omega();
     padding-right:em(20);
-    //background: blue;
+    background: $menu-bg;
     @include media($mobile){
         display: none;
         }
@@ -55,9 +56,9 @@
 .menu ul li a {
     float: left; 
     text-decoration: none;
-    color: $gray4; 
     padding: 1em 1.5em;
-    background: $gray8;
+    color: $menu-item-text; 
+    background: $menu-item-bg;
 }
  
 .menu ul li a:visited {
@@ -65,8 +66,8 @@
 }
  
 .menu ul li a:hover, .menu ul li .active {
-    color: white;
-    background: $gray7;
+    color: $menu-item-hover-text;
+    background: $menu-item-hover-bg;
 }
 
 // MOBILE MENU
@@ -77,11 +78,12 @@
   @include position(fixed, 0 0 0 auto);
   @include size($menu-mobile-width 100%);
   @include transform(translateX($menu-mobile-width));
-  border-left: 2px solid $gray7;
-  background: $gray9;
+  // @include transition(all 0.20s linear); Revisar efecto
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
+  border-left: 2px solid $menu-mobile-border;
+  background: $menu-mobile-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
@@ -93,10 +95,10 @@
 .menu-mobile-fade-screen {
   @include position(fixed, 0 0 0 0);
   @include transition;
-  background: #000;
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
+  background: $menu-mobile-fade-screen-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
@@ -109,27 +111,21 @@
 // MENU ITEMS
 
 .menu-mobile ul {
-    margin: 0; padding: 0;
-    float: right;
-    @include media($mobile){
-      float: left;
-      }
+    margin: 0; 
+    padding: 0;
 }
 
 .menu-mobile ul li {
-    display: inline;
-    @include media($mobile){
-        display: block;
-        }
+    display: block;
 }
 
 .menu-mobile ul li a {
     width: 100%;
     float: left; 
     text-decoration: none;
-    color: $gray4; 
     padding: 1em 2em;
-    background: $gray8;
+    color: $menu-mobile-item-text; 
+    background: $menu-mobile-item-bg;
 }
  
 .menu-mobile ul li a:visited {
@@ -137,15 +133,15 @@
 }
  
 .menu-mobile ul li a:hover, .menu-mobile ul li .active {
-    color: white;
-    background: $gray7;
+    color: $menu-mobile-item-hover-text;
+    background: $menu-mobile-item-hover-bg;
 }
 
 
 // SHOW BUTTON :::::::::::::::
 
 
-.menu-mobile-button {
+.menu-mobile-open {
   display: none;
   @include media($mobile){
     display: inline-block;
@@ -153,25 +149,11 @@
     width:50px;
     height:50px;
     text-align: center;
-    background: $gray9;
-    border:1px solid $black;
-    color: $white;
+    border:1px solid $menu-mobile-btn-border;
+    color: $menu-mobile-btn-text;
+    background: $menu-mobile-btn-bg;
     }
 }
 
-// CLOSE BUTTON :::::::::::::::
 
-.menu-mobile-close {
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  padding-top:1em;
-  text-align: center;
-  background:$gray7;
-  color: $white;
-  display: none;
-  @include media($mobile){
-    display: block; 
-    }  
-}
 
