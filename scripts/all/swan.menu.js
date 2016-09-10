@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.menu-mobile-button,.menu-mobile-fade-screen,.menu-mobile-close').on('click touchstart',function (e) {
+  $('.menu-mobile-open,.menu-mobile-fade-screen').on('click touchstart',function (e) {
     $('.menu-mobile,.menu-mobile-fade-screen').toggleClass('is-visible');
     e.preventDefault();
   });

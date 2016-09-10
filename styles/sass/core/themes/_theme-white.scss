@@ -1,0 +1,41 @@
+
+// -----------------------------------------------------------
+// WHITE SWAN THEME by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// GRAYSCALE PALETTE variables (white to black)
+
+$white:             #FFFFFF ; // White (HTML color: white)
+$gray1:             #F7F7F7 ;
+$gray2:             #F2F2F2 ;
+$gray3:             #D3D3D3 ;
+$gray4:             #B2B2B2 ;
+$gray5:             #808080 ; // Gray medium (HTML color: gray)
+$gray6:             #505050 ;
+$gray7:             #383838 ;
+$gray8:             #242424 ;
+$gray9:             #131313 ;
+$black:             #000000 ; // Black (HTML color: black)
+
+
+// THEME COLORS
+
+// General texts
+$basic-text: 			 $gray6 !default ;
+// Layout base styles
+$header-bg:              $gray9 !default ;
+$main-bg:                $white !default ;
+$footer-bg:              $gray7 !default ;
+// Menu colors
+$menu-bg:                #F2F2F2 !default ;
+$menu-item-bg:           #D3D3D3 !default ;
+$menu-item-hover-bg:     #D3D3D3 !default ;
+$menu-item-active-bg:    #D3D3D3 !default ;
+// Menu text
+$menu-item-text:         #D3D3D3 !default ;
+$menu-item-hover-text:   #D3D3D3 !default ;
+$menu-item-active-text:  #D3D3D3 !default ;
+
+
+

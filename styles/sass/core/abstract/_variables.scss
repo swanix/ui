@@ -1,0 +1,107 @@
+
+// -----------------------------------------------------------
+// SWAN VARIABLES by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// ::::: Breakpoints
+
+$mobile: new-breakpoint(max-width 768px 4);
+$large-screen: 50em !default;
+
+$border-box-sizing: true !default;
+
+// DIMENS
+
+$padd:      2em;
+
+$size-xs:   3em ;
+$size-s:    5em ;
+$size-m:    9em ;
+$size-l:    22em ;
+$size-xl:   32em ;
+$size-xxl:  45em ;
+
+$width-sidebar-tiny: 4em;
+
+
+// INSPIRATION: ZONE SYSTEM 
+// Created by Ansel Adams and Fred Archer 
+// -----------------------------------------------------------
+
+// GRAYSCALE PALETTE variables (white to black)
+
+$white:             #FFFFFF ; // White (HTML color: white)
+$gray1:             #F7F7F7 ;
+$gray2:             #F2F2F2 ;
+$gray3:             #D3D3D3 ;
+$gray4:             #B2B2B2 ;
+$gray5:             #808080 ; // Gray medium (HTML color: gray)
+$gray6:             #505050 ;
+$gray7:             #383838 ;
+$gray8:             #242424 ;
+$gray9:             #131313 ;
+$black:             #000000 ; // Black (HTML color: black)
+
+// COLORS
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// General texts
+// ::::::::::::::::::::::::::::::::::::
+
+$text-basic: 			 $gray5 !default ;
+$text-heading: 			 $gray7 !default ;
+$text-link: 			 $gray9 !default ;
+$text-link-hover: 	     $gray7 !default ;
+$text-link-visited: 	 $gray7 !default ;
+
+// Layout base styles 
+// ::::::::::::::::::::::::::::::::::::
+
+$layout-bg:              none !default ;
+$header-bg:              $gray8 !default ;
+$main-bg:                $white !default ;
+$footer-bg:              $gray9 !default ;
+
+// Menu colors
+// ::::::::::::::::::::::::::::::::::::
+
+$navigation-bg:          none !default ;
+$menu-bg:                none !default ;
+$menu-item-bg:           $gray8 !default ;
+$menu-item-hover-bg:     $gray7 !default ;
+$menu-item-active-bg:    $gray6 !default ;
+$menu-item-text:         $gray4 !default ;
+$menu-item-hover-text:   $white !default ;
+$menu-item-active-text:  $white !default ;
+
+// Menu Mobile
+
+$menu-mobile-bg:               $gray8 !default ;
+$menu-mobile-item-bg:          $gray8 !default ;
+$menu-mobile-item-hover-bg:    $gray7 !default ;
+$menu-mobile-item-active-bg:   $gray6 !default ;
+$menu-mobile-item-text:        $gray4 !default ;
+$menu-mobile-item-hover-text:  $white !default ;
+
+$menu-mobile-btn-bg:           $gray9 !default ;
+$menu-mobile-btn-text:         $white !default ;
+$menu-mobile-btn-border:       $black !default ;
+
+$menu-mobile-fade-screen-bg:   $black !default ;
+$menu-mobile-border:           $gray7 !default ;
+
+// Hero colors
+// ::::::::::::::::::::::::::::::::::::
+
+$hero-bg:              $gray3 !default;
+$hero-content-bg:      none !default;
+
+
+// Content summary colors
+// ::::::::::::::::::::::::::::::::::::
+
+$summary-bg:            $gray1 !default;
+$summary-border:        $gray3 !default;
+$summary-image-bg:      none !default;

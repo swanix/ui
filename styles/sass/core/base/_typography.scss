@@ -8,7 +8,7 @@
 
 body {
     font-family: Tahoma, Geneva, sans-serif;
-    color: $gray5;
+    color: $text-basic;
     }
 
 h1 {
@@ -18,9 +18,9 @@ h1 {
 h1, h2, h3, h4, h5, h6  {
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: normal;
-    color: $gray7;
     padding-bottom: 0.5em;
     margin: 0;
+    color: $text-heading;
     }
 
 p { 
@@ -29,12 +29,12 @@ p {
     font-size: 0.9em;
     margin: 0;
     padding-bottom: 1em;
-    color: $gray5;
+    color: $text-basic;
     }
 
 a {
     text-decoration: none;
-    color: $gray9;
+    color: $text-link;
     }
 
 a:hover {
@@ -46,10 +46,11 @@ a:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $text-link-hover;
     }
 
 a:visited {
-    color: $gray7;
+    color: $text-link-visited;
     }
 
 ul, ol {
