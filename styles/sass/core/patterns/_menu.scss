@@ -62,19 +62,24 @@
 }
  
 .menu ul li a:visited {
-    color: white;
+    color: $menu-item-text;
 }
  
-.menu ul li a:hover, .menu ul li .active {
+.menu ul li a:hover {
     color: $menu-item-hover-text;
     background: $menu-item-hover-bg;
+}
+
+.menu ul li a.active {
+    color: $menu-item-active-text ;
+    background: $menu-item-active-bg ;
 }
 
 // MOBILE MENU
 // Based on Refills
 
 .menu-mobile {  
-  $menu-mobile-width: 250px;
+  $menu-mobile-width: em(250);
   @include position(fixed, 0 0 0 auto);
   @include size($menu-mobile-width 100%);
   @include transform(translateX($menu-mobile-width));
@@ -128,18 +133,17 @@
     background: $menu-mobile-item-bg;
 }
  
-.menu-mobile ul li a:visited {
-    color: white;
-}
- 
-.menu-mobile ul li a:hover, .menu-mobile ul li .active {
-    color: $menu-mobile-item-hover-text;
-    background: $menu-mobile-item-hover-bg;
+.menu-mobile ul li a:hover {
+    color: $menu-item-hover-text;
+    background: $menu-item-hover-bg;
 }
 
+.menu-mobile ul li a.active {
+    color: $menu-item-active-text ;
+    background: $menu-item-active-bg ;
+}
 
 // SHOW BUTTON :::::::::::::::
-
 
 .menu-mobile-open {
   display: none;

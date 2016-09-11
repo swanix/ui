@@ -39,10 +39,8 @@ gulp.task ('sass' , function() {
      return gulp
      	.src(input)
       .pipe(plumber())
-     	.pipe(sourcemaps.init())
 	    .pipe(sass(sassOptions).on('error', sass.logError))
     	.pipe(autoprefixer())
-      .pipe(sourcemaps.write(./maps))
 	    .pipe(gulp.dest(output))
       .pipe(minifyCSS())
       .pipe(rename('styles.min.css'))
