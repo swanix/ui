@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Global --> 
-    <title>Swan - Showcase</title>
+    <title>Swan UI Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon --> 
@@ -17,21 +17,21 @@
     <![endif]-->
 </head>
 <body>
-<div class="layout">
+<div class="layout black">
     <!-- Layout Header :::::::::::::::::::: -->
     <header class="layout-header">
       <div class="navigation centered">
         <!-- Logo -->
-        <a class="logo" href="javascript:void(0)"><img src="images/logo-white.png" alt=""></a>
+        <a class="logo" href="/"><img src="images/logo-white.png" alt=""></a>
         <nav id="menu-main" class="menu" role="navigation">
           <!-- Menu -->
-          <ul class="menu-items">
-            <li class="menu-item"><a href="javascript:void(0)">Overview</a></li>
-            <li class="menu-item"><a href="javascript:void(0)">Elements</a></li>
-            <li class="menu-item"><a href="javascript:void(0)">Layouts</a></li>
-            <li class="menu-item"><a href="javascript:void(0)">Themes</a></li>
-            <li class="menu-item active"><a href="javascript:void(0)">Contribute</a></li>
-            <li class="menu-item"><a href="javascript:void(0)">Contact</a></li>
+          <ul>
+            <li><a href="/">Overview</a></li>
+            <li><a href="/layout/multimedia.html">Multimedia</a></li>
+            <li><a href="/layout/controls.html">Controls</a></li>
+            <li><a href="/layout/patterns.html">Patterns</a></li>
+            <li><a href="/layout/themes.html">Themes</a></li>
+            <li><a href="/layout/more.html">More</a></li>
           </ul>
         </nav>         
         <button type="button" class="menu-mobile-open">☰</button> 
@@ -42,13 +42,26 @@
     <main class="layout-main" role="main">
         <header class="hero">
             <div class="hero-content">
-              <h1>Swan</h1>
-              <h4>Universal Interface</h4>
+              <h1>Swan UI</h1>
+              <h3>Framework</h3>
               <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
               <a href="javascript:void(0)" class="button">Download</a>
             </div>
         </header>
-        <article class="centered bg--white">
+        <article class="centered">
+          <div class="object bg-white"><small>$white: #FFFFFF</small></div>
+          <div class="object bg-gray1"><small>$gray1: #F2F2F2</small></div>
+          <div class="object bg-gray2"><small>$gray2: #CCCCCC</small></div>
+          <div class="object bg-gray3"><small>$gray3: #B3B3B3</small></div>
+          <div class="object bg-gray4"><small>$gray4: #999999</small></div>
+          <div class="object bg-gray5"><small>$gray5: #808080</small></div>
+          <div class="object bg-gray6"><small>$gray6: #595959</small></div>
+          <div class="object bg-gray7"><small>$gray7: #4D4D4D</small></div>
+          <div class="object bg-gray8"><small>$gray8: #333333</small></div>
+          <div class="object bg-gray9"><small>$gray9: #1A1A1A</small></div>
+          <div class="object bg-black"><small>$black: #000000</small></div>  
+        </article>
+        <article class="centered">
           <section class="content-row">
             <article class="summary">
               <header class="summary-image">
@@ -97,7 +110,7 @@
     </main>
     <!-- Layout Footer :::::::::::::::::::: -->
     <footer class="layout-footer">
-        <div class="content-center">
+        <div class="centered">
           <p>Swan UI Ⓒ 2016</P>
           <!-- Social buttons -->
           <div class="social-links">

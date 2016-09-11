@@ -25,6 +25,12 @@ $size-xxl:  45em ;
 
 $width-sidebar-tiny: 4em;
 
+// Layout Dimens
+
+$header-size: $size-xs !default;
+$main-size: auto !default;
+$footer-size: $size-m !default;
+
 
 // INSPIRATION: ZONE SYSTEM 
 // Created by Ansel Adams and Fred Archer 
@@ -32,17 +38,19 @@ $width-sidebar-tiny: 4em;
 
 // GRAYSCALE PALETTE variables (white to black)
 
-$white:             #FFFFFF ; // White (HTML color: white)
-$gray1:             #F7F7F7 ;
-$gray2:             #F2F2F2 ;
-$gray3:             #D3D3D3 ;
-$gray4:             #B2B2B2 ;
-$gray5:             #808080 ; // Gray medium (HTML color: gray)
-$gray6:             #505050 ;
-$gray7:             #383838 ;
-$gray8:             #242424 ;
-$gray9:             #131313 ;
-$black:             #000000 ; // Black (HTML color: black)
+
+$white:             #FFFFFF ; // White (HTML color: white) #FFFFFF
+$gray1:             darken($white, 5%); // #F2F2F2
+$gray2:             darken($white, 20%); // #CCCCCC
+$gray3:             darken($white, 30%); // #B3B3B3
+$gray4:             darken($white, 40%); // #999999
+$gray5:             darken($white, 50%); // Gray medium (HTML color: gray) #808080
+$gray6:             darken($white, 65%); // #595959
+$gray7:             darken($white, 70%); // #4D4D4D
+$gray8:             darken($white, 80%); // #333333
+$gray9:             darken($white, 90%); // #1A1A1A
+$black:             darken($white, 100%); // Black (HTML color: black) #000000
+
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -69,17 +77,17 @@ $footer-bg:              $gray9 !default ;
 
 $navigation-bg:          none !default ;
 $menu-bg:                none !default ;
-$menu-item-bg:           $gray8 !default ;
-$menu-item-hover-bg:     $gray7 !default ;
-$menu-item-active-bg:    $gray6 !default ;
+$menu-item-bg:           $gray9 !default ;
+$menu-item-hover-bg:     $gray8 !default ;
+$menu-item-active-bg:    $gray7 !default ;
 $menu-item-text:         $gray4 !default ;
 $menu-item-hover-text:   $white !default ;
 $menu-item-active-text:  $white !default ;
 
 // Menu Mobile
 
-$menu-mobile-bg:               $gray8 !default ;
-$menu-mobile-item-bg:          $gray8 !default ;
+$menu-mobile-bg:               $gray9 !default ;
+$menu-mobile-item-bg:          $gray9 !default ;
 $menu-mobile-item-hover-bg:    $gray7 !default ;
 $menu-mobile-item-active-bg:   $gray6 !default ;
 $menu-mobile-item-text:        $gray4 !default ;
@@ -95,7 +103,7 @@ $menu-mobile-border:           $gray7 !default ;
 // Hero colors
 // ::::::::::::::::::::::::::::::::::::
 
-$hero-bg:              $gray3 !default;
+$hero-bg:              $gray1 !default;
 $hero-content-bg:      none !default;
 
 

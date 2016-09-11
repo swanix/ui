@@ -11,15 +11,23 @@
   height: $size-xl;
   background: $hero-bg;
   @include media($mobile){
-    height: auto;
+    height: $size-l;
     }
 }
 
 .hero-content {
-  @include outer-container(980px);
-  padding: 7em 8em 3em 8em;
+  @include vertical-align;
   background: $hero-content-bg;
   @include media($mobile){
-    padding: 3em 2em 7em 2em;
+    
+    }
+}
+
+.hero-content p {
+  width: 40%;
+  margin: 0 auto;
+  background: $hero-content-bg;
+  @include media($mobile){
+    width: 80%;  
     }
 }

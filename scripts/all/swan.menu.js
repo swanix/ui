@@ -16,3 +16,14 @@ $(window).resize(function(){
    }
 })
 .resize();
+
+// Active item
+// Based on: https://paulund.co.uk/use-jquery-to-highlight-active-menu-item
+
+var url = window.location.href;
+
+$('.menu li a[href="'+ url +'"]').addClass('active');
+
+$('.menu li a, .menu-mobile li a').filter(function() {
+    return this.href == url;
+}).addClass('active');

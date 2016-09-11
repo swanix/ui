@@ -11,18 +11,19 @@
 
 // Abstract components
 @import "abstract/variables";
-
+@import "abstract/mixins";
 
 // Base components
 @import "base/body";
 @import "base/typography";
 @import "base/images";
 @import "base/tables";
-@import "base/helpers";
 
 // Layout
 @import "layout/layout";
 
+// Themes
+@import "themes/default";
 
 // User interface controls
 @import "controls/base-form";
@@ -37,10 +38,11 @@
 @import "controls/text-input";
 @import "controls/textarea-input";
 
-
 // Patterns components
 @import "patterns/menu";
 @import "patterns/content-summary";
 @import "patterns/hero-banner";
 
+// Classes & helpers
+@import "base/helpers";
 

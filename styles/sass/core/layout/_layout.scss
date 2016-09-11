@@ -7,17 +7,17 @@
 // Containers
 
 .layout {
-	overflow:auto;
-  background: $layout-bg;
+	overflow: auto;
+  min-height: 100%; // Afecta la posición del footer
+  position: relative; // Afecta la posición del footer
 }
 
 // Header section
 
 .layout-header {
 	@include span-columns(12);
-  background: $header-bg;
   @include media($mobile){
-    background: $header-bg;
+    
   }
 }
 
@@ -25,7 +25,7 @@
 
 .layout-main {
 	@include span-columns(12);
-  background: $main-bg;
+  padding-bottom: $footer-size; // Afecta la posición del footer
 }
 
 // Footer section
@@ -33,8 +33,10 @@
 .layout-footer {
 	@include span-columns(12);
   text-align: center;
-  padding: 2em 1em;
-  background: $footer-bg;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-size;   // Tamaño del footer
 }
 
 // Other classes
