@@ -58,8 +58,8 @@ $black:             darken($white, 100%); // Black (HTML color: black) #000000
 // General texts
 // ::::::::::::::::::::::::::::::::::::
 
-$text-basic: 			 $gray5 !default ;
-$text-heading: 			 $gray7 !default ;
+$text-basic: 			 $gray6 !default ;
+$text-heading: 			 $gray8 !default ;
 $text-link: 			 $gray9 !default ;
 $text-link-hover: 	     $gray7 !default ;
 $text-link-visited: 	 $gray7 !default ;
@@ -71,6 +71,19 @@ $layout-bg:              none !default ;
 $header-bg:              $gray8 !default ;
 $main-bg:                $white !default ;
 $footer-bg:              $gray9 !default ;
+
+// Buttons base styles 
+// ::::::::::::::::::::::::::::::::::::
+
+$btn-text:           $gray7 !default ;
+$btn-border: 		 $gray2 solid 1px !default ;
+$btn-bg:             $gray1 !default ;
+
+$btn-hover-text:     $gray9 !default ;
+$btn-hover-border: 	 $gray3 solid 1px !default ;
+$btn-hover-bg:       $white !default ;
+
+$btn-padding:        0.6em 1em;
 
 // Menu colors
 // ::::::::::::::::::::::::::::::::::::

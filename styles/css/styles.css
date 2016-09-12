@@ -386,14 +386,14 @@ main, header, section, footer {
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  color: gray;
+  color: #595959;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
   margin: 1em 0 1em 0;
-  color: #4d4d4d;
+  color: #333333;
 }
 
 h1 {
@@ -407,7 +407,7 @@ p {
   font-size: 0.9em;
   margin: 0;
   padding-bottom: 1.5em;
-  color: gray;
+  color: #595959;
 }
 
 a {
@@ -475,6 +475,20 @@ code {
 pre {
   padding: 1em 0;
   line-height: 1.5em;
+}
+
+label {
+  color: #595959;
+  display: inline-block;
+  margin-bottom: 0.3em;
+}
+
+optgroup, option {
+  color: #595959;
+}
+
+input [type="checkbox"] {
+  color: #595959;
 }
 
 img {
@@ -606,11 +620,14 @@ fieldset {
 }
 
 input[type="submit"] {
-  padding: 0.5em 0.7em;
+  padding: 0.6em 1em;
   vertical-align: middle;
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #4d4d4d;
+  border: #cccccc solid 1px;
+  background: #f2f2f2;
 }
 
 input[type="submit"]:hover {
@@ -618,14 +635,20 @@ input[type="submit"]:hover {
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #1a1a1a;
+  border: #b3b3b3 solid 1px;
+  background: #FFFFFF;
 }
 
 input[type="reset"] {
-  padding: 0.5em 0.7em;
+  padding: 0.6em 1em;
   vertical-align: middle;
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #4d4d4d;
+  border: #cccccc solid 1px;
+  background: #f2f2f2;
 }
 
 input[type="reset"]:hover {
@@ -633,38 +656,50 @@ input[type="reset"]:hover {
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #1a1a1a;
+  border: #b3b3b3 solid 1px;
+  background: #FFFFFF;
 }
 
 button {
   max-width: 8em;
-  padding: 0.5em 0.7em;
+  padding: 0.6em 1em;
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #4d4d4d;
+  border: #cccccc solid 1px;
+  background: #f2f2f2;
 }
 
 button:hover {
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
+  color: #1a1a1a;
+  border: #b3b3b3 solid 1px;
+  background: #FFFFFF;
 }
 
 .button {
-  min-width: 2em;
-  padding: 0.8em 2em;
+  padding: 0.6em 1em;
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
-  background: #cccccc;
   height: 3em;
   display: inline-block;
+  color: #4d4d4d;
+  border: #cccccc solid 1px;
+  background: #f2f2f2;
 }
 
 .button:hover {
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
-  background: #999999;
+  color: #1a1a1a;
+  border: #b3b3b3 solid 1px;
+  background: #FFFFFF;
 }
 
 .button a:visited {
@@ -1010,7 +1045,6 @@ textarea {
   .summary-image img {
     width: 100%;
     height: auto;
-    padding: 0 0.8em;
   }
 }
 
@@ -1085,7 +1119,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 22em;
+    height: 32em;
   }
 }
 

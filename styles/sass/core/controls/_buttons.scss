@@ -4,7 +4,7 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 input[type="submit"] { 
-    padding: 0.5em 0.7em;
+    padding: $btn-padding;
     vertical-align: middle;
     border: none;
     // Transition
@@ -14,6 +14,9 @@ input[type="submit"] {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-text;
+    border: $btn-border;
+    background: $btn-bg;
     }
 
 input[type="submit"]:hover { 
@@ -26,10 +29,13 @@ input[type="submit"]:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-hover-text;
+    border: $btn-hover-border;
+    background: $btn-hover-bg;
     }
 
 input[type="reset"] { 
-    padding: 0.5em 0.7em;
+    padding: $btn-padding;
     vertical-align: middle;
     border: none;
     // Transition
@@ -39,6 +45,9 @@ input[type="reset"] {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-text;
+    border: $btn-border;
+    background: $btn-bg;
     }
 
 input[type="reset"]:hover { 
@@ -51,11 +60,14 @@ input[type="reset"]:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-hover-text;
+    border: $btn-hover-border;
+    background: $btn-hover-bg;
     }
 
 button {
     max-width:8em;
-    padding: 0.5em 0.7em;
+    padding: $btn-padding;
     vertical-align: middle;
     // Transition
     -o-transition:.2s;
@@ -64,6 +76,9 @@ button {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-text;
+    border: $btn-border;
+    background: $btn-bg;
     }
 
 button:hover {
@@ -75,6 +90,9 @@ button:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
+    color: $btn-hover-text;
+    border: $btn-hover-border;
+    background: $btn-hover-bg;
     }
 
 // -----------------------------------------------------------
@@ -83,8 +101,7 @@ button:hover {
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .button {
-    min-width:2em;
-    padding: 0.8em 2em;
+    padding: $btn-padding; 
     vertical-align: middle;
     // Transition
     -o-transition:.2s;
@@ -93,9 +110,11 @@ button:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    background: $gray2;
     height: $size-xs;
     display: inline-block;
+    color: $btn-text;
+    border: $btn-border;
+    background: $btn-bg;
     }
 
 .button:hover {
@@ -107,16 +126,18 @@ button:hover {
     -webkit-transition:.2s;
     transition:.2s;
     // End transition
-    background: $gray4;
+    color: $btn-hover-text;
+    border: $btn-hover-border;
+    background: $btn-hover-bg;
     }
 
 
 .button a:visited {
-    color: $gray9;
+    color: $btn-hover-text;
     }
 
 .button a {
-    color: $gray9;
+    color: $btn-hover-text;
     }
 
 // CUSTOM SHAPES 
