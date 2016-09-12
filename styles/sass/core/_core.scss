@@ -15,8 +15,8 @@
 
 // Base components
 @import "base/body";
-@import "base/typography";
-@import "base/images";
+@import "base/text";
+@import "base/multimedia";
 @import "base/tables";
 
 // Layout
@@ -44,5 +44,5 @@
 @import "patterns/hero-banner";
 
 // Classes & helpers
-@import "base/helpers";
+@import "base/classes";
 

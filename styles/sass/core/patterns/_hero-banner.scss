@@ -11,7 +11,7 @@
   height: $size-xl;
   background: $hero-bg;
   @include media($mobile){
-    height: $size-l;
+    height: $size-xl;
     }
 }
 

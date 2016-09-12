@@ -29,7 +29,6 @@ p {
     line-height: 1.5em;
     font-size: 0.9em;
     margin: 0;
-    //padding-top: 1.5em;
     padding-bottom: 1.5em;
     color: $text-basic;
     }
@@ -112,5 +111,21 @@ pre {
 hr {
 
     }
+
+// Form texts
+
+label {
+    color: $text-basic;
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+optgroup, option {
+    color: $text-basic;
+}
+
+input [type="checkbox"] {
+    color: $text-basic;
+}
 
 
