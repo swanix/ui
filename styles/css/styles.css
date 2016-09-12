@@ -389,15 +389,16 @@ body {
   color: gray;
 }
 
-h1 {
-  font-size: 3.5em;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
-  margin: 0;
+  margin: 1em 0 1em 0;
   color: #4d4d4d;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.2em 0;
 }
 
 p {
@@ -405,7 +406,6 @@ p {
   line-height: 1.5em;
   font-size: 0.9em;
   margin: 0;
-  padding-top: 1.5em;
   padding-bottom: 1.5em;
   color: gray;
 }
@@ -555,6 +555,7 @@ td {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 1.875em 0.625em;
   height: 9em;
 }
 
@@ -572,6 +573,28 @@ td {
   clear: both;
   content: "";
   display: block;
+}
+
+.pad {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.pad::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pad {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 legend {
@@ -743,7 +766,6 @@ textarea {
 
 .navigation {
   overflow: auto;
-  text-transform: uppercase;
   font-size: 0.9em;
   background: none;
 }

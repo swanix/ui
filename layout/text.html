@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Global --> 
+    <title>Text - Swan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Experimental UI Framework">
+    <!-- Favicon --> 
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
+    <!-- Styles and fonts --> 
+    <link href="../styles/css/styles.min.css" media="screen" rel="stylesheet">
+    <!-- IE support --> 
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="layout black">
+    <!-- Layout Header :::::::::::::::::::: -->
+    <header class="layout-header">
+      <div class="navigation centered">
+        <!-- Logo -->
+        <a class="logo" href="../index.html"><img src="../images/logo-white.png" alt=""></a>
+        <nav id="menu-main" class="menu" role="navigation">
+          <!-- Menu -->
+          <ul>
+            <li><a href="../index.html">Overview</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="controls.html">Controls</a></li>
+            <li><a href="patterns.html">Patterns</a></li>
+            <li><a href="color.html">Color</a></li>
+          </ul>
+        </nav>         
+        <button type="button" class="menu-mobile-open">☰</button> 
+      </div>
+      <div class="menu-mobile-fade-screen"></div>
+    </header>
+    <!-- Layout Main Content :::::::::::::::::::: -->
+    <main class="layout-main" role="main">
+        <header class="hero size-m">
+            <div class="hero-content">
+              <h1>Text</h1>
+            </div>
+        </header>
+        <article class="centered pad">
+
+          <h2>Headings</h2>
+          <hr>
+
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+
+          <h2>Paragraph</h2>
+          <p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+          <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+          <h2>List Types</h2>
+          <h3>Definition List</h3>
+          <dl>
+              <dt>Definition List Title</dt>
+              <dd>This is a definition list division.</dd>
+          </dl>
+          <h3>Ordered List</h3>
+          <ol>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ol>
+          <h3>Unordered List</h3>
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+
+        <h2>Tables</h2>
+        <hr>
+
+        <table>
+            <caption>This is the caption of the table</caption>
+            <tbody>
+                <tr>
+                    <th>Table Head 1</th>
+                    <th>Table Head 2</th>
+                    <th>Table Head 3</th>
+                </tr>
+                <tr>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                </tr>
+                <tr>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                </tr>
+                <tr>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Misc Stuff &ndash; abbr, pre, code, sub, sup, etc.</h2>
+        <hr>
+        <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+        <pre>
+        Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elit.
+        Nullam dignissim convallis est.
+        Quisque aliquam. Donec faucibus. 
+        Nunc iaculis suscipit dui. 
+        Nam sit amet sem. 
+        Aliquam libero nisi, imperdiet at,
+        tincidunt nec, gravida vehicula,
+        nisl. 
+        Praesent mattis, massa quis 
+        luctus fermentum, turpis mi 
+        volutpat justo, eu volutpat 
+        enim diam eget metus. 
+        Maecenas ornare tortor. 
+        Donec sed tellus eget sapien
+        fringilla nonummy. 
+        Mauris a ante. Suspendisse
+        quam sem, consequat at, 
+        commodo vitae, feugiat in, 
+        nunc. Morbi imperdiet augue
+        quis tellus.  
+        </pre>
+        <blockquote>
+            <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</q> 
+            <footer> Author's Name </footer>
+        </blockquote>
+        <q>This stylesheet is going to help so freaking much. - Quote</q>
+        <cite>This stylesheet is going to help so freaking much. - Cite</cite>
+        <hr>
+
+      </article>
+    </main>
+    <!-- Layout Footer :::::::::::::::::::: -->
+    <footer class="layout-footer">
+        <div class="centered">
+          <p>Swan UI Ⓒ 2016</P>
+          <!-- Social buttons -->
+          <div class="social-links">
+            <span class="btn circle"><a href="javascript:void(0)"><img src="../images/ic-social-facebook.png" alt="Facebook"></a></span>
+            <span  class="btn circle"><a href="javascript:void(0)"><img src="../images/ic-social-twitter.png" alt="Twitter"></a></span>
+            <span class="btn circle"><a href="javascript:void(0)"><img src="../images/ic-social-youtube.png" alt="Youtube"></a></span>
+          </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascripts -->  
+<script src="../scripts/all/jquery-1.11.1.min.js"></script>
+<script src="../scripts/all/swan.menu.js"></script>
+
+</body>
+</html>

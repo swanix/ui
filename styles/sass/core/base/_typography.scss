@@ -11,23 +11,25 @@ body {
     color: $text-basic;
     }
 
-h1 {
-    font-size: 3.5em;
-}
 
 h1, h2, h3, h4, h5, h6  {
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: normal;
-    margin: 0;
+    margin: 1em 0 1em 0;
     color: $text-heading;
     }
+
+h1 {
+    font-size: 3.5em;
+    margin: 0 0 0.2em 0;
+}
 
 p { 
     font-family: Tahoma, Geneva, sans-serif;
     line-height: 1.5em;
     font-size: 0.9em;
     margin: 0;
-    padding-top: 1.5em;
+    //padding-top: 1.5em;
     padding-bottom: 1.5em;
     color: $text-basic;
     }
