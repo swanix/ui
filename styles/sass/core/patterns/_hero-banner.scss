@@ -3,13 +3,14 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Hero banner
-
 .hero {
   background-size: none;
   text-align: center;
   height: $size-xl;
-  background: $hero-bg;
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('hero-bg');
+    }
   @include media($mobile){
     height: $size-xl;
     }
@@ -17,7 +18,10 @@
 
 .hero-content {
   @include vertical-align;
-  background: $hero-content-bg;
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('hero-content-bg');
+    }
   @include media($mobile){
     
     }
@@ -26,7 +30,6 @@
 .hero-content p {
   width: 40%;
   margin: 0 auto;
-  background: $hero-content-bg;
   @include media($mobile){
     width: 80%;  
     }

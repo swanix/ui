@@ -3,22 +3,26 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
 // Containers
 
 .layout {
 	overflow: auto;
   min-height: 100%; // Afecta la posición del footer
   position: relative; // Afecta la posición del footer
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('layout-bg');
+    }
 }
 
 // Header section
 
 .layout-header {
 	@include span-columns(12);
-  @include media($mobile){
-    
-  }
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('header-bg');
+    }
 }
 
 // Main content section
@@ -26,6 +30,10 @@
 .layout-main {
 	@include span-columns(12);
   padding-bottom: $footer-size; // Afecta la posición del footer
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('main-bg');
+    }
 }
 
 // Footer section
@@ -38,6 +46,10 @@
   width: 100%;
   padding: em(30) em(10);
   height: $footer-size;   // Tamaño del footer
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('footer-bg');
+    }
 }
 
 // Other classes
@@ -58,4 +70,3 @@
     padding-bottom: 1em;   
     }
 }
-

@@ -7,125 +7,144 @@
 // -----------------------------------------------------------+
 
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    color: $text-basic;
+  font-family: Tahoma, Geneva, sans-serif;
+  @include themify() {
+    color: getTheme('text-basic');
+    background: getTheme('body-bg');
     }
+  }
 
 
 h1, h2, h3, h4, h5, h6  {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-weight: normal;
-    margin: 1em 0 1em 0;
-    color: $text-heading;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: normal;
+  margin: 1em 0 1em 0;
+  @include themify() {
+    color: getTheme('text-heading');
     }
+  }
 
 h1 {
-    font-size: 3.5em;
-    margin: 0 0 0.2em 0;
-}
+  font-size: 3.5em;
+  margin: 0 0 0.2em 0;
+  }
 
 p { 
-    font-family: Tahoma, Geneva, sans-serif;
-    line-height: 1.5em;
-    font-size: 0.9em;
-    margin: 0;
-    padding-bottom: 1.5em;
-    color: $text-basic;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  margin: 0;
+  padding-bottom: 1.5em;
+  @include themify() {
+    color: getTheme('text-basic');
     }
+  }
 
 a {
-    text-decoration: none;
-    color: $text-link;
+  text-decoration: none;
+  @include themify() {
+    color: getTheme('text-link');
     }
+  }
 
 a:hover {
-    text-decoration: none;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $text-link-hover;
+  text-decoration: none;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('text-link-hover');
     }
+  }
 
 a:visited {
-    color: $text-link-visited;
+  @include themify() {
+    color: getTheme('text-link-visited');
     }
+  }
 
 ul, ol {
-    }
+  }
 
 li {
-    font-size:0.9em;
-    line-height: 1.7em;
-    }
+  font-size:0.9em;
+  line-height: 1.7em;
+  }
 
 dl, dt, dd {
-    font-size:1em;
-    line-height: 1.8em;
-    }
+  font-size:1em;
+  line-height: 1.8em;
+  }
 
 small { 
-    font-size: 65%;
-    font-family: Tahoma, Geneva, sans-serif; 
-    }
+  font-size: 65%;
+  font-family: Tahoma, Geneva, sans-serif; 
+  }
 
 blockquote {
-    line-height: 1.8em; 
-    padding: 1em 2em;
-    font-style: italic;
-    font-size: 90%;
-    }
+  line-height: 1.8em; 
+  padding: 1em 2em;
+  font-style: italic;
+  font-size: 90%;
+  }
 
 q {
-    display:inline-block;
-    padding-left: 0.5em;
-    margin-left:0.5em;
-    font-style: italic;
-    font-size: 90%;
-    }
+  display:inline-block;
+  padding-left: 0.5em;
+  margin-left:0.5em;
+  font-style: italic;
+  font-size: 90%;
+  }
 
 cite {
-    display:inline-block;
-    padding-left: 0.5em;
-    margin-left:0.5em;
-    font-style: italic;
-    }
+  display:inline-block;
+  padding-left: 0.5em;
+  margin-left:0.5em;
+  font-style: italic;
+  }
 
 pre, code, samp, kbd {
-    box-shadow: none;
-    }
+  box-shadow: none;
+  }
 
 code {
-    font-family: monospace, monospace;
-    font-size: 0.8em;
-    }
+  font-family: monospace, monospace;
+  font-size: 0.8em;
+  }
 
 pre {
-    padding: 1em 0;
-    line-height: 1.5em;
-    }
+  padding: 1em 0;
+  line-height: 1.5em;
+  }
 
 hr {
 
-    }
+  }
 
 // Form texts
 
 label {
-    color: $text-basic;
-    display: inline-block;
-    margin-bottom: 0.3em;
-}
+  display: inline-block;
+  margin-bottom: 0.3em;
+  @include themify() {
+    color: getTheme('text-basic');
+    }
+  }
 
 optgroup, option {
-    color: $text-basic;
-}
+  @include themify() {
+    color: getTheme('text-basic');
+    }
+  }
 
 input [type="checkbox"] {
-    color: $text-basic;
-}
+  @include themify() {
+    color: getTheme('text-basic');
+    }
+  }
 
 

@@ -16,8 +16,8 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body>
-<div class="layout black">
+<body class="theme-white">
+<div class="layout">
     <!-- Layout Header :::::::::::::::::::: -->
     <header class="layout-header">
       <div class="navigation centered">
@@ -43,6 +43,12 @@
         <header class="hero size-m">
             <div class="hero-content">
               <h1>Color</h1>
+              <form>
+                <select class="themeselect">
+                  <option value="theme-white">White Swan</option>
+                  <option value="theme-black">Black Swan</option>
+                </select>
+              </form>
             </div>
         </header>
         <article class="centered pad">
@@ -76,6 +82,7 @@
 <!-- Javascripts -->  
 <script src="../scripts/all/jquery-1.11.1.min.js"></script>
 <script src="../scripts/all/swan.menu.js"></script>
+<script src="../scripts/all/swan.themes.js"></script>
 
 </body>
 </html>
