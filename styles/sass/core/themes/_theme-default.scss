@@ -1,0 +1,187 @@
+
+// -----------------------------------------------------------
+// SWAN THEMES by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Based on examples
+// https://zellwk.com/blog/organizing-multiple-theme-styles-with-sass/
+// https://codepen.io/celar/pen/dXRNQo
+
+
+// VARIABLES
+
+
+// THEMES
+
+$themes: (
+
+// WHITE SWAN :::::::::::::::::::::::::::::::::::::::::::::::
+
+  theme-white: (
+
+  //Start 
+
+    // General
+    // ::::::::::::::::::::::::::::::::::::
+    body-bg:           none ,
+
+    // Texts
+    // ::::::::::::::::::::::::::::::::::::
+    text-basic:           $gray6 ,
+    text-heading:         $gray8 ,
+    text-link:            $gray9 ,
+    text-link-hover:      $gray7 ,
+    text-link-visited:    $gray7 ,
+
+    // Layout base styles 
+    // ::::::::::::::::::::::::::::::::::::
+    layout-bg:            none ,
+    header-bg:            $gray1 ,
+    main-bg:              $white ,
+    footer-bg:            $gray9 ,
+
+    // Hero styles 
+    // ::::::::::::::::::::::::::::::::::::
+    hero-bg:              $gray2 ,
+    hero-content-bg:      none ,
+
+    // Menu styles
+    // ::::::::::::::::::::::::::::::::::::
+    navigation-bg:           none ,
+    menu-bg:                 none ,
+    menu-item-text:          $gray6 ,
+    menu-item-bg:            $gray1 ,
+    menu-item-hover-text:    $gray9 ,    
+    menu-item-hover-bg:      $gray2 ,
+    menu-item-active-text:   $gray9 ,
+    menu-item-active-bg:     $gray2 ,
+    // Menu Mobile
+    menu-mobile-bg:                 $gray1,
+    menu-mobile-item-text:          $gray6 ,
+    menu-mobile-item-bg:            $gray1 ,
+    menu-mobile-item-hover-text:    $gray9 ,
+    menu-mobile-item-hover-bg:      $gray2 ,
+    menu-mobile-item-active-text:   $gray9 ,
+    menu-mobile-item-active-bg:     $gray2 ,
+    // Menu Mobile hamburger btn
+    menu-mobile-btn-text:         $gray9 ,
+    menu-mobile-btn-bg:           $white ,
+    menu-mobile-btn-border:       1px solid $gray2 ,
+    // Menu Mobile fade screen
+    menu-mobile-fade-screen-bg:   $black ,
+    menu-mobile-border:           2px solid $gray5
+
+  //End
+
+  ),
+
+// BLACK SWAN :::::::::::::::::::::::::::::::::::::::::::::::
+
+  theme-black: (
+
+  //Start 
+
+    // General texts
+    // ::::::::::::::::::::::::::::::::::::
+    text-basic:           $gray4 ,
+    text-heading:         $gray1 ,
+    text-link:            $gray9 ,
+    text-link-hover:      $gray7 ,
+    text-link-visited:    $gray7 ,
+
+    // Layout base styles 
+    // ::::::::::::::::::::::::::::::::::::
+    layout-bg:            none ,
+    header-bg:            $black ,
+    main-bg:              $black ,
+    footer-bg:            $gray9 ,
+
+    // Hero styles 
+    // ::::::::::::::::::::::::::::::::::::
+    hero-bg:              $gray9 ,
+    hero-content-bg:      none ,
+
+    // Menu styles
+    // ::::::::::::::::::::::::::::::::::::
+    navigation-bg:           none ,
+    menu-bg:                 none ,
+    menu-item-text:          $gray4 ,    
+    menu-item-bg:            $black ,
+    menu-item-hover-text:    $gray2 ,    
+    menu-item-hover-bg:      $gray9 ,
+    menu-item-active-text:   $white ,
+    menu-item-active-bg:     $gray9 ,
+    // Menu Mobile
+    menu-mobile-bg:                 $gray9,
+    menu-mobile-item-text:          $gray4 ,
+    menu-mobile-item-bg:            $gray9 ,
+    menu-mobile-item-hover-text:    $white ,
+    menu-mobile-item-hover-bg:      $gray5 ,
+    menu-mobile-item-active-text:   $white ,
+    menu-mobile-item-active-bg:     $gray8 ,
+    // Menu Mobile hamburger btn
+    menu-mobile-btn-text:         $gray1 ,
+    menu-mobile-btn-bg:           $black ,
+    menu-mobile-btn-border:       1px solid $gray8 ,
+    // Menu Mobile fade screen
+    menu-mobile-fade-screen-bg:   $black ,
+    menu-mobile-border:           2px solid $gray8 
+
+  //End 
+
+  )
+
+);
+
+// THEMES
+
+@function map-fetch($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+  
+  
+  @if $value != null {
+    @if $length > 1 {
+      $rest: ();
+      
+      @for $i from 2 through $length {
+        $rest: append($rest, nth($keys, $i))
+      }
+      
+      @return map-fetch($value, $rest);
+    } @else {
+      @return $value;
+    }
+  } @else {
+    @return false;
+  }
+}
+
+@function getTheme($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin themify ($themes: $themes) {
+  @each $theme, $map in $themes {
+    .#{$theme} & {
+      // Define theme color
+      $theme-map : (
+          color-primary: $white
+      ) !global;
+      
+      @each $key, $submap in $map {
+        $value: map-fetch($themes, $theme '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      
+      @content;
+      
+      // reset theme color to null
+      $theme-map: null !global;
+    }
+  }
+}
+
+

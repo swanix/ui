@@ -13,6 +13,9 @@
 @import "abstract/variables";
 @import "abstract/mixins";
 
+// Themes
+@import "themes/theme-default";
+
 // Base components
 @import "base/body";
 @import "base/text";
@@ -21,9 +24,6 @@
 
 // Layout
 @import "layout/layout";
-
-// Themes
-@import "themes/default";
 
 // User interface controls
 @import "controls/base-form";
@@ -46,3 +46,5 @@
 // Classes & helpers
 @import "base/classes";
 
+// Temporal
+@import "shame";

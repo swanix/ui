@@ -8,71 +8,83 @@
   overflow: auto;
   //text-transform: uppercase;
   font-size: 0.9em;
-  background: $navigation-bg;
+  @include themify() {
+    background: getTheme('navigation-bg');
+    }
 }
 
 
 .logo {
   @include span-columns(3 of 12);
   @include media($mobile){
-      @include span-columns(5 of 12);
-      }
+    @include span-columns(5 of 12);
+    }
 }
 
 .logo img {
   max-height: em(38);
   margin: em(8) em(0) em(0) em(10) ;
   @include media($mobile){
-      max-height: em(40);
-      margin: em(5) em(0) em(0) em(5);
-      }
+    max-height: em(40);
+    margin: em(5) em(0) em(0) em(5);
+    }
 }
 
 .menu {
-    @include span-columns(9 of 12);
-    @include omega();
-    padding-right:em(20);
-    background: $menu-bg;
-    @include media($mobile){
-        display: none;
-        }
+  @include span-columns(9 of 12);
+  @include omega();
+  padding-right:em(20);
+  @include themify() {
+    background: getTheme('menu-bg');
+    }
+  @include media($mobile){
+    display: none;
+    }
 }
 
 .menu ul {
-    margin: 0; padding: 0;
-    float: right;
-    @include media($mobile){
-      float: left;
-      }
+  margin: 0; padding: 0;
+  float: right;
+  @include media($mobile){
+    float: left;
+    }
 }
 
 .menu ul li {
-    display: inline;
-    @include media($mobile){
-        display: block;
-        }
+  display: inline;
+  @include media($mobile){
+    display: block;
+    }
 }
 
 .menu ul li a {
-    float: left; 
-    text-decoration: none;
-    padding: 1em 1.5em;
-    color: $menu-item-text; 
-    background: $menu-item-bg;
+  float: left; 
+  text-decoration: none;
+  padding: 1em 1.5em;
+  @include themify() {
+    color: getTheme('menu-item-text');
+    background: getTheme('menu-item-bg');
+    }
 }
  
 .menu ul li a:visited {
-    color: $menu-item-text;
+  @include themify() {
+    color: getTheme('menu-item-text');
+    }
 }
  
 .menu ul li a:hover {
-    color: $menu-item-hover-text;
-    background: $menu-item-hover-bg;
+  @include themify() {
+    color: getTheme('menu-item-hover-text');
+    background: getTheme('menu-item-hover-bg');
+    }
 }
 
 .menu ul li a.active {
-    color: $menu-item-active-text ;
-    background: $menu-item-active-bg ;
+  @include themify() {
+    color: getTheme('menu-item-active-text');
+    background: getTheme('menu-item-active-bg');
+    }
 }
 
 // MOBILE MENU
@@ -87,14 +99,16 @@
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
-  border-left: 2px solid $menu-mobile-border;
-  background: $menu-mobile-bg;
+
+  @include themify() {
+  border-left: getTheme('menu-mobile-border');
+  background: getTheme('menu-mobile-bg');
+  }
 
   &.is-visible {
     @include transition(all 0.20s linear);
     @include transform(translateX(0));
-  }
-
+    }
 }
 
 .menu-mobile-fade-screen {
@@ -103,7 +117,10 @@
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
-  background: $menu-mobile-fade-screen-bg;
+
+  @include themify() {
+  background: getTheme('menu-mobile-fade-screen-bg');
+  }
 
   &.is-visible {
     @include transition(all 0.20s linear);
@@ -125,22 +142,28 @@
 }
 
 .menu-mobile ul li a {
-    width: 100%;
-    float: left; 
-    text-decoration: none;
-    padding: 1em 2em;
-    color: $menu-mobile-item-text; 
-    background: $menu-mobile-item-bg;
+  width: 100%;
+  float: left; 
+  text-decoration: none;
+  padding: 1em 2em;
+  @include themify() {
+    color: getTheme('menu-mobile-item-text');
+    background: getTheme('menu-mobile-item-bg');
+    }
 }
  
 .menu-mobile ul li a:hover {
-    color: $menu-item-hover-text;
-    background: $menu-item-hover-bg;
+  @include themify() {
+    color: getTheme('menu-item-hover-text');
+    background: getTheme('menu-item-hover-bg');
+    }
 }
 
 .menu-mobile ul li a.active {
-    color: $menu-item-active-text ;
-    background: $menu-item-active-bg ;
+  @include themify() {
+    color: getTheme('menu-item-active-text');
+    background: getTheme('menu-item-active-bg');
+    }
 }
 
 // SHOW BUTTON :::::::::::::::
@@ -153,9 +176,11 @@
     width:50px;
     height:50px;
     text-align: center;
-    border:1px solid $menu-mobile-btn-border;
-    color: $menu-mobile-btn-text;
-    background: $menu-mobile-btn-bg;
+    @include themify() {
+      border: getTheme('menu-mobile-btn-border') ;
+      color: getTheme('menu-mobile-btn-text');
+      background: getTheme('menu-mobile-btn-bg');
+      }
     }
 }
 

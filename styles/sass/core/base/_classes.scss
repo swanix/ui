@@ -3,9 +3,6 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-.object {
- padding: em(10);
-}
 
 // FONT COLOR CLASSES 
 
@@ -47,47 +44,3 @@
 .size-xxl   {  height: $size-xxl; }
 
 
-// Fixed positions
-
-.fixed-top {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 20;    
-}
-
-.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    z-index: 20;    
-}
-
-.fixed-left {
-    position: fixed;
-    top: 0;
-    z-index: 20;
-}
-
-.fixed-right {
-    position: fixed;
-    right: 0;
-    z-index: 20;   
-}
-
-.hide {
-    display: none;
-}
-
-// ORDENAR
-
-.to-right {
-    float:right;
-}
-
-.to-left {
-    float:left;
-}
-
-.to-center {
-    text-align:center;
-}
