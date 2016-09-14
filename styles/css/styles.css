@@ -352,11 +352,11 @@ a {
 }
 
 .theme-white a {
-  color: #1a1a1a;
+  color: #262626;
 }
 
 .theme-black a {
-  color: #1a1a1a;
+  color: #262626;
 }
 
 a:hover {
@@ -614,7 +614,7 @@ td {
 
 .theme-black .layout-footer {
   color: #b3b3b3;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .centered {
@@ -688,7 +688,7 @@ input[type="submit"]:hover {
 }
 
 .theme-white input[type="submit"]:hover {
-  color: #1a1a1a;
+  color: #262626;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
 }
@@ -728,7 +728,7 @@ input[type="reset"]:hover {
 }
 
 .theme-white input[type="reset"]:hover {
-  color: #1a1a1a;
+  color: #262626;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
 }
@@ -766,7 +766,7 @@ button:hover {
 }
 
 .theme-white button:hover {
-  color: #1a1a1a;
+  color: #262626;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
 }
@@ -805,7 +805,7 @@ button:hover {
 }
 
 .theme-white .button:hover {
-  color: #1a1a1a;
+  color: #262626;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
 }
@@ -833,43 +833,43 @@ button:hover {
 }
 
 .theme-white .primary {
-  color: #e6e6e6;
-  border: #1a1a1a solid 1px;
-  background: black;
+  color: #f2f2f2;
+  border: #FFFFFF solid 2px;
+  background: #000000;
 }
 
 .theme-black .primary {
-  color: #4d4d4d;
-  border: #f2f2f2 solid 1px;
-  background: #f2f2f2;
+  color: #f2f2f2;
+  border: #FFFFFF solid 2px;
+  background: #000000;
 }
 
 .theme-white .primary:hover {
   color: #FFFFFF;
-  border: #1a1a1a solid 1px;
+  border: #FFFFFF solid 2px;
   background: #333333;
 }
 
 .theme-black .primary:hover {
-  color: black;
-  border: #e6e6e6 solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #FFFFFF solid 2px;
+  background: #333333;
 }
 
 .theme-white .primary a:visited {
-  color: #e6e6e6;
+  color: #f2f2f2;
 }
 
 .theme-black .primary a:visited {
-  color: #4d4d4d;
+  color: #f2f2f2;
 }
 
 .theme-white .primary a {
-  color: #e6e6e6;
+  color: #f2f2f2;
 }
 
 .theme-black .primary a {
-  color: #4d4d4d;
+  color: #f2f2f2;
 }
 
 .nano {
@@ -892,13 +892,13 @@ select {
 .theme-white select {
   color: #333333;
   border: gray solid 1px;
-  background: url(/../images/ic-arrow-down.png) 96%/20px no-repeat #f2f2f2;
+  background: url(../../images/ic-arrow-down.png) 96%/20px no-repeat #f2f2f2;
 }
 
 .theme-black select {
   color: #f2f2f2;
   border: gray solid 1px;
-  background: url(/../images/ic-arrow-down-white.png) 96%/20px no-repeat #1a1a1a;
+  background: url(../../images/ic-arrow-down-white.png) 96%/20px no-repeat #262626;
 }
 
 .theme-white select option {
@@ -933,7 +933,7 @@ input[type="text"] {
 .theme-black input[type="text"] {
   color: #e6e6e6;
   border: #333333 solid 1px;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 input[type="password"] {
@@ -953,7 +953,7 @@ input[type="password"] {
 .theme-black input[type="password"] {
   color: #e6e6e6;
   border: #333333 solid 1px;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 input[type="email"] {
@@ -972,7 +972,7 @@ input[type="email"] {
 .theme-black input[type="email"] {
   color: #e6e6e6;
   border: #333333 solid 1px;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .theme-white input:focus {
@@ -1004,7 +1004,7 @@ textarea {
 .theme-black textarea {
   color: #e6e6e6;
   border: #333333 solid 1px;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .theme-white textarea:focus {
@@ -1141,23 +1141,23 @@ textarea {
 }
 
 .theme-white .menu ul li a:hover {
-  color: #1a1a1a;
+  color: #262626;
   background: #e6e6e6;
 }
 
 .theme-black .menu ul li a:hover {
   color: #e6e6e6;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .theme-white .menu ul li a.active {
-  color: #1a1a1a;
+  color: #262626;
   background: #e6e6e6;
 }
 
 .theme-black .menu ul li a.active {
   color: #FFFFFF;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .menu-mobile {
@@ -1183,7 +1183,7 @@ textarea {
 
 .theme-black .menu-mobile {
   border-left: 2px solid #333333;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .menu-mobile.is-visible {
@@ -1245,27 +1245,27 @@ textarea {
 
 .theme-black .menu-mobile ul li a {
   color: #999999;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .theme-white .menu-mobile ul li a:hover {
-  color: #1a1a1a;
+  color: #262626;
   background: #e6e6e6;
 }
 
 .theme-black .menu-mobile ul li a:hover {
   color: #e6e6e6;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .theme-white .menu-mobile ul li a.active {
-  color: #1a1a1a;
+  color: #262626;
   background: #e6e6e6;
 }
 
 .theme-black .menu-mobile ul li a.active {
   color: #FFFFFF;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 .menu-mobile-open {
@@ -1282,7 +1282,7 @@ textarea {
   }
   .theme-white .menu-mobile-open {
     border: 1px solid #e6e6e6;
-    color: #1a1a1a;
+    color: #262626;
     background: #FFFFFF;
   }
   .theme-black .menu-mobile-open {
@@ -1314,7 +1314,7 @@ textarea {
 .theme-black .summary {
   color: #4d4d4d;
   border-bottom: #999999;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1445,7 +1445,7 @@ textarea {
 
 .theme-black .hero {
   color: #b3b3b3;
-  background: #1a1a1a;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1520,7 +1520,7 @@ textarea {
 }
 
 .gray9 {
-  color: #1a1a1a;
+  color: #262626;
 }
 
 .black {
@@ -1569,7 +1569,7 @@ textarea {
 }
 
 .bg-gray9 {
-  background: #1a1a1a;
+  background: #262626;
   color: #FFFFFF;
 }
 

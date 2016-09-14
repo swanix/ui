@@ -48,9 +48,10 @@ $gray5:             darken($white, 50%); // Gray medium (HTML color: gray) #8080
 $gray6:             darken($white, 65%); // #595959
 $gray7:             darken($white, 70%); // #4D4D4D
 $gray8:             darken($white, 80%); // #333333
-$gray9:             darken($white, 90%); // #1A1A1A
+$gray9:             darken($white, 85%); // #1A1A1A
 $black:             darken($white, 100%); // Black (HTML color: black) #000000
 
+$primary:           #000000 !default; // Bluemarine
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
