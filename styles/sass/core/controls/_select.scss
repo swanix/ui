@@ -4,6 +4,22 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 select {
-    width: 100%; 
-    margin:0.5em 0;
+	width: 100%; 
+	margin:0.5em 0;
+	color:red;
+  @include themify() {
+    color: getTheme('dropdown-text');
     }
+	}
+
+select option {
+  @include themify() {
+    color: getTheme('dropdown-text');
+    }
+  } 
+
+select optgroup {
+  @include themify() {
+    color: getTheme('dropdown-text');
+    }
+  } 

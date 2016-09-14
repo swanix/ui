@@ -147,4 +147,15 @@ input [type="checkbox"] {
     }
   }
 
-
+::selection {
+  @include themify() {
+    color: getTheme('text-selection');
+    background: getTheme('text-selection-bg');
+    }
+}
+::-moz-selection {
+  @include themify() {
+    color: getTheme('text-selection');
+    background: getTheme('text-selection-bg');
+    }
+}

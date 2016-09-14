@@ -8,19 +8,9 @@
 // https://zellwk.com/blog/organizing-multiple-theme-styles-with-sass/
 // https://codepen.io/celar/pen/dXRNQo
 
-
-// VARIABLES
-
-
-// THEMES
-
 $themes: (
 
-// WHITE SWAN :::::::::::::::::::::::::::::::::::::::::::::::
-
   theme-white: (
-
-  //Start 
 
     // General
     // ::::::::::::::::::::::::::::::::::::
@@ -33,6 +23,8 @@ $themes: (
     text-link:            $gray9 ,
     text-link-hover:      $gray7 ,
     text-link-visited:    $gray7 ,
+    text-selection:       $gray6 ,
+    text-selection-bg:    $gray2 ,
 
     // Layout base styles 
     // ::::::::::::::::::::::::::::::::::::
@@ -46,8 +38,63 @@ $themes: (
     hero-bg:              $gray2 ,
     hero-content-bg:      none ,
 
+    // Buttons base styles 
+    // ::::::::::::::::::::::::::::::::::::
+    // Btn
+    btn-text:           $gray7 ,
+    btn-border:         $gray2 solid 1px ,
+    btn-bg:             $gray1 ,
+    // Btn hover
+    btn-hover-text:     $gray9 ,
+    btn-hover-border:   $gray3 solid 1px ,
+    btn-hover-bg:       $white ,
+    // Btn padding
+    btn-padding:        0.6em 1em ,
+
+    // Btn Primary
+    btn-primary-text:           $gray2 ,
+    btn-primary-border:         $gray9 solid 1px ,
+    btn-primary-bg:             $black ,
+    // Btn Primary hover
+    btn-primary-hover-text:     $white ,
+    btn-primary-hover-border:   $gray9 solid 1px ,
+    btn-primary-hover-bg:       $gray8 ,
+
+    // Input text and Textarea styles 
+    // ::::::::::::::::::::::::::::::::::::
+    // Input text (text, password, email)
+    input-text:                $gray6 ,
+    input-text-border:         $gray3 solid 1px ,
+    input-text-bg:             $white ,
+    // Input text focus
+    input-text-focus:          $gray7 ,
+    input-text-focus-border:   $gray5 solid 1px ,
+    input-text-focus-bg:       $white ,
+
+    // Input textarea
+    input-textarea:                $gray6 ,
+    input-textarea-border:         $gray3 solid 1px ,
+    input-textarea-bg:             $white ,
+    // Input textarea focus
+    input-textarea-focus:          $gray7 ,
+    input-textarea-focus-border:   $gray5 solid 1px ,
+    input-textarea-focus-bg:       $white ,
+
+    // Select (dropdown) styles
+    // ::::::::::::::::::::::::::::::::::::
+    dropdown-text:             $gray8 ,
+
+    // Summary styles
+    // ::::::::::::::::::::::::::::::::::::  
+
+    summary-text:               $gray7 ,
+    summary-bottom-border:      $gray4 ,
+    summary-bg:                 $gray1 ,
+    summary-image-bg:           $black ,
+
     // Menu styles
     // ::::::::::::::::::::::::::::::::::::
+    // Menu Basic
     navigation-bg:           none ,
     menu-bg:                 none ,
     menu-item-text:          $gray6 ,
@@ -72,23 +119,20 @@ $themes: (
     menu-mobile-fade-screen-bg:   $black ,
     menu-mobile-border:           2px solid $gray5
 
-  //End
-
   ),
 
-// BLACK SWAN :::::::::::::::::::::::::::::::::::::::::::::::
 
   theme-black: (
 
-  //Start 
-
     // General texts
     // ::::::::::::::::::::::::::::::::::::
-    text-basic:           $gray4 ,
+    text-basic:           $gray3 ,
     text-heading:         $gray1 ,
     text-link:            $gray9 ,
     text-link-hover:      $gray7 ,
     text-link-visited:    $gray7 ,
+    text-selection:       $gray1 ,
+    text-selection-bg:    $gray7 ,
 
     // Layout base styles 
     // ::::::::::::::::::::::::::::::::::::
@@ -101,9 +145,64 @@ $themes: (
     // ::::::::::::::::::::::::::::::::::::
     hero-bg:              $gray9 ,
     hero-content-bg:      none ,
+    
+    // Buttons base styles 
+    // ::::::::::::::::::::::::::::::::::::
+    // Btn
+    btn-text:           $gray2 ,
+    btn-border:         $gray7 solid 1px ,
+    btn-bg:             $gray8 ,
+    // Btn hover
+    btn-hover-text:     $white ,
+    btn-hover-border:   $gray6 solid 1px ,
+    btn-hover-bg:       $gray7 ,
+    // Btn padding
+    btn-padding:        0.6em 1em ,
+
+    // Btn Primary
+    btn-primary-text:           $gray7 ,
+    btn-primary-border:         $gray1 solid 1px ,
+    btn-primary-bg:             $gray1 ,
+    // Btn Primary hover
+    btn-primary-hover-text:     $black ,
+    btn-primary-hover-border:   $gray2 solid 1px ,
+    btn-primary-hover-bg:       $white ,
+
+    // Input text and Textarea styles 
+    // ::::::::::::::::::::::::::::::::::::
+    // Input text (text, password, email)
+    input-text:                $gray2 ,
+    input-text-border:         $gray8 solid 1px ,
+    input-text-bg:             $gray9 ,
+    // Input text focus
+    input-text-focus:          $white ,
+    input-text-focus-border:   $gray8 solid 1px ,
+    input-text-focus-bg:       $gray8 ,
+
+    // Input textarea
+    input-textarea:                $gray2 ,
+    input-textarea-border:         $gray8 solid 1px ,
+    input-textarea-bg:             $gray9 ,
+    // Input textarea focus
+    input-textarea-focus:          $white ,
+    input-textarea-focus-border:   $gray8 solid 1px ,
+    input-textarea-focus-bg:       $gray8 ,
+
+    // Select (dropdown) styles
+    // ::::::::::::::::::::::::::::::::::::
+    dropdown-text:             $gray8 ,
+
+    // Summary styles
+    // ::::::::::::::::::::::::::::::::::::  
+
+    summary-text:               $gray7 ,
+    summary-bottom-border:      $gray4 ,
+    summary-bg:                 $gray9 ,
+    summary-image-bg:           $black ,
 
     // Menu styles
     // ::::::::::::::::::::::::::::::::::::
+    // Menu Basic
     navigation-bg:           none ,
     menu-bg:                 none ,
     menu-item-text:          $gray4 ,    
@@ -128,13 +227,11 @@ $themes: (
     menu-mobile-fade-screen-bg:   $black ,
     menu-mobile-border:           2px solid $gray8 
 
-  //End 
-
   )
 
 );
 
-// THEMES
+// THEMES FUNCTION
 
 @function map-fetch($map, $keys) {
   $key: nth($keys, 1);
