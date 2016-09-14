@@ -4,6 +4,27 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 select {
-    width: 100%; 
-    margin:0.5em 0;
+  background: transparent;
+  max-width: em(250);
+  padding: 5px 35px 5px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  @include themify() {
+    color: getTheme('dropdown-text');
+    border: getTheme('dropdown-border');
+    background: getTheme('dropdown-bg');    
     }
+	}
+
+select option {
+  @include themify() {
+    color: getTheme('dropdown-text');
+    }
+  } 
+
+select optgroup {
+  @include themify() {
+    color: getTheme('dropdown-text');
+    }
+  } 

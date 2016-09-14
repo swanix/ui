@@ -4,96 +4,107 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 input[type="submit"] { 
-    padding: $btn-padding;
-    vertical-align: middle;
-    border: none;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-text;
-    border: $btn-border;
-    background: $btn-bg;
+  vertical-align: middle;
+  border: none;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    padding: getTheme('btn-padding');
+    color: getTheme('btn-text');
+    border: getTheme('btn-border');
+    background: getTheme('btn-bg');
     }
+  }
 
 input[type="submit"]:hover { 
-    vertical-align: middle;
-    border: none;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-hover-text;
-    border: $btn-hover-border;
-    background: $btn-hover-bg;
+  vertical-align: middle;
+  border: none;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('btn-hover-text');
+    border: getTheme('btn-hover-border');
+    background: getTheme('btn-hover-bg');
     }
+  }
 
 input[type="reset"] { 
-    padding: $btn-padding;
-    vertical-align: middle;
-    border: none;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-text;
-    border: $btn-border;
-    background: $btn-bg;
+  vertical-align: middle;
+  border: none;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    padding: getTheme('btn-padding');
+    color: getTheme('btn-text');
+    border: getTheme('btn-border');
+    background: getTheme('btn-bg');
     }
+  }
 
 input[type="reset"]:hover { 
-    vertical-align: middle;
-    border: none;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-hover-text;
-    border: $btn-hover-border;
-    background: $btn-hover-bg;
+  vertical-align: middle;
+  border: none;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('btn-hover-text');
+    border: getTheme('btn-hover-border');
+    background: getTheme('btn-hover-bg');
     }
+  }
 
 button {
-    max-width:8em;
-    padding: $btn-padding;
-    vertical-align: middle;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-text;
-    border: $btn-border;
-    background: $btn-bg;
+  vertical-align: middle;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    padding: getTheme('btn-padding');
+    color: getTheme('btn-text');
+    border: getTheme('btn-border');
+    background: getTheme('btn-bg');
     }
+  }
 
 button:hover {
-    vertical-align: middle;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-hover-text;
-    border: $btn-hover-border;
-    background: $btn-hover-bg;
+  vertical-align: middle;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('btn-hover-text');
+    border: getTheme('btn-hover-border');
+    background: getTheme('btn-hover-bg');
     }
+  }
 
 // -----------------------------------------------------------
 // SPECIAL BUTTONS by Sebastian Serna - 2015
@@ -101,107 +112,78 @@ button:hover {
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .button {
-    padding: $btn-padding; 
-    vertical-align: middle;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    height: $size-xs;
-    display: inline-block;
-    color: $btn-text;
-    border: $btn-border;
-    background: $btn-bg;
+  vertical-align: middle;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  display: inline-block;
+  @include themify() {
+    padding: getTheme('btn-padding');
+    color: getTheme('btn-text');
+    border: getTheme('btn-border');
+    background: getTheme('btn-bg');
     }
+  }
 
 .button:hover {
-    vertical-align: middle;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    color: $btn-hover-text;
-    border: $btn-hover-border;
-    background: $btn-hover-bg;
+  vertical-align: middle;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('btn-hover-text');
+    border: getTheme('btn-hover-border');
+    background: getTheme('btn-hover-bg');
     }
+  }
 
 
 .button a:visited {
-    color: $btn-hover-text;
+  @include themify() {
+    color: getTheme('btn-text');
     }
+  }
 
 .button a {
-    color: $btn-hover-text;
+  @include themify() {
+    color: getTheme('btn-text');
     }
+  }
 
-// CUSTOM SHAPES 
-// -----------------------------------------------------------
+// Primary Button - Accent Color
 
-.rounded {
-    border-radius:              50px; 
-    -moz-border-radius:         50px; 
-    -webkit-border-radius:      50px;
+.primary {
+  @include themify() {
+    color: getTheme('btn-primary-text');
+    border: getTheme('btn-primary-border');
+    background: getTheme('btn-primary-bg');
+    }  
+  }
 
-    min-width:                  100px;
+.primary:hover {
+  @include themify() {
+    color: getTheme('btn-primary-hover-text');
+    border: getTheme('btn-primary-hover-border');
+    background: getTheme('btn-primary-hover-bg');
+    }  
+  }
+
+.primary a:visited {
+  @include themify() {
+    color: getTheme('btn-primary-text');
     }
-    // -----------------------------------
+  }
 
-.circle {
-    display:                    inline-block ;
-    width:                      50px ;
-    height:                     50px ;
-    border-radius:              50% ; 
-    -moz-border-radius:         50% ; 
-    -webkit-border-radius:      50% ;
-    text-align:                 center;
-    border:                     2px solid;  
+.primary a {
+  @include themify() {
+    color: getTheme('btn-primary-text');
     }
-
-.small {
-    width:                      25px ;
-    height:                     25px ;
-
-    }
-
-.fill {
-    width: 100%;
-    text-align: center;
-}
-
-    // -----------------------------------
-
-.btn {
-    padding: 0.7em 0.7em;
-    vertical-align: middle;
-    display: inline-block;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    }
-
-.btn:hover {
-    vertical-align: middle;
-    // Transition
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    // End transition
-    }
-
-
-
-.text-small {
-    font-size: 0.9em;
-}
+  }
