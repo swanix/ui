@@ -609,7 +609,7 @@ td {
 
 .theme-white .layout-footer {
   color: #595959;
-  background: #1a1a1a;
+  background: #f2f2f2;
 }
 
 .theme-black .layout-footer {
@@ -881,17 +881,24 @@ button:hover {
 }
 
 select {
-  width: 100%;
-  margin: 0.5em 0;
-  color: red;
+  background: transparent;
+  max-width: 15.625em;
+  padding: 5px 35px 5px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .theme-white select {
   color: #333333;
+  border: gray solid 1px;
+  background: url(/../images/ic-arrow-down.png) 96%/20px no-repeat #f2f2f2;
 }
 
 .theme-black select {
-  color: #333333;
+  color: #f2f2f2;
+  border: gray solid 1px;
+  background: url(/../images/ic-arrow-down-white.png) 96%/20px no-repeat #1a1a1a;
 }
 
 .theme-white select option {
@@ -899,7 +906,7 @@ select {
 }
 
 .theme-black select option {
-  color: #333333;
+  color: #f2f2f2;
 }
 
 .theme-white select optgroup {
@@ -907,7 +914,7 @@ select {
 }
 
 .theme-black select optgroup {
-  color: #333333;
+  color: #f2f2f2;
 }
 
 input[type="text"] {
@@ -1329,7 +1336,7 @@ textarea {
 }
 
 .theme-white .summary-image {
-  background: black;
+  background: #999999;
 }
 
 .theme-black .summary-image {

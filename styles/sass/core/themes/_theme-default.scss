@@ -31,7 +31,7 @@ $themes: (
     layout-bg:            none ,
     header-bg:            $gray1 ,
     main-bg:              $white ,
-    footer-bg:            $gray9 ,
+    footer-bg:            $gray1 ,
 
     // Hero styles 
     // ::::::::::::::::::::::::::::::::::::
@@ -83,6 +83,8 @@ $themes: (
     // Select (dropdown) styles
     // ::::::::::::::::::::::::::::::::::::
     dropdown-text:             $gray8 ,
+    dropdown-border:           $gray5 solid 1px ,
+    dropdown-bg: url(/../images/ic-arrow-down.png) 96% / 20px no-repeat $gray1 ,
 
     // Summary styles
     // ::::::::::::::::::::::::::::::::::::  
@@ -90,7 +92,7 @@ $themes: (
     summary-text:               $gray7 ,
     summary-bottom-border:      $gray4 ,
     summary-bg:                 $gray1 ,
-    summary-image-bg:           $black ,
+    summary-image-bg:           $gray4 ,
 
     // Menu styles
     // ::::::::::::::::::::::::::::::::::::
@@ -190,7 +192,9 @@ $themes: (
 
     // Select (dropdown) styles
     // ::::::::::::::::::::::::::::::::::::
-    dropdown-text:             $gray8 ,
+    dropdown-text:             $gray1 ,
+    dropdown-border:           $gray5 solid 1px ,
+    dropdown-bg: url(/../images/ic-arrow-down-white.png) 96% / 20px no-repeat $gray9 ,
 
     // Summary styles
     // ::::::::::::::::::::::::::::::::::::  
