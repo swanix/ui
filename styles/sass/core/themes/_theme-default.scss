@@ -52,12 +52,12 @@ $themes: (
     btn-padding:        0.6em 1em ,
 
     // Btn Primary
-    btn-primary-text:           $gray2 ,
-    btn-primary-border:         $gray9 solid 1px ,
-    btn-primary-bg:             $black ,
+    btn-primary-text:           $gray1 ,
+    btn-primary-border:         $white solid 2px ,
+    btn-primary-bg:             $primary ,
     // Btn Primary hover
     btn-primary-hover-text:     $white ,
-    btn-primary-hover-border:   $gray9 solid 1px ,
+    btn-primary-hover-border:   $white solid 2px ,
     btn-primary-hover-bg:       $gray8 ,
 
     // Input text and Textarea styles 
@@ -84,7 +84,7 @@ $themes: (
     // ::::::::::::::::::::::::::::::::::::
     dropdown-text:             $gray8 ,
     dropdown-border:           $gray5 solid 1px ,
-    dropdown-bg: url(/../images/ic-arrow-down.png) 96% / 20px no-repeat $gray1 ,
+    dropdown-bg: url(../../images/ic-arrow-down.png) 96% / 20px no-repeat $gray1 ,
 
     // Summary styles
     // ::::::::::::::::::::::::::::::::::::  
@@ -162,13 +162,13 @@ $themes: (
     btn-padding:        0.6em 1em ,
 
     // Btn Primary
-    btn-primary-text:           $gray7 ,
-    btn-primary-border:         $gray1 solid 1px ,
-    btn-primary-bg:             $gray1 ,
+    btn-primary-text:           $gray1 ,
+    btn-primary-border:         $white solid 2px ,
+    btn-primary-bg:             $primary ,
     // Btn Primary hover
-    btn-primary-hover-text:     $black ,
-    btn-primary-hover-border:   $gray2 solid 1px ,
-    btn-primary-hover-bg:       $white ,
+    btn-primary-hover-text:     $white ,
+    btn-primary-hover-border:   $white solid 2px ,
+    btn-primary-hover-bg:       $gray8 ,
 
     // Input text and Textarea styles 
     // ::::::::::::::::::::::::::::::::::::
@@ -194,7 +194,7 @@ $themes: (
     // ::::::::::::::::::::::::::::::::::::
     dropdown-text:             $gray1 ,
     dropdown-border:           $gray5 solid 1px ,
-    dropdown-bg: url(/../images/ic-arrow-down-white.png) 96% / 20px no-repeat $gray9 ,
+    dropdown-bg: url(../../images/ic-arrow-down-white.png) 96% / 20px no-repeat $gray9 ,
 
     // Summary styles
     // ::::::::::::::::::::::::::::::::::::  
