@@ -70,3 +70,20 @@
     padding-bottom: 1em;   
     }
 }
+
+// Content units in Columns
+
+.col-1  { @include span-columns(1); outline:$layout-border; }
+.col-2  { @include span-columns(2); outline:$layout-border; }
+.col-3  { @include span-columns(3); outline:$layout-border; }
+.col-4  { @include span-columns(4); outline:$layout-border; }
+.col-5  { @include span-columns(5); outline:$layout-border; }
+.col-6  { @include span-columns(6); outline:$layout-border; }
+.col-7  { @include span-columns(7); outline:$layout-border; }
+.col-8  { @include span-columns(8); outline:$layout-border; }
+.col-9  { @include span-columns(9); outline:$layout-border; }
+.col-10 { @include span-columns(10); outline:$layout-border; }
+.col-11 { @include span-columns(11); outline:$layout-border; }
+.col-12 { @include span-columns(12); outline:$layout-border; }
+
+.omega { @include omega; }

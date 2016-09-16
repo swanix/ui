@@ -8,9 +8,14 @@
 // ::::: Breakpoints
 
 $mobile: new-breakpoint(max-width 768px 4);
+$tablet: new-breakpoint(max-width 980px 4);
+$desktop: new-breakpoint(max-width 1920px 4);
+
 $large-screen: 50em !default;
 
 $border-box-sizing: true !default;
+
+$layout-border: none; // Development purposes only
 
 // DIMENS
 
