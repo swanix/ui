@@ -10,24 +10,28 @@ core -> modules
 –––––––––––––––––––––––––––––
 
 Sass Architecture v0.9 (Alpha)
+Core inspired by The 7-1 Pattern
 
 sass/
 |
 |– core/
-|   |– base/               # Basic styles
-|   |– controls/           # UI controls
+|   |– abstract/           # Mixins & Variables
+|   |– base/               # Core styles
+|   |– controls/           # Interactive controls
+|   |– layout/             # Core layout
+|   |– patterns/           # Core patterns
+|   |– themes/             # Core themes (White / Black)
 |   |– vendor/             # Vendor libraries
 |   |– _core.scss          # CORE Package
 |
 |– modules/
-|   |– layout/             # Layout Manager Module
-|   |– color/              # Color Manager Module
-|   |– fonts/              # Fonts Manager Module
-|   |– icons/              # Icon Manager Module
+|   |– module1/            # Custom module
+|   |– module2/            # Custom module
+|   |– module3/            # Custom module
 |   |– _modules.scss       # MODULES package
 |
 | -------------------------------------------------
-`– styles.scss              # Styles Final Package
+`– styles.scss             # Styles Final Package
   -------------------------------------------------
 ```
 

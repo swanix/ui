@@ -1,0 +1,40 @@
+// -----------------------------------------------------------
+// LIST VIEW by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Based on the media object with Flexbox
+// source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
+
+.list {
+  //background: $gray1;
+  display:inline-block;
+  margin-bottom: em(30);
+  @include span-columns(6);
+  @include omega (3n);
+  @include media($mobile){ 
+    //@include span-columns(12);
+    }
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1em;
+  padding-right: 1em;
+  border-bottom: solid 1px $gray3;
+  @include media($mobile){ 
+
+    }
+
+}
+
+.list-item-figure {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.list-item-body {
+  flex: 1;
+}
+
