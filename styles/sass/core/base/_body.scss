@@ -5,6 +5,9 @@
 
 body {
 	font-family: Tahoma, Geneva, sans-serif;
+  @include themify() {
+    background: getTheme('body-bg');
+    }
 	}
 
 html, body {  
@@ -14,11 +17,10 @@ html, body {
 	}
 	
 html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;	
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;	
 }
 
 main, header, section, footer {
-	//display:block;
 	overflow: auto;
 }
