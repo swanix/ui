@@ -3,38 +3,107 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Based on the media object with Flexbox
+// Inspired by the media object with Flexbox
 // source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
 
-.list {
-  //background: $gray1;
-  display:inline-block;
-  margin-bottom: em(30);
-  @include span-columns(6);
-  @include omega (3n);
+.listview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
   @include media($mobile){ 
-    //@include span-columns(12);
+
     }
 }
 
-.list-item {
+.listview-item {
   display: flex;
+  flex: 0 1 50%;
   align-items: flex-start;
-  padding-top: 1em;
-  padding-right: 1em;
-  border-bottom: solid 1px $gray3;
+  padding: 1em;
+  border-bottom: solid 1px $gray2;
+  background: $gray1;
+  @include media($mobile){ 
+    flex: 0 1 100%;
+    }
+}
+
+.listview-item-figure {
+  flex: 0 1 15%;
+  margin-right: 1em;
   @include media($mobile){ 
 
     }
-
 }
 
-.list-item-figure {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.list-item-body {
+.listview-item-body {
   flex: 1;
+}
+
+.listview-item-body h3 {
+  margin: 0 0 0.2em 0;
+  font-size: 1em;
+  color: $gray9;
+}
+
+.listview-item-body p {
+  font-size: 0.8em;
+  color: $gray5;
+}
+
+// Styles for limit text with '...'
+// http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+// Based on http://codepen.io/natonischuk/pen/KpNKQZ 
+
+// 2 lines
+.maxlines-2 {
+  overflow: hidden;
+  position: relative; 
+  line-height: 1.5em;
+  max-height: 3em;  
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.maxlines-2:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-2:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+}
+
+// 1 line
+
+.maxlines-1 {
+  overflow: hidden;
+  position: relative; 
+  line-height: 1em;
+  max-height: 1em;  
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.maxlines-1:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-1:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
 }
 
