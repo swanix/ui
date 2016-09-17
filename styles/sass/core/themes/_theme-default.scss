@@ -14,7 +14,7 @@ $themes: (
 
     // General
     // ::::::::::::::::::::::::::::::::::::
-    body-bg:           none ,
+    body-bg:              $white ,
 
     // Texts
     // ::::::::::::::::::::::::::::::::::::
@@ -126,7 +126,11 @@ $themes: (
 
   theme-black: (
 
-    // General texts
+    // General
+    // ::::::::::::::::::::::::::::::::::::
+    body-bg:              $black ,
+
+    // Texts
     // ::::::::::::::::::::::::::::::::::::
     text-basic:           $gray3 ,
     text-heading:         $gray1 ,

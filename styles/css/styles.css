@@ -284,6 +284,14 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
+.theme-white body {
+  background: #FFFFFF;
+}
+
+.theme-black body {
+  background: black;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -305,11 +313,12 @@ body {
 
 .theme-white body {
   color: #595959;
-  background: none;
+  background: #FFFFFF;
 }
 
 .theme-black body {
   color: #b3b3b3;
+  background: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1503,8 +1512,18 @@ textarea {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1em;
-  border-bottom: solid 1px #e6e6e6;
+}
+
+.theme-white .listview-item {
+  color: #4d4d4d;
+  border-bottom: #999999;
   background: #f2f2f2;
+}
+
+.theme-black .listview-item {
+  color: #4d4d4d;
+  border-bottom: #999999;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1531,15 +1550,21 @@ textarea {
           flex: 1;
 }
 
+.theme-white .listview-item-body {
+  color: #4d4d4d;
+}
+
+.theme-black .listview-item-body {
+  color: #4d4d4d;
+}
+
 .listview-item-body h3 {
   margin: 0 0 0.2em 0;
   font-size: 1em;
-  color: #262626;
 }
 
 .listview-item-body p {
   font-size: 0.8em;
-  color: gray;
 }
 
 .maxlines-2 {
@@ -1552,7 +1577,6 @@ textarea {
 }
 
 .maxlines-2:before {
-  content: '...';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1577,7 +1601,6 @@ textarea {
 }
 
 .maxlines-1:before {
-  content: '...';
   position: absolute;
   right: 0;
   bottom: 0;
