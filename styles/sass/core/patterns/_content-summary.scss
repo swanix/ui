@@ -23,7 +23,7 @@
   @include span-columns(6 of 12);
   text-align: center;
   @include themify() {
-    background: getTheme('summary-image-bg');
+    //background: getTheme('summary-image-bg');
     }
   @include media($mobile){
     @include span-columns(12 of 12);
@@ -49,7 +49,7 @@
 }
 
   .summary-text {
-    padding: 5.5em 3.5em 2em 3em;
+    padding: 3em 3.5em 2em 3em;
     @include media($mobile){
       @include span-columns(12 of 12);
       padding: 0.5em 1em 0.8em 1em;
