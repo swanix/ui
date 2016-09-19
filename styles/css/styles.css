@@ -143,7 +143,8 @@ select {
 }
 
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
@@ -218,9 +219,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -901,13 +900,11 @@ select {
 .theme-white select {
   color: #333333;
   border: gray solid 1px;
-  background: url(../../images/ic-arrow-down.png) 96%/20px no-repeat #f2f2f2;
 }
 
 .theme-black select {
   color: #f2f2f2;
   border: gray solid 1px;
-  background: url(../../images/ic-arrow-down-white.png) 96%/20px no-repeat #262626;
 }
 
 .theme-white select option {
@@ -1178,7 +1175,6 @@ textarea {
   height: 100%;
   width: 15.625em;
   -webkit-transform: translateX(15.625em);
-  -ms-transform: translateX(15.625em);
   transform: translateX(15.625em);
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
@@ -1199,7 +1195,6 @@ textarea {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -1459,7 +1454,6 @@ textarea {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1486,29 +1480,23 @@ textarea {
 
 .listview {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .listview-item {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 50%;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1em;
@@ -1529,7 +1517,6 @@ textarea {
 @media screen and (max-width: 768px) {
   .listview-item {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
@@ -1537,7 +1524,6 @@ textarea {
 
 .listview-item-figure {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 15%;
       -ms-flex: 0 1 15%;
           flex: 0 1 15%;
   margin-right: 1em;
@@ -1545,7 +1531,6 @@ textarea {
 
 .listview-item-body {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
@@ -1613,6 +1598,83 @@ textarea {
   width: 1em;
   height: 1em;
   margin-top: 0.2em;
+}
+
+.cardview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardview-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.theme-white .cardview-item {
+  color: #4d4d4d;
+  border-bottom: #999999;
+  background: #f2f2f2;
+}
+
+.theme-black .cardview-item {
+  color: #4d4d4d;
+  border-bottom: #999999;
+  background: #262626;
+}
+
+@media screen and (max-width: 768px) {
+  .cardview-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.cardview-item-figure {
+  margin-bottom: 0.5em;
+}
+
+.cardview-item-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.theme-white .cardview-item-body {
+  color: #4d4d4d;
+}
+
+.theme-black .cardview-item-body {
+  color: #4d4d4d;
+}
+
+.cardview-item-body h3 {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.cardview-item-body p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 .white {

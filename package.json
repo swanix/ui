@@ -1,6 +1,6 @@
 {
   "name": "Swan",
-  "version": "0.2",
+  "version": "0.2.0",
   "description": "Experimental UI framework",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zemiotic/swan.git"
+    "url": "git+https://github.com/acuariux/swan.git"
   },
-  "author": "Sebastian Serna <sebastian@zemiotic.com>",
+  "author": "Sebastian Serna <jsebastianserna@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zemiotic/swan/issues"
+    "url": "https://github.com/acuariux/swan/issues"
   },
-  "homepage": "https://github.com/zemiotic/swan#readme",
+  "homepage": "https://github.com/acuariux/swan#readme",
   "engines": {
     "node": "4.0.0",
     "npm": "2.14.2"
