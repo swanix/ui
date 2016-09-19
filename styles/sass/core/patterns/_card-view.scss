@@ -1,0 +1,58 @@
+// -----------------------------------------------------------
+// CARD VIEW by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Inspired by the media object with Flexbox
+// source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
+
+.cardview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  @include media($mobile){ 
+
+    }
+}
+
+.cardview-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 33%;
+  align-items: flex-start;
+  padding: 1em;
+  margin-bottom: 1em;
+  @include themify() {
+    color: getTheme('summary-text');
+    border-bottom: getTheme('summary-bottom-border');
+    background: getTheme('summary-bg');
+    }
+  @include media($mobile){ 
+    flex: 0 1 100%;
+    }
+}
+
+.cardview-item-figure {
+  margin-bottom: 0.5em;
+  @include media($mobile){ 
+
+    }
+}
+
+.cardview-item-body {
+  flex: 1;
+  @include themify() {
+    color: getTheme('summary-text');
+    }
+}
+
+.cardview-item-body h3 {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.cardview-item-body p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
