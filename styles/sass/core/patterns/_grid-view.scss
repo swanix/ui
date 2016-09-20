@@ -1,12 +1,9 @@
 // -----------------------------------------------------------
-// CARD VIEW by Sebastian Serna - 2016
+// GRID VIEW by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Inspired by the media object with Flexbox
-// source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
-
-.cardview {
+.gridview {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between; 
@@ -14,23 +11,23 @@
     }
 }
 
-.cardview-item {
+.gridview-item {
   display: flex;
   flex-direction: column;
-  flex: 0 1 32%;
-  margin-bottom: 1.2em;
+  flex: 0 1 33%;
+  margin-bottom: 0.5em;
   @include themify() {
     color: getTheme('summary-text');
     border-bottom: getTheme('summary-bottom-border');
     background: getTheme('summary-bg');
     }
   @include media($mobile){ 
-    flex: 0 1 100%;
-    margin-bottom: 1em;
+    flex: 0 1 49%;
+    margin-bottom: 0.5em;
     }
 }
 
-.cardview-item img {
+.gridview-item img {
   width: 100%;
   height: auto;
   @include media($mobile){ 
@@ -38,13 +35,13 @@
     }
 }
 
-.cardview-item-figure {
+.gridview-item-figure {
   @include media($mobile){ 
 
     }
 }
 
-.cardview-item-body {
+.gridview-item-body {
   padding: 1em;
   @include themify() {
     color: getTheme('summary-text');
@@ -54,11 +51,11 @@
     }
 }
 
-.cardview-item-body h3 {
+.gridview-item-body h3 {
   font-size: 1em;
 }
 
-.cardview-item-body p {
+.gridview-item-body p {
   font-size: 0.8em;
 }
 

@@ -1,12 +1,10 @@
 // -----------------------------------------------------------
-// CARD VIEW by Sebastian Serna - 2016
+// ARTICLE VIEW by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Inspired by the media object with Flexbox
-// source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
 
-.cardview {
+.articleview {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between; 
@@ -14,10 +12,11 @@
     }
 }
 
-.cardview-item {
+
+.articleview-item {
   display: flex;
   flex-direction: column;
-  flex: 0 1 32%;
+  flex: 0 1 49%;
   margin-bottom: 1.2em;
   @include themify() {
     color: getTheme('summary-text');
@@ -30,7 +29,7 @@
     }
 }
 
-.cardview-item img {
+.articleview-item img {
   width: 100%;
   height: auto;
   @include media($mobile){ 
@@ -38,27 +37,63 @@
     }
 }
 
-.cardview-item-figure {
+.articleview-item-figure {
   @include media($mobile){ 
 
     }
 }
 
-.cardview-item-body {
-  padding: 1em;
+.articleview-item-body {
+  display: flex;
+  flex-direction: column;
   @include themify() {
     color: getTheme('summary-text');
     }
+}
+
+.articleview-item-text {
+  padding: 1em 2em;
+  flex: 0 1 90%;
   @include media($mobile){ 
-    padding: 1.5em;
+    padding: 1em 2em;
     }
 }
 
-.cardview-item-body h3 {
+.articleview-item-body h3 {
   font-size: 1em;
 }
 
-.cardview-item-body p {
+.articleview-item-body p {
   font-size: 0.8em;
 }
 
+.articleview-item-footer {
+  display:flex;
+  justify-content: flex-end; 
+  @include media($mobile){ 
+
+    }
+}
+
+.land {
+  flex-direction: row;
+  flex: 0 1 100%;
+  @include media($mobile){ 
+    flex-direction: column;
+    }
+}
+
+.land .articleview-item-text {
+  padding: 4em 3em;
+  @include media($mobile){ 
+    padding: 1em 2em;
+    }
+}
+
+.land .articleview-item-figure,
+.land .articleview-item-body {
+  flex: 0 1 50%;
+  @include media($mobile){ 
+    flex: 0 1 100%;
+    }
+}

@@ -60,8 +60,7 @@
     }
 }
 
-.pad {
-  @include outer-container(980px);
+.heading {
   padding-top: 1em; 
   padding-bottom: 0.5em; 
   @include media($mobile){
