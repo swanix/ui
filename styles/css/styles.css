@@ -1349,16 +1349,13 @@ textarea {
 }
 
 .listview-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   -webkit-box-align: start;
       -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
           align-items: flex-start;
-  padding: 1em;
 }
 
 .theme-white .listview-item {
@@ -1409,6 +1406,30 @@ textarea {
 
 .listview-item-body p {
   font-size: 0.8em;
+}
+
+.listview-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.listview-item a:hover {
+  background: #333333;
+  cursor: pointer;
+}
+
+.listview li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.listview {
+  padding-left: 0;
+  list-style: none;
 }
 
 .maxlines-2 {
@@ -1534,6 +1555,23 @@ textarea {
 
 .cardview-item-body p {
   font-size: 0.8em;
+}
+
+.cardview-item a:hover {
+  background: #333333;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.theme-white .cardview-item a:hover {
+  color: #4d4d4d;
+  border-bottom: #999999;
+}
+
+.theme-black .cardview-item a:hover {
+  color: #4d4d4d;
+  border-bottom: #999999;
 }
 
 .gridview {

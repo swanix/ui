@@ -62,3 +62,20 @@
   font-size: 0.8em;
 }
 
+
+.cardview-item a:hover {
+  background: $gray8;
+  cursor: pointer;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('summary-text');
+    border-bottom: getTheme('summary-bottom-border');
+    background: getTheme('gray5');
+    }
+}

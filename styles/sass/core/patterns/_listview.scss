@@ -16,10 +16,9 @@
 }
 
 .listview-item {
-  display: flex;
   flex: 0 1 50%;
   align-items: flex-start;
-  padding: 1em;
+  //padding: 1em;
   @include themify() {
     color: getTheme('summary-text');
     border-bottom: getTheme('summary-bottom-border');
@@ -52,6 +51,30 @@
 
 .listview-item-body p {
   font-size: 0.8em;
+}
+
+
+.listview-item a {
+  display: flex;
+  padding: 1em;
+  //background: $gray8;
+  cursor: pointer;
+}
+ 
+.listview-item a:hover {
+  background: $gray8;
+  cursor: pointer;
+
+}
+ .listview li {
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+ ul.listview { 
+  padding-left: 0;
+  list-style: none;
 }
 
 // Styles for limit text with '...'
@@ -110,4 +133,3 @@
   height: 1em;
   margin-top: 0.2em;
 }
-
