@@ -871,14 +871,14 @@ button:hover {
   color: #f2f2f2;
 }
 
-.button .rounded {
+.rounded {
   border-radius: 50px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   min-width: 100px;
 }
 
-.button.circle {
+.circle {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -891,7 +891,7 @@ button:hover {
   padding-top: 7px;
 }
 
-.button .small {
+.small {
   width: 25px;
   height: 25px;
 }
@@ -1887,18 +1887,22 @@ ul.listview {
 
 .bg-white {
   background: #FFFFFF;
+  color: #595959;
 }
 
 .bg-gray1 {
   background: #f2f2f2;
+  color: #595959;
 }
 
 .bg-gray2 {
   background: #e6e6e6;
+  color: #595959;
 }
 
 .bg-gray3 {
   background: #b3b3b3;
+  color: #595959;
 }
 
 .bg-gray4 {
