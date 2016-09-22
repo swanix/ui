@@ -3,9 +3,6 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Inspired by the media object with Flexbox
-// source https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
-
 .cardview {
   display:flex;
   flex-wrap: wrap;
@@ -16,7 +13,6 @@
 
 .cardview-item {
   display: flex;
-  flex-direction: column;
   flex: 0 1 32%;
   margin-bottom: 1.2em;
   @include themify() {
@@ -62,3 +58,24 @@
   font-size: 0.8em;
 }
 
+.cardview-item a {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardview-item a:hover {
+  background: $gray8;
+  cursor: pointer;
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('summary-text');
+    border-bottom: getTheme('summary-bottom-border');
+    background: getTheme('gray5');
+    }
+}

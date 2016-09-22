@@ -43,7 +43,8 @@
 }
 
 .menu ul {
-  margin: 0; padding: 0;
+  margin: 0; 
+  padding: 0;
   float: right;
   @include media($mobile){
     float: left;
