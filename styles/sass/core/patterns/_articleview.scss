@@ -19,9 +19,9 @@
   flex: 0 1 49%;
   margin-bottom: 1.2em;
   @include themify() {
-    color: getTheme('summary-text');
-    border-bottom: getTheme('summary-bottom-border');
-    background: getTheme('summary-bg');
+    color: getTheme('view-item-text');
+    border-bottom: getTheme('view-item-bottom-border');
+    background: getTheme('view-item-bg');
     }
   @include media($mobile){ 
     flex: 0 1 100%;

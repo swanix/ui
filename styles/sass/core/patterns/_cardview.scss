@@ -16,9 +16,9 @@
   flex: 0 1 32%;
   margin-bottom: 1.2em;
   @include themify() {
-    color: getTheme('summary-text');
-    border-bottom: getTheme('summary-bottom-border');
-    background: getTheme('summary-bg');
+    color: getTheme('view-item-text');
+    border-bottom: getTheme('view-item-bottom-border');
+    background: getTheme('view-item-bg');
     }
   @include media($mobile){ 
     flex: 0 1 100%;
@@ -74,8 +74,8 @@
   transition:.2s;
   // End transition
   @include themify() {
-    color: getTheme('summary-text');
-    border-bottom: getTheme('summary-bottom-border');
-    background: getTheme('gray5');
+    color: getTheme('view-item-hover-text');
+    border-bottom: getTheme('view-item-hover-bottom-border');
+    background: getTheme('view-item-hover-bg');
     }
 }
