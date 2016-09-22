@@ -17,9 +17,9 @@
   align-items: flex-start;
   //padding: 1em;
   @include themify() {
-    color: getTheme('summary-text');
-    border-bottom: getTheme('summary-bottom-border');
-    background: getTheme('summary-bg');
+    color: getTheme('view-item-text');
+    border-bottom: getTheme('view-item-bottom-border');
+    background: getTheme('view-item-bg');
     }
   @include media($mobile){ 
     flex: 0 1 100%;
@@ -54,15 +54,25 @@
 .listview-item a {
   display: flex;
   padding: 1em;
-  //background: $gray8;
   cursor: pointer;
 }
  
 .listview-item a:hover {
-  background: $gray8;
   cursor: pointer;
-
+  // Transition
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  // End transition
+  @include themify() {
+    color: getTheme('view-item-hover-text');
+    border-bottom: getTheme('view-item-hover-bottom-border');
+    background: getTheme('view-item-hover-bg');
+    }
 }
+
  .listview li {
   margin: 0; 
   padding: 0;
@@ -73,6 +83,7 @@
   padding-left: 0;
   list-style: none;
 }
+
 
 // Styles for limit text with '...'
 // http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/

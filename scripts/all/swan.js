@@ -1,3 +1,5 @@
+// Menu mobile
+
 $(document).ready(function(){
   $('.menu-mobile-open,.menu-mobile-fade-screen').on('click touchstart',function (e) {
     $('.menu-mobile,.menu-mobile-fade-screen').toggleClass('is-visible');
@@ -27,3 +29,19 @@ $('.menu li a[href="'+ url +'"]').addClass('active');
 $('.menu li a, .menu-mobile li a').filter(function() {
     return this.href == url;
 }).addClass('active');
+
+// Themes switch
+
+// Theme switch
+// Based on: https://codepen.io/celar/pen/dXRNQo
+
+ document.addEventListener('DOMContentLoaded', function(){
+  let body = document.querySelector('body');
+  document.querySelector('.themeselect').addEventListener('change', handleThemeSelect);
+  function handleThemeSelect(event) {
+    event.preventDefault();
+    
+    body.className = event.target.value;
+  };
+  
+}); 

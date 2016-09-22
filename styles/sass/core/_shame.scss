@@ -58,45 +58,13 @@
   text-align:center;
 }
 
-// Shapes for Buttons
 
-
-// CUSTOM SHAPES 
-// -----------------------------------------------------------
-
-.rounded {
-    border-radius:              50px; 
-    -moz-border-radius:         50px; 
-    -webkit-border-radius:      50px;
-
-    min-width:                  100px;
-    }
-    // -----------------------------------
-
-.circle {
-    display:                    inline-block ;
-    width:                      50px ;
-    height:                     50px ;
-    border-radius:              50% ; 
-    -moz-border-radius:         50% ; 
-    -webkit-border-radius:      50% ;
-    text-align:                 center;
-    border:                     2px solid;  
-    }
-
-.small {
-    width:                      25px ;
-    height:                     25px ;
-
-    }
-
-.fill {
-    width: 100%;
-    text-align: center;
-}
-
-    // -----------------------------------
+// -----------------------------------
 
 .text-small {
     font-size: 0.9em;
+}
+
+.pad-top {
+  padding-top: 1em;
 }
