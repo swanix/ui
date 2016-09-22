@@ -1495,10 +1495,6 @@ ul.listview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
@@ -1557,6 +1553,16 @@ ul.listview {
   font-size: 0.8em;
 }
 
+.cardview-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .cardview-item a:hover {
   background: #333333;
   cursor: pointer;
@@ -1589,10 +1595,6 @@ ul.listview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33%;
           flex: 0 1 33%;
@@ -1649,6 +1651,33 @@ ul.listview {
 
 .gridview-item-body p {
   font-size: 0.8em;
+}
+
+.gridview-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gridview-item a:hover {
+  background: #333333;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.theme-white .gridview-item a:hover {
+  color: #4d4d4d;
+  border-bottom: #999999;
+}
+
+.theme-black .gridview-item a:hover {
+  color: #4d4d4d;
+  border-bottom: #999999;
 }
 
 .articleview {
