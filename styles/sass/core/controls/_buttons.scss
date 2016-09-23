@@ -194,7 +194,7 @@ button:hover {
 // CUSTOM SHAPES 
 // -----------------------------------------------------------
 
-.button .rounded {
+.rounded {
     border-radius:              50px; 
     -moz-border-radius:         50px; 
     -webkit-border-radius:      50px;
@@ -203,7 +203,7 @@ button:hover {
     }
     // -----------------------------------
 
-.button.circle {
+.circle {
     display:                    inline-block ;
     width:                      50px ;
     height:                     50px ;
@@ -216,7 +216,7 @@ button:hover {
     padding-top:                7px;  
     }
 
-.button .small {
+.small {
     width:                      25px ;
     height:                     25px ;
 

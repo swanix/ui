@@ -21,10 +21,10 @@
 
 // BG COLOR CLASSES 
 
-.bg-white   { background:   $white; } // White (HTML color: white)
-.bg-gray1   { background:   $gray1; }
-.bg-gray2   { background:   $gray2; }
-.bg-gray3   { background:   $gray3; }
+.bg-white   { background:   $white; color: $gray6; } // White (HTML color: white)
+.bg-gray1   { background:   $gray1; color: $gray6; }
+.bg-gray2   { background:   $gray2; color: $gray6; }
+.bg-gray3   { background:   $gray3; color: $gray6; }
 .bg-gray4   { background:   $gray4; color: $white; }
 .bg-gray5   { background:   $gray5; color: $white; } // Gray medium (HTML color: gray)
 .bg-gray6   { background:   $gray6; color: $white; }
