@@ -440,6 +440,21 @@ pre {
   line-height: 1.5em;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+}
+
+.theme-white hr {
+  color: #b3b3b3;
+  background-color: #b3b3b3;
+}
+
+.theme-black hr {
+  color: #333333;
+  background-color: #333333;
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.3em;

@@ -122,7 +122,12 @@ pre {
   }
 
 hr {
-
+  border: 0;
+  height: 1px;
+  @include themify() {
+    color: getTheme('hr-color');
+    background-color: getTheme('hr-color-bg');
+    }
   }
 
 // Form texts
