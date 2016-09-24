@@ -16,11 +16,10 @@
   flex: 0 1 50%;
   align-items: flex-start;
   //padding: 1em;
-  @include themify() {
-    color: getTheme('view-item-text');
-    border-bottom: getTheme('view-item-bottom-border');
-    background: getTheme('view-item-bg');
-    }
+  color: $view-item-text;
+  border-bottom: $view-item-bottom-border;
+  background: $view-item-bg;
+
   @include media($mobile){ 
     flex: 0 1 100%;
     }
@@ -36,9 +35,7 @@
 
 .listview-item-body {
   flex: 1;
-  @include themify() {
-    color: getTheme('summary-text');
-    }
+  color: $text-basic;
 }
 
 .listview-item-body h3 {
@@ -66,11 +63,9 @@
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('view-item-hover-text');
-    border-bottom: getTheme('view-item-hover-bottom-border');
-    background: getTheme('view-item-hover-bg');
-    }
+  color: $view-item-hover-text;
+  border-bottom: $view-item-hover-bottom-border;
+  background: $view-item-hover-bg;
 }
 
  .listview li {

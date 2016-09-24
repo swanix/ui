@@ -8,9 +8,7 @@
   overflow: auto;
   //text-transform: uppercase;
   font-size: 0.9em;
-  @include themify() {
-    background: getTheme('navigation-bg');
-    }
+  background: $navigation-bg;
 }
 
 
@@ -34,9 +32,7 @@
   @include span-columns(9 of 12);
   @include omega();
   padding-right:em(20);
-  @include themify() {
-    background: getTheme('menu-bg');
-    }
+  background: $menu-bg;
   @include media($mobile){
     display: none;
     }
@@ -62,30 +58,22 @@
   float: left; 
   text-decoration: none;
   padding: 1em 1.5em;
-  @include themify() {
-    color: getTheme('menu-item-text');
-    background: getTheme('menu-item-bg');
-    }
+  color: $menu-item-text;
+  background: $menu-item-bg;
 }
  
 .menu ul li a:visited {
-  @include themify() {
-    color: getTheme('menu-item-text');
-    }
+  color: $menu-item-text;
 }
  
 .menu ul li a:hover {
-  @include themify() {
-    color: getTheme('menu-item-hover-text');
-    background: getTheme('menu-item-hover-bg');
-    }
+  color: $menu-item-hover-text;
+  background: $menu-item-hover-bg;
 }
 
 .menu ul li a.active {
-  @include themify() {
-    color: getTheme('menu-item-active-text');
-    background: getTheme('menu-item-active-bg');
-    }
+  color: $menu-item-active-text;
+  background: $menu-item-active-bg;
 }
 
 // MOBILE MENU
@@ -100,11 +88,8 @@
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
-
-  @include themify() {
-  border-left: getTheme('menu-mobile-border');
-  background: getTheme('menu-mobile-bg');
-  }
+  border-left: $menu-mobile-border;
+  background: $menu-mobile-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
@@ -119,9 +104,7 @@
   visibility: hidden;
   z-index: 9999;
 
-  @include themify() {
-  background: getTheme('menu-mobile-fade-screen-bg');
-  }
+  background: $menu-mobile-fade-screen-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
@@ -147,24 +130,18 @@
   float: left; 
   text-decoration: none;
   padding: 1em 2em;
-  @include themify() {
-    color: getTheme('menu-mobile-item-text');
-    background: getTheme('menu-mobile-item-bg');
-    }
+  color: $menu-mobile-item-text;
+  background: $menu-mobile-item-bg;
 }
  
 .menu-mobile ul li a:hover {
-  @include themify() {
-    color: getTheme('menu-item-hover-text');
-    background: getTheme('menu-item-hover-bg');
-    }
+  color: $menu-item-hover-text;
+  background: $menu-item-hover-bg;
 }
 
 .menu-mobile ul li a.active {
-  @include themify() {
-    color: getTheme('menu-item-active-text');
-    background: getTheme('menu-item-active-bg');
-    }
+  color: $menu-item-active-text;
+  background: $menu-item-active-bg;
 }
 
 // SHOW BUTTON :::::::::::::::
@@ -177,11 +154,9 @@
     width:50px;
     height:50px;
     text-align: center;
-    @include themify() {
-      border: getTheme('menu-mobile-btn-border') ;
-      color: getTheme('menu-mobile-btn-text');
-      background: getTheme('menu-mobile-btn-bg');
-      }
+    border: $menu-mobile-btn-border;
+    color: $menu-mobile-btn-text;
+    background: $menu-mobile-btn-bg;
     }
 }
 

@@ -13,12 +13,10 @@ input[type="submit"] {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    padding: getTheme('btn-padding');
-    color: getTheme('btn-text');
-    border: getTheme('btn-border');
-    background: getTheme('btn-bg');
-    }
+  padding: $btn-padding;
+  color: $btn-text;
+  border: $btn-border;
+  background: $btn-bg;
   }
 
 input[type="submit"]:hover { 
@@ -31,11 +29,9 @@ input[type="submit"]:hover {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('btn-hover-text');
-    border: getTheme('btn-hover-border');
-    background: getTheme('btn-hover-bg');
-    }
+  color: $btn-hover-text;
+  border: $btn-hover-border;
+  background: $btn-hover-bg;
   }
 
 input[type="reset"] { 
@@ -48,12 +44,10 @@ input[type="reset"] {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    padding: getTheme('btn-padding');
-    color: getTheme('btn-text');
-    border: getTheme('btn-border');
-    background: getTheme('btn-bg');
-    }
+  padding: $btn-padding;
+  color: $btn-text;
+  border: $btn-border;
+  background: $btn-bg;
   }
 
 input[type="reset"]:hover { 
@@ -66,11 +60,9 @@ input[type="reset"]:hover {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('btn-hover-text');
-    border: getTheme('btn-hover-border');
-    background: getTheme('btn-hover-bg');
-    }
+  color: $btn-hover-text;
+  border: $btn-hover-border;
+  background: $btn-hover-bg;
   }
 
 button {
@@ -82,12 +74,10 @@ button {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    padding: getTheme('btn-padding');
-    color: getTheme('btn-text');
-    border: getTheme('btn-border');
-    background: getTheme('btn-bg');
-    }
+  padding: $btn-padding;
+  color: $btn-text;
+  border: $btn-border;
+  background: $btn-bg;
   }
 
 button:hover {
@@ -99,11 +89,9 @@ button:hover {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('btn-hover-text');
-    border: getTheme('btn-hover-border');
-    background: getTheme('btn-hover-bg');
-    }
+  color: $btn-hover-text;
+  border: $btn-hover-border;
+  background: $btn-hover-bg;
   }
 
 // -----------------------------------------------------------
@@ -121,12 +109,10 @@ button:hover {
   transition:.2s;
   // End transition
   display: inline-block;
-  @include themify() {
-    padding: getTheme('btn-padding');
-    color: getTheme('btn-text');
-    border: getTheme('btn-border');
-    background: getTheme('btn-bg');
-    }
+  padding: $btn-padding;
+  color: $btn-text;
+  border: $btn-border;
+  background: $btn-bg;
   }
 
 .button:hover {
@@ -138,54 +124,40 @@ button:hover {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('btn-hover-text');
-    border: getTheme('btn-hover-border');
-    background: getTheme('btn-hover-bg');
-    }
+  color: $btn-hover-text;
+  border: $btn-hover-border;
+  background: $btn-hover-bg;
   }
 
 
 .button a:visited {
-  @include themify() {
-    color: getTheme('btn-text');
-    }
+  color: $btn-text;
   }
 
 .button a {
-  @include themify() {
-    color: getTheme('btn-text');
-    }
+  color: $btn-text;
   }
 
 // Primary Button - Accent Color
 
 .primary {
-  @include themify() {
-    color: getTheme('btn-primary-text');
-    border: getTheme('btn-primary-border');
-    background: getTheme('btn-primary-bg');
-    }  
+  color: $btn-primary-text;
+  border: $btn-primary-border;
+  background: $btn-primary-bg; 
   }
 
 .primary:hover {
-  @include themify() {
-    color: getTheme('btn-primary-hover-text');
-    border: getTheme('btn-primary-hover-border');
-    background: getTheme('btn-primary-hover-bg');
-    }  
+  color: $btn-primary-hover-text;
+  border: $btn-primary-hover-border;
+  background: $btn-primary-hover-bg;
   }
 
 .primary a:visited {
-  @include themify() {
-    color: getTheme('btn-primary-text');
-    }
+  color: $btn-primary-text;
   }
 
 .primary a {
-  @include themify() {
-    color: getTheme('btn-primary-text');
-    }
+  color: $btn-primary-text;
   }
 
 // Shapes for Buttons

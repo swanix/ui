@@ -9,20 +9,16 @@
 	overflow: auto;
   min-height: 100%; // Afecta la posición del footer
   position: relative; // Afecta la posición del footer
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('layout-bg');
-    }
+  color: $text-basic;
+  background: $layout-bg;
 }
 
 // Header section
 
 .layout-header {
 	@include span-columns(12);
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('header-bg');
-    }
+  color: $text-basic;
+  background: $header-bg;
 }
 
 // Main content section
@@ -30,10 +26,8 @@
 .layout-main {
 	@include span-columns(12);
   padding-bottom: $footer-size; // Afecta la posición del footer
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('main-bg');
-    }
+  color: $text-basic;
+  background: $main-bg;
 }
 
 // Footer section
@@ -46,10 +40,8 @@
   width: 100%;
   padding: em(30) em(10);
   height: $footer-size;   // Tamaño del footer
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('footer-bg');
-    }
+  color: $text-basic;
+  background: $footer-bg;
 }
 
 // Other classes
