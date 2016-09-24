@@ -10,21 +10,15 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  @include themify() {
-    color: getTheme('dropdown-text');
-    border: getTheme('dropdown-border');
-    background: getTheme('dropdown-bg');    
-    }
+  color: $dropdown-text;
+  border: $dropdown-border;
+  background: $dropdown-bg;    
 	}
 
 select option {
-  @include themify() {
-    color: getTheme('dropdown-text');
-    }
+  color: $dropdown-text;
   } 
 
 select optgroup {
-  @include themify() {
-    color: getTheme('dropdown-text');
-    }
+  color: $dropdown-text;
   } 

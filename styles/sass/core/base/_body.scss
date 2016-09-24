@@ -5,9 +5,7 @@
 
 body {
 	font-family: Tahoma, Geneva, sans-serif;
-  @include themify() {
-    background: getTheme('body-bg');
-    }
+	background: $body-bg;
 	}
 
 html, body {  

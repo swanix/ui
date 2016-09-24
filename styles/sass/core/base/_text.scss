@@ -8,10 +8,8 @@
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('body-bg');
-    }
+  color: $text-basic;
+  background: $body-bg;
   }
 
 
@@ -19,9 +17,7 @@ h1, h2, h3, h4, h5, h6  {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
   margin: 1em 0 1em 0;
-  @include themify() {
-    color: getTheme('text-heading');
-    }
+  color: $text-heading;
   }
 
 h1 {
@@ -35,16 +31,12 @@ p {
   font-size: 0.9em;
   margin: 0;
   padding-bottom: 1.5em;
-  @include themify() {
-    color: getTheme('text-basic');
-    }
+  color: $text-basic;
   }
 
 a {
   text-decoration: none;
-  @include themify() {
-    color: getTheme('text-link');
-    }
+  color: $text-link;
   }
 
 a:hover {
@@ -56,15 +48,11 @@ a:hover {
   -webkit-transition:.2s;
   transition:.2s;
   // End transition
-  @include themify() {
-    color: getTheme('text-link-hover');
-    }
+  color: $text-link-hover;
   }
 
 a:visited {
-  @include themify() {
-    color: getTheme('text-link-visited');
-    }
+  color: $text-link-visited;
   }
 
 ul, ol {
@@ -124,10 +112,8 @@ pre {
 hr {
   border: 0;
   height: 1px;
-  @include themify() {
-    color: getTheme('hr-color');
-    background-color: getTheme('hr-color-bg');
-    }
+  color: $hr-color;
+  background-color: $hr-color-bg;
   }
 
 // Form texts
@@ -135,32 +121,23 @@ hr {
 label {
   display: inline-block;
   margin-bottom: 0.3em;
-  @include themify() {
-    color: getTheme('text-basic');
-    }
+  color: $text-basic;
   }
 
 optgroup, option {
-  @include themify() {
-    color: getTheme('text-basic');
-    }
+  color: $text-basic;
   }
 
 input [type="checkbox"] {
-  @include themify() {
-    color: getTheme('text-basic');
-    }
+  color: $text-basic;
   }
 
 ::selection {
-  @include themify() {
-    color: getTheme('text-selection');
-    background: getTheme('text-selection-bg');
-    }
+  color: $text-selection;
+  background: $text-selection-bg;
 }
+
 ::-moz-selection {
-  @include themify() {
-    color: getTheme('text-selection');
-    background: getTheme('text-selection-bg');
-    }
+  color: $text-selection;
+  background: $text-selection-bg;
 }

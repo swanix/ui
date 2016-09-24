@@ -18,11 +18,10 @@
   flex-direction: column;
   flex: 0 1 49%;
   margin-bottom: 1.2em;
-  @include themify() {
-    color: getTheme('view-item-text');
-    border-bottom: getTheme('view-item-bottom-border');
-    background: getTheme('view-item-bg');
-    }
+  color: $view-item-text;
+  border-bottom: $view-item-bottom-border;
+  background: $view-item-bg;
+
   @include media($mobile){ 
     flex: 0 1 100%;
     margin-bottom: 1em;
@@ -46,9 +45,7 @@
 .articleview-item-body {
   display: flex;
   flex-direction: column;
-  @include themify() {
-    color: getTheme('summary-text');
-    }
+  color: $text-basic;
 }
 
 .articleview-item-text {

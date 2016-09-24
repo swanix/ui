@@ -8,11 +8,9 @@ input[type="text"] {
   height:2em;
   font-size:1em;
   padding:0 0.5em;
-  @include themify() {
-    color: getTheme('input-text');
-    border: getTheme('input-text-border');
-    background: getTheme('input-text-bg');
-    }
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
   }
 
 input[type="text"]:disabled { 
@@ -25,11 +23,9 @@ input[type="password"] {
   font-size:1em;
   padding:0 0.5em;
   letter-spacing:3px;
-  @include themify() {
-    color: getTheme('input-text');
-    border: getTheme('input-text-border');
-    background: getTheme('input-text-bg');
-    }
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
   }
 
 input[type="email"] { 
@@ -37,20 +33,16 @@ input[type="email"] {
   height:2em;
   font-size:1em;
   padding:0 0.5em;
-  @include themify() {
-    color: getTheme('input-text');
-    border: getTheme('input-text-border');
-    background: getTheme('input-text-bg');
-    }
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
   }
 
 
 input:focus {
-  @include themify() {
-    color: getTheme('input-text-focus');
-    border: getTheme('input-text-focus-border');
-    background: getTheme('input-text-focus-bg');
-    }
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
   }
 
 
@@ -62,19 +54,15 @@ textarea {
   padding:0 0.5em;
   height: auto;
   min-height: 5em;
-  @include themify() {
-    color: getTheme('input-textarea');
-    border: getTheme('input-textarea-border');
-    background: getTheme('input-textarea-bg');
-    }
+  color: $input-textarea;
+  border: $input-textarea-border;
+  background: $input-textarea-bg;
   }
 
 textarea:focus {
-  @include themify() {
-    color: getTheme('input-textarea-focus');
-    border: getTheme('input-textarea-focus-border');
-    background: getTheme('input-textarea-focus-bg');
-    }
+  color: $input-textarea-focus;
+  border: $input-textarea-focus-border;
+  background: $input-textarea-focus-bg;
   }
 
 

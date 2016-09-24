@@ -7,10 +7,9 @@
   background-size: none;
   text-align: center;
   height: $size-xl;
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('hero-bg');
-    }
+  color: $text-basic;
+  background: $hero-bg;
+
   @include media($mobile){
     height: $size-xl;
     }
@@ -18,10 +17,9 @@
 
 .hero-content {
   @include vertical-align;
-  @include themify() {
-    color: getTheme('text-basic');
-    background: getTheme('hero-content-bg');
-    }
+  color: $text-basic;
+  background: $hero-content-bg;
+
   @include media($mobile){
     
     }

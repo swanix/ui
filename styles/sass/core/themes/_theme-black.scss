@@ -1,0 +1,127 @@
+
+// -----------------------------------------------------------
+// BLACK SWAN THEME by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// COLORS
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// General
+// ::::::::::::::::::::::::::::::::::::
+$body-bg:              $black ;
+
+// Texts
+// ::::::::::::::::::::::::::::::::::::
+$text-basic:           $gray3 ;
+$text-heading:         $gray1 ;
+$text-link:            $white ;
+$text-link-hover:      $gray4 ;
+$text-link-visited:    $white ;
+$text-selection:       $gray1 ;
+$text-selection-bg:    $gray7 ;
+// Horizontal rule        
+$hr-color:             $gray8 ;
+$hr-color-bg:          $gray8 ;
+
+// Layout base styles 
+// ::::::::::::::::::::::::::::::::::::
+$layout-bg:            none ;
+$header-bg:            $black ;
+$main-bg:              $black ;
+$footer-bg:            $gray9 ;
+
+// Hero styles 
+// ::::::::::::::::::::::::::::::::::::
+$hero-bg:              $gray9 ;
+$hero-content-bg:      none ;
+
+// Buttons base styles 
+// ::::::::::::::::::::::::::::::::::::
+// Btn
+$btn-text:           $gray2 ;
+$btn-border:         $gray7 solid 1px ;
+$btn-bg:             $gray8 ;
+// Btn hover
+$btn-hover-text:     $white ;
+$btn-hover-border:   $gray6 solid 1px ;
+$btn-hover-bg:       $gray7 ;
+// Btn padding
+$btn-padding:        0.6em 1em ;
+
+// Btn Primary
+$btn-primary-text:           $gray1 ;
+$btn-primary-border:         $white solid 2px ;
+$btn-primary-bg:             $primary ;
+// Btn Primary hover
+$btn-primary-hover-text:     $white ;
+$btn-primary-hover-border:   $white solid 2px ;
+$btn-primary-hover-bg:       $gray8 ;
+
+// Input text and Textarea styles 
+// ::::::::::::::::::::::::::::::::::::
+// Input text (text, password, email)
+$input-text:                $gray2 ;
+$input-text-border:         $gray8 solid 1px ;
+$input-text-bg:             $gray9 ;
+// Input text focus
+$input-text-focus:          $white ;
+$input-text-focus-border:   $gray8 solid 1px ;
+$input-text-focus-bg:       $gray8 ;
+
+// Input textarea
+$input-textarea:                $gray2 ;
+$input-textarea-border:         $gray8 solid 1px ;
+$input-textarea-bg:             $gray9 ;
+// Input textarea focus
+$input-textarea-focus:          $white ;
+$input-textarea-focus-border:   $gray8 solid 1px ;
+$input-textarea-focus-bg:       $gray8 ;
+
+// Select (dropdown) styles
+// ::::::::::::::::::::::::::::::::::::
+$dropdown-text:             $gray1 ;
+$dropdown-border:           $gray5 solid 1px ;
+$dropdown-bg: url(../../images/ic-arrow-down-white.png) right no-repeat $gray9 ;
+
+// List, card, grid and article view styles
+// ::::::::::::::::::::::::::::::::::::  
+// Item
+$view-item-text:                   $gray7 ;
+$view-item-bottom-border:          none ;
+$view-item-image-bg:               none ;
+$view-item-bg:                     $gray9 ;
+// Item hover
+$view-item-hover-text:             $gray7 ;
+$view-item-hover-bottom-border:    none ;
+$view-item-hover-image-bg:         none ;
+$view-item-hover-bg:               $gray8 ;
+
+// Menu styles
+// ::::::::::::::::::::::::::::::::::::
+// Menu Basic
+$navigation-bg:                 none ;
+$menu-bg:                       none ;
+$menu-item-text:                $gray4 ;
+$menu-item-bg:                  $black ;
+$menu-item-hover-text:          $gray2 ;    
+$menu-item-hover-bg:            $gray9 ;
+$menu-item-active-text:         $white ;
+$menu-item-active-bg:           $gray9 ;
+// Menu Mobile
+$menu-mobile-bg:                 $gray9 ;
+$menu-mobile-item-text:          $gray4 ;
+$menu-mobile-item-bg:            $gray9 ;
+$menu-mobile-item-hover-text:    $white ;
+$menu-mobile-item-hover-bg:      $gray5 ;
+$menu-mobile-item-active-text:   $white ;
+$menu-mobile-item-active-bg:     $gray8 ;
+// Menu Mobile hamburger btn
+$menu-mobile-btn-text:         $gray1 ;
+$menu-mobile-btn-bg:           $black ;
+$menu-mobile-btn-border:       1px solid $gray8 ;
+// Menu Mobile fade screen
+$menu-mobile-fade-screen-bg:   $black ;
+$menu-mobile-border:           2px solid $gray8 ;
+
+
