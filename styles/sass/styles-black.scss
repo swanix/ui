@@ -1,8 +1,14 @@
-
 // -----------------------------------------------------------
-// CUSTOM THEME by Sebastian Serna - 2016
+//  CUSTOM THEME by Sebastian Serna - 2015
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "core/abstract/variables";
+
+
+// PALETTE 
+// -----------------------------------------------------------
+
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -124,4 +130,5 @@ $menu-mobile-btn-border:       1px solid $gray8 ;
 $menu-mobile-fade-screen-bg:   $black ;
 $menu-mobile-border:           2px solid $gray8 ;
 
+@import "core/core";
 
