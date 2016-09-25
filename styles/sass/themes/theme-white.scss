@@ -1,8 +1,9 @@
-
 // -----------------------------------------------------------
-// WHITE SWAN THEME by Sebastian Serna - 2016
+//  CUSTOM THEME by Sebastian Serna - 2015
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "../abstract/variables";
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -124,4 +125,8 @@ $menu-mobile-btn-border:       1px solid $gray2 ;
 $menu-mobile-fade-screen-bg:   $black ;
 $menu-mobile-border:           2px solid $gray5 ;
 
+// CORE FILES
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "../theme";
 

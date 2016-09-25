@@ -3,12 +3,7 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-@import "core/abstract/variables";
-
-
-// PALETTE 
-// -----------------------------------------------------------
-
+@import "../abstract/variables";
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -130,5 +125,5 @@ $menu-mobile-btn-border:       1px solid $gray8 ;
 $menu-mobile-fade-screen-bg:   $black ;
 $menu-mobile-border:           2px solid $gray8 ;
 
-@import "core/core";
+@import "../theme";
 
