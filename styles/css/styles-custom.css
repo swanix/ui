@@ -281,7 +281,7 @@ html {
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  background: #FFFFFF;
+  background: black;
 }
 
 html, body {
@@ -301,15 +301,15 @@ main, header, section, footer {
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  color: #595959;
-  background: #FFFFFF;
+  color: #b3b3b3;
+  background: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
   margin: 1em 0 1em 0;
-  color: #333333;
+  color: #f2f2f2;
 }
 
 h1 {
@@ -323,23 +323,23 @@ p {
   font-size: 0.9em;
   margin: 0;
   padding-bottom: 1.5em;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 a {
   text-decoration: none;
-  color: #262626;
+  color: #FFFFFF;
 }
 
 a:hover {
   text-decoration: none;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #4d4d4d;
+  color: #999999;
 }
 
 a:visited {
-  color: #262626;
+  color: #FFFFFF;
 }
 
 li {
@@ -396,37 +396,37 @@ pre {
 hr {
   border: 0;
   height: 1px;
-  color: #b3b3b3;
-  background-color: #b3b3b3;
+  color: #333333;
+  background-color: #333333;
 }
 
 label {
   display: inline-block;
   margin-bottom: 0.3em;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 optgroup, option {
-  color: #595959;
+  color: #b3b3b3;
 }
 
 input [type="checkbox"] {
-  color: #595959;
+  color: #b3b3b3;
 }
 
 ::-moz-selection {
-  color: #595959;
-  background: #e6e6e6;
+  color: #f2f2f2;
+  background: #4d4d4d;
 }
 
 ::selection {
-  color: #595959;
-  background: #e6e6e6;
+  color: #f2f2f2;
+  background: #4d4d4d;
 }
 
 ::-moz-selection {
-  color: #595959;
-  background: #e6e6e6;
+  color: #f2f2f2;
+  background: #4d4d4d;
 }
 
 img {
@@ -473,7 +473,7 @@ td {
   overflow: auto;
   min-height: 100%;
   position: relative;
-  color: #595959;
+  color: #b3b3b3;
   background: none;
 }
 
@@ -482,8 +482,8 @@ td {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  color: #595959;
-  background: #f2f2f2;
+  color: #b3b3b3;
+  background: black;
 }
 
 .layout-header:last-child {
@@ -496,8 +496,8 @@ td {
   margin-right: 2.35765%;
   width: 100%;
   padding-bottom: 9em;
-  color: #595959;
-  background: #FFFFFF;
+  color: #b3b3b3;
+  background: black;
 }
 
 .layout-main:last-child {
@@ -515,8 +515,8 @@ td {
   width: 100%;
   padding: 1.875em 0.625em;
   height: 9em;
-  color: #595959;
-  background: #f2f2f2;
+  color: #b3b3b3;
+  background: #262626;
 }
 
 .layout-footer:last-child {
@@ -562,9 +562,9 @@ input[type="submit"] {
   -webkit-transition: .2s;
   transition: .2s;
   padding: 0.6em 1em;
-  color: #4d4d4d;
-  border: #e6e6e6 solid 1px;
-  background: #f2f2f2;
+  color: #e6e6e6;
+  border: #4d4d4d solid 1px;
+  background: #333333;
 }
 
 input[type="submit"]:hover {
@@ -572,9 +572,9 @@ input[type="submit"]:hover {
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #595959 solid 1px;
+  background: #4d4d4d;
 }
 
 input[type="reset"] {
@@ -583,9 +583,9 @@ input[type="reset"] {
   -webkit-transition: .2s;
   transition: .2s;
   padding: 0.6em 1em;
-  color: #4d4d4d;
-  border: #e6e6e6 solid 1px;
-  background: #f2f2f2;
+  color: #e6e6e6;
+  border: #4d4d4d solid 1px;
+  background: #333333;
 }
 
 input[type="reset"]:hover {
@@ -593,9 +593,9 @@ input[type="reset"]:hover {
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #595959 solid 1px;
+  background: #4d4d4d;
 }
 
 button {
@@ -603,18 +603,18 @@ button {
   -webkit-transition: .2s;
   transition: .2s;
   padding: 0.6em 1em;
-  color: #4d4d4d;
-  border: #e6e6e6 solid 1px;
-  background: #f2f2f2;
+  color: #e6e6e6;
+  border: #4d4d4d solid 1px;
+  background: #333333;
 }
 
 button:hover {
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #595959 solid 1px;
+  background: #4d4d4d;
 }
 
 .button {
@@ -623,26 +623,26 @@ button:hover {
   transition: .2s;
   display: inline-block;
   padding: 0.6em 1em;
-  color: #4d4d4d;
-  border: #e6e6e6 solid 1px;
-  background: #f2f2f2;
+  color: #e6e6e6;
+  border: #4d4d4d solid 1px;
+  background: #333333;
 }
 
 .button:hover {
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #595959 solid 1px;
+  background: #4d4d4d;
 }
 
 .button a:visited {
-  color: #4d4d4d;
+  color: #e6e6e6;
 }
 
 .button a {
-  color: #4d4d4d;
+  color: #e6e6e6;
 }
 
 .primary {
@@ -710,17 +710,17 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #333333;
+  color: #f2f2f2;
   border: gray solid 1px;
-  background: url(../../images/ic-arrow-down.png) right no-repeat #f2f2f2;
+  background: url(../../images/ic-arrow-down-white.png) right no-repeat #262626;
 }
 
 select option {
-  color: #333333;
+  color: #f2f2f2;
 }
 
 select optgroup {
-  color: #333333;
+  color: #f2f2f2;
 }
 
 input[type="text"] {
@@ -728,9 +728,9 @@ input[type="text"] {
   height: 2em;
   font-size: 1em;
   padding: 0 0.5em;
-  color: #595959;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #e6e6e6;
+  border: #333333 solid 1px;
+  background: #262626;
 }
 
 input[type="password"] {
@@ -739,9 +739,9 @@ input[type="password"] {
   font-size: 1em;
   padding: 0 0.5em;
   letter-spacing: 3px;
-  color: #595959;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #e6e6e6;
+  border: #333333 solid 1px;
+  background: #262626;
 }
 
 input[type="email"] {
@@ -749,15 +749,15 @@ input[type="email"] {
   height: 2em;
   font-size: 1em;
   padding: 0 0.5em;
-  color: #595959;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #e6e6e6;
+  border: #333333 solid 1px;
+  background: #262626;
 }
 
 input:focus {
-  color: #4d4d4d;
-  border: gray solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #333333 solid 1px;
+  background: #333333;
 }
 
 textarea {
@@ -766,15 +766,15 @@ textarea {
   padding: 0 0.5em;
   height: auto;
   min-height: 5em;
-  color: #595959;
-  border: #b3b3b3 solid 1px;
-  background: #FFFFFF;
+  color: #e6e6e6;
+  border: #333333 solid 1px;
+  background: #262626;
 }
 
 textarea:focus {
-  color: #4d4d4d;
-  border: gray solid 1px;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  border: #333333 solid 1px;
+  background: #333333;
 }
 
 .navigation {
@@ -864,22 +864,22 @@ textarea:focus {
   float: left;
   text-decoration: none;
   padding: 1em 1.5em;
-  color: #595959;
-  background: #f2f2f2;
+  color: #999999;
+  background: black;
 }
 
 .menu ul li a:visited {
-  color: #595959;
+  color: #999999;
 }
 
 .menu ul li a:hover {
-  color: #262626;
-  background: #e6e6e6;
+  color: #e6e6e6;
+  background: #262626;
 }
 
 .menu ul li a.active {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #262626;
 }
 
 .menu-mobile {
@@ -895,8 +895,8 @@ textarea:focus {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
-  border-left: 2px solid gray;
-  background: #f2f2f2;
+  border-left: 2px solid #333333;
+  background: #262626;
 }
 
 .menu-mobile.is-visible {
@@ -941,18 +941,18 @@ textarea:focus {
   float: left;
   text-decoration: none;
   padding: 1em 2em;
-  color: #595959;
-  background: #f2f2f2;
+  color: #999999;
+  background: #262626;
 }
 
 .menu-mobile ul li a:hover {
-  color: #262626;
-  background: #e6e6e6;
+  color: #e6e6e6;
+  background: #262626;
 }
 
 .menu-mobile ul li a.active {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #262626;
 }
 
 .menu-mobile-open {
@@ -966,9 +966,9 @@ textarea:focus {
     width: 50px;
     height: 50px;
     text-align: center;
-    border: 1px solid #e6e6e6;
-    color: #262626;
-    background: #FFFFFF;
+    border: 1px solid #333333;
+    color: #f2f2f2;
+    background: black;
   }
 }
 
@@ -976,8 +976,8 @@ textarea:focus {
   background-size: none;
   text-align: center;
   height: 32em;
-  color: #595959;
-  background: #e6e6e6;
+  color: #b3b3b3;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -991,7 +991,7 @@ textarea:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #595959;
+  color: #b3b3b3;
   background: none;
 }
 
@@ -1027,7 +1027,7 @@ textarea:focus {
           align-items: flex-start;
   color: #4d4d4d;
   border-bottom: none;
-  background: #f2f2f2;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1049,7 +1049,7 @@ textarea:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 .listview-item-body h3 {
@@ -1073,9 +1073,9 @@ textarea:focus {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
+  color: #4d4d4d;
   border-bottom: none;
-  background: #fafafa;
+  background: #333333;
 }
 
 .listview li {
@@ -1158,7 +1158,7 @@ ul.listview {
   margin-bottom: 1.2em;
   color: #4d4d4d;
   border-bottom: none;
-  background: #f2f2f2;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1177,7 +1177,7 @@ ul.listview {
 
 .cardview-item-body {
   padding: 1em;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 @media screen and (max-width: 768px) {
@@ -1209,9 +1209,9 @@ ul.listview {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
+  color: #4d4d4d;
   border-bottom: none;
-  background: #fafafa;
+  background: #333333;
 }
 
 .gridview {
@@ -1235,7 +1235,7 @@ ul.listview {
   margin-bottom: 0.5em;
   color: #4d4d4d;
   border-bottom: none;
-  background: #f2f2f2;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1254,7 +1254,7 @@ ul.listview {
 
 .gridview-item-body {
   padding: 1em;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 @media screen and (max-width: 768px) {
@@ -1286,9 +1286,9 @@ ul.listview {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #262626;
+  color: #4d4d4d;
   border-bottom: none;
-  background: #fafafa;
+  background: #333333;
 }
 
 .articleview {
@@ -1316,7 +1316,7 @@ ul.listview {
   margin-bottom: 1.2em;
   color: #4d4d4d;
   border-bottom: none;
-  background: #f2f2f2;
+  background: #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -1341,7 +1341,7 @@ ul.listview {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #595959;
+  color: #b3b3b3;
 }
 
 .articleview-item-text {
