@@ -43,7 +43,7 @@ gulp.task ('sass' , function() {
     	.pipe(autoprefixer())
 	    .pipe(gulp.dest(output))
       .pipe(minifyCSS())
-      .pipe(rename('styles.min.css'))
+      .pipe(rename('theme.min.css'))
       .pipe(gulp.dest(output))
       .pipe(browserSync.stream());
 });
