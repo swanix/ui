@@ -1,5 +1,5 @@
 // -----------------------------------------------------------
-// CORE PACKAGE
+// SWAN CORE PACKAGE
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -13,13 +13,15 @@
 @import "abstract/variables";
 @import "abstract/mixins";
 
-// Themes
-
 // Base components
 @import "base/body";
 @import "base/text";
 @import "base/multimedia";
 @import "base/tables";
+// Classes & helpers
+@import "base/classes";
+// Temporal
+@import "base/shame";
 
 // Layout
 @import "layout/layout";
@@ -44,8 +46,5 @@
 @import "patterns/gridview";
 @import "patterns/articleview";
 
-// Classes & helpers
-@import "base/classes";
 
-// Temporal
-@import "base/shame";
+
