@@ -19,8 +19,8 @@
 <body>
 <div class="layout">
     <!-- Layout Header :::::::::::::::::::: -->
-    <header class="layout-header">
-      <div class="navigation centered">
+    <header class="layout-header section fixed-top">
+      <div class="section-content">
         <!-- Logo -->
         <a class="logo" href="index.html"><img src="images/logo-white.png" alt=""></a>
         <nav id="menu-main" class="menu" role="navigation">
@@ -32,6 +32,7 @@
             <li><a href="layouts/controls.html">Controls</a></li>
             <li><a href="layouts/patterns.html">Patterns</a></li>
             <li><a href="layouts/color.html">Color</a></li>
+            <li><a href="layouts/tmp/general.html">TMP</a></li>
           </ul>
         </nav>         
         <button type="button" class="menu-mobile-open">☰</button> 
@@ -40,16 +41,25 @@
     </header>
     <!-- Layout Main Content :::::::::::::::::::: -->
     <main class="layout-main" role="main">
-        <header class="hero">
-            <div class="hero-content">
+      <!-- Section 1 :::::::::::::::::::::::::::: -->
+      <section class="section">
+        <div class="section-content-full">
+          <!-- Hero :::::::::::::::::::: -->
+          <header class="hero">
+              <div class="hero-content">
               <a href="index.html"><img src="images/logo-app.png" alt=""></a>
               <h2>Experimental UI Framework</h2>
               <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
               <a href="javascript:void(0)" class="button primary">Download</a>
             </div>
-        </header>
-        <section class="centered pad-top">
-          <!-- Start Article View (Portrait) :::::::::::::::::::: -->
+          </header>
+        </div>
+      </section>
+
+      <!-- Section 2 :::::::::::::::::::::::::::: -->
+      <section class="section">
+        <div class="section-content">
+        <!-- Start Article View (Portrait) :::::::::::::::::::: -->
           <section class="articleview">
             <!-- Article View item -->
             <article class="articleview-item">
@@ -95,7 +105,11 @@
             </article>
           </section>
           <!-- End Article View (Portrait) :::::::::::::::::::: --> 
-        </section>
+        </div>
+      </section>
+
+
+
     </main>
     <!-- Layout Footer :::::::::::::::::::: -->
     <footer class="layout-footer">

@@ -21,26 +21,30 @@
 
 // BG COLOR CLASSES 
 
-.bg-white   { background:   $white; color: $gray6; } // White (HTML color: white)
-.bg-gray1   { background:   $gray1; color: $gray6; }
-.bg-gray2   { background:   $gray2; color: $gray6; }
-.bg-gray3   { background:   $gray3; color: $gray6; }
-.bg-gray4   { background:   $gray4; color: $white; }
-.bg-gray5   { background:   $gray5; color: $white; } // Gray medium (HTML color: gray)
-.bg-gray6   { background:   $gray6; color: $white; }
-.bg-gray7   { background:   $gray7; color: $white; }
-.bg-gray8   { background:   $gray8; color: $white; }
-.bg-gray9   { background:   $gray9; color: $white; }
-.bg-black   { background:   $black; color: $white; } // Black (HTML color: black)
+.bg-white   { background:   $white !important; color: $gray6; } // White (HTML color: white)
+.bg-gray1   { background:   $gray1 !important; color: $gray6; }
+.bg-gray2   { background:   $gray2 !important; color: $gray6; }
+.bg-gray3   { background:   $gray3 !important; color: $gray6; }
+.bg-gray4   { background:   $gray4 !important; color: $white; }
+.bg-gray5   { background:   $gray5 !important; color: $white; } // Gray medium (HTML color: gray)
+.bg-gray6   { background:   $gray6 !important; color: $white; }
+.bg-gray7   { background:   $gray7 !important; color: $white; }
+.bg-gray8   { background:   $gray8 !important; color: $white; }
+.bg-gray9   { background:   $gray9 !important; color: $white; }
+.bg-black   { background:   $black !important; color: $white; } // Black (HTML color: black)
 
 
 // Dimensions classes
 
-.size-xs    {  height: $size-xs; }
-.size-s     {  height: $size-s; }
-.size-m     {  height: $size-m; }
-.size-l     {  height: $size-l; }
-.size-xl    {  height: $size-xl; }
-.size-xxl   {  height: $size-xxl; }
+.size-xs    {  height: $size-xs   !important; }
+.size-s     {  height: $size-s    !important; }
+.size-m     {  height: $size-m    !important; }
+.size-l     {  height: $size-l    !important; }
+.size-xl    {  height: $size-xl   !important; }
+.size-xxl   {  height: $size-xxl  !important; }
 
+
+.hide {
+    display: none;
+}
 

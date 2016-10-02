@@ -1,9 +1,9 @@
 // -----------------------------------------------------------
-// BASE LAYOUT
+//  LAYOUT MANAGER
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Containers
+// Master Containers
 
 .layout {
 	overflow: auto;
@@ -11,6 +11,7 @@
   position: relative; // Afecta la posición del footer
   color: $text-basic;
   background: $layout-bg;
+  padding-top: 3em;
 }
 
 // Header section
@@ -30,6 +31,7 @@
   background: $main-bg;
 }
 
+
 // Footer section
 
 .layout-footer {
@@ -44,21 +46,106 @@
   background: $footer-bg;
 }
 
-// Other classes
 
-.centered {
+// Generic classes
+
+.section {
+  overflow: auto;
+}
+
+.section-content {
   @include outer-container(980px);
-  @include media($mobile){ 
+}
+
+.section-content-full {
+  @include outer-container(100%);
+}
+
+.content {
+  @include span-columns(8);
+  color: $text-basic;
+  background: $gray8;
+  @include media($mobile){
+    @include span-columns(12 of 12); 
     }
 }
+
+.content-full {
+  @include span-columns(12);
+  color: $text-basic;
+  background: $gray8;
+}
+
+.sidebar {
+  @include span-columns(4);
+  color: $text-basic;
+  background: $gray7;
+  @include media($mobile){
+    @include span-columns(12 of 12); 
+    }
+}
+
+
+// Columns classes
+
+.col1  { @include span-columns(1); }
+.col2  { @include span-columns(2); }
+.col3  { @include span-columns(3); }
+.col4  { @include span-columns(4); }
+.col5  { @include span-columns(5); }
+.col6  { @include span-columns(6); }
+.col7  { @include span-columns(7); }
+.col8  { @include span-columns(8); }
+.col9  { @include span-columns(9); }
+.col10 { @include span-columns(10); }
+.col11 { @include span-columns(11); }
+.col12 { @include span-columns(12); }
+
+
+// Fixed positions
+
+.fixed-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;    
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 20;    
+}
+
+.fixed-left {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.fixed-right {
+    position: fixed;
+    right: 0;
+    z-index: 20;   
+}
+
+
+// Gaps when layout elements are fixed (improve soon)
+
+.gap-top    { margin-top: $width-sidebar-tiny ; }
+.gap-left   { padding-left: $width-sidebar-tiny; }
+.gap-right  { padding-right: $width-sidebar-tiny ; }
+.gap-bottom { margin-bottom: $width-sidebar-tiny ; }
+
+// Modifier classes
 
 .heading {
   padding-top: 1em; 
   padding-bottom: 0.5em; 
+  padding-left: 2em;
   @include media($mobile){
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 0.2em;   
     }
 }
-
