@@ -11,6 +11,7 @@
   position: relative; // Afecta la posición del footer
   color: $text-basic;
   background: $layout-bg;
+  padding-top: 3em;
 }
 
 // Header section
@@ -63,7 +64,7 @@
 .content {
   @include span-columns(8);
   color: $text-basic;
-  background: $gray9;
+  background: $gray8;
   @include media($mobile){
     @include span-columns(12 of 12); 
     }
@@ -72,13 +73,13 @@
 .content-full {
   @include span-columns(12);
   color: $text-basic;
-  background: $gray9;
+  background: $gray8;
 }
 
 .sidebar {
   @include span-columns(4);
   color: $text-basic;
-  background: $gray8;
+  background: $gray7;
   @include media($mobile){
     @include span-columns(12 of 12); 
     }

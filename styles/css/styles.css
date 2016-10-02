@@ -701,6 +701,7 @@ td {
   position: relative;
   color: #b3b3b3;
   background: none;
+  padding-top: 3em;
 }
 
 .layout-header {
@@ -783,7 +784,7 @@ td {
   margin-right: 0%;
   width: 66.66667%;
   color: #b3b3b3;
-  background: #262626;
+  background: #333333;
 }
 
 .content:last-child {
@@ -808,7 +809,7 @@ td {
   margin-right: 0%;
   width: 100%;
   color: #b3b3b3;
-  background: #262626;
+  background: #333333;
 }
 
 .content-full:last-child {
@@ -821,7 +822,7 @@ td {
   margin-right: 0%;
   width: 33.33333%;
   color: #b3b3b3;
-  background: #333333;
+  background: #4d4d4d;
 }
 
 .sidebar:last-child {
@@ -1383,6 +1384,7 @@ textarea:focus {
   transition: all 0.2s linear;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  z-index: 9999;
 }
 
 .menu-mobile-fade-screen {
@@ -1404,6 +1406,7 @@ textarea:focus {
   transition: all 0.2s linear;
   opacity: 0.4;
   visibility: visible;
+  z-index: 9999;
 }
 
 .menu-mobile ul {

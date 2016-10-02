@@ -94,6 +94,7 @@
   &.is-visible {
     @include transition(all 0.20s linear);
     @include transform(translateX(0));
+    z-index: 9999;
     }
 }
 
@@ -110,6 +111,7 @@
     @include transition(all 0.20s linear);
     opacity: 0.4;
     visibility: visible;
+    z-index: 9999;
   }
 }
 
