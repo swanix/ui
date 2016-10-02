@@ -87,7 +87,7 @@
   // @include transition(all 0.20s linear); Revisar efecto
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999;
+  z-index: 999999 !important;
   border-left: $menu-mobile-border;
   background: $menu-mobile-bg;
 

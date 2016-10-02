@@ -223,6 +223,48 @@ html {
   box-sizing: inherit;
 }
 
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #d4d4d4 0, #d4d4d4 8.33333%, transparent 8.33333%, transparent 8.33333%, #d4d4d4 8.33333%, #d4d4d4 16.66667%, transparent 16.66667%, transparent 16.66667%, #d4d4d4 16.66667%, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 33.33333%, transparent 33.33333%, transparent 33.33333%, #d4d4d4 33.33333%, #d4d4d4 41.66667%, transparent 41.66667%, transparent 41.66667%, #d4d4d4 41.66667%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 58.33333%, transparent 58.33333%, transparent 58.33333%, #d4d4d4 58.33333%, #d4d4d4 66.66667%, transparent 66.66667%, transparent 66.66667%, #d4d4d4 66.66667%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 83.33333%, transparent 83.33333%, transparent 83.33333%, #d4d4d4 83.33333%, #d4d4d4 91.66667%, transparent 91.66667%, transparent 91.66667%, #d4d4d4 91.66667%, #d4d4d4 100%, transparent 100%);
+  background-image: -webkit-linear-gradient(right, transparent 0, #d4d4d4 0, #d4d4d4 8.33333%, transparent 8.33333%, transparent 8.33333%, #d4d4d4 8.33333%, #d4d4d4 16.66667%, transparent 16.66667%, transparent 16.66667%, #d4d4d4 16.66667%, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 33.33333%, transparent 33.33333%, transparent 33.33333%, #d4d4d4 33.33333%, #d4d4d4 41.66667%, transparent 41.66667%, transparent 41.66667%, #d4d4d4 41.66667%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 58.33333%, transparent 58.33333%, transparent 58.33333%, #d4d4d4 58.33333%, #d4d4d4 66.66667%, transparent 66.66667%, transparent 66.66667%, #d4d4d4 66.66667%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 83.33333%, transparent 83.33333%, transparent 83.33333%, #d4d4d4 83.33333%, #d4d4d4 91.66667%, transparent 91.66667%, transparent 91.66667%, #d4d4d4 91.66667%, #d4d4d4 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #d4d4d4 0, #d4d4d4 8.33333%, transparent 8.33333%, transparent 8.33333%, #d4d4d4 8.33333%, #d4d4d4 16.66667%, transparent 16.66667%, transparent 16.66667%, #d4d4d4 16.66667%, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 33.33333%, transparent 33.33333%, transparent 33.33333%, #d4d4d4 33.33333%, #d4d4d4 41.66667%, transparent 41.66667%, transparent 41.66667%, #d4d4d4 41.66667%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 58.33333%, transparent 58.33333%, transparent 58.33333%, #d4d4d4 58.33333%, #d4d4d4 66.66667%, transparent 66.66667%, transparent 66.66667%, #d4d4d4 66.66667%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 83.33333%, transparent 83.33333%, transparent 83.33333%, #d4d4d4 83.33333%, #d4d4d4 91.66667%, transparent 91.66667%, transparent 91.66667%, #d4d4d4 91.66667%, #d4d4d4 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0.3;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d4d4d4 0, #d4d4d4 25%, transparent 25%, transparent 25%, #d4d4d4 25%, #d4d4d4 50%, transparent 50%, transparent 50%, #d4d4d4 50%, #d4d4d4 75%, transparent 75%, transparent 75%, #d4d4d4 75%, #d4d4d4 100%, transparent 100%);
+  }
+}
+
 .nano {
   position: relative;
   width: 100%;
@@ -514,82 +556,86 @@ td {
 }
 
 .bg-white {
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   color: #595959;
 }
 
 .bg-gray1 {
-  background: #f2f2f2;
+  background: #f2f2f2 !important;
   color: #595959;
 }
 
 .bg-gray2 {
-  background: #e6e6e6;
+  background: #e6e6e6 !important;
   color: #595959;
 }
 
 .bg-gray3 {
-  background: #b3b3b3;
+  background: #b3b3b3 !important;
   color: #595959;
 }
 
 .bg-gray4 {
-  background: #999999;
+  background: #999999 !important;
   color: #FFFFFF;
 }
 
 .bg-gray5 {
-  background: gray;
+  background: gray !important;
   color: #FFFFFF;
 }
 
 .bg-gray6 {
-  background: #595959;
+  background: #595959 !important;
   color: #FFFFFF;
 }
 
 .bg-gray7 {
-  background: #4d4d4d;
+  background: #4d4d4d !important;
   color: #FFFFFF;
 }
 
 .bg-gray8 {
-  background: #333333;
+  background: #333333 !important;
   color: #FFFFFF;
 }
 
 .bg-gray9 {
-  background: #262626;
+  background: #262626 !important;
   color: #FFFFFF;
 }
 
 .bg-black {
-  background: black;
+  background: black !important;
   color: #FFFFFF;
 }
 
 .size-xs {
-  height: 3em;
+  height: 3em !important;
 }
 
 .size-s {
-  height: 5em;
+  height: 5em !important;
 }
 
 .size-m {
-  height: 9em;
+  height: 9em !important;
 }
 
 .size-l {
-  height: 22em;
+  height: 22em !important;
 }
 
 .size-xl {
-  height: 32em;
+  height: 32em !important;
 }
 
 .size-xxl {
-  height: 45em;
+  height: 45em !important;
+}
+
+.hide {
+  display: none;
 }
 
 .themeselect {
@@ -660,7 +706,7 @@ td {
 .layout-header {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 0%;
   width: 100%;
   color: #b3b3b3;
   background: black;
@@ -673,7 +719,7 @@ td {
 .layout-main {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 0%;
   width: 100%;
   padding-bottom: 9em;
   color: #b3b3b3;
@@ -687,7 +733,7 @@ td {
 .layout-footer {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 0%;
   width: 100%;
   text-align: center;
   position: absolute;
@@ -703,21 +749,274 @@ td {
   margin-right: 0;
 }
 
-.centered {
+.section {
+  overflow: auto;
+}
+
+.section-content {
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.centered::after {
+.section-content::after {
   clear: both;
   content: "";
   display: block;
 }
 
+.section-content-full {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-content-full::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.content {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.66667%;
+  color: #b3b3b3;
+  background: #262626;
+}
+
+.content:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .content:last-child {
+    margin-right: 0;
+  }
+}
+
+.content-full {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+  color: #b3b3b3;
+  background: #262626;
+}
+
+.content-full:last-child {
+  margin-right: 0;
+}
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%;
+  color: #b3b3b3;
+  background: #333333;
+}
+
+.sidebar:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .sidebar:last-child {
+    margin-right: 0;
+  }
+}
+
+.col1 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 8.33333%;
+}
+
+.col1:last-child {
+  margin-right: 0;
+}
+
+.col2 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%;
+}
+
+.col2:last-child {
+  margin-right: 0;
+}
+
+.col3 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+}
+
+.col3:last-child {
+  margin-right: 0;
+}
+
+.col4 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%;
+}
+
+.col4:last-child {
+  margin-right: 0;
+}
+
+.col5 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 41.66667%;
+}
+
+.col5:last-child {
+  margin-right: 0;
+}
+
+.col6 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 50%;
+}
+
+.col6:last-child {
+  margin-right: 0;
+}
+
+.col7 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 58.33333%;
+}
+
+.col7:last-child {
+  margin-right: 0;
+}
+
+.col8 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.66667%;
+}
+
+.col8:last-child {
+  margin-right: 0;
+}
+
+.col9 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 75%;
+}
+
+.col9:last-child {
+  margin-right: 0;
+}
+
+.col10 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 83.33333%;
+}
+
+.col10:last-child {
+  margin-right: 0;
+}
+
+.col11 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 91.66667%;
+}
+
+.col11:last-child {
+  margin-right: 0;
+}
+
+.col12 {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.col12:last-child {
+  margin-right: 0;
+}
+
+.fixed-top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+
+.fixed-left {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.fixed-right {
+  position: fixed;
+  right: 0;
+  z-index: 20;
+}
+
+.gap-top {
+  margin-top: 4em;
+}
+
+.gap-left {
+  padding-left: 4em;
+}
+
+.gap-right {
+  padding-right: 4em;
+}
+
+.gap-bottom {
+  margin-bottom: 4em;
+}
+
 .heading {
   padding-top: 1em;
   padding-bottom: 0.5em;
+  padding-left: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -966,8 +1265,8 @@ textarea:focus {
 .logo {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
+  margin-right: 0%;
+  width: 25%;
 }
 
 .logo:last-child {
@@ -978,8 +1277,8 @@ textarea:focus {
   .logo {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
+    margin-right: 0%;
+    width: 41.66667%;
   }
   .logo:last-child {
     margin-right: 0;
@@ -1001,8 +1300,8 @@ textarea:focus {
 .menu {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%;
+  margin-right: 0%;
+  width: 75%;
   margin-right: 0;
   padding-right: 1.25em;
   background: none;
@@ -1074,7 +1373,7 @@ textarea:focus {
   transform: translateX(15.625em);
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999;
+  z-index: 999999 !important;
   border-left: 2px solid #333333;
   background: #262626;
 }

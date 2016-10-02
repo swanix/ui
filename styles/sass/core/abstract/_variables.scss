@@ -4,6 +4,18 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+@import "../vendor/neat/neat-helpers"; 
+
+// Visual Grid
+$visual-grid: true;
+$visual-grid-color: #d4d4d4;
+$visual-grid-opacity: 0.3;
+
+// Initial Grid Settings
+$max-width: 100%;
+$grid-columns: 12;
+$gutter:  0em ;
+
 
 // ::::: Breakpoints
 
@@ -15,7 +27,6 @@ $large-screen: 50em !default;
 
 $border-box-sizing: true !default;
 
-$layout-border: none; // Development purposes only
 
 // DIMENS
 
@@ -56,7 +67,7 @@ $gray8:             darken($white, 80%); // #333333
 $gray9:             darken($white, 85%); // #1A1A1A
 $black:             darken($white, 100%); // Black (HTML color: black) #000000
 
-$primary:           #000000 !default; // Bluemarine
+$primary:           #000000 !default; // Black
 
 // COLORS
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
