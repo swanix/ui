@@ -1,14 +1,15 @@
 // -----------------------------------------------------------
-// MENU HORIZONTAL by Sebastian Serna - 2016
+// MENU by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-.navigation {
-  overflow: auto;
-  //text-transform: uppercase;
-  font-size: 0.9em;
+
+#menu-main nav.menu-mobile  {
+  text-transform: uppercase;
+  //font-size: 0.9em;
   background: $navigation-bg;
+
 }
 
 
@@ -87,14 +88,14 @@
   // @include transition(all 0.20s linear); Revisar efecto
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999 !important;
+  z-index: 999999;
   border-left: $menu-mobile-border;
   background: $menu-mobile-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
     @include transform(translateX(0));
-    z-index: 9999;
+    z-index: 99999;
     }
 }
 
@@ -103,15 +104,12 @@
   @include transition;
   opacity: 0;
   visibility: hidden;
-  z-index: 9999;
-
   background: $menu-mobile-fade-screen-bg;
 
   &.is-visible {
     @include transition(all 0.20s linear);
     opacity: 0.4;
     visibility: visible;
-    z-index: 9999;
   }
 }
 
