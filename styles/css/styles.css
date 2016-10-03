@@ -701,7 +701,6 @@ td {
   position: relative;
   color: #b3b3b3;
   background: none;
-  padding-top: 3em;
 }
 
 .layout-header {
@@ -743,7 +742,7 @@ td {
   padding: 1.875em 0.625em;
   height: 9em;
   color: #b3b3b3;
-  background: #262626;
+  background: black;
 }
 
 .layout-footer:last-child {
@@ -751,7 +750,13 @@ td {
 }
 
 .section {
-  overflow: auto;
+  display: block;
+}
+
+.section::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .section-content {
@@ -971,6 +976,22 @@ td {
 
 .col12:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .col1, .col2, .col3, .col4,
+  .col5, .col6, .col7, .col8,
+  .col9, .col10, .col11, .col12 {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .col1:last-child, .col2:last-child, .col3:last-child, .col4:last-child,
+  .col5:last-child, .col6:last-child, .col7:last-child, .col8:last-child,
+  .col9:last-child, .col10:last-child, .col11:last-child, .col12:last-child {
+    margin-right: 0;
+  }
 }
 
 .fixed-top {
@@ -1257,9 +1278,8 @@ textarea:focus {
   background: #333333;
 }
 
-.navigation {
-  overflow: auto;
-  font-size: 0.9em;
+#menu-main nav.menu-mobile {
+  text-transform: uppercase;
   background: none;
 }
 
@@ -1374,7 +1394,7 @@ textarea:focus {
   transform: translateX(15.625em);
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  z-index: 999999 !important;
+  z-index: 999999;
   border-left: 2px solid #333333;
   background: #262626;
 }
@@ -1384,7 +1404,7 @@ textarea:focus {
   transition: all 0.2s linear;
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .menu-mobile-fade-screen {
@@ -1397,7 +1417,6 @@ textarea:focus {
   transition: all 0.15s ease-out 0s;
   opacity: 0;
   visibility: hidden;
-  z-index: 9999;
   background: black;
 }
 
@@ -1406,7 +1425,6 @@ textarea:focus {
   transition: all 0.2s linear;
   opacity: 0.4;
   visibility: visible;
-  z-index: 9999;
 }
 
 .menu-mobile ul {
