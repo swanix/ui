@@ -29,6 +29,7 @@
   padding-bottom: $footer-size; // Afecta la posición del footer
   color: $text-basic;
   background: $main-bg;
+  height: 100%;
 }
 
 
@@ -148,15 +149,16 @@
 .gap-right  { padding-right: $width-sidebar-tiny ; }
 .gap-bottom { margin-bottom: $width-sidebar-tiny ; }
 
-// Modifier classes
 
-.heading {
-  padding-top: 1em; 
-  padding-bottom: 0.5em; 
-  padding-left: 2em;
+// Padding
+
+.pad {
+ padding: 1em 2em;
   @include media($mobile){
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.2em;   
+    padding: 0.5em 1em;
     }
+}
+
+.gap-bottom {
+  margin-bottom: 1em;
 }

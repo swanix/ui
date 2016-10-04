@@ -4,15 +4,6 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-
-#menu-main nav.menu-mobile  {
-  text-transform: uppercase;
-  //font-size: 0.9em;
-  background: $navigation-bg;
-
-}
-
-
 .logo {
   @include span-columns(3 of 12);
   @include media($mobile){
@@ -32,7 +23,6 @@
 .menu {
   @include span-columns(9 of 12);
   @include omega();
-  padding-right:em(20);
   background: $menu-bg;
   @include media($mobile){
     display: none;
@@ -105,6 +95,7 @@
   opacity: 0;
   visibility: hidden;
   background: $menu-mobile-fade-screen-bg;
+  z-index: 88888;
 
   &.is-visible {
     @include transition(all 0.20s linear);

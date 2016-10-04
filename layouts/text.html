@@ -32,7 +32,7 @@
             <li><a href="controls.html">Controls</a></li>
             <li><a href="patterns.html">Patterns</a></li>
             <li><a href="color.html">Color</a></li>
-            <li><a href="tmp/general.html">TMP</a></li>
+            <li><a href="tmp/">Templates</a></li>
           </ul>
         </nav>         
         <button type="button" class="menu-mobile-open">☰</button> 
@@ -41,111 +41,113 @@
     </header>
     <!-- Layout Main Content :::::::::::::::::::: -->
     <main class="layout-main" role="main">
-        <header class="hero size-m">
+        <header class="hero size-l bg-gray8">
             <div class="hero-content">
               <h1>Text</h1>
             </div>
         </header>
-        <article class="section-content">
+        <section class="section">
+          <div class="section-content pad bg-gray9">
 
-          <h2 class="heading">Headings</h2>
+            <h2 class="heading">Headings</h2>
+            <hr>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <h2>Paragraph</h2>
+            <p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+            <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+            <h2>List Types</h2>
+            <h3>Definition List</h3>
+            <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+            </dl>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+
+          <h2>Tables</h2>
           <hr>
 
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
+          <table>
+              <caption>This is the caption of the table</caption>
+              <tbody>
+                  <tr>
+                      <th>Table Head 1</th>
+                      <th>Table Head 2</th>
+                      <th>Table Head 3</th>
+                  </tr>
+                  <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                  </tr>
+                  <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                  </tr>
+                  <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                  </tr>
+              </tbody>
+          </table>
 
-          <h2>Paragraph</h2>
-          <p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-          <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+          <h2>Misc Stuff &ndash; abbr, pre, code, sub, sup, etc.</h2>
+          <hr>
+          <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
-          <h2>List Types</h2>
-          <h3>Definition List</h3>
-          <dl>
-              <dt>Definition List Title</dt>
-              <dd>This is a definition list division.</dd>
-          </dl>
-          <h3>Ordered List</h3>
-          <ol>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-          </ol>
-          <h3>Unordered List</h3>
-          <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-          </ul>
+          <pre>
+          Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit.
+          Nullam dignissim convallis est.
+          Quisque aliquam. Donec faucibus. 
+          Nunc iaculis suscipit dui. 
+          Nam sit amet sem. 
+          Aliquam libero nisi, imperdiet at,
+          tincidunt nec, gravida vehicula,
+          nisl. 
+          Praesent mattis, massa quis 
+          luctus fermentum, turpis mi 
+          volutpat justo, eu volutpat 
+          enim diam eget metus. 
+          Maecenas ornare tortor. 
+          Donec sed tellus eget sapien
+          fringilla nonummy. 
+          Mauris a ante. Suspendisse
+          quam sem, consequat at, 
+          commodo vitae, feugiat in, 
+          nunc. Morbi imperdiet augue
+          quis tellus.  
+          </pre>
+          <blockquote>
+              <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</q> 
+              <footer> Author's Name </footer>
+          </blockquote>
+          <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
+          <cite>Turpis mi volutpat justo, eu volutpat enim diam eget metus. - Cite</cite>
+          <hr>
 
-        <h2>Tables</h2>
-        <hr>
-
-        <table>
-            <caption>This is the caption of the table</caption>
-            <tbody>
-                <tr>
-                    <th>Table Head 1</th>
-                    <th>Table Head 2</th>
-                    <th>Table Head 3</th>
-                </tr>
-                <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                </tr>
-                <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                </tr>
-                <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>Misc Stuff &ndash; abbr, pre, code, sub, sup, etc.</h2>
-        <hr>
-        <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
-        <pre>
-        Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit.
-        Nullam dignissim convallis est.
-        Quisque aliquam. Donec faucibus. 
-        Nunc iaculis suscipit dui. 
-        Nam sit amet sem. 
-        Aliquam libero nisi, imperdiet at,
-        tincidunt nec, gravida vehicula,
-        nisl. 
-        Praesent mattis, massa quis 
-        luctus fermentum, turpis mi 
-        volutpat justo, eu volutpat 
-        enim diam eget metus. 
-        Maecenas ornare tortor. 
-        Donec sed tellus eget sapien
-        fringilla nonummy. 
-        Mauris a ante. Suspendisse
-        quam sem, consequat at, 
-        commodo vitae, feugiat in, 
-        nunc. Morbi imperdiet augue
-        quis tellus.  
-        </pre>
-        <blockquote>
-            <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</q> 
-            <footer> Author's Name </footer>
-        </blockquote>
-        <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
-        <cite>Turpis mi volutpat justo, eu volutpat enim diam eget metus. - Cite</cite>
-        <hr>
-
-      </article>
+      </div>
+    </section>
     </main>
     <!-- Layout Footer :::::::::::::::::::: -->
     <footer class="layout-footer">

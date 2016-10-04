@@ -723,7 +723,8 @@ td {
   width: 100%;
   padding-bottom: 9em;
   color: #b3b3b3;
-  background: black;
+  background: #1a1a1a;
+  height: 100%;
 }
 
 .layout-main:last-child {
@@ -1035,18 +1036,18 @@ td {
   margin-bottom: 4em;
 }
 
-.heading {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
+.pad {
+  padding: 1em 2em;
 }
 
 @media screen and (max-width: 768px) {
-  .heading {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.2em;
+  .pad {
+    padding: 0.5em 1em;
   }
+}
+
+.gap-bottom {
+  margin-bottom: 1em;
 }
 
 legend {
@@ -1278,11 +1279,6 @@ textarea:focus {
   background: #333333;
 }
 
-#menu-main nav.menu-mobile {
-  text-transform: uppercase;
-  background: none;
-}
-
 .logo {
   float: left;
   display: block;
@@ -1324,7 +1320,6 @@ textarea:focus {
   margin-right: 0%;
   width: 75%;
   margin-right: 0;
-  padding-right: 1.25em;
   background: none;
 }
 
@@ -1418,6 +1413,7 @@ textarea:focus {
   opacity: 0;
   visibility: hidden;
   background: black;
+  z-index: 88888;
 }
 
 .menu-mobile-fade-screen.is-visible {
