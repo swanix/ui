@@ -3,7 +3,7 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-@import "core/abstract/variables";
+@import "swan/abstract/variables";
 
 // CUSTOM STYLES
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -29,7 +29,7 @@ $hr-color-bg:          $gray8 ;
 // ::::::::::::::::::::::::::::::::::::
 $layout-bg:            none ;
 $header-bg:            $black ;
-$main-bg:              $black ;
+$main-bg:              darken($gray9, 5%); ;
 $footer-bg:            $black ;
 
 // Hero styles 
@@ -116,7 +116,7 @@ $menu-mobile-item-bg:            $gray9 ;
 $menu-mobile-item-hover-text:    $white ;
 $menu-mobile-item-hover-bg:      $gray5 ;
 $menu-mobile-item-active-text:   $white ;
-$menu-mobile-item-active-bg:     $gray8 ;
+$menu-mobile-item-active-bg:     $gray7 ;
 // Menu Mobile hamburger btn
 $menu-mobile-btn-text:         $gray1 ;
 $menu-mobile-btn-bg:           $black ;
@@ -125,4 +125,4 @@ $menu-mobile-btn-border:       1px solid $gray8 ;
 $menu-mobile-fade-screen-bg:   $black ;
 $menu-mobile-border:           2px solid $gray8 ;
 
-@import "core/core";
+@import "swan/core";

@@ -7,11 +7,11 @@ Experimental UI framework. Work in progress...
 STRUCTURE
 
 Sass Architecture v0.2.0 (Alpha)
-Core inspired by The 7-1 Pattern
+Swan core inspired by The 7-1 Pattern
 
 sass/
 |
-|– core/
+|– swan/
 |   |– abstract/           # Mixins & Variables
 |   |– base/               # Core styles
 |   |– controls/           # Interactive controls
@@ -19,8 +19,15 @@ sass/
 |   |– patterns/           # Core patterns
 |   |– themes/             # Core themes (White / Black)
 |   |– vendor/             # Vendor libraries
-|   |– _core.scss          # CORE Package
+|   |– _core.scss          # Swan core Package
 | -------------------------------------------------
 `– styles.scss             # Styles Final Package
   -------------------------------------------------
+
+css/
+|
+|– styles.min.css         # Compiled CSS (min)
+`– styles.css             # Compiled CSS
+  -------------------------------------------------
+
 ```
