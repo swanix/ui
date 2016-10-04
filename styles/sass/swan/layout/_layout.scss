@@ -19,7 +19,7 @@
 .layout-header {
 	@include span-columns(12);
   color: $text-basic;
-  background: $header-bg;
+  background: $layout-header-bg;
 }
 
 // Main content section
@@ -28,7 +28,7 @@
 	@include span-columns(12);
   padding-bottom: $footer-size; // Afecta la posición del footer
   color: $text-basic;
-  background: $main-bg;
+  background: $layout-main-bg;
   height: 100%;
 }
 
@@ -44,7 +44,7 @@
   padding: em(30) em(10);
   height: $footer-size;   // Tamaño del footer
   color: $text-basic;
-  background: $footer-bg;
+  background: $layout-footer-bg;
 }
 
 
