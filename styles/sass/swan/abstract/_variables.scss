@@ -32,8 +32,6 @@ $add-gutter: 1em;
 
 // DIMENS
 
-$padd:      2em;
-
 $size-xs:   3em ;
 $size-s:    5em ;
 $size-m:    9em ;
@@ -89,14 +87,13 @@ $text-selection:       $gray6 !default;
 $text-selection-bg:    $gray2 !default;
 // Horizontal rule        
 $hr-color:             $gray3 !default;
-$hr-color-bg:          $gray3 !default;
 
 // Layout base styles 
 // ::::::::::::::::::::::::::::::::::::
 $layout-bg:            none !default;
-$header-bg:            $gray1 !default;
-$main-bg:              $white !default;
-$footer-bg:            $gray1 !default;
+$layout-header-bg:     $gray1 !default;
+$layout-main-bg:       $white !default;
+$layout-footer-bg:     $gray1 !default;
 
 // Hero styles 
 // ::::::::::::::::::::::::::::::::::::
@@ -127,7 +124,7 @@ $btn-primary-hover-bg:       $gray8 !default;
 
 // Input text and Textarea styles 
 // ::::::::::::::::::::::::::::::::::::
-// Input text (text, password, email)
+// Input text (text, password, email, textarea)
 $input-text:                $gray6 !default;
 $input-text-border:         $gray3 solid 1px !default;
 $input-text-bg:             $white !default;
@@ -135,15 +132,6 @@ $input-text-bg:             $white !default;
 $input-text-focus:          $gray7 !default;
 $input-text-focus-border:   $gray5 solid 1px !default;
 $input-text-focus-bg:       $white !default;
-
-// Input textarea
-$input-textarea:                $gray6 !default;
-$input-textarea-border:         $gray3 solid 1px !default;
-$input-textarea-bg:             $white !default;
-// Input textarea focus
-$input-textarea-focus:          $gray7 !default;
-$input-textarea-focus-border:   $gray5 solid 1px !default;
-$input-textarea-focus-bg:       $white !default;
 
 // Select (dropdown) styles
 // ::::::::::::::::::::::::::::::::::::
@@ -167,22 +155,31 @@ $view-item-hover-bg:               darken($white, 2%) !default;
 // Menu styles
 // ::::::::::::::::::::::::::::::::::::
 // Menu Basic
-$navigation-bg:           none !default;
-$menu-bg:                 none !default;
-$menu-item-text:          $gray6 !default;
-$menu-item-bg:            $gray1 !default;
-$menu-item-hover-text:    $gray9 !default;    
-$menu-item-hover-bg:      $gray2 !default;
-$menu-item-active-text:   $gray9 !default;
-$menu-item-active-bg:     $gray2 !default;
+$navigation-bg:                 none !default ;
+$menu-bg:                       none !default ;
+// Item
+$menu-item-text:                $gray6 !default ;
+$menu-item-bg:                  $gray1 !default ;
+// Item hover
+$menu-item-hover-text:          $gray9 !default ;    
+$menu-item-hover-bg:            $gray2 !default ;
+// Item active
+$menu-item-active-text:         $gray9 !default ;
+$menu-item-active-bg:           $gray2 !default ;
+
 // Menu Mobile
-$menu-mobile-bg:                 $gray1 !default;
-$menu-mobile-item-text:          $gray6 !default;
-$menu-mobile-item-bg:            $gray1 !default;
-$menu-mobile-item-hover-text:    $gray9 !default;
-$menu-mobile-item-hover-bg:      $gray2 !default;
-$menu-mobile-item-active-text:   $gray9 !default;
-$menu-mobile-item-active-bg:     $gray2 !default;
+$menu-mobile-bg:                $gray1 !default ;
+// Item
+$menu-mobile-item-text:         $gray6 !default ;
+$menu-mobile-item-bg:           $gray1 !default ;
+// Item hover
+$menu-mobile-item-hover-text:   $gray9 !default ;
+$menu-mobile-item-hover-bg:     $gray2 !default ;
+// Item active
+$menu-mobile-item-active-text:  $gray9 !default ;
+$menu-mobile-item-active-bg:    $gray2 !default ;
+
+
 // Menu Mobile hamburger btn
 $menu-mobile-btn-text:         $gray9 !default;
 $menu-mobile-btn-bg:           $white !default;

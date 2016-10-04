@@ -54,15 +54,15 @@ textarea {
   padding:0 0.5em;
   height: auto;
   min-height: 5em;
-  color: $input-textarea;
-  border: $input-textarea-border;
-  background: $input-textarea-bg;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
   }
 
 textarea:focus {
-  color: $input-textarea-focus;
-  border: $input-textarea-focus-border;
-  background: $input-textarea-focus-bg;
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
   }
 
 
