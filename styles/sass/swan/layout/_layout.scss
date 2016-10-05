@@ -11,7 +11,7 @@
   position: relative; // Afecta la posición del footer
   color: $text-basic;
   background: $layout-bg;
-  //padding-top: 3em; 
+  outline:$layout-border; 
 }
 
 // Header section
@@ -20,6 +20,7 @@
 	@include span-columns(12);
   color: $text-basic;
   background: $layout-header-bg;
+  outline:$layout-border; 
 }
 
 // Main content section
@@ -30,6 +31,7 @@
   color: $text-basic;
   background: $layout-main-bg;
   height: 100%;
+  outline:$layout-border; 
 }
 
 
@@ -45,6 +47,7 @@
   height: $footer-size;   // Tamaño del footer
   color: $text-basic;
   background: $layout-footer-bg;
+  outline:$layout-border; 
 }
 
 
@@ -52,20 +55,24 @@
 
 .section {
   @include row();
+  outline:$layout-border; 
 }
 
 .section-content {
   @include outer-container(980px);
+  outline:$layout-border; 
 }
 
 .section-content-full {
-  @include outer-container(100%);
+  @include outer-container(100%); 
+  outline:$layout-border; 
 }
 
 .content {
   @include span-columns(8);
   color: $text-basic;
-  background: $gray8;
+  background: $content-bg;
+  outline:$layout-border; 
   @include media($mobile){
     @include span-columns(12 of 12); 
     }
@@ -74,13 +81,15 @@
 .content-full {
   @include span-columns(12);
   color: $text-basic;
-  background: $gray8;
+  background: $content-bg;
+  outline:$layout-border; 
 }
 
 .sidebar {
   @include span-columns(4);
   color: $text-basic;
-  background: $gray7;
+  background: $sidebar-bg;
+  outline:$layout-border; 
   @include media($mobile){
     @include span-columns(12 of 12); 
     }
@@ -89,18 +98,18 @@
 
 // Columns classes
 
-.col1  { @include span-columns(1); }
-.col2  { @include span-columns(2); }
-.col3  { @include span-columns(3); }
-.col4  { @include span-columns(4); }
-.col5  { @include span-columns(5); }
-.col6  { @include span-columns(6); }
-.col7  { @include span-columns(7); }
-.col8  { @include span-columns(8); }
-.col9  { @include span-columns(9); }
-.col10 { @include span-columns(10); }
-.col11 { @include span-columns(11); }
-.col12 { @include span-columns(12); }
+.col1  { @include span-columns(1); outline:$layout-border;  }
+.col2  { @include span-columns(2); outline:$layout-border;  }
+.col3  { @include span-columns(3); outline:$layout-border;  }
+.col4  { @include span-columns(4); outline:$layout-border;  }
+.col5  { @include span-columns(5); outline:$layout-border;  }
+.col6  { @include span-columns(6); outline:$layout-border;  }
+.col7  { @include span-columns(7); outline:$layout-border;  }
+.col8  { @include span-columns(8); outline:$layout-border;  }
+.col9  { @include span-columns(9); outline:$layout-border;  }
+.col10 { @include span-columns(10); outline:$layout-border;  }
+.col11 { @include span-columns(11); outline:$layout-border;  }
+.col12 { @include span-columns(12); outline:$layout-border;  }
 
 @include media($mobile){
 
@@ -108,6 +117,7 @@
     .col5, .col6, .col7, .col8, 
     .col9, .col10, .col11, .col12 {
       @include span-columns(12 of 12); 
+      outline:$layout-border; 
     }
   
   }
@@ -161,4 +171,9 @@
 
 .gap-bottom {
   margin-bottom: 1em;
+}
+
+.inner-centered {
+  @include vertical-align;
+  text-align: center;
 }

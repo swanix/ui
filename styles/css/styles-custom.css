@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
   margin: 1em 0 1em 0;
-  color: #333333;
+  color: #813b9b;
 }
 
 h1 {
@@ -711,7 +711,7 @@ td {
   margin-right: 0%;
   width: 100%;
   color: #595959;
-  background: #f2f2f2;
+  background: #019D90;
   outline: none;
 }
 
@@ -1182,7 +1182,7 @@ button:hover {
 .primary {
   color: #f2f2f2;
   border: #FFFFFF solid 2px;
-  background: #000000;
+  background: #019D90;
 }
 
 .primary:hover {
@@ -1391,22 +1391,22 @@ textarea:focus {
   float: left;
   text-decoration: none;
   padding: 1em 1.5em;
-  color: #595959;
-  background: #f2f2f2;
+  color: #f2f2f2;
+  background: #019D90;
 }
 
 .menu ul li a:visited {
-  color: #595959;
+  color: #f2f2f2;
 }
 
 .menu ul li a:hover {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #01a799;
 }
 
 .menu ul li a.active {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #01b6a7;
 }
 
 .menu-mobile {
@@ -1474,13 +1474,13 @@ textarea:focus {
 }
 
 .menu-mobile ul li a:hover {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #01a799;
 }
 
 .menu-mobile ul li a.active {
-  color: #262626;
-  background: #e6e6e6;
+  color: #FFFFFF;
+  background: #01b6a7;
 }
 
 .menu-mobile-open {
@@ -1505,7 +1505,7 @@ textarea:focus {
   text-align: center;
   height: 32em;
   color: #595959;
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 
 @media screen and (max-width: 768px) {
