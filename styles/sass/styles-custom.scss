@@ -10,7 +10,12 @@
 // CUSTOM STYLES
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-//$gutter:        0em ;
+
+// Basic Palette
+
+$primary:             #019D90 ; // Purple
+$secondary:           #723489 ; // Turquoise
+
 
 // General
 // ::::::::::::::::::::::::::::::::::::
@@ -19,7 +24,7 @@ $body-bg:              $white ;
 // Texts
 // ::::::::::::::::::::::::::::::::::::
 $text-basic:           $gray6 ;
-$text-heading:         $gray8 ;
+$text-heading:         lighten($secondary, 5%) ;
 $text-link:            $gray9 ;
 $text-link-hover:      $gray7 ;
 $text-link-visited:    $gray9 ;
@@ -32,7 +37,7 @@ $hr-color:             $gray3 ;
 // Layout base styles 
 // ::::::::::::::::::::::::::::::::::::
 $layout-bg:             none ;
-$layout-header-bg:      $gray1 ;
+$layout-header-bg:      $primary ;
 $layout-main-bg:        $white ;
 $layout-footer-bg:      $gray1 ;
 $content-bg: 		    $white ;
@@ -41,7 +46,7 @@ $sidebar-bg: 		    $gray1 ;
 
 // Hero styles 
 // ::::::::::::::::::::::::::::::::::::
-$hero-bg:              $gray2 ;
+$hero-bg:              $gray1 ;
 $hero-content-bg:      none ;
 
 
@@ -111,14 +116,14 @@ $view-item-hover-bg:               darken($white, 2%) ;
 $navigation-bg:                 none ;
 $menu-bg:                       none ;
 // Item
-$menu-item-text:                $gray6 ;
-$menu-item-bg:                  $gray1 ;
+$menu-item-text:                $gray1 ;
+$menu-item-bg:                  $primary ;
 // Item hover
-$menu-item-hover-text:          $gray9 ;    
-$menu-item-hover-bg:            $gray2 ;
+$menu-item-hover-text:          $white ;    
+$menu-item-hover-bg:            lighten($primary, 2%) ;
 // Item active
-$menu-item-active-text:         $gray9 ;
-$menu-item-active-bg:           $gray2 ;
+$menu-item-active-text:         $white ;
+$menu-item-active-bg:           lighten($primary, 5%) ;
 
 // Menu Mobile
 $menu-mobile-bg:                 $gray1 ;
