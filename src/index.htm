@@ -1,9 +1,12 @@
-{% extends "layouts/default.html" %}
-{% set title = "Twig.js templating test" %}
-{% set pageTitle = "Use Twig from the start!" %}
-{% set benefits = ["Fast!", "Easy!", "Efficient!"] %}
+{% extends "pages/layouts/hero.htm" %}
+{% set title = "Swan - UI" %}
+{% set pageTitle = "Swan" %}
+{% set urlPath = "pages/" %}
+{% set urlLogo = "" %}
 
 {% block content %}
-<h3>{{ pageTitle }}</h3>
+<div class="pad">
+{% include "pages/layouts/partials/components/articleview.htm" %}
+</div>
 
 {% endblock %}

@@ -28,8 +28,10 @@ var gulp = require('gulp' ),
 // Twig to HTML
 var inputTwig = 'src/pages/*.htm';
 var outputTwig = 'dist/pages';
+var inputTwigIndex = 'src/index.htm';
+var outputTwigIndex = 'dist/';
 // JS
-var inputJs = 'src/scripts/*.js';
+var inputJs = 'src/scripts/swan.js';
 var outputJs = 'dist/scripts/';
 // Sass
 var inputSass = 'src/styles/**/*.scss';
@@ -46,8 +48,17 @@ var sassOptions = {
 gulp.task('twig', function() {
     return gulp
 		    .src(inputTwig)
+        .pipe(plumber())
         .pipe(twig())
         .pipe(gulp.dest(outputTwig));
+});
+
+gulp.task('twigIndex', function() {
+    return gulp
+		    .src(inputTwigIndex)
+        .pipe(plumber())
+        .pipe(twig())
+        .pipe(gulp.dest(outputTwigIndex));
 });
 
 //-----------------------------------------------------
@@ -71,13 +82,13 @@ gulp.task ('sass' , function() {
 // Scripts merge task
 //-----------------------------------------------------
 
-gulp.task ('mergejs' , function() {
+gulp.task ('minjs' , function() {
 	return gulp
-		.src ('inputJs')
+		.src (inputJs)
 	  .pipe(plumber())
-    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('outputJs'));
+    .pipe(rename('swan.min.js'))
+    .pipe(gulp.dest(outputJs));
 });
 
 
@@ -113,10 +124,11 @@ gulp.task ('browser-sync' , function() {
     browserSync.init({
         server: {
           baseDir: 'dist',
-					index: 'index.htm'
+					index: 'index.html'
         }
     });
 		gulp.watch([
+      'dist/*.html',
       'dist/**/*.html',
       'dist/layouts/*.html',
       'dist/styles/*.css'
@@ -128,7 +140,9 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['sass' , 'twig' , 'browser-sync'], function() {
-	  gulp.watch(inputTwig, ['twig']);
+gulp.task('watch', ['sass' , 'twig' , 'twigIndex', 'minjs' , 'browser-sync'], function() {
+    gulp.watch(inputJs, ['minjs']);
+    gulp.watch(inputTwig, ['twig']);
+    gulp.watch(inputTwigIndex, ['twigIndex']);
     gulp.watch(inputSass, ['sass']);
 });
