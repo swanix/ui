@@ -31,8 +31,12 @@ var outputTwig = 'dist/pages';
 var inputTwigIndex = 'src/index.htm';
 var outputTwigIndex = 'dist/';
 // JS
-var inputJs = 'src/scripts/swan.js';
+var inputJs = 'src/scripts/*.js';
 var outputJs = 'dist/scripts/';
+var inputJsSyntax = ['src/scripts/dev/syntax/shCore.js', 'src/scripts/dev/syntax/shBrushXml.js'];
+var outputJsSyntax = 'dist/scripts/dev/';
+var inputJsCss = ['src/scripts/dev/syntax/shCore.css', 'src/scripts/dev/syntax/shThemeSwan.css'];
+var outputJsCss = 'dist/scripts/dev/';
 // Sass
 var inputSass = 'src/styles/**/*.scss';
 var outputSass = 'dist/styles/';
@@ -82,37 +86,33 @@ gulp.task ('sass' , function() {
 // Scripts merge task
 //-----------------------------------------------------
 
-gulp.task ('minjs' , function() {
+gulp.task ('minjs-swan' , function() {
 	return gulp
 		.src (inputJs)
 	  .pipe(plumber())
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(rename('swan.min.js'))
     .pipe(gulp.dest(outputJs));
 });
 
 
-//-----------------------------------------------------
-// Sass Docs task
-//-----------------------------------------------------
-
-gulp.task('sassdoc', function () {
-  return gulp
-    .src(inputSass)
-    .pipe(sassdoc())
-    .resume();
+gulp.task ('minjs' , function() {
+	return gulp
+		.src (inputJsSyntax)
+	  .pipe(plumber())
+    .pipe(concat('syntax.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(outputJsSyntax));
 });
 
-//-----------------------------------------------------
-// Production package tasks
-//-----------------------------------------------------
-
-gulp.task('prod', ['sassdoc'], function () {
-  return gulp
-    .src(inputSass)
-    .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest(outputSass));
+gulp.task ('minjs-css' , function() {
+	return gulp
+		.src (inputJsCss)
+	  .pipe(plumber())
+    .pipe(concat('syntax.min.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(outputJsCss));
 });
 
 
@@ -140,9 +140,19 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['sass' , 'twig' , 'twigIndex', 'minjs' , 'browser-sync'], function() {
-    gulp.watch(inputJs, ['minjs']);
-    gulp.watch(inputTwig, ['twig']);
-    gulp.watch(inputTwigIndex, ['twigIndex']);
-    gulp.watch(inputSass, ['sass']);
+gulp.task('watch', [
+          'sass' ,
+          'twig' ,
+          'twigIndex',
+          'minjs',
+          'minjs-swan' ,
+          'minjs-css',
+          'browser-sync'],
+  function() {
+      gulp.watch(inputJs, ['minjs-swan']);
+      gulp.watch(inputJsCss, ['minjs-css']);
+      gulp.watch(inputJsSyntax, ['minjs']);
+      gulp.watch(inputTwig, ['twig']);
+      gulp.watch(inputTwigIndex, ['twigIndex']);
+      gulp.watch(inputSass, ['sass']);
 });
