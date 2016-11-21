@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global -->
+    <title>Layout - Swan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Experimental UI Framework">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
+    <!-- Styles and fonts -->
+    <link href="../styles/styles.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- IE support -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="layout">
+    <!-- Header :::::::::::::::::::::: -->
+    <header class="layout-header">
+        <section class="section">
+            <div class="section-content">
+                <div class="navigation">
+    <!-- Logo -->
+    <a class="logo" href="/"><img src="../images/logo.png" alt="Swan"></a>
+    <!-- Start Menu -->
+    <nav id="menu-main" class="menu" role="navigation">
+      <ul>
+        <li><a href="../index.htm">Overview</a></li>
+        <li><a href="base.html">Base</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="color.html">Color</a></li>
+        <li><a href="templates.html">Templates</a></li>
+      </ul>
+    </nav>
+    <!-- End Menu -->
+    <div class="menu-mobile-open">
+    	<button id="btnMenu" type="button"><label>☰</label></button>
+    </div>
+</div>
+<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+            </div>
+        </section>
+    </header>
+    <!-- Content Area :::::::::::::::::::::: -->
+    <main class="layout-main" role="main">
+        <section class="section">
+            <div class="section-content-full">
+                <!-- Subheader :::::::::::::::::::::: -->
+                <header class="hero size-m">
+    <div class="hero-content">
+      <h1>Layout</h1>
+    </div>
+</header>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+                <!-- Content :::::::::::::::::::::: -->
+                
+<!-- Section :::::::::::::::::::::::::::: -->
+<section class="section">
+  <div class="section-content">
+    <!-- Row 1 :::::::::::::::::::: -->
+    <article class="col1 bg-gray2 pad gap-bottom">
+        <h3 class="pad"> 1 </h3>
+    </article>
+    <article class="col11 bg-gray1 pad gap-bottom">
+        <h3 class="pad">11 Cols</h3>
+    </article>
+    <!-- Row 2 :::::::::::::::::::: -->
+    <article class="col2 bg-gray2 pad gap-bottom">
+        <h3 class="pad">2 Cols</h3>
+    </article>
+    <article class="col10 bg-gray1 pad gap-bottom">
+        <h3 class="pad">10 Cols</h3>
+    </article>
+    <!-- Row 3 :::::::::::::::::::: -->
+    <article class="col3 bg-gray2 pad gap-bottom">
+        <h3 class="pad">3 Cols</h3>
+    </article>
+    <article class="col9 bg-gray1 pad gap-bottom">
+        <h3 class="pad">9 Cols</h3>
+    </article>
+    <!-- Row 4 :::::::::::::::::::: -->
+    <article class="col4 bg-gray2 pad gap-bottom">
+        <h3 class="pad">4 Cols</h3>
+    </article>
+    <article class="col8 bg-gray1 pad gap-bottom">
+        <h3 class="pad">8 Cols</h3>
+    </article>
+    <!-- Row 5 :::::::::::::::::::: -->
+    <article class="col5 bg-gray2 pad gap-bottom">
+        <h3 class="pad">5 Cols</h3>
+    </article>
+    <article class="col7 bg-gray1 pad gap-bottom">
+        <h3 class="pad">7 Cols</h3>
+    </article>
+    <!-- Row 6 :::::::::::::::::::: -->
+    <article class="col6 bg-gray2 pad gap-bottom">
+        <h3 class="pad">6 Cols</h3>
+    </article>
+    <article class="col6 bg-gray1 pad gap-bottom">
+        <h3 class="pad">6 Cols</h3>
+    </article>
+    <!-- Row 7 :::::::::::::::::::: -->
+    <article class="col7 bg-gray2 pad gap-bottom">
+        <h3 class="pad">7 Cols</h3>
+    </article>
+    <article class="col5 bg-gray1 pad gap-bottom">
+        <h3 class="pad">5 Cols</h3>
+    </article>
+    <!-- Row 8 :::::::::::::::::::: -->
+    <article class="col8 bg-gray2 pad gap-bottom">
+        <h3 class="pad">8 Cols</h3>
+    </article>
+    <article class="col4 bg-gray1 pad gap-bottom">
+        <h3 class="pad">4 Cols</h3>
+    </article>
+    <!-- Row 9 :::::::::::::::::::: -->
+    <article class="col9 bg-gray2 pad gap-bottom">
+        <h3 class="pad">9 Cols</h3>
+    </article>
+    <article class="col3 bg-gray1 pad gap-bottom">
+        <h3 class="pad">3 Cols</h3>
+    </article>
+    <!-- Row 10 :::::::::::::::::::: -->
+    <article class="col10 bg-gray2 pad gap-bottom">
+        <h3 class="pad">10 Cols</h3>
+    </article>
+    <article class="col2 bg-gray1 pad gap-bottom">
+        <h3 class="pad">2 Cols</h3>
+    </article>
+    <!-- Row 11 :::::::::::::::::::: -->
+    <article class="col11 bg-gray2 pad gap-bottom">
+        <h3 class="pad">11 Cols</h3>
+    </article>
+    <article class="col1 bg-gray1 pad gap-bottom">
+        <h3 class="pad">1</h3>
+    </article>
+  </div>
+</section>
+<!-- Code Example -->
+<button data-toggle-target="#snippet-basic-columns" data-toggle-text="Hide Code">Show Code</button>
+<div id="snippet-basic-columns">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <!-- Section :::::::::::::::::::::::::::: -->
+<section class="section">
+  <div class="section-content">
+    <!-- Row 1 :::::::::::::::::::: -->
+    <article class="col1 bg-gray2 pad gap-bottom">
+        <h3 class="pad"> 1 </h3>
+    </article>
+    <article class="col11 bg-gray1 pad gap-bottom">
+        <h3 class="pad">11 Cols</h3>
+    </article>
+    <!-- Row 2 :::::::::::::::::::: -->
+    <article class="col2 bg-gray2 pad gap-bottom">
+        <h3 class="pad">2 Cols</h3>
+    </article>
+    <article class="col10 bg-gray1 pad gap-bottom">
+        <h3 class="pad">10 Cols</h3>
+    </article>
+    <!-- Row 3 :::::::::::::::::::: -->
+    <article class="col3 bg-gray2 pad gap-bottom">
+        <h3 class="pad">3 Cols</h3>
+    </article>
+    <article class="col9 bg-gray1 pad gap-bottom">
+        <h3 class="pad">9 Cols</h3>
+    </article>
+    <!-- Row 4 :::::::::::::::::::: -->
+    <article class="col4 bg-gray2 pad gap-bottom">
+        <h3 class="pad">4 Cols</h3>
+    </article>
+    <article class="col8 bg-gray1 pad gap-bottom">
+        <h3 class="pad">8 Cols</h3>
+    </article>
+    <!-- Row 5 :::::::::::::::::::: -->
+    <article class="col5 bg-gray2 pad gap-bottom">
+        <h3 class="pad">5 Cols</h3>
+    </article>
+    <article class="col7 bg-gray1 pad gap-bottom">
+        <h3 class="pad">7 Cols</h3>
+    </article>
+    <!-- Row 6 :::::::::::::::::::: -->
+    <article class="col6 bg-gray2 pad gap-bottom">
+        <h3 class="pad">6 Cols</h3>
+    </article>
+    <article class="col6 bg-gray1 pad gap-bottom">
+        <h3 class="pad">6 Cols</h3>
+    </article>
+    <!-- Row 7 :::::::::::::::::::: -->
+    <article class="col7 bg-gray2 pad gap-bottom">
+        <h3 class="pad">7 Cols</h3>
+    </article>
+    <article class="col5 bg-gray1 pad gap-bottom">
+        <h3 class="pad">5 Cols</h3>
+    </article>
+    <!-- Row 8 :::::::::::::::::::: -->
+    <article class="col8 bg-gray2 pad gap-bottom">
+        <h3 class="pad">8 Cols</h3>
+    </article>
+    <article class="col4 bg-gray1 pad gap-bottom">
+        <h3 class="pad">4 Cols</h3>
+    </article>
+    <!-- Row 9 :::::::::::::::::::: -->
+    <article class="col9 bg-gray2 pad gap-bottom">
+        <h3 class="pad">9 Cols</h3>
+    </article>
+    <article class="col3 bg-gray1 pad gap-bottom">
+        <h3 class="pad">3 Cols</h3>
+    </article>
+    <!-- Row 10 :::::::::::::::::::: -->
+    <article class="col10 bg-gray2 pad gap-bottom">
+        <h3 class="pad">10 Cols</h3>
+    </article>
+    <article class="col2 bg-gray1 pad gap-bottom">
+        <h3 class="pad">2 Cols</h3>
+    </article>
+    <!-- Row 11 :::::::::::::::::::: -->
+    <article class="col11 bg-gray2 pad gap-bottom">
+        <h3 class="pad">11 Cols</h3>
+    </article>
+    <article class="col1 bg-gray1 pad gap-bottom">
+        <h3 class="pad">1</h3>
+    </article>
+  </div>
+</section>
+ ]]>
+    </script>
+</div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer :::::::::::::::::::::: -->
+    <footer class="layout-footer">
+         <div class="centered">
+  <!-- Start Social buttons -->
+  <div class="social-links">
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-facebook.png" alt="Facebook">
+    </a>
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-twitter.png" alt="Twitter">
+    </a>
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-youtube.png" alt="YouTube">
+    </a>
+  </div>
+  <!-- End Social buttons -->
+  <p class="pad">Swan UI Ⓒ 2016</P>
+</div>
+    </footer>
+</div>
+
+<script src="../scripts/all/swan.js"></script>
+
+<!-- Development scripts -->
+<!-- Development scripts -->
+
+<!-- Syntax Highlighter -->
+<script src="../scripts/dev/syntax/shCore.js"></script>
+<script src="../scripts/dev/syntax/shBrushXml.js"></script>
+<!-- CSS Styles -->
+<link href="../scripts/dev/syntax/shCore.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../scripts/dev/syntax/shThemeSwan.css" media="screen" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+     SyntaxHighlighter.all();
+</script>
+
+
+</body>
+</html>

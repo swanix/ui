@@ -1,0 +1,63 @@
+// -----------------------------------------------------------
+// INPUT TEXTS STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+input[type="text"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  }
+
+input[type="text"]:disabled {
+
+  }
+
+input[type="password"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  letter-spacing:3px;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  }
+
+input[type="email"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  }
+
+
+input:focus {
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
+  }
+
+
+// Textarea
+
+textarea {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  height: auto;
+  min-height: 10rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  }
+
+textarea:focus {
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
+  }

@@ -1,0 +1,146 @@
+// -----------------------------------------------------------
+// NATIVE TYPOGRAPHY STYLES
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// TEXTS
+// -----------------------------------------------------------+
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: $text-basic;
+  background: $body-bg;
+  }
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: normal;
+  margin: 1rem 0 1rem 0;
+  color: $text-heading;
+  }
+
+h1 { font-size: 4.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.3rem; }
+
+p {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: $text-medium;
+  line-height: $text-baseline;
+  margin: 0;
+  padding-bottom: 1.5rem;
+  color: $text-basic;
+  }
+
+a {
+  text-decoration: none;
+  color: $text-link;
+  outline: 0;
+  font-size: $text-medium;
+  }
+
+a:hover {
+  text-decoration: none;
+  transition:.2s;
+  color: $text-link-hover;
+  }
+
+a:visited {
+  color: $text-link-visited;
+  }
+
+ul, ol {
+  }
+
+li {
+  font-size: $text-medium;
+  line-height: $text-baseline;
+  }
+
+dl, dt, dd {
+  font-size: $text-medium;
+  line-height: $text-baseline;
+  }
+
+small {
+  font-size: 90%;
+  font-family: Tahoma, Geneva, sans-serif;
+  }
+
+blockquote {
+  padding: 1rem 2rem;
+  font-style: italic;
+  font-size: $text-medium;
+  line-height: $text-baseline;
+  }
+
+q {
+  display: inline-block;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  font-style: italic;
+  font-size: $text-medium;
+  }
+
+cite {
+  display: inline-block;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  font-style: italic;
+  }
+
+pre, code, samp, kbd {
+  box-shadow: none;
+  }
+
+code {
+  }
+
+pre {
+  padding: 1rem 0;
+  font-size: $text-medium;
+  line-height: $text-baseline;
+  }
+
+hr {
+  border: 0;
+  height: 1px;
+  color: $hr-color;
+  background-color: $hr-color;
+  }
+
+// Form texts
+
+label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: $text-basic;
+  font-size: $text-medium;
+  }
+
+optgroup, option {
+  color: $text-basic;
+  }
+
+input [type="checkbox"] {
+  color: $text-basic;
+  }
+
+::selection {
+  color: $text-selection;
+  background: $text-selection-bg;
+}
+
+::-moz-selection {
+  color: $text-selection;
+  background: $text-selection-bg;
+}
+
+.heading {
+  @include media($mobile){
+    margin-left:1rem;
+    }
+}

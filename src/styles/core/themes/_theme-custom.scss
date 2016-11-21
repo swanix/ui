@@ -1,0 +1,156 @@
+// -----------------------------------------------------------
+//  SWAN STYLES by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "core/abstract/variables";
+
+// CUSTOM STYLES
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Basic Palette
+
+$primary:             #01b6a7 ; // Purple
+$secondary:           #9142ae ; // Turquoise
+
+// General
+// ::::::::::::::::::::::::::::::::::::
+$body-bg:              $white ;
+
+// Texts
+// ::::::::::::::::::::::::::::::::::::
+$text-basic:           $gray6 ;
+$text-heading:         $secondary ;
+$text-link:            $primary ;
+$text-link-hover:      darken($primary, 10%) ;
+$text-link-visited:    $primary ;
+$text-selection:       $gray6 ;
+$text-selection-bg:    $gray2 ;
+// Horizontal rule
+$hr-color:             $gray3 ;
+
+// Tables
+$table-td-border-bottom: $gray2 1px solid ;
+$table-tr-hover-bg:      $gray1 ;
+
+// Layout base styles
+// ::::::::::::::::::::::::::::::::::::
+$layout-bg:             none ;
+$layout-header-bg:      $primary ;
+$layout-main-bg:        $white ;
+$layout-footer-bg:      $primary ;
+$content-bg: 		        $white ;
+$sidebar-bg: 		        $gray1 ;
+
+
+// Hero styles
+// ::::::::::::::::::::::::::::::::::::
+$hero-bg:              $gray1 ;
+$hero-content-bg:      none ;
+
+
+// Buttons base styles
+// ::::::::::::::::::::::::::::::::::::
+
+// Btn
+$btn-text:                   $gray7 ;
+$btn-border:                 $gray2 solid 1px ;
+$btn-bg:                     $gray1 ;
+// Btn hover
+$btn-hover-text:             $gray9 ;
+$btn-hover-border:           $gray3 solid 1px ;
+$btn-hover-bg:               $white ;
+// Btn padding
+$btn-padding:                0.6em 1em ;
+
+// Btn Primary
+$btn-primary-text:           $gray1 ;
+$btn-primary-border:         $primary solid 2px ;
+$btn-primary-bg:             $primary ;
+// Btn Primary hover
+$btn-primary-hover-text:     $white ;
+$btn-primary-hover-border:   lighten($primary, 5%) solid 2px ;
+$btn-primary-hover-bg:       lighten($primary, 5%) ;
+
+
+// Input text and Textarea styles
+// ::::::::::::::::::::::::::::::::::::
+
+// Input text (text, password, email)
+$input-text:                $gray6 ;
+$input-text-border:         $gray3 solid 1px ;
+$input-text-bg:             $white ;
+// Input text focus
+$input-text-focus:          $gray7 ;
+$input-text-focus-border:   $primary solid 1px ;
+$input-text-focus-bg:       $white ;
+
+// Select (dropdown) styles
+// ::::::::::::::::::::::::::::::::::::
+
+$dropdown-text:             $gray8 ;
+$dropdown-border:           $gray5 solid 1px ;
+$dropdown-bg:               $gray1 url(../../images/ic-arrow-down.png) right no-repeat ;
+
+
+// List, card, grid and article view styles
+// ::::::::::::::::::::::::::::::::::::
+
+// Item
+$view-item-text:                   $gray7 ;
+$view-item-bottom-border:          $gray2 2px solid ;
+$view-item-image-bg:               none ;
+$view-item-bg:                     $white ;
+// Item hover
+$view-item-hover-text:             $gray9 ;
+$view-item-hover-bottom-border:    $primary 2px solid ;
+$view-item-hover-image-bg:         none ;
+$view-item-hover-bg:               darken($white, 2%) ;
+
+
+// Menu styles
+// ::::::::::::::::::::::::::::::::::::
+
+// Menu Basic :::::::
+$navigation-bg:                 none ;
+$menu-bg:                       none ;
+// Item
+$menu-item-text:                $gray1 ;
+$menu-item-bg:                  $primary ;
+// Item hover
+$menu-item-hover-text:          $white ;
+$menu-item-hover-bg:            lighten($primary, 2%) ;
+// Item active
+$menu-item-active-text:         $white ;
+$menu-item-active-bg:           lighten($primary, 5%) ;
+
+// Menu Mobile :::::::
+$menu-mobile-bg:                 $gray1 ;
+// Item
+$menu-mobile-item-text:          $gray6 ;
+$menu-mobile-item-bg:            $gray1 ;
+// Item hover
+$menu-mobile-item-hover-text:    $gray9 ;
+$menu-mobile-item-hover-bg:      $gray2 ;
+// Item active
+$menu-mobile-item-active-text:   $white ;
+$menu-mobile-item-active-bg:     $primary ;
+
+// Menu Mobile hamburger
+
+// btn
+$menu-mobile-btn-text:           $white ;
+$menu-mobile-btn-bg:             $primary ;
+$menu-mobile-btn-border:         1px solid lighten($primary, 5%) ;
+// btn hover
+$menu-mobile-btn-hover-text:     $white ;
+$menu-mobile-btn-hover-bg:       lighten($primary, 5%) ;
+$menu-mobile-btn-hover-border:   1px solid lighten($primary, 5%) ;
+
+
+// Menu Mobile fade screen
+$menu-mobile-fade-screen-bg:   $white ;
+$menu-mobile-border:           2px solid $white ;
+
+
+@import "core/main";

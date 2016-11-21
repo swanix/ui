@@ -1,0 +1,78 @@
+// -----------------------------------------------------------
+// Pagination styles
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Pagination styles
+// ::::::::::::::::::::::::::::::::::::
+
+//pagination item
+$pag-item-text:                inherit !default;
+$pag-item-bg:                  $gray1 !default;
+$pag-item-border:              $gray2 1px solid !default;
+$pag-item-border-radius:       0 !default;
+//pagination item hover
+$pag-item-hover-text:          inherit !default;
+$pag-item-hover-bg:            $white !default;
+$pag-item-hover-border:        $gray4 1px solid !default;
+//pagination item active
+$pag-item-active-text:         $white !default;
+$pag-item-active-bg:           $primary !default;
+$pag-item-active-border:       $primary 1px solid !default;
+
+
+// Based on Refills
+
+.pagination {
+  text-align: center;
+
+  ul {
+    margin: 2rem 1rem;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    ul li {
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: inline;
+      }
+
+    }
+
+    li a {
+      background: $pag-item-bg;
+      border-radius: $pag-item-border-radius;
+      border: $pag-item-border;
+      color: $pag-item-text;
+      outline: none;
+      padding: 1rem 1.5rem ;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $pag-item-hover-text;
+        background: $pag-item-hover-bg;
+        border: $pag-item-hover-border;
+      }
+
+      &:active {
+        background: $pag-item-active-bg;
+      }
+    }
+  }
+}
+
+li.page-active a {
+  background: $pag-item-active-bg !important;
+  color: $pag-item-active-text !important;
+  border: $pag-item-active-border !important;
+}

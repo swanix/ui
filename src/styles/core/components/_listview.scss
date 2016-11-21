@@ -1,0 +1,140 @@
+// -----------------------------------------------------------
+// LIST VIEW by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Listview styles
+// ::::::::::::::::::::::::::::::::::::
+// Item
+$listview-item-text:                   $gray5 !default;
+$listview-item-bottom-border:          $gray2 1px solid !default;
+$listview-item-image-bg:               none !default;
+$listview-item-bg:                     $white !default;
+// Item hover
+$listview-item-hover-text:             $gray9 !default;
+$listview-item-hover-bottom-border:    $gray3 1px solid !default;
+$listview-item-hover-image-bg:         none !default;
+$listview-item-hover-bg:               darken($white, 2%) !default;
+
+
+.listview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listview-item {
+  flex: 0 1 50%;
+  align-items: flex-start;
+  color: $listview-item-text;
+  background: $listview-item-bg;
+
+  @include media($mobile){
+    flex: 0 1 100%;
+    }
+}
+
+.listview-item-figure {
+  margin-right: 1.5rem;
+  flex: 0 1 auto;
+  height: 100%;
+}
+
+.listview-item-body {
+  color: $listview-item-text;
+}
+
+.listview-item-body h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: $text-medium;
+}
+
+.listview-item-body p {
+  font-size: $text-small;
+  line-height: 2rem;
+  color: $listview-item-text;
+}
+
+.listview-item a {
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: $listview-item-bottom-border;
+}
+
+.listview-item a:hover {
+  cursor: pointer;
+  transition:.2s;
+  color: $listview-item-hover-text;
+  border-bottom: $listview-item-hover-bottom-border;
+  background: $listview-item-hover-bg;
+}
+
+ .listview li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ ul.listview {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+// Styles for limit text with '...'
+// http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+// Based on http://codepen.io/natonischuk/pen/KpNKQZ
+
+// 2 lines
+.maxlines-2 {
+  overflow: hidden;
+  position: relative;
+  line-height: 2rem;
+  max-height: 4rem;
+  margin-right: -1rem;
+  padding-right: 1rem;
+}
+
+.maxlines-2:before {
+  //content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-2:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+// 1 line
+
+.maxlines-1 {
+  overflow: hidden;
+  position: relative;
+  line-height: 2rem;
+  max-height: 2rem;
+  margin-right: -1.5rem;
+  padding-right: 1.5rem;
+}
+
+.maxlines-1:before {
+  //content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-1:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.5rem;
+}

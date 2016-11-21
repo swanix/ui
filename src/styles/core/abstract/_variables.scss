@@ -1,0 +1,146 @@
+
+// -----------------------------------------------------------
+// SWAN VARIABLES by Sebastian Serna - 2015
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "../vendors/neat/neat-helpers";
+
+// Breakpoints
+
+$mobile: new-breakpoint(max-width 768px 4);
+$tablet: new-breakpoint(max-width 980px 4);
+$desktop: new-breakpoint(max-width 1920px 4);
+
+// ::::: Start Neat override ::::::::::::::::
+
+// Visual Grid
+$visual-grid:         true;
+$visual-grid-color:   #d4d4d4;
+$visual-grid-opacity: 0.3;
+
+// Initial Grid Settings
+$max-width:     100%;
+$grid-columns:  12;
+$gutter:        0em ;
+
+// ::::: End Neat override ::::::::::::::::
+
+$large-screen: 50em !default;
+$border-box-sizing: true !default;
+$add-gutter: 1em;
+
+// Dimensions
+
+$size-xs:    3.5rem   !default;
+$size-s:     5rem   !default;
+$size-m:     20rem   !default;
+$size-l:     40rem  !default;
+$size-xl:    50rem  !default;
+$size-xxl:   70rem  !default;
+
+$width-sidebar-tiny: 4rem;
+
+// Text sizes
+
+$text-tiny:    0.6rem  !default;
+$text-small:   1.2rem  !default;
+$text-medium:  1.4rem  !default;
+$text-large:   2.4rem  !default;
+$text-huge:    3.4rem  !default;
+
+$text-baseline: 2.5rem !default;
+
+// Layout Dimens
+
+$header-size: $size-xs !default;
+$main-size: auto !default;
+$footer-size: $size-m !default;
+
+
+// INSPIRATION: ZONE SYSTEM
+// Created by Ansel Adams and Fred Archer
+// -----------------------------------------------------------
+
+// GRAYSCALE PALETTE variables (white to black)
+
+
+$white:             #FFFFFF ; // White (HTML color: white) #FFFFFF
+$gray1:             darken($white, 5%); // #F2F2F2
+$gray2:             darken($white, 10%); // ??
+$gray3:             darken($white, 30%); // #B3B3B3
+$gray4:             darken($white, 40%); // #999999
+$gray5:             darken($white, 50%); // Gray medium (HTML color: gray) #808080
+$gray6:             darken($white, 65%); // #595959
+$gray7:             darken($white, 70%); // #4D4D4D
+$gray8:             darken($white, 80%); // #333333
+$gray9:             darken($white, 85%); // #1A1A1A
+$black:             darken($white, 100%); // Black (HTML color: black) #000000
+
+$primary:           #000000 !default; // Black
+$secondary:         #999999 !default; // Gray
+
+// COLORS
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// General
+// ::::::::::::::::::::::::::::::::::::
+$body-bg:              $white !default;
+
+
+// Texts
+// ::::::::::::::::::::::::::::::::::::
+$text-basic:           $gray6 !default;
+$text-heading:         $gray8 !default;
+$text-link:            $gray9 !default;
+$text-link-hover:      $gray7 !default;
+$text-link-visited:    $gray9 !default;
+$text-selection:       $gray6 !default;
+$text-selection-bg:    $gray2 !default;
+// Horizontal rule
+$hr-color:             $gray3 !default;
+
+// Tables
+$table-td-border-bottom: none !default;
+$table-tr-hover-bg:      $gray1 !default;
+
+// Buttons base styles
+// ::::::::::::::::::::::::::::::::::::
+// Btn
+$btn-text:           $gray7 !default;
+$btn-border:         $gray2 solid 1px !default;
+$btn-bg:             $gray1 !default;
+// Btn hover
+$btn-hover-text:     $gray9 !default;
+$btn-hover-border:   $gray3 solid 1px !default;
+$btn-hover-bg:       $white !default;
+// Btn padding
+$btn-padding:        1rem 2rem !default;
+
+// Btn Primary
+$btn-primary-text:           $gray1 !default;
+$btn-primary-border:         $white solid 2px !default;
+$btn-primary-bg:             $primary !default;
+// Btn Primary hover
+$btn-primary-hover-text:     $white !default;
+$btn-primary-hover-border:   $white solid 2px !default;
+$btn-primary-hover-bg:       $gray8 !default;
+
+
+// Input text and Textarea styles
+// ::::::::::::::::::::::::::::::::::::
+// Input text (text, password, email, textarea)
+$input-text:                $gray6 !default;
+$input-text-border:         $gray3 solid 1px !default;
+$input-text-bg:             $white !default;
+// Input text focus
+$input-text-focus:          $gray7 !default;
+$input-text-focus-border:   $gray5 solid 1px !default;
+$input-text-focus-bg:       $white !default;
+
+
+// Select (dropdown) styles
+// ::::::::::::::::::::::::::::::::::::
+$dropdown-text:             $gray8 !default;
+$dropdown-border:           $gray5 solid 1px !default;
+$dropdown-bg:               $gray1 url(../../images/ic-arrow-down.png) right no-repeat !default;

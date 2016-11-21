@@ -1,0 +1,16 @@
+{% extends "layouts/default.htm" %}
+{% set title = "Layout - Swan" %}
+{% set pageTitle = "Layout" %}
+
+{% block content %}
+
+{% include "layouts/partials/templates/basic-columns.htm" %}
+<!-- Code Example -->
+<button data-toggle-target="#snippet-basic-columns" data-toggle-text="Hide Code">Show Code</button>
+<div id="snippet-basic-columns">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ {% include "layouts/partials/templates/basic-columns.htm" %} ]]>
+    </script>
+</div>
+
+{% endblock %}

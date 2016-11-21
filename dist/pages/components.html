@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global -->
+    <title>Components - Swan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Experimental UI Framework">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
+    <!-- Styles and fonts -->
+    <link href="../styles/styles.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- IE support -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="layout">
+    <!-- Header :::::::::::::::::::::: -->
+    <header class="layout-header">
+        <section class="section">
+            <div class="section-content">
+                <div class="navigation">
+    <!-- Logo -->
+    <a class="logo" href="/"><img src="../images/logo.png" alt="Swan"></a>
+    <!-- Start Menu -->
+    <nav id="menu-main" class="menu" role="navigation">
+      <ul>
+        <li><a href="../index.htm">Overview</a></li>
+        <li><a href="base.html">Base</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="color.html">Color</a></li>
+        <li><a href="templates.html">Templates</a></li>
+      </ul>
+    </nav>
+    <!-- End Menu -->
+    <div class="menu-mobile-open">
+    	<button id="btnMenu" type="button"><label>☰</label></button>
+    </div>
+</div>
+<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+            </div>
+        </section>
+    </header>
+    <!-- Content Area :::::::::::::::::::::: -->
+    <main class="layout-main" role="main">
+        <section class="section">
+            <div class="section-content-full">
+                <!-- Subheader :::::::::::::::::::::: -->
+                <header class="hero size-m">
+    <div class="hero-content">
+      <h1>Components</h1>
+    </div>
+</header>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+                <!-- Content :::::::::::::::::::::: -->
+                
+<h2 class="heading">List View</h2>
+<ul class="listview">
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 1</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 2</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 3</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 4</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 5</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 6</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+</ul>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <ul class="listview">
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 1</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 2</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 3</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 4</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 5</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+    <li class="listview-item">
+      <a href="#">
+        <img class="listview-item-figure" src="../images/thumb-square.png" alt="">
+        <div class="listview-item-body">
+          <h3 class="maxlines-1">Interdum urna egestas scelerisque 6</h3>
+          <p class="maxlines-2">Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </li>
+</ul>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Card View</h2>
+<section class="cardview">
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+</section>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <section class="cardview">
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+    <article class="cardview-item">
+      <a href="#">
+        <img class="cardview-item-figure" src="../images/thumb.png" alt="">
+        <div class="cardview-item-body">
+          <h3>Interdum urna egestas scelerisque 7</h3>
+          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
+        </div>
+      </a>
+    </article>
+</section>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Grid View</h2>
+<section class="gridview">
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+</section>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <section class="gridview">
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+    <article class="gridview-item">
+      <a href="#">
+        <img class="gridview-item-figure" src="../images/thumb-square-m.png" alt="">
+      </a>
+    </article>
+</section>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Article View (Portrait)</h2>
+<section class="articleview">
+    <article class="articleview-item">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+    <article class="articleview-item">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+</section>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <section class="articleview">
+    <article class="articleview-item">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+    <article class="articleview-item">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+</section>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Article View (Landscape)</h2>
+<section class="articleview">
+    <article class="articleview-item land">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+    <article class="articleview-item land">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+</section>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <section class="articleview">
+    <article class="articleview-item land">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+    <article class="articleview-item land">
+      <header class="articleview-item-figure">
+        <a href="#">
+          <img src="../images/thumb.png" alt="Article Image">
+        </a>
+      </header>
+      <div class="articleview-item-body">
+        <section class="articleview-item-text">
+          <a href="#">
+            <h3>Interdum urna egestas scelerisque</h3>
+            <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt nec eu odio. Mauris quis turpis id sapien hendrerit pellentesque vel id leo. Vivamus vitae nibh dolor.</p>
+          </a>
+        </section>
+        <footer class="articleview-item-footer">
+          <a href="#" class="button">
+            Read More
+          </a>
+        </footer>
+      </div>
+    </article>
+</section>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Basic Menu</h2>
+<div class="navigation">
+    <!-- Logo -->
+    <a class="logo" href="#"><img src="../images/logo.png" alt="Swan"></a>
+    <!-- Start Menu -->
+    <nav id="menu-main" class="menu" role="navigation">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#" class="active">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+      </ul>
+    </nav>
+    <!-- End Menu -->
+    <div id="btnMenu" class="menu-mobile-open">
+    	<button type="button">☰</button>
+    </div>
+</div>
+<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <div class="navigation">
+    <!-- Logo -->
+    <a class="logo" href="#"><img src="../images/logo.png" alt="Swan"></a>
+    <!-- Start Menu -->
+    <nav id="menu-main" class="menu" role="navigation">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#" class="active">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+      </ul>
+    </nav>
+    <!-- End Menu -->
+    <div id="btnMenu" class="menu-mobile-open">
+    	<button type="button">☰</button>
+    </div>
+</div>
+<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+ ]]>
+    </script>
+</div>
+
+<h2 class="heading">Pagination</h2>
+<div class="pagination">
+    <ul>
+      <li><a href="#">&#10094;</a></li>
+      <li><a href="#">1</a></li>
+      <li class="page-active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&#10095;</a></li>
+    </ul>
+</div>
+<!-- Code Example -->
+<button class="js-toggle">Show Code</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ <div class="pagination">
+    <ul>
+      <li><a href="#">&#10094;</a></li>
+      <li><a href="#">1</a></li>
+      <li class="page-active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&#10095;</a></li>
+    </ul>
+</div>
+ ]]>
+    </script>
+</div>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer :::::::::::::::::::::: -->
+    <footer class="layout-footer">
+         <div class="centered">
+  <!-- Start Social buttons -->
+  <div class="social-links">
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-facebook.png" alt="Facebook">
+    </a>
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-twitter.png" alt="Twitter">
+    </a>
+    <a class="button primary" href="javascript:void(0)">
+      <img src="../images/ic-social-youtube.png" alt="YouTube">
+    </a>
+  </div>
+  <!-- End Social buttons -->
+  <p class="pad">Swan UI Ⓒ 2016</P>
+</div>
+    </footer>
+</div>
+
+<script src="../scripts/all/swan.js"></script>
+
+<!-- Development scripts -->
+<!-- Development scripts -->
+
+<!-- Syntax Highlighter -->
+<script src="../scripts/dev/syntax/shCore.js"></script>
+<script src="../scripts/dev/syntax/shBrushXml.js"></script>
+<!-- CSS Styles -->
+<link href="../scripts/dev/syntax/shCore.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../scripts/dev/syntax/shThemeSwan.css" media="screen" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+     SyntaxHighlighter.all();
+</script>
+
+
+</body>
+</html>

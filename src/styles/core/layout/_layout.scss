@@ -1,0 +1,193 @@
+// -----------------------------------------------------------
+//  LAYOUT MANAGER
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+$layout-border: none !default; // Development purposes only
+
+// Layout base styles
+// ::::::::::::::::::::::::::::::::::::
+$layout-bg:            none !default;
+$layout-header-bg:     $gray1 !default;
+$layout-main-bg:       $white !default;
+$layout-footer-bg:     $gray1 !default;
+$content-bg: 		       $white !default;
+$sidebar-bg: 		       $gray1 !default;
+
+// Master Containers
+
+.layout {
+	overflow: auto;
+  min-height: 100%; // Afecta la posición del footer
+  position: relative; // Afecta la posición del footer
+  color: $text-basic;
+  background: $layout-bg;
+  outline:$layout-border;
+}
+
+// Header section
+
+.layout-header {
+	@include span-columns(12);
+  color: $text-basic;
+  background: $layout-header-bg;
+  outline:$layout-border;
+}
+
+// Main content section
+
+.layout-main {
+	@include span-columns(12);
+  padding-bottom: $footer-size; // Afecta la posición del footer
+  color: $text-basic;
+  background: $layout-main-bg;
+  height: 100%;
+  outline:$layout-border;
+}
+
+// Footer section
+
+.layout-footer {
+	@include span-columns(12);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3rem 3rem;
+  height: $footer-size;   // Tamaño del footer
+  color: $text-basic;
+  background: $layout-footer-bg;
+  outline:$layout-border;
+}
+
+
+// Generic classes
+
+.section {
+  @include row();
+  outline: $layout-border;
+	overflow: hidden; // Resuelve margin compartido con elementos H1
+}
+
+.section-content {
+  @include outer-container(980px);
+  outline: $layout-border;
+}
+
+.section-content-full {
+  @include outer-container(100%);
+  outline: $layout-border;
+}
+
+.content {
+  @include span-columns(8);
+  color: $text-basic;
+  background: $content-bg;
+  outline: $layout-border;
+  @include media($mobile){
+    @include span-columns(12 of 12);
+    }
+}
+
+.content-full {
+  @include span-columns(12);
+  color: $text-basic;
+  background: $content-bg;
+  outline: $layout-border;
+}
+
+.sidebar {
+  @include span-columns(4);
+  color: $text-basic;
+  background: $sidebar-bg;
+  outline: $layout-border;
+  @include media($mobile){
+    @include span-columns(12 of 12);
+    }
+}
+
+
+// Columns classes
+
+.col1  { @include span-columns(1); outline:$layout-border;  }
+.col2  { @include span-columns(2); outline:$layout-border;  }
+.col3  { @include span-columns(3); outline:$layout-border;  }
+.col4  { @include span-columns(4); outline:$layout-border;  }
+.col5  { @include span-columns(5); outline:$layout-border;  }
+.col6  { @include span-columns(6); outline:$layout-border;  }
+.col7  { @include span-columns(7); outline:$layout-border;  }
+.col8  { @include span-columns(8); outline:$layout-border;  }
+.col9  { @include span-columns(9); outline:$layout-border;  }
+.col10 { @include span-columns(10); outline:$layout-border;  }
+.col11 { @include span-columns(11); outline:$layout-border;  }
+.col12 { @include span-columns(12); outline:$layout-border;  }
+
+@include media($mobile){
+
+    .col1, .col2, .col3, .col4,
+    .col5, .col6, .col7, .col8,
+    .col9, .col10, .col11, .col12 {
+      @include span-columns(12 of 12);
+      outline:$layout-border;
+    }
+
+  }
+
+// Fixed positions
+
+.fixed-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+
+.fixed-left {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.fixed-right {
+    position: fixed;
+    right: 0;
+    z-index: 20;
+}
+
+
+// Gaps when layout elements are fixed (improve soon)
+
+.gap-top    { margin-top: $width-sidebar-tiny ; }
+.gap-left   { padding-left: $width-sidebar-tiny; }
+.gap-right  { padding-right: $width-sidebar-tiny ; }
+.gap-bottom { margin-bottom: $width-sidebar-tiny ; }
+
+
+// Padding
+
+.pad {
+ padding: 1rem 2rem;
+  @include media($mobile){
+    padding: 0.5rem 1rem;
+    }
+}
+
+.gap-bottom {
+  margin-bottom: 1rem;
+}
+
+.inner-centered {
+  @include vertical-align;
+  text-align: center;
+}
+
+.heading {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}

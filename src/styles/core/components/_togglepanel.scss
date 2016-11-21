@@ -1,0 +1,21 @@
+// -----------------------------------------------------------
+// Toggle Panel
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Toggle Variables
+// ::::::::::::::::::::::::::::::::::::
+
+// Toogle visibility
+
+.js-toggle-hidden {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.20s ease-out;
+}
+
+.js-toggle-visible {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.30s ease-in;
+}
