@@ -19,8 +19,6 @@ var gulp = require('gulp' ),
 	  twig = require('gulp-twig'),
     browserSync = require('browser-sync');
 
-
-
 //-----------------------------------------------------
 // Global variables
 //-----------------------------------------------------
@@ -115,7 +113,6 @@ gulp.task ('minjs-css' , function() {
     .pipe(gulp.dest(outputJsCss));
 });
 
-
 //-----------------------------------------------------
 // Browser Sync task (static server)
 //-----------------------------------------------------
@@ -130,11 +127,10 @@ gulp.task ('browser-sync' , function() {
 		gulp.watch([
       'dist/*.html',
       'dist/**/*.html',
-      'dist/layouts/*.html',
+      'dist/pages/*.html',
       'dist/styles/*.css'
       ]).on("change", browserSync.reload);
 });
-
 
 //-----------------------------------------------------
 // Watch tasks
