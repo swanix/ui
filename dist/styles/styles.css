@@ -1465,7 +1465,6 @@ textarea:focus {
           flex: 0 1 50%;
   -webkit-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
   color: gray;
   background: #FFFFFF;
