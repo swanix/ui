@@ -1,4 +1,4 @@
-![Swan UI](https://github.com/acuariux/swan/blob/master/src/images/logo.png "Swan - User Interface")
+![Swan UI](https://github.com/acuariux/swan/blob/master/dist/images/logo.png "Swan - User Interface")
 
 Experimental UI framework. Work in progress...
 
