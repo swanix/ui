@@ -2,8 +2,6 @@
 
 Experimental UI framework. Work in progress...
 
-
-Swan
 ==========
 
 ## Requisitos
@@ -28,17 +26,17 @@ $ npm install
 ```
 Este comando instalará las dependencias de Node.js especificadas en el archivo `package.json` (en esencia se trata de [Gulp.js](http://gulpjs.com/) y una serie de plugins necesarios para automatizar algunas tareas de desarrollo).
 
-Las dependencias se instalan en la carpeta `node_modules` (creada automáticamente con el comando `npm install`) y luego de instaladas podemos utilizar Gulp para ejecutar nuestra página de prueba con el comando:
+Las dependencias se instalan en la carpeta `node_modules` (creada automáticamente con el comando `npm install`) y luego de instaladas podemos utilizar Gulp para ver nuestra página de inicio:
 
 ```
 $ gulp watch
 ```
-El comando `gulp watch` ejecuta unas tareas específicas para compilar el código de estilos CSS del theme y los cambios en los archivos HTML y Javascript.
+Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasados unos instantes se abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos del framework y observando si se realizan cambios en los archivos del la carpeta `src` para generar el código de estilos CSS, HTML y JavaScript.
 
 ## Estructura de Directorios
 
 ```sh
-swan/
+swan/  # Carpeta raíz del repositorio
 │
 ├── dist/           # Archivos de producción
 │   ├── audio/        
@@ -118,7 +116,7 @@ Swan utiliza los siguientes módulos de Node.js (la mayoría son plugins de Gulp
 |gulp-twig|0.7.0|Motor de plantillas basado en Twig.js. Se utiliza en Swan para crear layouts HTML con partials reutilizables. |
 |gulp-plumber|1.0.1|Permite manejar e identificar errores en tiempo de ejecución.|
 |gulp-sourcemaps|1.5.2|Permite generar sourcemaps para el código Sass y otros.|
-|gulp-uglify|1.4.1|Permite minificar el código javascript con UglifyJS.|
+|gulp-uglify|1.4.1|Permite minificar el código JavaScript con UglifyJS.|
 |sassdoc|2.1.15|Genera una documentación básica del código Sass utilizado.|
 
 
