@@ -19,26 +19,26 @@ En una carpeta vacía de tu equipo escribe el siguiente comando en la terminal:
 $ git clone https://github.com/acuariux/swan.git
 ```
 
-Luego escribe el comando:
+Cuando se termine de clonar el proyecto escribe el comando:
 
 ```
 $ npm install
 ```
 Este comando instalará las dependencias de Node.js especificadas en el archivo `package.json` (en esencia se trata de [Gulp.js](http://gulpjs.com/) y una serie de plugins necesarios para automatizar algunas tareas de desarrollo).
 
-Las dependencias se instalan en la carpeta `node_modules` (creada automáticamente con el comando `npm install`) y luego de instaladas podemos utilizar Gulp para ver nuestra página de inicio:
+Las dependencias se instalan en la carpeta `node_modules` (creada automáticamente con el comando `npm install`) y luego de instaladas podemos utilizar Gulp para ver nuestra página de inicio con:
 
 ```
 $ gulp watch
 ```
-Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasados unos instantes se abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos del framework y observando si se realizan cambios en los archivos del la carpeta `src` para generar el código de estilos CSS, HTML y JavaScript.
+Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasados unos instantes se abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos del framework y observando si se realizan cambios en los archivos de la carpeta `src` para generar el código de estilos CSS, HTML y JavaScript.
 
 ## Estructura de Directorios
 
 ```sh
 swan/  # Carpeta raíz del repositorio
 │
-├── dist/           # Archivos de producción
+├── dist/           # Código generado para producción
 │   ├── audio/        
 │   ├── fonts/        
 │   ├── images/
@@ -47,7 +47,7 @@ swan/  # Carpeta raíz del repositorio
 │   ├── styles/    
 │   └── index.html
 │       
-├── src/           # Código fuente del proyecto
+├── src/           # Código fuente para desarrollo
 │   ├── audio/        
 │   ├── fonts/        
 │   ├── images/
