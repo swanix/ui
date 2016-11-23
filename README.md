@@ -102,22 +102,23 @@ Swan utiliza las siguientes librerías de código CSS creadas por terceros:
 
 ## Módulos de Node.js
 
-Swan utiliza los siguientes módulos de Node.js (la mayoría son plugins de Gulp).
+Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría son plugins de Gulp).
 
 |Módulo|Versión|Descripción|
 |--- |--- |--- |
-|gulp|3.9.0|Plugin oficial de Gulp en Node.js|
-|browser-sync|2.9.3|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
-|gulp-autoprefixer|3.0.1|Permite automatizar la escritura de prefijos CSS para cada navegador web (moz, webkit, etc).|
-|gulp-sass|2.0.4|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
-|gulp-minify-css|1.2.1|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
+|browser-sync|2.18.2|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
+|gulp|3.9.1|Módulo oficial de Gulp para Node.js|
+|gulp-install|0.6.0|Instala de forma automática paquetes y dependencias de npm, bower, tsd, y pip si la configuración asociada se encuentra en el gulpfile.|
+|gulp-autoprefixer|3.1.1|Permite automatizar la escritura de prefijos CSS para cada navegador web (moz, webkit, etc).|
+|gulp-sass|2.3.2|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
+|gulp-clean-css|2.0.13|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
 |gulp-rename|1.2.2|Permite renombrar archivos con el nombre que le especifiquemos|
-|gulp-concat|2.6.0|Permite fusionar archivos en uno solo para optimizar el tiempo de carga de dependencias en un sitio web (muy utilizado para combinar archivos CSS o archivos JavaScript).|
+|gulp-concat|2.6.1|Permite fusionar archivos en uno solo para optimizar el tiempo de carga de dependencias en un sitio web (muy utilizado para combinar archivos CSS o archivos JavaScript).|
 |gulp-twig|0.7.0|Motor de plantillas basado en Twig.js. Se utiliza en Swan para crear layouts HTML con partials reutilizables. |
-|gulp-plumber|1.0.1|Permite manejar e identificar errores en tiempo de ejecución.|
-|gulp-sourcemaps|1.5.2|Permite generar sourcemaps para el código Sass y otros.|
-|gulp-uglify|1.4.1|Permite minificar el código JavaScript con UglifyJS.|
-|sassdoc|2.1.15|Genera una documentación básica del código Sass utilizado.|
+|gulp-plumber|1.1.0|Permite manejar e identificar errores en tiempo de ejecución.|
+|gulp-sourcemaps|1.9.1|Permite generar sourcemaps para el código Sass y otros.|
+|gulp-uglify|2.0.0|Permite minificar el código JavaScript con UglifyJS.|
+|sassdoc|2.1.20|Genera una documentación básica del código Sass utilizado.|
 
 
 ## Licencia
@@ -135,11 +136,3 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
