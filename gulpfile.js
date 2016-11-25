@@ -49,18 +49,18 @@ var sassOptions = {
 
 gulp.task('twig', function() {
     return gulp
-		.src(inputTwig)
-        .pipe(plumber())
-        .pipe(twig())
-        .pipe(gulp.dest(outputTwig));
+      .src(inputTwig)
+      .pipe(plumber())
+      .pipe(twig())
+      .pipe(gulp.dest(outputTwig));
 });
 
 gulp.task('twigIndex', function() {
     return gulp
-    .src(inputTwigIndex)
-        .pipe(plumber())
-        .pipe(twig())
-        .pipe(gulp.dest(outputTwigIndex));
+      .src(inputTwigIndex)
+      .pipe(plumber())
+      .pipe(twig())
+      .pipe(gulp.dest(outputTwigIndex));
 });
 
 //-----------------------------------------------------
@@ -68,16 +68,16 @@ gulp.task('twigIndex', function() {
 //-----------------------------------------------------
 
 gulp.task ('sass' , function() {
-     return gulp
-        .src(inputSass)
-        .pipe(plumber())
-        .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest(outputSass))
-        .pipe(cleanCSS())
-        .pipe(rename('styles.min.css'))
-        .pipe(gulp.dest(outputSass))
-        .pipe(browserSync.stream());
+    return gulp
+      .src(inputSass)
+      .pipe(plumber())
+      .pipe(sass(sassOptions).on('error', sass.logError))
+      .pipe(autoprefixer())
+      .pipe(gulp.dest(outputSass))
+      .pipe(cleanCSS())
+      .pipe(rename('styles.min.css'))
+      .pipe(gulp.dest(outputSass))
+      .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
@@ -85,7 +85,7 @@ gulp.task ('sass' , function() {
 //-----------------------------------------------------
 
 gulp.task ('minjs-swan' , function() {
-  return gulp
+    return gulp
       .src (inputJs)
       .pipe(plumber())
       .pipe(concat('scripts.min.js'))
@@ -95,21 +95,21 @@ gulp.task ('minjs-swan' , function() {
 });
 
 gulp.task ('minjs' , function() {
-  return gulp
-     .src (inputJsSyntax)
-     .pipe(plumber())
-     .pipe(concat('syntax.min.js'))
-     .pipe(uglify())
-     .pipe(gulp.dest(outputJsSyntax));
+    return gulp
+      .src (inputJsSyntax)
+      .pipe(plumber())
+      .pipe(concat('syntax.min.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest(outputJsSyntax));
 });
 
 gulp.task ('minjs-css' , function() {
-  return gulp
-     .src (inputJsCss)
-     .pipe(plumber())
-     .pipe(concat('syntax.min.css'))
-     .pipe(cleanCSS())
-     .pipe(gulp.dest(outputJsCss));
+    return gulp
+      .src (inputJsCss)
+      .pipe(plumber())
+      .pipe(concat('syntax.min.css'))
+      .pipe(cleanCSS())
+      .pipe(gulp.dest(outputJsCss));
 });
 
 //-----------------------------------------------------
@@ -136,13 +136,13 @@ gulp.task ('browser-sync' , function() {
 //-----------------------------------------------------
 
 gulp.task('watch', [
-              'sass' ,
-              'twig' ,
-              'twigIndex',
-              'minjs',
-              'minjs-swan' ,
-              'minjs-css',
-              'browser-sync'],
+            'sass' ,
+            'twig' ,
+            'twigIndex',
+            'minjs',
+            'minjs-swan' ,
+            'minjs-css',
+            'browser-sync'],
       function() {
           gulp.watch(inputJs, ['minjs-swan']);
           gulp.watch(inputJsCss, ['minjs-css']);
