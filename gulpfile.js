@@ -8,15 +8,15 @@
 
 var gulp = require('gulp' ),
     plumber = require('gulp-plumber'),
-	  sass = require('gulp-sass'),
-	  sourcemaps = require('gulp-sourcemaps'),
-	  autoprefixer = require('gulp-autoprefixer'),
+	sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+	autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
-	  uglify = require('gulp-uglify'),
-	  concat = require('gulp-concat'),
-	  sassdoc = require('sassdoc'),
-	  twig = require('gulp-twig'),
+	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
+	sassdoc = require('sassdoc'),
+	twig = require('gulp-twig'),
     browserSync = require('browser-sync');
 
 //-----------------------------------------------------
@@ -49,7 +49,7 @@ var sassOptions = {
 
 gulp.task('twig', function() {
     return gulp
-		    .src(inputTwig)
+		.src(inputTwig)
         .pipe(plumber())
         .pipe(twig())
         .pipe(gulp.dest(outputTwig));
@@ -57,7 +57,7 @@ gulp.task('twig', function() {
 
 gulp.task('twigIndex', function() {
     return gulp
-		    .src(inputTwigIndex)
+		.src(inputTwigIndex)
         .pipe(plumber())
         .pipe(twig())
         .pipe(gulp.dest(outputTwigIndex));
@@ -69,15 +69,15 @@ gulp.task('twigIndex', function() {
 
 gulp.task ('sass' , function() {
      return gulp
-     	.src(inputSass)
-      .pipe(plumber())
+        .src(inputSass)
+        .pipe(plumber())
 	    .pipe(sass(sassOptions).on('error', sass.logError))
-    	.pipe(autoprefixer())
+        .pipe(autoprefixer())
 	    .pipe(gulp.dest(outputSass))
-      .pipe(cleanCSS())
-      .pipe(rename('styles.min.css'))
-      .pipe(gulp.dest(outputSass))
-      .pipe(browserSync.stream());
+        .pipe(cleanCSS())
+        .pipe(rename('styles.min.css'))
+        .pipe(gulp.dest(outputSass))
+        .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
@@ -87,30 +87,30 @@ gulp.task ('sass' , function() {
 gulp.task ('minjs-swan' , function() {
 	return gulp
 		.src (inputJs)
-	  .pipe(plumber())
-    .pipe(concat('scripts.min.js'))
-    .pipe(uglify())
-    .pipe(rename('swan.min.js'))
-    .pipe(gulp.dest(outputJs));
+	    .pipe(plumber())
+        .pipe(concat('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(rename('swan.min.js'))
+        .pipe(gulp.dest(outputJs));
 });
 
 
 gulp.task ('minjs' , function() {
 	return gulp
 		.src (inputJsSyntax)
-	  .pipe(plumber())
-    .pipe(concat('syntax.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(outputJsSyntax));
+	    .pipe(plumber())
+        .pipe(concat('syntax.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(outputJsSyntax));
 });
 
 gulp.task ('minjs-css' , function() {
 	return gulp
 		.src (inputJsCss)
-	  .pipe(plumber())
-    .pipe(concat('syntax.min.css'))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest(outputJsCss));
+	    .pipe(plumber())
+        .pipe(concat('syntax.min.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(outputJsCss));
 });
 
 //-----------------------------------------------------
@@ -121,10 +121,10 @@ gulp.task ('browser-sync' , function() {
     browserSync.init({
         server: {
           baseDir: 'dist',
-					index: 'index.html'
+		  index: 'index.html'
         }
     });
-		gulp.watch([
+	gulp.watch([
       'dist/*.html',
       'dist/**/*.html',
       'dist/pages/*.html',
