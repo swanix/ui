@@ -8,9 +8,9 @@
 // --------------------------------------------------------------
 // This solution is temporal
 
-var menu = document.getElementById("menu-main");
-var menuShow = document.getElementById("btnMenu");
-var menuFadeBg = document.getElementById("fadeScreen");
+var menu = document.querySelector(".menu"); 
+var menuShow = document.querySelector(".btnMenu");
+var menuFadeBg = document.querySelector(".menu-modal-bg");
 
 function showMobileBtn() {
     if (window.innerWidth <= 768) {
@@ -40,7 +40,7 @@ menuFadeBg.onclick = function(event){
      menu.className = "menu-mobile";
      // Delete and Write fade screen classes
      menuFadeBg.className = "";
-     menuFadeBg.className = "menu-mobile-fade-screen";
+     menuFadeBg.className = "menu-modal-bg";
      event.preventDefault();
 };
 
@@ -51,7 +51,7 @@ menuFadeBg.onclick = function(event){
 // This function is very slow "thanks" to the native onload method
 
 window.onload = function() {
-    var menulinks = document.getElementById("menu-main").getElementsByTagName("a"),
+    var menulinks = document.querySelector(".menu, .menu-mobile").getElementsByTagName("a"),
         i = 0,
         length = menulinks.length,
         fullpath = location.href.split("#")[0];

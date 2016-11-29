@@ -46,7 +46,7 @@ $menu-mobile-fade-screen-bg:   $black !default;
 $menu-mobile-border:           2px solid $gray5 !default;
 
 
-.navigation {
+.navbar {
   overflow: auto;
   background: $navigation-bg;
 }
@@ -136,7 +136,7 @@ $menu-mobile-border:           2px solid $gray5 !default;
     }
 }
 
-.menu-mobile-fade-screen {
+.menu-modal-bg {
   @include position(fixed, 0 0 0 0);
   @include transition;
   opacity: 0;

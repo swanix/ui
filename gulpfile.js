@@ -52,7 +52,8 @@ gulp.task('twig', function() {
       .src(inputTwig)
       .pipe(plumber())
       .pipe(twig())
-      .pipe(gulp.dest(outputTwig));
+      .pipe(gulp.dest(outputTwig))
+      .pipe(browserSync.stream());
 });
 
 gulp.task('twigIndex', function() {
@@ -60,7 +61,8 @@ gulp.task('twigIndex', function() {
       .src(inputTwigIndex)
       .pipe(plumber())
       .pipe(twig())
-      .pipe(gulp.dest(outputTwigIndex));
+      .pipe(gulp.dest(outputTwigIndex))
+      .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
@@ -91,7 +93,8 @@ gulp.task ('minjs-swan' , function() {
       .pipe(concat('scripts.min.js'))
       .pipe(uglify())
       .pipe(rename('swan.min.js'))
-      .pipe(gulp.dest(outputJs));
+      .pipe(gulp.dest(outputJs))
+      .pipe(browserSync.stream());
 });
 
 gulp.task ('minjs' , function() {
@@ -100,7 +103,8 @@ gulp.task ('minjs' , function() {
       .pipe(plumber())
       .pipe(concat('syntax.min.js'))
       .pipe(uglify())
-      .pipe(gulp.dest(outputJsSyntax));
+      .pipe(gulp.dest(outputJsSyntax))
+      .pipe(browserSync.stream());
 });
 
 gulp.task ('minjs-css' , function() {

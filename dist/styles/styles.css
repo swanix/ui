@@ -1207,7 +1207,7 @@ textarea:focus {
   margin-bottom: 3rem;
 }
 
-.navigation {
+.navbar {
   overflow: auto;
   background: none;
 }
@@ -1335,7 +1335,7 @@ textarea:focus {
   z-index: 99999;
 }
 
-.menu-mobile-fade-screen {
+.menu-modal-bg {
   position: fixed;
   top: 0;
   right: 0;
@@ -1349,7 +1349,7 @@ textarea:focus {
   z-index: 88888;
 }
 
-.menu-mobile-fade-screen.is-visible {
+.menu-modal-bg.is-visible {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   opacity: 0.4;

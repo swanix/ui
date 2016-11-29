@@ -21,11 +21,11 @@
     <header class="layout-header">
         <section class="section">
             <div class="section-content">
-                <div class="navigation">
+                <div class="navbar">
     <!-- Logo -->
     <a class="logo" href="/"><img src="../images/logo.png" alt="Swan"></a>
-    <!-- Start Menu -->
-    <nav id="menu-main" class="menu" role="navigation">
+    <!-- Menu -->
+    <nav class="menu">
       <ul>
         <li><a href="/">Overview</a></li>
         <li><a href="base.html">Base</a></li>
@@ -33,14 +33,16 @@
         <li><a href="layout.html">Layout</a></li>
         <li><a href="color.html">Color</a></li>
         <li><a href="templates.html">Templates</a></li>
-      </ul>
+      </ul>     
     </nav>
-    <!-- End Menu -->
+    <!-- Menu button -->
     <div class="menu-mobile-open">
-    	<button id="btnMenu" type="button"><label>☰</label></button>
-    </div>
+      <button class="btnMenu" type="button"><label>☰</label></button>
+    </div> 
+    <!-- Fade Screen -->
+    <div class="menu-modal-bg"></div>
 </div>
-<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+
             </div>
         </section>
     </header>
@@ -76,20 +78,8 @@
 </div>
 
 <!-- Media Audio :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Audio</h2>
-<audio src="../audio/alive-by-ketsa.ogg" controls>
-   Your browser does not support the audio tag.
- </audio><br><br>
-<!-- Code Example -->
-<button class="js-toggle">Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <audio src="../audio/alive-by-ketsa.ogg" controls>
-   Your browser does not support the audio tag.
- </audio><br><br>
- ]]>
-    </script>
-</div>
+
+<!-- Media Video :::::::::::::::::::::::::::::::::: -->
 
 
 <!-- Text Headings :::::::::::::::::::::::::::::::::: -->

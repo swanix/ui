@@ -1,8 +1,8 @@
-<div class="navigation">
+<div class="navbar">
     <!-- Logo -->
     <a class="logo" href="/"><img src="{{ urlLogo }}images/logo.png" alt="Swan"></a>
-    <!-- Start Menu -->
-    <nav id="menu-main" class="menu" role="navigation">
+    <!-- Menu -->
+    <nav class="menu">
       <ul>
         <li><a href="/">Overview</a></li>
         <li><a href="{{ urlPath }}base.html">Base</a></li>
@@ -10,11 +10,13 @@
         <li><a href="{{ urlPath }}layout.html">Layout</a></li>
         <li><a href="{{ urlPath }}color.html">Color</a></li>
         <li><a href="{{ urlPath }}templates.html">Templates</a></li>
-      </ul>
+      </ul>     
     </nav>
-    <!-- End Menu -->
+    <!-- Menu button -->
     <div class="menu-mobile-open">
-    	<button id="btnMenu" type="button"><label>☰</label></button>
-    </div>
+      <button class="btnMenu" type="button"><label>☰</label></button>
+    </div> 
+    <!-- Fade Screen -->
+    <div class="menu-modal-bg"></div>
 </div>
-<div id="fadeScreen" class="menu-mobile-fade-screen"></div>
+

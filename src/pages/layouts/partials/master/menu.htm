@@ -1,7 +1,21 @@
-<!--
-<ul>
-    {% for item in items %}
-        <li><a href="{{ item.url }}" class="{{ item.isActive or item.isChildActive ? 'active': '' }}"> {{ item.title }}</a></li>
-    {% endfor %}
-</ul>
--->
+<div class="navbar">
+    <!-- Logo -->
+    <a class="logo" href="/"><img src="{{ urlLogo }}images/logo.png" alt="Swan"></a>
+    <!-- Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="/">Overview</a></li>
+        <li><a href="{{ urlPath }}base.html">Base</a></li>
+        <li><a href="{{ urlPath }}components.html">Components</a></li>
+        <li><a href="{{ urlPath }}layout.html">Layout</a></li>
+        <li><a href="{{ urlPath }}color.html">Color</a></li>
+        <li><a href="{{ urlPath }}templates.html">Templates</a></li>
+      </ul>     
+    </nav>
+    <!-- Menu button -->
+    <div class="menu-mobile-open">
+      <button class="btnMenu" type="button"><label>☰</label></button>
+    </div> 
+    <!-- Fade Screen -->
+    <div class="menu-modal-bg"></div>
+</div>
