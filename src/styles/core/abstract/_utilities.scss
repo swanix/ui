@@ -82,7 +82,7 @@
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-// ORDENAR
+// Order
 
 .to-right {
   float:right;
@@ -95,6 +95,11 @@
 .to-center {
   text-align:center;
 }
+
+.shadow-bottom {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
 
 // -----------------------------------
 
