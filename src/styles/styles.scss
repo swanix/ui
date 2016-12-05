@@ -5,24 +5,21 @@
 
 @import "core/abstract/variables";
 
-//$layout-border: solid green 2px; // Development purposes only
-
-// CUSTOM STYLES
+// BASE
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-//$gutter:        0em ;
-
 // Basic Palette
+// ----------------------------------------------
 
 $primary:             #000000 ; // Black
 $secondary:           #999999 ; // Gray
 
 // General
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 $body-bg:              $white ;
 
 // Texts
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 $text-basic:           $gray6 ;
 $text-heading:         $gray8 ;
 $text-link:            $gray9 ;
@@ -33,36 +30,22 @@ $text-selection-bg:    $gray2 ;
 // Horizontal rule
 $hr-color:             $gray3 ;
 
-
-// Layout base styles
-// ::::::::::::::::::::::::::::::::::::
-$layout-bg:             none ;
-$layout-header-bg:      $white ;
-$layout-main-bg:        $white ;
-$layout-footer-bg:      $gray1 ;
-$content-bg: 		    $white ;
-$sidebar-bg: 		    $gray1 ;
-
-
-// Hero styles
-// ::::::::::::::::::::::::::::::::::::
-$hero-bg:              $gray1 ;
-$hero-content-bg:      none ;
-
+// Tables
+$table-td-border-bottom: none ;
+$table-tr-hover-bg:      $gray1 ;
 
 // Buttons base styles
-// ::::::::::::::::::::::::::::::::::::
-
+// ----------------------------------------------
 // Btn
-$btn-text:                   $gray7 ;
-$btn-border:                 $gray2 solid 1px ;
-$btn-bg:                     $gray1 ;
+$btn-text:           $gray7 ;
+$btn-border:         $gray2 solid 1px ;
+$btn-bg:             $gray1 ;
 // Btn hover
-$btn-hover-text:             $gray9 ;
-$btn-hover-border:           $gray3 solid 1px ;
-$btn-hover-bg:               $white ;
+$btn-hover-text:     $gray9 ;
+$btn-hover-border:   $gray3 solid 1px ;
+$btn-hover-bg:       $white ;
 // Btn padding
-$btn-padding:                0.6em 1em ;
+$btn-padding:        1rem 2rem ;
 
 // Btn Primary
 $btn-primary-text:           $gray1 ;
@@ -75,9 +58,8 @@ $btn-primary-hover-bg:       $gray8 ;
 
 
 // Input text and Textarea styles
-// ::::::::::::::::::::::::::::::::::::
-
-// Input text (text, password, email)
+// ----------------------------------------------
+// Input text (text, password, email, textarea)
 $input-text:                $gray6 ;
 $input-text-border:         $gray3 solid 1px ;
 $input-text-bg:             $white ;
@@ -86,64 +68,150 @@ $input-text-focus:          $gray7 ;
 $input-text-focus-border:   $gray5 solid 1px ;
 $input-text-focus-bg:       $white ;
 
-// Select (dropdown) styles
-// ::::::::::::::::::::::::::::::::::::
 
+// Select (dropdown) styles
+// ----------------------------------------------
 $dropdown-text:             $gray8 ;
 $dropdown-border:           $gray5 solid 1px ;
 $dropdown-bg:               $gray1 url(../../images/ic-arrow-down.png) right no-repeat ;
 
 
-// List, card, grid and article view styles
-// ::::::::::::::::::::::::::::::::::::
+// LAYOUT
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+// Layout base styles
+// ----------------------------------------------
+$layout-bg:            none ;
+$layout-header-bg:     $white ;
+$layout-main-bg:       $white ;
+$layout-footer-bg:     $gray1 ;
+$content-bg:           $white ;
+$sidebar-bg:           $gray1 ;
+
+
+// COMPONENTS
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// Listview
+// ---------------------------------------------------
 // Item
-$view-item-text:                   $gray5 ;
-$view-item-bottom-border:          1px solid $gray2 ;
-$view-item-image-bg:               none ;
-$view-item-bg:                     $white ;
+$listview-item-text:                   $gray5 ;
+$listview-item-bottom-border:          $gray2 1px solid ;
+$listview-item-image-bg:               none ;
+$listview-item-bg:                     $white ;
 // Item hover
-$view-item-hover-text:             $gray9 ;
-$view-item-hover-bottom-border:    1px solid $gray3 ;
-$view-item-hover-image-bg:         none ;
-$view-item-hover-bg:               darken($white, 2%) ;
+$listview-item-hover-text:             $gray9 ;
+$listview-item-hover-bottom-border:    $gray3 1px solid ;
+$listview-item-hover-image-bg:         none ;
+$listview-item-hover-bg:               darken($white, 2%) ;
 
 
-// Menu styles
-// ::::::::::::::::::::::::::::::::::::
+// CardView
+// ---------------------------------------------------
+// Item
+$cardview-item-text:                   $gray5 ;
+$cardview-item-bottom-border:          $gray2 1px solid ;
+$cardview-item-image-bg:               none ;
+$cardview-item-bg:                     $white ;
+// Item hover
+$cardview-item-hover-text:             $gray9 ;
+$cardview-item-hover-bottom-border:    $gray3 1px solid ;
+$cardview-item-hover-image-bg:         none ;
+$cardview-item-hover-bg:               darken($white, 2%) ;
 
-// Menu Basic ::::::::::::::::::::::::::
+
+// Gridview
+// ---------------------------------------------------
+// Item
+$gridview-item-text:                   $gray5 ;
+$gridview-item-bottom-border:          $gray2 1px solid ;
+$gridview-item-image-bg:               none ;
+$gridview-item-bg:                     $white ;
+// Item hover
+$gridview-item-hover-text:             $gray9 ;
+$gridview-item-hover-bottom-border:    $gray3 1px solid ;
+$gridview-item-hover-image-bg:         none ;
+$gridview-item-hover-bg:               darken($white, 2%) ;
+
+
+// ArticleView
+// ---------------------------------------------------
+// Item
+$articleview-item-text:                   $gray5 ;
+$articleview-item-bottom-border:          $gray2 1px solid ;
+$articleview-item-image-bg:               none ;
+$articleview-item-bg:                     $white ;
+// Item hover
+$articleview-item-hover-text:             $gray9 ;
+$articleview-item-hover-bottom-border:    $gray3 1px solid ;
+$articleview-item-hover-image-bg:         none ;
+$articleview-item-hover-bg:               darken($white, 2%) ;
+
+
+// Menu Desktop
+// ---------------------------------------------------
+// Menu wrap
 $navigation-bg:                 none ;
 $menu-bg:                       none ;
 // Item
-$menu-item-text:                $gray4 ;
+$menu-item-text:                $gray5 ;
 $menu-item-bg:                  $white ;
 // Item hover
 $menu-item-hover-text:          $gray9 ;
-$menu-item-hover-bg:            $white ;
+$menu-item-hover-bg:            $gray1 ;
 // Item active
 $menu-item-active-text:         $gray9 ;
 $menu-item-active-bg:           $gray1 ;
 
-// Menu Mobile ::::::::::::::::::::::::::
-$menu-mobile-bg:                 $gray1 ;
-// Item
-$menu-mobile-item-text:          $gray6 ;
-$menu-mobile-item-bg:            $gray1 ;
-// Item hover
-$menu-mobile-item-hover-text:    $gray9 ;
-$menu-mobile-item-hover-bg:      $gray2 ;
-// Item active
-$menu-mobile-item-active-text:   $gray9 ;
-$menu-mobile-item-active-bg:     $gray2 ;
 
-// Menu Mobile hamburger btn
+// Menu Mobile
+// ---------------------------------------------------
+$menu-mobile-bg:                $white ;
+// Item
+$menu-mobile-item-text:         $gray5 ;
+$menu-mobile-item-bg:           $white ;
+// Item hover
+$menu-mobile-item-hover-text:   $gray9 ;
+$menu-mobile-item-hover-bg:     $gray1 ;
+// Item active
+$menu-mobile-item-active-text:  $gray9 ;
+$menu-mobile-item-active-bg:    $gray1 ;
+
+// Hamburger btn
 $menu-mobile-btn-text:         $gray9 ;
 $menu-mobile-btn-bg:           $white ;
 $menu-mobile-btn-border:       1px solid $gray2 ;
+// btn hover
+$menu-mobile-btn-hover-text:     $white  ;
+$menu-mobile-btn-hover-bg:       lighten($primary, 5%) ;
+$menu-mobile-btn-hover-border:   1px solid lighten($primary, 5%) ;
+
 // Menu Mobile fade screen
 $menu-mobile-fade-screen-bg:   $black ;
-$menu-mobile-border:           2px solid $white ;
+$menu-mobile-border:           2px solid $gray5 ;
 
+
+// Pagination
+// ---------------------------------------------------
+//pagination item
+$pag-item-text:                inherit ;
+$pag-item-bg:                  $gray1 ;
+$pag-item-border:              $gray2 1px solid ;
+$pag-item-border-radius:       0 ;
+//pagination item hover
+$pag-item-hover-text:          inherit ;
+$pag-item-hover-bg:            $white ;
+$pag-item-hover-border:        $gray4 1px solid ;
+//pagination item active
+$pag-item-active-text:         $white ;
+$pag-item-active-bg:           $primary ;
+$pag-item-active-border:       $primary 1px solid ;
+
+
+// Hero
+// ---------------------------------------------------
+$hero-bg:              $gray1 ;
+$hero-content-bg:      none ;
 
 @import "core/core";

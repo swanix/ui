@@ -6,13 +6,13 @@
 $layout-border: none !default; // Development purposes only
 
 // Layout base styles
-// ::::::::::::::::::::::::::::::::::::
+// ---------------------------------------------------
 $layout-bg:            none !default;
-$layout-header-bg:     $gray1 !default;
+$layout-header-bg:     $white !default;
 $layout-main-bg:       $white !default;
 $layout-footer-bg:     $gray1 !default;
-$content-bg: 		       $white !default;
-$sidebar-bg: 		       $gray1 !default;
+$content-bg:           $white !default;
+$sidebar-bg:           $gray1 !default;
 
 // Master Containers
 

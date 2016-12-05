@@ -68,14 +68,14 @@ window.onload = function() {
 // --------------------------------------------------------------
 // This solution is temporal
 
-var nullAnchors = document.querySelectorAll('a[href="#"]');
+var nullAnchors = document.querySelectorAll("a[href='#']");
 
 for (var i = 0; i < nullAnchors.length; i++) {
     nullAnchors[i].addEventListener("click", preventDefaultEvent);
 }
 
-function preventDefaultEvent(e) {
-    e.preventDefault();
+function preventDefaultEvent(event) {
+    event.preventDefault();
 }
 
 // --------------------------------------------------------------

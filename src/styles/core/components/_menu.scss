@@ -3,36 +3,36 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Menu styles
-// ::::::::::::::::::::::::::::::::::::
-// Menu Basic
+// Menu Desktop
+// ---------------------------------------------------
+// Menu wrap
 $navigation-bg:                 none !default ;
 $menu-bg:                       none !default ;
 // Item
-$menu-item-text:                $gray6 !default ;
-$menu-item-bg:                  $gray1 !default ;
+$menu-item-text:                $gray5 !default ;
+$menu-item-bg:                  $white !default ;
 // Item hover
 $menu-item-hover-text:          $gray9 !default ;
-$menu-item-hover-bg:            $gray2 !default ;
+$menu-item-hover-bg:            $gray1 !default ;
 // Item active
 $menu-item-active-text:         $gray9 !default ;
-$menu-item-active-bg:           $gray2 !default ;
+$menu-item-active-bg:           $gray1 !default ;
+
 
 // Menu Mobile
-$menu-mobile-bg:                $gray1 !default ;
+// ---------------------------------------------------
+$menu-mobile-bg:                $white !default ;
 // Item
-$menu-mobile-item-text:         $gray6 !default ;
-$menu-mobile-item-bg:           $gray1 !default ;
+$menu-mobile-item-text:         $gray5 !default ;
+$menu-mobile-item-bg:           $white !default ;
 // Item hover
 $menu-mobile-item-hover-text:   $gray9 !default ;
-$menu-mobile-item-hover-bg:     $gray2 !default ;
+$menu-mobile-item-hover-bg:     $gray1 !default ;
 // Item active
 $menu-mobile-item-active-text:  $gray9 !default ;
-$menu-mobile-item-active-bg:    $gray2 !default ;
+$menu-mobile-item-active-bg:    $gray1 !default ;
 
-// Menu Mobile hamburger
-
-//btn
+// Hamburger btn
 $menu-mobile-btn-text:         $gray9 !default;
 $menu-mobile-btn-bg:           $white !default;
 $menu-mobile-btn-border:       1px solid $gray2 !default;

@@ -675,7 +675,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   -webkit-transition: .2s;
   transition: .2s;
   display: inline-block;
-  padding: 0.6em 1em;
+  padding: 1rem 2rem;
   color: #4d4d4d;
   border: #e6e6e6 solid 1px;
   background: #f2f2f2;
@@ -1296,17 +1296,17 @@ textarea:focus {
   float: left;
   text-decoration: none;
   padding: 1.5rem 2.2rem;
-  color: #999999;
+  color: gray;
   background: #FFFFFF;
 }
 
 .menu ul li a:visited {
-  color: #999999;
+  color: gray;
 }
 
 .menu ul li a:hover {
   color: #262626;
-  background: #FFFFFF;
+  background: #f2f2f2;
 }
 
 .menu ul li a.active {
@@ -1327,8 +1327,8 @@ textarea:focus {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
-  border-left: 2px solid #FFFFFF;
-  background: #f2f2f2;
+  border-left: 2px solid gray;
+  background: #FFFFFF;
 }
 
 .menu-mobile.is-visible {
@@ -1374,18 +1374,18 @@ textarea:focus {
   float: left;
   text-decoration: none;
   padding: 1rem 2rem;
-  color: #595959;
-  background: #f2f2f2;
+  color: gray;
+  background: #FFFFFF;
 }
 
 .menu-mobile ul li a:hover {
   color: #262626;
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 
 .menu-mobile ul li a.active {
   color: #262626;
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 
 .menu-mobile-open {
@@ -1927,7 +1927,7 @@ li.page-active a {
 }
 
 .js-toggle-visible {
-  max-height: 1000px;
+  max-height: 2000px;
   overflow: hidden;
   -webkit-transition: max-height 0.30s ease-in;
   transition: max-height 0.30s ease-in;
