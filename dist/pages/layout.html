@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
     <!-- Styles and fonts -->
-    <link href="../styles/styles.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../styles/styles-black.css" type="text/css"  />
+    <link rel="stylesheet" href="../styles/styles.min.css" type="text/css" />
     <!-- IE support -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +22,10 @@
 <header class="layout-header fixed-top shadow-bottom">
   <div class="navbar">
     <!-- Logo -->
-    <a class="logo" href="/"><img src="../images/logo.png" alt="Swan"></a>
+    <div class="logo">
+      <a href="/"><img src="../images/logo.png" alt="Swan"></a>
+      <button id="swap-theme">Black Theme</button>
+    </div>
     <!-- Menu -->
     <nav class="menu">
       <ul>

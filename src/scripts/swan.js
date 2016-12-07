@@ -44,24 +44,6 @@ menuFadeBg.onclick = function(event){
      event.preventDefault();
 };
 
-// --------------------------------------------------------------
-// ACTIVE MENU ITEM
-// --------------------------------------------------------------
-// This solution is temporal
-// This function is very slow "thanks" to the native onload method
-
-window.onload = function() {
-    var menulinks = document.querySelector(".menu, .menu-mobile").getElementsByTagName("a"),
-        i = 0,
-        length = menulinks.length,
-        fullpath = location.href.split("#")[0];
-
-    for(; i < length; i++) {
-        if(menulinks[i].href.split("#")[0] === fullpath) {
-            menulinks[i].className += " active";
-        }
-    }
-}
 
 // --------------------------------------------------------------
 // PREVENT DEFAULT for href="#" links
@@ -97,3 +79,58 @@ for (var i = 0; i < toggleBtn.length; i++) {
       }
   });
 }
+
+// --------------------------------------------------------------
+// SWITCH STYLESHEET (Black Swan / White Swan)
+// --------------------------------------------------------------
+// This solution is temporal
+
+
+var btnSwapTheme = document.getElementById("swap-theme");
+var blackSwan = document.styleSheets[0];
+var whiteSwan = document.styleSheets[1];
+
+btnSwapTheme.onclick = function() {
+  if (whiteSwan.disabled === false) {
+      whiteSwan.disabled = true;
+      localStorage.clear();
+      localStorage.setItem("currentTheme", "whiteSwan.disabled = true"); 
+  } else {
+      whiteSwan.disabled = false;
+      localStorage.clear();
+      localStorage.setItem("currentTheme", "whiteSwan.disabled = false"); 
+  }
+  
+}
+
+function currentThemeValue() {
+    if (localStorage.getItem("currentTheme") === "whiteSwan.disabled = true" ) {
+        whiteSwan.disabled = true;
+    } else {
+        whiteSwan.disabled = false;
+    }
+}
+
+
+// --------------------------------------------------------------
+// ACTIVE MENU ITEM
+// --------------------------------------------------------------
+// This solution is temporal
+
+// With DOMContentLoaded
+
+  function activeMenuItem() {
+    var menulinks = document.querySelector(".menu, .menu-mobile").getElementsByTagName("a"),
+        i = 0,
+        length = menulinks.length,
+        fullpath = location.href.split("#")[0];
+
+    for(; i < length; i++) {
+        if(menulinks[i].href.split("#")[0] === fullpath) {
+            menulinks[i].className += " active";
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", currentThemeValue, false);
+document.addEventListener("DOMContentLoaded", activeMenuItem, false);
