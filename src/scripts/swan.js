@@ -85,7 +85,6 @@ for (var i = 0; i < toggleBtn.length; i++) {
 // --------------------------------------------------------------
 // This solution is temporal
 
-
 var btnSwapTheme = document.getElementById("swap-theme");
 var blackSwan = document.styleSheets[0];
 var whiteSwan = document.styleSheets[1];
@@ -94,30 +93,28 @@ btnSwapTheme.onclick = function() {
   if (whiteSwan.disabled === false) {
       whiteSwan.disabled = true;
       localStorage.clear();
-      localStorage.setItem("currentTheme", "whiteSwan.disabled = true"); 
+      localStorage.setItem("currentTheme", "black"); 
   } else {
       whiteSwan.disabled = false;
       localStorage.clear();
-      localStorage.setItem("currentTheme", "whiteSwan.disabled = false"); 
+      localStorage.setItem("currentTheme", "white"); 
   }
   
 }
 
 function currentThemeValue() {
-    if (localStorage.getItem("currentTheme") === "whiteSwan.disabled = true" ) {
+    if (localStorage.getItem("currentTheme") === "black" ) {
         whiteSwan.disabled = true;
     } else {
         whiteSwan.disabled = false;
     }
 }
 
-
 // --------------------------------------------------------------
 // ACTIVE MENU ITEM
 // --------------------------------------------------------------
 // This solution is temporal
 
-// With DOMContentLoaded
 
   function activeMenuItem() {
     var menulinks = document.querySelector(".menu, .menu-mobile").getElementsByTagName("a"),
@@ -132,5 +129,10 @@ function currentThemeValue() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", currentThemeValue, false);
-document.addEventListener("DOMContentLoaded", activeMenuItem, false);
+// --------------------------------------------------------------
+// ACTIVE MENU ITEM & CURRENT THEME
+// --------------------------------------------------------------
+// This solution is temporal
+
+document.addEventListener("DOMContentLoaded", currentThemeValue);
+document.addEventListener("DOMContentLoaded", activeMenuItem);

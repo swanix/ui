@@ -675,7 +675,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   -webkit-transition: .2s;
   transition: .2s;
   display: inline-block;
-  padding: 0.6em 1em;
+  padding: 1rem 2rem;
   color: #e6e6e6;
   border: #4d4d4d solid 1px;
   background: #333333;
@@ -834,7 +834,7 @@ textarea:focus {
   margin-right: 0%;
   width: 100%;
   color: #b3b3b3;
-  background: black;
+  background: none;
   outline: none;
 }
 
@@ -1213,7 +1213,7 @@ textarea:focus {
 
 .navbar {
   overflow: auto;
-  background: none;
+  background: black;
 }
 
 .logo {
@@ -1403,7 +1403,7 @@ textarea:focus {
   width: 5rem;
   height: 5rem;
   text-align: center;
-  border: 1px solid #333333;
+  border: 1px solid black;
   color: #f2f2f2;
   background: black;
 }
@@ -1412,9 +1412,9 @@ textarea:focus {
   width: 5rem;
   height: 5rem;
   text-align: center;
-  border: 1px solid #0d0d0d;
+  border: 1px solid #333333;
   color: #FFFFFF;
-  background: #0d0d0d;
+  background: #333333;
 }
 
 .hero {

@@ -45,7 +45,7 @@ $btn-hover-text:             $white ;
 $btn-hover-border:           $gray6 solid 1px ;
 $btn-hover-bg:               $gray7 ;
 // Btn padding
-$btn-padding:                0.6em 1em ;
+$btn-padding:                1rem 2rem ;
 
 // Btn Primary
 $btn-primary-text:           $gray1 ;
@@ -75,13 +75,14 @@ $dropdown-text:             $gray8 ;
 $dropdown-border:           $gray5 solid 1px ;
 $dropdown-bg:               $gray9 url(../../images/ic-arrow-down-white.png) right no-repeat ;
 
+
 // LAYOUT
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // Layout base styles
 // ----------------------------------------------
 $layout-bg:            none ;
-$layout-header-bg:     $black ;
+$layout-header-bg:     none ;
 $layout-main-bg:       darken($gray9, 5%);
 $layout-footer-bg:     $black ;
 $content-bg: 		   $gray8 ;
@@ -152,7 +153,7 @@ $articleview-item-hover-bg:               $gray8 ;
 // Menu Desktop
 // ---------------------------------------------------
 // Menu wrap
-$navigation-bg:                 none ;
+$navigation-bg:                 $black ;
 $menu-bg:                       none ;
 // Item
 $menu-item-text:                $gray4 ;
@@ -181,11 +182,11 @@ $menu-mobile-item-active-bg:     $gray7 ;
 // Hamburger btn
 $menu-mobile-btn-text:         $gray1 ;
 $menu-mobile-btn-bg:           $black ;
-$menu-mobile-btn-border:       1px solid $gray8 ;
+$menu-mobile-btn-border:       1px solid $black ;
 // btn hover
 $menu-mobile-btn-hover-text:     $white  ;
-$menu-mobile-btn-hover-bg:       lighten($primary, 5%) ;
-$menu-mobile-btn-hover-border:   1px solid lighten($primary, 5%) ;
+$menu-mobile-btn-hover-bg:       lighten($primary, 20%) ;
+$menu-mobile-btn-hover-border:   1px solid lighten($primary, 20%) ;
 
 // Menu Mobile fade screen
 $menu-mobile-fade-screen-bg:   $black ;
