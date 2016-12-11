@@ -24,6 +24,7 @@ var gulp = require('gulp' ),
 //-----------------------------------------------------
 
 // Twig to HTML
+var inputTwigWatch = 'src/pages/**/*.htm';
 var inputTwig = 'src/pages/*.htm';
 var outputTwig = 'dist/pages';
 var inputTwigIndex = 'src/index.htm';
@@ -66,7 +67,7 @@ gulp.task('twigIndex', function() {
 });
 
 //-----------------------------------------------------
-// Sass transpiler task
+// Sass compiler task
 //-----------------------------------------------------
 
 gulp.task ('sass' , function() {
@@ -129,7 +130,6 @@ gulp.task ('browser-sync' , function() {
     });
     gulp.watch([
       'dist/*.html',
-      'dist/**/*.html',
       'dist/pages/*.html',
       'dist/styles/*.css'
       ]).on("change", browserSync.reload);
@@ -139,19 +139,11 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', [
-            'sass' ,
-            'twig' ,
-            'twigIndex',
-            'minjs',
-            'minjs-swan' ,
-            'minjs-css',
-            'browser-sync'],
-      function() {
-          gulp.watch(inputJs, ['minjs-swan']);
-          gulp.watch(inputJsCss, ['minjs-css']);
-          gulp.watch(inputJsSyntax, ['minjs']);
-          gulp.watch(inputTwig, ['twig']);
-          gulp.watch(inputTwigIndex, ['twigIndex']);
-          gulp.watch(inputSass, ['sass']);
+gulp.task('watch', ['browser-sync'] , function() {
+      gulp.watch(inputJs, ['minjs-swan']);
+      gulp.watch(inputJsCss, ['minjs-css']);
+      gulp.watch(inputJsSyntax, ['minjs']);
+      gulp.watch(inputTwigWatch, ['twig','twigIndex']);
+      gulp.watch(inputTwigIndex, ['twig','twigIndex']);
+      gulp.watch(inputSass, ['sass']);
 });
