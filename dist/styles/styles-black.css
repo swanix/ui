@@ -265,6 +265,10 @@ body:before {
   }
 }
 
+.fill-white {
+  fill: #FFFFFF;
+}
+
 .white {
   color: #FFFFFF;
 }
@@ -769,10 +773,10 @@ select optgroup {
 }
 
 .label-switch {
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 25px;
   position: relative;
   width: 52px;
 }
@@ -784,9 +788,9 @@ select optgroup {
 .label-switch input[type="checkbox"] + .checkbox {
   background: #e8e8e8;
   border: 0;
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
-  height: 30px;
+  height: 25px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -803,9 +807,9 @@ select optgroup {
   bottom: 0;
   left: 2px;
   background: white;
-  border-radius: 30px;
+  border-radius: 25px;
   content: "";
-  height: 26px;
+  height: 21px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.3s ease;
@@ -820,10 +824,10 @@ select optgroup {
   right: 0;
   bottom: 0;
   left: 2px;
-  height: 26px;
-  width: 26px;
+  height: 21px;
+  width: 21px;
   background: white;
-  border-radius: 26px;
+  border-radius: 21px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   content: "";
   -webkit-transition: all 0.3s ease;
@@ -841,7 +845,7 @@ select optgroup {
 }
 
 .label-switch input[type="checkbox"]:checked + .checkbox::after {
-  left: 24px;
+  left: 29px;
 }
 
 input[type="text"] {
@@ -1290,6 +1294,10 @@ textarea:focus {
 .navbar {
   overflow: auto;
   background: black;
+}
+
+.main-logo {
+  fill: #FFFFFF;
 }
 
 .logo {

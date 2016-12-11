@@ -5,6 +5,9 @@
 
 // Menu Desktop
 // ---------------------------------------------------
+
+// Main Logo
+$main-logo-color:               $black !default ;
 // Menu wrap
 $navigation-bg:                 none !default ;
 $menu-bg:                       none !default ;
@@ -49,6 +52,10 @@ $menu-mobile-border:           2px solid $gray5 !default;
 .navbar {
   overflow: auto;
   background: $navigation-bg;
+}
+
+.main-logo {
+  fill: $main-logo-color;
 }
 
 .logo {

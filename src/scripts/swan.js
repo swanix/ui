@@ -95,17 +95,17 @@ btnSwapTheme.onchange = function() {
   if (whiteSwan.disabled === false) {
       whiteSwan.disabled = true;
       btnSwapTheme.checked = true;
-      sessionStorage.setItem("currentTheme", "black"); 
+      localStorage.setItem("currentTheme", "black"); 
   } else {
       whiteSwan.disabled = false;
       btnSwapTheme.checked = false;
-      sessionStorage.setItem("currentTheme", "white"); 
+      localStorage.setItem("currentTheme", "white"); 
   }
   
 }
 
 function currentThemeValue() {
-    if (sessionStorage.getItem("currentTheme") === "black" ) {
+    if (localStorage.getItem("currentTheme") === "black" ) {
         whiteSwan.disabled = true;
         btnSwapTheme.checked = true;
     } else {
