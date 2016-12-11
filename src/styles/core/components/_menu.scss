@@ -53,24 +53,16 @@ $menu-mobile-border:           2px solid $gray5 !default;
   overflow: auto;
   background: $navigation-bg;
 }
-
+// svg logo
 .main-logo {
   fill: $main-logo-color;
 }
 
 .logo {
   @include span-columns(3 of 12);
+  padding-left: 1rem;
   @include media($mobile){
-    @include span-columns(5 of 12);
-    }
-}
-
-.logo img {
-  max-height: 4rem;
-  margin: 0.8rem 0 0 1rem;
-  @include media($mobile){
-    max-height: 4rem;
-    margin: 0.5rem 0 0 0.5rem;
+    @include span-columns(7 of 12);
     }
 }
 
@@ -129,7 +121,7 @@ $menu-mobile-border:           2px solid $gray5 !default;
   @include position(fixed, 0 0 0 auto);
   @include size($menu-mobile-width 100%);
   @include transform(translateX($menu-mobile-width));
-  // @include transition(all 0.20s linear); Revisar efecto
+  @include transition(all 0.20s linear); //Revisar efecto
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;

@@ -1305,6 +1305,7 @@ textarea:focus {
   display: block;
   margin-right: 0%;
   width: 25%;
+  padding-left: 1rem;
 }
 
 .logo:last-child {
@@ -1316,22 +1317,10 @@ textarea:focus {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 41.66667%;
+    width: 58.33333%;
   }
   .logo:last-child {
     margin-right: 0;
-  }
-}
-
-.logo img {
-  max-height: 4rem;
-  margin: 0.8rem 0 0 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .logo img {
-    max-height: 4rem;
-    margin: 0.5rem 0 0 0.5rem;
   }
 }
 
@@ -1408,6 +1397,8 @@ textarea:focus {
   width: 25rem;
   -webkit-transform: translateX(25rem);
   transform: translateX(25rem);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   z-index: 999999;
