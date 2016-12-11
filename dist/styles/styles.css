@@ -768,6 +768,82 @@ select optgroup {
   color: #333333;
 }
 
+.label-switch {
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 52px;
+}
+
+.label-switch input[type="checkbox"] {
+  display: none;
+}
+
+.label-switch input[type="checkbox"] + .checkbox {
+  background: #e8e8e8;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 52px;
+  z-index: 0;
+}
+
+.label-switch input[type="checkbox"] + .checkbox::before {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  background: white;
+  border-radius: 30px;
+  content: "";
+  height: 26px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 48px;
+  z-index: 1;
+}
+
+.label-switch input[type="checkbox"] + .checkbox::after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  height: 26px;
+  width: 26px;
+  background: white;
+  border-radius: 26px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox {
+  background: #333333;
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox::after {
+  left: 24px;
+}
+
 input[type="text"] {
   width: 100%;
   font-size: 1.4rem;

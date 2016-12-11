@@ -85,6 +85,36 @@ for (var i = 0; i < toggleBtn.length; i++) {
 // --------------------------------------------------------------
 // This solution is temporal
 
+onchange
+
+var btnSwapTheme = document.getElementById("swap-theme");
+var blackSwan = document.styleSheets[0];
+var whiteSwan = document.styleSheets[1];
+
+btnSwapTheme.onchange = function() {
+  if (whiteSwan.disabled === false) {
+      whiteSwan.disabled = true;
+      btnSwapTheme.checked = true;
+      sessionStorage.setItem("currentTheme", "black"); 
+  } else {
+      whiteSwan.disabled = false;
+      btnSwapTheme.checked = false;
+      sessionStorage.setItem("currentTheme", "white"); 
+  }
+  
+}
+
+function currentThemeValue() {
+    if (sessionStorage.getItem("currentTheme") === "black" ) {
+        whiteSwan.disabled = true;
+        btnSwapTheme.checked = true;
+    } else {
+        whiteSwan.disabled = false;
+        btnSwapTheme.checked = false;
+    }
+}
+
+/*
 var btnSwapTheme = document.getElementById("swap-theme");
 var blackSwan = document.styleSheets[0];
 var whiteSwan = document.styleSheets[1];
@@ -92,23 +122,25 @@ var whiteSwan = document.styleSheets[1];
 btnSwapTheme.onclick = function() {
   if (whiteSwan.disabled === false) {
       whiteSwan.disabled = true;
-      localStorage.clear();
-      localStorage.setItem("currentTheme", "black"); 
+      sessionStorage.clear();
+      sessionStorage.setItem("currentTheme", "black"); 
   } else {
       whiteSwan.disabled = false;
-      localStorage.clear();
-      localStorage.setItem("currentTheme", "white"); 
+      sessionStorage.clear();
+      sessionStorage.setItem("currentTheme", "white"); 
   }
   
 }
 
 function currentThemeValue() {
-    if (localStorage.getItem("currentTheme") === "black" ) {
+    if (sessionStorage.getItem("currentTheme") === "black" ) {
         whiteSwan.disabled = true;
     } else {
         whiteSwan.disabled = false;
     }
 }
+
+*/
 
 // --------------------------------------------------------------
 // ACTIVE MENU ITEM
