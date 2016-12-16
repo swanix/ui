@@ -7,14 +7,13 @@
 // -----------------------------------------------------------+
 
 body {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: $text-font-body;
   color: $text-basic;
-  background: $body-bg;
   }
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-weight: normal;
+  font-family: $text-font-heading;
+  font-weight: $text-font-heading-weight;
   margin: 1rem 0 1rem 0;
   color: $text-heading;
   }
@@ -27,7 +26,7 @@ h5 { font-size: 1.4rem; }
 h6 { font-size: 1.3rem; }
 
 p {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: $text-font-paragraph;
   font-size: $text-medium;
   line-height: $text-baseline;
   margin: 0;

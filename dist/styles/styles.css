@@ -460,7 +460,6 @@ html {
 }
 
 body {
-  font-family: Tahoma, Geneva, sans-serif;
   font-size: 10px;
   background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
@@ -476,7 +475,6 @@ img {
 body {
   font-family: Tahoma, Geneva, sans-serif;
   color: #595959;
-  background: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -4,6 +4,7 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+@import "../vendors/bourbon/bourbon";
 @import "../vendors/neat/neat-helpers";
 
 // Breakpoints
@@ -80,31 +81,35 @@ $black:             darken($white, 100%); // Black (HTML color: black) #000000
 $primary:           #000000 !default; // Black
 $secondary:         #999999 !default; // Gray
 
-// COLORS
-// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // General
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 $body-bg:              $white !default;
 
 // Texts
-// ::::::::::::::::::::::::::::::::::::
-$text-basic:           $gray6 !default;
-$text-heading:         $gray8 !default;
-$text-link:            $gray9 !default;
-$text-link-hover:      $gray7 !default;
-$text-link-visited:    $gray9 !default;
-$text-selection:       $gray6 !default;
-$text-selection-bg:    $gray2 !default;
+// ----------------------------------------------
+
+$text-font-heading:         Tahoma, Geneva, sans-serif !default;
+$text-font-heading-weight:  normal !default;
+$text-font-body:            Tahoma, Geneva, sans-serif !default;
+$text-font-paragraph:       Tahoma, Geneva, sans-serif !default;
+
+$text-basic:                $gray6 !default;
+$text-heading:              $gray8 !default;
+$text-link:                 $gray9 !default;
+$text-link-hover:           $gray7 !default;
+$text-link-visited:         $gray9 !default;
+$text-selection:            $gray6 !default;
+$text-selection-bg:         $gray2 !default;
 // Horizontal rule
-$hr-color:             $gray3 !default;
+$hr-color:                  $gray3 !default;
 
 // Tables
 $table-td-border-bottom: none !default;
 $table-tr-hover-bg:      $gray1 !default;
 
 // Buttons base styles
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 // Btn
 $btn-text:           $gray7 !default;
 $btn-border:         $gray2 solid 1px !default;
@@ -127,7 +132,7 @@ $btn-primary-hover-bg:       $gray8 !default;
 
 
 // Input text and Textarea styles
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 // Input text (text, password, email, textarea)
 $input-text:                $gray6 !default;
 $input-text-border:         $gray3 solid 1px !default;
@@ -139,7 +144,7 @@ $input-text-focus-bg:       $white !default;
 
 
 // Select (dropdown) styles
-// ::::::::::::::::::::::::::::::::::::
+// ----------------------------------------------
 $dropdown-text:             $gray8 !default;
 $dropdown-border:           $gray5 solid 1px !default;
 $dropdown-bg:               $gray1 url(../../images/ic-arrow-down.png) right no-repeat !default;
