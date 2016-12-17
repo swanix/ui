@@ -47,7 +47,8 @@ $width-sidebar-tiny: 4rem;
 $text-tiny:    0.6rem  !default;
 $text-small:   1.2rem  !default;
 $text-medium:  1.4rem  !default;
-$text-large:   2.4rem  !default;
+$text-large:   1.9rem  !default;
+$text-xlarge:  2.4rem  !default;
 $text-huge:    3.4rem  !default;
 
 $text-baseline: 2.5rem !default;
@@ -89,13 +90,9 @@ $body-bg:              $white !default;
 // Texts
 // ----------------------------------------------
 
-// Revisar https://css-tricks.com/snippets/css/using-font-face/
-// http://digitalsynopsis.com/design/best-google-font-combinations-typeface-pairings/
-
 $text-font-heading:         Tahoma, Geneva, sans-serif !default;
 $text-font-heading-weight:  normal !default;
 $text-font-body:            Tahoma, Geneva, sans-serif !default;
-$text-font-paragraph:       Tahoma, Geneva, sans-serif !default;
 
 $text-basic:                $gray6 !default;
 $text-heading:              $gray8 !default;
@@ -110,6 +107,11 @@ $hr-color:                  $gray3 !default;
 // Tables
 $table-td-border-bottom: none !default;
 $table-tr-hover-bg:      $gray1 !default;
+
+// Forms
+// ----------------------------------------------
+$form-filedset-border:   $gray2 !default;
+
 
 // Buttons base styles
 // ----------------------------------------------

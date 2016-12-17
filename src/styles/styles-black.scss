@@ -5,7 +5,6 @@
 
 @import "core/abstract/variables";
 
-
 // BASE
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -22,12 +21,9 @@ $body-bg:              $black ;
 // Texts
 // ----------------------------------------------
 
-// Revisar http://digitalsynopsis.com/design/best-google-font-combinations-typeface-pairings/
-
 $text-font-heading:         Tahoma, Geneva, sans-serif ;
 $text-font-heading-weight:  normal ;
 $text-font-body:            Tahoma, Geneva, sans-serif ;
-$text-font-paragraph:       Tahoma, Geneva, sans-serif ;
 
 $text-basic:           $gray3 ;
 $text-heading:         $gray1 ;
@@ -42,6 +38,10 @@ $hr-color:             $gray8 ;
 // Tables
 $table-td-border-bottom: none ;
 $table-tr-hover-bg:      $gray8 ;
+
+// Forms
+// ----------------------------------------------
+$form-filedset-border:   $gray8;
 
 // Buttons base styles
 // ----------------------------------------------

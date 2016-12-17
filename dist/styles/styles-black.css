@@ -550,19 +550,34 @@ small {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
-blockquote {
-  padding: 1rem 2rem;
-  font-style: italic;
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-}
-
 q {
   display: inline-block;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
   font-style: italic;
   font-size: 1.4rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote q {
+  display: inline-block;
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  blockquote q {
+    font-size: 1.9rem;
+  }
+}
+
+blockquote footer {
+  margin-top: 1rem;
+  color: #b3b3b3;
+  text-align: right;
+  font-size: 1.9rem;
 }
 
 cite {
@@ -670,6 +685,7 @@ legend {
 
 fieldset {
   padding: 1em 2em;
+  border: 1px solid #333333;
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"], .button {

@@ -24,7 +24,6 @@ $body-bg:              $white ;
 $text-font-heading:         Tahoma, Geneva, sans-serif ;
 $text-font-heading-weight:  normal ;
 $text-font-body:            Tahoma, Geneva, sans-serif ;
-$text-font-paragraph:       Tahoma, Geneva, sans-serif ;
 
 $text-basic:           $gray6 ;
 $text-heading:         $gray8 ;
@@ -39,6 +38,10 @@ $hr-color:             $gray3 ;
 // Tables
 $table-td-border-bottom: none ;
 $table-tr-hover-bg:      $gray1 ;
+
+// Forms
+// ----------------------------------------------
+$form-filedset-border:   $gray2;
 
 // Buttons base styles
 // ----------------------------------------------
