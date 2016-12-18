@@ -3,6 +3,7 @@
 <head>
     <!-- Global -->
     <title>Components - Swan</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon -->
@@ -25,8 +26,8 @@
     <div class="logo">
       <a href="/">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
-        <use xlink:href="../images/svg/logo.svg#logo"></use>
-        <use xlink:href="../images/svg/logo.svg#logo-text"></use>
+        <use xlink:href="../images/logo.svg#logo"></use>
+        <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
       <!-- <label for="swap-theme">White</label> -->
@@ -44,12 +45,13 @@
         <li><a href="components.html">Components</a></li>
         <li><a href="layout.html">Layout</a></li>
         <li><a href="color.html">Color</a></li>
-        <li><a href="templates.html">Templates</a></li>
       </ul>     
     </nav> 
     <!-- Menu button -->
     <div class="menu-mobile-open">
-      <button class="btnMenu" type="button"><label>&#9776;</label></button>
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+      </button>
     </div> 
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
@@ -524,8 +526,8 @@
     <div class="logo">
       <a href="#">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
-        <use xlink:href="../images/svg/logo.svg#logo"></use>
-        <use xlink:href="../images/svg/logo.svg#logo-text"></use>
+        <use xlink:href="../images/logo.svg#logo"></use>
+        <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
     </div>
@@ -542,8 +544,10 @@
     </nav>
     <!-- Menu button -->
     <div class="menu-mobile-open">
-      <button class="btnMenu" type="button"><label>&#9776;</label></button>
-    </div> 
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+      </button>
+    </div>
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
 </div>
@@ -556,8 +560,8 @@
     <div class="logo">
       <a href="#">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
-        <use xlink:href="../images/svg/logo.svg#logo"></use>
-        <use xlink:href="../images/svg/logo.svg#logo-text"></use>
+        <use xlink:href="../images/logo.svg#logo"></use>
+        <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
     </div>
@@ -574,8 +578,10 @@
     </nav>
     <!-- Menu button -->
     <div class="menu-mobile-open">
-      <button class="btnMenu" type="button"><label>&#9776;</label></button>
-    </div> 
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+      </button>
+    </div>
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
 </div>
@@ -623,14 +629,17 @@
   <div class="centered">
   <!-- Start Social buttons -->
   <div class="social-links">
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-facebook.png" alt="Facebook">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
     </a>
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-twitter.png" alt="Twitter">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
     </a>
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-youtube.png" alt="YouTube">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
+    </a>
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
     </a>
   </div>
   <!-- End Social buttons -->
@@ -641,12 +650,14 @@
 
 <!-- Scripts -->
 <script src="../scripts/swan.min.js"></script>
+<script src="../scripts/svg4everybody.min.js"></script>
 <!-- Syntax Highlighter -->
 <script src="../scripts/dev/syntax.min.js"></script>
 <link href="../scripts/dev/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
      SyntaxHighlighter.all();
+     svg4everybody();
 </script>
 
 </body>

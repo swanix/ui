@@ -472,6 +472,51 @@ img {
   height: auto;
 }
 
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-medium {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-large {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-huge {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-xhuge {
+  display: inline-block;
+  width: 30rem;
+  height: 30rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 body {
   font-family: Tahoma, Geneva, sans-serif;
   color: #595959;
@@ -570,6 +615,7 @@ blockquote q {
 @media screen and (max-width: 768px) {
   blockquote q {
     font-size: 1.9rem;
+    line-height: 3rem;
   }
 }
 

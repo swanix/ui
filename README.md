@@ -38,18 +38,14 @@ Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasado
 ```sh
 swan/  # Carpeta raíz del repositorio
 │
-├── dist/           # Código generado para producción
-│   ├── audio/        
-│   ├── fonts/        
+├── dist/           # Código generado para producción         
 │   ├── images/
 │   ├── Pages/        
 │   ├── scripts/   
 │   ├── styles/    
 │   └── index.html
 │       
-├── src/           # Código fuente para desarrollo
-│   ├── audio/        
-│   ├── fonts/        
+├── src/           # Código fuente para desarrollo      
 │   ├── images/
 │   ├── Pages/        
 │   ├── scripts/   

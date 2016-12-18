@@ -86,6 +86,7 @@ blockquote q {
   line-height: 4rem;
   @include media($mobile){
     font-size: $text-large;
+    line-height: 3rem;
     }
   } 
 

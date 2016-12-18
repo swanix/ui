@@ -1,6 +1,19 @@
 <div class="navbar">
     <!-- Logo -->
-    <a class="logo" href="/"><img src="{{ urlLogo }}images/logo.png" alt="Swan"></a>
+    <div class="logo">
+      <a href="/">
+      <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
+        <use xlink:href="{{ urlLogo }}images/logo.svg#logo"></use>
+        <use xlink:href="{{ urlLogo }}images/logo.svg#logo-text"></use>
+      </svg>
+      </a>
+      <!-- <label for="swap-theme">White</label> -->
+      <label class="label-switch">
+        <input id="swap-theme" type="checkbox" />
+        <div class="checkbox"></div>
+      </label>
+      <!-- <label for="swap-theme">Black</label> -->
+    </div>
     <!-- Menu -->
     <nav class="menu">
       <ul>
@@ -9,13 +22,14 @@
         <li><a href="{{ urlPath }}components.html">Components</a></li>
         <li><a href="{{ urlPath }}layout.html">Layout</a></li>
         <li><a href="{{ urlPath }}color.html">Color</a></li>
-        <li><a href="{{ urlPath }}templates.html">Templates</a></li>
       </ul>     
-    </nav>
+    </nav> 
     <!-- Menu button -->
     <div class="menu-mobile-open">
-      <button class="btnMenu" type="button"><label>&#9776;</label></button>
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+      </button>
     </div> 
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
-</div>
+</div> 

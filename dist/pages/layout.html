@@ -3,6 +3,7 @@
 <head>
     <!-- Global -->
     <title>Layout - Swan</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon -->
@@ -25,8 +26,8 @@
     <div class="logo">
       <a href="/">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
-        <use xlink:href="../images/svg/logo.svg#logo"></use>
-        <use xlink:href="../images/svg/logo.svg#logo-text"></use>
+        <use xlink:href="../images/logo.svg#logo"></use>
+        <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
       <!-- <label for="swap-theme">White</label> -->
@@ -44,12 +45,13 @@
         <li><a href="components.html">Components</a></li>
         <li><a href="layout.html">Layout</a></li>
         <li><a href="color.html">Color</a></li>
-        <li><a href="templates.html">Templates</a></li>
       </ul>     
     </nav> 
     <!-- Menu button -->
     <div class="menu-mobile-open">
-      <button class="btnMenu" type="button"><label>&#9776;</label></button>
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+      </button>
     </div> 
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
@@ -71,85 +73,151 @@
 <div class="section-content pad">
   <!-- Content :::::::::::::::::::::: -->
   
+<!-- Templates :::::::::::::::::::::::::::: -->
+<h2 class="heading">Templates</h2>
+<section class="section">
+  <div class="section-content">
+   <!-- Start Grid View :::::::::::::::::::: -->
+    <section class="gridview">
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout1"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout2"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout3"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout4"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout5"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout6"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#" target="_self" >
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout7"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout8"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#" target="_self" >
+          <svg class="icon-xhuge"><use xlink:href="../images/layouts.svg#icon-layout9"></use></svg>
+        </a>
+      </article>
+    </section>
+    <!-- End Grid View :::::::::::::::::::: -->
+  </div>
+</section>
+<!-- Grid Columns :::::::::::::::::::::::::::::::::: -->
+<h2 class="heading">Grid Columns</h2>
 <!-- Section :::::::::::::::::::::::::::: -->
 <section class="section">
   <div class="section-content">
     <!-- Row 1 :::::::::::::::::::: -->
     <article class="col1 bg-gray2 pad gap-bottom">
-        <h3 class="pad"> 1 </h3>
+        <h3 class="pad gray7">1</h3>
     </article>
     <article class="col11 bg-gray1 pad gap-bottom">
-        <h3 class="pad">11 Cols</h3>
+        <h3 class="pad gray7">11 Cols</h3>
     </article>
     <!-- Row 2 :::::::::::::::::::: -->
     <article class="col2 bg-gray2 pad gap-bottom">
-        <h3 class="pad">2 Cols</h3>
+        <h3 class="pad gray7">2 Cols</h3>
     </article>
     <article class="col10 bg-gray1 pad gap-bottom">
-        <h3 class="pad">10 Cols</h3>
+        <h3 class="pad gray7">10 Cols</h3>
     </article>
     <!-- Row 3 :::::::::::::::::::: -->
     <article class="col3 bg-gray2 pad gap-bottom">
-        <h3 class="pad">3 Cols</h3>
+        <h3 class="pad gray7">3 Cols</h3>
     </article>
     <article class="col9 bg-gray1 pad gap-bottom">
-        <h3 class="pad">9 Cols</h3>
+        <h3 class="pad gray7">9 Cols</h3>
     </article>
     <!-- Row 4 :::::::::::::::::::: -->
     <article class="col4 bg-gray2 pad gap-bottom">
-        <h3 class="pad">4 Cols</h3>
+        <h3 class="pad gray7">4 Cols</h3>
     </article>
     <article class="col8 bg-gray1 pad gap-bottom">
-        <h3 class="pad">8 Cols</h3>
+        <h3 class="pad gray7">8 Cols</h3>
     </article>
     <!-- Row 5 :::::::::::::::::::: -->
     <article class="col5 bg-gray2 pad gap-bottom">
-        <h3 class="pad">5 Cols</h3>
+        <h3 class="pad gray7">5 Cols</h3>
     </article>
     <article class="col7 bg-gray1 pad gap-bottom">
-        <h3 class="pad">7 Cols</h3>
+        <h3 class="pad gray7">7 Cols</h3>
     </article>
     <!-- Row 6 :::::::::::::::::::: -->
     <article class="col6 bg-gray2 pad gap-bottom">
-        <h3 class="pad">6 Cols</h3>
+        <h3 class="pad gray7">6 Cols</h3>
     </article>
     <article class="col6 bg-gray1 pad gap-bottom">
-        <h3 class="pad">6 Cols</h3>
+        <h3 class="pad gray7">6 Cols</h3>
     </article>
     <!-- Row 7 :::::::::::::::::::: -->
     <article class="col7 bg-gray2 pad gap-bottom">
-        <h3 class="pad">7 Cols</h3>
+        <h3 class="pad gray7">7 Cols</h3>
     </article>
     <article class="col5 bg-gray1 pad gap-bottom">
-        <h3 class="pad">5 Cols</h3>
+        <h3 class="pad gray7">5 Cols</h3>
     </article>
     <!-- Row 8 :::::::::::::::::::: -->
     <article class="col8 bg-gray2 pad gap-bottom">
-        <h3 class="pad">8 Cols</h3>
+        <h3 class="pad gray7">8 Cols</h3>
     </article>
     <article class="col4 bg-gray1 pad gap-bottom">
-        <h3 class="pad">4 Cols</h3>
+        <h3 class="pad gray7">4 Cols</h3>
     </article>
     <!-- Row 9 :::::::::::::::::::: -->
     <article class="col9 bg-gray2 pad gap-bottom">
-        <h3 class="pad">9 Cols</h3>
+        <h3 class="pad gray7">9 Cols</h3>
     </article>
     <article class="col3 bg-gray1 pad gap-bottom">
-        <h3 class="pad">3 Cols</h3>
+        <h3 class="pad gray7">3 Cols</h3>
     </article>
     <!-- Row 10 :::::::::::::::::::: -->
     <article class="col10 bg-gray2 pad gap-bottom">
-        <h3 class="pad">10 Cols</h3>
+        <h3 class="pad gray7">10 Cols</h3>
     </article>
     <article class="col2 bg-gray1 pad gap-bottom">
-        <h3 class="pad">2 Cols</h3>
+        <h3 class="pad gray7">2 Cols</h3>
     </article>
     <!-- Row 11 :::::::::::::::::::: -->
     <article class="col11 bg-gray2 pad gap-bottom">
-        <h3 class="pad">11 Cols</h3>
+        <h3 class="pad gray7">11 Cols</h3>
     </article>
     <article class="col1 bg-gray1 pad gap-bottom">
-        <h3 class="pad">1</h3>
+        <h3 class="pad gray7">1</h3>
     </article>
   </div>
 </section>
@@ -162,80 +230,80 @@
   <div class="section-content">
     <!-- Row 1 :::::::::::::::::::: -->
     <article class="col1 bg-gray2 pad gap-bottom">
-        <h3 class="pad"> 1 </h3>
+        <h3 class="pad gray7">1</h3>
     </article>
     <article class="col11 bg-gray1 pad gap-bottom">
-        <h3 class="pad">11 Cols</h3>
+        <h3 class="pad gray7">11 Cols</h3>
     </article>
     <!-- Row 2 :::::::::::::::::::: -->
     <article class="col2 bg-gray2 pad gap-bottom">
-        <h3 class="pad">2 Cols</h3>
+        <h3 class="pad gray7">2 Cols</h3>
     </article>
     <article class="col10 bg-gray1 pad gap-bottom">
-        <h3 class="pad">10 Cols</h3>
+        <h3 class="pad gray7">10 Cols</h3>
     </article>
     <!-- Row 3 :::::::::::::::::::: -->
     <article class="col3 bg-gray2 pad gap-bottom">
-        <h3 class="pad">3 Cols</h3>
+        <h3 class="pad gray7">3 Cols</h3>
     </article>
     <article class="col9 bg-gray1 pad gap-bottom">
-        <h3 class="pad">9 Cols</h3>
+        <h3 class="pad gray7">9 Cols</h3>
     </article>
     <!-- Row 4 :::::::::::::::::::: -->
     <article class="col4 bg-gray2 pad gap-bottom">
-        <h3 class="pad">4 Cols</h3>
+        <h3 class="pad gray7">4 Cols</h3>
     </article>
     <article class="col8 bg-gray1 pad gap-bottom">
-        <h3 class="pad">8 Cols</h3>
+        <h3 class="pad gray7">8 Cols</h3>
     </article>
     <!-- Row 5 :::::::::::::::::::: -->
     <article class="col5 bg-gray2 pad gap-bottom">
-        <h3 class="pad">5 Cols</h3>
+        <h3 class="pad gray7">5 Cols</h3>
     </article>
     <article class="col7 bg-gray1 pad gap-bottom">
-        <h3 class="pad">7 Cols</h3>
+        <h3 class="pad gray7">7 Cols</h3>
     </article>
     <!-- Row 6 :::::::::::::::::::: -->
     <article class="col6 bg-gray2 pad gap-bottom">
-        <h3 class="pad">6 Cols</h3>
+        <h3 class="pad gray7">6 Cols</h3>
     </article>
     <article class="col6 bg-gray1 pad gap-bottom">
-        <h3 class="pad">6 Cols</h3>
+        <h3 class="pad gray7">6 Cols</h3>
     </article>
     <!-- Row 7 :::::::::::::::::::: -->
     <article class="col7 bg-gray2 pad gap-bottom">
-        <h3 class="pad">7 Cols</h3>
+        <h3 class="pad gray7">7 Cols</h3>
     </article>
     <article class="col5 bg-gray1 pad gap-bottom">
-        <h3 class="pad">5 Cols</h3>
+        <h3 class="pad gray7">5 Cols</h3>
     </article>
     <!-- Row 8 :::::::::::::::::::: -->
     <article class="col8 bg-gray2 pad gap-bottom">
-        <h3 class="pad">8 Cols</h3>
+        <h3 class="pad gray7">8 Cols</h3>
     </article>
     <article class="col4 bg-gray1 pad gap-bottom">
-        <h3 class="pad">4 Cols</h3>
+        <h3 class="pad gray7">4 Cols</h3>
     </article>
     <!-- Row 9 :::::::::::::::::::: -->
     <article class="col9 bg-gray2 pad gap-bottom">
-        <h3 class="pad">9 Cols</h3>
+        <h3 class="pad gray7">9 Cols</h3>
     </article>
     <article class="col3 bg-gray1 pad gap-bottom">
-        <h3 class="pad">3 Cols</h3>
+        <h3 class="pad gray7">3 Cols</h3>
     </article>
     <!-- Row 10 :::::::::::::::::::: -->
     <article class="col10 bg-gray2 pad gap-bottom">
-        <h3 class="pad">10 Cols</h3>
+        <h3 class="pad gray7">10 Cols</h3>
     </article>
     <article class="col2 bg-gray1 pad gap-bottom">
-        <h3 class="pad">2 Cols</h3>
+        <h3 class="pad gray7">2 Cols</h3>
     </article>
     <!-- Row 11 :::::::::::::::::::: -->
     <article class="col11 bg-gray2 pad gap-bottom">
-        <h3 class="pad">11 Cols</h3>
+        <h3 class="pad gray7">11 Cols</h3>
     </article>
     <article class="col1 bg-gray1 pad gap-bottom">
-        <h3 class="pad">1</h3>
+        <h3 class="pad gray7">1</h3>
     </article>
   </div>
 </section>
@@ -251,14 +319,17 @@
   <div class="centered">
   <!-- Start Social buttons -->
   <div class="social-links">
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-facebook.png" alt="Facebook">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
     </a>
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-twitter.png" alt="Twitter">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
     </a>
-    <a class="button primary" href="javascript:void(0)">
-      <img src="../images/ic-social-youtube.png" alt="YouTube">
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
+    </a>
+    <a class="button" href="#">
+      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
     </a>
   </div>
   <!-- End Social buttons -->
@@ -269,12 +340,14 @@
 
 <!-- Scripts -->
 <script src="../scripts/swan.min.js"></script>
+<script src="../scripts/svg4everybody.min.js"></script>
 <!-- Syntax Highlighter -->
 <script src="../scripts/dev/syntax.min.js"></script>
 <link href="../scripts/dev/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
      SyntaxHighlighter.all();
+     svg4everybody();
 </script>
 
 </body>
