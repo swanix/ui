@@ -915,6 +915,7 @@ input[type="text"] {
   color: #595959;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 input[type="password"] {
@@ -925,6 +926,7 @@ input[type="password"] {
   color: #595959;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 input[type="email"] {
@@ -934,6 +936,7 @@ input[type="email"] {
   color: #595959;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 input:focus {
@@ -951,6 +954,7 @@ textarea {
   color: #595959;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 textarea:focus {
@@ -1766,7 +1770,7 @@ ul.listview {
 }
 
 .cardview-item-body h3 {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
 }
 
 .cardview-item-body p {
@@ -1940,7 +1944,7 @@ ul.listview {
 }
 
 .articleview-item-body h3 {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
 }
 
 .articleview-item-body p {
@@ -2066,4 +2070,9 @@ li.page-active a {
   overflow: hidden;
   -webkit-transition: max-height 0.30s ease-in;
   transition: max-height 0.30s ease-in;
+}
+
+.js-toggle {
+  display: block;
+  margin-top: 2.5rem;
 }
