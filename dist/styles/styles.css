@@ -744,7 +744,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   -webkit-transition: .2s;
   transition: .2s;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   color: #4d4d4d;
   border: #e6e6e6 solid 1px;
   background: #f2f2f2;

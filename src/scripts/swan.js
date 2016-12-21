@@ -85,8 +85,6 @@ for (var i = 0; i < toggleBtn.length; i++) {
 // --------------------------------------------------------------
 // This solution is temporal
 
-onchange
-
 var btnSwapTheme = document.getElementById("swap-theme");
 var blackSwan = document.styleSheets[0];
 var whiteSwan = document.styleSheets[1];
@@ -113,34 +111,6 @@ function currentThemeValue() {
         btnSwapTheme.checked = false;
     }
 }
-
-/*
-var btnSwapTheme = document.getElementById("swap-theme");
-var blackSwan = document.styleSheets[0];
-var whiteSwan = document.styleSheets[1];
-
-btnSwapTheme.onclick = function() {
-  if (whiteSwan.disabled === false) {
-      whiteSwan.disabled = true;
-      sessionStorage.clear();
-      sessionStorage.setItem("currentTheme", "black"); 
-  } else {
-      whiteSwan.disabled = false;
-      sessionStorage.clear();
-      sessionStorage.setItem("currentTheme", "white"); 
-  }
-  
-}
-
-function currentThemeValue() {
-    if (sessionStorage.getItem("currentTheme") === "black" ) {
-        whiteSwan.disabled = true;
-    } else {
-        whiteSwan.disabled = false;
-    }
-}
-
-*/
 
 // --------------------------------------------------------------
 // ACTIVE MENU ITEM
