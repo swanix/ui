@@ -69,7 +69,7 @@ $articleview-item-hover-bg:               darken($white, 2%) !default;
 }
 
 .articleview-item-body h3 {
-  font-size: $text-large;
+  font-size: $text-large - 0.2rem;
 }
 
 .articleview-item-body p {
