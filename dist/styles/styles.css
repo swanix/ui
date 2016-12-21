@@ -479,6 +479,7 @@ img {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 .icon-medium {
@@ -488,6 +489,7 @@ img {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 .icon-large {
@@ -497,6 +499,7 @@ img {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 .icon-huge {
@@ -506,6 +509,7 @@ img {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 .icon-xhuge {
@@ -515,6 +519,7 @@ img {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 body {
@@ -787,14 +792,9 @@ button:hover, button:focus, input[type="button"]:focus, input[type="reset"]:focu
 }
 
 .circle {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   text-align: center;
-  border: 1px solid;
-  padding: 0;
-  padding-top: 7px;
+  padding: 1rem 1.1rem;
 }
 
 .small {

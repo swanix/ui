@@ -85,24 +85,19 @@
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .rounded {
-    border-radius:              50px;
-    min-width:                  100px;
+    border-radius: 50px;
+    min-width: 100px;
     }
 
 .circle {
-    display:                    inline-block ;
-    width:                      50px ;
-    height:                     50px ;
-    border-radius:              50% ;
-    text-align:                 center;
-    border:                     1px solid;
-    padding:                    0 ;
-    padding-top:                7px;
+    border-radius: 50% ;
+    text-align: center;
+    padding:  1rem 1.1rem ;
     }
 
 .small {
-    width:                      25px ;
-    height:                     25px ;
+    width: 25px ;
+    height: 25px ;
     }
 
 .fill {

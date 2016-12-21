@@ -32,10 +32,10 @@ var outputTwigIndex = 'dist/';
 // JS
 var inputJs = 'src/scripts/*.js';
 var outputJs = 'dist/scripts/';
-var inputJsSyntax = ['src/scripts/dev/syntax/shCore.js', 'src/scripts/dev/syntax/shBrushXml.js'];
-var outputJsSyntax = 'dist/scripts/dev/';
-var inputJsCss = ['src/scripts/dev/syntax/shCore.css', 'src/scripts/dev/syntax/shThemeSwan.css'];
-var outputJsCss = 'dist/scripts/dev/';
+var inputJsSyntax = ['src/scripts/vendors/syntax/shCore.js', 'src/scripts/dev/syntax/shBrushXml.js'];
+var outputJsSyntax = 'dist/scripts/vendors/';
+var inputJsCss = ['src/scripts/vendors/syntax/shCore.css', 'src/scripts/dev/syntax/shThemeSwan.css'];
+var outputJsCss = 'dist/scripts/vendors/';
 // Sass
 var inputSass = 'src/styles/**/*.scss';
 var outputSass = 'dist/styles/';
