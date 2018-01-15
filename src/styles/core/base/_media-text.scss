@@ -1,10 +1,29 @@
 // -----------------------------------------------------------
-// NATIVE TYPOGRAPHY STYLES
+// NATIVE TYPOGRAPHY by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// TEXTS
-// -----------------------------------------------------------+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+$text-font-heading:         Tahoma, Geneva, sans-serif !default;
+$text-font-heading-weight:  normal !default;
+$text-font-body:            Tahoma, Geneva, sans-serif !default;
+
+$text-basic:                $gray6 !default;
+$text-heading:              $gray8 !default;
+$text-link:                 $gray9 !default;
+$text-link-hover:           $gray7 !default;
+$text-link-visited:         $gray9 !default;
+$text-selection:            $gray6 !default;
+$text-selection-bg:         $gray2 !default;
+// Horizontal rule
+$hr-color:                  $gray3 !default;
+
+
+// STYLES
+// ------------------------------------------------------------
 
 body {
   font-family: $text-font-body;
@@ -14,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6  {
   font-family: $text-font-heading;
   font-weight: $text-font-heading-weight;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 2rem 0;
   color: $text-heading;
   }
 
@@ -73,7 +92,7 @@ q {
   display: inline-block;
   font-style: italic;
   font-size: $text-medium;
-  }  
+  }
 
 blockquote {
   font-style: italic;
@@ -88,7 +107,7 @@ blockquote q {
     font-size: $text-large;
     line-height: 3rem;
     }
-  } 
+  }
 
 blockquote footer {
   margin-top: 1rem;
@@ -151,8 +170,23 @@ input [type="checkbox"] {
   background: $text-selection-bg;
 }
 
+
 .heading {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
   @include media($mobile){
     margin-left:1rem;
     }
+}
+
+.heading {
+  margin: 10rem 2rem 3rem 2rem;
+  @include media($mobile){
+    margin-left:1rem;
+    }
+}
+
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
 }

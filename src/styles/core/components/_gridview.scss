@@ -3,8 +3,10 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Gridview styles
-// ---------------------------------------------------
+
+// VARIABLES
+// -----------------------------------------------------------
+
 // Item
 $gridview-item-text:                   $gray5 !default;
 $gridview-item-bottom-border:          $gray2 1px solid !default;
@@ -17,6 +19,9 @@ $gridview-item-hover-image-bg:         none !default;
 $gridview-item-hover-bg:               darken($white, 2%) !default;
 
 
+// STYLES
+// -----------------------------------------------------------
+
 .gridview {
   display:flex;
   flex-wrap: wrap;
@@ -28,6 +33,7 @@ $gridview-item-hover-bg:               darken($white, 2%) !default;
 .gridview-item {
   display: flex;
   flex: 0 1 33%;
+  flex-direction: column;
   margin-bottom: 0.5rem;
   color: $gridview-item-text;
   background: $gridview-item-bg;
@@ -38,7 +44,8 @@ $gridview-item-hover-bg:               darken($white, 2%) !default;
     }
 }
 
-.gridview-item img {
+.gridview-item img,
+.gridview-item a {
   width: 100%;
   height: auto;
   @include media($mobile){
@@ -78,13 +85,7 @@ $gridview-item-hover-bg:               darken($white, 2%) !default;
 .gridview-item a:hover {
   background: $gray8;
   cursor: pointer;
-  // Transition
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
   transition:.2s;
-  // End transition
   color: $gridview-item-hover-text;
   border-bottom: $gridview-item-hover-bottom-border;
   background: $gridview-item-hover-bg;

@@ -1,12 +1,14 @@
 // -----------------------------------------------------------
-//  LAYOUT MANAGER
+// LAYOUT by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-$layout-border: none !default; // Development purposes only
 
-// Layout base styles
-// ---------------------------------------------------
+// VARIABLES
+// -----------------------------------------------------------
+
+$layout-border:        none !default; // Development purposes only
+// Layout base
 $layout-bg:            none !default;
 $layout-header-bg:     $white !default;
 $layout-main-bg:       $white !default;
@@ -14,7 +16,9 @@ $layout-footer-bg:     $gray1 !default;
 $content-bg:           $white !default;
 $sidebar-bg:           $gray1 !default;
 
-// Master Containers
+
+// STYLES
+// -----------------------------------------------------------
 
 .layout {
 	overflow: auto;
@@ -63,22 +67,6 @@ $sidebar-bg:           $gray1 !default;
 
 // Generic classes
 
-.section {
-  @include row();
-  outline: $layout-border;
-	overflow: hidden; // Resuelve margin compartido con elementos H1
-}
-
-.section-content {
-  @include outer-container(980px);
-  outline: $layout-border;
-}
-
-.section-content-full {
-  @include outer-container(100%);
-  outline: $layout-border;
-}
-
 .content {
   @include span-columns(8);
   color: $text-basic;
@@ -106,33 +94,6 @@ $sidebar-bg:           $gray1 !default;
     }
 }
 
-
-// Columns classes
-
-.col1  { @include span-columns(1); outline:$layout-border;  }
-.col2  { @include span-columns(2); outline:$layout-border;  }
-.col3  { @include span-columns(3); outline:$layout-border;  }
-.col4  { @include span-columns(4); outline:$layout-border;  }
-.col5  { @include span-columns(5); outline:$layout-border;  }
-.col6  { @include span-columns(6); outline:$layout-border;  }
-.col7  { @include span-columns(7); outline:$layout-border;  }
-.col8  { @include span-columns(8); outline:$layout-border;  }
-.col9  { @include span-columns(9); outline:$layout-border;  }
-.col10 { @include span-columns(10); outline:$layout-border;  }
-.col11 { @include span-columns(11); outline:$layout-border;  }
-.col12 { @include span-columns(12); outline:$layout-border;  }
-
-@include media($mobile){
-
-    .col1, .col2, .col3, .col4,
-    .col5, .col6, .col7, .col8,
-    .col9, .col10, .col11, .col12 {
-      @include span-columns(12 of 12);
-      outline:$layout-border;
-    }
-
-  }
-
 // Fixed positions
 
 .fixed-top {
@@ -150,7 +111,7 @@ $sidebar-bg:           $gray1 !default;
 
 .fixed-left {
     position: fixed;
-    top: 0;
+		left:0;
     z-index: 20;
 }
 
@@ -160,34 +121,28 @@ $sidebar-bg:           $gray1 !default;
     z-index: 20;
 }
 
-
-// Gaps when layout elements are fixed (improve soon)
+// Gaps when layout elements are fixed (must be improved soon)
 
 .gap-top    { margin-top: $width-sidebar-tiny ; }
 .gap-left   { padding-left: $width-sidebar-tiny; }
 .gap-right  { padding-right: $width-sidebar-tiny ; }
 .gap-bottom { margin-bottom: $width-sidebar-tiny ; }
 
-
-// Padding
-
-.pad {
- padding: 1rem 2rem;
-  @include media($mobile){
-    padding: 0.5rem 1rem;
-    }
-}
-
-.gap-bottom {
-  margin-bottom: 1rem;
-}
+// other
 
 .inner-centered {
   @include vertical-align;
   text-align: center;
 }
 
-.heading {
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+.block {
+	min-height: 30rem;
+	padding: 2rem;
+	margin: 5rem 2rem 15rem 2rem;
+	border: 1px solid rgba(158, 158, 158, 0.3);
+	overflow: auto;
+	clear:both;
+	@include media($mobile){
+		margin:0;
+    }
 }

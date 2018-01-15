@@ -3,8 +3,10 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Listview styles
-// ---------------------------------------------------
+
+// VARIABLES
+// -----------------------------------------------------------
+
 // Item
 $listview-item-text:                   $gray5 !default;
 $listview-item-bottom-border:          $gray2 1px solid !default;
@@ -16,6 +18,9 @@ $listview-item-hover-bottom-border:    $gray3 1px solid !default;
 $listview-item-hover-image-bg:         none !default;
 $listview-item-hover-bg:               darken($white, 2%) !default;
 
+
+// STYLES
+// -----------------------------------------------------------
 
 .listview {
   display:flex;

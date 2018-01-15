@@ -1,7 +1,7 @@
 //-----------------------------------------------------
 // SWAN UI
 // by Sebastian Serna
-// 2015 - 2016
+// 2015 - 2018
 //-----------------------------------------------------
 
 'use strict';
@@ -15,7 +15,6 @@ var gulp = require('gulp' ),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    sassdoc = require('sassdoc'),
     twig = require('gulp-twig'),
     browserSync = require('browser-sync');
 
@@ -24,25 +23,36 @@ var gulp = require('gulp' ),
 //-----------------------------------------------------
 
 // Twig to HTML
-var inputTwigWatch = 'src/pages/**/*.htm';
-var inputTwig = 'src/pages/*.htm';
+var inputTwigWatch = 'src/pages/**/*.twig';
+var inputTwig = 'src/pages/*.twig';
 var outputTwig = 'dist/pages';
-var inputTwigIndex = 'src/index.htm';
+var inputTwigIndex = 'src/index.twig';
 var outputTwigIndex = 'dist/';
-// JS
-var inputJs = 'src/scripts/*.js';
-var outputJs = 'dist/scripts/';
-var inputJsSyntax = ['src/scripts/vendors/syntax/shCore.js', 'src/scripts/dev/syntax/shBrushXml.js'];
-var outputJsSyntax = 'dist/scripts/vendors/';
-var inputJsCss = ['src/scripts/vendors/syntax/shCore.css', 'src/scripts/dev/syntax/shThemeSwan.css'];
-var outputJsCss = 'dist/scripts/vendors/';
-// Sass
+
+// Sass to CSS
 var inputSass = 'src/styles/**/*.scss';
 var outputSass = 'dist/styles/';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
 };
+
+// Scripts concat
+var outputJs = 'dist/scripts/';
+var inputJs = [
+      // Native and adapted
+      'src/scripts/components/prevent-url.js',
+      'src/scripts/components/navbar.js',
+      'src/scripts/components/toggle.js',
+      'src/scripts/components/dialog.js',
+      'src/scripts/components/scrollbar.js',
+      'src/scripts/components/scroll-smooth.js',
+      'src/scripts/components/slideshow.js',
+      'src/scripts/components/lazy-load.js',
+      // Vendors
+      'src/scripts/vendors/cover-image.js',
+      'src/scripts/vendors/svg4everybody.js'
+    ];
 
 //-----------------------------------------------------
 // Twig templates to HTML
@@ -78,54 +88,39 @@ gulp.task ('sass' , function() {
       .pipe(autoprefixer())
       .pipe(gulp.dest(outputSass))
       .pipe(cleanCSS())
-      .pipe(rename('styles.min.css'))
+      .pipe(rename('swan.min.css'))
       .pipe(gulp.dest(outputSass))
       .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
-// Scripts merge task
+// Scripts minification and concat task
 //-----------------------------------------------------
-
-gulp.task ('minjs-swan' , function() {
-    return gulp
-      .src (inputJs)
-      .pipe(plumber())
-      .pipe(concat('scripts.min.js'))
-      .pipe(uglify())
-      .pipe(rename('swan.min.js'))
-      .pipe(gulp.dest(outputJs))
-      .pipe(browserSync.stream());
-});
 
 gulp.task ('minjs' , function() {
-    return gulp
-      .src (inputJsSyntax)
-      .pipe(plumber())
-      .pipe(concat('syntax.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest(outputJsSyntax))
-      .pipe(browserSync.stream());
-});
-
-gulp.task ('minjs-css' , function() {
-    return gulp
-      .src (inputJsCss)
-      .pipe(plumber())
-      .pipe(concat('syntax.min.css'))
-      .pipe(cleanCSS())
-      .pipe(gulp.dest(outputJsCss));
+  return gulp
+    .src (inputJs)
+    .pipe(plumber())
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(outputJs))
+    .pipe(uglify())
+    .pipe(rename('scripts.min.js'))
+    .pipe(gulp.dest(outputJs))
+    .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
-// Browser Sync task (static server)
+// BrowserSync task (server)
 //-----------------------------------------------------
 
 gulp.task ('browser-sync' , function() {
     browserSync.init({
         server: {
           baseDir: 'dist',
-          index: 'index.html'
+          index: 'index.html',
+          serveStaticOptions: {
+            extensions: ['html']
+          }
         }
     });
     gulp.watch([
@@ -139,10 +134,8 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['browser-sync'] , function() {
-      gulp.watch(inputJs, ['minjs-swan']);
-      gulp.watch(inputJsCss, ['minjs-css']);
-      gulp.watch(inputJsSyntax, ['minjs']);
+gulp.task('watch', ['twig' , 'sass', 'minjs', 'browser-sync'] , function() {
+      gulp.watch(inputJs, ['minjs']);
       gulp.watch(inputTwigWatch, ['twig','twigIndex']);
       gulp.watch(inputTwigIndex, ['twig','twigIndex']);
       gulp.watch(inputSass, ['sass']);

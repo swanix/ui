@@ -1,0 +1,90 @@
+// -----------------------------------------------------------
+// GRID by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// STYLES
+// -----------------------------------------------------------
+
+// Content Columns
+
+.one-column  { @include span-columns(1); }
+
+.two-columns  { @include span-columns(2); }
+
+.three-columns, .fourth-wide {
+  @include span-columns(3);
+}
+
+.four-columns, .third-wide {
+  @include span-columns(4);
+}
+
+.five-columns  { @include span-columns(5); }
+
+.six-columns, .half-wide {
+  @include span-columns(6);
+}
+
+.seven-columns  { @include span-columns(7); }
+
+.eight-columns  { @include span-columns(8); }
+
+.nine-columns  { @include span-columns(9); }
+
+.ten-columns { @include span-columns(10); }
+
+.eleven-columns { @include span-columns(11); }
+
+.twelve-columns { @include span-columns(12); }
+
+@include media($mobile) {
+  .one-column, .two-columns, .three-columns, .four-columns,
+  .five-columns, .six-columns, .seven-columns, .eight-columns,
+  .nine-columns, .ten-columns, .eleven-columns, .twelve-columns,
+  .fourth-wide, .third-wide, .half-wide {
+    @include span-columns(12 of 12);
+  }
+}
+
+// Content Rows
+
+.row {
+  @include row();
+	height: $size-xxl;
+	background-size: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; // Resuelve margin compartido con elementos H1
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.row-content {
+  @include outer-container(980px);
+  z-index: 4;
+  overflow: auto;
+  @include media($mobile) {
+     //padding: 8rem 2rem 0 2rem;
+    }
+}
+
+.row-content-full {
+  @include outer-container(100%);
+	padding-top: 10rem;
+	height:100%;
+  overflow: auto;
+  @include media($mobile) {
+     padding-top: 8rem;
+    }
+}
+
+.center-x { text-align: center;margin: 0 auto;}
+.center-y { @include vertical-align();}
+
+.center-xy {
+  text-align: center;margin: 0 auto;
+  @include vertical-align();
+}

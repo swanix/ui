@@ -1,0 +1,27 @@
+// -----------------------------------------------------------
+// MEDIA VIDEO by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// Based on Refills http://refills.bourbon.io/components/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+
+// STYLES
+// -----------------------------------------------------------
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+  }
+}

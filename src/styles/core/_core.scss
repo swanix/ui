@@ -1,3 +1,9 @@
+/*!
+ * Swan UI v0.3.6
+ * https://github.com/acuariux/swan
+ * (c) 2015-2017 Sebastian Serna
+ * Released under the MIT License.
+ */
 // -----------------------------------------------------------
 // SWAN CORE PACKAGE
 // -----------------------------------------------------------
@@ -11,13 +17,17 @@
 // Abstract
 @import "abstract/variables";
 @import "abstract/mixins";
-@import "abstract/utilities"; // Generic classes
+
+// Layout
+@import "layout/layout";
+@import "layout/grid";
 
 // Base UI Elements
 @import "base/body";
 @import "base/media-image";
 @import "base/media-icons";
 @import "base/media-audio";
+@import "base/media-video";
 @import "base/media-text";
 @import "base/media-text-tables";
 @import "base/control-basic-form";
@@ -25,21 +35,26 @@
 @import "base/control-checkboxes";
 @import "base/control-progress";
 @import "base/control-radio-buttons";
-@import "base/control-scrollbars";
+@import "base/control-scrollbar";
 @import "base/control-select";
 @import "base/control-sliders";
 @import "base/control-switches";
 @import "base/control-text-input";
 
-// Layout
-@import "layout/layout";
-
 // Components & Patterns
-@import "components/menu";
-@import "components/hero-banner";
+@import "components/navbar";
+@import "components/hero-block";
 @import "components/listview";
 @import "components/cardview";
 @import "components/gridview";
 @import "components/articleview";
+@import "components/formview";
+@import "components/slideshow";
+@import "components/mapview";
 @import "components/pagination";
 @import "components/togglepanel";
+@import "components/dialog";
+@import "components/tooltip";
+
+// Other
+@import "abstract/utilities";

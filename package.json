@@ -17,22 +17,22 @@
   },
   "homepage": "https://github.com/acuariux/swan#readme",
   "engines": {
-    "node": "4.0.0",
-    "npm": "2.14.2"
+    "node": ">= 4.0.0",
+    "npm": ">= 2.14.2"
   },
   "devDependencies": {
-    "browser-sync": "2.18.2",
+    "browser-sync": "2.18.12",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "3.1.1",
-    "gulp-clean-css": "2.0.13",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-clean-css": "3.4.1",
     "gulp-concat": "2.6.1",
-    "gulp-install": "0.6.0",
+    "gulp-imagemin": "3.3.0",
+    "gulp-install": "1.1.0",
     "gulp-plumber": "1.1.0",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "2.3.2",
-    "gulp-sourcemaps": "1.9.1",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.0",
     "gulp-twig": "0.7.0",
-    "gulp-uglify": "2.0.0",
-    "sassdoc": "2.1.20"
+    "gulp-uglify": "3.0.0"
   }
 }

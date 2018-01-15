@@ -1,0 +1,29 @@
+{% extends "templates/default.twig" %}
+{% set title = "Layout - Swan" %}
+{% set pageTitle = "Layout" %}
+{% set urlPath = "../" %}
+{% set urlLogo = "../" %}
+{% set is_hidden = 0 %}
+
+{% block content %}
+
+{% include 'templates/partials/app-subheader.twig' %}
+
+<!-- Templates :::::::::::::::::::::::::::: -->
+<h2 class="heading">Basic Layouts</h2>
+{% include 'templates/partials/layout-basic-layouts.twig' %}
+
+<!-- Grid Columns :::::::::::::::::::::::::::::::::: -->
+<h2 class="heading">Grid Columns</h2>
+{% include 'templates/partials/layout-basic-columns.twig' %}
+<!-- Code Example -->
+<button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+  <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ {% include 'templates/partials/layout-basic-columns.twig' %} ]]>
+    </script>
+</div>
+
+{% endblock %}

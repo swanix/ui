@@ -3,16 +3,17 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Toggle Variables
-// ::::::::::::::::::::::::::::::::::::
+// VARIABLES
+// ----------------------------------------------
 
-// Toogle visibility
+
+// STYLES
+// ----------------------------------------------
 
 .js-toggle-hidden {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.20s ease-out;
-
 }
 
 .js-toggle-visible {
@@ -20,7 +21,6 @@
   overflow: hidden;
   transition: max-height 0.30s ease-in;
 }
-
 
 .js-toggle {
 	display:block;

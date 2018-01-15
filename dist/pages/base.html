@@ -3,15 +3,14 @@
 <head>
     <!-- Global -->
     <title>Base - Swan</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
     <!-- Styles and fonts -->
-    <link rel="stylesheet" href="../styles/styles-black.css" type="text/css"  />
-    <link rel="stylesheet" href="../styles/styles.min.css" type="text/css" />
+    <link href="../styles/swan-black.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../styles/swan.min.css" media="screen" rel="stylesheet" type="text/css">
     <!-- IE support -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,576 +18,444 @@
 </head>
 <body>
 <div class="layout">
-<!-- Header :::::::::::::::::::::: -->
-<header class="layout-header fixed-top shadow-bottom">
-  <div class="navbar">
+  <!-- Header :::::::::::::::::::::: -->
+  <header class="layout-header fixed-top shadow-bottom">
+    <div class="navbar" data-scroll-header>
     <!-- Logo -->
     <div class="logo">
-      <a href="/">
+      <a href="../styleguide">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
         <use xlink:href="../images/logo.svg#logo"></use>
         <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
-      <!-- <label for="swap-theme">White</label> -->
       <label class="label-switch">
         <input id="swap-theme" type="checkbox" />
         <div class="checkbox"></div>
       </label>
-      <!-- <label for="swap-theme">Black</label> -->
     </div>
     <!-- Menu -->
     <nav class="menu">
       <ul>
-        <li><a href="/">Overview</a></li>
-        <li><a href="base.html">Base</a></li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="layout.html">Layout</a></li>
-        <li><a href="color.html">Color</a></li>
-      </ul>     
-    </nav> 
+        <li><a href="../pages/base">Base</a></li>
+        <li><a href="../pages/components">Components</a></li>
+        <li><a href="../pages/layout">Layout</a></li>
+        <li><a href="../pages/color">Color</a></li>
+      </ul>
+    </nav>
     <!-- Menu button -->
     <div class="menu-mobile-open">
       <button class="btnMenu" type="button">
-         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+         <svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
       </button>
-    </div> 
+    </div>
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
-</div> 
-</header>
-<!-- Content Area :::::::::::::::::::::: -->
-<main class="layout-main" role="main">
-<section class="section">
-<div class="section-content-full">
-  <!-- Subheader :::::::::::::::::::::: -->
-  <header class="hero size-m">
+</div>
+  </header>
+  <!-- Content Area :::::::::::::::::::::: -->
+  <main class="layout-main" role="main">
+    <aside class="sidebar-menu fixed-left shadow-right" ss-container>
+                <nav class="menu menu-vertical">
+  <ul>
+    <!--<li><a class="separator">Multimedia</a></li>-->
+    <li><a href="#image" data-scroll>Image</a></li>
+    <li><a href="#icons" data-scroll>Icons</a></li>
+    <li><a href="#audio" data-scroll>Audio</a></li>
+    <li><a href="#video" data-scroll>Video</a></li>
+    <li><a href="#text" data-scroll>Text</a></li>
+    <!--<li><a class="separator">Interactive</a></li>-->
+    <li><a href="#buttons" data-scroll>Buttons</a></li>
+    <li><a href="#icon-buttons" data-scroll>Icon Buttons</a></li>
+    <li><a href="#radio-buttons" data-scroll>Radio Buttons</a></li>
+    <li><a href="#checkboxes" data-scroll>Checkboxes</a></li>
+    <li><a href="#dropdown" data-scroll>Dropdown</a></li>
+    <li><a href="#text-input" data-scroll>Text Input</a></li>
+    <li><a href="#form" data-scroll>Form Wrap</a></li>
+    <li><a href="#switch" data-scroll>Switch</a></li>
+    <li><a href="#progress" data-scroll>Progress</a></li>
+    <li><a href="#scroll-custom" data-scroll>Scroll Panel</a></li>
+    <li><a href="#file-input" data-scroll>File Input</a></li>
+  </ul>
+</nav>
+          </aside>
+    <section class="content-full gap-left">
+        
+
+<header class="hero size-m">
     <div class="hero-content">
-      <h1>Base</h1>
+      <div class="title-margin">
+        <h1>Base</h1>
+      </div>
     </div>
 </header>
-</div>
-</section>
-<section class="section">
-<div class="section-content pad">
-  <!-- Content :::::::::::::::::::::: -->
-  
+
 
 <h1 class="heading">Multimedia</h1>
-<hr />
 
-<!-- Media Image :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Image</h2>
-<img src="../images/image-basic.jpg" alt="Swan Project Photo by Laura Kangur">
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <img src="../images/image-basic.jpg" alt="Swan Project Photo by Laura Kangur">
+<section id="image" class="block">
+  <h2>Image</h2>
+  <img class="lazyload"
+  data-src="../images/image-large.jpg"
+  alt="Photo by Laura Kangur"
+  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <img class="lazyload"
+  data-src="../images/image-large.jpg"
+  alt="Photo by Laura Kangur"
+  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
+</section>
 
-<!-- Media Icons :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Icons</h2>
-<h4>Small</h4>
+<section id="icons" class="block">
+  <h2>Icons</h2>
+  <h4>Small</h4>
 <hr />
 <div>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 <h4>Medium</h4>
 <hr />
 <div>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 <h4>Large</h4>
 <hr />
 <div>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 
 <h4>Social Icons</h4>
 <hr />
 <div>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-instagram"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-pinterest"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-whatsapp"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-vimeo"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-instagram"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-pinterest"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-whatsapp"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-vimeo"></use></svg>
 </div>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <h4>Small</h4>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <h4>Small</h4>
 <hr />
 <div>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 <h4>Medium</h4>
 <hr />
 <div>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 <h4>Large</h4>
 <hr />
 <div>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#home"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#arrow-left"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#arrow-right"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#minus"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#search"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	<svg class="icon-large"><use xlink:href="../images/icons.svg#mail"></use></svg>
 </div>
 
 
 <h4>Social Icons</h4>
 <hr />
 <div>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-instagram"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-pinterest"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-whatsapp"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
-	<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-vimeo"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-instagram"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-pinterest"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-whatsapp"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
+	<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-vimeo"></use></svg>
 </div>
  ]]>
-    </script>
+      </script>
+  </div>
+</section>
+
+<section id="audio" class="block">
+  <h2>Audio (Embed)</h2>
+  <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flowlight%2Fthe-stars-my-destination%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe>
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flowlight%2Fthe-stars-my-destination%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe> ]]>
+      </script>
+  </div>
+</section>
+
+<section id="video" class="block">
+  <h2>Video (Embed)</h2>
+  <div class="video">
+  <div class="video-wrapper">
+	<iframe src="https://player.vimeo.com/video/4646764?color=ffffff&title=0&byline=0&portrait=0" width="980" height="539" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 </div>
 
-<!-- Media Icon Buttons :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Icon Buttons</h2>
-<h4 class="heading">Small</h4>
-<div>
-	<button class="circle">
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="rounded">
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-		Icon Button Rounded
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <div class="video">
+  <div class="video-wrapper">
+	<iframe src="https://player.vimeo.com/video/4646764?color=ffffff&title=0&byline=0&portrait=0" width="980" height="539" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 </div>
+ ]]>
+      </script>
+  </div>
+</section>
 
-<h4 class="heading">Medium</h4>
-<div>
-	<button class="circle">
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="rounded">
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	    Icon Button Rounded
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
-</div>
-
-<h4 class="heading">Large</h4>
-<div>
-	<button class="circle">
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="circle">
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
-</div>
-
-<h4 class="heading">Social</h4>
-<div>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-instagram"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-pinterest"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-whatsapp"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-vimeo"></use></svg>
-	</button>
-</div><!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <h4 class="heading">Small</h4>
-<div>
-	<button class="circle">
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="rounded">
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-		Icon Button Rounded
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
-</div>
-
-<h4 class="heading">Medium</h4>
-<div>
-	<button class="circle">
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="rounded">
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	    Icon Button Rounded
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
-</div>
-
-<h4 class="heading">Large</h4>
-<div>
-	<button class="circle">
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-add"></use></svg>
-	</button>
-	<button class="circle">
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-edit"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-settings"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-large"><use xlink:href="../images/icons.svg#icon-mail"></use></svg>
-	</button>
-</div>
-
-<h4 class="heading">Social</h4>
-<div>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-instagram"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-pinterest"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-whatsapp"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
-	</button>
-	<button>
-		<svg class="icon-medium"><use xlink:href="../images/icons.svg#icon-social-vimeo"></use></svg>
-	</button>
-</div> ]]>
-    </script>
-</div>
-
-<!-- Text Headings :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Texts</h2>
-<h1>Heading 1</h1>
+<section id="text" class="block">
+  <h2>Texts</h2>
+  <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <h1>Heading 1</h1>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Paragraphs + a,em tags :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Paragraph</h2>
-<p>
-	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> 
-	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam donec. 
-	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, 
-	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, 
-	massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim 
-	diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien 
-	fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, 
+  <!-- Text Paragraphs + a,em tags :::::::::::::::::::::::::::::::::: -->
+  <h2>Paragraph</h2>
+  <p>
+	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a>
+	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam donec.
+	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
+	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
+	massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim
+	diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien
+	fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
 	commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
 <p>
-	Consectetuer adipiscing elit dolor sit amet, <em>emphasis</em> quis luctus. 
-	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
+	Consectetuer adipiscing elit dolor sit amet, <em>emphasis</em> quis luctus.
+	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
 	consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
 
 <p>
-	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
+	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
 	consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <p>
-	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> 
-	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam donec. 
-	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, 
-	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, 
-	massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim 
-	diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien 
-	fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, 
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <p>
+	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a>
+	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam donec.
+	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
+	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
+	massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim
+	diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien
+	fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
 	commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
 <p>
-	Consectetuer adipiscing elit dolor sit amet, <em>emphasis</em> quis luctus. 
-	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
+	Consectetuer adipiscing elit dolor sit amet, <em>emphasis</em> quis luctus.
+	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
 	consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
 
 <p>
-	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
+	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
 	consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 </p>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Lists :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">List Types</h2>
+  <!-- Text Lists :::::::::::::::::::::::::::::::::: -->
+  <h2>List Types</h2>
 
-<!-- Ordered List -->
-<h3 class="heading">Ordered List</h3>
-<ol>
+  <!-- Ordered List -->
+  <h3>Ordered List</h3>
+  <ol>
   <li>List Item</li>
   <li>List Item</li>
   <li>List Item</li>
 </ol>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <ol>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <ol>
   <li>List Item</li>
   <li>List Item</li>
   <li>List Item</li>
 </ol>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Unordered List -->
-<h3 class="heading">Unordered List</h3>
-<ul>
+  <!-- Unordered List -->
+  <h3>Unordered List</h3>
+  <ul>
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
 </ul>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <ul>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <ul>
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
 </ul>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Definition List -->
-<h3 class="heading">Definition List</h3>
-<dl>
+  <!-- Definition List -->
+  <h3>Definition List</h3>
+  <dl>
   <dt>Definition List Title</dt>
   <dd>This is a definition list division.</dd>
 </dl>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <dl>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <dl>
   <dt>Definition List Title</dt>
   <dd>This is a definition list division.</dd>
 </dl>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Tables :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Tables</h2>
-<table>
+  <!-- Text Tables :::::::::::::::::::::::::::::::::: -->
+  <h2>Tables</h2>
+  <table>
     <caption>This is the caption of the table</caption>
     <tbody>
         <tr>
@@ -613,11 +480,14 @@
         </tr>
     </tbody>
 </table>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <table>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <table>
     <caption>This is the caption of the table</caption>
     <tbody>
         <tr>
@@ -643,362 +513,831 @@
     </tbody>
 </table>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Quote :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Text Quote</h2>
-<q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
+  <!-- Text Quote :::::::::::::::::::::::::::::::::: -->
+  <h2>Text Quote</h2>
+  <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Blockquote :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Text Blockquote</h2>
-<blockquote>
+  <!-- Text Blockquote :::::::::::::::::::::::::::::::::: -->
+  <h2>Text Blockquote</h2>
+  <blockquote>
     <q>
-    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-    	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. 
-    	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, 
-    	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, 
-    	massa quis luctus fermentum, turpis mi volutpat justo, 
+    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+    	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
+    	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
+    	massa quis luctus fermentum, turpis mi volutpat justo,
     	eu volutpat enim diam eget metus.
     </q>
     <footer> Author's Name </footer>
 </blockquote>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <blockquote>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <blockquote>
     <q>
-    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-    	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. 
-    	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, 
-    	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, 
-    	massa quis luctus fermentum, turpis mi volutpat justo, 
+    	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    	Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+    	Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
+    	imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
+    	massa quis luctus fermentum, turpis mi volutpat justo,
     	eu volutpat enim diam eget metus.
     </q>
     <footer> Author's Name </footer>
 </blockquote>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Pre / Code :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Text Pre - Code</h2>
-<pre>
-Lorem ipsum dolor sit amet, consectetuer adipiscing 
-elit. Nullam dignissim convallis est. Quisque aliquam. 
-Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet 
-sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
+  <!-- Text Pre / Code :::::::::::::::::::::::::::::::::: -->
+  <h2>Text Pre - Code</h2>
+  <pre>
+Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Nullam dignissim convallis est. Quisque aliquam.
+Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet
+sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
 gravida vehicula, nisl.
 Praesent mattis, massa quis luctus fermentum, turpis mi
-volutpat justo, eu volutpat enim diam eget metus. 
-Maecenas ornare tortor. Donec sed tellus eget sapien 
-fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
-consequat at, commodo vitae, feugiat in, nunc. Morbi 
+volutpat justo, eu volutpat enim diam eget metus.
+Maecenas ornare tortor. Donec sed tellus eget sapien
+fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+consequat at, commodo vitae, feugiat in, nunc. Morbi
 imperdiet augue quis tellus.
 </pre>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <pre>
-Lorem ipsum dolor sit amet, consectetuer adipiscing 
-elit. Nullam dignissim convallis est. Quisque aliquam. 
-Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet 
-sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <pre>
+Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Nullam dignissim convallis est. Quisque aliquam.
+Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet
+sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
 gravida vehicula, nisl.
 Praesent mattis, massa quis luctus fermentum, turpis mi
-volutpat justo, eu volutpat enim diam eget metus. 
-Maecenas ornare tortor. Donec sed tellus eget sapien 
-fringilla nonummy. Mauris a ante. Suspendisse quam sem, 
-consequat at, commodo vitae, feugiat in, nunc. Morbi 
+volutpat justo, eu volutpat enim diam eget metus.
+Maecenas ornare tortor. Donec sed tellus eget sapien
+fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+consequat at, commodo vitae, feugiat in, nunc. Morbi
 imperdiet augue quis tellus.
 </pre>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Text Misc :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Misc Stuff (abbr, sub, sup, etc)</h2>
-<p>
-	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer 
-	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr> 
-	Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. 
+  <!-- Text Misc :::::::::::::::::::::::::::::::::: -->
+  <h2 class="heading">Misc Stuff (abbr, sub, sup, etc)</h2>
+  <p>
+	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer
+	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr>
+	Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
 	Morbi imperdiet augue quis tellus.
 </p>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <p>
-	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer 
-	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis 
-	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
-	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi 
-	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec 
-	tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr> 
-	Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. 
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <p>
+	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer
+	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis
+	suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+	gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi
+	volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec
+	tellus eget sapien fringilla nonummy. <abbr title="Content Management System">CMS</abbr>
+	Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
 	Morbi imperdiet augue quis tellus.
 </p>
  ]]>
-    </script>
-</div>
-
+      </script>
+  </div>
+</section>
 
 <h1 class="heading">Interactive</h1>
-<hr />
 
-<!-- Buttons :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Buttons</h2>
-<button>Button</button>
+<section id="buttons" class="block">
+  <h2>Buttons</h2>
+  <button>Button</button>
 <button class="primary">Button Primary</button>
 <!-- Rounded -->
 <button class="rounded">Button Rounded</button>
 <button class="primary rounded">Button Primary Rounded</button>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <button>Button</button>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <button>Button</button>
 <button class="primary">Button Primary</button>
 <!-- Rounded -->
 <button class="rounded">Button Rounded</button>
 <button class="primary rounded">Button Primary Rounded</button>
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Buttons Input :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Buttons (input tag)</h2>
-<input type="reset" value="Reset">
+  <!-- Buttons Input :::::::::::::::::::::::::::::::::: -->
+  <h2 class="heading">Buttons (input tag)</h2>
+  <input type="reset" value="Reset">
 <input type="submit" value="Submit">
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <input type="reset" value="Reset">
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <input type="reset" value="Reset">
 <input type="submit" value="Submit">
  ]]>
-    </script>
-</div>
+      </script>
+  </div>
 
-<!-- Buttons Link :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Buttons (link tag)</h2>
-<a href="#" class="button">Basic Button</a>
+  <!-- Buttons Link :::::::::::::::::::::::::::::::::: -->
+  <h2 class="heading">Buttons (link tag)</h2>
+  <a href="#" class="button">Basic Button</a>
 <a href="#" class="button rounded">Basic Button Rounded</a>
 <a href="#" class="button primary">Primary Button</a>
-<a href="#" class="button primary rounded">Primary Button Rounded</a><!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <a href="#" class="button">Basic Button</a>
+<a href="#" class="button primary rounded">Primary Button Rounded</a>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <a href="#" class="button">Basic Button</a>
 <a href="#" class="button rounded">Basic Button Rounded</a>
 <a href="#" class="button primary">Primary Button</a>
-<a href="#" class="button primary rounded">Primary Button Rounded</a> ]]>
-    </script>
-</div>
-
-<!-- Radio Buttons :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Radio Buttons</h2>
-<label><input type="radio" value="radio1" name="radio_button">  Radio 1</label><br>
-<label><input type="radio" value="radio2" name="radio_button">  Radio 2</label><br>
-<label><input type="radio" value="radio3" name="radio_button">  Radio 3</label><br>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <label><input type="radio" value="radio1" name="radio_button">  Radio 1</label><br>
-<label><input type="radio" value="radio2" name="radio_button">  Radio 2</label><br>
-<label><input type="radio" value="radio3" name="radio_button">  Radio 3</label><br>
+<a href="#" class="button primary rounded">Primary Button Rounded</a>
  ]]>
-    </script>
-</div>
-
-<!-- Checkboxes :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Checkboxes</h2>
-<label><input type="checkbox" value="check1" name="checkbox1">  Checkbox 1</label><br>
-<label><input type="checkbox" value="check2" name="checkbox2">  Checkbox 2</label><br>
-<label><input type="checkbox" value="check3" name="checkbox3">  Checkbox 3</label><br>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <label><input type="checkbox" value="check1" name="checkbox1">  Checkbox 1</label><br>
-<label><input type="checkbox" value="check2" name="checkbox2">  Checkbox 2</label><br>
-<label><input type="checkbox" value="check3" name="checkbox3">  Checkbox 3</label><br>
- ]]>
-    </script>
-</div>
-
-<!-- Select (Dropdown) :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Select (Dropdown)</h2>
-<label for="select">Label:</label>
-<select name="select">
-  <optgroup label="Option Group 1">
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </optgroup>
-  <optgroup label="Option Group 2">
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </optgroup>
-</select>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <label for="select">Label:</label>
-<select name="select">
-  <optgroup label="Option Group 1">
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </optgroup>
-  <optgroup label="Option Group 2">
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </optgroup>
-</select>
- ]]>
-    </script>
-</div>
-
-<!-- Text Input :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Text input</h2>
-<!-- Basic Text -->
-<label for="text-input">Basic Text:</label>
-<input type="text" id="text-input" placeholder="Text field">
-<!-- Password Text -->
-<label for="pass">Password:</label>
-<input type="password" id="pass" name="password" placeholder="*******">
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <!-- Basic Text -->
-<label for="text-input">Basic Text:</label>
-<input type="text" id="text-input" placeholder="Text field">
-<!-- Password Text -->
-<label for="pass">Password:</label>
-<input type="password" id="pass" name="password" placeholder="*******">
- ]]>
-    </script>
-</div>
-
-<!-- Textarea :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Textarea</h2>
-<label for="text_area">Label:</label>
-<textarea id="text_area"></textarea>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <label for="text_area">Label:</label>
-<textarea id="text_area"></textarea>
- ]]>
-    </script>
-</div>
-
-<!-- File Input :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">File Input</h2>
-<label for="file">Label:</label><br>
-<input type="file" name="file"><br><br>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <label for="file">Label:</label><br>
-<input type="file" name="file"><br><br>
- ]]>
-    </script>
-</div>
-
-<!-- Form containers :::::::::::::::::::::::::::::::::: -->
-<h2 class="heading">Form container</h2>
-<fieldset>
-  <legend>Legend</legend>
-  <form>
-    <!-- Basic Text -->
-    <label for="text-input">Label:</label>
-    <input type="text" id="text-input" placeholder="Text field">
-    <!-- Password Text -->
-    <label for="pass">Label:</label>
-    <input type="password" id="pass" name="password" placeholder="*******">
-  </form>
-</fieldset>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
-<div class="js-toggle-hidden">
-    <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ <fieldset>
-  <legend>Legend</legend>
-  <form>
-    <!-- Basic Text -->
-    <label for="text-input">Label:</label>
-    <input type="text" id="text-input" placeholder="Text field">
-    <!-- Password Text -->
-    <label for="pass">Label:</label>
-    <input type="password" id="pass" name="password" placeholder="*******">
-  </form>
-</fieldset>
- ]]>
-    </script>
-</div>
-
-
-</div>
+      </script>
+  </div>
 </section>
-</main>
-<!-- Footer :::::::::::::::::::::: -->
-<footer class="layout-footer">
-  <div class="centered">
+
+<section id="icon-buttons" class="block">
+  <h2>Icon Buttons</h2>
+  <h4 class="heading">Small</h4>
+<div>
+	<button class="circle" data-tooltip="Add" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="rounded" data-tooltip="Edit" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#edit"></use></svg>
+		Icon Button Rounded
+	</button>
+	<button data-tooltip="Home" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button data-tooltip="Delete" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button data-tooltip="Search" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button data-tooltip="Menu" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button data-tooltip="Settings" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button data-tooltip="Contact" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Medium</h4>
+<div>
+	<button class="circle">
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="rounded">
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	    Icon Button Rounded
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Large</h4>
+<div>
+	<button class="circle">
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="circle">
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Social</h4>
+<div>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-instagram"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-pinterest"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-whatsapp"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-vimeo"></use></svg>
+	</button>
+</div>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <h4 class="heading">Small</h4>
+<div>
+	<button class="circle" data-tooltip="Add" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="rounded" data-tooltip="Edit" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#edit"></use></svg>
+		Icon Button Rounded
+	</button>
+	<button data-tooltip="Home" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button data-tooltip="Delete" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button data-tooltip="Search" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button data-tooltip="Menu" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button data-tooltip="Settings" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button data-tooltip="Contact" data-tooltip-pos="down">
+		<svg class="icon"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Medium</h4>
+<div>
+	<button class="circle">
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="rounded">
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	    Icon Button Rounded
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Large</h4>
+<div>
+	<button class="circle">
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#plus"></use></svg>
+	</button>
+	<button class="circle">
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#edit"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#home"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#delete"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#search"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#menu"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#settings"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-large"><use xlink:href="../images/icons.svg#mail"></use></svg>
+	</button>
+</div>
+
+<h4 class="heading">Social</h4>
+<div>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-instagram"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-pinterest"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-whatsapp"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
+	</button>
+	<button>
+		<svg class="icon-medium"><use xlink:href="../images/icons.svg#social-vimeo"></use></svg>
+	</button>
+</div>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="radio-buttons" class="block">
+  <h2>Radio Buttons</h2>
+  <div>
+	<input id="radio1" type="radio" value="1" name="radio" checked="checked">
+	<label for="radio1"><span><span></span></span>Radio 1</label>
+</div>
+<div>
+	<input id="radio2" type="radio" value="2" name="radio">
+	<label for="radio2"><span><span></span></span>Radio 2</label>
+</div>
+<div>
+	<input id="radio3" type="radio" value="3" name="radio">
+	<label for="radio3"><span><span></span></span>Radio 3</label>
+</div>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <div>
+	<input id="radio1" type="radio" value="1" name="radio" checked="checked">
+	<label for="radio1"><span><span></span></span>Radio 1</label>
+</div>
+<div>
+	<input id="radio2" type="radio" value="2" name="radio">
+	<label for="radio2"><span><span></span></span>Radio 2</label>
+</div>
+<div>
+	<input id="radio3" type="radio" value="3" name="radio">
+	<label for="radio3"><span><span></span></span>Radio 3</label>
+</div>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="checkboxes" class="block">
+  <h2>Checkboxes</h2>
+  <div>
+	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">
+	<label for="checkbox1"><span></span>Checkbox 1</label>
+</div>
+<div>
+	<input id="checkbox2" type="checkbox" value="2" name="checkbox">
+	<label for="checkbox2"><span></span>Checkbox 2</label>
+</div>
+<div>
+	<input id="checkbox3" type="checkbox" value="3" name="checkbox">
+	<label for="checkbox3"><span></span>Checkbox 3</label>
+</div>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <div>
+	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">
+	<label for="checkbox1"><span></span>Checkbox 1</label>
+</div>
+<div>
+	<input id="checkbox2" type="checkbox" value="2" name="checkbox">
+	<label for="checkbox2"><span></span>Checkbox 2</label>
+</div>
+<div>
+	<input id="checkbox3" type="checkbox" value="3" name="checkbox">
+	<label for="checkbox3"><span></span>Checkbox 3</label>
+</div>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="dropdown" class="block">
+  <h2>Select (Dropdown)</h2>
+  <label for="select">Label:</label>
+<select name="select">
+	<optgroup label="Option Group 1">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+	<optgroup label="Option Group 2">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+</select>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <label for="select">Label:</label>
+<select name="select">
+	<optgroup label="Option Group 1">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+	<optgroup label="Option Group 2">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+</select>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="text-input" class="block">
+  <h2>Text input</h2>
+  <!-- Basic Text -->
+<label for="text-input">Basic Text:</label>
+<input type="text" id="text-input" placeholder="Text field">
+<!-- Password Text -->
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" placeholder="*******">
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <!-- Basic Text -->
+<label for="text-input">Basic Text:</label>
+<input type="text" id="text-input" placeholder="Text field">
+<!-- Password Text -->
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" placeholder="*******">
+ ]]>
+      </script>
+  </div>
+
+  <h2>Textarea</h2>
+  <label for="text_area">Label:</label>
+<textarea id="text_area"></textarea>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <label for="text_area">Label:</label>
+<textarea id="text_area"></textarea>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="form" class="block">
+  <h2>Form container</h2>
+  <fieldset>
+  <legend>Legend</legend>
+  <form>
+    <!-- Basic Text -->
+    <label for="text-input">Label:</label><br>
+    <input type="text" id="text-input" placeholder="Text field"><br><br>
+    <!-- Password Text -->
+    <label for="pass">Label:</label><br>
+    <input type="password" id="pass" name="password" placeholder="*******"><br>
+  </form>
+</fieldset>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <fieldset>
+  <legend>Legend</legend>
+  <form>
+    <!-- Basic Text -->
+    <label for="text-input">Label:</label><br>
+    <input type="text" id="text-input" placeholder="Text field"><br><br>
+    <!-- Password Text -->
+    <label for="pass">Label:</label><br>
+    <input type="password" id="pass" name="password" placeholder="*******"><br>
+  </form>
+</fieldset>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="switch" class="block">
+  <h2>Switch</h2>
+  <label class="label-switch">
+	<input type="checkbox" />
+	<div class="checkbox"></div>
+</label>
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <label class="label-switch">
+	<input type="checkbox" />
+	<div class="checkbox"></div>
+</label> ]]>
+      </script>
+  </div>
+</section>
+
+<section id="progress" class="block">
+  <h2>Progress Indicator</h2>
+  <div class="progress-bar">
+  <span class="meter" style="width: 60%"></span>
+</div>
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <div class="progress-bar">
+  <span class="meter" style="width: 60%"></span>
+</div> ]]>
+      </script>
+  </div>
+</section>
+
+<section id="scroll-custom" class="block">
+  <h2>Scroll Panel</h2>
+  <section class="scroll-panel" ss-container>
+  <h3>Scroll panel</h3>
+  <p>
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+    aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+    ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  </p>
+  <p>
+    But I must explain to you how all this mistaken idea of denouncing pleasure and
+    praising pain was born and I will give you a complete account of the system, and expound
+    the actual teachings of the great explorer of the truth, the master-builder of human
+    happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+    but because those who do not know how to pursue pleasure rationally encounter consequences
+    that are extremely painful. Nor again is there anyone who loves or pursues or desires to
+    obtain pain of itself, because it is pain, but because occasionally circumstances occur
+    in which toil and pain can procure him some great pleasure. To take a trivial example,
+    which of us ever undertakes laborious physical exercise, except to obtain some advantage
+    from it? But who has any right to find fault with a man who chooses to enjoy a pleasure
+    that has no annoying consequences, or one who avoids a pain that produces no resultant
+    pleasure?
+  </p>
+</section>
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <section class="scroll-panel" ss-container>
+  <h3>Scroll panel</h3>
+  <p>
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+    aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+    ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  </p>
+  <p>
+    But I must explain to you how all this mistaken idea of denouncing pleasure and
+    praising pain was born and I will give you a complete account of the system, and expound
+    the actual teachings of the great explorer of the truth, the master-builder of human
+    happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+    but because those who do not know how to pursue pleasure rationally encounter consequences
+    that are extremely painful. Nor again is there anyone who loves or pursues or desires to
+    obtain pain of itself, because it is pain, but because occasionally circumstances occur
+    in which toil and pain can procure him some great pleasure. To take a trivial example,
+    which of us ever undertakes laborious physical exercise, except to obtain some advantage
+    from it? But who has any right to find fault with a man who chooses to enjoy a pleasure
+    that has no annoying consequences, or one who avoids a pain that produces no resultant
+    pleasure?
+  </p>
+</section>
+ ]]>
+      </script>
+  </div>
+</section>
+
+<section id="file-input" class="block">
+  <h2>File Input</h2>
+  <label for="file">Label:</label>
+<input type="file" name="file">
+
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ <label for="file">Label:</label>
+<input type="file" name="file">
+ ]]>
+      </script>
+  </div>
+</section>
+
+    </section>
+  </main>
+  <!-- Footer :::::::::::::::::::::: -->
+  <footer class="layout-footer">
+    <div class="centered">
   <!-- Start Social buttons -->
   <div class="social-links">
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
     </a>
   </div>
   <!-- End Social buttons -->
-  <p class="pad">Swan UI - 2016</P>
+  <p class="pad">Swan UI © 2015-2018</P>
 </div>
-</footer>
+  </footer>
 </div>
 
 <!-- Scripts -->
-<script src="../scripts/swan.min.js"></script>
-<script src="../scripts/vendors/svg4everybody.min.js"></script>
-<!-- Syntax Highlighter -->
-<script src="../scripts/vendors/syntax.min.js"></script>
-<link href="../scripts/vendors/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
+<script src="../scripts/scripts.min.js"></script>
+<script src="../scripts/other/theme-switch.js"></script>
 
-<script type="text/javascript">
-     SyntaxHighlighter.all();
-     svg4everybody();
+<script>
+  // Polyfills
+  svg4everybody();
+  objectFitImages();
+  // Smooth Scroll and Gum Shoe
+  smoothScroll.init({selectorHeader: '[data-scroll-header]'});
+  gumshoe.init();
+  // Modal Dialog
+  const modal = new VanillaModal({
+    clickOutside : false
+  });
+  // Slideshow
+  var element = document.querySelector('.slideshow'),
+     prevBtn = document.querySelector('.js-slideshow-prev'),
+     nextBtn = document.querySelector('.js-slideshow-next');
+  window.mySwipe = new Swipe(element, {
+    startSlide: 0,
+    auto: 3000,
+    draggable: true,
+    autoRestart: true,
+    continuous: true,
+    disableScroll: true,
+    stopPropagation: true,
+    callback: function(index, element) {},
+    transitionEnd: function(index, element) {}
+  });
+  prevBtn.onclick = mySwipe.prev;
+  nextBtn.onclick = mySwipe.next;
 </script>
+
+<!-- Syntax Highlighter -->
+<script src="../scripts/other/syntax-xml.js"></script>
+<link href="../styles/other/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
+<script>
+  // Syntax Init
+  SyntaxHighlighter.all();
+</script>
+
+
+
+
 
 </body>
 </html>

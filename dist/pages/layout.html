@@ -3,15 +3,14 @@
 <head>
     <!-- Global -->
     <title>Layout - Swan</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Experimental UI Framework">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png" />
     <!-- Styles and fonts -->
-    <link rel="stylesheet" href="../styles/styles-black.css" type="text/css"  />
-    <link rel="stylesheet" href="../styles/styles.min.css" type="text/css" />
+    <link href="../styles/swan-black.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../styles/swan.min.css" media="screen" rel="stylesheet" type="text/css">
     <!-- IE support -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,62 +18,58 @@
 </head>
 <body>
 <div class="layout">
-<!-- Header :::::::::::::::::::::: -->
-<header class="layout-header fixed-top shadow-bottom">
-  <div class="navbar">
+  <!-- Header :::::::::::::::::::::: -->
+  <header class="layout-header fixed-top shadow-bottom">
+    <div class="navbar" data-scroll-header>
     <!-- Logo -->
     <div class="logo">
-      <a href="/">
+      <a href="../styleguide">
       <svg class="main-logo" viewBox="0 0 256 92" width="100" height="50">
         <use xlink:href="../images/logo.svg#logo"></use>
         <use xlink:href="../images/logo.svg#logo-text"></use>
       </svg>
       </a>
-      <!-- <label for="swap-theme">White</label> -->
       <label class="label-switch">
         <input id="swap-theme" type="checkbox" />
         <div class="checkbox"></div>
       </label>
-      <!-- <label for="swap-theme">Black</label> -->
     </div>
     <!-- Menu -->
     <nav class="menu">
       <ul>
-        <li><a href="/">Overview</a></li>
-        <li><a href="base.html">Base</a></li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="layout.html">Layout</a></li>
-        <li><a href="color.html">Color</a></li>
-      </ul>     
-    </nav> 
+        <li><a href="../pages/base">Base</a></li>
+        <li><a href="../pages/components">Components</a></li>
+        <li><a href="../pages/layout">Layout</a></li>
+        <li><a href="../pages/color">Color</a></li>
+      </ul>
+    </nav>
     <!-- Menu button -->
     <div class="menu-mobile-open">
       <button class="btnMenu" type="button">
-         <svg class="icon"><use xlink:href="../images/icons.svg#icon-menu"></use></svg>
+         <svg class="icon"><use xlink:href="../images/icons.svg#menu"></use></svg>
       </button>
-    </div> 
+    </div>
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
-</div> 
-</header>
-<!-- Content Area :::::::::::::::::::::: -->
-<main class="layout-main" role="main">
-<section class="section">
-<div class="section-content-full">
-  <!-- Subheader :::::::::::::::::::::: -->
-  <header class="hero size-m">
+</div>
+  </header>
+  <!-- Content Area :::::::::::::::::::::: -->
+  <main class="layout-main" role="main">
+    <aside class="sidebar-menu fixed-left shadow-right" ss-container>
+                No hay items en el menú
+          </aside>
+    <section class="content-full gap-left">
+        
+<header class="hero size-m">
     <div class="hero-content">
-      <h1>Layout</h1>
+      <div class="title-margin">
+        <h1>Layout</h1>
+      </div>
     </div>
 </header>
-</div>
-</section>
-<section class="section">
-<div class="section-content pad">
-  <!-- Content :::::::::::::::::::::: -->
-  
+
 <!-- Templates :::::::::::::::::::::::::::: -->
-<h2 class="heading">Templates</h2>
+<h2 class="heading">Basic Layouts</h2>
 <section class="section">
   <div class="section-content">
    <!-- Start Grid View :::::::::::::::::::: -->
@@ -220,9 +215,10 @@
         <h3 class="pad gray7">1</h3>
     </article>
   </div>
-</section>
-<!-- Code Example -->
-<button class="js-toggle">&#60;&#47;&#62; Show Code</button>
+</section><!-- Code Example -->
+<button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+  <svg class="icon-medium"><use xlink:href="../images/icons.svg#markup"></use></svg>
+</button>
 <div class="js-toggle-hidden">
     <script type="syntaxhighlighter" class="brush: xml">
     <![CDATA[ <!-- Section :::::::::::::::::::::::::::: -->
@@ -306,49 +302,81 @@
         <h3 class="pad gray7">1</h3>
     </article>
   </div>
-</section>
- ]]>
+</section> ]]>
     </script>
 </div>
 
-</div>
-</section>
-</main>
-<!-- Footer :::::::::::::::::::::: -->
-<footer class="layout-footer">
-  <div class="centered">
+    </section>
+  </main>
+  <!-- Footer :::::::::::::::::::::: -->
+  <footer class="layout-footer">
+    <div class="centered">
   <!-- Start Social buttons -->
   <div class="social-links">
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-facebook"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-facebook"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-twitter"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-twitter"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-youtube"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-youtube"></use></svg>
     </a>
     <a class="button circle" href="#">
-      <svg class="icon"><use xlink:href="../images/icons.svg#icon-social-dribbble"></use></svg>
+      <svg class="icon-medium"><use xlink:href="../images/icons.svg#social-dribbble"></use></svg>
     </a>
   </div>
   <!-- End Social buttons -->
-  <p class="pad">Swan UI - 2016</P>
+  <p class="pad">Swan UI © 2015-2018</P>
 </div>
-</footer>
+  </footer>
 </div>
 
 <!-- Scripts -->
-<script src="../scripts/swan.min.js"></script>
-<script src="../scripts/vendors/svg4everybody.min.js"></script>
-<!-- Syntax Highlighter -->
-<script src="../scripts/vendors/syntax.min.js"></script>
-<link href="../scripts/vendors/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
+<script src="../scripts/scripts.min.js"></script>
+<script src="../scripts/other/theme-switch.js"></script>
 
-<script type="text/javascript">
-     SyntaxHighlighter.all();
-     svg4everybody();
+<script>
+  // Polyfills
+  svg4everybody();
+  objectFitImages();
+  // Smooth Scroll and Gum Shoe
+  smoothScroll.init({selectorHeader: '[data-scroll-header]'});
+  gumshoe.init();
+  // Modal Dialog
+  const modal = new VanillaModal({
+    clickOutside : false
+  });
+  // Slideshow
+  var element = document.querySelector('.slideshow'),
+     prevBtn = document.querySelector('.js-slideshow-prev'),
+     nextBtn = document.querySelector('.js-slideshow-next');
+  window.mySwipe = new Swipe(element, {
+    startSlide: 0,
+    auto: 3000,
+    draggable: true,
+    autoRestart: true,
+    continuous: true,
+    disableScroll: true,
+    stopPropagation: true,
+    callback: function(index, element) {},
+    transitionEnd: function(index, element) {}
+  });
+  prevBtn.onclick = mySwipe.prev;
+  nextBtn.onclick = mySwipe.next;
 </script>
+
+<!-- Syntax Highlighter -->
+<script src="../scripts/other/syntax-xml.js"></script>
+<link href="../styles/other/syntax.min.css" media="screen" rel="stylesheet" type="text/css">
+<script>
+  // Syntax Init
+  SyntaxHighlighter.all();
+</script>
+
+
+
+
 
 </body>
 </html>

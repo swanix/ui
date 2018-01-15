@@ -3,8 +3,10 @@
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// CardView styles
-// ---------------------------------------------------
+
+// VARIABLES
+// -----------------------------------------------------------
+
 // Item
 $cardview-item-text:                   $gray5 !default;
 $cardview-item-bottom-border:          $gray2 1px solid !default;
@@ -16,6 +18,9 @@ $cardview-item-hover-bottom-border:    $gray3 1px solid !default;
 $cardview-item-hover-image-bg:         none !default;
 $cardview-item-hover-bg:               darken($white, 2%) !default;
 
+
+// STYLES
+// -----------------------------------------------------------
 
 .cardview {
   display:flex;
@@ -79,13 +84,7 @@ $cardview-item-hover-bg:               darken($white, 2%) !default;
 .cardview-item a:hover {
   background: $gray8;
   cursor: pointer;
-  // Transition
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
   transition:.2s;
-  // End transition
   color: $cardview-item-hover-text;
   border-bottom: $cardview-item-hover-bottom-border;
   background: $cardview-item-hover-bg;

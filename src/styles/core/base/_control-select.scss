@@ -1,12 +1,24 @@
 // -----------------------------------------------------------
-// SELECT STYLES
+// SELECT (DROPDOWN) by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/*
+
+// VARIABLES
+// -----------------------------------------------------------
+
+$dropdown-text:             $gray8 !default;
+$dropdown-border:           $gray5 solid 1px !default;
+$dropdown-bg:               $gray1 !default;
+$dropdown-bg-arrow:         url('../../images/icon-arrow.svg') 90% 50% !default;
+
+
+// STYLES
+// -----------------------------------------------------------
+
 select {
   background: transparent;
-  max-width: em(250);
+  max-width: 25rem;
   padding: 5px 35px 5px 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -14,8 +26,10 @@ select {
   color: $dropdown-text;
   border: $dropdown-border;
   background: $dropdown-bg;
-	}
-*/
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-image: $dropdown-bg-arrow;
+}
 
 select {
   font-size: $text-medium;
@@ -23,8 +37,8 @@ select {
 
 select option {
   color: $dropdown-text;
-  }
+}
 
 select optgroup {
   color: $dropdown-text;
-  }
+}

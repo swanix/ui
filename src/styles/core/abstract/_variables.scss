@@ -1,4 +1,3 @@
-
 // -----------------------------------------------------------
 // SWAN VARIABLES by Sebastian Serna - 2015
 // -----------------------------------------------------------
@@ -60,12 +59,7 @@ $main-size: auto !default;
 $footer-size: $size-m !default;
 
 
-// INSPIRATION: ZONE SYSTEM
-// Created by Ansel Adams and Fred Archer
-// -----------------------------------------------------------
-
 // GRAYSCALE PALETTE variables (white to black)
-
 
 $white:             #FFFFFF ; // White (HTML color: white) #FFFFFF
 $gray1:             darken($white, 5%); // #F2F2F2
@@ -77,79 +71,7 @@ $gray6:             darken($white, 65%); // #595959
 $gray7:             darken($white, 70%); // #4D4D4D
 $gray8:             darken($white, 80%); // #333333
 $gray9:             darken($white, 85%); // #1A1A1A
-$black:             darken($white, 100%); // Black (HTML color: black) #000000
+$black:             #000000 ; // Black (HTML color: black) #000000
 
 $primary:           #000000 !default; // Black
 $secondary:         #999999 !default; // Gray
-
-
-// General
-// ----------------------------------------------
-$body-bg:              $white !default;
-
-// Texts
-// ----------------------------------------------
-
-$text-font-heading:         Tahoma, Geneva, sans-serif !default;
-$text-font-heading-weight:  normal !default;
-$text-font-body:            Tahoma, Geneva, sans-serif !default;
-
-$text-basic:                $gray6 !default;
-$text-heading:              $gray8 !default;
-$text-link:                 $gray9 !default;
-$text-link-hover:           $gray7 !default;
-$text-link-visited:         $gray9 !default;
-$text-selection:            $gray6 !default;
-$text-selection-bg:         $gray2 !default;
-// Horizontal rule
-$hr-color:                  $gray3 !default;
-
-// Tables
-$table-td-border-bottom: none !default;
-$table-tr-hover-bg:      $gray1 !default;
-
-// Forms
-// ----------------------------------------------
-$form-filedset-border:   $gray2 !default;
-
-
-// Buttons base styles
-// ----------------------------------------------
-// Btn
-$btn-text:           $gray7 !default;
-$btn-border:         $gray2 solid 1px !default;
-$btn-bg:             $gray1 !default;
-// Btn hover
-$btn-hover-text:     $gray9 !default;
-$btn-hover-border:   $gray3 solid 1px !default;
-$btn-hover-bg:       $white !default;
-// Btn padding
-$btn-padding:        1rem 1rem !default;
-
-// Btn Primary
-$btn-primary-text:           $gray1 !default;
-$btn-primary-border:         $white solid 2px !default;
-$btn-primary-bg:             $primary !default;
-// Btn Primary hover
-$btn-primary-hover-text:     $white !default;
-$btn-primary-hover-border:   $white solid 2px !default;
-$btn-primary-hover-bg:       $gray8 !default;
-
-
-// Input text and Textarea styles
-// ----------------------------------------------
-// Input text (text, password, email, textarea)
-$input-text:                $gray6 !default;
-$input-text-border:         $gray3 solid 1px !default;
-$input-text-bg:             $white !default;
-// Input text focus
-$input-text-focus:          $gray7 !default;
-$input-text-focus-border:   $gray5 solid 1px !default;
-$input-text-focus-bg:       $white !default;
-
-
-// Select (dropdown) styles
-// ----------------------------------------------
-$dropdown-text:             $gray8 !default;
-$dropdown-border:           $gray5 solid 1px !default;
-$dropdown-bg:               $gray1 url(../../images/ic-arrow-down.png) right no-repeat !default;

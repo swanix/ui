@@ -1,7 +1,24 @@
 // -----------------------------------------------------------
-// INPUT TEXTS STYLES
+// INPUT TEXTS by Sebastian Serna - 2016
 // -----------------------------------------------------------
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+// Input text (text, password, email, textarea)
+$input-text:                $gray6 !default;
+$input-text-border:         $gray3 solid 1px !default;
+$input-text-bg:             $white !default;
+// Input text focus
+$input-text-focus:          $gray7 !default;
+$input-text-focus-border:   $gray5 solid 1px !default;
+$input-text-focus-bg:       $white !default;
+
+
+// STYLES
+// -----------------------------------------------------------
 
 input[type="text"] {
   width:100%;

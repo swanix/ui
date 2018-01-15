@@ -1,0 +1,166 @@
+{% extends "templates/default.twig" %}
+{% set title = "Components - Swan" %}
+{% set pageTitle = "Components" %}
+{% set urlPath = "../" %}
+{% set urlLogo = "../" %}
+{% set is_hidden = 0 %}
+
+{% block content %}
+
+{% include 'templates/partials/app-subheader.twig' %}
+
+<section id="navbar" class="block">
+  <h2>Navbar</h2>
+  {% include 'templates/partials/comp-navbar.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-navbar.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="listview" class="block">
+  <h2>List View</h2>
+  {% include 'templates/partials/comp-listview.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-listview.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="cardview" class="block">
+  <h2>Card View</h2>
+  {% include 'templates/partials/comp-cardview.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-cardview.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="gridview" class="block">
+  <h2>Grid View</h2>
+  {% include 'templates/partials/comp-gridview.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-gridview.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="articleview" class="block">
+  <h2>Article View (Portrait)</h2>
+  {% include 'templates/partials/comp-articleview.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-articleview.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="dialog" class="block">
+  <h2>Modal Dialog</h2>
+  {% include 'templates/partials/comp-dialog.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-dialog.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="hero-block" class="block">
+<h2>Hero Block</h2>
+{% include 'templates/partials/comp-hero-block.twig' %}
+<!-- Code Example -->
+<button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+  <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+</button>
+<div class="js-toggle-hidden">
+    <script type="syntaxhighlighter" class="brush: xml">
+    <![CDATA[ {% include 'templates/partials/comp-hero-block.twig' %} ]]>
+    </script>
+</div>
+</section>
+
+<section id="pagination" class="block">
+  <h2>Pagination</h2>
+  {% include 'templates/partials/comp-pagination.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-pagination.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="tooltip" class="block">
+  <h2>Tooltips</h2>
+  {% include 'templates/partials/comp-tooltip.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-tooltip.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="slideshow" class="block">
+  <h2>Slideshow</h2>
+  {% include 'templates/partials/comp-slideshow.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-slideshow.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+<section id="mapview" class="block">
+  <h2>Map View</h2>
+  {% include 'templates/partials/comp-mapview.twig' %}
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
+    <svg class="icon-medium"><use xlink:href="{{ urlPath }}images/icons.svg#markup"></use></svg>
+  </button>
+  <div class="js-toggle-hidden">
+      <script type="syntaxhighlighter" class="brush: xml">
+      <![CDATA[ {% include 'templates/partials/comp-mapview.twig' %} ]]>
+      </script>
+  </div>
+</section>
+
+{% endblock %}

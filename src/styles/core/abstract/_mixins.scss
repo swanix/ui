@@ -7,10 +7,11 @@
 // Center content vertical and horizontal
 // Source: https://codepen.io/hced/pen/FbdqC/
 
-@mixin vertical-align {
+// Provisional Mixin
+@mixin vertical-align($top: 50%) {
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: $top;
+    -webkit-transform: translateY(-$top);
+    -ms-transform: translateY(-$top);
+    transform: translateY(-$top);
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/app-html-head.twig' %}
+</head>
+<body>
+<div class="layout">
+  <!-- Header :::::::::::::::::::::: -->
+  <header class="layout-header fixed-top shadow-bottom">
+    {% include 'partials/app-navbar-main.twig' %}
+  </header>
+  <!-- Content Area :::::::::::::::::::::: -->
+  <main class="layout-main" role="main">
+    <aside class="sidebar-menu fixed-left shadow-right" ss-container>
+      {% if pageTitle == "Components" %}
+          {% include 'partials/app-menu-components.twig' %}
+      {% elseif pageTitle == "Base" %}
+          {% include 'partials/app-menu-base.twig' %}
+      {% else %}
+          No hay items en el menú
+      {% endif %}
+    </aside>
+    <section class="content-full gap-left">
+        {% block content %}{% endblock %}
+    </section>
+  </main>
+  <!-- Footer :::::::::::::::::::::: -->
+  <footer class="layout-footer">
+    {% include 'partials/comp-footer.twig' %}
+  </footer>
+</div>
+
+{% include 'partials/app-scripts.twig' %}
+
+</body>
+</html>

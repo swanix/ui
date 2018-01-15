@@ -102,26 +102,26 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 
 |Módulo|Versión|Descripción|
 |--- |--- |--- |
-|browser-sync|2.18.2|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
+|browser-sync|2.18.12|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
 |gulp|3.9.1|Módulo oficial de Gulp para Node.js|
-|gulp-install|0.6.0|Instala de forma automática paquetes y dependencias de npm, bower, tsd, y pip si la configuración asociada se encuentra en el gulpfile.|
-|gulp-autoprefixer|3.1.1|Permite automatizar la escritura de prefijos CSS para cada navegador web (moz, webkit, etc).|
-|gulp-sass|2.3.2|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
-|gulp-clean-css|2.0.13|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
+|gulp-install|1.1.0|Instala de forma automática paquetes y dependencias de npm, bower, tsd, y pip si la configuración asociada se encuentra en el gulpfile.|
+|gulp-autoprefixer|4.0.0|Permite automatizar la escritura de prefijos CSS para cada navegador web (moz, webkit, etc).|
+|gulp-sass|3.1.0|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
+|gulp-clean-css|3.4.1|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
 |gulp-rename|1.2.2|Permite renombrar archivos con el nombre que le especifiquemos|
 |gulp-concat|2.6.1|Permite fusionar archivos en uno solo para optimizar el tiempo de carga de dependencias en un sitio web (muy utilizado para combinar archivos CSS o archivos JavaScript).|
 |gulp-twig|0.7.0|Motor de plantillas basado en Twig.js. Se utiliza en Swan para crear layouts HTML con partials reutilizables. |
 |gulp-plumber|1.1.0|Permite manejar e identificar errores en tiempo de ejecución.|
 |gulp-sourcemaps|1.9.1|Permite generar sourcemaps para el código Sass y otros.|
-|gulp-uglify|2.0.0|Permite minificar el código JavaScript con UglifyJS.|
-|sassdoc|2.1.20|Genera una documentación básica del código Sass utilizado.|
+|gulp-uglify|3.0.0|Permite minificar el código JavaScript con UglifyJS.|
+|gulp-imagemin|3.3.0|Permite optimizar el peso y la calidad de imágenes.|
 
 
 ## Licencia
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Sebastian Serna
+Copyright (c) 2016-2018 Sebastian Serna
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
