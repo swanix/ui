@@ -121,7 +121,7 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2018 Sebastian Serna
+Copyright (c) 2015-2018 Sebastian Serna
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

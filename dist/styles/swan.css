@@ -755,48 +755,51 @@ figure {
   font-family: 'object-fit: cover;';
 }
 
-.icon, .icon-medium, .icon-large, .icon-huge, .icon-xhuge {
+/*------------------------------------------------------------
+  Icons - Component
+------------------------------------------------------------*/
+.icon {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 2.4rem;
+  height: 2.4rem;
   stroke-width: 0;
-  stroke: #595959;
-  fill: #595959;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #595959;
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.icon:hover, .icon-medium:hover, .icon-large:hover, .icon-huge:hover, .icon-xhuge:hover {
+.icon.small {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon.medium {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon.large {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.icon.huge {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.icon.only {
+  margin-right: 0 !important;
+}
+
+.icon:hover {
   stroke-width: 0;
-  stroke: #595959;
-  fill: #595959;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-svg path, svg g {
-  fill: inherit;
-}
-
-.icon-medium {
-  width: 4rem;
-  height: 4rem;
-}
-
-.icon-large {
-  width: 6rem;
-  height: 6rem;
-}
-
-.icon-huge {
-  width: 15rem;
-  height: 15rem;
-}
-
-.icon-xhuge {
-  width: 30rem;
-  height: 30rem;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #595959;
 }
 
 .video-wrapper {

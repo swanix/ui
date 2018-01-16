@@ -1,8 +1,6 @@
-// -----------------------------------------------------------
-// MEDIA ICONS by Sebastian Serna - 2016
-// -----------------------------------------------------------
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+/*------------------------------------------------------------
+  Icons - Component
+------------------------------------------------------------*/
 
 // VARIABLES
 // -----------------------------------------------------------
@@ -15,69 +13,63 @@ $icon-stroke-width:              0 !default;
 $icon-hover-fill-color:          $gray6 !default;
 $icon-hover-stroke-color:        $gray6 !default;
 $icon-hover-stroke-width:        0 !default;
-
+// Sizes
+$icon-size-small:                1.6rem !default;
+$icon-size-medium:               2.4rem !default;
+$icon-size-large:                3.2rem !default;
+$icon-size-huge:                 6.4rem !default;
 
 // STYLES
 // -----------------------------------------------------------
 
-// Basic Icon Placeholder
-// -----------------------------------------------------------
-
-%icon {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  stroke-width: $icon-stroke-width;
-  stroke: $icon-stroke-color;
-  fill: $icon-fill-color;
-  vertical-align: middle;
-  transition:.2s;
-  }
-
-%icon:hover {
-  stroke-width: $icon-hover-stroke-width;
-  stroke: $icon-hover-stroke-color;
-  fill: $icon-hover-fill-color;
-  transition:.2s;
-  }
-
-
-// Global styles (sizes)
-// -----------------------------------------------------------
-
-svg {
-  //border: 1px solid #eee;
-}
+// svg {
+//   background: black;
+// }
 
 svg path, svg g  {
-  fill: inherit; // Solves the overrides with classes on Firefox
+  //fill: inherit; // Solves the overrides with classes on Firefox
 }
 
 .icon {
-  @extend %icon;
+  display: inline-block;
+  width: $icon-size-medium;
+  height: $icon-size-medium;
+  stroke-width: $icon-stroke-width;
+  stroke: currentColor;
+	fill: currentColor;
+	color: $icon-fill-color;
+  vertical-align: middle;
+  transition:.2s;
+
+  &.small {
+    width: $icon-size-small;
+    height: $icon-size-small;
+  }
+  
+  &.medium {
+    width: $icon-size-medium;
+    height: $icon-size-medium;
+  }
+  
+  &.large {
+    width: $icon-size-large;
+    height: $icon-size-large;
+  }
+  
+  &.huge {
+    width: $icon-size-huge;
+    height: $icon-size-huge;
+  }
+
+  &.only {
+    margin-right: 0 !important;
+  } 
+
 }
 
-.icon-medium {
-  @extend %icon;
-  width: 4rem;
-  height: 4rem;
-}
-
-.icon-large {
-  @extend %icon;
-  width: 6rem;
-  height: 6rem;
-}
-
-
-.icon-huge {
-  @extend %icon;
-  width: 15rem;
-  height: 15rem;
-}
-
-.icon-xhuge {
-  @extend %icon;
-  width: 30rem;
-  height: 30rem;
+.icon:hover {
+  stroke-width: $icon-hover-stroke-width;
+  stroke: currentColor;
+  fill: currentColor;
+  color: $icon-hover-fill-color;
 }
