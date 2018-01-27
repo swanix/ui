@@ -23,11 +23,13 @@ var gulp = require('gulp' ),
 //-----------------------------------------------------
 
 // Twig to HTML
-var inputTwigWatch = 'src/pages/**/*.twig';
-var inputTwig = 'src/pages/*.twig';
+var inputTwigWatch = 'src/**/*.html.twig';
+var inputTwig = 'src/pages/*.html.twig';
 var outputTwig = 'dist/pages';
-var inputTwigIndex = 'src/index.twig';
+var inputTwigIndex = 'src/index.html.twig';
 var outputTwigIndex = 'dist/';
+var baseTwigTemplates = 'src/templates';
+
 
 // Sass to CSS
 var inputSass = 'src/styles/**/*.scss';
@@ -62,7 +64,10 @@ gulp.task('twig', function() {
     return gulp
       .src(inputTwig)
       .pipe(plumber())
-      .pipe(twig())
+      .pipe(twig({ 
+        base: baseTwigTemplates, 
+        extname: false
+      }))
       .pipe(gulp.dest(outputTwig))
       .pipe(browserSync.stream());
 });
@@ -71,7 +76,10 @@ gulp.task('twigIndex', function() {
     return gulp
       .src(inputTwigIndex)
       .pipe(plumber())
-      .pipe(twig())
+      .pipe(twig({ 
+        base: baseTwigTemplates, 
+        extname: false
+      }))
       .pipe(gulp.dest(outputTwigIndex))
       .pipe(browserSync.stream());
 });

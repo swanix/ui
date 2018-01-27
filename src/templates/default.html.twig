@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include 'partials/app-html-head.twig' %}
+    {% include 'partials/app-html-head.html.twig' %}
 </head>
 <body>
 <div class="layout">
   <!-- Header :::::::::::::::::::::: -->
   <header class="layout-header fixed-top shadow-bottom">
-    {% include 'partials/app-navbar-main.twig' %}
+    {% include 'partials/app-navbar-main.html.twig' %}
   </header>
   <!-- Content Area :::::::::::::::::::::: -->
   <main class="layout-main" role="main">
     <aside class="sidebar-menu fixed-left shadow-right" ss-container>
       {% if pageTitle == "Components" %}
-          {% include 'partials/app-menu-components.twig' %}
+          {% include 'partials/app-menu-components.html.twig' %}
       {% elseif pageTitle == "Base" %}
-          {% include 'partials/app-menu-base.twig' %}
+          {% include 'partials/app-menu-base.html.twig' %}
       {% else %}
           No hay items en el menú
       {% endif %}
@@ -26,11 +26,11 @@
   </main>
   <!-- Footer :::::::::::::::::::::: -->
   <footer class="layout-footer">
-    {% include 'partials/comp-footer.twig' %}
+    {% include 'partials/comp-footer.html.twig' %}
   </footer>
 </div>
 
-{% include 'partials/app-scripts.twig' %}
+{% include 'partials/app-scripts.html.twig' %}
 
 </body>
 </html>

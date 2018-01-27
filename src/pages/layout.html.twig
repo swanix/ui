@@ -1,4 +1,4 @@
-{% extends "templates/default.twig" %}
+{% extends "default.html.twig" %}
 {% set title = "Layout - Swan" %}
 {% set pageTitle = "Layout" %}
 {% set urlPath = "../" %}
@@ -7,22 +7,22 @@
 
 {% block content %}
 
-{% include 'templates/partials/app-subheader.twig' %}
+{% include 'partials/app-subheader.html.twig' %}
 
 <!-- Templates :::::::::::::::::::::::::::: -->
 <h2 class="heading">Basic Layouts</h2>
-{% include 'templates/partials/layout-basic-layouts.twig' %}
+{% include 'partials/layout-basic-layouts.html.twig' %}
 
 <!-- Grid Columns :::::::::::::::::::::::::::::::::: -->
 <h2 class="heading">Grid Columns</h2>
-{% include 'templates/partials/layout-basic-columns.twig' %}
+{% include 'partials/layout-basic-columns.html.twig' %}
 <!-- Code Example -->
 <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
   <svg class="icon medium"><use xlink:href="{{ urlPath }}images/icons.svg#code"></use></svg>
 </button>
 <div class="js-toggle-hidden">
     <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ {% include 'templates/partials/layout-basic-columns.twig' %} ]]>
+    <![CDATA[ {% include 'partials/layout-basic-columns.html.twig' %} ]]>
     </script>
 </div>
 
