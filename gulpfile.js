@@ -109,10 +109,10 @@ gulp.task ('minjs' , function() {
   return gulp
     .src (inputJs)
     .pipe(plumber())
-    .pipe(concat('scripts.js'))
+    .pipe(concat('swan.js'))
     .pipe(gulp.dest(outputJs))
     .pipe(uglify())
-    .pipe(rename('scripts.min.js'))
+    .pipe(rename('swan.min.js'))
     .pipe(gulp.dest(outputJs))
     .pipe(browserSync.stream());
 });
