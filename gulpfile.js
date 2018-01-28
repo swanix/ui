@@ -32,28 +32,28 @@ var baseTwigTemplates = 'src/templates';
 
 
 // Sass to CSS
-var inputSass = 'src/styles/**/*.scss';
-var outputSass = 'dist/styles/';
+var inputSass = 'src/assets/styles/**/*.scss';
+var outputSass = 'dist/assets/styles/';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
 };
 
 // Scripts concat
-var outputJs = 'dist/scripts/';
+var outputJs = 'dist/assets/scripts/';
 var inputJs = [
       // Native and adapted
-      'src/scripts/components/prevent-url.js',
-      'src/scripts/components/navbar.js',
-      'src/scripts/components/toggle.js',
-      'src/scripts/components/dialog.js',
-      'src/scripts/components/scrollbar.js',
-      'src/scripts/components/scroll-smooth.js',
-      'src/scripts/components/slideshow.js',
-      'src/scripts/components/lazy-load.js',
+      'src/assets/scripts/components/prevent-url.js',
+      'src/assets/scripts/components/navbar.js',
+      'src/assets/scripts/components/toggle.js',
+      'src/assets/scripts/components/dialog.js',
+      'src/assets/scripts/components/scrollbar.js',
+      'src/assets/scripts/components/scroll-smooth.js',
+      'src/assets/scripts/components/slideshow.js',
+      'src/assets/scripts/components/lazy-load.js',
       // Vendors
-      'src/scripts/vendors/cover-image.js',
-      'src/scripts/vendors/svg4everybody.js'
+      'src/assets/scripts/vendors/cover-image.js',
+      'src/assets/scripts/vendors/svg4everybody.js'
     ];
 
 //-----------------------------------------------------
@@ -142,7 +142,7 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['twig' , 'sass', 'minjs', 'browser-sync'] , function() {
+gulp.task('watch', ['twigIndex', 'twig', 'sass', 'minjs', 'browser-sync'] , function() {
       gulp.watch(inputJs, ['minjs']);
       gulp.watch(inputTwigWatch, ['twig','twigIndex']);
       gulp.watch(inputTwigIndex, ['twig','twigIndex']);

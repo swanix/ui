@@ -1,7 +1,7 @@
 {% extends "default.html.twig" %}
 {% set title = "Layout - Swan" %}
 {% set pageTitle = "Layout" %}
-{% set urlPath = "../" %}
+{% set assetsPath = "../assets/" %}
 {% set urlLogo = "../" %}
 {% set is_hidden = 0 %}
 
@@ -18,7 +18,7 @@
 {% include 'partials/layout-basic-columns.html.twig' %}
 <!-- Code Example -->
 <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
-  <svg class="icon medium"><use xlink:href="{{ urlPath }}images/icons.svg#code"></use></svg>
+  <svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg>
 </button>
 <div class="js-toggle-hidden">
     <script type="syntaxhighlighter" class="brush: xml">
