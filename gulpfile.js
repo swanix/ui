@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-// SWAN UI
+// SWANIX UI
 // by Sebastian Serna
 // 2015 - 2018
 //-----------------------------------------------------
@@ -25,22 +25,22 @@ var gulp = require('gulp' ),
 // Twig to HTML
 var inputTwigWatch = 'src/**/*.html.twig';
 var inputTwig = 'src/pages/*.html.twig';
-var outputTwig = 'dist/pages';
+var outputTwig = 'docs/pages';
 var inputTwigIndex = 'src/index.html.twig';
-var outputTwigIndex = 'dist/';
+var outputTwigIndex = 'docs/';
 var baseTwigTemplates = 'src/templates';
 
 
 // Sass to CSS
 var inputSass = 'src/assets/styles/**/*.scss';
-var outputSass = 'dist/assets/styles/';
+var outputSass = 'dist/styles/';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
 };
 
 // Scripts concat
-var outputJs = 'dist/assets/scripts/';
+var outputJs = 'dist/scripts/';
 var inputJs = [
       // Native and adapted
       'src/assets/scripts/components/prevent-url.js',
@@ -96,7 +96,7 @@ gulp.task ('sass' , function() {
       .pipe(autoprefixer())
       .pipe(gulp.dest(outputSass))
       .pipe(cleanCSS())
-      .pipe(rename('swan.min.css'))
+      .pipe(rename('swanix.min.css'))
       .pipe(gulp.dest(outputSass))
       .pipe(browserSync.stream());
 });
@@ -109,10 +109,10 @@ gulp.task ('minjs' , function() {
   return gulp
     .src (inputJs)
     .pipe(plumber())
-    .pipe(concat('swan.js'))
+    .pipe(concat('swanix.js'))
     .pipe(gulp.dest(outputJs))
     .pipe(uglify())
-    .pipe(rename('swan.min.js'))
+    .pipe(rename('swanix.min.js'))
     .pipe(gulp.dest(outputJs))
     .pipe(browserSync.stream());
 });
@@ -124,7 +124,7 @@ gulp.task ('minjs' , function() {
 gulp.task ('browser-sync' , function() {
     browserSync.init({
         server: {
-          baseDir: 'dist',
+          baseDir: ['docs', 'dist'],
           index: 'index.html',
           serveStaticOptions: {
             extensions: ['html']
@@ -132,8 +132,8 @@ gulp.task ('browser-sync' , function() {
         }
     });
     gulp.watch([
-      'dist/*.html',
-      'dist/pages/*.html',
+      'docs/*.html',
+      'docs/pages/*.html',
       'dist/styles/*.css'
       ]).on("change", browserSync.reload);
 });
