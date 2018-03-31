@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/app-html-head.html.twig' %}
+</head>
+<body>
+<div class="layout">
+  <!-- Header :::::::::::::::::::::: -->
+  <header class="layout-header fixed-top shadow-bottom">
+    {% include 'partials/app-navbar-main.html.twig' %}
+  </header>
+  <!-- Content Area :::::::::::::::::::::: -->
+  <main class="layout-main" role="main">
+    <!-- Header :::::::::::::::::::::: -->
+    <header class="hero lazyload"
+      data-bg="assets/images/image-large.jpg">
+        <div class="hero-content overlay-bg">
+          <div class="align-vertical">
+            <svg class="main-logo" viewBox="0 0 100 100" width="150" height="150">
+              <use xlink:href="assets/images/logo.svg#logo"></use>
+            </svg>
+            <h2>Swanix</h2>
+          </div>
+        </div>
+    </header>
+    <!-- Content :::::::::::::::::::::: -->
+    <section class="row-content pad">
+        {% block content %}{% endblock %}
+    </section>
+  </main>
+  <!-- Footer :::::::::::::::::::::: -->
+  <footer class="layout-footer">
+    {% include 'partials/comp-footer.html.twig' %}
+  </footer>
+</div>
+
+{% include 'partials/app-scripts.html.twig' %}
+
+</body>
+</html>
