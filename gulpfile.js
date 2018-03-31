@@ -30,17 +30,17 @@ var inputTwigIndex = 'src/index.html.twig';
 var outputTwigIndex = 'docs/';
 var baseTwigTemplates = 'src/templates';
 
-
 // Sass to CSS
 var inputSass = 'src/assets/styles/**/*.scss';
-var outputSass = 'dist/styles/';
+var outputSass = 'docs/assets/styles/';
+var outputSassDist = 'dist/';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
 };
 
 // Scripts concat
-var outputJs = 'dist/scripts/';
+var outputJs = 'docs/assets/scripts/';
 var inputJs = [
       // Native and adapted
       'src/assets/scripts/components/prevent-url.js',
@@ -95,9 +95,11 @@ gulp.task ('sass' , function() {
       .pipe(sass(sassOptions).on('error', sass.logError))
       .pipe(autoprefixer())
       .pipe(gulp.dest(outputSass))
+      .pipe(gulp.dest(outputSassDist))
       .pipe(cleanCSS())
       .pipe(rename('swanix.min.css'))
       .pipe(gulp.dest(outputSass))
+      .pipe(gulp.dest(outputSassDist))
       .pipe(browserSync.stream());
 });
 
@@ -124,11 +126,8 @@ gulp.task ('minjs' , function() {
 gulp.task ('browser-sync' , function() {
     browserSync.init({
         server: {
-          baseDir: ['docs', 'dist'],
-          index: 'index.html',
-          routes:  {
-            '/': '../../dist/'
-          },          
+          baseDir: 'docs',
+          index: 'index.html',     
           serveStaticOptions: {
             extensions: ['html']
           }
