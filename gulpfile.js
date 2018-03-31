@@ -25,7 +25,7 @@ var gulp = require('gulp' ),
 // Twig to HTML
 var inputTwigWatch = 'src/**/*.html.twig';
 var inputTwig = 'src/pages/*.html.twig';
-var outputTwig = 'docs/pages';
+var outputTwig = 'docs/';
 var inputTwigIndex = 'src/index.html.twig';
 var outputTwigIndex = 'docs/';
 var baseTwigTemplates = 'src/templates';
@@ -126,6 +126,9 @@ gulp.task ('browser-sync' , function() {
         server: {
           baseDir: ['docs', 'dist'],
           index: 'index.html',
+          routes:  {
+            '/': '../../dist/'
+          },          
           serveStaticOptions: {
             extensions: ['html']
           }
@@ -133,7 +136,6 @@ gulp.task ('browser-sync' , function() {
     });
     gulp.watch([
       'docs/*.html',
-      'docs/pages/*.html',
       'dist/styles/*.css'
       ]).on("change", browserSync.reload);
 });
