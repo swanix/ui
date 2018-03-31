@@ -1,6 +1,6 @@
 {
   "name": "Swan",
-  "version": "0.3.0",
+  "version": "0.3.6",
   "description": "Experimental UI framework",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acuariux/swan.git"
+    "url": "git+https://github.com/swanix/swanix.git"
   },
   "author": "Sebastian Serna <jsebastianserna@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acuariux/swan/issues"
+    "url": "https://github.com/swanix/swanix/issues"
   },
-  "homepage": "https://github.com/acuariux/swan#readme",
+  "homepage": "https://github.com/swanix/swanix#readme",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 2.14.2"
