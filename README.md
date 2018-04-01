@@ -31,7 +31,7 @@ Las dependencias se instalan en la carpeta `node_modules` (creada automáticamen
 ```
 $ gulp watch
 ```
-Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasados unos instantes se abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos del framework y observando si se realizan cambios en los archivos de la carpeta `src` para generar el código de estilos CSS, HTML y JavaScript.
+Este comando ejecuta un servidor estático que apunta a la carpeta `docs` y se abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos del framework y observando si se realizan cambios en los archivos de la carpeta `src` para generar el código de estilos CSS, HTML y JavaScript.
 
 ## Estructura de Directorios
 
@@ -67,7 +67,7 @@ swanix/  # Carpeta raíz del repositorio
 ```
 
 
-### Arquitectura Sass (Alpha)
+### Arquitectura Sass (alpha)
 
 Los archivos de estilo del framework siguen el [ Patrón 7-1](https://sass-guidelin.es/#the-7-1-pattern). Estos archivos Sass se encuentran en el directorio `src/styles`
 
@@ -90,7 +90,7 @@ styles/
 
 ```
 
-Cuando ejecutamos el comando `gulp watch` cualquier cambio realizado en los archivos de la carpeta `src/styles` se compilarán en la carpeta `dist/styles` utilizando el plugin `gulp-sass`.
+Cuando ejecutamos el comando `gulp watch` cualquier cambio realizado en los archivos de la carpeta `src/assets/styles` se compilarán en la carpeta `dist/` utilizando el plugin `gulp-sass`.
 
 ## Librerías CSS
 
