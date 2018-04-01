@@ -1,4 +1,4 @@
-![Swan UI](https://github.com/acuariux/swan/blob/master/dist/images/logo.png "Swan - User Interface")
+![Swanix UI](https://github.com/swanix/swanix/blob/master/docs/images/logo.png "Swanix - User Interface")
 
 Experimental UI framework. Work in progress...
 
@@ -16,7 +16,7 @@ Antes de iniciar debes tener previamente instalados:
 En una carpeta vacía de tu equipo escribe el siguiente comando en la terminal:
 
 ```
-$ git clone https://github.com/acuariux/swan.git
+$ git clone https://github.com/swanix/swanix.git
 ```
 
 Cuando se termine de clonar el proyecto escribe el comando:
@@ -36,26 +36,32 @@ Este comando ejecuta un servidor estático que apunta a la carpeta `dist` pasado
 ## Estructura de Directorios
 
 ```sh
-swan/  # Carpeta raíz del repositorio
+swanix/  # Carpeta raíz del repositorio
 │
-├── dist/           # Código generado para producción         
-│   ├── images/
-│   ├── Pages/        
-│   ├── scripts/   
-│   ├── styles/    
+├── dist/                # Código CSS generado para producción         
+│   ├── swanix-black.css
+│   ├── swanix.css              
+│   └── swanix.min.css
+│
+├── docs/                # Documentación y ejemplos      
+│   ├── assets/
+│   ├── base.html 
+│   ├── color.html 
+│   ├── components.html  
+│   ├── layout.html               
 │   └── index.html
 │       
-├── src/           # Código fuente para desarrollo      
-│   ├── images/
-│   ├── Pages/        
-│   ├── scripts/   
-│   ├── styles/    
-│   └── index.htm
+├── src/                # Código fuente para desarrollo      
+│   ├── assets/
+│   ├── Pages/
+│   ├── templates/         
+│   └── index.html.twig
 │       
-├── LICENSE         # Licencia MIT
-├── README.md       # Archivo LEAME inicial
-├── gulpfile.js     # Tareas de Gulp
-└── package.json    # Dependencias de Node.js
+├── LICENSE             # Licencia MIT
+├── README.md           # Archivo LEAME inicial
+├── gulpfile.js         # Tareas de Gulp
+├── package-lock.json  
+└── package.json        # Dependencias de Node.js
 │
 └---------------------------------------------------------
 ```
@@ -76,9 +82,9 @@ styles/
 │   ├── components/    # Components & Patterns
 │   ├── themes/        # Themes (White / Black)
 │   ├── vendors/       # Vendor Libraries
-│   └── _core.scss     # Swan Core Package
+│   └── _core.scss     # Swanix Core Package
 │  
-├── styles.scss        # Styles Final Package
+├── swanix.scss        # Styles Final Package
 │
 └---------------------------------------------------------
 
@@ -88,7 +94,7 @@ Cuando ejecutamos el comando `gulp watch` cualquier cambio realizado en los arch
 
 ## Librerías CSS
 
-Swan utiliza las siguientes librerías de código CSS creadas por terceros:
+Swanix utiliza las siguientes librerías de código CSS creadas por terceros:
 
 |Librería|Versión|Descripción|
 |--- |--- |--- |
@@ -110,9 +116,9 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 |gulp-clean-css|3.4.1|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
 |gulp-rename|1.2.2|Permite renombrar archivos con el nombre que le especifiquemos|
 |gulp-concat|2.6.1|Permite fusionar archivos en uno solo para optimizar el tiempo de carga de dependencias en un sitio web (muy utilizado para combinar archivos CSS o archivos JavaScript).|
-|gulp-twig|0.7.0|Motor de plantillas basado en Twig.js. Se utiliza en Swan para crear layouts HTML con partials reutilizables. |
+|gulp-twig|1.2.0|Motor de plantillas basado en Twig.js. Se utiliza en Swanix para crear layouts HTML con partials reutilizables. |
 |gulp-plumber|1.1.0|Permite manejar e identificar errores en tiempo de ejecución.|
-|gulp-sourcemaps|1.9.1|Permite generar sourcemaps para el código Sass y otros.|
+|gulp-sourcemaps|2.6.0|Permite generar sourcemaps para el código Sass y otros.|
 |gulp-uglify|3.0.0|Permite minificar el código JavaScript con UglifyJS.|
 |gulp-imagemin|3.3.0|Permite optimizar el peso y la calidad de imágenes.|
 
