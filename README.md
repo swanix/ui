@@ -1,4 +1,4 @@
-![Swanix UI](https://github.com/swanix/swanix/blob/master/docs/images/logo.png "Swanix - User Interface")
+![Swanix UI](https://github.com/swanix/swanix/blob/master/docs/assets/images/apple-touch-icon.png "Swanix - User Interface")
 
 Experimental UI framework. Work in progress...
 
@@ -127,7 +127,7 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2018 Sebastian Serna
+Copyright (c) 2015 - 2018 Sebastian Serna
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
