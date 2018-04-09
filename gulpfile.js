@@ -23,10 +23,10 @@ var gulp = require('gulp' ),
 //-----------------------------------------------------
 
 // Twig to HTML
-var inputTwigWatch = 'src/**/*.html.twig';
-var inputTwig = 'src/pages/*.html.twig';
+var inputTwigWatch = 'src/**/*.twig';
+var inputTwig = 'src/pages/*.twig';
 var outputTwig = 'docs/';
-var inputTwigIndex = 'src/index.html.twig';
+var inputTwigIndex = 'src/index.twig';
 var outputTwigIndex = 'docs/';
 var baseTwigTemplates = 'src/templates';
 

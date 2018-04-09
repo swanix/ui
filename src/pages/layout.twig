@@ -1,4 +1,4 @@
-{% extends "default.html.twig" %}
+{% extends "default.twig" %}
 {% set title = "Layout - Swanix" %}
 {% set pageTitle = "Layout" %}
 {% set assetsPath = "assets/" %}
@@ -7,22 +7,22 @@
 
 {% block content %}
 
-{% include 'partials/app-subheader.html.twig' %}
+{% include 'partials/app-subheader.twig' %}
 
 <!-- Templates :::::::::::::::::::::::::::: -->
 <h2 class="heading">Basic Layouts</h2>
-{% include 'partials/layout-basic-layouts.html.twig' %}
+{% include 'partials/layout-basic-layouts.twig' %}
 
 <!-- Grid Columns :::::::::::::::::::::::::::::::::: -->
 <h2 class="heading">Grid Columns</h2>
-{% include 'partials/layout-basic-columns.html.twig' %}
+{% include 'partials/layout-basic-columns.twig' %}
 <!-- Code Example -->
 <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
   <svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg>
 </button>
 <div class="js-toggle-hidden">
     <script type="syntaxhighlighter" class="brush: xml">
-    <![CDATA[ {% include 'partials/layout-basic-columns.html.twig' %} ]]>
+    <![CDATA[ {% include 'partials/layout-basic-columns.twig' %} ]]>
     </script>
 </div>
 

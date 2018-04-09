@@ -55,7 +55,7 @@ swanix/  # Carpeta raíz del repositorio
 │   ├── assets/
 │   ├── Pages/
 │   ├── templates/         
-│   └── index.html.twig
+│   └── index.twig
 │       
 ├── LICENSE             # Licencia MIT
 ├── README.md           # Archivo LEAME inicial

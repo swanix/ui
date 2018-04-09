@@ -1,5 +1,5 @@
 {
-  "name": "Swan",
+  "name": "Swanix",
   "version": "0.3.7",
   "description": "Experimental UI framework",
   "main": "index.js",
@@ -32,7 +32,7 @@
     "gulp-rename": "1.2.2",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.0",
-    "gulp-twig": "1.2.0",
+    "gulp-twig": "1.0.0",
     "gulp-uglify": "3.0.0"
   }
 }
