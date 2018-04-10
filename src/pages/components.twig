@@ -9,113 +9,70 @@
 
 {% include 'partials/app-subheader.twig' %}
 
-{% embed "code-example.twig" with {'example_title': 'Navbar'} %}
-  {% block example %}{% include 'partials/comp-navbar.twig' %}{% endblock %}
-  {% block example_code %}{% include 'partials/comp-navbar.twig' %}{% endblock %}
+{% embed "code-example.twig" %}
+  {% set example_title = "Navbar" %}
+  {% set example_id = "navbar" %}
+  {% set example_code %}{% include 'partials/comp-navbar.twig' %}{% endset %}
 {% endembed %}
 
-<section id="listview" class="block">
-  <h2>List View</h2>
-  {% include 'partials/comp-listview.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-listview.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "List View" %}
+  {% set example_id = "listview" %}
+  {% set example_code %}{% include 'partials/comp-listview.twig' %}{% endset %}
+{% endembed %}
 
-<section id="cardview" class="block">
-  <h2>Card View</h2>
-  {% include 'partials/comp-cardview.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-cardview.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Card View" %}
+  {% set example_id = "cardview" %}
+  {% set example_code %}{% include 'partials/comp-cardview.twig' %}{% endset %}
+{% endembed %}
 
-<section id="gridview" class="block">
-  <h2>Grid View</h2>
-  {% include 'partials/comp-gridview.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
-    <svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg>
-  </button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-cardview.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Grid View" %}
+  {% set example_id = "gridview" %}
+  {% set example_code %}{% include 'partials/comp-gridview.twig' %}{% endset %}
+{% endembed %}
 
-<section id="articleview" class="block">
-  <h2>Article View (Portrait)</h2>
-  {% include 'partials/comp-articleview.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-articleview.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Article View (Portrait)" %}
+  {% set example_id = "articleview" %}
+  {% set example_code %}{% include 'partials/comp-articleview.twig' %}{% endset %}
+{% endembed %}
 
-<section id="dialog" class="block">
-  <h2>Modal Dialog</h2>
-  {% include 'partials/comp-dialog.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-dialog.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Modal Dialog" %}
+  {% set example_id = "dialog" %}
+  {% set example_code %}{% include 'partials/comp-dialog.twig' %}{% endset %}
+{% endembed %}
 
-<section id="hero-block" class="block">
-  <h2>Hero Block</h2>
-  {% include 'partials/comp-hero-block.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-hero-block.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Hero Block" %}
+  {% set example_id = "hero-block" %}
+  {% set example_code %}{% include 'partials/comp-hero-block.twig' %}{% endset %}
+{% endembed %}
 
-<section id="pagination" class="block">
-  <h2>Pagination</h2>
-  {% include 'partials/comp-pagination.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-pagination.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Pagination" %}
+  {% set example_id = "pagination" %}
+  {% set example_code %}{% include 'partials/comp-pagination.twig' %}{% endset %}
+{% endembed %}
 
-<section id="tooltip" class="block">
-  <h2>Tooltips</h2>
-  {% include 'partials/comp-tooltip.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-tooltip.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Tooltips" %}
+  {% set example_id = "tooltip" %}
+  {% set example_code %}{% include 'partials/comp-tooltip.twig' %}{% endset %}
+{% endembed %}
 
-<section id="slideshow" class="block">
-  <h2>Slideshow</h2>
-  {% include 'partials/comp-slideshow.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
-    <svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg>
-  </button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-slideshow.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Slideshow" %}
+  {% set example_id = "slideshow" %}
+  {% set example_code %}{% include 'partials/comp-slideshow.twig' %}{% endset %}
+{% endembed %}
 
-<section id="mapview" class="block">
-  <h2>Map View</h2>
-  {% include 'partials/comp-mapview.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-mapview.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" %}
+  {% set example_title = "Map View" %}
+  {% set example_id = "mapview" %}
+  {% set example_code %}{% include 'partials/comp-mapview.twig' %}{% endset %}
+{% endembed %}
 
 {% endblock %}

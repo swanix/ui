@@ -85,7 +85,7 @@
 </header>
 
 
-<section id="" class="block">
+<section id="navbar" class="block">
   <h2>Navbar</h2>
   <div class="navbar">
     <!-- Logo -->
@@ -116,6 +116,7 @@
     <!-- Fade Screen -->
     <div class="menu-modal-bg"></div>
 </div>
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -210,7 +211,7 @@
       </a>
     </li>
 </ul>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -305,7 +306,7 @@
       </a>
     </article>
 </section>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -418,38 +419,81 @@
       </a>
     </article>
 </section>
-
+ 
   <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
-    <svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg>
-  </button>
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">&lt;section class=&quot;cardview&quot;&gt;
-    &lt;article class=&quot;cardview-item&quot;&gt;
+    <pre><code class="language-markup line-numbers">&lt;section class=&quot;gridview&quot;&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
       &lt;a href=&quot;#&quot;&gt;
-        &lt;img class=&quot;cardview-item-figure&quot; src=&quot;assets/images/thumb.png&quot; alt=&quot;&quot;&gt;
-        &lt;div class=&quot;cardview-item-body&quot;&gt;
-          &lt;h3&gt;Interdum urna egestas scelerisque 7&lt;/h3&gt;
-          &lt;p&gt;Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.&lt;/p&gt;
-        &lt;/div&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-fashion.jpg&quot;
+          alt=&quot;Image 1&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
       &lt;/a&gt;
     &lt;/article&gt;
-    &lt;article class=&quot;cardview-item&quot;&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
       &lt;a href=&quot;#&quot;&gt;
-        &lt;img class=&quot;cardview-item-figure&quot; src=&quot;assets/images/thumb.png&quot; alt=&quot;&quot;&gt;
-        &lt;div class=&quot;cardview-item-body&quot;&gt;
-          &lt;h3&gt;Interdum urna egestas scelerisque 7&lt;/h3&gt;
-          &lt;p&gt;Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.&lt;/p&gt;
-        &lt;/div&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-food.jpg&quot;
+          alt=&quot;Image 2&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
       &lt;/a&gt;
     &lt;/article&gt;
-    &lt;article class=&quot;cardview-item&quot;&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
       &lt;a href=&quot;#&quot;&gt;
-        &lt;img class=&quot;cardview-item-figure&quot; src=&quot;assets/images/thumb.png&quot; alt=&quot;&quot;&gt;
-        &lt;div class=&quot;cardview-item-body&quot;&gt;
-          &lt;h3&gt;Interdum urna egestas scelerisque 7&lt;/h3&gt;
-          &lt;p&gt;Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.&lt;/p&gt;
-        &lt;/div&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-animals.jpg&quot;
+          alt=&quot;Image 3&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-city.jpg&quot;
+          alt=&quot;Image 4&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-sports.jpg&quot;
+          alt=&quot;Image 5&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/demo/thumb-nature.jpg&quot;
+          alt=&quot;Image 6&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/thumb-square-m.png&quot;
+          alt=&quot;Image 7&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/thumb-square-m.png&quot;
+          alt=&quot;Image 8&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;gridview-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;lazyload&quot;
+          data-src=&quot;assets/images/thumb-square-m.png&quot;
+          alt=&quot;Image 9&quot;
+          src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot;/&gt;
       &lt;/a&gt;
     &lt;/article&gt;
 &lt;/section&gt;
@@ -546,7 +590,7 @@
       </div>
     </article>
 </section>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -665,7 +709,7 @@
 <div id="modal-iframe" style="display:none">
   <iframe src="/" width="400" height="600" frameborder="0"></iframe>
 </div>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -708,7 +752,7 @@
       </div>
     </div>
 </header>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -740,7 +784,7 @@
     <li><a href="#"><svg class="icon"><use xlink:href="assets/images/icons.svg#arrow-right"></use></svg></a></li>
   </ul>
 </div>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -765,7 +809,7 @@
 <button data-tooltip="Tooltip Left" data-tooltip-pos="left">Tooltip (Left)</button>
 <button data-tooltip="Tooltip Right" data-tooltip-pos="right">Tooltip (Right)</button>
 <button data-tooltip="Tooltip Down" data-tooltip-pos="down">Tooltip (Down)</button>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
@@ -796,11 +840,9 @@
 <button class="js-slideshow-next">
   <svg class="icon medium"><use xlink:href="assets/images/icons.svg#arrow-right"></use></svg>
 </button>
-
+ 
   <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right">
-    <svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg>
-  </button>
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
     <pre><code class="language-markup line-numbers">&lt;div class=&#039;slideshow swipe&#039;&gt;
   &lt;div class=&#039;swipe-wrap&#039;&gt;
@@ -835,7 +877,7 @@
 	</button>
 	<address>86-90 Paul Street, London, EC2A 4NE</address>
 </section>
-
+ 
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
