@@ -9,15 +9,10 @@
 
 {% include 'partials/app-subheader.twig' %}
 
-<section id="navbar" class="block">
-  <h2>Navbar</h2>
-  {% include 'partials/comp-navbar.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/comp-navbar.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+{% embed "code-example.twig" with {'example_title': 'Navbar'} %}
+  {% block example %}{% include 'partials/comp-navbar.twig' %}{% endblock %}
+  {% block example_code %}{% include 'partials/comp-navbar.twig' %}{% endblock %}
+{% endembed %}
 
 <section id="listview" class="block">
   <h2>List View</h2>
