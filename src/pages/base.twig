@@ -9,279 +9,209 @@
 
 {% include 'partials/app-subheader.twig' %}
 
-<h1 class="heading">Multimedia</h1>
 
-<section id="image" class="block">
-  <h2>Image</h2>
-  {% include 'partials/base-media-image.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-image.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<h2 class="heading">Multimedia</h2>
 
-<section id="icons" class="block">
-  <h2>Icons</h2>
-  {% include 'partials/base-media-icons.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-icons.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Image :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Image" %}
+  {% set example_id = "image" %}
+  {% set example_code %}{% include 'partials/base-media-image.twig' %}{% endset %}
+{% endembed %}
 
-<section id="audio" class="block">
-  <h2>Audio (Embed)</h2>
-  {% include 'partials/base-media-audio-embed.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-audio-embed.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Icons :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Icons" %}
+  {% set example_id = "icons" %}
+  {% set example_code %}{% include 'partials/base-media-icons.twig' %}{% endset %}
+{% endembed %}
 
-<section id="video" class="block">
-  <h2>Video (Embed)</h2>
-  {% include 'partials/base-media-video.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-video.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Audio :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Audio (Embed)" %}
+  {% set example_id = "audio" %}
+  {% set example_code %}{% include 'partials/base-media-audio-embed.twig' %}{% endset %}
+{% endembed %}
 
-<section id="text" class="block">
+<!-- Video :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Video (Embed)" %}
+  {% set example_id = "video" %}
+  {% set example_code %}{% include 'partials/base-media-video.twig' %}{% endset %}
+{% endembed %}
 
-  <h2>Texts</h2>
-  {% include 'partials/base-media-text-headings.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-headings.twig' %}{% endfilter %}</code></pre>
-  </div>
 
-  <!-- Text Paragraphs + a,em tags :::::::::::::::::::::::::::::::::: -->
-  <h2>Paragraph</h2>
-  {% include 'partials/base-media-text-paragraph.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-paragraph.twig' %}{% endfilter %}</code></pre>
-  </div>
+<h2 class="heading">Typography</h2>
 
-  <!-- Text Lists :::::::::::::::::::::::::::::::::: -->
-  <h2>List Types</h2>
+<!-- Text Headings :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Headings" %}
+  {% set example_id = "headings" %}
+  {% set example_code %}{% include 'partials/base-media-text-headings.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Ordered List -->
-  <h3>Ordered List</h3>
-  {% include 'partials/base-media-text-list-ol.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-list-ol.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Text Paragraphs + a,em tags :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Paragraph" %}
+  {% set example_id = "paragraph" %}
+  {% set example_code %}{% include 'partials/base-media-text-paragraph.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Unordered List -->
-  <h3>Unordered List</h3>
-  {% include 'partials/base-media-text-list-ul.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-list-ul.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Ordered List :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Ordered List" %}
+  {% set example_id = "ordered-list" %}
+  {% set example_code %}{% include 'partials/base-media-text-list-ol.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Definition List -->
-  <h3>Definition List</h3>
-  {% include 'partials/base-media-text-list-def.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-list-def.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Unordered List :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Unordered List" %}
+  {% set example_id = "ordered-list" %}
+  {% set example_code %}{% include 'partials/base-media-text-list-ul.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Text Tables :::::::::::::::::::::::::::::::::: -->
-  <h2>Tables</h2>
-  {% include 'partials/base-media-text-table.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-table.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Definition List :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Definition List" %}
+  {% set example_id = "ordered-list" %}
+  {% set example_code %}{% include 'partials/base-media-text-list-def.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Text Quote :::::::::::::::::::::::::::::::::: -->
-  <h2>Text Quote</h2>
-  {% include 'partials/base-media-text-quote.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-quote.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Text Tables :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Tables" %}
+  {% set example_id = "tables" %}
+  {% set example_code %}{% include 'partials/base-media-text-table.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Text Blockquote :::::::::::::::::::::::::::::::::: -->
-  <h2>Text Blockquote</h2>
-  {% include 'partials/base-media-text-quote-block.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-quote-block.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Text Quote :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Text Quote" %}
+  {% set example_id = "text-quote" %}
+  {% set example_code %}{% include 'partials/base-media-text-quote.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Text Pre / Code :::::::::::::::::::::::::::::::::: -->
-  <h2>Text Pre - Code</h2>
-  {% include 'partials/base-media-text-pre.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-pre.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Text Blockquote :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Text Blockquote" %}
+  {% set example_id = "text-quote" %}
+  {% set example_code %}{% include 'partials/base-media-text-quote-block.twig' %}{% endset %}
+{% endembed %}
 
-  <!-- Text Misc :::::::::::::::::::::::::::::::::: -->
-  <h2 class="heading">Misc Stuff (abbr, sub, sup, etc)</h2>
-  {% include 'partials/base-media-text-other.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-media-text-other.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Text Pre / Code :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Text Pre - Code" %}
+  {% set example_id = "pre-code" %}
+  {% set example_code %}{% include 'partials/base-media-text-pre.twig' %}{% endset %}
+{% endembed %}
 
-<h1 class="heading">Interactive</h1>
+<!-- Text Misc :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Misc Stuff (abbr, sub, sup, etc)" %}
+  {% set example_id = "text-misc" %}
+  {% set example_code %}{% include 'partials/base-media-text-other.twig' %}{% endset %}
+{% endembed %}
 
-<section id="buttons" class="block">
-  <h2>Buttons</h2>
-  {% include 'partials/base-control-buttons.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-buttons.twig' %}{% endfilter %}</code></pre>
-  </div>
 
-  <!-- Buttons Input :::::::::::::::::::::::::::::::::: -->
-  <h2 class="heading">Buttons (input tag)</h2>
-  {% include 'partials/base-control-buttons-input.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-buttons-input.twig' %}{% endfilter %}</code></pre>
-  </div>
+<h2 class="heading">Interactive</h2>
 
-  <!-- Buttons Link :::::::::::::::::::::::::::::::::: -->
-  <h2 class="heading">Buttons (link tag)</h2>
-  {% include 'partials/base-control-buttons-link.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-buttons-link.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Buttons :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Buttons" %}
+  {% set example_id = "buttons" %}
+  {% set example_code %}{% include 'partials/base-control-buttons.twig' %}{% endset %}
+{% endembed %}
 
-<section id="icon buttons" class="block">
-  <h2>Icon Buttons</h2>
-  {% include 'partials/base-control-buttons-icons.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-buttons-icons.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Buttons Input :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Buttons (input tag)" %}
+  {% set example_id = "buttons-input" %}
+  {% set example_code %}{% include 'partials/base-control-buttons-input.twig' %}{% endset %}
+{% endembed %}
 
-<section id="radio-buttons" class="block">
-  <h2>Radio Buttons</h2>
-  {% include 'partials/base-control-radio-buttons.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-radio-buttons.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Buttons Link :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Buttons (link tag)" %}
+  {% set example_id = "buttons-link" %}
+  {% set example_code %}{% include 'partials/base-control-buttons-link.twig' %}{% endset %}
+{% endembed %}
 
-<section id="checkboxes" class="block">
-  <h2>Checkboxes</h2>
-  {% include 'partials/base-control-checkboxes.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-checkboxes.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Icon Buttons :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Icon Buttons" %}
+  {% set example_id = "icon-buttons" %}
+  {% set example_code %}{% include 'partials/base-control-buttons-icons.twig' %}{% endset %}
+{% endembed %}
 
-<section id="dropdown" class="block">
-  <h2>Select (Dropdown)</h2>
-  {% include 'partials/base-control-select.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-select.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Radio Buttons :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Radio Buttons" %}
+  {% set example_id = "radio-buttons" %}
+  {% set example_code %}{% include 'partials/base-control-radio-buttons.twig' %}{% endset %}
+{% endembed %}
 
-<section id="text-input" class="block">
-  <h2>Text input</h2>
-  {% include 'partials/base-control-text-input.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-text-input.twig' %}{% endfilter %}</code></pre>
-  </div>
+<!-- Checkboxes :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Checkboxes" %}
+  {% set example_id = "checkboxes" %}
+  {% set example_code %}{% include 'partials/base-control-checkboxes.twig' %}{% endset %}
+{% endembed %}
 
-  <h2>Textarea</h2>
-  {% include 'partials/base-control-textarea.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-textarea.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Select (Dropdown) :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Dropdown" %}
+  {% set example_id = "dropdown" %}
+  {% set example_code %}{% include 'partials/base-control-select.twig' %}{% endset %}
+{% endembed %}
 
-<section id="form" class="block">
-  <h2>Form container</h2>
-  {% include 'partials/base-control-basic-form.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-basic-form.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Text input :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Text input" %}
+  {% set example_id = "text-input" %}
+  {% set example_code %}{% include 'partials/base-control-text-input.twig' %}{% endset %}
+{% endembed %}
 
-<section id="switch" class="block">
-  <h2>Switch</h2>
-  {% include 'partials/base-control-switches.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-switches.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Textarea :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Textarea" %}
+  {% set example_id = "textarea" %}
+  {% set example_code %}{% include 'partials/base-control-textarea.twig' %}{% endset %}
+{% endembed %}
 
-<section id="progress" class="block">
-  <h2>Progress Indicator</h2>
-  {% include 'partials/base-control-progress.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-progress.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Form container :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Form container" %}
+  {% set example_id = "form" %}
+  {% set example_code %}{% include 'partials/base-control-basic-form.twig' %}{% endset %}
+{% endembed %}
 
-<section id="scroll-custom" class="block">
-  <h2>Scroll Panel</h2>
-  {% include 'partials/base-control-scrollbar.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-scrollbar.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Switch :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Switch" %}
+  {% set example_id = "switch" %}
+  {% set example_code %}{% include 'partials/base-control-switches.twig' %}{% endset %}
+{% endembed %}
 
-<section id="file-input" class="block">
-  <h2>File Input</h2>
-  {% include 'partials/base-control-file-input.twig' %}
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{% include 'partials/base-control-file-input.twig' %}{% endfilter %}</code></pre>
-  </div>
-</section>
+<!-- Progress Indicator :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Progress Indicator" %}
+  {% set example_id = "progress" %}
+  {% set example_code %}{% include 'partials/base-control-progress.twig' %}{% endset %}
+{% endembed %}
+
+<!-- Scroll Panel :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "Scroll Panel" %}
+  {% set example_id = "scroll-panel" %}
+  {% set example_code %}{% include 'partials/base-control-scrollbar.twig' %}{% endset %}
+{% endembed %}
+
+<!-- File Input :::::::::::::::::::::::::::::::::: -->
+{% embed "code-example.twig" %}
+  {% set example_title = "File Input" %}
+  {% set example_id = "file-input" %}
+  {% set example_code %}{% include 'partials/base-control-file-input.twig' %}{% endset %}
+{% endembed %}
 
 {% endblock %}
