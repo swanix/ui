@@ -26,8 +26,6 @@ var gulp = require('gulp' ),
 var inputTwigWatch = 'src/**/*.twig';
 var inputTwig = 'src/pages/*.twig';
 var outputTwig = 'docs/';
-var inputTwigIndex = 'src/index.twig';
-var outputTwigIndex = 'docs/';
 var baseTwigTemplates = 'src/templates';
 
 // Sass to CSS
@@ -69,18 +67,6 @@ gulp.task('twig', function() {
         extname: false
       }))
       .pipe(gulp.dest(outputTwig))
-      .pipe(browserSync.stream());
-});
-
-gulp.task('twigIndex', function() {
-    return gulp
-      .src(inputTwigIndex)
-      .pipe(plumber())
-      .pipe(twig({ 
-        base: baseTwigTemplates, 
-        extname: false
-      }))
-      .pipe(gulp.dest(outputTwigIndex))
       .pipe(browserSync.stream());
 });
 
@@ -143,9 +129,8 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['twigIndex', 'twig', 'sass', 'minjs', 'browser-sync'] , function() {
+gulp.task('watch', ['twig', 'sass', 'minjs', 'browser-sync'] , function() {
       gulp.watch(inputJs, ['minjs']);
-      gulp.watch(inputTwigWatch, ['twig','twigIndex']);
-      gulp.watch(inputTwigIndex, ['twig','twigIndex']);
+      gulp.watch(inputTwigWatch, ['twig']);
       gulp.watch(inputSass, ['sass']);
 });
