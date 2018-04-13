@@ -8,14 +8,14 @@
 
 var gulp = require('gulp' ),
     plumber = require('gulp-plumber'),
-    sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     twig = require('gulp-twig'),
+    postcss = require('gulp-postcss'),
+    cssnext = require('postcss-cssnext'),
     browserSync = require('browser-sync');
 
 //-----------------------------------------------------
@@ -28,31 +28,10 @@ var inputTwig = 'src/pages/*.twig';
 var outputTwig = 'docs/';
 var baseTwigTemplates = 'src/templates';
 
-// Sass to CSS
-var inputSass = 'src/assets/styles/**/*.scss';
-var outputSass = 'docs/assets/styles/';
-var outputSassDist = 'dist/';
-var sassOptions = {
-  errLogToConsole: true,
-  outputStyle: 'expanded'
-};
+// PostCSS to CSS
+var inputPostcss = 'src/styles/**/*.css';
+var outputPostcss = 'docs/styles/';
 
-// Scripts concat
-var outputJs = 'docs/assets/scripts/';
-var inputJs = [
-      // Native and adapted
-      'src/assets/scripts/components/prevent-url.js',
-      'src/assets/scripts/components/navbar.js',
-      'src/assets/scripts/components/toggle.js',
-      'src/assets/scripts/components/dialog.js',
-      'src/assets/scripts/components/scrollbar.js',
-      'src/assets/scripts/components/scroll-smooth.js',
-      'src/assets/scripts/components/slideshow.js',
-      'src/assets/scripts/components/lazy-load.js',
-      // Vendors
-      'src/assets/scripts/vendors/cover-image.js',
-      'src/assets/scripts/vendors/svg4everybody.js'
-    ];
 
 //-----------------------------------------------------
 // Twig templates to HTML
@@ -70,39 +49,20 @@ gulp.task('twig', function() {
       .pipe(browserSync.stream());
 });
 
-//-----------------------------------------------------
-// Sass compiler task
-//-----------------------------------------------------
-
-gulp.task ('sass' , function() {
-    return gulp
-      .src(inputSass)
-      .pipe(plumber())
-      .pipe(sass(sassOptions).on('error', sass.logError))
-      .pipe(autoprefixer())
-      .pipe(gulp.dest(outputSass))
-      .pipe(gulp.dest(outputSassDist))
-      .pipe(cleanCSS())
-      .pipe(rename('swanix.min.css'))
-      .pipe(gulp.dest(outputSass))
-      .pipe(gulp.dest(outputSassDist))
-      .pipe(browserSync.stream());
-});
 
 //-----------------------------------------------------
-// Scripts minification and concat task
+// PostCSS compiler task
 //-----------------------------------------------------
 
-gulp.task ('minjs' , function() {
+gulp.task('postcss', function () {
+  var plugins = [
+      cssnext({})
+  ];
   return gulp
-    .src (inputJs)
+    .src(inputPostcss)
     .pipe(plumber())
-    .pipe(concat('swanix.js'))
-    .pipe(gulp.dest(outputJs))
-    .pipe(uglify())
-    .pipe(rename('swanix.min.js'))
-    .pipe(gulp.dest(outputJs))
-    .pipe(browserSync.stream());
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest(outputPostcss));
 });
 
 //-----------------------------------------------------
@@ -121,7 +81,7 @@ gulp.task ('browser-sync' , function() {
     });
     gulp.watch([
       'docs/*.html',
-      'dist/styles/*.css'
+      'docs/styles/*.css'
       ]).on("change", browserSync.reload);
 });
 
@@ -129,8 +89,7 @@ gulp.task ('browser-sync' , function() {
 // Watch tasks
 //-----------------------------------------------------
 
-gulp.task('watch', ['twig', 'sass', 'minjs', 'browser-sync'] , function() {
-      gulp.watch(inputJs, ['minjs']);
+gulp.task('watch', ['twig', 'postcss', 'browser-sync'] , function() {
       gulp.watch(inputTwigWatch, ['twig']);
-      gulp.watch(inputSass, ['sass']);
+      gulp.watch(inputPostcss, ['postcss']);
 });

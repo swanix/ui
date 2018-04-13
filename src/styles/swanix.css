@@ -1,0 +1,18 @@
+/* -----------------------------------------------------------
+// Base Styles by Sebastian Serna - 2018
+// ----------------------------------------------------------- */
+
+/* Example CSS from http://cssnext.io/playground  */
+
+/* Variables */
+:root {
+--fontSize: 1rem;
+--mainColor: royalblue;
+--highlightColor: hwb(190, 35%, 20%);
+}
+
+
+.card {
+    display: flex;
+    background: var(--mainColor);
+}

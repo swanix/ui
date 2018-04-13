@@ -1,0 +1,15 @@
+/* -----------------------------------------------------------
+// Base Styles by Sebastian Serna - 2018
+// ----------------------------------------------------------- */
+
+/* Example CSS from http://cssnext.io/playground  */
+
+/* Variables */
+
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: royalblue;
+}
