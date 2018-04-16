@@ -1,0 +1,20 @@
+/* ----------------------------------------------
+  BODY
+---------------------------------------------- */
+
+:root {
+
+  --body-bg: var(--white) ;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 10px;
+  background: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

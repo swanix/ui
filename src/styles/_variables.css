@@ -1,0 +1,24 @@
+
+:root {
+
+    --text-baseline:  2.5rem  ;
+    --text-tiny:      0.6rem  ;
+    --text-small:     1.2rem  ;
+    --text-medium:    1.4rem  ;
+    --text-large:     1.9rem  ;
+    --text-xlarge:    2.4rem  ;
+    --text-huge:      3.4rem  ;
+
+    --white:         #FFFFFF ; 
+    --gray1:         #F2F2F2 ;
+    --gray2:         #CCCCCC ;
+    --gray3:         #B3B3B3 ;
+    --gray4:         #999999 ;
+    --gray5:         #808080 ;
+    --gray6:         #595959 ;
+    --gray7:         #4D4D4D ;
+    --gray8:         #333333 ;
+    --gray9:         #1A1A1A ;
+    --black:         #000000 ;
+
+}

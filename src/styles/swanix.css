@@ -1,18 +1,13 @@
-/* -----------------------------------------------------------
-// Base Styles by Sebastian Serna - 2018
-// ----------------------------------------------------------- */
+/*!
+ * Swanix UI v0.4.0 (PostCSS)
+ * (c) 2015-2018 Sebastian Serna
+ * Released under the MIT License.
+ */
 
-/* Example CSS from http://cssnext.io/playground  */
+@import "_variables.css";
+@import "_body.css";
+@import "_text.css";
+@import "_text-tables.css";
+@import "_buttons.css";
+@import "_icons.css";
 
-/* Variables */
-:root {
---fontSize: 1rem;
---mainColor: royalblue;
---highlightColor: hwb(190, 35%, 20%);
-}
-
-
-.card {
-    display: flex;
-    background: var(--mainColor);
-}

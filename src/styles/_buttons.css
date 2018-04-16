@@ -1,0 +1,47 @@
+/* ----------------------------------------------
+  BUTTONS
+---------------------------------------------- */
+
+:root {
+
+  --btn-text:                  var(--gray7) ;
+  --btn-border:                var(--gray2) solid 1px;
+  --btn-bg:                    var(--gray1) ;
+
+  --btn-hover-text:            var(--gray9) ;
+  --btn-hover-border:          var(--gray3) solid 1px ;
+  --btn-hover-bg:              var(--white) ;
+
+  --btn-padding:               1rem 1rem ;
+  
+  --btn-primary-text:          var(--gray1) ;
+  --btn-primary-border:        var(--white) solid 2px ;
+  --btn-primary-bg:            var(--primary) ;
+
+  --btn-primary-hover-text:    var(--white) ;
+  --btn-primary-hover-border:  var(--white) solid 2px ;
+  --btn-primary-hover-bg:      var(--gray8) ;
+
+}
+
+.button {
+  vertical-align: middle;
+  transition: .2s;
+  display: inline-block;
+  padding: var(--btn-padding);
+  color: var(--btn-text);
+  border: var(--btn-border);
+  background: var(--btn-bg);
+  font-size: var(--text-medium);
+  outline:0; /* Solves Chrome border focus */
+}
+
+.button:hover {
+  vertical-align: middle;
+  transition:.2s;
+  color: var(--btn-hover-text);
+  border: var(--btn-hover-border);
+  background: var(--btn-hover-bg);
+  outline:0; /* Solves Chrome border focus */
+}
+

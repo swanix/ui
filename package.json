@@ -32,6 +32,7 @@
     "gulp-sourcemaps": "2.6.0",
     "gulp-twig": "1.0.0",
     "gulp-uglify": "3.0.0",
-    "postcss-cssnext": "3.1.0"
+    "postcss-cssnext": "3.1.0",
+    "postcss-import": "11.1.0"
   }
 }

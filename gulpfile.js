@@ -15,6 +15,7 @@ var gulp = require('gulp' ),
     concat = require('gulp-concat'),
     twig = require('gulp-twig'),
     postcss = require('gulp-postcss'),
+    postcssImport = require('postcss-import'),
     cssnext = require('postcss-cssnext'),
     browserSync = require('browser-sync');
 
@@ -29,8 +30,11 @@ var outputTwig = 'docs/';
 var baseTwigTemplates = 'src/templates';
 
 // PostCSS to CSS
-var inputPostcss = 'src/styles/**/*.css';
+var inputPostcssWatch = 'src/styles/**/*.css';
+var inputPostcss = 'src/styles/swanix.css';
 var outputPostcss = 'docs/styles/';
+var basePostcssFiles = 'src/styles/';
+
 
 
 //-----------------------------------------------------
@@ -56,6 +60,7 @@ gulp.task('twig', function() {
 
 gulp.task('postcss', function () {
   var plugins = [
+      postcssImport({ root: basePostcssFiles }),
       cssnext({})
   ];
   return gulp

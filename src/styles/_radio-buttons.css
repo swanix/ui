@@ -1,0 +1,63 @@
+// -----------------------------------------------------------
+// RADIO BUTTONS by Sebastian Serna - 2016
+// -----------------------------------------------------------
+// Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+// Input Radio Buttons
+$input-radio:                 $gray6 !default;
+$input-radio-border:          $gray3 solid 2px !default;
+$input-radio-border-radius:   50% !default;
+$input-radio-bg:              $gray2 !default;
+// Input Radio Buttons active
+$input-radio-active:          $black !default;
+$input-radio-active-border:   $black solid 2px !default;
+$input-radio-active-bg:       $white !default;
+
+
+// STYLES
+// -----------------------------------------------------------
+
+input[type=radio]:not(old){
+  width     : 2rem;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1.5rem;
+  opacity   : 0;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2rem;
+  line-height  : 1.5rem;
+}
+
+input[type=radio]:not(old) + label > span{
+  display          : inline-block;
+  width            : 2rem;
+  height           : 2rem;
+  margin           : 0.2rem 1rem;
+  background       : $input-radio-bg;
+  border           : $input-radio-border;
+  border-radius    : $input-radio-border-radius;
+  vertical-align   : middle;
+
+}
+
+input[type=radio]:not(old):checked + label > span{
+  background :    $input-radio-active-bg;
+  border     :    $input-radio-active-border;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 1rem;
+  height           : 1rem;
+  margin           : 0.3rem;
+  border-radius    : $input-radio-border-radius;
+  background       : $input-radio-active;
+}
