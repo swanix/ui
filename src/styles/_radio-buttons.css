@@ -1,26 +1,20 @@
-// -----------------------------------------------------------
-// RADIO BUTTONS by Sebastian Serna - 2016
-// -----------------------------------------------------------
-// Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/* ----------------------------------------------
+  RADIO BUTTONS
+---------------------------------------------- */
+/* Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/ */
 
+:root {
 
-// VARIABLES
-// -----------------------------------------------------------
+  --input-radio:                 var(--gray6);
+  --input-radio-border:          var(--gray3) solid 2px ;
+  --input-radio-border-radius:   50% ;
+  --input-radio-bg:              var(--gray2) ;
 
-// Input Radio Buttons
-$input-radio:                 $gray6 !default;
-$input-radio-border:          $gray3 solid 2px !default;
-$input-radio-border-radius:   50% !default;
-$input-radio-bg:              $gray2 !default;
-// Input Radio Buttons active
-$input-radio-active:          $black !default;
-$input-radio-active-border:   $black solid 2px !default;
-$input-radio-active-bg:       $white !default;
-
-
-// STYLES
-// -----------------------------------------------------------
+  --input-radio-active:          var(--black) ;
+  --input-radio-active-border:   var(--black) solid 2px ;
+  --input-radio-active-bg:       var(--white) ;
+  
+}
 
 input[type=radio]:not(old){
   width     : 2rem;
@@ -41,16 +35,16 @@ input[type=radio]:not(old) + label > span{
   width            : 2rem;
   height           : 2rem;
   margin           : 0.2rem 1rem;
-  background       : $input-radio-bg;
-  border           : $input-radio-border;
-  border-radius    : $input-radio-border-radius;
+  background       : var(--input-radio-bg);
+  border           : var(--input-radio-border);
+  border-radius    : var(--input-radio-border-radius);
   vertical-align   : middle;
 
 }
 
 input[type=radio]:not(old):checked + label > span{
-  background :    $input-radio-active-bg;
-  border     :    $input-radio-active-border;
+  background :    var(--input-radio-active-bg);
+  border     :    var(--input-radio-active-border);
 }
 
 input[type=radio]:not(old):checked +  label > span > span{
@@ -58,6 +52,6 @@ input[type=radio]:not(old):checked +  label > span > span{
   width            : 1rem;
   height           : 1rem;
   margin           : 0.3rem;
-  border-radius    : $input-radio-border-radius;
-  background       : $input-radio-active;
+  border-radius    : var(--input-radio-border-radius);
+  background       : var(--input-radio-active);
 }

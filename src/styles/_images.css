@@ -1,11 +1,6 @@
-// -----------------------------------------------------------
-// MEDIA IMAGE by Sebastian Serna - 2016
-// -----------------------------------------------------------
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-// STYLES
-// -----------------------------------------------------------
+/* ----------------------------------------------
+  IMAGES
+---------------------------------------------- */
 
 img {
 	display: inline-block;
@@ -13,15 +8,14 @@ img {
 	height:auto;
 	}
 
-// Lazysizes
+/* Lazysizes */
 
 img[data-sizes="auto"] {
 	display: block;
 	width: 100%;
 }
 
-// Fade effect
-// fade image in after load
+/* Fade In effect after load */
 .lazyload,
 .lazyloading {
     opacity: 0;
@@ -31,7 +25,7 @@ img[data-sizes="auto"] {
     transition: opacity 300ms;
 }
 
-// Blur effect
+/* Blur effect */
 .blur-up {
 		-webkit-filter: blur(5px);
 		filter: blur(5px);
@@ -44,14 +38,14 @@ img[data-sizes="auto"] {
 		filter: blur(0);
 }
 
-figure { // For Gallery gridview thumbs
+/* For Gallery gridview thumbs */
+figure { 
   width: 100%;
   padding: 0;
   margin:0;
 }
 
-// Background with object fit (need polyfill on Internet Explorer)
-//
+/*  Background with object fit (need polyfill on Internet Explorer) */
 
 .bg-image {
   position: absolute;

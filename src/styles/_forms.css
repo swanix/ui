@@ -1,0 +1,26 @@
+/* ----------------------------------------------
+  FORMS
+---------------------------------------------- */
+
+:root {
+
+    --form-filedset-border:   var(--gray2);
+    
+}
+
+form { }
+
+legend { 
+    font-size:1.2em; 
+}
+
+fieldset { 
+    padding: 1em 2em;
+    border: 1px solid var(--form-filedset-border);
+}
+
+label { }
+
+
+option { }
+

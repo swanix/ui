@@ -356,3 +356,235 @@ svg path, svg g  {
   color: #595959;
 }
 
+/* ----------------------------------------------
+  CHECKBOXES
+---------------------------------------------- */
+
+/* Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/ */
+
+input[type=checkbox]:not(old) {
+  width     : 20px;
+  width     : 2rem;
+  margin    : 0;
+  padding   : 0;
+  font-size : 15px;
+  font-size : 1.5rem;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label {
+  display      : inline-block;
+  margin-left  : -20px;
+  margin-left  : -2rem;
+  line-height  : 15px;
+  line-height  : 1.5rem;
+}
+
+input[type=checkbox]:not(old) + label > span {
+  display          : inline-block;
+  width            : 20px;
+  width            : 2rem;
+  height           : 20px;
+  height           : 2rem;
+  margin           : 2px 10px;
+  margin           : 0.2rem 1rem;
+  border           : #B3B3B3 solid 2px;
+  border-radius    : 0;
+  background       : #CCCCCC;
+  vertical-align   : middle;
+}
+
+input[type=checkbox]:not(old):checked + label > span {
+  background :    #FFFFFF;
+  border     :    #000000 solid 2px;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 15px;
+  width       : 1.5rem;
+  color       : #000000;
+  font-size   : 15px;
+  font-size   : 1.5rem;
+  line-height : 1em;
+  text-align  : center;
+  font-weight : bold;
+}
+
+/* ----------------------------------------------
+  RADIO BUTTONS
+---------------------------------------------- */
+
+/* Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/ */
+
+input[type=radio]:not(old){
+  width     : 20px;
+  width     : 2rem;
+  margin    : 0;
+  padding   : 0;
+  font-size : 15px;
+  font-size : 1.5rem;
+  opacity   : 0;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -20px;
+  margin-left  : -2rem;
+  line-height  : 15px;
+  line-height  : 1.5rem;
+}
+
+input[type=radio]:not(old) + label > span{
+  display          : inline-block;
+  width            : 20px;
+  width            : 2rem;
+  height           : 20px;
+  height           : 2rem;
+  margin           : 2px 10px;
+  margin           : 0.2rem 1rem;
+  background       : #CCCCCC;
+  border           : #B3B3B3 solid 2px;
+  border-radius    : 50%;
+  vertical-align   : middle;
+
+}
+
+input[type=radio]:not(old):checked + label > span{
+  background :    #FFFFFF;
+  border     :    #000000 solid 2px;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 10px;
+  width            : 1rem;
+  height           : 10px;
+  height           : 1rem;
+  margin           : 3px;
+  margin           : 0.3rem;
+  border-radius    : 50%;
+  background       : #000000;
+}
+
+/* ----------------------------------------------
+  FORMS
+---------------------------------------------- */
+
+form { }
+
+legend { 
+    font-size:1.2em; 
+}
+
+fieldset { 
+    padding: 1em 2em;
+    border: 1px solid #CCCCCC;
+}
+
+label { }
+
+option { }
+
+/* ----------------------------------------------
+  IMAGES
+---------------------------------------------- */
+
+img {
+	display: inline-block;
+	width:100%;
+	height:auto;
+	}
+
+/* Lazysizes */
+
+img[data-sizes="auto"] {
+	display: block;
+	width: 100%;
+}
+
+/* Fade In effect after load */
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+
+/* Blur effect */
+
+.blur-up {
+		-webkit-filter: blur(5px);
+		filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="5" /></filter></svg>#filter');
+		filter: blur(5px);
+		transition: filter 400ms,
+		-webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+		-webkit-filter: blur(0);
+		filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter');
+		filter: blur(0);
+}
+
+/* For Gallery gridview thumbs */
+
+figure { 
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+
+/*  Background with object fit (need polyfill on Internet Explorer) */
+
+.bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  -o-object-fit: cover;
+     object-fit: cover;
+	font-family: 'object-fit: cover;'
+}
+
+/* ----------------------------------------------
+  SELECT (DROPDOWN)
+---------------------------------------------- */
+
+select {
+  background: transparent;
+  max-width: 250px;
+  max-width: 25rem;
+  padding: 5px 35px 5px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #333333;
+  border: #808080 solid 1px;
+  background: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-image: url('../../images/icon-arrow.svg') 90% 50%;
+}
+
+select {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+select option {
+  color: #333333;
+}
+
+select optgroup {
+  color: #333333;
+}
+
