@@ -36,7 +36,6 @@ var outputPostcss = 'docs/styles/';
 var basePostcssFiles = 'src/styles/';
 
 
-
 //-----------------------------------------------------
 // Twig templates to HTML
 //-----------------------------------------------------
@@ -96,5 +95,5 @@ gulp.task ('browser-sync' , function() {
 
 gulp.task('watch', ['twig', 'postcss', 'browser-sync'] , function() {
       gulp.watch(inputTwigWatch, ['twig']);
-      gulp.watch(inputPostcss, ['postcss']);
+      gulp.watch(inputPostcssWatch, ['postcss']);
 });

@@ -20,6 +20,115 @@ body {
 }
 
 /* ----------------------------------------------
+  GRID LAYOUT
+---------------------------------------------- */
+
+.layout {
+	overflow: auto;
+  min-height: 100%; /* Afecta la posición del footer */
+  position: relative; /* Afecta la posición del footer */
+  color: #595959;
+  background: none;
+  outline: none;
+}
+
+.layout-header {
+  color: #595959;
+  background: #FFFFFF;
+  outline: none;
+}
+
+/* Main content section */
+
+.layout-main {
+  padding-bottom: var(--footer-size); /* Afecta la posición del footer */
+  color: #595959;
+  background: #FFFFFF;
+  height: 100%;
+  outline: none;
+}
+
+/* Footer section */
+
+.layout-footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 30px;
+  padding: 3rem 3rem;
+  height: var(--footer-size); /* Tamaño del footer */
+  color: #595959;
+  background: #F2F2F2;
+  outline: none;
+}
+
+/* Generic classes */
+
+.content {
+  color: #595959;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.content-full {
+  color: #595959;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.sidebar {
+  color: #595959;
+  background: #F2F2F2;
+  outline: none;
+}
+
+/* Fixed positions */
+
+.fixed-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+
+.fixed-left {
+    position: fixed;
+		left:0;
+    z-index: 20;
+}
+
+.fixed-right {
+    position: fixed;
+    right: 0;
+    z-index: 20;
+}
+
+/* other */
+
+.inner-centered {
+  text-align: center;
+}
+
+.block {
+	min-height: 300px;
+	min-height: 30rem;
+	padding: 20px;
+	padding: 2rem;
+	margin: 50px 20px 150px 20px;
+	margin: 5rem 2rem 15rem 2rem;
+	border: 1px solid rgba(158, 158, 158, .3);
+	overflow: auto;
+	clear:both;
+}
+
+/* ----------------------------------------------
   TYPOGRAPHY
 ---------------------------------------------- */
 
@@ -263,6 +372,82 @@ td {
 
 tr:hover {
   background: #F2F2F2;
+}
+
+/* ----------------------------------------------
+  INPUT TEXTS 
+---------------------------------------------- */
+
+input[type="text"] {
+  width:100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+  color: #595959;
+  border: #B3B3B3 solid 1px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:disabled {
+
+}
+
+input[type="password"] {
+  width:100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+  letter-spacing:3px;
+  color: #595959;
+  border: #B3B3B3 solid 1px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+input[type="email"] {
+  width:100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+  color: #595959;
+  border: #B3B3B3 solid 1px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  color: #4D4D4D;
+  border: #808080 solid 1px;
+  background: #FFFFFF;
+}
+
+textarea {
+  width:100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+  height: auto;
+  min-height: 100px;
+  min-height: 10rem;
+  color: #595959;
+  border: #B3B3B3 solid 1px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+textarea:focus {
+  color: #4D4D4D;
+  border: #808080 solid 1px;
+  background: #FFFFFF;
 }
 
 /* ----------------------------------------------
@@ -587,4 +772,3 @@ select option {
 select optgroup {
   color: #333333;
 }
-

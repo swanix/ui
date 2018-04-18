@@ -9,7 +9,6 @@ img {
 	}
 
 /* Lazysizes */
-
 img[data-sizes="auto"] {
 	display: block;
 	width: 100%;
@@ -20,6 +19,7 @@ img[data-sizes="auto"] {
 .lazyloading {
     opacity: 0;
 }
+
 .lazyloaded {
     opacity: 1;
     transition: opacity 300ms;

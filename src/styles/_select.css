@@ -4,7 +4,7 @@
 
 :root {
 
-  --dropdown-text:             var(--gray8) ;
+  --dropdown-text:             var(--gray8  ) ;
   --dropdown-border:           var(--gray5) solid 1px ;
   --dropdown-bg:               var(--gray1) ;
   --dropdown-bg-arrow:         url('../../images/icon-arrow.svg') 90% 50% ;
