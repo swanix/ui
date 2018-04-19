@@ -1,0 +1,143 @@
+/* ----------------------------------------------
+  NAVBAR
+---------------------------------------------- */
+/* Based on Refills http://refills.bourbon.io/components/ */
+
+
+:root {
+
+    --main-logo-color:               var(--black)  ;
+    
+    --navigation-bg:                 var(--white)  ;
+    --menu-bg:                       none  ;
+
+    --menu-item-text-style:          capitalize  ;
+    --menu-item-text:                var(--gray5) ;
+    --menu-item-bg:                  var(--white) ;
+    --menu-item-border-radius:       0  ;
+    --menu-item-padding:             1.5rem 2.2rem ;
+    
+    --menu-item-hover-text:          var(--gray9) ;
+    --menu-item-hover-bg:            var(--gray1) ;
+    
+    --menu-item-active-text:         var(--gray9) ;
+    --menu-item-active-bg:           var(--gray1) ;
+    
+    --menu-mobile-bg:                var(--white) ;
+    --menu-mobile-item-text:         var(--gray5) ;
+    --menu-mobile-item-bg:           var(--white) ;
+
+    --menu-mobile-item-hover-text:   var(--gray9) ;
+    --menu-mobile-item-hover-bg:     var(--gray1) ;
+
+    --menu-mobile-item-active-text:  var(--gray9) ;
+    --menu-mobile-item-active-bg:    var(--gray1) ;
+    
+    --menu-mobile-btn-text:         var(--gray9) ;
+    --menu-mobile-btn-bg:           var(--white) ;
+    --menu-mobile-btn-border:       1px solid var(--gray2) ;
+
+    --menu-mobile-btn-hover-text:    var(--white) ;
+    --menu-mobile-btn-hover-bg:      var(--primary) ;
+    --menu-mobile-btn-hover-border:  1px solid var(--primary) ;
+    
+    --menu-mobile-fade-screen-bg:   var(--black) ;
+    --menu-mobile-border:           2px solid var(--gray5) ;
+  
+  }
+
+
+.navbar {
+  overflow: auto;
+  background: var(--navigation-bg);
+}
+
+/* svg logo */
+.main-logo {
+  fill: var(--main-logo-color);
+}
+
+.logo {
+  padding-left: 1rem;
+}
+
+.menu {
+  background: var(--menu-bg);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu ul li {
+  display: inline;
+  text-transform: var(--menu-item-text-style);
+}
+
+.menu ul li a {
+  float: left;
+  text-decoration: none;
+  padding: var(--menu-item-padding);
+  color: var(--menu-item-text);
+  background: var(--menu-item-bg);
+  border-radius: var(--menu-item-border-radius);
+}
+
+.menu ul li a:visited {
+  color: var(--menu-item-text);
+}
+
+.menu ul li a:hover {
+  color: var(--menu-item-hover-text);
+  background: var(--menu-item-hover-bg);
+}
+
+.menu ul li a.active {
+  color: var(--menu-item-active-text);
+  background: var(--menu-item-active-bg);
+}
+
+/* Menu vertical (provisional) */
+
+.menu-vertical {
+  width: 100%;
+  background: var(--menu-mobile-bg);
+}
+
+.menu-vertical ul, .menu-vertical li {
+    margin: 0;
+}
+
+.menu-vertical ul li a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  /* padding: 1rem 1.5rem; */
+  color: var(--menu-mobile-item-text);
+  background: var(--menu-mobile-item-bg);
+}
+
+.menu-vertical ul li a.active {
+  color: var(--menu-mobile-item-active-text);
+  background: var(--menu-mobile-item-active-bg);
+}
+
+/* Header separator */
+
+.separator {
+  margin-top:20px;
+  border-top:1px var(--gray7) solid;
+  border-bottom:1px var(--gray7) solid;
+}
+
+
+.sidebar-menu {
+  width: 17rem;
+  color: var(--text-basic);
+  background: var(--menu-mobile-item-bg);
+  height: 100%;
+  top:5.8rem;
+  padding-bottom:5.8rem;
+}

@@ -41,7 +41,8 @@ body {
 /* Main content section */
 
 .layout-main {
-  padding-bottom: var(--footer-size); /* Afecta la posición del footer */
+  padding-bottom: 200px;
+  padding-bottom: 20rem; /* Afecta la posición del footer */
   color: #595959;
   background: #FFFFFF;
   height: 100%;
@@ -57,7 +58,8 @@ body {
   width: 100%;
   padding: 30px 30px;
   padding: 3rem 3rem;
-  height: var(--footer-size); /* Tamaño del footer */
+  height: 200px;
+  height: 20rem; /* Tamaño del footer */
   color: #595959;
   background: #F2F2F2;
   outline: none;
@@ -126,6 +128,52 @@ body {
 	border: 1px solid rgba(158, 158, 158, .3);
 	overflow: auto;
 	clear:both;
+}
+
+/* Content Columns */
+
+/* Content Rows */
+
+.row {
+	height: 700px;
+	height: 70rem;
+	background-size: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; /* Resuelve margin compartido con elementos H1 */
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.row-content {
+  width: 980px;
+  width: 98rem;
+  margin: 0 auto;
+  z-index: 4;
+  overflow: auto;
+}
+
+.row-content-full {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-top: 10rem;
+	height:100%;
+  overflow: auto;
+}
+
+.center-x { 
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center-y { }
+
+.center-xy {
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* ----------------------------------------------
@@ -771,4 +819,112 @@ select option {
 
 select optgroup {
   color: #333333;
+}
+
+/* ----------------------------------------------
+  NAVBAR
+---------------------------------------------- */
+
+/* Based on Refills http://refills.bourbon.io/components/ */
+
+.navbar {
+  overflow: auto;
+  background: #FFFFFF;
+}
+
+/* svg logo */
+
+.main-logo {
+  fill: #000000;
+}
+
+.logo {
+  padding-left: 10px;
+  padding-left: 1rem;
+  width: 20%;
+  float: left;
+}
+
+.menu {
+  background: none;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu ul li {
+  display: inline;
+  text-transform: capitalize;
+}
+
+.menu ul li a {
+  float: left;
+  text-decoration: none;
+  padding: 15px 22px;
+  padding: 1.5rem 2.2rem;
+  color: #808080;
+  background: #FFFFFF;
+  border-radius: 0;
+}
+
+.menu ul li a:visited {
+  color: #808080;
+}
+
+.menu ul li a:hover {
+  color: #1A1A1A;
+  background: #F2F2F2;
+}
+
+.menu ul li a.active {
+  color: #1A1A1A;
+  background: #F2F2F2;
+}
+
+/* Menu vertical (provisional) */
+
+.menu-vertical {
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.menu-vertical ul, .menu-vertical li {
+    margin: 0;
+}
+
+.menu-vertical ul li a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  /* padding: 1rem 1.5rem; */
+  color: #808080;
+  background: #FFFFFF;
+}
+
+.menu-vertical ul li a.active {
+  color: #1A1A1A;
+  background: #F2F2F2;
+}
+
+/* Header separator */
+
+.separator {
+  margin-top:20px;
+  border-top:1px #4D4D4D solid;
+  border-bottom:1px #4D4D4D solid;
+}
+
+.sidebar-menu {
+  width: 170px;
+  width: 17rem;
+  color: #595959;
+  background: #FFFFFF;
+  height: 100%;
+  top:58px;
+  top:5.8rem;
+  padding-bottom:58px;
+  padding-bottom:5.8rem;
 }

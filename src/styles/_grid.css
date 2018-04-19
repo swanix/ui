@@ -116,3 +116,47 @@
 	overflow: auto;
 	clear:both;
 }
+
+
+/* Content Columns */
+
+/* Content Rows */
+
+.row {
+	height: var(--size-xxl);
+	background-size: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; /* Resuelve margin compartido con elementos H1 */
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.row-content {
+  width: 98rem;
+  margin: 0 auto;
+  z-index: 4;
+  overflow: auto;
+}
+
+.row-content-full {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10rem;
+	height:100%;
+  overflow: auto;
+}
+
+.center-x { 
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center-y { }
+
+.center-xy {
+  text-align: center;
+  margin: 0 auto;
+}

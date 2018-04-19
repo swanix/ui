@@ -1,13 +1,24 @@
 
 :root {
 
-    --text-baseline:  2.5rem  ;
-    --text-tiny:      0.6rem  ;
-    --text-small:     1.2rem  ;
-    --text-medium:    1.4rem  ;
-    --text-large:     1.9rem  ;
-    --text-xlarge:    2.4rem  ;
-    --text-huge:      3.4rem  ;
+    --size-xs:    3.5rem ;
+    --size-s:     5rem ;
+    --size-m:     20rem ;
+    --size-l:     40rem ;
+    --size-xl:    50rem ;
+    --size-xxl:   70rem ;
+    
+    --text-baseline:  2.5rem ;
+    --text-tiny:      0.6rem ;
+    --text-small:     1.2rem ;
+    --text-medium:    1.4rem ;
+    --text-large:     1.9rem ;
+    --text-xlarge:    2.4rem ;
+    --text-huge:      3.4rem ;
+
+    --header-size: var(--size-xs) ;
+    --main-size: auto ;
+    --footer-size: var(--size-m) ;
 
     --white:         #FFFFFF ; 
     --gray1:         #F2F2F2 ;
