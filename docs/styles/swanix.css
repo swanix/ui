@@ -841,8 +841,6 @@ select optgroup {
 .logo {
   padding-left: 10px;
   padding-left: 1rem;
-  width: 20%;
-  float: left;
 }
 
 .menu {

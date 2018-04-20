@@ -34,7 +34,7 @@ var inputPostcssWatch = 'src/styles/**/*.css';
 var inputPostcss = 'src/styles/swanix.css';
 var outputPostcss = 'docs/styles/';
 var basePostcssFiles = 'src/styles/';
-
+var outputPostcssDist = 'dist/';
 
 //-----------------------------------------------------
 // Twig templates to HTML
@@ -66,7 +66,13 @@ gulp.task('postcss', function () {
     .src(inputPostcss)
     .pipe(plumber())
     .pipe(postcss(plugins))
-    .pipe(gulp.dest(outputPostcss));
+    .pipe(gulp.dest(outputPostcss))
+    .pipe(gulp.dest(outputPostcssDist))
+    .pipe(cleanCSS())
+    .pipe(rename('swanix.min.css'))
+    .pipe(gulp.dest(outputPostcss))
+    .pipe(gulp.dest(outputPostcssDist))
+    .pipe(browserSync.stream());
 });
 
 //-----------------------------------------------------
