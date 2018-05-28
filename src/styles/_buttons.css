@@ -15,12 +15,12 @@
   --btn-padding:               1rem 1rem ;
   
   --btn-primary-text:          var(--gray1) ;
-  --btn-primary-border:        var(--white) solid 2px ;
-  --btn-primary-bg:            var(--primary) ;
+  --btn-primary-border:        var(--black) solid 2px ;
+  --btn-primary-bg:            var(--black) ;
 
   --btn-primary-hover-text:    var(--white) ;
-  --btn-primary-hover-border:  var(--white) solid 2px ;
-  --btn-primary-hover-bg:      var(--gray8) ;
+  --btn-primary-hover-border:  var(--gray9) solid 2px ;
+  --btn-primary-hover-bg:      var(--gray9) ;
 
 }
 
@@ -45,3 +45,14 @@
   outline:0; /* Solves Chrome border focus */
 }
 
+.button.primary  {
+  color: var(--btn-primary-text);
+  border: var(--btn-primary-border);
+  background: var(--btn-primary-bg);     
+}
+
+.button.primary:hover  {
+  color: var(--btn-primary-hover-text);
+  border: var(--btn-primary-hover-border);
+  background: var(--btn-primary-hover-bg);     
+}

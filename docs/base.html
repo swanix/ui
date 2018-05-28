@@ -16,47 +16,23 @@
     <![endif]-->
 </head>
 <body>
+
+<div class="app">
+
 <div class="layout">
-  <!-- Header :::::::::::::::::::::: -->
-  <header class="layout-header fixed-top shadow-bottom">
-    <div class="navbar" data-scroll-header>
-    <!-- Logo -->
-    <div class="logo">
-      <a href="/">
-      <svg class="main-logo" viewBox="0 0 92 92" width="50" height="50">
-        <use xlink:href="assets/images/logo.svg#logo"></use>
-        <use xlink:href="assets/images/logo.svg#logo-text"></use>
-      </svg>
-      </a>
-      <label class="label-switch">
-        <input id="swap-theme" type="checkbox" />
-        <div class="checkbox"></div>
-      </label>
-    </div>
-    <!-- Menu -->
-    <nav class="menu">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="base">Base</a></li>
-        <li><a href="components">Components</a></li>
-        <li><a href="layout">Layout</a></li>
-        <li><a href="color">Color</a></li>
-      </ul>
-    </nav>
-    <!-- Menu button -->
-    <div class="menu-mobile-open">
-      <button class="btnMenu" type="button">
-         <svg class="icon"><use xlink:href="assets/images/icons.svg#menu"></use></svg>
-      </button>
-    </div>
-    <!-- Fade Screen -->
-    <div class="menu-modal-bg"></div>
-</div>
-  </header>
-  <!-- Content Area :::::::::::::::::::::: -->
-  <main class="layout-main" role="main">
-    <aside class="sidebar-menu fixed-left shadow-right" ss-container>
-                <nav class="menu menu-vertical">
+
+  <div class="layout-section sidebar">
+  <!-- Logo -->
+  <div class="logo">
+    <a href="/">
+    <svg class="main-logo" viewBox="0 0 92 92" width="50" height="50">
+      <use xlink:href="assets/images/logo.svg#logo"></use>
+      <use xlink:href="assets/images/logo.svg#logo-text"></use>
+    </svg>
+    </a>
+  </div>
+  <!-- Submenu -->
+        <nav class="menu menu-vertical">
   <ul>
     <!--<li><a class="separator">Multimedia</a></li>-->
     <li><a href="#image" data-scroll>Image</a></li>
@@ -78,16 +54,32 @@
     <li><a href="#file-input" data-scroll>File Input</a></li>
   </ul>
 </nav>
-          </aside>
-    <section class="content-full gap-left">
+  
+  </div>
+
+  <div class="layout-section">
+
+    <div class="topnav-area shadow-bottom">
+      <div class="navbar" data-scroll-header>
+    <!-- Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="base">Base</a></li>
+        <li><a href="components">Components</a></li>
+        <li><a href="layout">Layout</a></li>
+        <li><a href="color">Color</a></li>
+      </ul>
+    </nav>
+</div>
+    </div>
+
+    <div class="content-area" style="background: #F7F7F7;">
+      <div class="content">
         
 
-<header class="hero size-m">
-    <div class="hero-content">
-      <div class="title-margin">
-        <h1>Base</h1>
-      </div>
-    </div>
+<header class="">
+    <h1>Base</h1>
 </header>
 
 
@@ -97,18 +89,12 @@
 <!-- Image :::::::::::::::::::::::::::::::::: -->
 <section id="image" class="block">
   <h2>Image</h2>
-  <img class="lazyload"
-  data-src="assets/images/image-large.jpg"
-  alt="Photo by Laura Kangur"
-  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+  <img src="assets/images/image-large.jpg" alt="Photo by Laura Kangur" />
  
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">&lt;img class=&quot;lazyload&quot;
-  data-src=&quot;assets/images/image-large.jpg&quot;
-  alt=&quot;Photo by Laura Kangur&quot;
-  src=&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&quot; /&gt;
+    <pre><code class="language-markup line-numbers">&lt;img src=&quot;assets/images/image-large.jpg&quot; alt=&quot;Photo by Laura Kangur&quot; /&gt;
 </code></pre>
   </div>
 </section>
@@ -1198,11 +1184,9 @@ imperdiet augue quis tellus.
   </div>
 </section>
 
-    </section>
-  </main>
-  <!-- Footer :::::::::::::::::::::: -->
-  <footer class="layout-footer">
-    <div class="centered">
+        <!-- Footer :::::::::::::::::::::: -->
+        <footer class="layout-footer">
+          <div class="centered">
   <!-- Start Social buttons -->
   <div class="social-links">
     <a class="button circle" href="#">
@@ -1221,41 +1205,76 @@ imperdiet augue quis tellus.
   <!-- End Social buttons -->
   <p class="pad">Swanix UI © 2015-2018</P>
 </div>
-  </footer>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 </div>
 
 <!-- Scripts -->
-<script src="assets/scripts/swanix.min.js"></script>
-<script src="assets/scripts/other/theme-switch.js"></script>
+
 
 <script>
-  // Polyfills
-  svg4everybody();
-  objectFitImages();
-  // Smooth Scroll and Gum Shoe
-  smoothScroll.init({selectorHeader: '[data-scroll-header]'});
-  gumshoe.init();
-  // Modal Dialog
-  const modal = new VanillaModal({
-    clickOutside : false
+
+// PREVENT DEFAULT for href="#" links
+// -----------------------------------------------------------
+
+var nullAnchors = document.querySelectorAll("a[href='#']");
+
+for (var i = 0; i < nullAnchors.length; i++) {
+    nullAnchors[i].addEventListener("click", preventDefaultEvent);
+}
+
+function preventDefaultEvent(event) {
+    event.preventDefault();
+}
+
+// REMOVE HASH IN URL (Provisional)
+// -----------------------------------------------------------
+
+// Hashchange event
+// Ref https://developer.mozilla.org/es/docs/Web/API/WindowEventHandlers/onhashchange
+window.addEventListener("hashchange", removeHash, false);
+
+// Seen on http://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-with-javascript-without-page-refresh
+function removeHash () {
+    var scrollV, scrollH, loc = window.location;
+    if ("pushState" in history)
+        history.pushState("", document.title, loc.pathname + loc.search);
+    else {
+        // Prevent scrolling by storing the page's current scroll offset
+        scrollV = document.body.scrollTop;
+        scrollH = document.body.scrollLeft;
+
+        loc.hash = "";
+
+        // Restore the scroll offset, should be flicker free
+        document.body.scrollTop = scrollV;
+        document.body.scrollLeft = scrollH;
+    }
+}
+
+// TOGGLE (Hide / Show element)
+// -----------------------------------------------------------
+
+var toggleBtn = document.querySelectorAll(".js-toggle");
+
+for (var i = 0; i < toggleBtn.length; i++) {
+
+    toggleBtn[i].addEventListener("click", function (event) {
+      var nextEl = this.nextElementSibling;
+
+      if (nextEl.className === "js-toggle-hidden") {
+          nextEl.className = "js-toggle-visible";
+      } else {
+          nextEl.className = "js-toggle-hidden";
+      }
   });
-  // Slideshow
-  var element = document.querySelector('.slideshow'),
-     prevBtn = document.querySelector('.js-slideshow-prev'),
-     nextBtn = document.querySelector('.js-slideshow-next');
-  window.mySwipe = new Swipe(element, {
-    startSlide: 0,
-    auto: 3000,
-    draggable: true,
-    autoRestart: true,
-    continuous: true,
-    disableScroll: true,
-    stopPropagation: true,
-    callback: function(index, element) {},
-    transitionEnd: function(index, element) {}
-  });
-  prevBtn.onclick = mySwipe.prev;
-  nextBtn.onclick = mySwipe.next;
+}
+
 </script>
 
 <!-- Syntax Highlighter -->

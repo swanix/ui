@@ -20,163 +20,6 @@ body {
 }
 
 /* ----------------------------------------------
-  GRID LAYOUT
----------------------------------------------- */
-
-.layout {
-	overflow: auto;
-  min-height: 100%; /* Afecta la posición del footer */
-  position: relative; /* Afecta la posición del footer */
-  color: #595959;
-  background: none;
-  outline: none;
-}
-
-.layout-header {
-  color: #595959;
-  background: #FFFFFF;
-  outline: none;
-}
-
-/* Main content section */
-
-.layout-main {
-  padding-bottom: 200px;
-  padding-bottom: 20rem; /* Afecta la posición del footer */
-  color: #595959;
-  background: #FFFFFF;
-  height: 100%;
-  outline: none;
-}
-
-/* Footer section */
-
-.layout-footer {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 30px 30px;
-  padding: 3rem 3rem;
-  height: 200px;
-  height: 20rem; /* Tamaño del footer */
-  color: #595959;
-  background: #F2F2F2;
-  outline: none;
-}
-
-/* Generic classes */
-
-.content {
-  color: #595959;
-  background: #FFFFFF;
-  outline: none;
-}
-
-.content-full {
-  color: #595959;
-  background: #FFFFFF;
-  outline: none;
-}
-
-.sidebar {
-  color: #595959;
-  background: #F2F2F2;
-  outline: none;
-}
-
-/* Fixed positions */
-
-.fixed-top {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 20;
-}
-
-.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    z-index: 20;
-}
-
-.fixed-left {
-    position: fixed;
-		left:0;
-    z-index: 20;
-}
-
-.fixed-right {
-    position: fixed;
-    right: 0;
-    z-index: 20;
-}
-
-/* other */
-
-.inner-centered {
-  text-align: center;
-}
-
-.block {
-	min-height: 300px;
-	min-height: 30rem;
-	padding: 20px;
-	padding: 2rem;
-	margin: 50px 20px 150px 20px;
-	margin: 5rem 2rem 15rem 2rem;
-	border: 1px solid rgba(158, 158, 158, .3);
-	overflow: auto;
-	clear:both;
-}
-
-/* Content Columns */
-
-/* Content Rows */
-
-.row {
-	height: 700px;
-	height: 70rem;
-	background-size: none;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; /* Resuelve margin compartido con elementos H1 */
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.row-content {
-  width: 980px;
-  width: 98rem;
-  margin: 0 auto;
-  z-index: 4;
-  overflow: auto;
-}
-
-.row-content-full {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-top: 10rem;
-	height:100%;
-  overflow: auto;
-}
-
-.center-x { 
-  text-align: center;
-  margin: 0 auto;
-}
-
-.center-y { }
-
-.center-xy {
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* ----------------------------------------------
   TYPOGRAPHY
 ---------------------------------------------- */
 
@@ -527,6 +370,18 @@ textarea:focus {
   outline:0; /* Solves Chrome border focus */
 }
 
+.button.primary  {
+  color: #F2F2F2;
+  border: #000000 solid 2px;
+  background: #000000;     
+}
+
+.button.primary:hover  {
+  color: #FFFFFF;
+  border: #1A1A1A solid 2px;
+  background: #1A1A1A;     
+}
+
 /* ----------------------------------------------
   ICONS
 ---------------------------------------------- */
@@ -841,6 +696,7 @@ select optgroup {
 .logo {
   padding-left: 10px;
   padding-left: 1rem;
+  float: left; /* Provisional */
 }
 
 .menu {
@@ -925,4 +781,454 @@ select optgroup {
   top:5.8rem;
   padding-bottom:58px;
   padding-bottom:5.8rem;
+}
+
+/*------------------------------------------------------------
+  LAYOUT
+------------------------------------------------------------*/
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 0; /* Soluciona bug en Firefox que hace que no se genere scroll en los elementos hijos */
+  height: 100%; /* Soluciona bug en Safari en MacOS Sierra (no funcionaba el scroll) */
+}
+
+/* Main Layout */
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 0; /* Soluciona bug en Firefox que hace que no se genere scroll en los elementos hijos */
+  height: 100%; /* Soluciona bug en Safari en MacOS Sierra (no funcionaba el scroll) */
+}
+
+.layout.horizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.layout.vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    display: block;
+  }
+}
+
+.layout-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; 
+  -ms-flex-negative: 0; 
+      flex-shrink: 0; 
+  -ms-flex-preferred-size: auto; 
+      flex-basis: auto;
+}
+
+.layout-section.horizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.layout-section.vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.layout-section.break-flow {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; 
+  -ms-flex-preferred-size: 100%; 
+      flex-basis: 100%; /* break in new row */
+  height: auto;
+}
+
+.layout-section.sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; 
+  -ms-flex-preferred-size: 180px; 
+      flex-basis: 180px; 
+  -ms-flex-preferred-size: 18rem; 
+      flex-basis: 18rem; /* Medium  width */
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.layout-section.small {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -ms-flex-preferred-size: 10rem;
+      flex-basis: 10rem; /* Small width */
+}
+
+.layout-section.large {
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
+  -ms-flex-preferred-size: 45rem;
+      flex-basis: 45rem; /* Large width */
+}
+
+.layout-section.huge {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  -ms-flex-preferred-size: 50rem;
+      flex-basis: 50rem; /* Huge width */
+}
+
+@media (max-width: 768px) {
+  .layout-section.huge{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem 4rem 2rem;
+  }
+  .layout-section.sidebar {
+    width: 100%;
+    padding:0;
+  }  
+
+}
+
+.content-area {
+  overflow: auto; /* Permite que el componente topbar permanezca fijo al hacer scroll */
+  padding: 20px 0 20px 0;
+  padding: 2rem 0 2rem 0;
+}
+
+/* Esta regla permite reservar espacio para el chat en Chrome, Firefox y Safari */
+
+.content-area:after { 
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-bottom: 10rem;
+}
+
+.content-area .content {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+.content-area .titlebar {
+  max-width: 1024px;
+  margin: 0 auto 20px auto;
+  margin: 0 auto 2rem auto;
+}
+
+/* Container */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-expanded {
+	width: 100%;
+}
+
+.block {
+  overflow: hidden;
+}
+
+.block-content {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%;  
+  max-width: 1120px;
+  padding: 50px 20px;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .block-content {
+    width: 100%;
+    padding: 1rem 2rem 4rem 2rem;
+  }  
+}
+
+.block .expanded {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/*------------------------------------------------------------
+  UTILITIES
+------------------------------------------------------------*/
+
+.hidden {
+    display: none;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+.visible {
+    display: block;
+    opacity: 1;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+/* Order */
+
+.to-right {
+    float:right;
+  }
+
+.to-left {
+    float:left;
+  }
+
+.align-centered {
+    text-align:center;
+  }
+
+.align-right {
+    text-align:right;
+  }
+
+.align-left {
+    text-align:left;
+  }
+
+.shadow-bottom {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .22);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .22);
+  }
+
+.shadow-right {
+    -webkit-box-shadow: 4px 3px 5px -1px rgba(0, 0, 0, .22);
+            box-shadow: 4px 3px 5px -1px rgba(0, 0, 0, .22);
+  }
+
+/* ----------------------------------- */
+
+.full {
+    width: 100%;
+  }
+
+.shadow {
+    -webkit-box-shadow: 12px 11px 23px -14px rgba(0, 0, 0, .8);
+            box-shadow: 12px 11px 23px -14px rgba(0, 0, 0, .8);
+  }
+
+/* Ghost mode */
+
+.ghost-mode {
+    background: none;
+  }
+
+/*------------------------------------------------------------
+  TOGGLE PANEL
+------------------------------------------------------------*/
+
+.js-toggle-hidden {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.20s ease-out;
+  transition: max-height 0.20s ease-out;
+}
+
+.js-toggle-visible {
+  max-height: 2000px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.30s ease-in;
+  transition: max-height 0.30s ease-in;
+}
+
+.js-toggle {
+  display:block;
+  margin-top: 25px;
+  margin-top: 2.5rem;
+}
+
+/*------------------------------------------------------------
+  HERO
+------------------------------------------------------------*/
+
+.hero h1, 
+.hero h2, 
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+.hero p,
+.hero a {
+  color: #FFFFFF ;
+}
+
+.hero .button a {
+  color: #000000 ;
+}
+
+.hero {
+  height: 640px;
+  height: 64rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 55rem;
+    background-size: cover;
+    background-position: 15% -20%;
+  }
+
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  z-index: 10;
+}
+
+.hero-content.overlay {
+  background-color: rgba(0, 0, 0, .5); 
+}
+
+.hero-content.overlay-dark {
+  background-color: rgba(0, 0, 0, .82); 
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content.overlay-mobile {
+    background-color: rgba(0, 0, 0, .8); 
+  }
+}
+
+.hero-message {
+  visibility: visible !important;
+  padding: 160px 50px 0 50px;
+  padding: 16rem 5rem 0 5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-message {
+    padding: 10rem 1rem 0 1rem;
+    width: 90%;
+  }
+}
+
+.hero h1 {
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero p {
+  font-size: 17px;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Text position */
+
+.hero-text, 
+.hero-text-left {
+  width: 45%;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text, 
+  .hero-text-left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero-text-center {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text-center {
+    width: 100%;
+  }
+}
+
+.hero-text-right {
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text-right  {
+    width: 100%;
+    text-align: center;
+    float: left;
+  }
 }

@@ -15,158 +15,26 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body>
-<div class="layout">
-  <!-- Header :::::::::::::::::::::: -->
-  <header class="layout-header fixed-top shadow-bottom">
-    <div class="navbar" data-scroll-header>
-    <!-- Logo -->
-    <div class="logo">
-      <a href="/">
-      <svg class="main-logo" viewBox="0 0 92 92" width="50" height="50">
-        <use xlink:href="assets/images/logo.svg#logo"></use>
-        <use xlink:href="assets/images/logo.svg#logo-text"></use>
-      </svg>
-      </a>
-      <label class="label-switch">
-        <input id="swap-theme" type="checkbox" />
-        <div class="checkbox"></div>
-      </label>
+<body style="background:black;">
+<section class="block">
+  <div class="hero" style="background-image: url('assets/images/image-large.jpg')">
+    <div class="hero-content overlay-dark">
+      <div class="hero-message">
+        <div class="hero-text-center">
+          <!-- Logo -->
+          <svg class="main-logo" style="fill:#FFF;" viewBox="0 0 92 92" width="50" height="50">
+            <use xlink:href="assets/images/logo.svg#logo"></use>
+            <use xlink:href="assets/images/logo.svg#logo-text"></use>
+          </svg>        
+          <!-- Text -->
+          <h1>SWANIX</h1>
+          <p>OPEN DESIGN SYSTEM</p>
+          <!-- Actions -->
+          <a class="button primary" href="base">GET STARTED</a>
+        </div>
+      </div>
     </div>
-    <!-- Menu -->
-    <nav class="menu">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="base">Base</a></li>
-        <li><a href="components">Components</a></li>
-        <li><a href="layout">Layout</a></li>
-        <li><a href="color">Color</a></li>
-      </ul>
-    </nav>
-    <!-- Menu button -->
-    <div class="menu-mobile-open">
-      <button class="btnMenu" type="button">
-         <svg class="icon"><use xlink:href="assets/images/icons.svg#menu"></use></svg>
-      </button>
-    </div>
-    <!-- Fade Screen -->
-    <div class="menu-modal-bg"></div>
-</div>
-  </header>
-  <!-- Content Area :::::::::::::::::::::: -->
-  <main class="layout-main" role="main">
-    <!-- Header :::::::::::::::::::::: -->
-    <header class="hero lazyload"
-      data-bg="assets/images/image-large.jpg">
-        <div class="hero-content overlay-bg">
-          <div class="align-vertical">
-            <svg class="main-logo" viewBox="0 0 100 100" width="150" height="150">
-              <use xlink:href="assets/images/logo.svg#logo"></use>
-            </svg>
-            <h2>Swanix</h2>
-          </div>
-        </div>
-    </header>
-    <!-- Content :::::::::::::::::::::: -->
-    <section class="row-content pad">
-        
-<section class="cardview">
-    <article class="cardview-item">
-      <a href="#">
-        <img class="cardview-item-figure" src="assets/images/thumb.png" alt="">
-        <div class="cardview-item-body">
-          <h3>Interdum urna egestas scelerisque 7</h3>
-          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
-        </div>
-      </a>
-    </article>
-    <article class="cardview-item">
-      <a href="#">
-        <img class="cardview-item-figure" src="assets/images/thumb.png" alt="">
-        <div class="cardview-item-body">
-          <h3>Interdum urna egestas scelerisque 7</h3>
-          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
-        </div>
-      </a>
-    </article>
-    <article class="cardview-item">
-      <a href="#">
-        <img class="cardview-item-figure" src="assets/images/thumb.png" alt="">
-        <div class="cardview-item-body">
-          <h3>Interdum urna egestas scelerisque 7</h3>
-          <p>Curabitur tincidunt interdum urna egestas scelerisque. Cras at metus sed lorem eleifend tincidunt tincidunt interdum urna egestas scelerisque.</p>
-        </div>
-      </a>
-    </article>
-</section>
-
-    </section>
-  </main>
-  <!-- Footer :::::::::::::::::::::: -->
-  <footer class="layout-footer">
-    <div class="centered">
-  <!-- Start Social buttons -->
-  <div class="social-links">
-    <a class="button circle" href="#">
-      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-facebook"></use></svg>
-    </a>
-    <a class="button circle" href="#">
-      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-twitter"></use></svg>
-    </a>
-    <a class="button circle" href="#">
-      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-youtube"></use></svg>
-    </a>
-    <a class="button circle" href="#">
-      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-dribbble"></use></svg>
-    </a>
   </div>
-  <!-- End Social buttons -->
-  <p class="pad">Swanix UI © 2015-2018</P>
-</div>
-  </footer>
-</div>
-
-<!-- Scripts -->
-<script src="assets/scripts/swanix.min.js"></script>
-<script src="assets/scripts/other/theme-switch.js"></script>
-
-<script>
-  // Polyfills
-  svg4everybody();
-  objectFitImages();
-  // Smooth Scroll and Gum Shoe
-  smoothScroll.init({selectorHeader: '[data-scroll-header]'});
-  gumshoe.init();
-  // Modal Dialog
-  const modal = new VanillaModal({
-    clickOutside : false
-  });
-  // Slideshow
-  var element = document.querySelector('.slideshow'),
-     prevBtn = document.querySelector('.js-slideshow-prev'),
-     nextBtn = document.querySelector('.js-slideshow-next');
-  window.mySwipe = new Swipe(element, {
-    startSlide: 0,
-    auto: 3000,
-    draggable: true,
-    autoRestart: true,
-    continuous: true,
-    disableScroll: true,
-    stopPropagation: true,
-    callback: function(index, element) {},
-    transitionEnd: function(index, element) {}
-  });
-  prevBtn.onclick = mySwipe.prev;
-  nextBtn.onclick = mySwipe.next;
-</script>
-
-<!-- Syntax Highlighter -->
-<script src="assets/scripts/other/prism.js"></script>
-<link href="assets/scripts/other/prism.css" media="screen" rel="stylesheet" type="text/css">
-
-
-
-
-
+</section>
 </body>
 </html>

@@ -1,0 +1,138 @@
+/*------------------------------------------------------------
+  HERO
+------------------------------------------------------------*/
+
+.hero h1, 
+.hero h2, 
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+.hero p,
+.hero a {
+  color: var(--white) ;
+}
+
+.hero .button a {
+  color: var(--black) ;
+}
+
+.hero {
+  height: 64rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 55rem;
+    background-size: cover;
+    background-position: 15% -20%;
+  }
+
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  z-index: 10;
+}
+
+.hero-content.overlay {
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.hero-content.overlay-dark {
+  background-color: rgba(0,0,0,0.82); 
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content.overlay-mobile {
+    background-color: rgba(0,0,0,0.8); 
+  }
+}
+
+.hero-message {
+  visibility: visible !important;
+  padding: 16rem 5rem 0 5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-message {
+    padding: 10rem 1rem 0 1rem;
+    width: 90%;
+  }
+}
+
+.hero h1 {
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Text position */
+
+.hero-text, 
+.hero-text-left {
+  width: 45%;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text, 
+  .hero-text-left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero-text-center {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text-center {
+    width: 100%;
+  }
+}
+
+.hero-text-right {
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text-right  {
+    width: 100%;
+    text-align: center;
+    float: left;
+  }
+}

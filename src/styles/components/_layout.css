@@ -1,0 +1,161 @@
+/*------------------------------------------------------------
+  LAYOUT
+------------------------------------------------------------*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 0; /* Soluciona bug en Firefox que hace que no se genere scroll en los elementos hijos */
+  height: 100%; /* Soluciona bug en Safari en MacOS Sierra (no funcionaba el scroll) */
+}
+
+/* Main Layout */
+
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* Soluciona bug en Firefox que hace que no se genere scroll en los elementos hijos */
+  height: 100%; /* Soluciona bug en Safari en MacOS Sierra (no funcionaba el scroll) */
+}
+
+.layout.horizontal {
+  flex-direction: row;
+}
+
+.layout.vertical {
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    display: block;
+  }
+}
+
+.layout-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  flex-grow: 1; 
+  flex-shrink: 0; 
+  flex-basis: auto;
+}
+
+.layout-section.horizontal {
+  flex-direction: row;
+}
+
+.layout-section.vertical {
+  flex-direction: column;
+}
+  
+.layout-section.break-flow {
+  flex-grow: 0;
+  flex-shrink: 0; 
+  flex-basis: 100%; /* break in new row */
+  height: auto;
+}  
+
+.layout-section.sidebar {
+  flex-grow: 0;
+  flex-shrink: 0; 
+  flex-basis: 18rem; /* Medium  width */
+  overflow-x: hidden;
+  height: 100vh;
+}
+.layout-section.small {
+  flex-basis: 10rem; /* Small width */
+}
+    
+.layout-section.large {
+  flex-basis: 45rem; /* Large width */
+}
+
+.layout-section.huge {
+  flex-basis: 50rem; /* Huge width */
+}
+
+
+@media (max-width: 768px) {
+  .layout-section.huge{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem 4rem 2rem;
+  }
+  .layout-section.sidebar {
+    width: 100%;
+    padding:0;
+  }  
+
+}
+
+.content-area {
+  overflow: auto; /* Permite que el componente topbar permanezca fijo al hacer scroll */
+  padding: 2rem 0 2rem 0;
+}
+
+/* Esta regla permite reservar espacio para el chat en Chrome, Firefox y Safari */
+.content-area:after { 
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 10rem;
+}
+
+.content-area .content {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+.content-area .titlebar {
+  max-width: 1024px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Container */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-expanded {
+	width: 100%;
+}
+  
+.block {
+  overflow: hidden;
+}
+
+.block-content {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%;  
+  max-width: 1120px;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .block-content {
+    width: 100%;
+    padding: 1rem 2rem 4rem 2rem;
+  }  
+}
+
+.block .expanded {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}

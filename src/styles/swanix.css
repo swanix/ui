@@ -5,8 +5,7 @@
  */
 
 @import "_variables.css";
-@import "_body.css";
-@import "_grid.css";
+@import "_body.css";    
 @import "_text.css";
 @import "_text-tables.css";
 @import "_text-input.css";
@@ -17,4 +16,8 @@
 @import "_forms.css";
 @import "_images.css";
 @import "_select.css";
-@import "extras/_navbar.css";
+@import "components/_navbar.css";
+@import "components/_layout.css";
+@import "components/_utilities.css";
+@import "components/_togglepanel.css";
+@import "components/_hero.css";

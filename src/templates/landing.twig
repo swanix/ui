@@ -3,38 +3,26 @@
 <head>
     {% include 'partials/app-html-head.twig' %}
 </head>
-<body>
-<div class="layout">
-  <!-- Header :::::::::::::::::::::: -->
-  <header class="layout-header fixed-top shadow-bottom">
-    {% include 'partials/app-navbar-main.twig' %}
-  </header>
-  <!-- Content Area :::::::::::::::::::::: -->
-  <main class="layout-main" role="main">
-    <!-- Header :::::::::::::::::::::: -->
-    <header class="hero lazyload"
-      data-bg="assets/images/image-large.jpg">
-        <div class="hero-content overlay-bg">
-          <div class="align-vertical">
-            <svg class="main-logo" viewBox="0 0 100 100" width="150" height="150">
-              <use xlink:href="assets/images/logo.svg#logo"></use>
-            </svg>
-            <h2>Swanix</h2>
-          </div>
+<body style="background:black;">
+<section class="block">
+  <div class="hero" style="background-image: url('assets/images/image-large.jpg')">
+    <div class="hero-content overlay-dark">
+      <div class="hero-message">
+        <div class="hero-text-center">
+          <!-- Logo -->
+          <svg class="main-logo" style="fill:#FFF;" viewBox="0 0 92 92" width="50" height="50">
+            <use xlink:href="assets/images/logo.svg#logo"></use>
+            <use xlink:href="assets/images/logo.svg#logo-text"></use>
+          </svg>        
+          <!-- Text -->
+          <h1>SWANIX</h1>
+          <p>OPEN DESIGN SYSTEM</p>
+          <!-- Actions -->
+          <a class="button primary" href="base">GET STARTED</a>
         </div>
-    </header>
-    <!-- Content :::::::::::::::::::::: -->
-    <section class="row-content pad">
-        {% block content %}{% endblock %}
-    </section>
-  </main>
-  <!-- Footer :::::::::::::::::::::: -->
-  <footer class="layout-footer">
-    {% include 'partials/comp-footer.twig' %}
-  </footer>
-</div>
-
-{% include 'partials/app-scripts.twig' %}
-
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>

@@ -59,6 +59,7 @@
 
 .logo {
   padding-left: 1rem;
+  float: left; /* Provisional */
 }
 
 .menu {
