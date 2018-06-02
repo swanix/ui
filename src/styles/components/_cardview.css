@@ -1,0 +1,85 @@
+/* ----------------------------------------------
+  CARDVIEW
+---------------------------------------------- */
+
+:root {
+
+    --cardview-item-text:                     var(--gray5)  ;
+    --cardview-item-bottom-border:            var(--gray2) 1px solid ;
+    --cardview-item-image-bg:                 none  ;
+    --cardview-item-bg:                       var(--white);
+
+    --cardview-item-hover-text:               var(--gray9)  ;
+    --cardview-item-hover-bottom-border:      var(--gray3) 1px solid ;
+    --cardview-item-hover-image-bg:           none  ;
+    --cardview-item-hover-bg:                 var(--gray1);
+
+}
+
+
+.cardview {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.cardview-item {
+    display: flex;
+    flex: 0 1 32%;
+    margin-bottom: 1.2rem;
+    color: var(--cardview-item-text);
+    background: var(--cardview-item-bg);
+}
+
+@media (max-width: 768px) {
+    .cardview-item {
+        flex: 0 1 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.cardview-item img {
+    width: 100%;
+    height: auto;
+}
+
+.cardview-item-figure {
+
+}
+
+.cardview-item-body {
+    padding: 2rem;
+    color: var(--cardview-item-text);
+}
+
+@media (max-width: 768px) {
+    .cardview-item-body {
+        padding: 1.5rem;
+    }
+}
+
+.cardview-item-body h3 {
+    font-size: var(--text-large);
+}
+
+.cardview-item-body p {
+    font-size: var(--text-small);
+    line-height: 2rem;
+    color: var(--cardview-item-text);
+}
+
+.cardview-item a {
+    display: flex;
+    flex-direction: column;
+    border-bottom: var(--cardview-item-bottom-border);
+}
+
+.cardview-item a:hover {
+    background: var(--gray8);
+    cursor: pointer;
+    transition:.2s;
+    color: var(--cardview-item-hover-text);
+    border-bottom: var(--cardview-item-hover-bottom-border);
+    background: var(--cardview-item-hover-bg);
+}
+  

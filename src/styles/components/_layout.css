@@ -71,6 +71,7 @@
   overflow-x: hidden;
   height: 100vh;
 }
+
 .layout-section.small {
   flex-basis: 10rem; /* Small width */
 }

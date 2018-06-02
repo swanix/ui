@@ -1,0 +1,115 @@
+/* ----------------------------------------------
+  ARTICLE VIEW
+---------------------------------------------- */
+
+:root {
+
+  --articleview-item-text:                   var(--gray5) ;
+  --articleview-item-bottom-border:          var(gray2) 1px solid ;
+  --articleview-item-image-bg:               none ;
+  --articleview-item-bg:                     var(--white) ;
+  
+  --articleview-item-hover-text:             var(--gray9) ;
+  --articleview-item-hover-bottom-border:    var(--gray3) 1px solid ;
+  --articleview-item-hover-image-bg:         none;
+  --articleview-item-hover-bg:               var(--gray1);
+
+}
+
+
+.articleview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articleview-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 49%;
+  margin-bottom: 1.2rem;
+  color: var(--articleview-item-text);
+  border-bottom: var(--articleview-item-bottom-border);
+  background: var(--articleview-item-bg);
+}
+
+@media (max-width: 768px) {
+  .articleview-item {
+    flex: 0 1 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.articleview-item img {
+  width: 100%;
+  height: auto;
+}
+
+.articleview-item-figure {
+
+}
+
+.articleview-item-body {
+  display: flex;
+  flex-direction: column;
+  color: var(--articleview-item-text);
+}
+
+.articleview-item-text {
+  padding: 1rem 2rem;
+  flex: 0 1 90%;
+}
+
+@media (max-width: 768px) {
+  .articleview-item-text {
+    padding: 1rem 2rem;
+  }
+}
+
+.articleview-item-body h3 {
+  font-size: var(--text-large);
+}
+
+.articleview-item-body p {
+  font-size: var(--text-small);
+  line-height: 2rem;  
+  color: var(--articleview-item-text);
+}
+
+.articleview-item-footer {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.land {
+  flex-direction: row;
+  flex: 0 1 100%;
+}
+
+@media (max-width: 768px) {
+  .land {
+    flex-direction: column;
+  }
+}
+
+.land .articleview-item-text {
+  padding: 4rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .land .articleview-item-text  {
+    padding: 1rem 2rem;
+  }
+}
+
+.land .articleview-item-figure,
+.land .articleview-item-body {
+  flex: 0 1 50%;
+}
+
+@media (max-width: 768px) {
+  .land .articleview-item-figure,
+  .land .articleview-item-body {
+    flex: 0 1 100%;
+  }
+}

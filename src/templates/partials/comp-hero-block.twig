@@ -1,11 +1,18 @@
-<header class="hero lazyload"
-  data-bg="{{ assetsPath }}images/image-large.jpg">
-    <div class="hero-content overlay-bg">
-      <div class="align-vertical">
-        <svg class="main-logo" viewBox="0 0 100 100" width="150" height="150">
-          <use xlink:href="{{ assetsPath }}images/logo.svg#logo"></use>
-        </svg>
-        <h2>Hero Block</h2>
+<div class="hero" style="background-image: url('{{ assetsPath }}images/image-large.jpg')">
+  <div class="hero-content overlay-dark">
+    <div class="hero-message">
+      <div class="hero-text-center">
+        <!-- Logo -->
+        <svg class="main-logo" style="fill:#FFF;" viewBox="0 0 92 92" width="50" height="50">
+          <use xlink:href="assets/images/logo.svg#logo"></use>
+          <use xlink:href="assets/images/logo.svg#logo-text"></use>
+        </svg>        
+        <!-- Text -->
+        <h1>SWANIX</h1>
+        <p>OPEN DESIGN SYSTEM</p>
+        <!-- Actions -->
+        <a class="button primary" href="base">GET STARTED</a>
       </div>
     </div>
-</header>
+  </div>
+</div>

@@ -1,0 +1,145 @@
+/* ----------------------------------------------
+  LISTVIEW
+---------------------------------------------- */
+
+
+:root {
+
+    --listview-item-text:                     var(--gray5)  ;
+    --listview-item-bottom-border:            var(--gray2) 1px solid ;
+    --listview-item-image-bg:                 none  ;
+    --listview-item-bg:                       var(--white);
+
+    --listview-item-hover-text:               var(--gray9)  ;
+    --listview-item-hover-bottom-border:      var(--gray3) 1px solid ;
+    --listview-item-hover-image-bg:           none  ;
+    --listview-item-hover-bg:                 var(--gray1);
+
+}
+
+
+.listview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listview-item {
+  flex: 0 1 50%;
+  align-items: flex-start;
+  color: var(--listview-item-text);
+  background: var(--listview-item-bg);
+}
+
+@media (max-width: 768px) {
+    .listview-item {
+      flex: 0 1 100%;
+    }
+}
+
+.listview-item-figure {
+  margin-right: 1.5rem;
+  flex: 0 1 auto;
+  height: 100%;
+  width: 7rem;
+}
+
+.listview-item-body {
+  color: var(--listview-item-text);
+}
+
+.listview-item-body h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: var(--text-medium);
+}
+
+.listview-item-body p {
+  font-size: var(--text-small);
+  line-height: 2rem;
+  color: var(--listview-item-text);
+}
+
+.listview-item a {
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: var(--listview-item-bottom-border);
+}
+
+.listview-item a:hover {
+  cursor: pointer;
+  transition:.2s;
+  color: var(--listview-item-hover-text);
+  border-bottom: var(--listview-item-hover-bottom-border);
+  background: var(--listview-item-hover-bg);
+}
+
+ .listview li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ ul.listview {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/* Styles for limit text with '...'
+   http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+   Based on http://codepen.io/natonischuk/pen/KpNKQZ 
+*/
+
+/* 2 lines */
+.maxlines-2 {
+  overflow: hidden;
+  position: relative;
+  line-height: 2rem;
+  max-height: 4rem;
+  margin-right: -1rem;
+  padding-right: 1rem;
+}
+
+.maxlines-2:before {
+  /*content: '...';*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-2:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* 1 line */
+
+.maxlines-1 {
+  overflow: hidden;
+  position: relative;
+  line-height: 2rem;
+  max-height: 2rem;
+  margin-right: -1.5rem;
+  padding-right: 1.5rem;
+}
+
+.maxlines-1:before {
+  /*content: '...'; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.maxlines-1:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.5rem;
+}

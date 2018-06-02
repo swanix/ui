@@ -739,32 +739,46 @@
 <!-- Hero Block :::::::::::::::::::::::::::::::::: -->
 <section id="hero-block" class="block">
   <h2>Hero Block</h2>
-  <header class="hero lazyload"
-  data-bg="assets/images/image-large.jpg">
-    <div class="hero-content overlay-bg">
-      <div class="align-vertical">
-        <svg class="main-logo" viewBox="0 0 100 100" width="150" height="150">
+  <div class="hero" style="background-image: url('assets/images/image-large.jpg')">
+  <div class="hero-content overlay-dark">
+    <div class="hero-message">
+      <div class="hero-text-center">
+        <!-- Logo -->
+        <svg class="main-logo" style="fill:#FFF;" viewBox="0 0 92 92" width="50" height="50">
           <use xlink:href="assets/images/logo.svg#logo"></use>
-        </svg>
-        <h2>Hero Block</h2>
+          <use xlink:href="assets/images/logo.svg#logo-text"></use>
+        </svg>        
+        <!-- Text -->
+        <h1>SWANIX</h1>
+        <p>OPEN DESIGN SYSTEM</p>
+        <!-- Actions -->
+        <a class="button primary" href="base">GET STARTED</a>
       </div>
     </div>
-</header>
+  </div>
+</div>
  
   <!-- Code Example -->
   <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
   <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">&lt;header class=&quot;hero lazyload&quot;
-  data-bg=&quot;assets/images/image-large.jpg&quot;&gt;
-    &lt;div class=&quot;hero-content overlay-bg&quot;&gt;
-      &lt;div class=&quot;align-vertical&quot;&gt;
-        &lt;svg class=&quot;main-logo&quot; viewBox=&quot;0 0 100 100&quot; width=&quot;150&quot; height=&quot;150&quot;&gt;
+    <pre><code class="language-markup line-numbers">&lt;div class=&quot;hero&quot; style=&quot;background-image: url(&#039;assets/images/image-large.jpg&#039;)&quot;&gt;
+  &lt;div class=&quot;hero-content overlay-dark&quot;&gt;
+    &lt;div class=&quot;hero-message&quot;&gt;
+      &lt;div class=&quot;hero-text-center&quot;&gt;
+        &lt;!-- Logo --&gt;
+        &lt;svg class=&quot;main-logo&quot; style=&quot;fill:#FFF;&quot; viewBox=&quot;0 0 92 92&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
           &lt;use xlink:href=&quot;assets/images/logo.svg#logo&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-        &lt;h2&gt;Hero Block&lt;/h2&gt;
+          &lt;use xlink:href=&quot;assets/images/logo.svg#logo-text&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;        
+        &lt;!-- Text --&gt;
+        &lt;h1&gt;SWANIX&lt;/h1&gt;
+        &lt;p&gt;OPEN DESIGN SYSTEM&lt;/p&gt;
+        &lt;!-- Actions --&gt;
+        &lt;a class=&quot;button primary&quot; href=&quot;base&quot;&gt;GET STARTED&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-&lt;/header&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
   </div>
 </section>

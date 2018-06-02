@@ -1,0 +1,85 @@
+/* ----------------------------------------------
+  GRIDVIEW
+---------------------------------------------- */
+
+:root {
+
+  --gridview-item-text:                   var(--gray5);
+  --gridview-item-bottom-border:          var(--gray2) 1px solid;
+  --gridview-item-image-bg:               none;
+  --gridview-item-bg:                     var(--white);
+  
+  --gridview-item-hover-text:             var(--gray9);
+  --gridview-item-hover-bottom-border:    var(--gray3) 1px solid;
+  --gridview-item-hover-image-bg:         none;
+  --gridview-item-hover-bg:               var(--gray);
+
+}
+
+
+.gridview {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gridview-item {
+  display: flex;
+  flex: 0 1 33%;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  color: var(--gridview-item-text);
+  background: var(--gridview-item-bg);
+}
+
+@media (max-width: 768px) {
+  .gridview-item {
+    flex: 0 1 49%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.gridview-item img,
+.gridview-item a {
+  width: 100%;
+  height: auto;
+
+}
+
+.gridview-item-figure {
+
+}
+
+.gridview-item-body {
+  padding: 1rem;
+  color: var(--text-basic);
+}
+
+@media (max-width: 768px) {
+  .gridview-item-body {
+    padding: 1.5rem;
+  }
+}
+
+.gridview-item-body h3 {
+  font-size: 1rem;
+}
+
+.gridview-item-body p {
+  font-size: 0.8rem;
+}
+
+.gridview-item a {
+  display: flex;
+  flex-direction: column;
+  border-bottom: var(--gridview-item-bottom-border);
+}
+
+.gridview-item a:hover {
+  background: var(--gray8);
+  cursor: pointer;
+  transition:.2s;
+  color: var(--gridview-item-hover-text);
+  border-bottom: var(--gridview-item-hover-bottom-border);
+  background: var(--gridview-item-hover-bg);
+}
