@@ -5,7 +5,7 @@
  */
 
 @import "_variables.css";
-@import "_body.css";    
+@import "_body.css";
 @import "_text.css";
 @import "_text-tables.css";
 @import "_text-input.css";
@@ -27,5 +27,5 @@
 @import "components/_gridview.css";
 @import "components/_articleview.css";
 @import "components/_dialog.css";
-
+@import "components/_pagination.css";
 

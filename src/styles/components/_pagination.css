@@ -1,0 +1,67 @@
+/* ----------------------------------------------
+  PAGINATION
+---------------------------------------------- */
+
+:root {
+
+    --pag-item-text:                          inherit  ;
+    --pag-item-bg:                            var(--gray1) ;
+    --pag-item-border:                        var(--gray2) 1px solid ;
+    --pag-item-border-radius:                 0 ;
+
+    --pag-item-hover-text:                    inherit  ;
+    --pag-item-hover-bg:                      var(--white) ;
+    --pag-item-hover-border:                  var(--gray4) 1px solid ;
+
+    --pag-item-active-text:                    var(--white)   ;
+    --pag-item-active-bg:                      var(--black) ;
+    --pag-item-active-border:                  var(--black) 1px solid ;
+
+}
+
+.pagination {
+    text-align: center;
+}
+  
+.pagination ul {
+    margin: 2rem 1rem;
+    padding: 0;
+    text-align: center;
+}
+  
+.pagination ul li {
+    display: inline-block;
+    list-style: none;
+}
+  
+.pagination ul li {
+    display: inline;
+}
+
+.pagination li a {
+    background: var(--pag-item-bg);
+    border-radius: var(--pag-item-border-radius);
+    border: var(--pag-item-border);
+    color: var(--pag-item-text);
+    outline: none;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+  
+.pagination li a:hover,
+.pagination li a:focus {
+    color: var(--pag-item-hover-text);
+    background: var(--pag-item-hover-bg);
+    border: var(--pag-item-hover-border);
+}
+  
+.pagination li a:active {
+    background: var(--pag-item-active-bg);
+}
+  
+.pagination li.page-active a {
+    background: var(--pag-item-active-bg) !important;
+    color: var(--pag-item-active-text) !important;
+    border: var(--pag-item-active-border) !important;
+}

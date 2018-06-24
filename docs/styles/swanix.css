@@ -1836,4 +1836,57 @@ a[rel="modal:close"]:hover {
   background: #000000;
 }
 
+/* ----------------------------------------------
+  PAGINATION
+---------------------------------------------- */
+
+.pagination {
+    text-align: center;
+}
+
+.pagination ul {
+    margin: 20px 10px;
+    margin: 2rem 1rem;
+    padding: 0;
+    text-align: center;
+}
+
+.pagination ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.pagination ul li {
+    display: inline;
+}
+
+.pagination li a {
+    background: #F2F2F2;
+    border-radius: 0;
+    border: #CCCCCC 1px solid;
+    color: inherit;
+    outline: none;
+    padding: 10px 15px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+    color: inherit;
+    background: #FFFFFF;
+    border: #999999 1px solid;
+}
+
+.pagination li a:active {
+    background: #000000;
+}
+
+.pagination li.page-active a {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: #000000 1px solid !important;
+}
 

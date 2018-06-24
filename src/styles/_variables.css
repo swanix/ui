@@ -16,9 +16,9 @@
     --text-xlarge:    2.4rem ;
     --text-huge:      3.4rem ;
 
-    --header-size: var(--size-xs) ;
-    --main-size: auto ;
-    --footer-size: var(--size-m) ;
+    --header-size:   var(--size-xs);
+    --main-size:     auto ;
+    --footer-size:   var(--size-m);
 
     --white:         #FFFFFF ; 
     --gray1:         #F2F2F2 ;
