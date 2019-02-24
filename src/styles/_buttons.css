@@ -24,6 +24,27 @@
 
 }
 
+button {
+  vertical-align: middle;
+  transition: .2s;
+  display: inline-block;
+  padding: var(--btn-padding);
+  color: var(--btn-text);
+  border: var(--btn-border);
+  background: var(--btn-bg);
+  font-size: var(--text-medium);
+  outline:0; /* Solves Chrome border focus */
+}
+
+button:hover {
+  vertical-align: middle;
+  transition:.2s;
+  color: var(--btn-hover-text);
+  border: var(--btn-hover-border);
+  background: var(--btn-hover-bg);
+  outline:0; /* Solves Chrome border focus */
+}
+
 .button {
   vertical-align: middle;
   transition: .2s;
@@ -55,4 +76,30 @@
   color: var(--btn-primary-hover-text);
   border: var(--btn-primary-hover-border);
   background: var(--btn-primary-hover-bg);     
+}
+
+/* ---------------------------------------------- 
+ Shapes
+---------------------------------------------- */
+
+.rounded {
+    border-radius: 50px;
+    min-width: 100px;
+    padding: 1rem 2rem;
+    }
+
+.circle {
+    border-radius: 50%;
+    text-align: center;
+    padding:  1rem 1.1rem;
+    }
+
+.small {
+    width: 25px;
+    height: 25px;
+    }
+
+.fill {
+    width: 100%;
+    text-align: center;
 }

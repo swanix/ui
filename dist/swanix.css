@@ -1,6 +1,6 @@
 /*!
  * Swanix UI v0.4.0 (PostCSS)
- * (c) 2015-2018 Sebastian Serna
+ * (c) 2015-present Sebastian Serna
  * Released under the MIT License.
  */
 
@@ -345,6 +345,31 @@ textarea:focus {
   BUTTONS
 ---------------------------------------------- */
 
+button {
+  vertical-align: middle;
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: inline-block;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+  color: #4D4D4D;
+  border: #CCCCCC solid 1px;
+  background: #F2F2F2;
+  font-size: 14px;
+  font-size: 1.4rem;
+  outline:0; /* Solves Chrome border focus */
+}
+
+button:hover {
+  vertical-align: middle;
+  -webkit-transition:.2s;
+  transition:.2s;
+  color: #1A1A1A;
+  border: #B3B3B3 solid 1px;
+  background: #FFFFFF;
+  outline:0; /* Solves Chrome border focus */
+}
+
 .button {
   vertical-align: middle;
   -webkit-transition: .2s;
@@ -380,6 +405,34 @@ textarea:focus {
   color: #FFFFFF;
   border: #1A1A1A solid 2px;
   background: #1A1A1A;     
+}
+
+/* ---------------------------------------------- 
+ Shapes
+---------------------------------------------- */
+
+.rounded {
+    border-radius: 50px;
+    min-width: 100px;
+    padding: 10px 20px;
+    padding: 1rem 2rem;
+    }
+
+.circle {
+    border-radius: 50%;
+    text-align: center;
+    padding:  10px 11px;
+    padding:  1rem 1.1rem;
+    }
+
+.small {
+    width: 25px;
+    height: 25px;
+    }
+
+.fill {
+    width: 100%;
+    text-align: center;
 }
 
 /* ----------------------------------------------
@@ -1584,7 +1637,7 @@ ul.listview {
   transition:.2s;
   color: #1A1A1A;
   border-bottom: #B3B3B3 1px solid;
-  background: var(--gray);
+  background: #F2F2F2;
 }
 
 /* ----------------------------------------------

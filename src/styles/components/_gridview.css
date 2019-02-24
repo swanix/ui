@@ -12,7 +12,7 @@
   --gridview-item-hover-text:             var(--gray9);
   --gridview-item-hover-bottom-border:    var(--gray3) 1px solid;
   --gridview-item-hover-image-bg:         none;
-  --gridview-item-hover-bg:               var(--gray);
+  --gridview-item-hover-bg:               var(--gray1);
 
 }
 
