@@ -1,0 +1,75 @@
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-layout1" viewBox="0 0 32 32">
+<title>layout1</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.943 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.943 7.863h20.114v2.468h-20.114v-2.468z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M5.943 10.971h20.114v13.166h-20.114v-13.166z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.943 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout2" viewBox="0 0 32 32">
+<title>layout2</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.943 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.943 15.001h20.114v9.395h-20.114v-9.395z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M5.943 7.863h20.114v6.498h-20.114v-6.498z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.943 25.036h20.114v2.484h-20.114v-2.484z"></path>
+</symbol>
+<symbol id="icon-layout3" viewBox="0 0 32 32">
+<title>layout3</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.943 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.943 15.001h13.063v9.136h-13.063v-9.136z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M19.646 15.001h6.4v9.136h-6.4v-9.136z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.943 7.863h20.114v6.498h-20.114v-6.498z"></path>
+<path class="path5" fill="#808080" opacity="0.35" d="M5.943 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout4" viewBox="0 0 32 32">
+<title>layout4</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.941 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M12.981 15.001h13.078v9.136h-13.078v-9.136z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M5.941 15.001h6.4v9.136h-6.4v-9.136z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.941 7.863h20.114v6.498h-20.114v-6.498z"></path>
+<path class="path5" fill="#808080" opacity="0.35" d="M5.941 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout5" viewBox="0 0 32 32">
+<title>layout5</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.943 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.943 7.863h13.063v16.274h-13.063v-16.274z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M19.646 7.863h6.4v16.274h-6.4v-16.274z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.943 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout6" viewBox="0 0 32 32">
+<title>layout6</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.941 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M12.981 7.863h13.078v16.275h-13.078v-16.275z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M5.941 7.863h6.4v16.275h-6.4v-16.275z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.941 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout7" viewBox="0 0 32 32">
+<title>layout7</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.941 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.941 7.787h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M12.981 11.17h13.078v12.968h-13.078v-12.968z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.941 11.17h6.4v12.968h-6.4v-12.968z"></path>
+<path class="path5" fill="#808080" opacity="0.35" d="M5.941 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout8" viewBox="0 0 32 32">
+<title>layout8</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.936 11.17h13.078v12.968h-13.078v-12.968z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M19.651 11.17h6.4v12.968h-6.4v-12.968z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M5.937 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.937 7.787h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path5" fill="#808080" opacity="0.35" d="M5.937 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+<symbol id="icon-layout9" viewBox="0 0 32 32">
+<title>layout9</title>
+<path class="path1" fill="#808080" opacity="0.35" d="M5.935 7.844h20.13v6.159h-20.13v-6.159z"></path>
+<path class="path2" fill="#808080" opacity="0.35" d="M5.935 14.627h9.585v6.097h-9.585v-6.097z"></path>
+<path class="path3" fill="#808080" opacity="0.35" d="M16.274 14.627h9.791v6.097h-9.791v-6.097z"></path>
+<path class="path4" fill="#808080" opacity="0.35" d="M5.935 21.379h6.012v2.76h-6.012v-2.76z"></path>
+<path class="path5" fill="#808080" opacity="0.35" d="M12.701 21.379h6.598v2.76h-6.598v-2.76z"></path>
+<path class="path6" fill="#808080" opacity="0.35" d="M20.053 21.379h6.012v2.76h-6.012v-2.76z"></path>
+<path class="path7" fill="#808080" opacity="0.35" d="M5.951 4.48h20.114v2.743h-20.114v-2.743z"></path>
+<path class="path8" fill="#808080" opacity="0.35" d="M5.951 24.777h20.114v2.743h-20.114v-2.743z"></path>
+</symbol>
+</defs>
+</svg>
