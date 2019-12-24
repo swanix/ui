@@ -1,136 +1,121 @@
 //-----------------------------------------------------
-// SWANIX UI
+// Swanix UI
 // by Sebastian Serna
-// 2015 - 2018
+// (c) 2015-present
 //-----------------------------------------------------
 
-'use strict';
-
-var gulp = require('gulp' ),
-    plumber = require('gulp-plumber'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    twig = require('gulp-twig'),
-    browserSync = require('browser-sync');
-
-//-----------------------------------------------------
-// Global variables
-//-----------------------------------------------------
-
-// Twig to HTML
-var inputTwigWatch = 'src/**/*.twig';
-var inputTwig = 'src/pages/*.twig';
-var outputTwig = 'docs/';
-var baseTwigTemplates = 'src/templates';
-
-// Sass to CSS
-var inputSass = 'src/assets/styles/**/*.scss';
-var outputSass = 'docs/assets/styles/';
-var outputSassDist = 'dist/';
-var sassOptions = {
-  errLogToConsole: true,
-  outputStyle: 'expanded'
-};
-
-// Scripts concat
-var outputJs = 'docs/assets/scripts/';
-var inputJs = [
-      // Native and adapted
-      'src/assets/scripts/components/prevent-url.js',
-      'src/assets/scripts/components/navbar.js',
-      'src/assets/scripts/components/toggle.js',
-      'src/assets/scripts/components/dialog.js',
-      'src/assets/scripts/components/scrollbar.js',
-      'src/assets/scripts/components/scroll-smooth.js',
-      'src/assets/scripts/components/slideshow.js',
-      'src/assets/scripts/components/lazy-load.js',
-      // Vendors
-      'src/assets/scripts/vendors/cover-image.js',
-      'src/assets/scripts/vendors/svg4everybody.js'
-    ];
+const { src, dest, watch, series, parallel } = require('gulp');
+// General plugins
+const browserSync = require('browser-sync');
+const rename = require("gulp-rename");
+const plumber = require('gulp-plumber');
+const header = require('gulp-header');
+// Project specific
+const sass = require('gulp-sass'); 
+const sourcemaps = require('gulp-sourcemaps');
+const cleanCSS = require('gulp-clean-css');
+const postcss = require("gulp-postcss");
+const postcssPrefixer = require('postcss-prefixer');
+const stripCssComments = require('gulp-strip-css-comments');
+const removeEmptyLines = require('gulp-remove-empty-lines');
 
 //-----------------------------------------------------
-// Twig templates to HTML
+// Server tasks
 //-----------------------------------------------------
 
-gulp.task('twig', function() {
-    return gulp
-      .src(inputTwig)
-      .pipe(plumber())
-      .pipe(twig({ 
-        base: baseTwigTemplates, 
-        extname: false
-      }))
-      .pipe(gulp.dest(outputTwig))
-      .pipe(browserSync.stream());
-});
+function watch_files() {
+  browserSync.init({
+    server: {
+        baseDir: 'docs',
+        index: 'index.html',
+        serveStaticOptions: {
+          extensions: ['html']
+        }
+    }
+  });
+
+  watch('./docs/**/*').on('change', browserSync.reload);
+  watch('./docs/**/*.html').on('change', browserSync.reload);
+  watch('./src/**/*.scss', series(sass_compiler, css_ns, reload));
+  watch('package.json', series(inject_version, sass_compiler, css_ns, reload));
+}
+
+function reload(done) {
+    browserSync.reload();
+    done();
+}
 
 //-----------------------------------------------------
 // Sass compiler task
 //-----------------------------------------------------
 
-gulp.task ('sass' , function() {
-    return gulp
-      .src(inputSass)
-      .pipe(plumber())
-      .pipe(sass(sassOptions).on('error', sass.logError))
-      .pipe(autoprefixer())
-      .pipe(gulp.dest(outputSass))
-      .pipe(gulp.dest(outputSassDist))
-      .pipe(cleanCSS())
-      .pipe(rename('swanix.min.css'))
-      .pipe(gulp.dest(outputSass))
-      .pipe(gulp.dest(outputSassDist))
-      .pipe(browserSync.stream());
-});
+// Sass paths
+var inputSass = 'src/**/*.scss';
+var outputSass = 'dist/';
+var outputDocs = 'docs/dist/';
+var sassOptions = {
+  errLogToConsole: true,
+  outputStyle: 'expanded'
+};
 
-//-----------------------------------------------------
-// Scripts minification and concat task
-//-----------------------------------------------------
-
-gulp.task ('minjs' , function() {
-  return gulp
-    .src (inputJs)
+function sass_compiler() {
+  return src(inputSass)
     .pipe(plumber())
-    .pipe(concat('swanix.js'))
-    .pipe(gulp.dest(outputJs))
-    .pipe(uglify())
-    .pipe(rename('swanix.min.js'))
-    .pipe(gulp.dest(outputJs))
-    .pipe(browserSync.stream());
-});
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(dest(outputSass))
+    .pipe(dest(outputDocs))
+    .pipe(cleanCSS())
+    .pipe(rename('swanix.min.css'))
+    .pipe(dest(outputSass))
+    .pipe(dest(outputDocs));
+}
 
 //-----------------------------------------------------
-// BrowserSync task (server)
+// PostCSS compiler task (CSS namespace)
 //-----------------------------------------------------
 
-gulp.task ('browser-sync' , function() {
-    browserSync.init({
-        server: {
-          baseDir: 'docs',
-          index: 'index.html',     
-          serveStaticOptions: {
-            extensions: ['html']
-          }
-        }
-    });
-    gulp.watch([
-      'docs/*.html',
-      'dist/styles/*.css'
-      ]).on("change", browserSync.reload);
-});
+function css_ns() {
+var plugins = [
+    postcssPrefixer({ 
+        prefix: 'sw-',
+        ignore: ([ /is-/, '.small', '.medium', '.large' ])      
+      })
+     ];
+return src('dist/*.css')
+    .pipe(postcss(plugins))
+    .pipe(dest('dist/ns/'));
+}
 
 //-----------------------------------------------------
-// Watch tasks
+// CSS version header task
 //-----------------------------------------------------
 
-gulp.task('watch', ['twig', 'sass', 'minjs', 'browser-sync'] , function() {
-      gulp.watch(inputJs, ['minjs']);
-      gulp.watch(inputTwigWatch, ['twig']);
-      gulp.watch(inputSass, ['sass']);
-});
+// Using data from package.json
+delete require.cache[require.resolve('./package.json')];
+var pkg = require('./package.json');
+var pkgVersion = ['/*!',
+  ' * <%= pkg.name %> - v<%= pkg.version %>',
+  ' * <%= pkg.homepage %>',
+  ' * @license <%= pkg.license %>',
+  ' */',
+  '  ',
+  ''].join('\n');
+
+// Inject version header
+function inject_version() {
+    return src('src/swanix.scss')
+    .pipe(stripCssComments({preserve: false}))
+    .pipe(removeEmptyLines())
+    .pipe(header(pkgVersion, { pkg : pkg } ))
+    .pipe(dest('src/'));
+}
+
+//-----------------------------------------------------
+// TASKS
+//-----------------------------------------------------
+
+exports.default = watch_files;
+exports.watch = watch_files;
+exports.sass = series(inject_version, sass_compiler);
+exports.namespace = series(sass, css_ns);
+exports.build = series(inject_version, sass_compiler);

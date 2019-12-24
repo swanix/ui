@@ -1,10 +1,13 @@
 {
-  "name": "Swanix",
-  "version": "0.3.7",
+  "name": "swanix-ui",
+  "version": "0.4.0",
   "description": "Experimental UI framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp",
+    "html": "gulp html",
+    "sass": "gulp sass",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -15,24 +18,23 @@
   "bugs": {
     "url": "https://github.com/swanix/swanix/issues"
   },
-  "homepage": "https://github.com/swanix/swanix#readme",
+  "homepage": "https://github.com/swanix/ui",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 2.14.2"
   },
   "devDependencies": {
     "browser-sync": "2.18.12",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "4.0.0",
-    "gulp-clean-css": "3.4.1",
-    "gulp-concat": "2.6.1",
-    "gulp-imagemin": "3.3.0",
-    "gulp-install": "1.1.0",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.2.0",
+    "gulp-header": "2.0.7",
     "gulp-plumber": "1.1.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-remove-empty-lines": "0.1.0",
     "gulp-rename": "1.2.2",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.0",
-    "gulp-twig": "1.0.0",
-    "gulp-uglify": "3.0.0"
+    "gulp-strip-css-comments": "2.0.0",
+    "postcss-prefixer": "2.1.1"
   }
 }

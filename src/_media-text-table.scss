@@ -1,0 +1,54 @@
+/* -----------------------------------------------------------
+   TEXT TABLE
+----------------------------------------------------------- */
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+$table-td-border-bottom:   none !default;
+$table-tr-hover-bg:        $gray1 !default;
+
+
+// STYLES
+// -----------------------------------------------------------
+
+table {
+    border-collapse:collapse;
+    width:100%;
+    margin: 1rem auto 1rem auto;
+    text-align: left;
+    font-size: $text-medium;
+    }
+
+thead {
+    height:2rem;
+    }
+
+tbody {
+    height:2rem;
+    }
+
+tfoot {
+    height:2rem;
+    }
+
+table caption {
+    font-size: 80%;
+    margin:1rem;
+    }
+
+th {
+    text-align: left;
+    padding: 1rem 0.8rem;
+	}
+
+td {
+    padding: 1rem 0.8rem;
+    border-bottom: $table-td-border-bottom;
+    }
+
+tr:hover {
+    background: $table-tr-hover-bg;
+  }

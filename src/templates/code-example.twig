@@ -1,9 +1,0 @@
-<section id="{{ example_id }}" class="block">
-  <h2>{{ example_title }}</h2>
-  {{ example_code }} 
-  <!-- Code Example -->
-  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="{{ assetsPath }}images/icons.svg#code"></use></svg></button>
-  <div class="js-toggle-hidden">
-    <pre><code class="language-markup line-numbers">{% filter escape %}{{ example_code }}{% endfilter %}</code></pre>
-  </div>
-</section>

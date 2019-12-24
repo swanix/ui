@@ -1,0 +1,84 @@
+/* -----------------------------------------------------------
+   INPUT TEXT
+----------------------------------------------------------- */
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+// Input text (text, password, email, textarea)
+$input-text:                $gray6 !default;
+$input-text-border:         $gray3 solid 1px !default;
+$input-text-bg:             $white !default;
+// Input text focus
+$input-text-focus:          $gray7 !default;
+$input-text-focus-border:   $gray5 solid 1px !default;
+$input-text-focus-bg:       $white !default;
+
+
+// STYLES
+// -----------------------------------------------------------
+
+input[type="text"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  margin-bottom: 1rem;
+  }
+
+input[type="text"]:disabled {
+
+  }
+
+input[type="password"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  letter-spacing:3px;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  margin-bottom: 1rem;
+  }
+
+input[type="email"] {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  margin-bottom: 1rem;
+  }
+
+
+input:focus {
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
+  }
+
+
+// Textarea
+
+textarea {
+  width:100%;
+  font-size: $text-medium;
+  padding: 1rem 1rem;
+  height: auto;
+  min-height: 10rem;
+  color: $input-text;
+  border: $input-text-border;
+  background: $input-text-bg;
+  margin-bottom: 1rem;
+  }
+
+textarea:focus {
+  color: $input-text-focus;
+  border: $input-text-focus-border;
+  background: $input-text-focus-bg;
+  }

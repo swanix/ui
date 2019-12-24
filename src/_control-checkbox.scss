@@ -1,0 +1,64 @@
+/* -----------------------------------------------------------
+   CHECKBOX
+----------------------------------------------------------- */
+// Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// VARIABLES
+// -----------------------------------------------------------
+
+// Input Checkbox
+$input-check:                 $gray6 !default;
+$input-check-border:          $gray3 solid 2px !default;
+$input-check-border-radius:   0 !default;
+$input-check-bg:              $gray2 !default;
+// Input Checkbox active
+$input-check-active:          $black !default;
+$input-check-active-border:   $black solid 2px !default;
+$input-check-active-bg:       $white !default;
+
+
+// STYLES
+// ----------------------------------------------
+
+input[type=checkbox]:not(old) {
+  width     : 2rem;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1.5rem;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label {
+  display      : inline-block;
+  margin-left  : -2rem;
+  line-height  : 1.5rem;
+}
+
+input[type=checkbox]:not(old) + label > span {
+  display          : inline-block;
+  width            : 2rem;
+  height           : 2rem;
+  margin           : 0.2rem 1rem;
+  border           : $input-check-border;
+  border-radius    : $input-check-border-radius;
+  background       : $input-check-bg;
+  vertical-align   : middle;
+}
+
+input[type=checkbox]:not(old):checked + label > span {
+  background :    $input-check-active-bg;
+  border     :    $input-check-active-border;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1.5rem;
+  color       : $input-check-active;
+  font-size   : 1.5rem;
+  line-height : 1em;
+  text-align  : center;
+  font-weight : bold;
+}
