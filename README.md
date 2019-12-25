@@ -78,13 +78,8 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 |gulp-clean-css|4.2.0|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
 |gulp-rename|1.2.2|Permite renombrar archivos con el nombre que le especifiquemos|
 |gulp-plumber|1.1.0|Permite manejar e identificar errores en tiempo de ejecución.|
-|gulp-sourcemaps|1.9.1|Permite generar sourcemaps para el código Sass y otros.|
-|gulp-header|2.0.7|Permite añadir encabezados a cualquier archivo.|
 |gulp-postcss|8.0.0|Permite ejecutar modulos para transformar código CSS.|
 |postcss-prefixer|2.1.1| Plugin de PostCSS que permite añadir prefijos a las clases de un archivo CSS.|
-|gulp-strip-css-comments|2.0.0| Permite borrar comentarios en archivos CSS.|
-|gulp-remove-empty-lines|0.1.0| Permite quitar líneas de código en blanco en cualquier archivo.|
-
 
 ## Licencia
 

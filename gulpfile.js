@@ -9,15 +9,11 @@ const { src, dest, watch, series, parallel } = require('gulp');
 const browserSync = require('browser-sync');
 const rename = require("gulp-rename");
 const plumber = require('gulp-plumber');
-const header = require('gulp-header');
 // Project specific
 const sass = require('gulp-sass'); 
-const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require('gulp-clean-css');
 const postcss = require("gulp-postcss");
 const postcssPrefixer = require('postcss-prefixer');
-const stripCssComments = require('gulp-strip-css-comments');
-const removeEmptyLines = require('gulp-remove-empty-lines');
 
 //-----------------------------------------------------
 // Server tasks
@@ -37,7 +33,7 @@ function watch_files() {
   watch('./docs/**/*').on('change', browserSync.reload);
   watch('./docs/**/*.html').on('change', browserSync.reload);
   watch('./src/**/*.scss', series(sass_compiler, css_ns, reload));
-  watch('package.json', series(inject_version, sass_compiler, css_ns, reload));
+  watch('package.json', series(sass_compiler, css_ns, reload));
 }
 
 function reload(done) {
@@ -87,35 +83,11 @@ return src('dist/*.css')
 }
 
 //-----------------------------------------------------
-// CSS version header task
-//-----------------------------------------------------
-
-// Using data from package.json
-delete require.cache[require.resolve('./package.json')];
-var pkg = require('./package.json');
-var pkgVersion = ['/*!',
-  ' * <%= pkg.name %> - v<%= pkg.version %>',
-  ' * <%= pkg.homepage %>',
-  ' * @license <%= pkg.license %>',
-  ' */',
-  '  ',
-  ''].join('\n');
-
-// Inject version header
-function inject_version() {
-    return src('src/swanix.scss')
-    .pipe(stripCssComments({preserve: false}))
-    .pipe(removeEmptyLines())
-    .pipe(header(pkgVersion, { pkg : pkg } ))
-    .pipe(dest('src/'));
-}
-
-//-----------------------------------------------------
 // TASKS
 //-----------------------------------------------------
 
 exports.default = watch_files;
 exports.watch = watch_files;
-exports.sass = series(inject_version, sass_compiler);
-exports.namespace = series(sass, css_ns);
-exports.build = series(inject_version, sass_compiler);
+exports.sass = series(sass_compiler, css_ns);
+exports.namespace = series(sass_compiler, css_ns);
+exports.build = series(sass_compiler, css_ns);
