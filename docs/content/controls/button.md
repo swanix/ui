@@ -6,18 +6,18 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 
 ### Button tag
 
-<iframe class="code-preview" height="90px"></iframe>
+<iframe class="code-preview" height="100px"></iframe>
 <textarea class="code-editor" name="code">
-<button>Button</button>
-<button class="primary">Button Primary</button>
-<!-- Rounded -->
-<button class="rounded">Button Rounded</button>
-<button class="primary rounded">Button Primary Rounded</button>
+<button class="is-basic">Button</button>
+<button class="is-primary">Button</button>
+<button class="is-secondary">Button</button>
+<button class="is-outline">Button</button>
+<button class="is-ghost">Button</button>
 </textarea>
 
 ### Button input
 
-<iframe class="code-preview" height="90px"></iframe>
+<iframe class="code-preview" height="100px"></iframe>
 <textarea class="code-editor" name="code">
 <input type="reset" value="Reset">
 <input type="submit" value="Submit">
@@ -25,23 +25,37 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 
 ### Button link
 
-<iframe class="code-preview" height="90px"></iframe>
+<iframe class="code-preview" height="100px"></iframe>
 <textarea class="code-editor" name="code">
-<a href="#" class="button">Basic Button</a>
-<a href="#" class="button rounded">Basic Button Rounded</a>
-<a href="#" class="button primary">Primary Button</a>
-<a href="#" class="button primary rounded">Primary Button Rounded</a>
+<a href="#" class="button">Button</a>
+<a href="#" class="button is-primary">Button</a>
+<a href="#" class="button is-secondary">Button</a>
+<a href="#" class="button is-outline">Button</a>
+<a href="#" class="button is-ghost">Button</a>
+</textarea>
+
+### Shapes
+
+<iframe class="code-preview" height="100px"></iframe>
+<textarea class="code-editor" name="code">
+<a href="#" class="button is-square">Button</a>
+<a href="#" class="button is-rounded">Button</a>
+<a href="#" class="button is-rounded-left">Button</a>
+<a href="#" class="button is-rounded-right">Button</a>
+<a href="#" class="button is-pill">Button</a>
+<a href="#" class="button is-pill-left">Button</a>
+<a href="#" class="button is-pill-right">Button</a>
 </textarea>
 
 ### Button with icons
 
-<iframe class="code-preview" height="120px"></iframe>
+<iframe class="code-preview" height="130px"></iframe>
 <textarea class="code-editor" name="code">
 <div>
-	<button class="circle" data-tooltip="Add" data-tooltip-pos="down">
+	<button class="is-pill" data-tooltip="Add" data-tooltip-pos="down">
 		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
 	</button>
-	<button class="rounded" data-tooltip="Edit" data-tooltip-pos="down">
+	<button class="is-rounded" data-tooltip="Edit" data-tooltip-pos="down">
 		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#edit"></use></svg>
 		Icon Button Rounded
 	</button>
