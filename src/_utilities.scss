@@ -63,15 +63,7 @@
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-// Order
-
-.to-right {
-  float:right;
-}
-
-.to-left {
-  float:left;
-}
+// Align
 
 .align-centered {
   text-align:center;
@@ -85,6 +77,7 @@
   text-align:left;
 }
 
+// Shadows
 
 .shadow-bottom {
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.22);
@@ -94,35 +87,21 @@
   box-shadow: 4px 3px 5px -1px rgba(0,0,0,0.22);
 }
 
-// -----------------------------------
-
-.full {
-  width: 100%;
-}
-
 .shadow {
   box-shadow: 12px 11px 23px -14px rgba(0,0,0,0.8);
 }
 
-// Ghost mode
+// Padding
 
-.ghost-mode {
-  background: none;
+.has-pad-small {
+  padding: 8px;
 }
 
-// Font sizes
-
-.huge-text {
-  font-size: 1.8rem;
+.has-pad,
+.has-pad-medium {
+  padding: 16px;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-// Compact width
-
-.compact-wide {
-  width: 40rem;
-  margin: 0 auto;
+.has-pad-large {
+  padding: 24px;
 }

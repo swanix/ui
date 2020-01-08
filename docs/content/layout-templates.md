@@ -1,76 +1,175 @@
-# Templates
+# Layout Templates
 
-Una pantalla digital también utiliza un layout que puede estar organizado y estructurada por medio de un contenedor principal y otros secundarios que representan paneles con textos, imágenes, video y controles interactivos.
+Los layouts básicos se pueden combinar generando composiciones complejas. A continuación algunas plantillas de layouts comunes en aplicaciones utilizando el grid system de Swanix:
 
-### 2 columns
+### Layout 1
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
-<div class="layout is-app cols-2 show-grid">
-  <div class="header">Header</div>
-  <div class="sidebar-left">Sidebar</div>
-  <div class="content-area">Content Area</div>
-  <div class="footer">Footer</div>
-</div>
-</textarea>
-
-### 3 columns
+[View demo](https://swanix.org/ui/demos/layout1)
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<div class="layout is-app cols-3 show-grid">
-  <div class="header">Header</div>
-  <div class="sidebar-left">Sidebar Left</div>
-  <div class="content-area">Content Area</div>
-  <div class="sidebar-right">Sidebar Right</div>
-  <div class="footer">Footer</div>
-</div>
+<section class="app layout two-cols has-sidebar-left" mode="dev">
+  <aside>Sidebar</aside>
+  <main class="layout two-rows has-header">
+    <header>Header</header>
+    <section>Content</section>
+  </main>
+</section>
 </textarea>
 
-### 3 columns - No footer
+### Layout 2
+
+[View demo](https://swanix.org/ui/demos/layout2)
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<div class="layout is-app cols-3 no-footer show-grid">
-  <div class="header">Header</div>
-  <div class="sidebar-left">Sidebar Left</div>
-  <div class="content-area">Content Area</div>
-  <div class="sidebar-right">Sidebar Right</div>
-</div>
+<section class="app layout two-cols has-sidebar-left" mode="dev">
+  <aside>Sidebar</aside>
+  <main class="layout three-rows">
+    <header>Header</header>
+    <section>Content</section>
+    <footer>Footer</footer>
+  </main>
+</section>
 </textarea>
 
+### Layout 3
 
-### 3 columns - No Header
+[View demo](https://swanix.org/ui/demos/layout3)
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<div class="layout is-app cols-3 no-header show-grid">
-  <div class="sidebar-left">Sidebar Left</div>
-  <div class="content-area">Content Area</div>
-  <div class="sidebar-right">Sidebar Right</div>
-  <div class="footer">Footer</div>
-</div>
+<section class="app layout two-rows has-footer" mode="dev">
+  <main class="layout three-cols has-sidebars">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+    <aside>Sidebar Right</aside>
+  </main>
+  <footer>Footer</footer>
+</section>
 </textarea>
 
+### Layout 4
 
-### 3 columns - No Header & Footer
+[View demo](https://swanix.org/ui/demos/layout4)
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<div class="layout is-app cols-3 no-header-footer show-grid">
-  <div class="sidebar-left">Sidebar Left</div>
-  <div class="content-area">Content Area</div>
-  <div class="sidebar-right">Sidebar Right</div>
-</div>
+<section class="app layout two-rows has-header" mode="dev">
+  <header>Header</header>
+  <main class="layout three-cols has-sidebars">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+    <aside>Sidebar Right</aside>
+  </main>
+</section>
+</textarea>
+
+### Layout 5
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout two-cols has-sidebar-left" mode="dev">
+  <aside>Sidebar</aside>
+  <main class="layout two-rows has-footer">
+    <section>Content</section>
+    <footer>Footer</footer>
+  </main>
+</section>
+</textarea>
+
+### Layout 6
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout two-rows has-footer" mode="dev">
+  <main class="layout two-cols has-sidebar-left">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+  </main>
+  <footer>Footer</footer>
+</section>
+</textarea>
+
+### Layout 7
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout two-rows has-footer" mode="dev">
+  <main class="layout two-cols has-sidebar-right">
+    <section>Content Area</section>
+    <aside>Sidebar Right</aside>
+  </main>
+  <footer>Footer</footer>
+</section>
+</textarea>
+
+### Layout 8
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout two-rows has-header" mode="dev">
+  <header>Header</header>
+  <main class="layout two-cols has-sidebar-left">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+  </main>
+</section>
+</textarea>
+
+### Layout 9
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout two-rows has-header" mode="dev">
+  <header>Header</header>
+  <main class="layout two-cols has-sidebar-right">
+    <section>Content Area</section>
+    <aside>Sidebar Rigth</aside>
+  </main>
+</section>
 </textarea>
 
 
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout1"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout2"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout3"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout4"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout5"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout6"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout7"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout8"></use></svg>
-<svg><use xlink:href="assets/images/layout-templates.svg#icon-layout9"></use></svg>
+### Layout 10
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout three-rows" mode="dev">
+  <header>Header</header>
+  <main class="layout two-cols has-sidebar-left">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+  </main>
+  <footer>Footer</footer>
+</section>
+</textarea>
+
+### Layout 11
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout three-rows" mode="dev">
+  <header>Header</header>
+  <main class="layout two-cols has-sidebar-right">
+    <section>Content Area</section>
+    <aside>Sidebar Rigth</aside>
+  </main>
+  <footer>Footer</footer>
+</section>
+</textarea>
+
+### Layout 12
+
+<iframe class="code-preview" height="400px"></iframe>
+<textarea class="code-editor" name="code">
+<section class="app layout three-rows" mode="dev">
+  <header>Header</header>
+  <main class="layout three-cols has-sidebars">
+    <aside>Sidebar Left</aside>
+    <section>Content Area</section>
+    <aside>Sidebar Rigth</aside>
+  </main>
+  <footer>Footer</footer>
+</section>
+</textarea>

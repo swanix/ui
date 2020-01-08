@@ -7,6 +7,10 @@
 /* -----------------------------------------------------------
    BODY
 ----------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -729,7 +733,7 @@ textarea {
   font-size: 1.4rem;
   padding: 1rem 1rem;
   height: auto;
-  min-height: 10rem;
+  min-height: 8rem;
   color: #595959;
   border: #b3b3b3 solid 1px;
   background: #FFFFFF;
@@ -840,27 +844,8 @@ textarea:focus {
 /* -----------------------------------------------------------
    LAYOUT GRID
 ----------------------------------------------------------- */
-.sw-layout.sw-show-grid > * {
-  color: #333333;
-  background: #e6e6e6;
-  border: 1px solid #999999;
-}
-
-.sw-layout.sw-show-grid.sw-dark > * {
-  color: white;
-  background: #262626;
-  border: 1px solid #f2f2f2;
-}
-
-/* Grid */
-.sw-layout {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  overflow: auto;
-}
-
-.sw-layout.is-app {
+/* App container (optional) */
+.sw-layout.sw-app {
   position: fixed;
   top: 0;
   left: 0;
@@ -868,89 +853,121 @@ textarea:focus {
   bottom: 0;
 }
 
+/* LAYOUT CLASSES 
+----------------------------------------- */
+/* 1 Column / 1 Row --------------------- */
+.sw-layout {
+  --cols: 1fr;
+  --rows: 1fr;
+  display: grid;
+  grid-template-columns: var(--cols);
+  grid-template-rows: var(--rows);
+}
+
 .sw-layout > * {
   overflow: auto;
   min-height: 0;
 }
 
-.sw-layout.is-auto {
-  grid-template-columns: repeat(auto-fit, minmax(var(--cols-auto, 240px), 1fr));
-  grid-auto-rows: var(--rows-auto, 240px);
-  grid-gap: var(--gap, 8px);
+/* 1 Column / 2 Rows ------------------- */
+.sw-layout.sw-two-rows {
+  --row1: 1fr;
+  --row2: 1fr;
+  grid-template-rows: var(--row1) var(--row2);
+  grid-template-columns: 1fr;
+}
+
+.sw-layout.sw-two-rows.sw-has-header {
+  --row1: 80px;
+  --row2: 1fr;
+  grid-template-rows: var(--row1) var(--row2);
+  grid-template-columns: 1fr;
+}
+
+.sw-layout.sw-two-rows.sw-has-footer {
+  --row1: 1fr;
+  --row2: 80px;
+  grid-template-rows: var(--row1) var(--row2);
+  grid-template-columns: 1fr;
+}
+
+/* 1 Column / 3 Rows --------------------- */
+.sw-layout.sw-three-rows {
+  --row1: 80px;
+  --row2: 1fr;
+  --row3: 80px;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+/* 2 Columns / 1 Row --------------------- */
+.sw-layout.sw-two-cols {
+  --col1: 1fr;
+  --col2: 1fr;
+  grid-template-columns: var(--col1) var(--col2);
+  grid-template-rows: 1fr;
+}
+
+.sw-layout.sw-two-cols.sw-has-sidebar-left {
+  --col1: 220px;
+  --col2: 1fr;
+  grid-template-columns: var(--col1) var(--col2);
+  grid-template-rows: 1fr;
+}
+
+.sw-layout.sw-two-cols.sw-has-sidebar-right {
+  --col1: 1fr;
+  --col2: 220px;
+  grid-template-columns: var(--col1) var(--col2);
+  grid-template-rows: 1fr;
+}
+
+/* 3 Columns / 1 Row --------------------- */
+.sw-layout.sw-three-cols {
+  --col1: 1fr;
+  --col2: 1fr;
+  --col3: 1fr;
+  grid-template-columns: var(--col1) var(--col2) var(--col3);
+  grid-template-rows: 1fr;
+}
+
+.sw-layout.sw-three-cols.sw-has-sidebars {
+  --col1: 220px;
+  --col2: 1fr;
+  --col3: 220px;
+  grid-template-columns: var(--col1) var(--col2) var(--col3);
+  grid-template-rows: 1fr;
+}
+
+/* Auto Columns & Rows --------------------- */
+.sw-layout.sw-auto-cols {
+  --auto-cols: 240px;
+  --auto-rows: 240px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--auto-cols), 1fr));
+  grid-auto-rows: var(--auto-rows);
   align-items: center;
 }
 
-.sw-layout.is-auto > * {
+.sw-layout.sw-auto-cols > * {
   height: 100%;
 }
 
-/* Grid Areas */
-.sw-header {
-  grid-area: head;
+/* Grid Gap ------------------------------- */
+.sw-layout.sw-has-gap {
+  grid-gap: var(--grid-gap, 8px);
 }
 
-.sw-sidebar-left {
-  grid-area: side1;
+/* Dev Utilities ------------------------------- */
+.sw-layout[mode="dev"] * {
+  color: #333333;
+  background: #f2f2f2;
+  box-shadow: inset 0 0 0 1px gray;
 }
 
-.sw-content-area {
-  grid-area: main;
-}
-
-.sw-sidebar-right {
-  grid-area: side2;
-}
-
-.sw-footer {
-  grid-area: foot;
-}
-
-/* Layout Variations */
-:root {
-  --cols: 220px 1fr 220px;
-  --rows: 50px auto 40px;
-}
-
-/* 1 Column */
-.sw-layout.sw-has-1column {
-  grid-template-columns: 1fr;
-  grid-template-rows: var(--rows);
-  grid-template-areas: "head" "main" "foot";
-}
-
-/* 2 Columns */
-.sw-layout.sw-cols-2 {
-  grid-template-columns: 220px 1fr;
-  grid-template-rows: var(--rows);
-  grid-template-areas: "head    head" "side1   main" "foot    foot";
-}
-
-/* 3 Columns */
-.sw-layout.sw-cols-3 {
-  grid-template-columns: var(--cols);
-  grid-template-rows: var(--rows);
-  grid-template-areas: "head    head   head" "side1   main   side2" "foot    foot   foot";
-}
-
-/* 3 Columns No footer */
-.sw-layout.sw-cols-3.sw-no-footer {
-  grid-template-columns: var(--cols);
-  grid-template-rows: 50px auto;
-  grid-template-areas: "head    head   head" "side1   main   side2";
-}
-
-/* 3 Columns No Header */
-.sw-layout.sw-cols-3.sw-no-header {
-  grid-template-columns: var(--cols);
-  grid-template-rows: auto 40px;
-  grid-template-areas: "side1   main   side2" "foot    foot   foot";
-}
-
-/* 3 Columns No footer */
-.sw-layout.sw-cols-3.sw-no-header-footer {
-  grid-template-columns: var(--cols);
-  grid-template-rows: auto;
-  grid-template-areas: "side1   main   side2";
+.sw-layout[mode="dev-dark"] * {
+  color: #333333;
+  background: #f2f2f2;
+  box-shadow: inset 0 0 0 1px gray;
+  filter: invert(1);
 }
 
 /* -----------------------------------------------------------
@@ -1095,14 +1112,6 @@ textarea:focus {
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-.sw-to-right {
-  float: right;
-}
-
-.sw-to-left {
-  float: left;
-}
-
 .sw-align-centered {
   text-align: center;
 }
@@ -1123,27 +1132,19 @@ textarea:focus {
   box-shadow: 4px 3px 5px -1px rgba(0, 0, 0, 0.22);
 }
 
-.sw-full {
-  width: 100%;
-}
-
 .sw-shadow {
   box-shadow: 12px 11px 23px -14px rgba(0, 0, 0, 0.8);
 }
 
-.sw-ghost-mode {
-  background: none;
+.has-pad-small {
+  padding: 8px;
 }
 
-.sw-huge-text {
-  font-size: 1.8rem;
+.sw-has-pad,
+.has-pad-medium {
+  padding: 16px;
 }
 
-.sw-uppercase {
-  text-transform: uppercase;
-}
-
-.sw-compact-wide {
-  width: 40rem;
-  margin: 0 auto;
+.has-pad-large {
+  padding: 24px;
 }

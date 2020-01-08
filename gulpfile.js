@@ -24,6 +24,7 @@ function watch_files() {
     server: {
         baseDir: 'docs',
         index: 'index.html',
+        ghostMode: false,
         serveStaticOptions: {
           extensions: ['html']
         }
