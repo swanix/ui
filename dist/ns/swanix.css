@@ -862,6 +862,8 @@ textarea:focus {
   display: grid;
   grid-template-columns: var(--cols);
   grid-template-rows: var(--rows);
+  width: 100%;
+  height: 100%;
 }
 
 .sw-layout > * {
