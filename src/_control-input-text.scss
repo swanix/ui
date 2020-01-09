@@ -1,7 +1,7 @@
-/* -----------------------------------------------------------
-   INPUT TEXT
------------------------------------------------------------ */
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/* --------------------------------------------------------------------------------
+   CONTROL - INPUT TEXT
+-------------------------------------------------------------------------------- */
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 // VARIABLES
@@ -28,11 +28,11 @@ input[type="text"] {
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
-  }
+}
 
 input[type="text"]:disabled {
-
-  }
+  opacity: 0.4;
+}
 
 input[type="password"] {
   width:100%;
@@ -43,7 +43,7 @@ input[type="password"] {
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
-  }
+}
 
 input[type="email"] {
   width:100%;
@@ -53,14 +53,14 @@ input[type="email"] {
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
-  }
+}
 
 
 input:focus {
   color: $input-text-focus;
   border: $input-text-focus-border;
   background: $input-text-focus-bg;
-  }
+}
 
 
 // Textarea
@@ -75,10 +75,10 @@ textarea {
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
-  }
+}
 
 textarea:focus {
   color: $input-text-focus;
   border: $input-text-focus-border;
   background: $input-text-focus-bg;
-  }
+}

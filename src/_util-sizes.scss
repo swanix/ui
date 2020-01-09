@@ -1,0 +1,29 @@
+/* --------------------------------------------------------------------------------
+   UTILITIES - SIZES
+-------------------------------------------------------------------------------- */
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Dimensions classes
+
+.size-xs    {  height: $size-xs   ; }
+.size-s     {  height: $size-s    ; }
+.size-m     {  height: $size-m    ; }
+.size-l     {  height: $size-l    ; }
+.size-xl    {  height: $size-xl   ; }
+.size-xxl   {  height: $size-xxl  ; }
+
+
+// Padding
+
+.padding,
+.padding-medium {
+  padding: 16px;
+}
+
+.padding-small {
+  padding: 8px;
+}
+
+.padding-large {
+  padding: 24px;
+}

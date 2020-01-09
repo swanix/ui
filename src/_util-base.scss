@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------------------------
+   UTILITIES - BASE
+-------------------------------------------------------------------------------- */
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+// Alignment
+
+.align-centered {
+  text-align:center;
+}
+
+.align-right {
+  text-align:right;
+}
+
+.align-left {
+  text-align:left;
+}
+
+// Shadows
+
+.shadow-bottom {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+.shadow-right {
+  box-shadow: 4px 3px 5px -1px rgba(0,0,0,0.22);
+}
+
+.shadow {
+  box-shadow: 12px 11px 23px -14px rgba(0,0,0,0.8);
+}
+
+// Lists
+
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}

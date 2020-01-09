@@ -13,6 +13,7 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass'); 
 const cleanCSS = require('gulp-clean-css');
 const postcss = require("gulp-postcss");
+const autoprefixer = require('autoprefixer');
 const postcssPrefixer = require('postcss-prefixer');
 
 //-----------------------------------------------------
@@ -59,6 +60,7 @@ function sass_compiler() {
   return src(inputSass)
     .pipe(plumber())
     .pipe(sass(sassOptions).on('error', sass.logError))
+    // .pipe(postcss([ autoprefixer({grid: 'autoplace'})]))
     .pipe(dest(outputSass))
     .pipe(dest(outputDocs))
     .pipe(cleanCSS())

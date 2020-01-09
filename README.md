@@ -72,14 +72,15 @@ Para el desarrollo se utilizan los siguientes módulos de Node.js (la mayoría s
 
 |Módulo|Versión|Descripción|
 |--- |--- |--- |
-|browser-sync|2.18.12|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
-|gulp|3.9.1|Módulo oficial de Gulp para Node.js|
-|gulp-sass|3.1.0|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
+|autoprefixer|9.7.3|Permite agregar prefijos de compatibilidad entre navegadores.|
+|browser-sync|2.26.7|Permite ejecutar un servidor local y visualizar nuestro sitio en múltiples navegadores remotos en tiempo real.|
+|gulp|4.0.2|Módulo oficial de Gulp para Node.js|
+|gulp-sass|4.0.2|Permite compilar código Sass en CSS sin necesidad de instalar la gema de Sass de Ruby, solo desde Node.js|
 |gulp-clean-css|4.2.0|Permite minificar el código CSS eliminando espacios y comentarios. Este tipo de prácticas se utilizan para generar código listo para un ambiente de producción.|
-|gulp-rename|1.2.2|Permite renombrar archivos con el nombre que le especifiquemos|
-|gulp-plumber|1.1.0|Permite manejar e identificar errores en tiempo de ejecución.|
+|gulp-rename|2.0.0|Permite renombrar archivos con el nombre que le especifiquemos|
+|gulp-plumber|1.2.1|Permite manejar e identificar errores en tiempo de ejecución.|
 |gulp-postcss|8.0.0|Permite ejecutar modulos para transformar código CSS.|
-|postcss-prefixer|2.1.1| Plugin de PostCSS que permite añadir prefijos a las clases de un archivo CSS.|
+|postcss-prefixer|2.1.2| Plugin de PostCSS que permite añadir prefijos a las clases de un archivo CSS.|
 
 ## Licencia
 

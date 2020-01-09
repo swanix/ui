@@ -1,0 +1,31 @@
+/* --------------------------------------------------------------------------------
+   UTILITIES - COLORS
+-------------------------------------------------------------------------------- */
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/* Text Colors */
+.white   { color:   $white; } // White (HTML color: white)
+.gray1   { color:   $gray1; }
+.gray2   { color:   $gray2; }
+.gray3   { color:   $gray3; }
+.gray4   { color:   $gray4; }
+.gray5   { color:   $gray5; } // Gray medium (HTML color: gray)
+.gray6   { color:   $gray6; }
+.gray7   { color:   $gray7; }
+.gray8   { color:   $gray8; }
+.gray9   { color:   $gray9; }
+.black   { color:   $black; } // Black (HTML color: black)
+
+/* Background Colors */
+.bg-white   { background:   $white ; color: $gray6; } // White (HTML color: white)
+.bg-gray1   { background:   $gray1 ; color: $gray6; }
+.bg-gray2   { background:   $gray2 ; color: $gray6; }
+.bg-gray3   { background:   $gray3 ; color: $gray6; }
+.bg-gray4   { background:   $gray4 ; color: $white; }
+.bg-gray5   { background:   $gray5 ; color: $white; } // Gray medium (HTML color: gray)
+.bg-gray6   { background:   $gray6 ; color: $white; }
+.bg-gray7   { background:   $gray7 ; color: $white; }
+.bg-gray8   { background:   $gray8 ; color: $white; }
+.bg-gray9   { background:   $gray9 ; color: $white; }
+.bg-black   { background:   $black ; color: $white; } // Black (HTML color: black)
