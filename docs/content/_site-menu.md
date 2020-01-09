@@ -2,7 +2,7 @@
 * [Colors](/colors)
 * [Layout](/layout)
   * [Grid system](layout-grid)
-  * [Grid Templates](layout-templates)
+  * [Templates](layout-templates)
 * [Multimedia](/media)
   * [Text](/media-text)
   * [Image](/media-image)

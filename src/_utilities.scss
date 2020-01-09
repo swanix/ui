@@ -93,15 +93,15 @@
 
 // Padding
 
-.has-pad-small {
-  padding: 8px;
-}
-
-.has-pad,
-.has-pad-medium {
+.padding,
+.padding-medium {
   padding: 16px;
 }
 
-.has-pad-large {
+.padding-small {
+  padding: 8px;
+}
+
+.padding-large {
   padding: 24px;
 }

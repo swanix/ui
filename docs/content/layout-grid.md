@@ -25,7 +25,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-header" mode="dev">
+<section class="app layout two-rows header" mode="dev">
   <header>Header</header>
   <main>Content Area</main>
 </section>
@@ -35,7 +35,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-footer" mode="dev">
+<section class="app layout two-rows footer" mode="dev">
   <main>Content Area</main>
   <footer>Footer</footer>
 </section>
@@ -66,7 +66,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols has-sidebar-left" mode="dev">
+<section class="app layout two-cols sidebar-left" mode="dev">
   <aside>Sidebar</aside>
   <main>Content Area</main>
 </section>
@@ -76,7 +76,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols has-sidebar-right" mode="dev">
+<section class="app layout two-cols sidebar-right" mode="dev">
   <main>Content Area</main>
   <aside>Sidebar</aside>
 </section>
@@ -97,7 +97,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout three-cols has-sidebars" mode="dev">
+<section class="app layout three-cols sidebars" mode="dev">
   <aside>Sidebar Left</aside>
   <main>Content Area</main>
   <aside>Sidebar Right</aside>

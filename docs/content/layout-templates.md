@@ -8,9 +8,9 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols has-sidebar-left" mode="dev">
+<section class="app layout two-cols sidebar-left" mode="dev">
   <aside>Sidebar</aside>
-  <main class="layout two-rows has-header">
+  <main class="layout two-rows header">
     <header>Header</header>
     <section>Content</section>
   </main>
@@ -23,7 +23,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols has-sidebar-left" mode="dev">
+<section class="app layout two-cols sidebar-left" mode="dev">
   <aside>Sidebar</aside>
   <main class="layout three-rows">
     <header>Header</header>
@@ -39,8 +39,8 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-footer" mode="dev">
-  <main class="layout three-cols has-sidebars">
+<section class="app layout two-rows footer" mode="dev">
+  <main class="layout three-cols sidebars">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
     <aside>Sidebar Right</aside>
@@ -55,9 +55,9 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-header" mode="dev">
+<section class="app layout two-rows header" mode="dev">
   <header>Header</header>
-  <main class="layout three-cols has-sidebars">
+  <main class="layout three-cols sidebars">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
     <aside>Sidebar Right</aside>
@@ -69,9 +69,9 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols has-sidebar-left" mode="dev">
+<section class="app layout two-cols sidebar-left" mode="dev">
   <aside>Sidebar</aside>
-  <main class="layout two-rows has-footer">
+  <main class="layout two-rows footer">
     <section>Content</section>
     <footer>Footer</footer>
   </main>
@@ -82,8 +82,8 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-footer" mode="dev">
-  <main class="layout two-cols has-sidebar-left">
+<section class="app layout two-rows footer" mode="dev">
+  <main class="layout two-cols sidebar-left">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
   </main>
@@ -95,8 +95,8 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-footer" mode="dev">
-  <main class="layout two-cols has-sidebar-right">
+<section class="app layout two-rows footer" mode="dev">
+  <main class="layout two-cols sidebar-right">
     <section>Content Area</section>
     <aside>Sidebar Right</aside>
   </main>
@@ -108,9 +108,9 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-header" mode="dev">
+<section class="app layout two-rows header" mode="dev">
   <header>Header</header>
-  <main class="layout two-cols has-sidebar-left">
+  <main class="layout two-cols sidebar-left">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
   </main>
@@ -121,9 +121,9 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows has-header" mode="dev">
+<section class="app layout two-rows header" mode="dev">
   <header>Header</header>
-  <main class="layout two-cols has-sidebar-right">
+  <main class="layout two-cols sidebar-right">
     <section>Content Area</section>
     <aside>Sidebar Rigth</aside>
   </main>
@@ -137,7 +137,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 <textarea class="code-editor" name="code">
 <section class="app layout three-rows" mode="dev">
   <header>Header</header>
-  <main class="layout two-cols has-sidebar-left">
+  <main class="layout two-cols sidebar-left">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
   </main>
@@ -151,7 +151,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 <textarea class="code-editor" name="code">
 <section class="app layout three-rows" mode="dev">
   <header>Header</header>
-  <main class="layout two-cols has-sidebar-right">
+  <main class="layout two-cols sidebar-right">
     <section>Content Area</section>
     <aside>Sidebar Rigth</aside>
   </main>
@@ -165,7 +165,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 <textarea class="code-editor" name="code">
 <section class="app layout three-rows" mode="dev">
   <header>Header</header>
-  <main class="layout three-cols has-sidebars">
+  <main class="layout three-cols sidebars">
     <aside>Sidebar Left</aside>
     <section>Content Area</section>
     <aside>Sidebar Rigth</aside>
