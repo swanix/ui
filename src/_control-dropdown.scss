@@ -21,6 +21,7 @@ select {
   padding: 9px 8px;
   border: $dropdown-border;
   border-radius: 5px;
+  font-family: $text-font-family;
   color: $dropdown-text;
   line-height: 21px;
   transition: all 0.2s;
@@ -36,7 +37,7 @@ select {
   // States
   &:focus {
     outline: none;
-    border: 1px solid $black;
+    border: 1px solid $brand1;
   }
   &.has-error {
     border: 1px solid red;

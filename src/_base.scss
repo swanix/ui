@@ -7,23 +7,27 @@
 // Variables
 // ----------------------------------------------
 
-$body-bg:              $white !default;
+$body-bg: $white !default;
 
 
 // Styles
 // ----------------------------------------------
 
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 10px;
   background: $body-bg;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;

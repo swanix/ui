@@ -4,7 +4,7 @@
   "description": "Experimental UI framework",
   "main": "index.js",
   "scripts": {
-    "watch": "gulp",
+    "serve": "gulp",
     "html": "gulp html",
     "sass": "gulp sass",
     "build": "gulp build"

@@ -1,5 +1,7 @@
 :root {
-    --brand1: royalblue ;
-    --brand2: rebeccapurple;
-    --brand3: turquoise;
+  --font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  --font-family-titles: "Courier New", Courier, monospace;
+  --brand1: royalblue ;
+  --brand2: rebeccapurple;
+  --brand3: turquoise;
 }

@@ -112,7 +112,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Text Blockquote 
 
-<iframe class="code-preview" height="240px"></iframe>
+<iframe class="code-preview" height="380px"></iframe>
 <textarea class="code-editor" name="code">
 <blockquote>
   <q>

@@ -7,17 +7,21 @@
 /* --------------------------------------------------------------------------------
    BASE
 -------------------------------------------------------------------------------- */
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 10px;
   background: #FFFFFF;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -29,12 +33,12 @@ body {
    MEDIA - TEXT
 -------------------------------------------------------------------------------- */
 body {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
   color: #808080;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: var(--font-family-titles, Tahoma, Geneva, sans-serif);
   font-weight: normal;
   margin: 1rem 0 2rem 0;
   color: #262626;
@@ -65,7 +69,7 @@ h6 {
 }
 
 p {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
   font-size: 1.4rem;
   line-height: 2.5rem;
   margin: 0;
@@ -102,7 +106,7 @@ dl, dt, dd {
 
 small {
   font-size: 90%;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
 }
 
 q {
@@ -318,7 +322,7 @@ input[type="reset"],
   transition: .2s;
   cursor: pointer;
   outline: 0;
-  font-family: sans-serif;
+  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
   font-weight: 600;
   font-size: 14px;
   height: 38px;
@@ -613,6 +617,7 @@ select {
   padding: 9px 8px;
   border: #CCCCCC solid 1px;
   border-radius: 5px;
+  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
   color: #262626;
   line-height: 21px;
   transition: all 0.2s;
@@ -627,7 +632,7 @@ select {
 
 select:focus {
   outline: none;
-  border: 1px solid #000000;
+  border: 1px solid var(--brand1, #000000);
 }
 
 select.has-error {
