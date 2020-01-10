@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------
-   CONTROL - CHECKBOX
+   CONTROL -CHECKBOX
 -------------------------------------------------------------------------------- */
 // Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -10,12 +10,12 @@
 
 // Input Checkbox
 $input-check:                 $gray6 !default;
-$input-check-border:          $gray3 solid 2px !default;
+$input-check-border:          $gray4 solid 2px !default;
 $input-check-border-radius:   0 !default;
 $input-check-bg:              $gray2 !default;
 // Input Checkbox active
-$input-check-active:          $black !default;
-$input-check-active-border:   $black solid 2px !default;
+$input-check-active:          $brand1 !default;
+$input-check-active-border:   $brand1 solid 2px !default;
 $input-check-active-bg:       $white !default;
 
 

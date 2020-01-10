@@ -6,10 +6,41 @@ Estas se conocen en inglés como dropdown lists y son muy empleadas para elegir 
 
 De forma similar, los menús desplegables ofrecen un comportamiento parecido a las listas desplegables pero se enfocan por lo general en la ejecución de acciones del sistema y en ofrecer opciones de navegación.
 
-<iframe class="code-preview" height="80px"></iframe>
+<iframe class="code-preview" height="240px"></iframe>
 <textarea class="code-editor" name="code">
-<label for="select">Label:</label>
+<!-- Small -->
+<label for="select">Small:</label>
+<select name="select" class="is-small">
+	<optgroup label="Option Group 1">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+	<optgroup label="Option Group 2">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+</select>
+<hr/>
+<!-- Medium -->
+<label for="select">Medium:</label>
 <select name="select">
+	<optgroup label="Option Group 1">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+	<optgroup label="Option Group 2">
+	  <option value="1">Option 1</option>
+	  <option value="2">Option 2</option>
+	  <option value="3">Option 3</option>
+	</optgroup>
+</select>
+<hr/>
+<!-- Large -->
+<label for="select">Large:</label>
+<select name="select" class="is-large">
 	<optgroup label="Option Group 1">
 	  <option value="1">Option 1</option>
 	  <option value="2">Option 2</option>

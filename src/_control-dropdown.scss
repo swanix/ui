@@ -7,38 +7,99 @@
 // VARIABLES
 // -----------------------------------------------------------
 
-$dropdown-text:             $gray8 !default;
-$dropdown-border:           $gray5 solid 1px !default;
-$dropdown-bg:               $gray1 !default;
-$dropdown-bg-arrow:         url('../../images/icon-arrow.svg') 90% 50% !default;
+$dropdown-text:         $gray8 !default;
+$dropdown-border:       $gray4 solid 1px !default;
+$dropdown-bg:           $white !default;
 
 
 // STYLES
 // -----------------------------------------------------------
 
 select {
-  background: transparent;
-  max-width: 25rem;
-  padding: 5px 35px 5px 5px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: $dropdown-text;
+  min-width: 100px;
+  margin: 5px auto;
+  padding: 9px 8px;
   border: $dropdown-border;
+  border-radius: 5px;
+  color: $dropdown-text;
+  line-height: 21px;
+  transition: all 0.2s;
   background: $dropdown-bg;
+  background-image: linear-gradient(45deg, transparent 50%, $gray5 0), 
+                    linear-gradient(135deg, $gray5 50%, transparent 0);
+  background-position: calc(100% - 20px) calc(15px + 2px), 
+                        calc(100% - 15px) calc(15px + 2px);
+  background-size: 5px 5px, 5px 5px, 1px 15px;
   background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-image: $dropdown-bg-arrow;
+  -webkit-appearance: none;
+  cursor: pointer;
+  // States
+  &:focus {
+    outline: none;
+    border: 1px solid $black;
+  }
+  &.has-error {
+    border: 1px solid red;
+  }
+  // Sizes
+  &.is-small {
+    font-size: 12px;
+    padding: 3px 32px 3px 8px;
+    min-width: 80px;
+    line-height: 18px;
+    background-position: calc(100% - 15px) calc(12px - 2px), 
+                         calc(100% - 10px) calc(12px - 2px);
+  }
+  &.is-medium {
+    font-size: 14px;
+    padding: 9px 36px 9px 8px;
+    min-width: 100px;
+    line-height: 21px;
+    background-position: calc(100% - 20px) calc(15px + 2px), 
+                         calc(100% - 15px) calc(15px + 2px);
+  }
+  &.is-large {
+    font-size: 16px;
+    padding: 12px 38px 12px 8px;
+    min-width: 130px;
+    line-height: 24px;
+    background-position: calc(100% - 20px) calc(17px + 5px), 
+                         calc(100% - 15px) calc(17px + 5px);
+  }
+  &.is-full-width {
+    width: 100%;
+  }
+  // Shapes
+  &.is-pill {
+    border-radius: 48px 48px 48px 48px;
+  }
+  &.is-square {
+    border-radius: 0px;
+  }
+  &.is-rounded-right {
+    border-radius: 0px 5px 5px 0px;
+  }
+  &.is-rounded-left {
+    border-radius: 5px 0px 0px 5px;
+  }
+  &.is-rounded {
+    border-radius: 5px;
+  }
 }
 
-select {
-  font-size: $text-medium;
+select::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $gray5;
+  opacity: 1;
+  /* Firefox */
 }
 
-select option {
-  color: $dropdown-text;
+select:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $gray5;
 }
 
-select optgroup {
-  color: $dropdown-text;
+select::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $gray5;
 }

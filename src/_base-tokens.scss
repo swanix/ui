@@ -3,29 +3,62 @@
 // --------------------------------------------------------------------------------
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// Breakpoints
+// Brand Colors - Sass variables + CSS custom properties
+$brand1: var(--brand1, #000000); 
+$brand2: var(--brand2, #808080);
+$brand3: var(--brand3, #B3B3B3);
+$brand4: var(--brand4, #CCCCCC);
+$brand5: var(--brand5, #EDEDED);
+$brand6: var(--brand6, #F7F7F7);
+$brand7: var(--brand7, #FAFAFA);
+$brand8: var(--brand8, #FAFAFA);
+$brand9: var(--brand9, #FAFAFA);
 
-$mobile: new-breakpoint(max-width 768px 4);
-$tablet: new-breakpoint(max-width 980px 4);
-$desktop: new-breakpoint(max-width 1920px 4);
+// Grayscale
+$white: #FFFFFF ; // White (HTML color: white)
+$gray1: #FAFAFA; 
+$gray2: #F7F7F7;
+$gray3: #EDEDED;
+$gray4: #CCCCCC;
+$gray5: #B3B3B3; // Gray medium
+$gray6: #808080;
+$gray7: #383838;
+$gray8: #262626;
+$gray9: #1A1A1A;
+$black: #000000 ; // Black (HTML color: black)
 
-// ::::: Start Neat override ::::::::::::::::
+// Grey keyword
+$grey1: $gray1; 
+$grey2: $gray2;
+$grey3: $gray3;
+$grey4: $gray4;
+$grey5: $gray5;
+$grey6: $gray6;
+$grey7: $gray7;
+$grey8: $gray8;
+$grey9: $gray9;
 
-// Visual Grid
-$visual-grid:         true;
-$visual-grid-color:   #d4d4d4;
-$visual-grid-opacity: 0.3;
+// Grayscale Blue
+$grayblue1: #F6F7F9; 
+$grayblue2: #F0F1F5;
+$grayblue3: #EAECF1;
+$grayblue4: #C2C9D6;
+$grayblue5: #A3ADC2;
+$grayblue6: #8592AD;
+$grayblue7: #47536B;
+$grayblue8: #29303D;
+$grayblue9: #1F242E;
 
-// Initial Grid Settings
-$max-width:     100%;
-$grid-columns:  12;
-$gutter:        0em ;
-
-// ::::: End Neat override ::::::::::::::::
-
-$large-screen: 50em !default;
-$border-box-sizing: true !default;
-$add-gutter: 1em;
+// Greyblue keyword
+$greyblue1: $grayblue1; 
+$greyblue2: $grayblue2;
+$greyblue3: $grayblue3;
+$greyblue4: $grayblue4;
+$greyblue5: $grayblue5;
+$greyblue6: $grayblue6;
+$greyblue7: $grayblue7;
+$greyblue8: $grayblue8;
+$greyblue9: $grayblue9;
 
 // Dimensions
 
@@ -48,27 +81,3 @@ $text-xlarge:  2.4rem  !default;
 $text-huge:    3.4rem  !default;
 
 $text-baseline: 2.5rem !default;
-
-// Layout Dimens
-
-$header-size: $size-xs !default;
-$main-size: auto !default;
-$footer-size: $size-m !default;
-
-
-// GRAYSCALE PALETTE variables (white to black)
-
-$white:             #FFFFFF ; // White (HTML color: white) #FFFFFF
-$gray1:             darken($white, 5%); // #F2F2F2
-$gray2:             darken($white, 10%); // ??
-$gray3:             darken($white, 30%); // #B3B3B3
-$gray4:             darken($white, 40%); // #999999
-$gray5:             darken($white, 50%); // Gray medium (HTML color: gray) #808080
-$gray6:             darken($white, 65%); // #595959
-$gray7:             darken($white, 70%); // #4D4D4D
-$gray8:             darken($white, 80%); // #333333
-$gray9:             darken($white, 85%); // #1A1A1A
-$black:             #000000 ; // Black (HTML color: black) #000000
-
-$primary:           #000000 !default; // Black
-$secondary:         #999999 !default; // Gray
