@@ -9,7 +9,7 @@
 
 // General
 // ------------------
-$btn-font-family:            $text-font-family;
+$btn-font:                   $text-body-font;
 $btn-font-weight:            600 !default;
 $btn-border-radius:          0 !default;
 
@@ -91,7 +91,7 @@ input[type="reset"],
   cursor: pointer;
   outline:0;
   // Font
-  font-family: $btn-font-family;
+  font-family: $btn-font;
   font-weight: $btn-font-weight;
   // Size
   font-size: $btn-text-medium;

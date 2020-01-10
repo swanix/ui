@@ -15,7 +15,7 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
 <input type="text" id="text-input" placeholder="Text field">
 <!-- Password Text -->
 <label for="pass">Password:</label>
-<input type="password" id="pass" name="password" placeholder="*******">
+<input type="password" id="pass" name="password" placeholder="••••••••••••">
 </textarea>
 
 ### Textarea
@@ -55,7 +55,7 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
     <input type="text" id="text-input" placeholder="Text field"><br><br>
     <!-- Password Text -->
     <label for="pass">Label:</label><br>
-    <input type="password" id="pass" name="password" placeholder="*******"><br>
+    <input type="password" id="pass" name="password" placeholder="••••••••••••"><br>
   </form>
 </fieldset>
 </textarea>

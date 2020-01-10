@@ -21,7 +21,6 @@ html {
 body {
   font-size: 10px;
   background: #FFFFFF;
-  font-family: sans-serif;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -33,15 +32,15 @@ body {
    MEDIA - TEXT
 -------------------------------------------------------------------------------- */
 body {
-  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
-  color: #808080;
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
+  color: #383838;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-titles, Tahoma, Geneva, sans-serif);
-  font-weight: normal;
+  font-family: var(--text-heading-font, Tahoma, Geneva, sans-serif);
+  font-weight: var(--text-heading-weight, normal);
   margin: 1rem 0 2rem 0;
-  color: var(--text-titles-color, #262626);
+  color: var(--text-heading-color, #262626);
 }
 
 h1 {
@@ -69,12 +68,12 @@ h6 {
 }
 
 p {
-  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   font-size: 1.4rem;
   line-height: 2.5rem;
   margin: 0;
   padding-bottom: 1.5rem;
-  color: #808080;
+  color: #383838;
 }
 
 a {
@@ -106,7 +105,7 @@ dl, dt, dd {
 
 small {
   font-size: 90%;
-  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
 }
 
 q {
@@ -128,7 +127,7 @@ blockquote q {
 
 blockquote footer {
   margin-top: 1rem;
-  color: #808080;
+  color: #383838;
   text-align: right;
   font-size: 1.9rem;
 }
@@ -153,23 +152,23 @@ pre {
 hr {
   border: 0;
   height: 1px;
-  color: #F7F7F7;
-  background-color: #F7F7F7;
+  color: #EDEDED;
+  background-color: #EDEDED;
 }
 
 label {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #808080;
+  color: #383838;
   font-size: 1.4rem;
 }
 
 optgroup, option {
-  color: #808080;
+  color: #383838;
 }
 
 input [type="checkbox"] {
-  color: #808080;
+  color: #383838;
 }
 
 ::selection {
@@ -322,7 +321,7 @@ input[type="reset"],
   transition: .2s;
   cursor: pointer;
   outline: 0;
-  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   font-weight: 600;
   font-size: 14px;
   height: 38px;
@@ -617,7 +616,7 @@ select {
   padding: 9px 8px;
   border: #CCCCCC solid 1px;
   border-radius: 5px;
-  font-family: var(--font-family, Tahoma, Geneva, sans-serif);
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   color: #262626;
   line-height: 21px;
   transition: all 0.2s;
@@ -710,11 +709,13 @@ select::-ms-input-placeholder {
 input[type="text"] {
   width: 100%;
   font-size: 1.4rem;
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
-  color: #CCCCCC;
+  color: #383838;
   border: #CCCCCC solid 1px;
   background: #FFFFFF;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input[type="text"]:disabled {
@@ -724,45 +725,51 @@ input[type="text"]:disabled {
 input[type="password"] {
   width: 100%;
   font-size: 1.4rem;
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
   letter-spacing: 3px;
-  color: #CCCCCC;
+  color: #383838;
   border: #CCCCCC solid 1px;
   background: #FFFFFF;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input[type="email"] {
   width: 100%;
   font-size: 1.4rem;
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
-  color: #CCCCCC;
+  color: #383838;
   border: #CCCCCC solid 1px;
   background: #FFFFFF;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input:focus {
   color: #383838;
-  border: #B3B3B3 solid 1px;
+  border: var(--brand1, #000000) solid 1px;
   background: #FFFFFF;
 }
 
 textarea {
   width: 100%;
   font-size: 1.4rem;
+  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
   height: auto;
   min-height: 8rem;
-  color: #CCCCCC;
+  color: #383838;
   border: #CCCCCC solid 1px;
   background: #FFFFFF;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 textarea:focus {
   color: #383838;
-  border: #B3B3B3 solid 1px;
+  border: var(--brand1, #000000) solid 1px;
   background: #FFFFFF;
 }
 
@@ -870,7 +877,7 @@ legend {
 
 fieldset {
   padding: 1em 2em;
-  border: 1px solid #F7F7F7;
+  border: 1px solid #EDEDED;
 }
 
 /* --------------------------------------------------------------------------------
@@ -1295,69 +1302,78 @@ fieldset {
 /* Brand */
 .sw-bg-brand1 {
   background: var(--brand1, #000000);
+  color: #FFFFFF;
 }
 
 .sw-bg-brand2 {
   background: var(--brand2, #808080);
+  color: #FFFFFF;
 }
 
 .sw-bg-brand3 {
   background: var(--brand3, #B3B3B3);
+  color: #FFFFFF;
 }
 
 .sw-bg-brand4 {
   background: var(--brand4, #CCCCCC);
+  color: #383838;
 }
 
 .sw-bg-brand5 {
   background: var(--brand5, #EDEDED);
+  color: #383838;
 }
 
 .sw-bg-brand6 {
   background: var(--brand6, #F7F7F7);
+  color: #383838;
 }
 
 .sw-bg-brand7 {
   background: var(--brand7, #FAFAFA);
+  color: #383838;
 }
 
 .sw-bg-brand8 {
   background: var(--brand8, #FAFAFA);
+  color: #383838;
 }
 
 .sw-bg-brand9 {
   background: var(--brand9, #FAFAFA);
+  color: #383838;
 }
 
 /* Grayscale */
 .sw-bg-white {
   background: #FFFFFF;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-gray1 {
   background: #FAFAFA;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-gray2 {
   background: #F7F7F7;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-gray3 {
   background: #EDEDED;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-gray4 {
   background: #CCCCCC;
-  color: #FFFFFF;
+  color: #383838;
 }
 
 .sw-bg-gray5 {
   background: #B3B3B3;
-  color: #FFFFFF;
+  color: #383838;
 }
 
 .sw-bg-gray6 {
@@ -1388,17 +1404,17 @@ fieldset {
 /* Grayblue */
 .sw-bg-grayblue1 {
   background: #F6F7F9;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-grayblue2 {
   background: #F0F1F5;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-grayblue3 {
   background: #EAECF1;
-  color: #808080;
+  color: #383838;
 }
 
 .sw-bg-grayblue4 {

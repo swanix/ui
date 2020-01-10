@@ -7,7 +7,8 @@
 // VARIABLES
 // -----------------------------------------------------------
 
-$dropdown-text:         $gray8 !default;
+$dropdown-text-font:    $text-body-font !default;
+$dropdown-text-color:   $gray8 !default;
 $dropdown-border:       $gray4 solid 1px !default;
 $dropdown-bg:           $white !default;
 
@@ -21,8 +22,8 @@ select {
   padding: 9px 8px;
   border: $dropdown-border;
   border-radius: 5px;
-  font-family: $text-font-family;
-  color: $dropdown-text;
+  font-family: $dropdown-text-font;
+  color: $dropdown-text-color;
   line-height: 21px;
   transition: all 0.2s;
   background: $dropdown-bg;

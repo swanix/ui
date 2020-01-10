@@ -7,19 +7,23 @@
 // VARIABLES
 // -----------------------------------------------------------
 
-$text-font-family:          var(--font-family, Tahoma, Geneva, sans-serif) !default;
-$text-font-titles:          var(--font-family-titles, Tahoma, Geneva, sans-serif) !default;
-$text-font-titles-weight:   normal !default;
+$text-body-font:            var(--text-body-font, Tahoma, Geneva, sans-serif) !default;
+$text-body-color:           $gray7 !default;
 
-$text-basic:                $gray6 !default;
-$text-titles:               var(--text-titles-color, $gray8) !default;
+$text-heading-font:         var(--text-heading-font, Tahoma, Geneva, sans-serif) !default;
+$text-heading-weight:       var(--text-heading-weight, normal)  !default;
+$text-heading-color:        var(--text-heading-color, $gray8) !default;
+
 $text-link:                 $brand1 !default;
 $text-link-hover:           $brand1 !default;
 $text-link-visited:         $brand1 !default;
+
 $text-selection:            $gray7 !default;
 $text-selection-bg:         $gray3 !default;
+
 // Horizontal rule
-$hr-color:                  $gray2 !default;
+$hr-color:                  $gray3 !default;
+
 // Tables
 $table-td-border-bottom:   none !default;
 $table-tr-hover-bg:        $gray1 !default;
@@ -29,15 +33,15 @@ $table-tr-hover-bg:        $gray1 !default;
 // ------------------------------------------------------------
 
 body {
-  font-family: $text-font-family;
-  color: $text-basic;
+  font-family: $text-body-font;
+  color: $text-body-color;
 }
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: $text-font-titles;
-  font-weight: $text-font-titles-weight;
+  font-family: $text-heading-font;
+  font-weight: $text-heading-weight;
   margin: 1rem 0 2rem 0;
-  color: $text-titles;
+  color: $text-heading-color;
 }
 
 h1 { font-size: 4.5rem; }
@@ -48,12 +52,12 @@ h5 { font-size: 1.4rem; }
 h6 { font-size: 1.3rem; }
 
 p {
-  font-family: $text-font-family;
+  font-family: $text-body-font;
   font-size: $text-medium;
   line-height: $text-baseline;
   margin: 0;
   padding-bottom: 1.5rem;
-  color: $text-basic;
+  color: $text-body-color;
 }
 
 a {
@@ -88,7 +92,7 @@ dl, dt, dd {
 
 small {
   font-size: 90%;
-  font-family: $text-font-family;
+  font-family: $text-body-font;
 }
 
 q {
@@ -110,7 +114,7 @@ blockquote q {
 
 blockquote footer {
   margin-top: 1rem;
-  color: $text-basic;
+  color: $text-body-color;
   text-align: right;
   font-size: $text-large;
 }
@@ -147,16 +151,16 @@ hr {
 label {
   display: inline-block;
   margin-bottom: 1rem;
-  color: $text-basic;
+  color: $text-body-color;
   font-size: $text-medium;
 }
 
 optgroup, option {
-  color: $text-basic;
+  color: $text-body-color;
 }
 
 input [type="checkbox"] {
-  color: $text-basic;
+  color: $text-body-color;
 }
 
 ::selection {

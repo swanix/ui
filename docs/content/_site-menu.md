@@ -1,5 +1,6 @@
 * [Overview](/)
-* [Colors](/colors)
+* [Design Tokens](/tokens)
+* [Typography](/typography)
 * [Layout](/layout)
   * [Grid system](layout-grid)
   * [Templates](layout-templates)

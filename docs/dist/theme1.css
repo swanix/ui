@@ -1,7 +1,9 @@
 :root {
-  --font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  --font-family-titles: "Courier New", Courier, monospace;
+  --text-body-font: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  --text-heading-font: "Courier New", Courier, monospace ;
+  --text-heading-weight: normal ;
+  --text-heading-color: var(--brand1) ;
   --brand1: royalblue ;
-  --brand2: rebeccapurple;
-  --brand3: turquoise;
+  --brand2: rebeccapurple ;
+  --brand3: turquoise ;
 }

@@ -1,6 +1,6 @@
 <div class="docs-chapter-cover">
 
-# Components
+# Patterns
 
 </div>
 

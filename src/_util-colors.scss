@@ -43,23 +43,23 @@
 /* Background Colors ------------------------------------------- */
 
 /* Brand */
-.bg-brand1 { background: $brand1; }
-.bg-brand2 { background: $brand2; }
-.bg-brand3 { background: $brand3; }
-.bg-brand4 { background: $brand4; }
-.bg-brand5 { background: $brand5; }
-.bg-brand6 { background: $brand6; }
-.bg-brand7 { background: $brand7; }
-.bg-brand8 { background: $brand8; }
-.bg-brand9 { background: $brand9; }
+.bg-brand1 { background: $brand1; color: $white; }
+.bg-brand2 { background: $brand2; color: $white; }
+.bg-brand3 { background: $brand3; color: $white; }
+.bg-brand4 { background: $brand4; color: $gray7; }
+.bg-brand5 { background: $brand5; color: $gray7; }
+.bg-brand6 { background: $brand6; color: $gray7; }
+.bg-brand7 { background: $brand7; color: $gray7; }
+.bg-brand8 { background: $brand8; color: $gray7; }
+.bg-brand9 { background: $brand9; color: $gray7; }
 
 /* Grayscale */
-.bg-white { background: $white; color: $gray6; } // White (HTML color: white)
-.bg-gray1 { background: $gray1; color: $gray6; }
-.bg-gray2 { background: $gray2; color: $gray6; }
-.bg-gray3 { background: $gray3; color: $gray6; }
-.bg-gray4 { background: $gray4; color: $white; }
-.bg-gray5 { background: $gray5; color: $white; } // Gray medium (HTML color: gray)
+.bg-white { background: $white; color: $gray7; } // White (HTML color: white)
+.bg-gray1 { background: $gray1; color: $gray7; }
+.bg-gray2 { background: $gray2; color: $gray7; }
+.bg-gray3 { background: $gray3; color: $gray7; }
+.bg-gray4 { background: $gray4; color: $gray7; }
+.bg-gray5 { background: $gray5; color: $gray7; } // Gray medium (HTML color: gray)
 .bg-gray6 { background: $gray6; color: $white; }
 .bg-gray7 { background: $gray7; color: $white; }
 .bg-gray8 { background: $gray8; color: $white; }
@@ -67,9 +67,9 @@
 .bg-black { background: $black; color: $white; } // Black (HTML color: black)
 
 /* Grayblue */
-.bg-grayblue1 { background: $grayblue1; color: $gray6; }
-.bg-grayblue2 { background: $grayblue2; color: $gray6; }
-.bg-grayblue3 { background: $grayblue3; color: $gray6; }
+.bg-grayblue1 { background: $grayblue1; color: $gray7; }
+.bg-grayblue2 { background: $grayblue2; color: $gray7; }
+.bg-grayblue3 { background: $grayblue3; color: $gray7; }
 .bg-grayblue4 { background: $grayblue4; color: $white; }
 .bg-grayblue5 { background: $grayblue5; color: $white; }
 .bg-grayblue6 { background: $grayblue6; color: $white; }

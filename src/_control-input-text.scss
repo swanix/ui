@@ -8,12 +8,13 @@
 // -----------------------------------------------------------
 
 // Input text (text, password, email, textarea)
-$input-text:                $gray4 !default;
+$input-text-font:           $text-body-font !default;
+$input-text:                $gray7 !default;
 $input-text-border:         $gray4 solid 1px !default;
 $input-text-bg:             $white !default;
 // Input text focus
 $input-text-focus:          $gray7 !default;
-$input-text-focus-border:   $gray5 solid 1px !default;
+$input-text-focus-border:   $brand1 solid 1px !default;
 $input-text-focus-bg:       $white !default;
 
 
@@ -23,11 +24,13 @@ $input-text-focus-bg:       $white !default;
 input[type="text"] {
   width:100%;
   font-size: $text-medium;
+  font-family: $input-text-font;
   padding: 1rem 1rem;
   color: $input-text;
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input[type="text"]:disabled {
@@ -37,22 +40,26 @@ input[type="text"]:disabled {
 input[type="password"] {
   width:100%;
   font-size: $text-medium;
+  font-family: $input-text-font;
   padding: 1rem 1rem;
   letter-spacing:3px;
   color: $input-text;
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input[type="email"] {
   width:100%;
   font-size: $text-medium;
+  font-family: $input-text-font;
   padding: 1rem 1rem;
   color: $input-text;
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 
@@ -68,6 +75,7 @@ input:focus {
 textarea {
   width:100%;
   font-size: $text-medium;
+  font-family: $input-text-font;
   padding: 1rem 1rem;
   height: auto;
   min-height: 8rem;
@@ -75,6 +83,7 @@ textarea {
   border: $input-text-border;
   background: $input-text-bg;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 textarea:focus {
