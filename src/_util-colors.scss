@@ -3,29 +3,76 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Text Colors ----------------------------------------------- */
 
-/* Text Colors */
-.white   { color:   $white; } // White (HTML color: white)
-.gray1   { color:   $gray1; }
-.gray2   { color:   $gray2; }
-.gray3   { color:   $gray3; }
-.gray4   { color:   $gray4; }
-.gray5   { color:   $gray5; } // Gray medium (HTML color: gray)
-.gray6   { color:   $gray6; }
-.gray7   { color:   $gray7; }
-.gray8   { color:   $gray8; }
-.gray9   { color:   $gray9; }
-.black   { color:   $black; } // Black (HTML color: black)
+/* Grayblue */
+.text-brand1 { color: $brand1; }
+.text-brand2 { color: $brand2; }
+.text-brand3 { color: $brand3; }
+.text-brand4 { color: $brand4; }
+.text-brand5 { color: $brand5; }
+.text-brand6 { color: $brand6; }
+.text-brand7 { color: $brand7; }
+.text-brand8 { color: $brand8; }
+.text-brand9 { color: $brand9; }
 
-/* Background Colors */
-.bg-white   { background:   $white ; color: $gray6; } // White (HTML color: white)
-.bg-gray1   { background:   $gray1 ; color: $gray6; }
-.bg-gray2   { background:   $gray2 ; color: $gray6; }
-.bg-gray3   { background:   $gray3 ; color: $gray6; }
-.bg-gray4   { background:   $gray4 ; color: $white; }
-.bg-gray5   { background:   $gray5 ; color: $white; } // Gray medium (HTML color: gray)
-.bg-gray6   { background:   $gray6 ; color: $white; }
-.bg-gray7   { background:   $gray7 ; color: $white; }
-.bg-gray8   { background:   $gray8 ; color: $white; }
-.bg-gray9   { background:   $gray9 ; color: $white; }
-.bg-black   { background:   $black ; color: $white; } // Black (HTML color: black)
+/* Grayscale */
+.text-white { color: $white; } // White (HTML color: white)
+.text-gray1 { color: $gray1; }
+.text-gray2 { color: $gray2; }
+.text-gray3 { color: $gray3; }
+.text-gray4 { color: $gray4; }
+.text-gray5 { color: $gray5; } // Gray medium (HTML color: gray)
+.text-gray6 { color: $gray6; }
+.text-gray7 { color: $gray7; }
+.text-gray8 { color: $gray8; }
+.text-gray9 { color: $gray9; }
+.text-black { color: $black; } // Black (HTML color: black)
+
+/* Grayblue */
+.text-grayblue1 { color: $grayblue1; }
+.text-grayblue2 { color: $grayblue2; }
+.text-grayblue3 { color: $grayblue3; }
+.text-grayblue4 { color: $grayblue4; }
+.text-grayblue5 { color: $grayblue5; }
+.text-grayblue6 { color: $grayblue6; }
+.text-grayblue7 { color: $grayblue7; }
+.text-grayblue8 { color: $grayblue8; }
+.text-grayblue9 { color: $grayblue9; }
+
+/* Background Colors ------------------------------------------- */
+
+/* Brand */
+.bg-brand1 { background: $brand1; }
+.bg-brand2 { background: $brand2; }
+.bg-brand3 { background: $brand3; }
+.bg-brand4 { background: $brand4; }
+.bg-brand5 { background: $brand5; }
+.bg-brand6 { background: $brand6; }
+.bg-brand7 { background: $brand7; }
+.bg-brand8 { background: $brand8; }
+.bg-brand9 { background: $brand9; }
+
+/* Grayscale */
+.bg-white { background: $white; color: $gray6; } // White (HTML color: white)
+.bg-gray1 { background: $gray1; color: $gray6; }
+.bg-gray2 { background: $gray2; color: $gray6; }
+.bg-gray3 { background: $gray3; color: $gray6; }
+.bg-gray4 { background: $gray4; color: $white; }
+.bg-gray5 { background: $gray5; color: $white; } // Gray medium (HTML color: gray)
+.bg-gray6 { background: $gray6; color: $white; }
+.bg-gray7 { background: $gray7; color: $white; }
+.bg-gray8 { background: $gray8; color: $white; }
+.bg-gray9 { background: $gray9; color: $white; }
+.bg-black { background: $black; color: $white; } // Black (HTML color: black)
+
+/* Grayblue */
+.bg-grayblue1 { background: $grayblue1; color: $gray6; }
+.bg-grayblue2 { background: $grayblue2; color: $gray6; }
+.bg-grayblue3 { background: $grayblue3; color: $gray6; }
+.bg-grayblue4 { background: $grayblue4; color: $white; }
+.bg-grayblue5 { background: $grayblue5; color: $white; }
+.bg-grayblue6 { background: $grayblue6; color: $white; }
+.bg-grayblue7 { background: $grayblue7; color: $white; }
+.bg-grayblue8 { background: $grayblue8; color: $white; }
+.bg-grayblue9 { background: $grayblue9; color: $white; }
