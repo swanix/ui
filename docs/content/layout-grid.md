@@ -1,12 +1,12 @@
 # Grid System
 
-Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) para definir los layouts de interfaz que pueden estar organizados y estructurados por medio de un contenedor principal y otros secundarios que representan paneles donde se ubican componentes y contenido.
+Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_grid/Basic_Concepts_of_Grid_grid) para definir los layouts de interfaz que pueden estar organizados y estructurados por medio de un contenedor principal y otros secundarios que representan paneles donde se ubican componentes y contenido.
 
 ### 1 column / 1 row
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout" mode="dev">
+<section class="app grid" mode="dev">
   <main>Content Area</main>
 </section>
 </textarea>
@@ -15,7 +15,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows" mode="dev">
+<section class="app grid two-rows" mode="dev">
   <header>Header</header>
   <main>Content Area</main>
 </section>
@@ -25,7 +25,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows header" mode="dev">
+<section class="app grid two-rows header" mode="dev">
   <header>Header</header>
   <main>Content Area</main>
 </section>
@@ -35,7 +35,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-rows footer" mode="dev">
+<section class="app grid two-rows footer" mode="dev">
   <main>Content Area</main>
   <footer>Footer</footer>
 </section>
@@ -45,7 +45,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout three-rows" mode="dev">
+<section class="app grid three-rows" mode="dev">
   <header>Header</header>
   <main>Content Area</main>
   <footer>Footer</footer>
@@ -56,7 +56,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols" mode="dev">
+<section class="app grid two-cols" mode="dev">
   <aside>Sidebar</aside>
   <main>Content Area</main>
 </section>
@@ -66,7 +66,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols sidebar-left" mode="dev">
+<section class="app grid two-cols sidebar-left" mode="dev">
   <aside>Sidebar</aside>
   <main>Content Area</main>
 </section>
@@ -76,7 +76,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout two-cols sidebar-right" mode="dev">
+<section class="app grid two-cols sidebar-right" mode="dev">
   <main>Content Area</main>
   <aside>Sidebar</aside>
 </section>
@@ -86,7 +86,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout three-cols" mode="dev">
+<section class="app grid three-cols" mode="dev">
   <aside>Sidebar Left</aside>
   <main>Content Area</main>
   <aside>Sidebar Right</aside>
@@ -97,7 +97,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app layout three-cols sidebars" mode="dev">
+<section class="app grid three-cols sidebars" mode="dev">
   <aside>Sidebar Left</aside>
   <main>Content Area</main>
   <aside>Sidebar Right</aside>

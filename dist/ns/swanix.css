@@ -877,7 +877,7 @@ fieldset {
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
 /* App container */
-.sw-layout.sw-app {
+.sw-grid.sw-app {
   position: fixed;
   top: 0;
   left: 0;
@@ -886,7 +886,7 @@ fieldset {
 }
 
 /* 1 Column / 1 Row --------------------- */
-.sw-layout {
+.sw-grid {
   --cols: 1fr;
   --rows: 1fr;
   display: grid;
@@ -896,57 +896,57 @@ fieldset {
   height: 100%;
 }
 
-.sw-layout > * {
+.sw-grid > * {
   overflow: auto;
   min-height: 0;
 }
 
 /* 1 Column / 2 Rows ------------------- */
-.sw-layout.sw-two-rows {
+.sw-grid.sw-two-rows {
   --row1: 1fr;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.sw-header,
-.sw-layout.sw-two-rows.header-medium {
+.sw-grid.sw-two-rows.sw-header,
+.sw-grid.sw-two-rows.header-medium {
   --row1: 80px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.header-small {
+.sw-grid.sw-two-rows.header-small {
   --row1: 42px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.header-large {
+.sw-grid.sw-two-rows.header-large {
   --row1: 120px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.sw-footer,
-.sw-layout.sw-two-rows.footer-medium {
+.sw-grid.sw-two-rows.sw-footer,
+.sw-grid.sw-two-rows.footer-medium {
   --row1: 1fr;
   --row2: 80px;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.footer-small {
+.sw-grid.sw-two-rows.footer-small {
   --row1: 1fr;
   --row2: 42px;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.sw-layout.sw-two-rows.footer-large {
+.sw-grid.sw-two-rows.footer-large {
   --row1: 1fr;
   --row2: 120px;
   grid-template-rows: var(--row1) var(--row2);
@@ -954,7 +954,7 @@ fieldset {
 }
 
 /* 1 Column / 3 Rows --------------------- */
-.sw-layout.sw-three-rows {
+.sw-grid.sw-three-rows {
   --row1: 80px;
   --row2: 1fr;
   --row3: 80px;
@@ -962,7 +962,7 @@ fieldset {
 }
 
 /* 2 Columns / 1 Row --------------------- */
-.sw-layout.sw-two-cols {
+.sw-grid.sw-two-cols {
   --col1: 1fr;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
@@ -970,22 +970,22 @@ fieldset {
 }
 
 /* Sidebar Left */
-.sw-layout.sw-two-cols.sw-sidebar-left,
-.sw-layout.sw-two-cols.sidebar-left-medium {
+.sw-grid.sw-two-cols.sw-sidebar-left,
+.sw-grid.sw-two-cols.sidebar-left-medium {
   --col1: 220px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-two-cols.sidebar-left-small {
+.sw-grid.sw-two-cols.sidebar-left-small {
   --col1: 120px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-two-cols.sidebar-left-large {
+.sw-grid.sw-two-cols.sidebar-left-large {
   --col1: 480px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
@@ -993,22 +993,22 @@ fieldset {
 }
 
 /* Sidebar Right */
-.sw-layout.sw-two-cols.sw-sidebar-right,
-.sw-layout.sw-two-cols.sidebar-right-medium {
+.sw-grid.sw-two-cols.sw-sidebar-right,
+.sw-grid.sw-two-cols.sidebar-right-medium {
   --col1: 1fr;
   --col2: 220px;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-two-cols.sidebar-right-small {
+.sw-grid.sw-two-cols.sidebar-right-small {
   --col1: 1fr;
   --col2: 120px;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-two-cols.sidebar-right-large {
+.sw-grid.sw-two-cols.sidebar-right-large {
   --col1: 1fr;
   --col2: 480px;
   grid-template-columns: var(--col1) var(--col2);
@@ -1016,7 +1016,7 @@ fieldset {
 }
 
 /* 3 Columns / 1 Row --------------------- */
-.sw-layout.sw-three-cols {
+.sw-grid.sw-three-cols {
   --col1: 1fr;
   --col2: 1fr;
   --col3: 1fr;
@@ -1024,7 +1024,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sw-sidebars {
+.sw-grid.sw-three-cols.sw-sidebars {
   --col1: 220px;
   --col2: 1fr;
   --col3: 220px;
@@ -1032,7 +1032,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebars-small {
+.sw-grid.sw-three-cols.sidebars-small {
   --col1: 120px;
   --col2: 1fr;
   --col3: 120px;
@@ -1040,7 +1040,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebars-large {
+.sw-grid.sw-three-cols.sidebars-large {
   --col1: 480px;
   --col2: 1fr;
   --col3: 480px;
@@ -1048,7 +1048,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebar-left-small {
+.sw-grid.sw-three-cols.sidebar-left-small {
   --col1: 120px;
   --col2: 1fr;
   --col3: 220px;
@@ -1056,7 +1056,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebar-left-large {
+.sw-grid.sw-three-cols.sidebar-left-large {
   --col1: 480px;
   --col2: 1fr;
   --col3: 220px;
@@ -1064,7 +1064,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebar-right-small {
+.sw-grid.sw-three-cols.sidebar-right-small {
   --col1: 220px;
   --col2: 1fr;
   --col3: 120px;
@@ -1072,7 +1072,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.sw-layout.sw-three-cols.sidebar-right-large {
+.sw-grid.sw-three-cols.sidebar-right-large {
   --col1: 220px;
   --col2: 1fr;
   --col3: 480px;
@@ -1081,7 +1081,7 @@ fieldset {
 }
 
 /* Auto Columns & Rows --------------------- */
-.sw-layout.sw-auto-cols {
+.sw-grid.sw-auto-cols {
   --auto-cols: 240px;
   --auto-rows: 240px;
   grid-template-columns: repeat(auto-fit, minmax(var(--auto-cols), 1fr));
@@ -1089,35 +1089,35 @@ fieldset {
   align-items: center;
 }
 
-.sw-layout.sw-auto-cols > * {
+.sw-grid.sw-auto-cols > * {
   height: 100%;
 }
 
 /* Grid Gap ------------------------------- */
-.sw-layout.sw-gap,
-.sw-layout.gap-medium {
+.sw-grid.sw-gap,
+.sw-grid.gap-medium {
   --grid-gap: 8px;
   grid-gap: var(--grid-gap);
 }
 
-.sw-layout.gap-small {
+.sw-grid.gap-small {
   --grid-gap: 4px;
   grid-gap: var(--grid-gap);
 }
 
-.sw-layout.gap-large {
+.sw-grid.gap-large {
   --grid-gap: 16px;
   grid-gap: var(--grid-gap);
 }
 
 /* Dev Utilities ------------------------------- */
-.sw-layout[mode="dev"] * {
+.sw-grid[mode="dev"] * {
   color: #262626;
   background: #FAFAFA;
   box-shadow: inset 0 0 0 1px gray;
 }
 
-.sw-layout[mode="dev-dark"] * {
+.sw-grid[mode="dev-dark"] * {
   color: #262626;
   background: #FAFAFA;
   box-shadow: inset 0 0 0 1px gray;

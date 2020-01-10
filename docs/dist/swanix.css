@@ -877,7 +877,7 @@ fieldset {
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
 /* App container */
-.layout.app {
+.grid.app {
   position: fixed;
   top: 0;
   left: 0;
@@ -886,7 +886,7 @@ fieldset {
 }
 
 /* 1 Column / 1 Row --------------------- */
-.layout {
+.grid {
   --cols: 1fr;
   --rows: 1fr;
   display: grid;
@@ -896,57 +896,57 @@ fieldset {
   height: 100%;
 }
 
-.layout > * {
+.grid > * {
   overflow: auto;
   min-height: 0;
 }
 
 /* 1 Column / 2 Rows ------------------- */
-.layout.two-rows {
+.grid.two-rows {
   --row1: 1fr;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.header,
-.layout.two-rows.header-medium {
+.grid.two-rows.header,
+.grid.two-rows.header-medium {
   --row1: 80px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.header-small {
+.grid.two-rows.header-small {
   --row1: 42px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.header-large {
+.grid.two-rows.header-large {
   --row1: 120px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.footer,
-.layout.two-rows.footer-medium {
+.grid.two-rows.footer,
+.grid.two-rows.footer-medium {
   --row1: 1fr;
   --row2: 80px;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.footer-small {
+.grid.two-rows.footer-small {
   --row1: 1fr;
   --row2: 42px;
   grid-template-rows: var(--row1) var(--row2);
   grid-template-columns: 1fr;
 }
 
-.layout.two-rows.footer-large {
+.grid.two-rows.footer-large {
   --row1: 1fr;
   --row2: 120px;
   grid-template-rows: var(--row1) var(--row2);
@@ -954,7 +954,7 @@ fieldset {
 }
 
 /* 1 Column / 3 Rows --------------------- */
-.layout.three-rows {
+.grid.three-rows {
   --row1: 80px;
   --row2: 1fr;
   --row3: 80px;
@@ -962,7 +962,7 @@ fieldset {
 }
 
 /* 2 Columns / 1 Row --------------------- */
-.layout.two-cols {
+.grid.two-cols {
   --col1: 1fr;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
@@ -970,22 +970,22 @@ fieldset {
 }
 
 /* Sidebar Left */
-.layout.two-cols.sidebar-left,
-.layout.two-cols.sidebar-left-medium {
+.grid.two-cols.sidebar-left,
+.grid.two-cols.sidebar-left-medium {
   --col1: 220px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.layout.two-cols.sidebar-left-small {
+.grid.two-cols.sidebar-left-small {
   --col1: 120px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.layout.two-cols.sidebar-left-large {
+.grid.two-cols.sidebar-left-large {
   --col1: 480px;
   --col2: 1fr;
   grid-template-columns: var(--col1) var(--col2);
@@ -993,22 +993,22 @@ fieldset {
 }
 
 /* Sidebar Right */
-.layout.two-cols.sidebar-right,
-.layout.two-cols.sidebar-right-medium {
+.grid.two-cols.sidebar-right,
+.grid.two-cols.sidebar-right-medium {
   --col1: 1fr;
   --col2: 220px;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.layout.two-cols.sidebar-right-small {
+.grid.two-cols.sidebar-right-small {
   --col1: 1fr;
   --col2: 120px;
   grid-template-columns: var(--col1) var(--col2);
   grid-template-rows: 1fr;
 }
 
-.layout.two-cols.sidebar-right-large {
+.grid.two-cols.sidebar-right-large {
   --col1: 1fr;
   --col2: 480px;
   grid-template-columns: var(--col1) var(--col2);
@@ -1016,7 +1016,7 @@ fieldset {
 }
 
 /* 3 Columns / 1 Row --------------------- */
-.layout.three-cols {
+.grid.three-cols {
   --col1: 1fr;
   --col2: 1fr;
   --col3: 1fr;
@@ -1024,7 +1024,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebars {
+.grid.three-cols.sidebars {
   --col1: 220px;
   --col2: 1fr;
   --col3: 220px;
@@ -1032,7 +1032,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebars-small {
+.grid.three-cols.sidebars-small {
   --col1: 120px;
   --col2: 1fr;
   --col3: 120px;
@@ -1040,7 +1040,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebars-large {
+.grid.three-cols.sidebars-large {
   --col1: 480px;
   --col2: 1fr;
   --col3: 480px;
@@ -1048,7 +1048,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebar-left-small {
+.grid.three-cols.sidebar-left-small {
   --col1: 120px;
   --col2: 1fr;
   --col3: 220px;
@@ -1056,7 +1056,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebar-left-large {
+.grid.three-cols.sidebar-left-large {
   --col1: 480px;
   --col2: 1fr;
   --col3: 220px;
@@ -1064,7 +1064,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebar-right-small {
+.grid.three-cols.sidebar-right-small {
   --col1: 220px;
   --col2: 1fr;
   --col3: 120px;
@@ -1072,7 +1072,7 @@ fieldset {
   grid-template-rows: 1fr;
 }
 
-.layout.three-cols.sidebar-right-large {
+.grid.three-cols.sidebar-right-large {
   --col1: 220px;
   --col2: 1fr;
   --col3: 480px;
@@ -1081,7 +1081,7 @@ fieldset {
 }
 
 /* Auto Columns & Rows --------------------- */
-.layout.auto-cols {
+.grid.auto-cols {
   --auto-cols: 240px;
   --auto-rows: 240px;
   grid-template-columns: repeat(auto-fit, minmax(var(--auto-cols), 1fr));
@@ -1089,35 +1089,35 @@ fieldset {
   align-items: center;
 }
 
-.layout.auto-cols > * {
+.grid.auto-cols > * {
   height: 100%;
 }
 
 /* Grid Gap ------------------------------- */
-.layout.gap,
-.layout.gap-medium {
+.grid.gap,
+.grid.gap-medium {
   --grid-gap: 8px;
   grid-gap: var(--grid-gap);
 }
 
-.layout.gap-small {
+.grid.gap-small {
   --grid-gap: 4px;
   grid-gap: var(--grid-gap);
 }
 
-.layout.gap-large {
+.grid.gap-large {
   --grid-gap: 16px;
   grid-gap: var(--grid-gap);
 }
 
 /* Dev Utilities ------------------------------- */
-.layout[mode="dev"] * {
+.grid[mode="dev"] * {
   color: #262626;
   background: #FAFAFA;
   box-shadow: inset 0 0 0 1px gray;
 }
 
-.layout[mode="dev-dark"] * {
+.grid[mode="dev-dark"] * {
   color: #262626;
   background: #FAFAFA;
   box-shadow: inset 0 0 0 1px gray;
