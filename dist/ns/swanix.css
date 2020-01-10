@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-titles, Tahoma, Geneva, sans-serif);
   font-weight: normal;
   margin: 1rem 0 2rem 0;
-  color: #262626;
+  color: var(--text-titles-color, #262626);
 }
 
 h1 {

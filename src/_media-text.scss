@@ -12,7 +12,7 @@ $text-font-titles:          var(--font-family-titles, Tahoma, Geneva, sans-serif
 $text-font-titles-weight:   normal !default;
 
 $text-basic:                $gray6 !default;
-$text-titles:               $gray8 !default;
+$text-titles:               var(--text-titles-color, $gray8) !default;
 $text-link:                 $brand1 !default;
 $text-link-hover:           $brand1 !default;
 $text-link-visited:         $brand1 !default;
