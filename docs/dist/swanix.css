@@ -79,7 +79,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #1A1A1A;
+  color: var(--brand1, #000000);
   outline: 0;
   font-size: 1.4rem;
 }
@@ -87,11 +87,11 @@ a {
 a:hover {
   text-decoration: none;
   transition: .2s;
-  color: #383838;
+  color: var(--brand1, #000000);
 }
 
 a:visited {
-  color: #1A1A1A;
+  color: var(--brand1, #000000);
 }
 
 li {
@@ -173,13 +173,13 @@ input [type="checkbox"] {
 }
 
 ::selection {
-  color: #808080;
-  background: #F7F7F7;
+  color: #383838;
+  background: #EDEDED;
 }
 
 ::-moz-selection {
-  color: #808080;
-  background: #F7F7F7;
+  color: #383838;
+  background: #EDEDED;
 }
 
 /* Text tables */
