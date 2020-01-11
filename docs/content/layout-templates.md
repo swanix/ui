@@ -8,13 +8,13 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-cols sidebar-left" mode="dev">
-  <aside>Sidebar</aside>
-  <main class="grid two-rows header">
-    <header>Header</header>
-    <section>Content</section>
-  </main>
-</section>
+<div class="app grid two-cols sidebar-left" mode="dev">
+  <div>Sidebar</div>
+  <div class="grid two-rows header">
+    <div>Header</div>
+    <div>Content</div>
+  </div>
+</div>
 </textarea>
 
 ### Layout 2
@@ -23,14 +23,14 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-cols sidebar-left" mode="dev">
-  <aside>Sidebar</aside>
-  <main class="grid three-rows">
-    <header>Header</header>
-    <section>Content</section>
-    <footer>Footer</footer>
-  </main>
-</section>
+<div class="app grid two-cols sidebar-left" mode="dev">
+  <div>Sidebar</div>
+  <div class="grid three-rows header-footer">
+    <div>Header</div>
+    <div>Content</div>
+    <div>Footer</div>
+  </div>
+</div>
 </textarea>
 
 ### Layout 3
@@ -39,14 +39,14 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows footer" mode="dev">
-  <main class="grid three-cols sidebars">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-    <aside>Sidebar Right</aside>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid two-rows footer" mode="dev">
+  <div class="grid three-cols sidebars">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+    <div>Sidebar Right</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>
 
 ### Layout 4
@@ -55,79 +55,79 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows header" mode="dev">
-  <header>Header</header>
-  <main class="grid three-cols sidebars">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-    <aside>Sidebar Right</aside>
-  </main>
-</section>
+<div class="app grid two-rows header" mode="dev">
+  <div>Header</div>
+  <div class="grid three-cols sidebars">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+    <div>Sidebar Right</div>
+  </div>
+</div>
 </textarea>
 
 ### Layout 5
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-cols sidebar-left" mode="dev">
-  <aside>Sidebar</aside>
-  <main class="grid two-rows footer">
-    <section>Content</section>
-    <footer>Footer</footer>
-  </main>
-</section>
+<div class="app grid two-cols sidebar-left" mode="dev">
+  <div>Sidebar</div>
+  <div class="grid two-rows footer">
+    <div>Content</div>
+    <div>Footer</div>
+  </div>
+</div>
 </textarea>
 
 ### Layout 6
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows footer" mode="dev">
-  <main class="grid two-cols sidebar-left">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid two-rows footer" mode="dev">
+  <div class="grid two-cols sidebar-left">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>
 
 ### Layout 7
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows footer" mode="dev">
-  <main class="grid two-cols sidebar-right">
-    <section>Content Area</section>
-    <aside>Sidebar Right</aside>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid two-rows footer" mode="dev">
+  <div class="grid two-cols sidebar-right">
+    <div>Content</div>
+    <div>Sidebar Right</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>
 
 ### Layout 8
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows header" mode="dev">
-  <header>Header</header>
-  <main class="grid two-cols sidebar-left">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-  </main>
-</section>
+<div class="app grid two-rows header" mode="dev">
+  <div>Header</div>
+  <div class="grid two-cols sidebar-left">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+  </div>
+</div>
 </textarea>
 
 ### Layout 9
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid two-rows header" mode="dev">
-  <header>Header</header>
-  <main class="grid two-cols sidebar-right">
-    <section>Content Area</section>
-    <aside>Sidebar Rigth</aside>
-  </main>
-</section>
+<div class="app grid two-rows header" mode="dev">
+  <div>Header</div>
+  <div class="grid two-cols sidebar-right">
+    <div>Content</div>
+    <div>Sidebar Rigth</div>
+  </div>
+</div>
 </textarea>
 
 
@@ -135,41 +135,41 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid three-rows" mode="dev">
-  <header>Header</header>
-  <main class="grid two-cols sidebar-left">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid three-rows header-footer" mode="dev">
+  <div>Header</div>
+  <div class="grid two-cols sidebar-left">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>
 
 ### Layout 11
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid three-rows" mode="dev">
-  <header>Header</header>
-  <main class="grid two-cols sidebar-right">
-    <section>Content Area</section>
-    <aside>Sidebar Rigth</aside>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid three-rows header-footer" mode="dev">
+  <div>Header</div>
+  <div class="grid two-cols sidebar-right">
+    <div>Content</div>
+    <div>Sidebar Rigth</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>
 
 ### Layout 12
 
 <iframe class="code-preview" height="400px"></iframe>
 <textarea class="code-editor" name="code">
-<section class="app grid three-rows" mode="dev">
-  <header>Header</header>
-  <main class="grid three-cols sidebars">
-    <aside>Sidebar Left</aside>
-    <section>Content Area</section>
-    <aside>Sidebar Rigth</aside>
-  </main>
-  <footer>Footer</footer>
-</section>
+<div class="app grid three-rows header-footer" mode="dev">
+  <div>Header</div>
+  <div class="grid three-cols sidebars">
+    <div>Sidebar Left</div>
+    <div>Content</div>
+    <div>Sidebar Rigth</div>
+  </div>
+  <div>Footer</div>
+</div>
 </textarea>

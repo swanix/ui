@@ -14,6 +14,17 @@ $brand7: var(--brand7, #FAFAFA);
 $brand8: var(--brand8, #FAFAFA);
 $brand9: var(--brand9, #FAFAFA);
 
+// Brand Colors - Fallback old browsers
+$brand1-fallback: #000000;
+$brand2-fallback: #808080;
+$brand3-fallback: #B3B3B3;
+$brand4-fallback: #CCCCCC;
+$brand5-fallback: #EDEDED;
+$brand6-fallback: #F7F7F7;
+$brand7-fallback: #FAFAFA;
+$brand8-fallback: #FAFAFA;
+$brand9-fallback: #FAFAFA;
+
 // Grayscale
 $white: #FFFFFF ; // White (HTML color: white)
 $gray1: #FAFAFA; 

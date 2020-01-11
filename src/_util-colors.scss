@@ -6,15 +6,15 @@
 /* Text Colors ----------------------------------------------- */
 
 /* Grayblue */
-.text-brand1 { color: $brand1; }
-.text-brand2 { color: $brand2; }
-.text-brand3 { color: $brand3; }
-.text-brand4 { color: $brand4; }
-.text-brand5 { color: $brand5; }
-.text-brand6 { color: $brand6; }
-.text-brand7 { color: $brand7; }
-.text-brand8 { color: $brand8; }
-.text-brand9 { color: $brand9; }
+.text-brand1 { color: $brand1-fallback; color: $brand1; }
+.text-brand2 { color: $brand2-fallback; color: $brand2; }
+.text-brand3 { color: $brand3-fallback; color: $brand3; }
+.text-brand4 { color: $brand4-fallback; color: $brand4; }
+.text-brand5 { color: $brand5-fallback; color: $brand5; }
+.text-brand6 { color: $brand6-fallback; color: $brand6; }
+.text-brand7 { color: $brand7-fallback; color: $brand7; }
+.text-brand8 { color: $brand8-fallback; color: $brand8; }
+.text-brand9 { color: $brand9-fallback; color: $brand9; }
 
 /* Grayscale */
 .text-white { color: $white; } // White (HTML color: white)
@@ -43,15 +43,15 @@
 /* Background Colors ------------------------------------------- */
 
 /* Brand */
-.bg-brand1 { background: $brand1; color: $white; }
-.bg-brand2 { background: $brand2; color: $white; }
-.bg-brand3 { background: $brand3; color: $white; }
-.bg-brand4 { background: $brand4; color: $gray7; }
-.bg-brand5 { background: $brand5; color: $gray7; }
-.bg-brand6 { background: $brand6; color: $gray7; }
-.bg-brand7 { background: $brand7; color: $gray7; }
-.bg-brand8 { background: $brand8; color: $gray7; }
-.bg-brand9 { background: $brand9; color: $gray7; }
+.bg-brand1 { background: $brand1-fallback; background: $brand1; color: $white; }
+.bg-brand2 { background: $brand2-fallback; background: $brand2; color: $white; }
+.bg-brand3 { background: $brand3-fallback; background: $brand3; color: $white; }
+.bg-brand4 { background: $brand4-fallback; background: $brand4; color: $gray7; }
+.bg-brand5 { background: $brand5-fallback; background: $brand5; color: $gray7; }
+.bg-brand6 { background: $brand6-fallback; background: $brand6; color: $gray7; }
+.bg-brand7 { background: $brand7-fallback; background: $brand7; color: $gray7; }
+.bg-brand8 { background: $brand8-fallback; background: $brand8; color: $gray7; }
+.bg-brand9 { background: $brand9-fallback; background: $brand9; color: $gray7; }
 
 /* Grayscale */
 .bg-white { background: $white; color: $gray7; } // White (HTML color: white)

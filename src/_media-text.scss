@@ -10,7 +10,7 @@
 $text-body-font:            var(--text-body-font, Tahoma, Geneva, sans-serif) !default;
 $text-body-color:           $gray7 !default;
 
-$text-heading-font:         var(--text-heading-font, Tahoma, Geneva, sans-serif) !default;
+$text-heading-font:         var(--text-heading-font, inherit) !default;
 $text-heading-weight:       var(--text-heading-weight, normal)  !default;
 $text-heading-color:        var(--text-heading-color, $gray8) !default;
 
@@ -33,6 +33,7 @@ $table-tr-hover-bg:        $gray1 !default;
 // ------------------------------------------------------------
 
 body {
+  font-family: sans-serif;
   font-family: $text-body-font;
   color: $text-body-color;
 }

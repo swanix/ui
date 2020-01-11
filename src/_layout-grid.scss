@@ -1,23 +1,22 @@
 /* --------------------------------------------------------------------------------
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
-// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-// VARIABLES
-// -----------------------------------------------------------
-
-
-// STYLES
-// -----------------------------------------------------------
 
 /* App container */
-.grid.app {
-  position: fixed;
+.app {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app.grid > *,
+.app .grid > * {
+  overflow: auto; /* Grid children with scroll */
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 1 Column / 1 Row --------------------- */
@@ -27,13 +26,8 @@
   display: grid;
   grid-template-columns: var(--cols);
   grid-template-rows: var(--rows);
-  width: 100%;
-  height: 100%;
-}
-
-.grid > * {
-  overflow: auto;
   min-height: 0;
+  height: 100%;
 }
 
 /* 1 Column / 2 Rows ------------------- */
@@ -41,7 +35,6 @@
   --row1: 1fr;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.header,
@@ -49,21 +42,18 @@
   --row1: 80px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.header-small {
   --row1: 42px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.header-large {
   --row1: 120px;
   --row2: 1fr;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.footer,
@@ -71,28 +61,61 @@
   --row1: 1fr;
   --row2: 80px;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.footer-small {
   --row1: 1fr;
   --row2: 42px;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 .grid.two-rows.footer-large {
   --row1: 1fr;
   --row2: 120px;
   grid-template-rows: var(--row1) var(--row2);
-  grid-template-columns: 1fr;
 }
 
 /* 1 Column / 3 Rows --------------------- */
 .grid.three-rows {
+  --row1: 1fr;
+  --row2: 1fr;
+  --row3: 1fr;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+.grid.three-rows.header {
+  --row1: 80px;
+  --row2: 1fr;
+  --row3: 1fr;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+.grid.three-rows.footer {
+  --row1: 1fr;
+  --row2: 1fr;
+  --row3: 80px;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+.grid.three-rows.header-footer,
+.grid.three-rows.header-footer-medium {
   --row1: 80px;
   --row2: 1fr;
   --row3: 80px;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+.grid.three-rows.header-footer-small {
+  --row1: 42px;
+  --row2: 1fr;
+  --row3: 42px;
+  grid-template-rows: var(--row1) var(--row2) var(--row3);
+}
+
+.grid.three-rows.header-footer-large {
+  --row1: 120px;
+  --row2: 1fr;
+  --row3: 120px;
   grid-template-rows: var(--row1) var(--row2) var(--row3);
 }
 
@@ -101,7 +124,6 @@
   --col1: 1fr;
   --col2: 1fr;  
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 /* Sidebar Left */
@@ -110,21 +132,18 @@
   --col1: 220px;
   --col2: 1fr;  
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 .grid.two-cols.sidebar-left-small {
   --col1: 120px;
   --col2: 1fr;  
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 .grid.two-cols.sidebar-left-large {
   --col1: 480px;
   --col2: 1fr;  
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 /* Sidebar Right */
@@ -133,21 +152,18 @@
   --col1: 1fr;
   --col2: 220px; 
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 .grid.two-cols.sidebar-right-small {
   --col1: 1fr;
   --col2: 120px; 
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 .grid.two-cols.sidebar-right-large {
   --col1: 1fr;
   --col2: 480px; 
   grid-template-columns: var(--col1) var(--col2);
-  grid-template-rows: 1fr;
 }
 
 /* 3 Columns / 1 Row --------------------- */
@@ -156,7 +172,6 @@
   --col2: 1fr;
   --col3: 1fr;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebars {
@@ -172,7 +187,6 @@
   --col2: 1fr;
   --col3: 120px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebars-large {
@@ -180,7 +194,6 @@
   --col2: 1fr;
   --col3: 480px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebar-left-small {
@@ -188,7 +201,6 @@
   --col2: 1fr;
   --col3: 220px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebar-left-large {
@@ -196,7 +208,6 @@
   --col2: 1fr;
   --col3: 220px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebar-right-small {
@@ -204,7 +215,6 @@
   --col2: 1fr;
   --col3: 120px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 .grid.three-cols.sidebar-right-large {
@@ -212,7 +222,6 @@
   --col2: 1fr;
   --col3: 480px;
   grid-template-columns: var(--col1) var(--col2) var(--col3);
-  grid-template-rows: 1fr;
 }
 
 /* Auto Columns & Rows --------------------- */
@@ -247,14 +256,13 @@
 
 /* Dev Utilities ------------------------------- */
 .grid[mode="dev"] * {
-  color: $gray8;
-  background: $gray1;
+  // color: hsla(0, 0, 15%, 1);
+  // background: hsla(0, 0, 95%, 1);
   box-shadow: inset 0 0 0 1px hsla(0, 0, 50%, 1);
 }
 
 .grid[mode="dev-dark"] * {
-  color: $gray8;
-  background: $gray1;
-  box-shadow: inset 0 0 0 1px hsla(0, 0, 50%, 1);
-  filter: invert(1);
+  color: hsla(0, 0, 95%, 1);
+  background: hsla(0, 0, 15%, 1);
+  box-shadow: inset 0 0 0 1px hsla(0, 0, 80%, 1);
 }
