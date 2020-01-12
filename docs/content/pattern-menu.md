@@ -30,11 +30,11 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 ### Dark Mode
 
-Puedes utilizar la clase `dark-mode` para aplicar los colores del modo oscuro en este componente.
+Puedes utilizar la clase `theme-dark` para aplicar los colores del modo oscuro en este componente.
 
 <iframe class="code-preview" height="520px"></iframe>
 <textarea class="code-editor" name="code">
-<ul class="menu dark-mode">
+<ul class="menu theme-dark">
   <li class="menu-section">SECTION 1</li>
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
@@ -51,7 +51,7 @@ Puedes utilizar la clase `dark-mode` para aplicar los colores del modo oscuro en
 
 ### CSS Variables
 
-Variables disponibles para personalizar la apariencia del componente menú:
+Variables disponibles para personalizar el componente menú:
 
 |Name|Default value|Description|
 |--- |--- |--- |
@@ -67,15 +67,15 @@ Variables disponibles para personalizar la apariencia del componente menú:
 |--menu-item-bg-active|$gray3|Menu item background active|
 |--menu-item-border-active|3px solid $black|Menu item border active|
 
-### Personalizar estilos
+### Temas personalizados
 
-En tu hoja de estilos CSS define la clase `menu` e incluye las variables que deseas sobreescribir. A continuación puedes ver las variables sobreescritas con el tema oscuro:
+Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo la clase `menu` con las variables que deseas modificar. A continuación puedes ver las variables sobreescritas con el tema oscuro:
 
 ```css
-.menu {
+.menu.theme-dark {
   --menu-bg: black;
   /* Default */
-  --menu-item-text:#CCCCCC;
+  --menu-item-text:#B3B3B3;
   --menu-item-bg: transparent;
   /* Hover */
   --menu-item-text-hover: #FFFFFF;

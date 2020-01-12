@@ -126,9 +126,9 @@ ul.menu.is-horizontal li.active:before,
   border-bottom: var(--menu-item-border-active, 3px solid $black);
 }
 
-/* dark mode */
+/* Themes */
 
-.menu.dark-mode {
+.menu.theme-dark {
   --menu-bg: black;
   /* Default */
   --menu-item-text:#B3B3B3;

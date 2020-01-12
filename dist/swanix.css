@@ -1245,8 +1245,8 @@ ul.menu.is-horizontal li.active:before,
   border-bottom: var(--menu-item-border-active, 3px solid #000000);
 }
 
-/* dark mode */
-.menu.dark-mode {
+/* Themes */
+.menu.theme-dark {
   --menu-bg: black;
   /* Default */
   --menu-item-text:#B3B3B3;
@@ -1314,7 +1314,7 @@ tr:hover {
 }
 
 /* Table Themes */
-table.dark-mode {
+table.theme-dark {
   --table-text: #EDEDED;
   --table-bg: #1A1A1A;
   --table-th-bg: transparent;

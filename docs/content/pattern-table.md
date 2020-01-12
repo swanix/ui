@@ -32,11 +32,11 @@
 
 ### Dark Mode 
 
-Utiliza la clase `dark-mode` para aplicar los colores del modo oscuro en este componente. Para esto se utilizan variables nativas de CSS.
+Utiliza la clase `theme-dark` para aplicar los colores del modo oscuro en este componente.
 
 <iframe class="code-preview" height="240px"></iframe>
 <textarea class="code-editor" name="code">
-<table class="dark-mode">
+<table class="theme-dark">
   <tbody>
     <tr>
       <th>Table Head 1</th>
@@ -64,7 +64,7 @@ Utiliza la clase `dark-mode` para aplicar los colores del modo oscuro en este co
 
 ### CSS Variables
 
-Variables disponibles para personalizar la apariencia del componente de tabla:
+Variables disponibles para personalizar el componente de tabla:
 
 |Name|Default value|Description|
 |--- |--- |--- |
@@ -81,16 +81,16 @@ Variables disponibles para personalizar la apariencia del componente de tabla:
 
 ### Personalizar estilos
 
-En tu hoja de estilos CSS define el selector `table` e incluye las variables que deseas sobreescribir. A continuación puedes ver las variables sobreescritas con el tema oscuro:
+Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo el selector `table` con las variables que deseas modificar. A continuación puedes ver las variables sobreescritas con el tema oscuro:
 
 ```css
-table {
+table.dark-mode {
   --table-text: #EDEDED;
   --table-bg: #1A1A1A;
   --table-th-bg: transparent;
-  --table-th-border: 1px solid #383838;
+  --table-th-border: 1px solid #262626;
   --table-td-bg: transparent;
-  --table-td-border: 1px solid #383838;
+  --table-td-border: 1px solid #262626;
   --table-tr-bg-hover: #262626;
 }
 ```

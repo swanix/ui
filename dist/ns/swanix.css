@@ -1245,8 +1245,8 @@ ul.sw-menu.is-horizontal li.sw-active:before,
   border-bottom: var(--menu-item-border-active, 3px solid #000000);
 }
 
-/* dark mode */
-.sw-menu.sw-dark-mode {
+/* Themes */
+.sw-menu.sw-theme-dark {
   --menu-bg: black;
   /* Default */
   --menu-item-text:#B3B3B3;
@@ -1314,7 +1314,7 @@ tr:hover {
 }
 
 /* Table Themes */
-table.sw-dark-mode {
+table.sw-theme-dark {
   --table-text: #EDEDED;
   --table-bg: #1A1A1A;
   --table-th-bg: transparent;
