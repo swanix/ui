@@ -22,7 +22,7 @@ $btn-padding-small:          0px 15px !default;
 // Medium
 $btn-text-medium:            14px !default;
 $btn-height-medium:          38px !default;
-$btn-padding-medium:         0px 15px !default;
+$btn-padding-medium:         8px 15px !default;
 // Large
 $btn-text-large:             16px !default;
 $btn-height-large:           48px !default;
@@ -96,7 +96,7 @@ input[type="reset"],
   // Size
   font-size: $btn-text-medium;
   height: $btn-height-medium;
-  line-height: $btn-height-medium;
+  // line-height: $btn-height-medium;
   padding: $btn-padding-medium;
   // Color
   color: $btn-text;

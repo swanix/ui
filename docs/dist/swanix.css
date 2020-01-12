@@ -326,8 +326,7 @@ input[type="reset"],
   font-weight: 600;
   font-size: 14px;
   height: 38px;
-  line-height: 38px;
-  padding: 0px 15px;
+  padding: 8px 15px;
   color: #383838;
   border: #CCCCCC solid 1px;
   background: #FAFAFA;
@@ -443,7 +442,7 @@ input[type="reset"].is-medium,
   font-size: 14px;
   height: 38px;
   line-height: 38px;
-  padding: 0px 15px;
+  padding: 8px 15px;
 }
 
 button.is-large,
