@@ -84,7 +84,7 @@ Variables disponibles para personalizar el componente de tabla:
 Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo el selector `table` con las variables que deseas modificar. A continuación puedes ver las variables sobreescritas con el tema oscuro:
 
 ```css
-table.theme-mode {
+table.theme-dark {
   --table-text: #EDEDED;
   --table-bg: #1A1A1A;
   --table-th-bg: transparent;
