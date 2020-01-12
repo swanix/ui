@@ -224,6 +224,18 @@
   grid-template-columns: var(--col1) var(--col2) var(--col3);
 }
 
+@media (max-width: 600px) {
+  .grid.three-cols.sidebars,
+  .grid.three-cols.sidebars-small,
+  .grid.three-cols.sidebars-large,
+  .grid.three-cols.sidebar-left-small,
+  .grid.three-cols.sidebar-left-large,
+  .grid.three-cols.sidebar-right-small,
+  .grid.three-cols.sidebar-right-large {
+    --col3: 0px;
+  }
+}
+
 /* Auto Columns & Rows --------------------- */
 .grid.auto-cols {
   --auto-cols: 240px;
@@ -256,8 +268,6 @@
 
 /* Dev Utilities ------------------------------- */
 .grid[mode="dev"] * {
-  // color: hsla(0, 0, 15%, 1);
-  // background: hsla(0, 0, 95%, 1);
   box-shadow: inset 0 0 0 1px hsla(0, 0, 50%, 1);
 }
 

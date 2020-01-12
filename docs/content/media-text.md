@@ -73,36 +73,6 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 </dl>
 </textarea>
 
-### Table 
-
-<iframe class="code-preview" height="240px"></iframe>
-<textarea class="code-editor" name="code">
-<table>
-    <tbody>
-        <tr>
-            <th>Table Head 1</th>
-            <th>Table Head 2</th>
-            <th>Table Head 3</th>
-        </tr>
-        <tr>
-            <td>Division 1</td>
-            <td>Division 2</td>
-            <td>Division 3</td>
-        </tr>
-        <tr>
-            <td>Division 1</td>
-            <td>Division 2</td>
-            <td>Division 3</td>
-        </tr>
-        <tr>
-            <td>Division 1</td>
-            <td>Division 2</td>
-            <td>Division 3</td>
-        </tr>
-    </tbody>
-</table>
-</textarea>
-
 ### Text Quote 
 
 <iframe class="code-preview" height="70px"></iframe>

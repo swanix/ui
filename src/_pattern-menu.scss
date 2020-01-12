@@ -1,0 +1,140 @@
+/* --------------------------------------------------------------------------------
+   PATTERN - MENU
+-------------------------------------------------------------------------------- */
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.menu {
+  background: var(--menu-bg, transparent);
+}
+
+ul.menu,
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+ul.menu li,
+ul.menu li a,
+.menu ul li,
+.menu ul li a {
+  list-style-type: none;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+}
+
+ul.menu a,
+.menu ul a {
+  transition: none;
+  width: 100%;
+  padding-left: 24px;
+  color: $gray7; // Fallback
+  color: var(--menu-item-text, $gray7);
+  background: transparent; // Fallback
+  background: var(--menu-item-bg, transparent);
+}
+
+
+ul.menu a:hover,
+.menu ul a:hover {
+  color: $gray9; // Fallback
+  color: var(--menu-item-text-hover, $gray9);
+  background: $gray2; // Fallback
+  background: var(--menu-item-bg-hover, $gray2);
+}
+
+ul.menu li.active,
+.menu ul li.active {
+  position: relative; /* For active border left absolute */
+}
+
+ul.menu li.active,
+.menu ul li.active,
+ul.menu li.active a,
+.menu ul li.active a {
+  color: $gray9; // Fallback
+  color: var(--menu-item-text-active, $gray9) !important;
+  background: $gray3; // Fallback
+  background: var(--menu-item-bg-active, $gray3);
+}
+
+ul.menu li.active a:hover,
+.menu ul li.active a:hover {
+  background: inherit;
+}
+
+ul.menu li.active:before,
+.menu ul li.active:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 38px;
+  top: 0;
+  border-left: 3px solid $black; // Fallback
+  border-left: var(--menu-item-border-active, 3px solid $black);
+}
+
+ul.menu a span,
+.menu ul a span {
+  margin-left: 16px;
+}
+
+.menu .menu-section {
+  font-size: 12px;
+  height: 32px;
+  padding-top: 16px;
+  padding-left: 24px;
+}
+
+/* Horizontal */
+
+ul.menu.is-horizontal,
+.menu.is-horizontal ul {
+  flex-direction: row;
+}
+
+ul.menu.is-horizontal li,
+ul.menu.is-horizontal li a,
+.menu.is-horizontal ul li,
+.menu.is-horizontal ul li a {
+  list-style-type: none;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+}
+
+ul.menu.is-horizontal li a {
+  padding-right: 24px;
+}
+
+ul.menu.is-horizontal li.active:before,
+.menu.is-horizontal ul li.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-left: none;
+  border-bottom: 3px solid $black; // Fallback
+  border-bottom: var(--menu-item-border-active, 3px solid $black);
+}
+
+/* dark mode */
+
+.menu.dark-mode {
+  --menu-bg: black;
+  /* Default */
+  --menu-item-text:#CCCCCC;
+  --menu-item-bg: transparent;
+  /* Hover */
+  --menu-item-text-hover: #FFFFFF;
+  --menu-item-bg-hover: #262626;
+  /* Active */
+  --menu-item-text-active: #FFFFFF;
+  --menu-item-bg-active: #383838;
+  --menu-item-border-active: 3px solid #FFFFFF;
+}
