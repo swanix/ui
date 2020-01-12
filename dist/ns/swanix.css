@@ -1144,6 +1144,8 @@ ul.sw-menu li a,
   flex-direction: row;
   align-items: center;
   font-weight: 400;
+  color: #383838;
+  color: var(--menu-item-text, #383838);
 }
 
 ul.sw-menu a,
@@ -1205,7 +1207,8 @@ ul.sw-menu a span,
 .sw-menu .sw-menu-section {
   font-size: 12px;
   height: 32px;
-  padding-top: 16px;
+  padding-top: 28px;
+  padding-bottom: 14px;
   padding-left: 24px;
 }
 
@@ -1246,7 +1249,7 @@ ul.sw-menu.is-horizontal li.sw-active:before,
 .sw-menu.sw-dark-mode {
   --menu-bg: black;
   /* Default */
-  --menu-item-text:#CCCCCC;
+  --menu-item-text:#B3B3B3;
   --menu-item-bg: transparent;
   /* Hover */
   --menu-item-text-hover: #FFFFFF;
@@ -1315,9 +1318,9 @@ table.sw-dark-mode {
   --table-text: #EDEDED;
   --table-bg: #1A1A1A;
   --table-th-bg: transparent;
-  --table-th-border: 1px solid #383838;
+  --table-th-border: 1px solid #262626;
   --table-td-bg: transparent;
-  --table-td-border: 1px solid #383838;
+  --table-td-border: 1px solid #262626;
   --table-tr-bg-hover: #262626;
 }
 

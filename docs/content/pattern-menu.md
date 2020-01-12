@@ -32,14 +32,20 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 Puedes utilizar la clase `dark-mode` para aplicar los colores del modo oscuro en este componente.
 
-<iframe class="code-preview" height="250px"></iframe>
+<iframe class="code-preview" height="520px"></iframe>
 <textarea class="code-editor" name="code">
 <ul class="menu dark-mode">
+  <li class="menu-section">SECTION 1</li>
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
   <li class="active"><a href="#">Item 3</a></li>
   <li><a href="#">Item 4</a></li>
   <li><a href="#">Item 5</a></li>
+  <li class="menu-section">SECTION 2</li>
+  <li><a href="#">Item 1</a></li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
 </ul>
 </textarea>
 

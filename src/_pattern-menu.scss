@@ -24,6 +24,8 @@ ul.menu li a,
   flex-direction: row;
   align-items: center;
   font-weight: 400;
+  color: $gray7; // Fallback
+  color: var(--menu-item-text, $gray7);
 }
 
 ul.menu a,
@@ -85,7 +87,8 @@ ul.menu a span,
 .menu .menu-section {
   font-size: 12px;
   height: 32px;
-  padding-top: 16px;
+  padding-top: 28px;
+  padding-bottom: 14px;
   padding-left: 24px;
 }
 
@@ -128,7 +131,7 @@ ul.menu.is-horizontal li.active:before,
 .menu.dark-mode {
   --menu-bg: black;
   /* Default */
-  --menu-item-text:#CCCCCC;
+  --menu-item-text:#B3B3B3;
   --menu-item-bg: transparent;
   /* Hover */
   --menu-item-text-hover: #FFFFFF;
