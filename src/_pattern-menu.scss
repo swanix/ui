@@ -75,8 +75,8 @@ ul.menu li.active:before,
   width: 15px;
   height: 38px;
   top: 0;
-  border-left: 3px solid $black; // Fallback
-  border-left: var(--menu-item-border-active, 3px solid $black);
+  border-left: 3px solid $brand1-fallback; // Fallback
+  border-left: var(--menu-item-border-active, 3px solid $brand1);
 }
 
 ul.menu a span,
@@ -122,8 +122,8 @@ ul.menu.is-horizontal li.active:before,
   width: 100%;
   bottom: 0;
   border-left: none;
-  border-bottom: 3px solid $black; // Fallback
-  border-bottom: var(--menu-item-border-active, 3px solid $black);
+  border-bottom: 3px solid $brand1-fallback; // Fallback
+  border-bottom: var(--menu-item-border-active, 3px solid $brand1);
 }
 
 /* Themes */

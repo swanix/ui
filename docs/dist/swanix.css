@@ -1196,7 +1196,7 @@ ul.menu li.active:before,
   height: 38px;
   top: 0;
   border-left: 3px solid #000000;
-  border-left: var(--menu-item-border-active, 3px solid #000000);
+  border-left: var(--menu-item-border-active, 3px solid var(--brand1, #000000));
 }
 
 ul.menu a span,
@@ -1242,7 +1242,7 @@ ul.menu.is-horizontal li.active:before,
   bottom: 0;
   border-left: none;
   border-bottom: 3px solid #000000;
-  border-bottom: var(--menu-item-border-active, 3px solid #000000);
+  border-bottom: var(--menu-item-border-active, 3px solid var(--brand1, #000000));
 }
 
 /* Themes */
