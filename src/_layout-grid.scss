@@ -224,14 +224,9 @@
   grid-template-columns: var(--col1) var(--col2) var(--col3);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 940px) {
   .grid.three-cols.sidebars,
-  .grid.three-cols.sidebars-small,
-  .grid.three-cols.sidebars-large,
-  .grid.three-cols.sidebar-left-small,
-  .grid.three-cols.sidebar-left-large,
-  .grid.three-cols.sidebar-right-small,
-  .grid.three-cols.sidebar-right-large {
+  .grid.three-cols.sidebars-large {
     --col3: 0px;
   }
 }

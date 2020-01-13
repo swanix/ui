@@ -3,6 +3,44 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+/* Theme Default (Light) */
+:root {
+  --util-border:     #{$gray3} solid 1px;
+}
+
+/* Theme Dark */
+.theme-dark {
+  --util-border:     #{$gray7} solid 1px;
+}
+
+// STYLES
+// -----------------------------------------------------------
+
+// Borders
+
+.border {
+  border: var(--util-border);
+}
+
+.border-top {
+  border-top: var(--util-border);
+}
+
+.border-left {
+  border-left: var(--util-border);
+}
+
+.border-right {
+  border-right: var(--util-border);
+}
+
+.border-bottom {
+  border-bottom: var(--util-border);
+}
+
+// Visibility
+
 .hidden {
   display: none;
   opacity: 0;
@@ -17,7 +55,7 @@
 
 // Alignment
 
-.content-center {
+.align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,11 +63,22 @@
   text-align: center;
 }
 
-.content-right {
+.align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.align-horizontal {
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+}
+
+.align-right {
   text-align:right;
 }
 
-.content-left {
+.align-left {
   text-align:left;
 }
 

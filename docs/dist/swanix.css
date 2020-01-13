@@ -18,8 +18,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -739,6 +739,33 @@ input[type="reset"].is-pill-right,
   flex-direction: row;
 }
 
+/* OSX Buttons */
+.osx-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 16px;
+  padding: 0;
+  line-height: initial;
+  font-size: 6px;
+  color: transparent;
+  margin: 16px 2px;
+}
+
+.osx-button.is-close {
+  background: #FF5D5B;
+  border-color: #FF5D5B;
+}
+
+.osx-button.is-minimize {
+  background: #FFBD4F;
+  border-color: #FFBD4F;
+}
+
+.osx-button.is-maximize {
+  background: #00C857;
+  border-color: #00C857;
+}
+
 /* --------------------------------------------------------------------------------
    CONTROL - RADIO BUTTON
 -------------------------------------------------------------------------------- */
@@ -1410,14 +1437,9 @@ fieldset {
   grid-template-columns: var(--col1) var(--col2) var(--col3);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 940px) {
   .grid.three-cols.sidebars,
-  .grid.three-cols.sidebars-small,
-  .grid.three-cols.sidebars-large,
-  .grid.three-cols.sidebar-left-small,
-  .grid.three-cols.sidebar-left-large,
-  .grid.three-cols.sidebar-right-small,
-  .grid.three-cols.sidebar-right-large {
+  .grid.three-cols.sidebars-large {
     --col3: 0px;
   }
 }
@@ -1690,6 +1712,36 @@ tr:hover {
 /* --------------------------------------------------------------------------------
    UTILITIES - BASE
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --util-border:     #EDEDED solid 1px;
+}
+
+/* Theme Dark */
+.theme-dark {
+  --util-border:     #383838 solid 1px;
+}
+
+.border {
+  border: var(--util-border);
+}
+
+.border-top {
+  border-top: var(--util-border);
+}
+
+.border-left {
+  border-left: var(--util-border);
+}
+
+.border-right {
+  border-right: var(--util-border);
+}
+
+.border-bottom {
+  border-bottom: var(--util-border);
+}
+
 .hidden {
   display: none;
   opacity: 0;
@@ -1702,7 +1754,7 @@ tr:hover {
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-.content-center {
+.align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1710,11 +1762,22 @@ tr:hover {
   text-align: center;
 }
 
-.content-right {
+.align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.align-horizontal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.align-right {
   text-align: right;
 }
 
-.content-left {
+.align-left {
   text-align: left;
 }
 
@@ -2087,4 +2150,8 @@ tr:hover {
 
 .shadow-huge {
   box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inset-large {
+  box-shadow: inset 0px -40px 44px 47px rgba(26, 26, 26, 0.75);
 }

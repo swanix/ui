@@ -317,3 +317,31 @@ input[type="reset"],
     display: flex;
     flex-direction: row;
 }
+
+/* OSX Buttons */
+
+.osx-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 16px;
+  padding: 0;
+  line-height: initial;
+  font-size: 6px;
+  color: transparent;
+  margin: 16px 2px;
+}
+
+.osx-button.is-close {
+  background: #FF5D5B;
+  border-color: #FF5D5B;
+}
+
+.osx-button.is-minimize {
+  background: #FFBD4F;
+  border-color: #FFBD4F;
+}
+
+.osx-button.is-maximize {
+  background: #00C857;
+  border-color: #00C857;
+}

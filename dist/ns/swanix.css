@@ -18,8 +18,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -739,6 +739,33 @@ input[type="reset"].is-pill-right,
   flex-direction: row;
 }
 
+/* OSX Buttons */
+.sw-osx-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 16px;
+  padding: 0;
+  line-height: initial;
+  font-size: 6px;
+  color: transparent;
+  margin: 16px 2px;
+}
+
+.sw-osx-button.is-close {
+  background: #FF5D5B;
+  border-color: #FF5D5B;
+}
+
+.sw-osx-button.is-minimize {
+  background: #FFBD4F;
+  border-color: #FFBD4F;
+}
+
+.sw-osx-button.is-maximize {
+  background: #00C857;
+  border-color: #00C857;
+}
+
 /* --------------------------------------------------------------------------------
    CONTROL - RADIO BUTTON
 -------------------------------------------------------------------------------- */
@@ -1410,14 +1437,9 @@ fieldset {
   grid-template-columns: var(--col1) var(--col2) var(--col3);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 940px) {
   .sw-grid.sw-three-cols.sw-sidebars,
-  .sw-grid.sw-three-cols.sidebars-small,
-  .sw-grid.sw-three-cols.sidebars-large,
-  .sw-grid.sw-three-cols.sidebar-left-small,
-  .sw-grid.sw-three-cols.sidebar-left-large,
-  .sw-grid.sw-three-cols.sidebar-right-small,
-  .sw-grid.sw-three-cols.sidebar-right-large {
+  .sw-grid.sw-three-cols.sidebars-large {
     --col3: 0px;
   }
 }
@@ -1690,6 +1712,36 @@ tr:hover {
 /* --------------------------------------------------------------------------------
    UTILITIES - BASE
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --util-border:     #EDEDED solid 1px;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --util-border:     #383838 solid 1px;
+}
+
+.sw-border {
+  border: var(--util-border);
+}
+
+.sw-border-top {
+  border-top: var(--util-border);
+}
+
+.sw-border-left {
+  border-left: var(--util-border);
+}
+
+.sw-border-right {
+  border-right: var(--util-border);
+}
+
+.sw-border-bottom {
+  border-bottom: var(--util-border);
+}
+
 .sw-hidden {
   display: none;
   opacity: 0;
@@ -1702,7 +1754,7 @@ tr:hover {
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-.sw-content-center {
+.sw-align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1710,11 +1762,22 @@ tr:hover {
   text-align: center;
 }
 
-.sw-content-right {
+.sw-align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.sw-align-horizontal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.sw-align-right {
   text-align: right;
 }
 
-.sw-content-left {
+.sw-align-left {
   text-align: left;
 }
 
@@ -2087,4 +2150,8 @@ tr:hover {
 
 .sw-shadow-huge {
   box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inset-large {
+  box-shadow: inset 0px -40px 44px 47px rgba(26, 26, 26, 0.75);
 }

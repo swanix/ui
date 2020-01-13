@@ -6,13 +6,15 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 <iframe class="code-preview" height="250px"></iframe>
 <textarea class="code-editor" name="code">
-<ul class="menu">
+<body class="theme-dark">
+<ul class="menu border">
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
   <li class="active"><a href="#">Item 3</a></li>
   <li><a href="#">Item 4</a></li>
   <li><a href="#">Item 5</a></li>
 </ul>
+</body>
 </textarea>
 
 ### Horizontal
