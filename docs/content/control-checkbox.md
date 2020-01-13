@@ -19,3 +19,23 @@ En este último ejemplo tiene el mismo comportamiento de un interruptor, incluye
 	<label for="checkbox3"><span></span>Checkbox 3</label>
 </div>
 </textarea>
+
+### Dark Mode
+
+<iframe class="code-preview" height="145px"></iframe>
+<textarea class="code-editor" name="code">
+<body class="theme-dark">
+<div>
+	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">
+	<label for="checkbox1"><span></span>Checkbox 1</label>
+</div>
+<div>
+	<input id="checkbox2" type="checkbox" value="2" name="checkbox">
+	<label for="checkbox2"><span></span>Checkbox 2</label>
+</div>
+<div>
+	<input id="checkbox3" type="checkbox" value="3" name="checkbox">
+	<label for="checkbox3"><span></span>Checkbox 3</label>
+</div>
+</body>
+</textarea>

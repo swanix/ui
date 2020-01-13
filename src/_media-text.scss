@@ -3,42 +3,55 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  --text-body-color:       #{$gray7};
+  --text-body-font:        Tahoma, Geneva, sans-serif;
+  --text-heading-color:    inherit;
+  --text-heading-font:     inherit;
+  --text-heading-weight:   normal;
+  --text-link:             #{$brand1};
+  --text-link-hover:       #{$brand1};
+  --text-link-visited:     #{$brand1};
+  --text-selection:        #{$gray9};
+  --text-selection-bg:     #{$gray3};
+  --hr-color:              #{$gray3};
+}
 
-// VARIABLES
-// -----------------------------------------------------------
-
-$text-body-font:            var(--text-body-font, Tahoma, Geneva, sans-serif) !default;
-$text-body-color:           $gray7 !default;
-
-$text-heading-font:         var(--text-heading-font, inherit) !default;
-$text-heading-weight:       var(--text-heading-weight, normal)  !default;
-$text-heading-color:        var(--text-heading-color, $gray8) !default;
-
-$text-link:                 $brand1 !default;
-$text-link-hover:           $brand1 !default;
-$text-link-visited:         $brand1 !default;
-
-$text-selection:            $gray7 !default;
-$text-selection-bg:         $gray3 !default;
-
-// Horizontal rule
-$hr-color:                  $gray3 !default;
-
+/* Theme Dark */
+.theme-dark {
+  --text-body-color:       #{$gray5};
+  --text-body-font:        Tahoma, Geneva, sans-serif;
+  --text-heading-color:    #{$white};
+  --text-heading-font:     inherit;
+  --text-heading-weight:   normal;
+  --text-link:             #{$gray2};
+  --text-link-hover:       #{$white};
+  --text-link-visited:     #{$gray2};
+  --text-selection:        #{$gray3};
+  --text-selection-bg:     #{$gray5};
+  --hr-color:              #{$gray7};
+}
 
 // STYLES
-// ------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 body {
-  font-family: sans-serif;
-  font-family: $text-body-font;
-  color: $text-body-color;
+  font-family: Tahoma, Geneva, sans-serif; // Fallback
+  font-family: var(--text-body-font);
+  color: $gray7; // Fallback
+  color: var(--text-body-color);
+  font-size: $text-medium;
 }
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: $text-heading-font;
-  font-weight: $text-heading-weight;
   margin: 1rem 0 2rem 0;
-  color: $text-heading-color;
+  font-family: inherit; // Fallback
+  font-family: var(--text-heading-font);
+  font-weight: normal; // Fallback
+  font-weight: var(--text-heading-weight);
+  color: inherit; // Fallback
+  color: var(--text-heading-color);
 }
 
 h1 { font-size: 4.5rem; }
@@ -49,78 +62,75 @@ h5 { font-size: 1.4rem; }
 h6 { font-size: 1.3rem; }
 
 p {
-  font-family: $text-body-font;
-  font-size: $text-medium;
-  line-height: $text-baseline;
+  color: inherit;
   margin: 0;
   padding-bottom: 1.5rem;
-  color: $text-body-color;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.8;
 }
 
 a {
   text-decoration: none;
-  color: $text-link;
+  color: $brand1-fallback; // Fallback
+  color: var(--text-link);
   outline: 0;
-  font-size: $text-medium;
 }
 
 a:hover {
   text-decoration: none;
   transition:.2s;
-  color: $text-link-hover;
+  color: $brand1-fallback; // Fallback
+  color: var(--text-link-hover);
 }
 
 a:visited {
-  color: $text-link-visited;
+  color: $brand1-fallback; // Fallback
+  color: var(--text-link-visited);
 }
 
 ul, ol {
+  color: inherit;
 }
 
 li {
-  font-size: $text-medium;
+  font-size: inherit;
   line-height: $text-baseline;
 }
 
 dl, dt, dd {
   font-size: $text-medium;
-  line-height: $text-baseline;
 }
 
 small {
   font-size: 90%;
-  font-family: $text-body-font;
 }
 
 q {
   display: inline-block;
   font-style: italic;
-  font-size: $text-medium;
 }
 
 blockquote {
   font-style: italic;
+  color: inherit;
+  font-size: 150%;
+  line-height: 1.8;
 }
 
 blockquote q {
   display: inline-block;
-  font-style: italic;
-  font-size: $text-xlarge;
-  line-height: 4rem;
 }
 
 blockquote footer {
   margin-top: 1rem;
-  color: $text-body-color;
   text-align: right;
-  font-size: $text-large;
 }
 
 cite {
   display: inline-block;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
-  font-style: italic;
 }
 
 pre, code, samp, kbd {
@@ -128,19 +138,21 @@ pre, code, samp, kbd {
 }
 
 code {
+  font-family: inherit;
 }
 
 pre {
   padding: 1rem 0;
-  font-size: $text-medium;
   line-height: $text-baseline;
 }
 
 hr {
   border: 0;
   height: 1px;
-  color: $hr-color;
-  background-color: $hr-color;
+  color: $gray3; // Fallback
+  color: var(--hr-color);
+  background-color: $gray3; // Fallback
+  background-color: var(--hr-color);
 }
 
 // Form texts
@@ -148,24 +160,23 @@ hr {
 label {
   display: inline-block;
   margin-bottom: 1rem;
-  color: $text-body-color;
-  font-size: $text-medium;
+  color: inherit;
 }
 
 optgroup, option {
-  color: $text-body-color;
-}
-
-input [type="checkbox"] {
-  color: $text-body-color;
+  color: inherit;
 }
 
 ::selection {
-  color: $text-selection;
-  background: $text-selection-bg;
+  color: initial; // Fallback
+  color: var(--text-selection);
+  background: initial; // Fallback
+  background: var(--text-selection-bg);
 }
 
 ::-moz-selection {
-  color: $text-selection;
-  background: $text-selection-bg;
+  color: initial; // Fallback
+  color: var(--text-selection);
+  background: initial; // Fallback
+  background: var(--text-selection-bg);
 }

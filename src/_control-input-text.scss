@@ -3,91 +3,87 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  --input-text-color:         inherit;
+  --input-text-bg:            #{$white};
+  --input-text-border:        #{$gray4} 1px solid;
+  --input-text-bg-focus:      #{$white};
+  --input-text-border-focus:  #{$brand1} 1px solid;
+  --input-text-border-error:  red 1px solid;
+}
 
-// VARIABLES
-// -----------------------------------------------------------
-
-// Input text (text, password, email, textarea)
-$input-text-font:           $text-body-font !default;
-$input-text:                $gray7 !default;
-$input-text-border:         $gray4 solid 1px !default;
-$input-text-bg:             $white !default;
-// Input text focus
-$input-text-focus:          $gray7 !default;
-$input-text-focus-border:   $brand1 solid 1px !default;
-$input-text-focus-bg:       $white !default;
-
+/* Theme Dark */
+.theme-dark {
+  --input-text-color:         #{$gray3};
+  --input-text-bg:            #{$black};
+  --input-text-border:        #{$gray6} 1px solid;
+  --input-text-bg-focus:      #{$black};
+  --input-text-border-focus:  #{$gray4} 1px solid;
+  --input-text-border-error:  red 1px solid;
+}
 
 // STYLES
 // -----------------------------------------------------------
 
-input[type="text"] {
-  width:100%;
-  font-size: $text-medium;
-  font-family: $input-text-font;
-  padding: 1rem 1rem;
-  color: $input-text;
-  border: $input-text-border;
-  background: $input-text-bg;
-  margin-bottom: 1rem;
-  outline: none;
-}
-
-input[type="text"]:disabled {
-  opacity: 0.4;
-}
-
-input[type="password"] {
-  width:100%;
-  font-size: $text-medium;
-  font-family: $input-text-font;
-  padding: 1rem 1rem;
-  letter-spacing:3px;
-  color: $input-text;
-  border: $input-text-border;
-  background: $input-text-bg;
-  margin-bottom: 1rem;
-  outline: none;
-}
-
+input[type="text"],
+input[type="password"],
 input[type="email"] {
   width:100%;
   font-size: $text-medium;
-  font-family: $input-text-font;
   padding: 1rem 1rem;
-  color: $input-text;
-  border: $input-text-border;
-  background: $input-text-bg;
   margin-bottom: 1rem;
   outline: none;
+  color: inherit; // Fallback
+  color: var(--input-text-color);
+  border: $gray4 1px solid; // Fallback
+  border: var(--input-text-border);
+  background: white; // Fallback
+  background: var(--input-text-bg);
 }
 
+input:disabled {
+  opacity: 0.4;
+}
 
 input:focus {
-  color: $input-text-focus;
-  border: $input-text-focus-border;
-  background: $input-text-focus-bg;
+  color: inherit; // Fallback
+  color: var(--input-text-color);
+  border: $gray4 1px solid; // Fallback
+  border: var(--input-text-border-focus);
+  background: white; // Fallback
+  background: var(--input-text-bg-focus);
 }
 
-
-// Textarea
-
+/* Textarea */
 textarea {
   width:100%;
   font-size: $text-medium;
-  font-family: $input-text-font;
   padding: 1rem 1rem;
   height: auto;
   min-height: 8rem;
-  color: $input-text;
-  border: $input-text-border;
-  background: $input-text-bg;
   margin-bottom: 1rem;
   outline: none;
+  color: inherit; // Fallback
+  color: var(--input-text-color);
+  border: $gray4 1px solid; // Fallback
+  border: var(--input-text-border);
+  background: white; // Fallback
+  background: var(--input-text-bg);
 }
 
 textarea:focus {
-  color: $input-text-focus;
-  border: $input-text-focus-border;
-  background: $input-text-focus-bg;
+  color: inherit; // Fallback
+  color: var(--input-text-color);
+  border: $gray4 1px solid; // Fallback
+  border: var(--input-text-border-focus);
+  background: white; // Fallback
+  background: var(--input-text-bg-focus);
+}
+
+input:focus.has-error,
+input.has-error,
+textarea.has-error {
+  border: red 1px solid; // Fallback
+  border: var(--input-text-border-error);
 }

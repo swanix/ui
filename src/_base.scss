@@ -3,12 +3,15 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  --body-bg:   #{$white};
+}
 
-// Variables
-// ----------------------------------------------
-
-$body-bg: $white !default;
-
+/* Theme Dark */
+.theme-dark {
+  --body-bg:   #{$gray9};
+}
 
 // Styles
 // ----------------------------------------------
@@ -26,10 +29,11 @@ html {
 
 body {
   font-size: 10px;
-  background: $body-bg;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none;
+  background: initial; // Fallback
+  background: var(--body-bg);
 }

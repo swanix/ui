@@ -6,9 +6,7 @@ Los campos de inserción de texto se utilizan muy a menudo como cajones de búsq
 
 Este control es el elemento de interacción principal en aplicaciones de chat como WhatsApp y Line donde el usuario envía mensajes a través de campos de inserción de texto, en estos mensajes también se pueden incluir otros gráficos acompañando al texto como emoticonos y símbolos específicos de uso común en las aplicaciones mencionadas.
 
-### Single Line
-
-<iframe class="code-preview" height="200px"></iframe>
+<iframe class="code-preview" height="340px"></iframe>
 <textarea class="code-editor" name="code">
 <!-- Basic Text -->
 <label for="text-input">Basic Text:</label>
@@ -16,49 +14,25 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
 <!-- Password Text -->
 <label for="pass">Password:</label>
 <input type="password" id="pass" name="password" placeholder="••••••••••••">
-</textarea>
-
-### Textarea
-
-<iframe class="code-preview" height="200px"></iframe>
-<textarea class="code-editor" name="code">
-<label for="text_area">Label:</label>
+<!-- Textarea -->
+<label for="text_area">Textarea:</label>
 <textarea id="text_area"></textarea>
 </textarea>
 
 
-### Date input
+### Dark Mode
 
-<iframe class="code-preview" height="80px"></iframe>
+<iframe class="code-preview" height="340px"></iframe>
 <textarea class="code-editor" name="code">
-<label for="date">Date:</label>
-<input type="date" id="date" name="date" min="2018-01-01" max="2018-12-31">
+<body class="theme-dark">
+<!-- Basic Text -->
+<label for="text-input">Basic Text:</label>
+<input type="text" id="text-input" placeholder="Text field">
+<!-- Password Text -->
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" placeholder="••••••••••••">
+<!-- Textarea -->
+<label for="text_area">Textarea:</label>
+<textarea id="text_area"></textarea>
+</body>
 </textarea>
-
-### Color input
-
-<iframe class="code-preview" height="80px"></iframe>
-<textarea class="code-editor" name="code">
-<input type="color" value="#000000">
-</textarea>
-
-
-### Form container
-
-<iframe class="code-preview" height="260px"></iframe>
-<textarea class="code-editor" name="code">
-<fieldset>
-  <legend>Legend</legend>
-  <form>
-    <!-- Basic Text -->
-    <label for="text-input">Label:</label><br>
-    <input type="text" id="text-input" placeholder="Text field"><br><br>
-    <!-- Password Text -->
-    <label for="pass">Label:</label><br>
-    <input type="password" id="pass" name="password" placeholder="••••••••••••"><br>
-  </form>
-</fieldset>
-</textarea>
-
-
-

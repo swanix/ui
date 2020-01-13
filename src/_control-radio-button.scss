@@ -4,60 +4,71 @@
 // Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  // Input Checkbox
+  --input-radio:                 #{$gray6};
+  --input-radio-border:          #{$gray4} solid 2px;
+  --input-radio-border-radius:   50%;
+  --input-radio-bg:              #{$gray2};
+  // Input Checkbox active
+  --input-radio-active:          #{$brand1};
+  --input-radio-active-border:   #{$brand1} solid 2px;
+  --input-radio-active-bg:       #{$white};
+}
 
-// VARIABLES
-// -----------------------------------------------------------
-
-// Input Radio Buttons
-$input-radio:                 $gray6 !default;
-$input-radio-border:          $gray4 solid 2px !default;
-$input-radio-border-radius:   50% !default;
-$input-radio-bg:              $gray2 !default;
-// Input Radio Buttons active
-$input-radio-active:          $brand1 !default;
-$input-radio-active-border:   $brand1 solid 2px !default;
-$input-radio-active-bg:       $white !default;
-
+/* Theme Dark */
+.theme-dark {
+  // Input Checkbox
+  --input-radio:                 #{$gray6};
+  --input-radio-border:          #{$gray6} solid 2px;
+  --input-radio-border-radius:   50%;
+  --input-radio-bg:              #{$gray8};
+  // Input Checkbox active
+  --input-radio-active:          #{$gray2};
+  --input-radio-active-border:   #{$gray5} solid 2px;
+  --input-radio-active-bg:       #{$gray8};
+}
 
 // STYLES
 // -----------------------------------------------------------
 
 input[type=radio]:not(old){
-  width     : 2rem;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1.5rem;
-  opacity   : 0;
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  opacity: 0;
 }
 
 input[type=radio]:not(old) + label{
-  display      : inline-block;
-  margin-left  : -2rem;
-  line-height  : 1.5rem;
+  display: inline-block;
+  margin-left: -2rem;
+  line-height: 1.5rem;
 }
 
 input[type=radio]:not(old) + label > span{
-  display          : inline-block;
-  width            : 2rem;
-  height           : 2rem;
-  margin           : 0.2rem 1rem;
-  background       : $input-radio-bg;
-  border           : $input-radio-border;
-  border-radius    : $input-radio-border-radius;
-  vertical-align   : middle;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem 1rem;
+  background: var(--input-radio-bg);
+  border: var(--input-radio-border);
+  border-radius: var(--input-radio-border-radius);
+  vertical-align: middle;
 
 }
 
 input[type=radio]:not(old):checked + label > span{
-  background :    $input-radio-active-bg;
-  border     :    $input-radio-active-border;
+  background : var(--input-radio-active-bg);
+  border: var(--input-radio-active-border);
 }
 
 input[type=radio]:not(old):checked +  label > span > span{
-  display          : block;
-  width            : 1rem;
-  height           : 1rem;
-  margin           : 0.3rem;
-  border-radius    : $input-radio-border-radius;
-  background       : $input-radio-active;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.3rem;
+  border-radius: var(--input-radio-border-radius);
+  background: var(--input-radio-active);
 }

@@ -11,45 +11,55 @@ De forma similar, los menús desplegables ofrecen un comportamiento parecido a l
 <!-- Small -->
 <label for="select">Small:</label>
 <select name="select" class="is-small">
-	<optgroup label="Option Group 1">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
-	<optgroup label="Option Group 2">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
 </select>
 <hr/>
 <!-- Medium -->
 <label for="select">Medium:</label>
 <select name="select">
-	<optgroup label="Option Group 1">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
-	<optgroup label="Option Group 2">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
 </select>
 <hr/>
 <!-- Large -->
 <label for="select">Large:</label>
 <select name="select" class="is-large">
-	<optgroup label="Option Group 1">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
-	<optgroup label="Option Group 2">
-	  <option value="1">Option 1</option>
-	  <option value="2">Option 2</option>
-	  <option value="3">Option 3</option>
-	</optgroup>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
 </select>
+</textarea>
+
+### Dark Mode
+
+<iframe class="code-preview" height="240px"></iframe>
+<textarea class="code-editor" name="code">
+<body class="theme-dark">
+<!-- Small -->
+<label for="select">Small:</label>
+<select name="select" class="is-small">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+<hr/>
+<!-- Medium -->
+<label for="select">Medium:</label>
+<select name="select">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+<hr/>
+<!-- Large -->
+<label for="select">Large:</label>
+<select name="select" class="is-large">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+</body>
 </textarea>

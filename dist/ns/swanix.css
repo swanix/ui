@@ -7,6 +7,16 @@
 /* --------------------------------------------------------------------------------
    BASE
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --body-bg:   #FFFFFF;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --body-bg:   #1A1A1A;
+}
+
 *,
 *:before,
 *:after {
@@ -20,28 +30,64 @@ html {
 
 body {
   font-size: 10px;
-  background: #FFFFFF;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none;
+  background: initial;
+  background: var(--body-bg);
 }
 
 /* --------------------------------------------------------------------------------
    MEDIA - TEXT
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --text-body-color:       #383838;
+  --text-body-font:        Tahoma, Geneva, sans-serif;
+  --text-heading-color:    inherit;
+  --text-heading-font:     inherit;
+  --text-heading-weight:   normal;
+  --text-link:             var(--brand1, #000000);
+  --text-link-hover:       var(--brand1, #000000);
+  --text-link-visited:     var(--brand1, #000000);
+  --text-selection:        #1A1A1A;
+  --text-selection-bg:     #EDEDED;
+  --hr-color:              #EDEDED;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --text-body-color:       #B3B3B3;
+  --text-body-font:        Tahoma, Geneva, sans-serif;
+  --text-heading-color:    #FFFFFF;
+  --text-heading-font:     inherit;
+  --text-heading-weight:   normal;
+  --text-link:             #F7F7F7;
+  --text-link-hover:       #FFFFFF;
+  --text-link-visited:     #F7F7F7;
+  --text-selection:        #EDEDED;
+  --text-selection-bg:     #B3B3B3;
+  --hr-color:              #383838;
+}
+
 body {
-  font-family: sans-serif;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-family: var(--text-body-font);
   color: #383838;
+  color: var(--text-body-color);
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--text-heading-font, inherit);
-  font-weight: var(--text-heading-weight, normal);
   margin: 1rem 0 2rem 0;
-  color: var(--text-heading-color, #262626);
+  font-family: inherit;
+  font-family: var(--text-heading-font);
+  font-weight: normal;
+  font-weight: var(--text-heading-weight);
+  color: inherit;
+  color: var(--text-heading-color);
 }
 
 h1 {
@@ -69,84 +115,87 @@ h6 {
 }
 
 p {
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
-  font-size: 1.4rem;
-  line-height: 2.5rem;
+  color: inherit;
   margin: 0;
   padding-bottom: 1.5rem;
-  color: #383838;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.8;
 }
 
 a {
   text-decoration: none;
-  color: var(--brand1, #000000);
+  color: #000000;
+  color: var(--text-link);
   outline: 0;
-  font-size: 1.4rem;
 }
 
 a:hover {
   text-decoration: none;
   transition: .2s;
-  color: var(--brand1, #000000);
+  color: #000000;
+  color: var(--text-link-hover);
 }
 
 a:visited {
-  color: var(--brand1, #000000);
+  color: #000000;
+  color: var(--text-link-visited);
+}
+
+ul, ol {
+  color: inherit;
 }
 
 li {
-  font-size: 1.4rem;
+  font-size: inherit;
   line-height: 2.5rem;
 }
 
 dl, dt, dd {
   font-size: 1.4rem;
-  line-height: 2.5rem;
 }
 
 small {
   font-size: 90%;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
 }
 
 q {
   display: inline-block;
   font-style: italic;
-  font-size: 1.4rem;
 }
 
 blockquote {
   font-style: italic;
+  color: inherit;
+  font-size: 150%;
+  line-height: 1.8;
 }
 
 blockquote q {
   display: inline-block;
-  font-style: italic;
-  font-size: 2.4rem;
-  line-height: 4rem;
 }
 
 blockquote footer {
   margin-top: 1rem;
-  color: #383838;
   text-align: right;
-  font-size: 1.9rem;
 }
 
 cite {
   display: inline-block;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
-  font-style: italic;
 }
 
 pre, code, samp, kbd {
   box-shadow: none;
 }
 
+code {
+  font-family: inherit;
+}
+
 pre {
   padding: 1rem 0;
-  font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
@@ -154,32 +203,33 @@ hr {
   border: 0;
   height: 1px;
   color: #EDEDED;
+  color: var(--hr-color);
   background-color: #EDEDED;
+  background-color: var(--hr-color);
 }
 
 label {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #383838;
-  font-size: 1.4rem;
+  color: inherit;
 }
 
 optgroup, option {
-  color: #383838;
-}
-
-input [type="checkbox"] {
-  color: #383838;
+  color: inherit;
 }
 
 ::selection {
-  color: #383838;
-  background: #EDEDED;
+  color: initial;
+  color: var(--text-selection);
+  background: initial;
+  background: var(--text-selection-bg);
 }
 
 ::-moz-selection {
-  color: #383838;
-  background: #EDEDED;
+  color: initial;
+  color: var(--text-selection);
+  background: initial;
+  background: var(--text-selection-bg);
 }
 
 /* --------------------------------------------------------------------------------
@@ -270,6 +320,123 @@ figure {
 /* --------------------------------------------------------------------------------
    CONTROL - BUTTON
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  /* General
+  ------------------ */
+  --btn-font:                   inherit;
+  --btn-font-weight:            600;
+  --btn-border-radius:          0;
+  /* Small */
+  --btn-text-small:             12px;
+  --btn-height-small:           24px;
+  --btn-padding-small:          0 15px;
+  /* Medium */
+  --btn-text-medium:            14px;
+  --btn-height-medium:          38px;
+  --btn-padding-medium:         0 15px;
+  /* Large */
+  --btn-text-large:             16px;
+  --btn-height-large:           48px;
+  --btn-padding-large:          0 15px;
+  /* Types
+  ------------------ */
+  /* Btn Default */
+  --btn-text:                   #383838;
+  --btn-border:                 #CCCCCC solid 1px;
+  --btn-bg:                     #FAFAFA;
+  --btn-basic-icon:             inherit;
+  --btn-hover-text:             #262626;
+  --btn-hover-border:           #808080 solid 1px;
+  --btn-hover-bg:               white;
+  --btn-basic-icon-hover:       inherit;
+  /* Btn Primary */
+  --btn-primary-text:           white;
+  --btn-primary-border:         var(--brand1, #000000) solid 1px;
+  --btn-primary-bg:             var(--brand1, #000000);
+  --btn-primary-icon:           inherit;
+  --btn-primary-hover-text:     white;
+  --btn-primary-hover-border:   var(--brand1, #000000) solid 1px;
+  --btn-primary-hover-bg:       var(--brand1, #000000);
+  --btn-primary-icon-hover:     inherit;
+  /* Btn Secondary */
+  --btn-secondary-text:          white;
+  --btn-secondary-border:        var(--brand2, #808080) solid 1px;
+  --btn-secondary-bg:            var(--brand2, #808080);
+  --btn-secondary-icon:          inherit;
+  --btn-secondary-hover-text:    white;
+  --btn-secondary-hover-border:  var(--brand2, #808080) solid 1px;
+  --btn-secondary-hover-bg:      var(--brand2, #808080);
+  --btn-secondary-icon-hover:    inherit;
+  /* Btn Outline */
+  --btn-outline-text:            var(--brand1, #000000);
+  --btn-outline-border:          var(--brand1, #000000) solid 1px;
+  --btn-outline-bg:              transparent;
+  --btn-outline-icon:            inherit;
+  --btn-outline-hover-text:     white;
+  --btn-outline-hover-border:    var(--brand1, #000000) solid 1px;
+  --btn-outline-hover-bg:        var(--brand1, #000000);
+  --btn-outline-icon-hover:      inherit;
+  /* Btn Ghost */
+  --btn-ghost-text:              #383838;
+  --btn-ghost-border:            transparent solid 0;
+  --btn-ghost-bg:                transparent;
+  --btn-ghost-icon:              inherit;
+  --btn-ghost-hover-text:        #262626;
+  --btn-ghost-hover-border:      transparent solid 0;
+  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-icon-hover:        inherit;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  /* Btn Default */
+  --btn-text:                   #F7F7F7;
+  --btn-border:                 #383838 solid 1px;
+  --btn-bg:                     #262626;
+  --btn-basic-icon:             inherit;
+  --btn-hover-text:             #FFFFFF;
+  --btn-hover-border:           hsl(0, 0%, 30%) solid 1px;
+  --btn-hover-bg:               hsl(0, 0%, 20%);
+  --btn-basic-icon-hover:       inherit;
+  /* Btn Primary */
+  --btn-primary-text:           #262626;
+  --btn-primary-border:         #EDEDED solid 1px;
+  --btn-primary-bg:             #EDEDED;
+  --btn-primary-icon:           inherit;
+  --btn-primary-hover-text:     #000000;
+  --btn-primary-hover-border:   #FFFFFF solid 1px;
+  --btn-primary-hover-bg:       #FFFFFF;
+  --btn-primary-icon-hover:     inherit;
+  /* Btn Secondary */
+  --btn-secondary-text:          white;
+  --btn-secondary-border:        #383838 solid 1px;
+  --btn-secondary-bg:            #383838;
+  --btn-secondary-icon:          inherit;
+  --btn-secondary-hover-text:    white;
+  --btn-secondary-hover-border:  #808080 solid 1px;
+  --btn-secondary-hover-bg:      #808080;
+  --btn-secondary-icon-hover:    inherit;
+  /* Btn Outline */
+  --btn-outline-text:            #FFFFFF;
+  --btn-outline-border:          #808080 solid 1px;
+  --btn-outline-bg:              transparent;
+  --btn-outline-icon:            inherit;
+  --btn-outline-hover-text:      #000000;
+  --btn-outline-hover-border:    #FFFFFF solid 1px;
+  --btn-outline-hover-bg:        #FFFFFF;
+  --btn-outline-icon-hover:      inherit;
+  /* Btn Ghost */
+  --btn-ghost-text:              #B3B3B3;
+  --btn-ghost-border:            transparent solid 0;
+  --btn-ghost-bg:                transparent;
+  --btn-ghost-icon:              inherit;
+  --btn-ghost-hover-text:        #FFFFFF;
+  --btn-ghost-hover-border:      transparent solid 0;
+  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-icon-hover:        inherit;
+}
+
 button,
 input[type="button"],
 input[type="submit"],
@@ -282,16 +449,25 @@ input[type="reset"],
   transition: .2s;
   cursor: pointer;
   outline: 0;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
-  font-weight: 600;
-  font-size: 14px;
-  height: 38px;
-  line-height: 38px;
-  padding: 0 15px;
-  color: #383838;
-  border: #CCCCCC solid 1px;
-  background: #FAFAFA;
-  border-radius: 0;
+  font-family: inherit;
+  font-weight: var(--btn-font-weight);
+  font-size: var(--btn-text-medium);
+  height: var(--btn-height-medium);
+  line-height: var(--btn-height-medium);
+  padding: var(--btn-padding-medium);
+  color: var(--btn-text);
+  border: var(--btn-border);
+  background: var(--btn-bg);
+  border-radius: var(--btn-border-radius);
+}
+
+button .sw-icon,
+input[type="button"] .sw-icon,
+input[type="submit"] .sw-icon,
+input[type="reset"] .sw-icon,
+.sw-button .sw-icon {
+  color: var(--btn-basic-icon);
+  fill: currentColor;
 }
 
 button:hover,
@@ -299,9 +475,18 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 .sw-button:hover {
-  color: #262626;
-  border: #808080 solid 1px;
-  background: white;
+  color: var(--btn-hover-text);
+  border: var(--btn-hover-border);
+  background: var(--btn-hover-bg);
+}
+
+button:hover .sw-icon,
+input[type="button"]:hover .sw-icon,
+input[type="submit"]:hover .sw-icon,
+input[type="reset"]:hover .sw-icon,
+.sw-button:hover .sw-icon {
+  color: var(--btn-basic-icon-hover);
+  fill: currentColor;
 }
 
 button.is-primary,
@@ -309,9 +494,18 @@ input[type="button"].is-primary,
 input[type="submit"].is-primary,
 input[type="reset"].is-primary,
 .sw-button.is-primary {
-  color: white;
-  border: var(--brand1, #000000) solid 1px;
-  background: var(--brand1, #000000);
+  color: var(--btn-primary-text);
+  border: var(--btn-primary-border);
+  background: var(--btn-primary-bg);
+}
+
+button.is-primary .sw-icon,
+input[type="button"].is-primary .sw-icon,
+input[type="submit"].is-primary .sw-icon,
+input[type="reset"].is-primary .sw-icon,
+.sw-button.is-primary .sw-icon {
+  color: var(--btn-primary-icon);
+  fill: currentColor;
 }
 
 button.is-primary:hover,
@@ -319,9 +513,18 @@ input[type="button"].is-primary:hover,
 input[type="submit"].is-primary:hover,
 input[type="reset"].is-primary:hover,
 .sw-button.is-primary:hover {
-  color: white;
-  border: var(--brand1, #000000) solid 1px;
-  background: var(--brand1, #000000);
+  color: var(--btn-primary-hover-text);
+  border: var(--btn-primary-hover-border);
+  background: var(--btn-primary-hover-bg);
+}
+
+button.is-primary:hover .sw-icon,
+input[type="button"].is-primary:hover .sw-icon,
+input[type="submit"].is-primary:hover .sw-icon,
+input[type="reset"].is-primary:hover .sw-icon,
+.sw-button.is-primary:hover .sw-icon {
+  color: var(--btn-primary-icon-hover);
+  fill: currentColor;
 }
 
 button.is-secondary,
@@ -329,9 +532,18 @@ input[type="button"].is-secondary,
 input[type="submit"].is-secondary,
 input[type="reset"].is-secondary,
 .sw-button.is-secondary {
-  color: white;
-  border: var(--brand2, #808080) solid 1px;
-  background: var(--brand2, #808080);
+  color: var(--btn-secondary-text);
+  border: var(--btn-secondary-border);
+  background: var(--btn-secondary-bg);
+}
+
+button.is-secondary .sw-icon,
+input[type="button"].is-secondary .sw-icon,
+input[type="submit"].is-secondary .sw-icon,
+input[type="reset"].is-secondary .sw-icon,
+.sw-button.is-secondary .sw-icon {
+  color: var(--btn-secondary-icon);
+  fill: currentColor;
 }
 
 button.is-secondary:hover,
@@ -339,9 +551,18 @@ input[type="button"].is-secondary:hover,
 input[type="submit"].is-secondary:hover,
 input[type="reset"].is-secondary:hover,
 .sw-button.is-secondary:hover {
-  color: white;
-  border: var(--brand2, #808080) solid 1px;
-  background: var(--brand2, #808080);
+  color: var(--btn-secondary-hover-text);
+  border: var(--btn-secondary-hover-border);
+  background: var(--btn-secondary-hover-bg);
+}
+
+button.is-secondary:hover .sw-icon,
+input[type="button"].is-secondary:hover .sw-icon,
+input[type="submit"].is-secondary:hover .sw-icon,
+input[type="reset"].is-secondary:hover .sw-icon,
+.sw-button.is-secondary:hover .sw-icon {
+  color: var(--btn-secondary-icon-hover);
+  fill: currentColor;
 }
 
 button.is-outline,
@@ -349,9 +570,18 @@ input[type="button"].is-outline,
 input[type="submit"].is-outline,
 input[type="reset"].is-outline,
 .sw-button.is-outline {
-  color: var(--brand1, #000000);
-  border: var(--brand1, #000000) solid 1px;
-  background: transparent;
+  color: var(--btn-outline-text);
+  border: var(--btn-outline-border);
+  background: var(--btn-outline-bg);
+}
+
+button.is-outline .sw-icon,
+input[type="button"].is-outline .sw-icon,
+input[type="submit"].is-outline .sw-icon,
+input[type="reset"].is-outline .sw-icon,
+.sw-button.is-outline .sw-icon {
+  color: var(--btn-outline-icon);
+  fill: currentColor;
 }
 
 button.is-outline:hover,
@@ -359,9 +589,18 @@ input[type="button"].is-outline:hover,
 input[type="submit"].is-outline:hover,
 input[type="reset"].is-outline:hover,
 .sw-button.is-outline:hover {
-  color: white;
-  border: var(--brand1, #000000) solid 1px;
-  background: var(--brand1, #000000);
+  color: var(--btn-outline-hover-text);
+  border: var(--btn-outline-hover-border);
+  background: var(--btn-outline-hover-bg);
+}
+
+button.is-outline:hover .sw-icon,
+input[type="button"].is-outline:hover .sw-icon,
+input[type="submit"].is-outline:hover .sw-icon,
+input[type="reset"].is-outline:hover .sw-icon,
+.sw-button.is-outline:hover .sw-icon {
+  color: var(--btn-outline-icon-hover);
+  fill: currentColor;
 }
 
 button.is-ghost,
@@ -369,9 +608,18 @@ input[type="button"].is-ghost,
 input[type="submit"].is-ghost,
 input[type="reset"].is-ghost,
 .sw-button.is-ghost {
-  color: #383838;
-  border: transparent solid 0;
-  background: transparent;
+  color: var(--btn-ghost-text);
+  border: var(--btn-ghost-border);
+  background: var(--btn-ghost-bg);
+}
+
+button.is-ghost .sw-icon,
+input[type="button"].is-ghost .sw-icon,
+input[type="submit"].is-ghost .sw-icon,
+input[type="reset"].is-ghost .sw-icon,
+.sw-button.is-ghost .sw-icon {
+  color: var(--btn-ghost-icon);
+  fill: currentColor;
 }
 
 button.is-ghost:hover,
@@ -379,9 +627,18 @@ input[type="button"].is-ghost:hover,
 input[type="submit"].is-ghost:hover,
 input[type="reset"].is-ghost:hover,
 .sw-button.is-ghost:hover {
-  color: #262626;
-  border: transparent solid 0;
-  background: transparent;
+  color: var(--btn-ghost-hover-text);
+  border: var(--btn-ghost-hover-border);
+  background: var(--btn-ghost-hover-bg);
+}
+
+button.is-ghost:hover .sw-icon,
+input[type="button"].is-ghost:hover .sw-icon,
+input[type="submit"].is-ghost:hover .sw-icon,
+input[type="reset"].is-ghost:hover .sw-icon,
+.sw-button.is-ghost:hover .sw-icon {
+  color: var(--btn-ghost-icon-hover);
+  fill: currentColor;
 }
 
 button.is-small,
@@ -389,10 +646,10 @@ input[type="button"].is-small,
 input[type="submit"].is-small,
 input[type="reset"].is-small,
 .sw-button.is-small {
-  font-size: 12px;
-  height: 24px;
-  line-height: 24px;
-  padding: 0 15px;
+  font-size: var(--btn-text-small);
+  height: var(--btn-height-small);
+  line-height: var(--btn-height-small);
+  padding: var(--btn-padding-small);
 }
 
 button.is-medium,
@@ -400,10 +657,10 @@ input[type="button"].is-medium,
 input[type="submit"].is-medium,
 input[type="reset"].is-medium,
 .sw-button.is-medium {
-  font-size: 14px;
-  height: 38px;
-  line-height: 38px;
-  padding: 0 15px;
+  font-size: var(--btn-text-medium);
+  height: var(--btn-height-medium);
+  line-height: var(--btn-height-medium);
+  padding: var(--btn-padding-medium);
 }
 
 button.is-large,
@@ -411,10 +668,10 @@ input[type="button"].is-large,
 input[type="submit"].is-large,
 input[type="reset"].is-large,
 .sw-button.is-large {
-  font-size: 16px;
-  height: 48px;
-  line-height: 48px;
-  padding: 0 15px;
+  font-size: var(--btn-text-large);
+  height: var(--btn-height-large);
+  line-height: var(--btn-height-large);
+  padding: var(--btn-padding-large);
 }
 
 button.is-square,
@@ -485,6 +742,28 @@ input[type="reset"].is-pill-right,
 /* --------------------------------------------------------------------------------
    CONTROL - RADIO BUTTON
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --input-radio:                 #808080;
+  --input-radio-border:          #CCCCCC solid 2px;
+  --input-radio-border-radius:   50%;
+  --input-radio-bg:              #F7F7F7;
+  --input-radio-active:          var(--brand1, #000000);
+  --input-radio-active-border:   var(--brand1, #000000) solid 2px;
+  --input-radio-active-bg:       #FFFFFF;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --input-radio:                 #808080;
+  --input-radio-border:          #808080 solid 2px;
+  --input-radio-border-radius:   50%;
+  --input-radio-bg:              #262626;
+  --input-radio-active:          #F7F7F7;
+  --input-radio-active-border:   #B3B3B3 solid 2px;
+  --input-radio-active-bg:       #262626;
+}
+
 input[type=radio]:not(old) {
   width: 2rem;
   margin: 0;
@@ -504,15 +783,15 @@ input[type=radio]:not(old) + label > span {
   width: 2rem;
   height: 2rem;
   margin: 0.2rem 1rem;
-  background: #F7F7F7;
-  border: #CCCCCC solid 2px;
-  border-radius: 50%;
+  background: var(--input-radio-bg);
+  border: var(--input-radio-border);
+  border-radius: var(--input-radio-border-radius);
   vertical-align: middle;
 }
 
 input[type=radio]:not(old):checked + label > span {
-  background: #FFFFFF;
-  border: var(--brand1, #000000) solid 2px;
+  background: var(--input-radio-active-bg);
+  border: var(--input-radio-active-border);
 }
 
 input[type=radio]:not(old):checked + label > span > span {
@@ -520,13 +799,35 @@ input[type=radio]:not(old):checked + label > span > span {
   width: 1rem;
   height: 1rem;
   margin: 0.3rem;
-  border-radius: 50%;
-  background: var(--brand1, #000000);
+  border-radius: var(--input-radio-border-radius);
+  background: var(--input-radio-active);
 }
 
 /* --------------------------------------------------------------------------------
    CONTROL -CHECKBOX
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --input-check:                 #808080;
+  --input-check-border:          #CCCCCC solid 2px;
+  --input-check-border-radius:   0;
+  --input-check-bg:              #F7F7F7;
+  --input-check-active:          var(--brand1, #000000);
+  --input-check-active-border:   var(--brand1, #000000) solid 2px;
+  --input-check-active-bg:       #FFFFFF;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --input-check:                 #808080;
+  --input-check-border:          #808080 solid 2px;
+  --input-check-border-radius:   0;
+  --input-check-bg:              #262626;
+  --input-check-active:          #F7F7F7;
+  --input-check-active-border:   #B3B3B3 solid 2px;
+  --input-check-active-bg:       #262626;
+}
+
 input[type=checkbox]:not(old) {
   width: 2rem;
   margin: 0;
@@ -546,22 +847,22 @@ input[type=checkbox]:not(old) + label > span {
   width: 2rem;
   height: 2rem;
   margin: 0.2rem 1rem;
-  border: #CCCCCC solid 2px;
-  border-radius: 0;
-  background: #F7F7F7;
+  border: var(--input-check-border);
+  border-radius: var(--input-check-border-radius);
+  background: var(--input-check-bg);
   vertical-align: middle;
 }
 
 input[type=checkbox]:not(old):checked + label > span {
-  background: #FFFFFF;
-  border: var(--brand1, #000000) solid 2px;
+  background: var(--input-check-active-bg);
+  border: var(--input-check-active-border);
 }
 
 input[type=checkbox]:not(old):checked + label > span:before {
   content: '✓';
   display: block;
   width: 1.5rem;
-  color: var(--brand1, #000000);
+  color: var(--input-check-active);
   font-size: 1.5rem;
   line-height: 1em;
   text-align: center;
@@ -571,18 +872,43 @@ input[type=checkbox]:not(old):checked + label > span:before {
 /* --------------------------------------------------------------------------------
    CONTROL - DROPDOWN (SELECT)
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --dropdown-text-color:    inherit;
+  --dropdown-bg:            #FFFFFF;
+  --dropdown-arrow:         #B3B3B3;
+  --dropdown-border:        #CCCCCC 1px solid;
+  --dropdown-border-focus:  var(--brand1, #000000) 1px solid;
+  --dropdown-border-error:  red 1px solid;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --dropdown-text-color:    #EDEDED;
+  --dropdown-bg:            #000000;
+  --dropdown-arrow:         #CCCCCC;
+  --dropdown-border:        #808080 1px solid;
+  --dropdown-border-focus:  #CCCCCC 1px solid;
+  --dropdown-border-error:  red 1px solid;
+}
+
 select {
   min-width: 100px;
   margin: 5px auto;
   padding: 9px 8px;
-  border: #CCCCCC solid 1px;
+  color: inherit;
+  color: var(--dropdown-text-color);
+  border: solid 1px #CCCCCC;
+  border: var(--dropdown-border);
   border-radius: 5px;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
-  color: #262626;
+  font-size: 14px;
+  font-family: inherit;
   line-height: 21px;
   transition: all 0.2s;
   background: #FFFFFF;
+  background: var(--dropdown-bg);
   background-image: linear-gradient(45deg, transparent 50%, #B3B3B3 0), linear-gradient(135deg, #B3B3B3 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, var(--dropdown-arrow) 0), linear-gradient(135deg, var(--dropdown-arrow) 50%, transparent 0);
   background-position: calc(100% - 20px) calc(15px + 2px), calc(100% - 15px) calc(15px + 2px);
   background-size: 5px 5px, 5px 5px, 1px 15px;
   background-repeat: no-repeat;
@@ -592,11 +918,13 @@ select {
 
 select:focus {
   outline: none;
-  border: 1px solid var(--brand1, #000000);
+  border: 1px solid #000000;
+  border: var(--dropdown-border-focus);
 }
 
 select.sw-has-error {
   border: 1px solid red;
+  border: var(--dropdown-border-error);
 }
 
 select.is-small {
@@ -667,71 +995,86 @@ select::-ms-input-placeholder {
 /* --------------------------------------------------------------------------------
    CONTROL - INPUT TEXT
 -------------------------------------------------------------------------------- */
-input[type="text"] {
-  width: 100%;
-  font-size: 1.4rem;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
-  padding: 1rem 1rem;
-  color: #383838;
-  border: #CCCCCC solid 1px;
-  background: #FFFFFF;
-  margin-bottom: 1rem;
-  outline: none;
+/* Theme Default (Light) */
+:root {
+  --input-text-color:         inherit;
+  --input-text-bg:            #FFFFFF;
+  --input-text-border:        #CCCCCC 1px solid;
+  --input-text-bg-focus:      #FFFFFF;
+  --input-text-border-focus:  var(--brand1, #000000) 1px solid;
+  --input-text-border-error:  red 1px solid;
 }
 
-input[type="text"]:disabled {
-  opacity: 0.4;
+/* Theme Dark */
+.sw-theme-dark {
+  --input-text-color:         #EDEDED;
+  --input-text-bg:            #000000;
+  --input-text-border:        #808080 1px solid;
+  --input-text-bg-focus:      #000000;
+  --input-text-border-focus:  #CCCCCC 1px solid;
+  --input-text-border-error:  red 1px solid;
 }
 
-input[type="password"] {
-  width: 100%;
-  font-size: 1.4rem;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
-  padding: 1rem 1rem;
-  letter-spacing: 3px;
-  color: #383838;
-  border: #CCCCCC solid 1px;
-  background: #FFFFFF;
-  margin-bottom: 1rem;
-  outline: none;
-}
-
+input[type="text"],
+input[type="password"],
 input[type="email"] {
   width: 100%;
   font-size: 1.4rem;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
-  color: #383838;
-  border: #CCCCCC solid 1px;
-  background: #FFFFFF;
   margin-bottom: 1rem;
   outline: none;
+  color: inherit;
+  color: var(--input-text-color);
+  border: #CCCCCC 1px solid;
+  border: var(--input-text-border);
+  background: white;
+  background: var(--input-text-bg);
+}
+
+input:disabled {
+  opacity: 0.4;
 }
 
 input:focus {
-  color: #383838;
-  border: var(--brand1, #000000) solid 1px;
-  background: #FFFFFF;
+  color: inherit;
+  color: var(--input-text-color);
+  border: #CCCCCC 1px solid;
+  border: var(--input-text-border-focus);
+  background: white;
+  background: var(--input-text-bg-focus);
 }
 
+/* Textarea */
 textarea {
   width: 100%;
   font-size: 1.4rem;
-  font-family: var(--text-body-font, Tahoma, Geneva, sans-serif);
   padding: 1rem 1rem;
   height: auto;
   min-height: 8rem;
-  color: #383838;
-  border: #CCCCCC solid 1px;
-  background: #FFFFFF;
   margin-bottom: 1rem;
   outline: none;
+  color: inherit;
+  color: var(--input-text-color);
+  border: #CCCCCC 1px solid;
+  border: var(--input-text-border);
+  background: white;
+  background: var(--input-text-bg);
 }
 
 textarea:focus {
-  color: #383838;
-  border: var(--brand1, #000000) solid 1px;
-  background: #FFFFFF;
+  color: inherit;
+  color: var(--input-text-color);
+  border: #CCCCCC 1px solid;
+  border: var(--input-text-border-focus);
+  background: white;
+  background: var(--input-text-bg-focus);
+}
+
+input:focus.sw-has-error,
+input.sw-has-error,
+textarea.sw-has-error {
+  border: red 1px solid;
+  border: var(--input-text-border-error);
 }
 
 /* --------------------------------------------------------------------------------
@@ -1123,8 +1466,34 @@ fieldset {
 /* --------------------------------------------------------------------------------
    PATTERN - MENU
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --menu-bg:                  transparent;
+  --menu-item-text:           inherit;
+  --menu-item-bg:             transparent;
+  --menu-item-text-hover:     #1A1A1A;
+  --menu-item-bg-hover:       #F7F7F7;
+  --menu-item-text-active:    inherit;
+  --menu-item-bg-active:      #EDEDED;
+  --menu-item-border-active:  var(--brand1, #000000) 3px solid;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --menu-bg:                  #000000;
+  --menu-item-text:           #B3B3B3;
+  --menu-item-bg:             transparent;
+  --menu-item-text-hover:     #FFFFFF;
+  --menu-item-bg-hover:       #1A1A1A;
+  --menu-item-text-active:    #FFFFFF;
+  --menu-item-bg-active:      #383838;
+  --menu-item-border-active:  #FFFFFF 3px solid;
+}
+
 .sw-menu {
-  background: var(--menu-bg, transparent);
+  color: inherit;
+  color: var(--menu-item-text);
+  background: var(--menu-bg);
 }
 
 ul.sw-menu,
@@ -1144,8 +1513,6 @@ ul.sw-menu li a,
   flex-direction: row;
   align-items: center;
   font-weight: 400;
-  color: #383838;
-  color: var(--menu-item-text, #383838);
 }
 
 ul.sw-menu a,
@@ -1153,34 +1520,33 @@ ul.sw-menu a,
   transition: none;
   width: 100%;
   padding-left: 24px;
-  color: #383838;
-  color: var(--menu-item-text, #383838);
+  color: inherit;
   background: transparent;
-  background: var(--menu-item-bg, transparent);
+  background: var(--menu-item-bg);
 }
 
 ul.sw-menu a:hover,
 .sw-menu ul a:hover {
   color: #1A1A1A;
-  color: var(--menu-item-text-hover, #1A1A1A);
+  color: var(--menu-item-text-hover);
   background: #F7F7F7;
-  background: var(--menu-item-bg-hover, #F7F7F7);
+  background: var(--menu-item-bg-hover);
 }
 
 ul.sw-menu li.sw-active,
 .sw-menu ul li.sw-active {
   position: relative;
-  /* For active border left absolute */
+  /* Used in border active absolute */
 }
 
 ul.sw-menu li.sw-active,
 .sw-menu ul li.sw-active,
 ul.sw-menu li.sw-active a,
 .sw-menu ul li.sw-active a {
-  color: #1A1A1A;
-  color: var(--menu-item-text-active, #1A1A1A) !important;
+  color: inherit;
+  color: var(--menu-item-text-active);
   background: #EDEDED;
-  background: var(--menu-item-bg-active, #EDEDED);
+  background: var(--menu-item-bg-active);
 }
 
 ul.sw-menu li.sw-active a:hover,
@@ -1196,7 +1562,7 @@ ul.sw-menu li.sw-active:before,
   height: 38px;
   top: 0;
   border-left: 3px solid #000000;
-  border-left: var(--menu-item-border-active, 3px solid var(--brand1, #000000));
+  border-left: var(--menu-item-border-active);
 }
 
 ul.sw-menu a span,
@@ -1245,33 +1611,41 @@ ul.sw-menu.is-horizontal li.sw-active:before,
   border-bottom: var(--menu-item-border-active, 3px solid var(--brand1, #000000));
 }
 
-/* Themes */
-.sw-menu.sw-theme-dark {
-  --menu-bg: black;
-  /* Default */
-  --menu-item-text:#B3B3B3;
-  --menu-item-bg: transparent;
-  /* Hover */
-  --menu-item-text-hover: #FFFFFF;
-  --menu-item-bg-hover: #262626;
-  /* Active */
-  --menu-item-text-active: #FFFFFF;
-  --menu-item-bg-active: #383838;
-  --menu-item-border-active: 3px solid #FFFFFF;
-}
-
 /* --------------------------------------------------------------------------------
    PATTERN - TABLE
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --table-text:         inherit;
+  --table-bg:           transparent;
+  --table-th-bg:        transparent;
+  --table-th-border:    #EDEDED 1px solid;
+  --table-td-bg:        transparent;
+  --table-td-border:    #EDEDED 1px solid;
+  --table-tr-bg-hover:  #FAFAFA;
+}
+
+/* Theme Dark */
+.sw-theme-dark {
+  --table-text:         #EDEDED;
+  --table-bg:           #1A1A1A;
+  --table-th-bg:        transparent;
+  --table-th-border:    #262626 1px solid;
+  --table-td-bg:        transparent;
+  --table-td-border:    #262626  1px solid;
+  --table-tr-bg-hover:  #262626;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
   margin: 1rem auto 1rem auto;
   text-align: left;
-  font-size: 1.4rem;
-  color: var(--table-text, inherit);
+  font-size: inherit;
+  color: inherit;
+  color: var(--table-text);
   background: transparent;
-  background: var(--table-bg, transparent);
+  background: var(--table-bg);
 }
 
 thead {
@@ -1295,33 +1669,22 @@ th {
   text-align: left;
   padding: 1rem 0.8rem;
   border-bottom: 1px solid #EDEDED;
-  border-bottom: var(--table-th-border, 1px solid #EDEDED);
+  border-bottom: var(--table-th-border);
   background: transparent;
-  background: var(--table-th-bg, transparent);
+  background: var(--table-th-bg);
 }
 
 td {
   padding: 1rem 0.8rem;
   border-bottom: 1px solid #EDEDED;
-  border-bottom: var(--table-td-border, 1px solid #EDEDED);
+  border-bottom: var(--table-td-border);
   background: transparent;
-  background: var(--table-td-bg, transparent);
+  background: var(--table-td-bg);
 }
 
 tr:hover {
   background: #FAFAFA;
-  background: var(--table-tr-bg-hover, #FAFAFA);
-}
-
-/* Table Themes */
-table.sw-theme-dark {
-  --table-text: #EDEDED;
-  --table-bg: #1A1A1A;
-  --table-th-bg: transparent;
-  --table-th-border: 1px solid #262626;
-  --table-td-bg: transparent;
-  --table-td-border: 1px solid #262626;
-  --table-tr-bg-hover: #262626;
+  background: var(--table-tr-bg-hover);
 }
 
 /* --------------------------------------------------------------------------------

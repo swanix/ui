@@ -23,6 +23,7 @@
 * [Patterns](/patterns)
   * [Menu](/pattern-menu)
   * [Table](/pattern-table)
+  * [Form](/pattern-form)
   * [Dialog](/pattern-dialog)
   * [Card](/pattern-card)
   * [Accordion](/pattern-accordion)

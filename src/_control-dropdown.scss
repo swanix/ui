@@ -3,15 +3,25 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  --dropdown-text-color:    inherit;
+  --dropdown-bg:            #{$white};
+  --dropdown-arrow:         #{$gray5};
+  --dropdown-border:        #{$gray4} 1px solid;
+  --dropdown-border-focus:  #{$brand1} 1px solid;
+  --dropdown-border-error:  red 1px solid;
+}
 
-// VARIABLES
-// -----------------------------------------------------------
-
-$dropdown-text-font:    $text-body-font !default;
-$dropdown-text-color:   $gray8 !default;
-$dropdown-border:       $gray4 solid 1px !default;
-$dropdown-bg:           $white !default;
-
+/* Theme Dark */
+.theme-dark {
+  --dropdown-text-color:    #{$gray3};
+  --dropdown-bg:            #{$black};
+  --dropdown-arrow:         #{$gray4};
+  --dropdown-border:        #{$gray6} 1px solid;
+  --dropdown-border-focus:  #{$gray4} 1px solid;
+  --dropdown-border-error:  red 1px solid;
+}
 
 // STYLES
 // -----------------------------------------------------------
@@ -20,15 +30,21 @@ select {
   min-width: 100px;
   margin: 5px auto;
   padding: 9px 8px;
-  border: $dropdown-border;
+  color: inherit; // Fallback
+  color: var(--dropdown-text-color);
+  border: solid 1px $gray4; // Fallback
+  border: var(--dropdown-border);
   border-radius: 5px;
-  font-family: $dropdown-text-font;
-  color: $dropdown-text-color;
+  font-size: 14px;
+  font-family: inherit;
   line-height: 21px;
   transition: all 0.2s;
-  background: $dropdown-bg;
+  background: $white; // Fallback
+  background: var(--dropdown-bg);
   background-image: linear-gradient(45deg, transparent 50%, $gray5 0), 
-                    linear-gradient(135deg, $gray5 50%, transparent 0);
+                    linear-gradient(135deg, $gray5 50%, transparent 0); // Fallback
+  background-image: linear-gradient(45deg, transparent 50%, var(--dropdown-arrow) 0), 
+                    linear-gradient(135deg, var(--dropdown-arrow) 50%, transparent 0);
   background-position: calc(100% - 20px) calc(15px + 2px), 
                         calc(100% - 15px) calc(15px + 2px);
   background-size: 5px 5px, 5px 5px, 1px 15px;
@@ -38,10 +54,12 @@ select {
   // States
   &:focus {
     outline: none;
-    border: 1px solid $brand1;
+    border: 1px solid $brand1-fallback; // Fallback
+    border: var(--dropdown-border-focus);
   }
   &.has-error {
-    border: 1px solid red;
+    border: 1px solid red; // Fallback
+    border: var(--dropdown-border-error);
   }
   // Sizes
   &.is-small {

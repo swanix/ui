@@ -3,15 +3,40 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  --table-text:         inherit;
+  --table-bg:           transparent;
+  --table-th-bg:        transparent;
+  --table-th-border:    #{$gray3} 1px solid;
+  --table-td-bg:        transparent;
+  --table-td-border:    #{$gray3} 1px solid;
+  --table-tr-bg-hover:  #{$gray1};
+}
+
+/* Theme Dark */
+.theme-dark {
+  --table-text:         #{$gray3};
+  --table-bg:           #{$gray9};
+  --table-th-bg:        transparent;
+  --table-th-border:    #{$gray8} 1px solid;
+  --table-td-bg:        transparent;
+  --table-td-border:    #{$gray8}  1px solid;
+  --table-tr-bg-hover:  #{$gray8};
+}
+
+// STYLES --------------------------------------------------------------------------
+
 table {
     border-collapse:collapse;
     width:100%;
     margin: 1rem auto 1rem auto;
     text-align: left;
-    font-size: $text-medium;
-    color: var(--table-text, inherit);
+    font-size: inherit;
+    color: inherit; // Fallback
+    color: var(--table-text);
     background: transparent; // Fallback
-    background: var(--table-bg, transparent);
+    background: var(--table-bg);
   }
   
   thead {
@@ -35,32 +60,20 @@ table {
     text-align: left;
     padding: 1rem 0.8rem;
     border-bottom: 1px solid $gray3; //Fallback
-    border-bottom: var(--table-th-border, 1px solid $gray3);
+    border-bottom: var(--table-th-border);
     background: transparent; //Fallback
-    background: var(--table-th-bg, transparent);
+    background: var(--table-th-bg);
   }
   
   td {
     padding: 1rem 0.8rem;
     border-bottom: 1px solid $gray3; //Fallback
-    border-bottom: var(--table-td-border, 1px solid $gray3);
+    border-bottom: var(--table-td-border);
     background: transparent; //Fallback
-    background: var(--table-td-bg, transparent);
+    background: var(--table-td-bg);
   }
   
   tr:hover {
     background: $gray1; //Fallback
-    background: var(--table-tr-bg-hover, $gray1);
-  }
-  
-  /* Table Themes */
-  
-  table.theme-dark {
-    --table-text: #EDEDED;
-    --table-bg: #1A1A1A;
-    --table-th-bg: transparent;
-    --table-th-border: 1px solid #262626;
-    --table-td-bg: transparent;
-    --table-td-border: 1px solid #262626;
-    --table-tr-bg-hover: #262626;
-  }
+    background: var(--table-tr-bg-hover);
+  }  

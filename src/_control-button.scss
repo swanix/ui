@@ -3,77 +3,122 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+/* Theme Default (Light) */
+:root {
+  /* General
+  ------------------ */
+  --btn-font:                   inherit;
+  --btn-font-weight:            600;
+  --btn-border-radius:          0;
+  /* Small */
+  --btn-text-small:             12px;
+  --btn-height-small:           24px;
+  --btn-padding-small:          0 15px;
+  /* Medium */
+  --btn-text-medium:            14px;
+  --btn-height-medium:          38px;
+  --btn-padding-medium:         0 15px;
+  /* Large */
+  --btn-text-large:             16px;
+  --btn-height-large:           48px;
+  --btn-padding-large:          0 15px;
+  /* Types
+  ------------------ */
+  /* Btn Default */
+  --btn-text:                   #{$gray7};
+  --btn-border:                 #{$gray4} solid 1px;
+  --btn-bg:                     #{$gray1};
+  --btn-basic-icon:             inherit;
+  --btn-hover-text:             #{$gray8};
+  --btn-hover-border:           #{$gray6} solid 1px;
+  --btn-hover-bg:               white;
+  --btn-basic-icon-hover:       inherit;
+  /* Btn Primary */
+  --btn-primary-text:           white;
+  --btn-primary-border:         #{$brand1} solid 1px;
+  --btn-primary-bg:             #{$brand1};
+  --btn-primary-icon:           inherit;
+  --btn-primary-hover-text:     white;
+  --btn-primary-hover-border:   #{$brand1} solid 1px;
+  --btn-primary-hover-bg:       #{$brand1};
+  --btn-primary-icon-hover:     inherit;
+  /* Btn Secondary */
+  --btn-secondary-text:          white;
+  --btn-secondary-border:        #{$brand2} solid 1px;
+  --btn-secondary-bg:            #{$brand2};
+  --btn-secondary-icon:          inherit;
+  --btn-secondary-hover-text:    white;
+  --btn-secondary-hover-border:  #{$brand2} solid 1px;
+  --btn-secondary-hover-bg:      #{$brand2};
+  --btn-secondary-icon-hover:    inherit;
+  /* Btn Outline */
+  --btn-outline-text:            #{$brand1};
+  --btn-outline-border:          #{$brand1} solid 1px;
+  --btn-outline-bg:              transparent;
+  --btn-outline-icon:            inherit;
+  --btn-outline-hover-text:     white;
+  --btn-outline-hover-border:    #{$brand1} solid 1px;
+  --btn-outline-hover-bg:        #{$brand1};
+  --btn-outline-icon-hover:      inherit;
+  /* Btn Ghost */
+  --btn-ghost-text:              #{$gray7};
+  --btn-ghost-border:            transparent solid 0;
+  --btn-ghost-bg:                transparent;
+  --btn-ghost-icon:              inherit;
+  --btn-ghost-hover-text:        #{$gray8};
+  --btn-ghost-hover-border:      transparent solid 0;
+  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-icon-hover:        inherit;
+}
 
-// VARIABLES
-// -----------------------------------------------------------
-
-// General
-// ------------------
-$btn-font:                   $text-body-font;
-$btn-font-weight:            600 !default;
-$btn-border-radius:          0 !default;
-
-// Sizes
-// ------------------
-// Small
-$btn-text-small:             12px !default;
-$btn-height-small:           24px !default;
-$btn-padding-small:          0 15px !default;
-// Medium
-$btn-text-medium:            14px !default;
-$btn-height-medium:          38px !default;
-$btn-padding-medium:         0 15px !default;
-// Large
-$btn-text-large:             16px !default;
-$btn-height-large:           48px !default;
-$btn-padding-large:          0 15px !default;
-
-// Types
-// ------------------
-// Btn Default
-$btn-text:                   $gray7 !default;
-$btn-border:                 $gray4 solid 1px !default;
-$btn-bg:                     $gray1 !default;
-// Btn Default hover
-$btn-hover-text:             $gray8 !default;
-$btn-hover-border:           $gray6 solid 1px !default;
-$btn-hover-bg:               white !default;
-
-// Btn Primary
-$btn-primary-text:           white !default;
-$btn-primary-border:         $brand1 solid 1px !default;
-$btn-primary-bg:             $brand1 !default;
-// Btn Primary hover
-$btn-primary-hover-text:     white !default;
-$btn-primary-hover-border:   $brand1 solid 1px !default;
-$btn-primary-hover-bg:       $brand1 !default;
-
-// Btn Secondary
-$btn-secondary-text:          white !default;
-$btn-secondary-border:        $brand2 solid 1px !default;
-$btn-secondary-bg:            $brand2 !default;
-// Btn Secondary hover
-$btn-secondary-hover-text:    white !default;
-$btn-secondary-hover-border:  $brand2 solid 1px !default;
-$btn-secondary-hover-bg:      $brand2 !default;
-
-// Btn Outline
-$btn-outline-text:          $brand1 !default;
-$btn-outline-border:        $brand1 solid 1px !default;
-$btn-outline-bg:            transparent !default;
-// Btn Outline hover
-$btn-outline-hover-text:    white !default;
-$btn-outline-hover-border:  $brand1 solid 1px !default;
-$btn-outline-hover-bg:      $brand1 !default;
-
-// Btn Ghost
-$btn-ghost-text:            $gray7 !default;
-$btn-ghost-border:          transparent solid 0 !default;
-$btn-ghost-bg:              transparent !default;
-// Btn Ghost hover
-$btn-ghost-hover-text:      $gray8 !default;
-$btn-ghost-hover-border:    transparent solid 0 !default;
-$btn-ghost-hover-bg:        transparent !default;
+/* Theme Dark */
+.theme-dark {
+  /* Btn Default */
+  --btn-text:                   #{$gray2};
+  --btn-border:                 #{$gray7} solid 1px;
+  --btn-bg:                     #{$gray8};
+  --btn-basic-icon:             inherit;
+  --btn-hover-text:             #{$white};
+  --btn-hover-border:           hsl(0, 0%, 30%) solid 1px;
+  --btn-hover-bg:               hsl(0, 0%, 20%);
+  --btn-basic-icon-hover:       inherit;
+  /* Btn Primary */
+  --btn-primary-text:           #{$gray8};
+  --btn-primary-border:         #{$gray3} solid 1px;
+  --btn-primary-bg:             #{$gray3};
+  --btn-primary-icon:           inherit;
+  --btn-primary-hover-text:     #{$black};
+  --btn-primary-hover-border:   #{$white} solid 1px;
+  --btn-primary-hover-bg:       #{$white};
+  --btn-primary-icon-hover:     inherit;
+  /* Btn Secondary */
+  --btn-secondary-text:          white;
+  --btn-secondary-border:        #{$gray7} solid 1px;
+  --btn-secondary-bg:            #{$gray7};
+  --btn-secondary-icon:          inherit;
+  --btn-secondary-hover-text:    white;
+  --btn-secondary-hover-border:  #{$gray6} solid 1px;
+  --btn-secondary-hover-bg:      #{$gray6};
+  --btn-secondary-icon-hover:    inherit;
+  /* Btn Outline */
+  --btn-outline-text:            #{$white};
+  --btn-outline-border:          #{$gray6} solid 1px;
+  --btn-outline-bg:              transparent;
+  --btn-outline-icon:            inherit;
+  --btn-outline-hover-text:      #{$black};
+  --btn-outline-hover-border:    #{$white} solid 1px;
+  --btn-outline-hover-bg:        #{$white};
+  --btn-outline-icon-hover:      inherit;
+  /* Btn Ghost */
+  --btn-ghost-text:              #{$gray5};
+  --btn-ghost-border:            transparent solid 0;
+  --btn-ghost-bg:                transparent;
+  --btn-ghost-icon:              inherit;
+  --btn-ghost-hover-text:        #{$white};
+  --btn-ghost-hover-border:      transparent solid 0;
+  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-icon-hover:        inherit;
+}
 
 // STYLES
 // -----------------------------------------------------------
@@ -91,138 +136,180 @@ input[type="reset"],
   cursor: pointer;
   outline:0;
   // Font
-  font-family: $btn-font;
-  font-weight: $btn-font-weight;
+  font-family: inherit;
+  font-weight: var(--btn-font-weight);
   // Size
-  font-size: $btn-text-medium;
-  height: $btn-height-medium;
-  line-height: $btn-height-medium;
-  padding: $btn-padding-medium;
+  font-size: var(--btn-text-medium);
+  height: var(--btn-height-medium);
+  line-height: var(--btn-height-medium);
+  padding: var(--btn-padding-medium);
   // Color
-  color: $btn-text;
-  border: $btn-border;
-  background: $btn-bg;
+  color: var(--btn-text);
+  border: var(--btn-border);
+  background: var(--btn-bg);
   // Shape
-  border-radius: $btn-border-radius;
+  border-radius: var(--btn-border-radius);
+
+  & .icon {
+    color: var(--btn-basic-icon);
+    fill: currentColor;
+  }
 
   &:hover {
-    color: $btn-hover-text;
-    border: $btn-hover-border;
-    background: $btn-hover-bg;
+    color: var(--btn-hover-text);
+    border: var(--btn-hover-border);
+    background: var(--btn-hover-bg);
+    & .icon {
+      color: var(--btn-basic-icon-hover);
+      fill: currentColor;
+    }
   }
+
   //------------------------------
   // Primary
   //------------------------------
   &.is-primary {
-    color: $btn-primary-text;
-    border: $btn-primary-border;
-    background: $btn-primary-bg;
+    color: var(--btn-primary-text);
+    border: var(--btn-primary-border);
+    background: var(--btn-primary-bg);
+    & .icon {
+      color: var(--btn-primary-icon);
+      fill: currentColor;
+    }
   }
   
   &.is-primary:hover {
-    color: $btn-primary-hover-text;
-    border: $btn-primary-hover-border;
-    background: $btn-primary-hover-bg;
+    color: var(--btn-primary-hover-text);
+    border: var(--btn-primary-hover-border);
+    background: var(--btn-primary-hover-bg);
+    & .icon {
+      color: var(--btn-primary-icon-hover);
+      fill: currentColor;
+    }
   }
   //------------------------------
   // Secondary
   //------------------------------
   &.is-secondary {
-    color: $btn-secondary-text;
-    border: $btn-secondary-border;
-    background: $btn-secondary-bg;
+    color: var(--btn-secondary-text);
+    border: var(--btn-secondary-border);
+    background: var(--btn-secondary-bg);
+    & .icon {
+      color: var(--btn-secondary-icon);
+      fill: currentColor;
+    }
   }
   
   &.is-secondary:hover {
-    color: $btn-secondary-hover-text;
-    border: $btn-secondary-hover-border;
-    background: $btn-secondary-hover-bg;
+    color: var(--btn-secondary-hover-text);
+    border: var(--btn-secondary-hover-border);
+    background: var(--btn-secondary-hover-bg);
+    & .icon {
+      color: var(--btn-secondary-icon-hover);
+      fill: currentColor;
+    }
   }
   //------------------------------
   // Outline
   //------------------------------
   &.is-outline {
-    color: $btn-outline-text;
-    border: $btn-outline-border;
-    background: $btn-outline-bg;
+    color: var(--btn-outline-text);
+    border: var(--btn-outline-border);
+    background: var(--btn-outline-bg);
+    & .icon {
+      color: var(--btn-outline-icon);
+      fill: currentColor;
+    }
   }
   
   &.is-outline:hover {
-    color: $btn-outline-hover-text;
-    border: $btn-outline-hover-border;
-    background: $btn-outline-hover-bg;
+    color: var(--btn-outline-hover-text);
+    border: var(--btn-outline-hover-border);
+    background: var(--btn-outline-hover-bg);
+    & .icon {
+      color: var(--btn-outline-icon-hover);
+      fill: currentColor;
+    }
   }
   //------------------------------
   // Ghost
   //------------------------------
   &.is-ghost {
-    color: $btn-ghost-text;
-    border: $btn-ghost-border;
-    background: $btn-ghost-bg;
+    color: var(--btn-ghost-text);
+    border: var(--btn-ghost-border);
+    background: var(--btn-ghost-bg);
+    & .icon {
+      color: var(--btn-ghost-icon);
+      fill: currentColor;
+    }
   }
   
   &.is-ghost:hover {
-    color: $btn-ghost-hover-text;
-    border: $btn-ghost-hover-border;
-    background: $btn-ghost-hover-bg;
+    color: var(--btn-ghost-hover-text);
+    border: var(--btn-ghost-hover-border);
+    background: var(--btn-ghost-hover-bg);
+    & .icon {
+      color: var(--btn-ghost-icon-hover);
+      fill: currentColor;
+    }
   }
   //------------------------------
   // Sizes
   //------------------------------
   &.is-small {
-    font-size: $btn-text-small;
-    height: $btn-height-small;
-    line-height: $btn-height-small;
-    padding: $btn-padding-small; 
+    font-size: var(--btn-text-small);
+    height: var(--btn-height-small);
+    line-height: var(--btn-height-small);
+    padding: var(--btn-padding-small); 
   }  
   
   &.is-medium {
-    font-size: $btn-text-medium;
-    height: $btn-height-medium;
-    line-height: $btn-height-medium;
-    padding: $btn-padding-medium;   
+    font-size: var(--btn-text-medium);
+    height: var(--btn-height-medium);
+    line-height: var(--btn-height-medium);
+    padding: var(--btn-padding-medium);   
   }
 
   &.is-large {
-    font-size: $btn-text-large;
-    height: $btn-height-large;
-    line-height: $btn-height-large;
-    padding: $btn-padding-large; 
+    font-size: var(--btn-text-large);
+    height: var(--btn-height-large);
+    line-height: var(--btn-height-large);
+    padding: var(--btn-padding-large); 
   }  
   //------------------------------
   // Shapes
   //------------------------------  
-    &.is-square {
-      border-radius: 0;
-    }    
-  
-    &.is-rounded {
-      border-radius: 5px;
-    }  
-  
-    &.is-rounded-left {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px
-    }  
-  
-    &.is-rounded-right {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px
-    }  
+  &.is-square {
+    border-radius: 0;
+  }    
 
-    &.is-pill {
-      border-radius: 40px;
-    } 
-  
-    &.is-pill-left {
-      border-top-left-radius: 40px;
-      border-bottom-left-radius: 40px
-    }  
-  
-    &.is-pill-right {
-      border-top-right-radius: 40px;
-      border-bottom-right-radius: 40px
-    }  
+  &.is-rounded {
+    border-radius: 5px;
+  }  
+
+  &.is-rounded-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+  }  
+
+  &.is-rounded-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+  }  
+
+  &.is-pill {
+    border-radius: 40px;
+  } 
+
+  &.is-pill-left {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px
+  }  
+
+  &.is-pill-right {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px
+  }  
   
 }
 

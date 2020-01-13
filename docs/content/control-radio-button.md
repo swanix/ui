@@ -20,3 +20,23 @@ Se conocen en inglés como option buttons o radio buttons y su utilización tamb
 </div>
 </textarea>
 
+### Dark Mode
+
+<iframe class="code-preview" height="145px"></iframe>
+<textarea class="code-editor" name="code">
+<body class="theme-dark">
+<div>
+	<input id="radio1" type="radio" value="1" name="radio" checked="checked">
+	<label for="radio1"><span><span></span></span>Radio 1</label>
+</div>
+<div>
+	<input id="radio2" type="radio" value="2" name="radio">
+	<label for="radio2"><span><span></span></span>Radio 2</label>
+</div>
+<div>
+	<input id="radio3" type="radio" value="3" name="radio">
+	<label for="radio3"><span><span></span></span>Radio 3</label>
+</div>
+</body>
+</textarea>
+
