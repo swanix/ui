@@ -2115,6 +2115,11 @@ tr:hover {
   height: 70rem;
 }
 
+/* Padding */
+.no-padding {
+  padding: 0;
+}
+
 .padding,
 .padding-medium {
   padding: 16px;
@@ -2125,11 +2130,35 @@ tr:hover {
 }
 
 .padding-large {
-  padding: 24px;
+  padding-left: 24px;
 }
 
-.no-padding {
-  padding: 0;
+/* Padding left */
+.padding-left,
+.padding-left-medium {
+  padding-left: 16px;
+}
+
+.padding-left-small {
+  padding-left: 8px;
+}
+
+.padding-left-large {
+  padding-left: 24px;
+}
+
+/* Padding Right */
+.padding-right,
+.padding-right-medium {
+  padding-right: 16px;
+}
+
+.padding-right-small {
+  padding-right: 8px;
+}
+
+.padding-right-large {
+  padding-right: 24px;
 }
 
 /* --------------------------------------------------------------------------------
