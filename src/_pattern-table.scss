@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --table-text:         inherit;
   --table-bg:           transparent;
@@ -14,7 +14,7 @@
   --table-tr-bg-hover:  #{$gray1};
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   --table-text:         #{$gray3};
   --table-bg:           #{$gray9};

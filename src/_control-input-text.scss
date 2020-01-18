@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --input-text-color:         inherit;
   --input-text-bg:            #{$white};
@@ -13,7 +13,7 @@
   --input-text-border-error:  red 1px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   --input-text-color:         #{$gray3};
   --input-text-bg:            #{$black};

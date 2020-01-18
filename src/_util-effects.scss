@@ -3,6 +3,21 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+[theme='light'],
+:root {
+  --shadow-inset-color:rgba(255,255,255,0.55);
+}
+
+[theme='dark'],
+.theme-dark {
+  --shadow-inset-color:rgba(26,26,26,0.75);
+}
+
+// STYLES
+// -----------------------------------------------------------
+
+
+
 .shadow,
 .shadow-small {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -21,5 +36,5 @@
 }
 
 .shadow-inset-large {
-  box-shadow: inset 0px -40px 44px 47px rgba(26,26,26,0.75);
+  box-shadow: inset 0px -40px 44px 47px var(--shadow-inset-color);
 }

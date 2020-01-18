@@ -4,7 +4,7 @@
 // Based on Stephen Morley http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   // Input Checkbox
   --input-radio:                 #{$gray6};
@@ -17,7 +17,7 @@
   --input-radio-active-bg:       #{$white};
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   // Input Checkbox
   --input-radio:                 #{$gray6};

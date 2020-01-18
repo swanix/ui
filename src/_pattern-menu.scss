@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --menu-bg:                  transparent;
   --menu-item-text:           inherit;
@@ -15,7 +15,7 @@
   --menu-item-border-active:  #{$brand1} 3px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   --menu-bg:                  #{$black};
   --menu-item-text:           #{$gray5};

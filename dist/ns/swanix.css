@@ -42,7 +42,7 @@ body {
 /* --------------------------------------------------------------------------------
    MEDIA - TEXT
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --text-body-color:       #383838;
   --text-body-font:        Tahoma, Geneva, sans-serif;
@@ -57,7 +57,7 @@ body {
   --hr-color:              #EDEDED;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --text-body-color:       #B3B3B3;
   --text-body-font:        Tahoma, Geneva, sans-serif;
@@ -320,7 +320,7 @@ figure {
 /* --------------------------------------------------------------------------------
    CONTROL - BUTTON
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   /* General
   ------------------ */
@@ -388,7 +388,7 @@ figure {
   --btn-ghost-icon-hover:        inherit;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   /* Btn Default */
   --btn-text:                   #F7F7F7;
@@ -769,7 +769,7 @@ input[type="reset"].is-pill-right,
 /* --------------------------------------------------------------------------------
    CONTROL - RADIO BUTTON
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --input-radio:                 #808080;
   --input-radio-border:          #CCCCCC solid 2px;
@@ -780,7 +780,7 @@ input[type="reset"].is-pill-right,
   --input-radio-active-bg:       #FFFFFF;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --input-radio:                 #808080;
   --input-radio-border:          #808080 solid 2px;
@@ -833,7 +833,7 @@ input[type=radio]:not(old):checked + label > span > span {
 /* --------------------------------------------------------------------------------
    CONTROL -CHECKBOX
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --input-check:                 #808080;
   --input-check-border:          #CCCCCC solid 2px;
@@ -844,7 +844,7 @@ input[type=radio]:not(old):checked + label > span > span {
   --input-check-active-bg:       #FFFFFF;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --input-check:                 #808080;
   --input-check-border:          #808080 solid 2px;
@@ -899,7 +899,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
 /* --------------------------------------------------------------------------------
    CONTROL - DROPDOWN (SELECT)
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --dropdown-text-color:    inherit;
   --dropdown-bg:            #FFFFFF;
@@ -909,7 +909,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
   --dropdown-border-error:  red 1px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --dropdown-text-color:    #EDEDED;
   --dropdown-bg:            #000000;
@@ -1029,7 +1029,7 @@ select:-moz-focusring {
 /* --------------------------------------------------------------------------------
    CONTROL - INPUT TEXT
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --input-text-color:         inherit;
   --input-text-bg:            #FFFFFF;
@@ -1039,7 +1039,7 @@ select:-moz-focusring {
   --input-text-border-error:  red 1px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --input-text-color:         #EDEDED;
   --input-text-bg:            #000000;
@@ -1221,13 +1221,13 @@ fieldset {
 /* --------------------------------------------------------------------------------
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --grid-bg-primary: #FFF;
   --grid-bg-secodary: #EDEDED;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --grid-bg-primary: #000;
   --grid-bg-secodary: #262626;
@@ -1517,7 +1517,7 @@ fieldset {
 /* --------------------------------------------------------------------------------
    PATTERN - MENU
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --menu-bg:                  transparent;
   --menu-item-text:           inherit;
@@ -1529,7 +1529,7 @@ fieldset {
   --menu-item-border-active:  var(--brand1, #000000) 3px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --menu-bg:                  #000000;
   --menu-item-text:           #B3B3B3;
@@ -1665,7 +1665,7 @@ ul.sw-menu.is-horizontal li.sw-active:before,
 /* --------------------------------------------------------------------------------
    PATTERN - TABLE
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --table-text:         inherit;
   --table-bg:           transparent;
@@ -1676,7 +1676,7 @@ ul.sw-menu.is-horizontal li.sw-active:before,
   --table-tr-bg-hover:  #FAFAFA;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --table-text:         #EDEDED;
   --table-bg:           #1A1A1A;
@@ -1741,12 +1741,12 @@ tr:hover {
 /* --------------------------------------------------------------------------------
    UTILITIES - BASE
 -------------------------------------------------------------------------------- */
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --util-border:     #EDEDED solid 1px;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .sw-theme-dark {
   --util-border:     #383838 solid 1px;
 }
@@ -2193,6 +2193,16 @@ tr:hover {
 /* --------------------------------------------------------------------------------
    UTILITIES - EFFECTS
 -------------------------------------------------------------------------------- */
+[theme='light'],
+:root {
+  --shadow-inset-color:rgba(255,255,255,0.55);
+}
+
+[theme='dark'],
+.sw-theme-dark {
+  --shadow-inset-color:rgba(26,26,26,0.75);
+}
+
 .sw-shadow,
 .shadow-small {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -2211,5 +2221,5 @@ tr:hover {
 }
 
 .shadow-inset-large {
-  box-shadow: inset 0px -40px 44px 47px rgba(26, 26, 26, 0.75);
+  box-shadow: inset 0px -40px 44px 47px var(--shadow-inset-color);
 }

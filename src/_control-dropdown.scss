@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --dropdown-text-color:    inherit;
   --dropdown-bg:            #{$white};
@@ -13,7 +13,7 @@
   --dropdown-border-error:  red 1px solid;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   --dropdown-text-color:    #{$gray3};
   --dropdown-bg:            #{$black};

@@ -2,13 +2,13 @@
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
 
-/* Theme Default (Light) */
+[theme='light'],
 :root {
   --grid-bg-primary: #FFF;
   --grid-bg-secodary: #EDEDED;
 }
 
-/* Theme Dark */
+[theme='dark'],
 .theme-dark {
   --grid-bg-primary: #000;
   --grid-bg-secodary: #262626;
