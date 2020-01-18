@@ -4,7 +4,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 1 row
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid" mode="dev">
   <div>Content</div>
@@ -13,7 +13,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 2 rows
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-rows" mode="dev">
   <div>Header</div>
@@ -23,7 +23,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 2 rows (Header)
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-rows header" mode="dev">
   <div>header</div>
@@ -33,7 +33,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 2 rows (Footer)
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-rows footer" mode="dev">
   <div>Content</div>
@@ -43,7 +43,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 3 rows
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-rows" mode="dev">
   <div>Content</div>
@@ -54,7 +54,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 3 rows (Header)
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-rows header" mode="dev">
   <div>Header</div>
@@ -65,7 +65,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 3 rows (Footer)
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-rows footer" mode="dev">
   <div>Content</div>
@@ -76,7 +76,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 1 column / 3 rows (Header + Footer)
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-rows header-footer" mode="dev">
   <div>Header</div>
@@ -87,7 +87,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 2 columns
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-cols" mode="dev">
   <div>Content</div>
@@ -97,7 +97,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 2 columns - Sidebar Left
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-cols sidebar-left" mode="dev">
   <div>Sidebar</div>
@@ -107,7 +107,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 2 columns - Sidebar Right
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid two-cols sidebar-right" mode="dev">
   <div>Content</div>
@@ -117,7 +117,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 3 columns
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-cols" mode="dev">
   <div>Sidebar Left</div>
@@ -128,7 +128,7 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
 
 ### 3 columns - Sidebar Left - Right
 
-<iframe class="code-preview" height="400px"></iframe>
+<iframe class="code-preview" height="480px"></iframe>
 <textarea class="code-editor" name="code">
 <div class="grid three-cols sidebars" mode="dev">
   <div>Sidebar Left</div>

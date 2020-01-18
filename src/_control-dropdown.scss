@@ -123,3 +123,10 @@ select::-ms-input-placeholder {
   /* Microsoft Edge */
   color: $gray5;
 }
+
+/* Remove dotted select (Firefox) */
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 var(--dropdown-text-color); /* replaces text color */
+}

@@ -1019,6 +1019,13 @@ select::-ms-input-placeholder {
   color: #B3B3B3;
 }
 
+/* Remove dotted select (Firefox) */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 var(--dropdown-text-color);
+  /* replaces text color */
+}
+
 /* --------------------------------------------------------------------------------
    CONTROL - INPUT TEXT
 -------------------------------------------------------------------------------- */
@@ -1214,6 +1221,18 @@ fieldset {
 /* --------------------------------------------------------------------------------
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
+/* Theme Default (Light) */
+:root {
+  --grid-bg-primary: #FFF;
+  --grid-bg-secodary: #EDEDED;
+}
+
+/* Theme Dark */
+.theme-dark {
+  --grid-bg-primary: #000;
+  --grid-bg-secodary: #262626;
+}
+
 /* App container */
 .app {
   position: absolute;
@@ -1483,6 +1502,16 @@ fieldset {
   color: #f2f2f2;
   background: #262626;
   box-shadow: inset 0 0 0 1px #cccccc;
+}
+
+/* Grid Backgrounds */
+.grid.three-cols > *:first-child,
+.grid.three-cols > *:last-child {
+  background-color: var(--grid-bg-primary);
+}
+
+.grid.two-rows.footer > *:last-child {
+  background-color: var(--grid-bg-secodary);
 }
 
 /* --------------------------------------------------------------------------------
