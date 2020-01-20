@@ -283,47 +283,75 @@ figure {
 /* --------------------------------------------------------------------------------
    MEDIA - ICONS
 -------------------------------------------------------------------------------- */
+:root,
+[theme='light'] {
+  --icon-fill-color:            #808080;
+  --icon-stroke-color:          #808080;
+  --icon-stroke-width:          0;
+  --icon-fill-color-hover:      #808080;
+  --icon-stroke-color-hover:    #808080;
+  --icon-stroke-width-hover:    0;
+  --icon-size-small:            1.6rem;
+  --icon-size-medium:           2.4rem;
+  --icon-size-large:            3.2rem;
+  --icon-size-huge:             6.4rem;
+}
+
+[theme='dark'] {
+  --icon-fill-color:            #F7F7F7;
+  --icon-stroke-color:          #F7F7F7;
+  --icon-stroke-width:          0;
+  --icon-fill-color-hover:      #F7F7F7;
+  --icon-stroke-color-hover:    #F7F7F7;
+  --icon-stroke-width-hover:    0;
+}
+
+svg path, svg g {
+  fill: inherit;
+  /* Solves the overrides with classes on Firefox */
+}
+
 .sw-icon {
   display: inline-block;
-  width: 2.4rem;
-  height: 2.4rem;
-  stroke-width: 0;
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
+  stroke-width: var(--icon-stroke-width);
   stroke: currentColor;
   fill: currentColor;
-  color: #808080;
+  color: var(--icon-fill-color);
   vertical-align: middle;
   transition: .2s;
 }
 
-.sw-icon.small {
-  width: 1.6rem;
-  height: 1.6rem;
+.sw-icon.is-small {
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
 }
 
-.sw-icon.medium {
-  width: 2.4rem;
-  height: 2.4rem;
+.sw-icon.is-medium {
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
 }
 
-.sw-icon.large {
-  width: 3.2rem;
-  height: 3.2rem;
+.sw-icon.is-large {
+  width: var(--icon-size-large);
+  height: var(--icon-size-large);
 }
 
-.sw-icon.sw-huge {
-  width: 6.4rem;
-  height: 6.4rem;
+.sw-icon.is-huge {
+  width: var(--icon-size-huge);
+  height: var(--icon-size-huge);
 }
 
-.sw-icon.sw-only {
-  margin-right: 0 !important;
+.sw-icon.is-only {
+  margin-right: 0;
 }
 
 .sw-icon:hover {
-  stroke-width: 0;
+  stroke-width: var(--icon-stroke-width-hover);
   stroke: currentColor;
   fill: currentColor;
-  color: #808080;
+  color: var(--icon-fill-color-hover);
 }
 
 /* --------------------------------------------------------------------------------

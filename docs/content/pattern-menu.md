@@ -56,13 +56,13 @@ Variables disponibles en este componente. Si quieres crear temas personalizados 
 ```css
 :root,
 [theme='light'] {
---menu-bg:                  transparent;
---menu-item-text:           inherit;
---menu-item-bg:             transparent;
---menu-item-text-hover:     #1A1A1A;
---menu-item-bg-hover:       #F7F7F7;
---menu-item-text-active:    inherit;
---menu-item-bg-active:      #EDEDED;
---menu-item-border-active:  var(--brand1, #000000) 3px solid;
+  --menu-bg:                  transparent;
+  --menu-item-text:           inherit;
+  --menu-item-bg:             transparent;
+  --menu-item-text-hover:     #1A1A1A;
+  --menu-item-bg-hover:       #F7F7F7;
+  --menu-item-text-active:    inherit;
+  --menu-item-bg-active:      #EDEDED;
+  --menu-item-border-active:  var(--brand1, #000000) 3px solid;
 }
 ```

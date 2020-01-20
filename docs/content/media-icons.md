@@ -2,78 +2,88 @@
 
 Aunque en esencia también se trata de imágenes, los iconos tienen unas características propias como elementos de comunicación. Son gráficos útiles para utilizar en pestañas, menús de navegación y botones. Cada sistema operativo posee sus tamaños oficiales para representar iconos en pantalla, lo que permite definirlos de forma coherente en proporción a otros iconos de aplicaciones. 
 
-### Small
-
-<iframe class="code-preview" height="90px"></iframe>
+<iframe class="code-preview" height="460px"></iframe>
 <textarea class="code-editor" name="code">
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#arrow-left"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#arrow-right"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#minus"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#edit"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#delete"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-facebook"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-twitter"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-instagram"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-pinterest"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-youtube"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-whatsapp"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-dribbble"></use></svg>
-<svg class="icon small"><use xlink:href="dist/swanix-icons.svg#social-vimeo"></use></svg>
+<h5>Small</h5>
+<svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+<svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+<svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+<svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+<svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+<hr />
+<h5>Medium</h5>
+<svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+<svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+<svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+<svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+<svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+<hr />
+<h5>Large</h5>
+<svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+<svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+<svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+<svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+<svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+<hr />
+<h5>Huge</h5>
+<svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+<svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+<svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+<svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+<svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
 </textarea>
 
-### Medium
+### Dark Mode
 
-<iframe class="code-preview" height="90px"></iframe>
+<iframe class="code-preview" height="460px"></iframe>
 <textarea class="code-editor" name="code">
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#arrow-left"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#arrow-right"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#minus"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#edit"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#delete"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-facebook"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-twitter"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-instagram"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-pinterest"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-youtube"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-whatsapp"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-dribbble"></use></svg>
-<svg class="icon medium"><use xlink:href="dist/swanix-icons.svg#social-vimeo"></use></svg>
+<body theme="dark">
+  <h5>Small</h5>
+  <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+  <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+  <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+  <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+  <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+  <hr />
+  <h5>Medium</h5>
+  <svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+  <svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+  <svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+  <svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+  <svg class="icon is-medium"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+  <hr />
+  <h5>Large</h5>
+  <svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+  <svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+  <svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+  <svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+  <svg class="icon is-large"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+  <hr />
+  <h5>Huge</h5>
+  <svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+  <svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+  <svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+  <svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+  <svg class="icon is-huge"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+</body>
 </textarea>
 
-### Large
+### CSS Variables
 
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
 
-<iframe class="code-preview" height="90px"></iframe>
-<textarea class="code-editor" name="code">
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#arrow-left"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#arrow-right"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#minus"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#edit"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#delete"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-facebook"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-twitter"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-instagram"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-pinterest"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-youtube"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-whatsapp"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-dribbble"></use></svg>
-<svg class="icon large"><use xlink:href="dist/swanix-icons.svg#social-vimeo"></use></svg>
-</textarea>
+```css
+:root,
+[theme='light'] {
+  --icon-fill-color:            #808080;
+  --icon-stroke-color:          #808080;
+  --icon-stroke-width:          0;
+  --icon-fill-color-hover:      #808080;
+  --icon-stroke-color-hover:    #808080;
+  --icon-stroke-width-hover:    0;
+  --icon-size-small:            1.6rem;
+  --icon-size-medium:           2.4rem;
+  --icon-size-large:            3.2rem;
+  --icon-size-huge:             6.4rem;
+}
+```
