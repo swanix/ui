@@ -1563,6 +1563,8 @@ fieldset {
   color: inherit;
   color: var(--menu-item-text);
   background: var(--menu-bg);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 
 ul.menu,
@@ -1709,11 +1711,12 @@ table {
   width: 100%;
   margin: 1rem auto 1rem auto;
   text-align: left;
-  font-size: inherit;
   color: inherit;
   color: var(--table-text);
   background: transparent;
   background: var(--table-bg);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 
 thead {

@@ -31,11 +31,11 @@ table {
     width:100%;
     margin: 1rem auto 1rem auto;
     text-align: left;
-    font-size: inherit;
     color: inherit; // Fallback
     color: var(--table-text);
     background: transparent; // Fallback
     background: var(--table-bg);
+    @include text-size3;
   }
   
   thead {

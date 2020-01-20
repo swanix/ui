@@ -32,6 +32,7 @@
   color: inherit; // Fallback
   color: var(--menu-item-text);
   background: var(--menu-bg);
+  @include text-size3;
 }
 
 ul.menu,
