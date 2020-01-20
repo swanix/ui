@@ -32,7 +32,6 @@
   color: inherit; // Fallback
   color: var(--menu-item-text);
   background: var(--menu-bg);
-  @include text-size3;
 }
 
 ul.menu,
@@ -52,6 +51,7 @@ ul.menu li a,
   flex-direction: row;
   align-items: center;
   font-weight: 400;
+  @include text-size3;
 }
 
 ul.menu a,

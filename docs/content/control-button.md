@@ -6,14 +6,14 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 
 <iframe class="code-preview" height="280px"></iframe>
 <textarea class="code-editor" name="code">
-<h3>Native Buttons</h3>
+<h5>Native Buttons</h5>
 <button class="is-basic">Button</button>
 <button class="is-primary">Button</button>
 <button class="is-secondary">Button</button>
 <button class="is-outline">Button</button>
 <button class="is-ghost">Button</button>
 <br><br>
-<h3>Link Buttons</h3>
+<h5>Link Buttons</h5>
 <a href="#" class="button">Button</a>
 <a href="#" class="button is-primary">Button</a>
 <a href="#" class="button is-secondary">Button</a>
@@ -26,14 +26,14 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 <iframe class="code-preview" height="280px"></iframe>
 <textarea class="code-editor" name="code">
 <body theme="dark">
-  <h3>Native Buttons</h3>
+  <h5>Native Buttons</h5>
   <button class="is-basic">Button</button>
   <button class="is-primary">Button</button>
   <button class="is-secondary">Button</button>
   <button class="is-outline">Button</button>
   <button class="is-ghost">Button</button>
   <br><br>
-  <h3>Link Buttons</h3>
+  <h5>Link Buttons</h5>
   <a href="#" class="button">Button</a>
   <a href="#" class="button is-primary">Button</a>
   <a href="#" class="button is-secondary">Button</a>
