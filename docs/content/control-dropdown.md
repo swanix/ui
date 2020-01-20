@@ -37,7 +37,7 @@ De forma similar, los menús desplegables ofrecen un comportamiento parecido a l
 
 <iframe class="code-preview" height="240px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
+<body theme="dark">
 <!-- Small -->
 <label for="select">Small:</label>
 <select name="select" class="is-small">
@@ -63,3 +63,20 @@ De forma similar, los menús desplegables ofrecen un comportamiento parecido a l
 </select>
 </body>
 </textarea>
+
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  --dropdown-text-color:    inherit;
+  --dropdown-bg:            #FFFFFF;
+  --dropdown-arrow:         #B3B3B3;
+  --dropdown-border:        #CCCCCC 1px solid;
+  --dropdown-border-focus:  var(--brand1, #000000) 1px solid;
+  --dropdown-border-error:  red 1px solid;
+}
+```

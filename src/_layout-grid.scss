@@ -2,16 +2,15 @@
    LAYOUT - GRID
 -------------------------------------------------------------------------------- */
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   --grid-bg-primary: #FFF;
-  --grid-bg-secodary: #EDEDED;
+  --grid-bg-secondary: #EDEDED;
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   --grid-bg-primary: #000;
-  --grid-bg-secodary: #262626;
+  --grid-bg-secondary: #262626;
 }
 
 // STYLES
@@ -295,5 +294,5 @@
 }
 
 .grid.two-rows.footer > *:last-child {
-  background-color:  var(--grid-bg-secodary);
+  background-color:  var(--grid-bg-secondary);
 }

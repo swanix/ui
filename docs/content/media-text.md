@@ -6,7 +6,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Headings
 
-<iframe class="code-preview" height="350px"></iframe>
+<iframe class="code-preview" height="420px"></iframe>
 <textarea class="code-editor" name="code">
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -19,7 +19,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Paragraphs
 
-<iframe class="code-preview" height="330px"></iframe>
+<iframe class="code-preview" height="380px"></iframe>
 <textarea class="code-editor" name="code">
 <p>
 	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a>
@@ -83,7 +83,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Text Blockquote 
 
-<iframe class="code-preview" height="380px"></iframe>
+<iframe class="code-preview" height="370px"></iframe>
 <textarea class="code-editor" name="code">
 <blockquote>
   <q>
@@ -116,7 +116,7 @@ Maecenas ornare tortor.
 
 ### Misc (abbr, sub, sup, etc)
 
-<iframe class="code-preview" height="190px"></iframe>
+<iframe class="code-preview" height="220px"></iframe>
 <textarea class="code-editor" name="code">
 <p>
 	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer
@@ -129,3 +129,25 @@ Maecenas ornare tortor.
 	Morbi imperdiet augue quis tellus.
 </p>
 </textarea>
+
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  --text-body-color:       #383838;
+  --text-body-font:        Tahoma, Geneva, sans-serif;
+  --text-heading-color:    inherit;
+  --text-heading-font:     inherit;
+  --text-heading-weight:   normal;
+  --text-link:             var(--brand1, #000000);
+  --text-link-hover:       var(--brand1, #000000);
+  --text-link-visited:     var(--brand1, #000000);
+  --text-selection:        #1A1A1A;
+  --text-selection-bg:     #EDEDED;
+  --hr-color:              #EDEDED;
+}
+```

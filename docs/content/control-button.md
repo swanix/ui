@@ -25,20 +25,20 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 
 <iframe class="code-preview" height="280px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
-<h3>Native Buttons</h3>
-<button class="is-basic">Button</button>
-<button class="is-primary">Button</button>
-<button class="is-secondary">Button</button>
-<button class="is-outline">Button</button>
-<button class="is-ghost">Button</button>
-<br><br>
-<h3>Link Buttons</h3>
-<a href="#" class="button">Button</a>
-<a href="#" class="button is-primary">Button</a>
-<a href="#" class="button is-secondary">Button</a>
-<a href="#" class="button is-outline">Button</a>
-<a href="#" class="button is-ghost">Button</a>
+<body theme="dark">
+  <h3>Native Buttons</h3>
+  <button class="is-basic">Button</button>
+  <button class="is-primary">Button</button>
+  <button class="is-secondary">Button</button>
+  <button class="is-outline">Button</button>
+  <button class="is-ghost">Button</button>
+  <br><br>
+  <h3>Link Buttons</h3>
+  <a href="#" class="button">Button</a>
+  <a href="#" class="button is-primary">Button</a>
+  <a href="#" class="button is-secondary">Button</a>
+  <a href="#" class="button is-outline">Button</a>
+  <a href="#" class="button is-ghost">Button</a>
 </body>
 </textarea>
 
@@ -59,38 +59,38 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 
 <iframe class="code-preview" height="90px"></iframe>
 <textarea class="code-editor" name="code">
-	<button class="is-pill">
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
-	</button>
-	<button class="is-rounded">
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
-		Icon Button
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#delete"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
-	</button>
-	<button>
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
-	</button>
-	<button data-tooltip="Contact" data-tooltip-pos="down">
-		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
-	</button>
+<button class="is-pill">
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
+</button>
+<button class="is-rounded">
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
+  Icon Button
+</button>
+<button>
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
+</button>
+<button>
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#delete"></use></svg>
+</button>
+<button>
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
+</button>
+<button>
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#menu"></use></svg>
+</button>
+<button>
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#settings"></use></svg>
+</button>
+<button data-tooltip="Contact" data-tooltip-pos="down">
+  <svg class="icon"><use xlink:href="dist/swanix-icons.svg#email"></use></svg>
+</button>
 </textarea>
 
 ### Button with icons (Dark Mode)
 
 <iframe class="code-preview" height="90px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
+<body theme="dark">
 	<button class="is-pill">
 		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
 	</button>
@@ -118,3 +118,84 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci√
 	</button>
 </body>
 </textarea>
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la secci√≥n [Themes](/themes)
+
+#### General
+
+```css
+:root,
+[theme='light'] {
+/* General */
+  --btn-font:                   inherit;
+  --btn-font-weight:            600;
+  --btn-border-radius:          0;
+  /* Small */
+  --btn-text-small:             12px;
+  --btn-height-small:           24px;
+  --btn-padding-small:          0 15px;
+  /* Medium */
+  --btn-text-medium:            14px;
+  --btn-height-medium:          38px;
+  --btn-padding-medium:         0 15px;
+  /* Large */
+  --btn-text-large:             16px;
+  --btn-height-large:           48px;
+  --btn-padding-large:          0 15px;
+}
+```
+
+#### Button Types
+
+```css
+:root,
+[theme='light'] {
+  /* Btn Default */
+  --btn-text:                   #383838;
+  --btn-border:                 #CCCCCC solid 1px;
+  --btn-bg:                     #FAFAFA;
+  --btn-icon:                   inherit;
+  --btn-text-hover:             #262626;
+  --btn-border-hover:           #808080 solid 1px;
+  --btn-bg-hover:               white;
+  --btn-icon-hover:             inherit;
+  /* Btn Primary */
+  --btn-primary-text:           white;
+  --btn-primary-border:         var(--brand1, #000000) solid 1px;
+  --btn-primary-bg:             var(--brand1, #000000);
+  --btn-primary-icon:           inherit;
+  --btn-primary-text-hover:     white;
+  --btn-primary-border-hover:   var(--brand1, #000000) solid 1px;
+  --btn-primary-bg-hover:       var(--brand1, #000000);
+  --btn-primary-icon-hover:     inherit;
+  /* Btn Secondary */
+  --btn-secondary-text:          white;
+  --btn-secondary-border:        var(--brand2, #808080) solid 1px;
+  --btn-secondary-bg:            var(--brand2, #808080);
+  --btn-secondary-icon:          inherit;
+  --btn-secondary-text-hover:    white;
+  --btn-secondary-border-hover:  var(--brand2, #808080) solid 1px;
+  --btn-secondary-bg-hover:      var(--brand2, #808080);
+  --btn-secondary-icon-hover:    inherit;
+  /* Btn Outline */
+  --btn-outline-text:            var(--brand1, #000000);
+  --btn-outline-border:          var(--brand1, #000000) solid 1px;
+  --btn-outline-bg:              transparent;
+  --btn-outline-icon:            inherit;
+  --btn-outline-text-hover:      white;
+  --btn-outline-border-hover:    var(--brand1, #000000) solid 1px;
+  --btn-outline-bg-hover:        var(--brand1, #000000);
+  --btn-outline-icon-hover:      inherit;
+  /* Btn Ghost */
+  --btn-ghost-text:              #383838;
+  --btn-ghost-border:            transparent solid 0;
+  --btn-ghost-bg:                transparent;
+  --btn-ghost-icon:              inherit;
+  --btn-ghost-text-hover:        #262626;
+  --btn-ghost-border-hover:      transparent solid 0;
+  --btn-ghost-bg-hover:          transparent;
+  --btn-ghost-icon-hover:        inherit;
+}
+```

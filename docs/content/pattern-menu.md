@@ -30,11 +30,11 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 ### Dark Mode
 
-Puedes utilizar la clase `theme-dark` para aplicar los colores del modo oscuro en este componente.
+Puedes utilizar el atributo `theme="dark"` para aplicar los colores del modo oscuro en este componente.
 
 <iframe class="code-preview" height="520px"></iframe>
 <textarea class="code-editor" name="code">
-<ul class="menu theme-dark">
+<ul class="menu" theme="dark">
   <li class="menu-section">SECTION 1</li>
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
@@ -51,38 +51,18 @@ Puedes utilizar la clase `theme-dark` para aplicar los colores del modo oscuro e
 
 ### CSS Variables
 
-Variables disponibles para personalizar el componente menú:
-
-|Name|Default value|Description|
-|--- |--- |--- |
-|--menu-bg|transparent|Menu background|
-||||
-|--menu-item-text|$gray7|Menu item text color|
-|--menu-item-bg|transparent|Menu item background|
-||||
-|--menu-item-text-hover|$gray9|Menu item hover text color|
-|--menu-item-bg-hover|$gray2|Menu item background hover|
-||||
-|--menu-item-text-active|$gray9|Menu item text active color|
-|--menu-item-bg-active|$gray3|Menu item background active|
-|--menu-item-border-active|3px solid $black|Menu item border active|
-
-### Temas personalizados
-
-Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo la clase `menu` con las variables que deseas modificar. A continuación puedes ver las variables sobreescritas con el tema oscuro:
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
 
 ```css
-.menu.theme-dark {
-  --menu-bg: black;
-  /* Default */
-  --menu-item-text:#B3B3B3;
-  --menu-item-bg: transparent;
-  /* Hover */
-  --menu-item-text-hover: #FFFFFF;
-  --menu-item-bg-hover: #262626;
-  /* Active */
-  --menu-item-text-active: #FFFFFF;
-  --menu-item-bg-active: #383838;
-  --menu-item-border-active: 3px solid #FFFFFF;
+:root,
+[theme='light'] {
+--menu-bg:                  transparent;
+--menu-item-text:           inherit;
+--menu-item-bg:             transparent;
+--menu-item-text-hover:     #1A1A1A;
+--menu-item-bg-hover:       #F7F7F7;
+--menu-item-text-active:    inherit;
+--menu-item-bg-active:      #EDEDED;
+--menu-item-border-active:  var(--brand1, #000000) 3px solid;
 }
 ```

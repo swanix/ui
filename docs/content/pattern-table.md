@@ -36,7 +36,7 @@ Utiliza la clase `theme-dark` para aplicar los colores del modo oscuro en este c
 
 <iframe class="code-preview" height="240px"></iframe>
 <textarea class="code-editor" name="code">
-<table class="theme-dark">
+<table theme="dark">
   <tbody>
     <tr>
       <th>Table Head 1</th>
@@ -64,34 +64,18 @@ Utiliza la clase `theme-dark` para aplicar los colores del modo oscuro en este c
 
 ### CSS Variables
 
-Variables disponibles para personalizar el componente de tabla:
-
-|Name|Default value|Description|
-|--- |--- |--- |
-|--table-text|inherit|Table text color|
-|--table-bg|transparent|Table background|
-||||
-|--table-th-bg|transparent|Table head background|
-|--table-th-border|1px solid $gray3|Table head border bottom|
-||||
-|--table-td-bg|transparent|Table cell background|
-|--table-td-border|1px solid $gray3|Table cell border bottom|
-||||
-|--table-tr-bg-hover|$gray1|Table row background hover|
-
-### Personalizar estilos
-
-Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo el selector `table` con las variables que deseas modificar. A continuación puedes ver las variables sobreescritas con el tema oscuro:
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
 
 ```css
-table.theme-dark {
-  --table-text: #EDEDED;
-  --table-bg: #1A1A1A;
-  --table-th-bg: transparent;
-  --table-th-border: 1px solid #262626;
-  --table-td-bg: transparent;
-  --table-td-border: 1px solid #262626;
-  --table-tr-bg-hover: #262626;
+:root,
+[theme='light'] {
+  --table-text:         inherit;
+  --table-bg:           transparent;
+  --table-th-bg:        transparent;
+  --table-th-border:    #EDEDED 1px solid;
+  --table-td-bg:        transparent;
+  --table-td-border:    #EDEDED 1px solid;
+  --table-tr-bg-hover:  #FAFAFA;
 }
 ```
 

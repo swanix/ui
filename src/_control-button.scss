@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   /* General
   ------------------ */
   --btn-font:                   inherit;
@@ -28,95 +28,93 @@
   --btn-text:                   #{$gray7};
   --btn-border:                 #{$gray4} solid 1px;
   --btn-bg:                     #{$gray1};
-  --btn-basic-icon:             inherit;
-  --btn-hover-text:             #{$gray8};
-  --btn-hover-border:           #{$gray6} solid 1px;
-  --btn-hover-bg:               white;
-  --btn-basic-icon-hover:       inherit;
+  --btn-icon:                   inherit;
+  --btn-text-hover:             #{$gray8};
+  --btn-border-hover:           #{$gray6} solid 1px;
+  --btn-bg-hover:               white;
+  --btn-icon-hover:             inherit;
   /* Btn Primary */
   --btn-primary-text:           white;
   --btn-primary-border:         #{$brand1} solid 1px;
   --btn-primary-bg:             #{$brand1};
   --btn-primary-icon:           inherit;
-  --btn-primary-hover-text:     white;
-  --btn-primary-hover-border:   #{$brand1} solid 1px;
-  --btn-primary-hover-bg:       #{$brand1};
+  --btn-primary-text-hover:     white;
+  --btn-primary-border-hover:   #{$brand1} solid 1px;
+  --btn-primary-bg-hover:       #{$brand1};
   --btn-primary-icon-hover:     inherit;
   /* Btn Secondary */
   --btn-secondary-text:          white;
   --btn-secondary-border:        #{$brand2} solid 1px;
   --btn-secondary-bg:            #{$brand2};
   --btn-secondary-icon:          inherit;
-  --btn-secondary-hover-text:    white;
-  --btn-secondary-hover-border:  #{$brand2} solid 1px;
-  --btn-secondary-hover-bg:      #{$brand2};
+  --btn-secondary-text-hover:    white;
+  --btn-secondary-border-hover:  #{$brand2} solid 1px;
+  --btn-secondary-bg-hover:      #{$brand2};
   --btn-secondary-icon-hover:    inherit;
   /* Btn Outline */
   --btn-outline-text:            #{$brand1};
   --btn-outline-border:          #{$brand1} solid 1px;
   --btn-outline-bg:              transparent;
   --btn-outline-icon:            inherit;
-  --btn-outline-hover-text:     white;
-  --btn-outline-hover-border:    #{$brand1} solid 1px;
-  --btn-outline-hover-bg:        #{$brand1};
+  --btn-outline-text-hover:      white;
+  --btn-outline-border-hover:    #{$brand1} solid 1px;
+  --btn-outline-bg-hover:        #{$brand1};
   --btn-outline-icon-hover:      inherit;
   /* Btn Ghost */
   --btn-ghost-text:              #{$gray7};
   --btn-ghost-border:            transparent solid 0;
   --btn-ghost-bg:                transparent;
   --btn-ghost-icon:              inherit;
-  --btn-ghost-hover-text:        #{$gray8};
-  --btn-ghost-hover-border:      transparent solid 0;
-  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-text-hover:        #{$gray8};
+  --btn-ghost-border-hover:      transparent solid 0;
+  --btn-ghost-bg-hover:          transparent;
   --btn-ghost-icon-hover:        inherit;
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   /* Btn Default */
   --btn-text:                   #{$gray2};
   --btn-border:                 #{$gray7} solid 1px;
   --btn-bg:                     #{$gray8};
-  --btn-basic-icon:             inherit;
-  --btn-hover-text:             #{$white};
-  --btn-hover-border:           hsl(0, 0%, 30%) solid 1px;
-  --btn-hover-bg:               hsl(0, 0%, 20%);
-  --btn-basic-icon-hover:       inherit;
+  --btn-icon:                   inherit;
+  --btn-text-hover:             #{$white};
+  --btn-border-hover:           hsl(0, 0%, 30%) solid 1px;
+  --btn-bg-hover:               hsl(0, 0%, 20%);
+  --btn-icon-hover:             inherit;
   /* Btn Primary */
   --btn-primary-text:           #{$gray8};
   --btn-primary-border:         #{$gray3} solid 1px;
   --btn-primary-bg:             #{$gray3};
   --btn-primary-icon:           inherit;
-  --btn-primary-hover-text:     #{$black};
-  --btn-primary-hover-border:   #{$white} solid 1px;
-  --btn-primary-hover-bg:       #{$white};
+  --btn-primary-text-hover:     #{$black};
+  --btn-primary-border-hover:   #{$white} solid 1px;
+  --btn-primary-bg-hover:       #{$white};
   --btn-primary-icon-hover:     inherit;
   /* Btn Secondary */
   --btn-secondary-text:          white;
   --btn-secondary-border:        #{$gray7} solid 1px;
   --btn-secondary-bg:            #{$gray7};
   --btn-secondary-icon:          inherit;
-  --btn-secondary-hover-text:    white;
-  --btn-secondary-hover-border:  #{$gray6} solid 1px;
-  --btn-secondary-hover-bg:      #{$gray6};
+  --btn-secondary-text-hover:    white;
+  --btn-secondary-border-hover:  #{$gray6} solid 1px;
+  --btn-secondary-bg-hover:      #{$gray6};
   --btn-secondary-icon-hover:    inherit;
   /* Btn Outline */
   --btn-outline-text:            #{$white};
   --btn-outline-border:          #{$gray6} solid 1px;
   --btn-outline-bg:              transparent;
   --btn-outline-icon:            inherit;
-  --btn-outline-hover-text:      #{$black};
-  --btn-outline-hover-border:    #{$white} solid 1px;
-  --btn-outline-hover-bg:        #{$white};
+  --btn-outline-text-hover:      #{$black};
+  --btn-outline-bg-hover:        #{$white};
   --btn-outline-icon-hover:      inherit;
   /* Btn Ghost */
   --btn-ghost-text:              #{$gray5};
   --btn-ghost-border:            transparent solid 0;
   --btn-ghost-bg:                transparent;
   --btn-ghost-icon:              inherit;
-  --btn-ghost-hover-text:        #{$white};
-  --btn-ghost-hover-border:      transparent solid 0;
-  --btn-ghost-hover-bg:          transparent;
+  --btn-ghost-text-hover:        #{$white};
+  --btn-ghost-border-hover:      transparent solid 0;
+  --btn-ghost-bg-hover:          transparent;
   --btn-ghost-icon-hover:        inherit;
 }
 
@@ -151,16 +149,16 @@ input[type="reset"],
   border-radius: var(--btn-border-radius);
 
   & .icon {
-    color: var(--btn-basic-icon);
+    color: var(--btn-icon);
     fill: currentColor;
   }
 
   &:hover {
-    color: var(--btn-hover-text);
-    border: var(--btn-hover-border);
-    background: var(--btn-hover-bg);
+    color: var(--btn-text-hover);
+    border: var(--btn-border-hover);
+    background: var(--btn-bg-hover);
     & .icon {
-      color: var(--btn-basic-icon-hover);
+      color: var(--btn-icon-hover);
       fill: currentColor;
     }
   }
@@ -179,9 +177,9 @@ input[type="reset"],
   }
   
   &.is-primary:hover {
-    color: var(--btn-primary-hover-text);
-    border: var(--btn-primary-hover-border);
-    background: var(--btn-primary-hover-bg);
+    color: var(--btn-primary-text-hover);
+    border: var(--btn-primary-border-hover);
+    background: var(--btn-primary-bg-hover);
     & .icon {
       color: var(--btn-primary-icon-hover);
       fill: currentColor;
@@ -201,9 +199,9 @@ input[type="reset"],
   }
   
   &.is-secondary:hover {
-    color: var(--btn-secondary-hover-text);
-    border: var(--btn-secondary-hover-border);
-    background: var(--btn-secondary-hover-bg);
+    color: var(--btn-secondary-text-hover);
+    border: var(--btn-secondary-border-hover);
+    background: var(--btn-secondary-bg-hover);
     & .icon {
       color: var(--btn-secondary-icon-hover);
       fill: currentColor;
@@ -223,9 +221,9 @@ input[type="reset"],
   }
   
   &.is-outline:hover {
-    color: var(--btn-outline-hover-text);
-    border: var(--btn-outline-hover-border);
-    background: var(--btn-outline-hover-bg);
+    color: var(--btn-outline-text-hover);
+    border: var(--btn-outline-border-hover);
+    background: var(--btn-outline-bg-hover);
     & .icon {
       color: var(--btn-outline-icon-hover);
       fill: currentColor;
@@ -245,9 +243,9 @@ input[type="reset"],
   }
   
   &.is-ghost:hover {
-    color: var(--btn-ghost-hover-text);
-    border: var(--btn-ghost-hover-border);
-    background: var(--btn-ghost-hover-bg);
+    color: var(--btn-ghost-text-hover);
+    border: var(--btn-ghost-border-hover);
+    background: var(--btn-ghost-bg-hover);
     & .icon {
       color: var(--btn-ghost-icon-hover);
       fill: currentColor;

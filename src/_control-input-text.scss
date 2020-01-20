@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   --input-text-color:         inherit;
   --input-text-bg:            #{$white};
   --input-text-border:        #{$gray4} 1px solid;
@@ -13,8 +13,7 @@
   --input-text-border-error:  red 1px solid;
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   --input-text-color:         #{$gray3};
   --input-text-bg:            #{$black};
   --input-text-border:        #{$gray6} 1px solid;

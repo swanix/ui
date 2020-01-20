@@ -24,7 +24,7 @@ En este último ejemplo tiene el mismo comportamiento de un interruptor, incluye
 
 <iframe class="code-preview" height="145px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
+<body theme="dark">
 <div>
 	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">
 	<label for="checkbox1"><span></span>Checkbox 1</label>
@@ -39,3 +39,22 @@ En este último ejemplo tiene el mismo comportamiento de un interruptor, incluye
 </div>
 </body>
 </textarea>
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  /* Input Checkbox */
+  --input-check:                 #808080;
+  --input-check-border:          #CCCCCC solid 2px;
+  --input-check-border-radius:   0;
+  --input-check-bg:              #F7F7F7;
+  /* Input Checkbox active */
+  --input-check-active:          var(--brand1, #000000);
+  --input-check-active-border:   var(--brand1, #000000) solid 2px;
+  --input-check-active-bg:       #FFFFFF;
+}
+```

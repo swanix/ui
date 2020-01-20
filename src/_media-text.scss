@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   --text-body-color:       #{$gray7};
   --text-body-font:        Tahoma, Geneva, sans-serif;
   --text-heading-color:    inherit;
@@ -18,8 +18,7 @@
   --hr-color:              #{$gray3};
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   --text-body-color:       #{$gray5};
   --text-body-font:        Tahoma, Geneva, sans-serif;
   --text-heading-color:    #{$white};
@@ -36,12 +35,16 @@
 // STYLES
 // -------------------------------------------------------------------------------
 
+html {
+  font-size: 62.5%;  /* For rem units */
+}
+
 body {
+  font-size: 10px; /* For rem units 10px = 1rem */
   font-family: Tahoma, Geneva, sans-serif; // Fallback
   font-family: var(--text-body-font);
   color: $gray7; // Fallback
   color: var(--text-body-color);
-  font-size: $text-medium;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -54,20 +57,19 @@ h1, h2, h3, h4, h5, h6  {
   color: var(--text-heading-color);
 }
 
-h1 { font-size: 4.5rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1.4rem; }
-h6 { font-size: 1.3rem; }
+h1 { @include text-size9; }
+h2 { @include text-size8; }
+h3 { @include text-size7; }
+h4 { @include text-size6; }
+h5 { @include text-size5; }
+h6 { @include text-size4; }
 
 p {
   color: inherit;
   margin: 0;
   padding-bottom: 1.5rem;
   font-family: inherit;
-  font-size: inherit;
-  line-height: 1.8;
+  @include text-size4;
 }
 
 a {
@@ -91,15 +93,17 @@ a:visited {
 
 ul, ol {
   color: inherit;
+  @include text-size4;
 }
 
 li {
   font-size: inherit;
   line-height: $text-baseline;
+  @include text-size4;
 }
 
 dl, dt, dd {
-  font-size: $text-medium;
+  @include text-size4;
 }
 
 small {
@@ -109,22 +113,23 @@ small {
 q {
   display: inline-block;
   font-style: italic;
+  @include text-size4;
 }
 
 blockquote {
   font-style: italic;
   color: inherit;
-  font-size: 150%;
-  line-height: 1.8;
 }
 
 blockquote q {
   display: inline-block;
+  @include text-size6;
 }
 
 blockquote footer {
   margin-top: 1rem;
   text-align: right;
+  @include text-size6;
 }
 
 cite {
@@ -135,6 +140,7 @@ cite {
 
 pre, code, samp, kbd {
   box-shadow: none;
+  @include text-size4;
 }
 
 code {
@@ -143,7 +149,7 @@ code {
 
 pre {
   padding: 1rem 0;
-  line-height: $text-baseline;
+  @include text-size4;
 }
 
 hr {
@@ -160,7 +166,8 @@ hr {
 label {
   display: inline-block;
   margin-bottom: 1rem;
-  color: inherit;
+  color: var(--text-body-color);
+  @include text-size4;
 }
 
 optgroup, option {

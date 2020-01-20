@@ -24,7 +24,7 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
 
 <iframe class="code-preview" height="340px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
+<body theme="dark">
 <!-- Basic Text -->
 <label for="text-input">Basic Text:</label>
 <input type="text" id="text-input" placeholder="Text field">
@@ -36,3 +36,20 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
 <textarea id="text_area"></textarea>
 </body>
 </textarea>
+
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  --input-text-color:         inherit;
+  --input-text-bg:            #FFFFFF;
+  --input-text-border:        #CCCCCC 1px solid;
+  --input-text-bg-focus:      #FFFFFF;
+  --input-text-border-focus:  var(--brand1, #000000) 1px solid;
+  --input-text-border-error:  red 1px solid;
+}
+```

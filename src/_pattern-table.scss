@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   --table-text:         inherit;
   --table-bg:           transparent;
   --table-th-bg:        transparent;
@@ -14,8 +14,7 @@
   --table-tr-bg-hover:  #{$gray1};
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   --table-text:         #{$gray3};
   --table-bg:           #{$gray9};
   --table-th-bg:        transparent;

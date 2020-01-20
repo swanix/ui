@@ -24,7 +24,7 @@ Se conocen en inglés como option buttons o radio buttons y su utilización tamb
 
 <iframe class="code-preview" height="145px"></iframe>
 <textarea class="code-editor" name="code">
-<body class="theme-dark">
+<body theme="dark">
 <div>
 	<input id="radio1" type="radio" value="1" name="radio" checked="checked">
 	<label for="radio1"><span><span></span></span>Radio 1</label>
@@ -39,4 +39,21 @@ Se conocen en inglés como option buttons o radio buttons y su utilización tamb
 </div>
 </body>
 </textarea>
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  --input-radio:                 #808080;
+  --input-radio-border:          #CCCCCC solid 2px;
+  --input-radio-border-radius:   50%;
+  --input-radio-bg:              #F7F7F7;
+  --input-radio-active:          var(--brand1, #000000);
+  --input-radio-active-border:   var(--brand1, #000000) solid 2px;
+  --input-radio-active-bg:       #FFFFFF;
+}
+```
 

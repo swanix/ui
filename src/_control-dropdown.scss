@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------- */
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[theme='light'],
-:root {
+:root,
+[theme='light'] {
   --dropdown-text-color:    inherit;
   --dropdown-bg:            #{$white};
   --dropdown-arrow:         #{$gray5};
@@ -13,8 +13,7 @@
   --dropdown-border-error:  red 1px solid;
 }
 
-[theme='dark'],
-.theme-dark {
+[theme='dark'] {
   --dropdown-text-color:    #{$gray3};
   --dropdown-bg:            #{$black};
   --dropdown-arrow:         #{$gray4};

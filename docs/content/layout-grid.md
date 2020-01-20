@@ -136,3 +136,15 @@ Swanix utiliza el estándar [CSS Grid](https://developer.mozilla.org/en-US/docs/
   <div>Sidebar Right</div>
 </div>
 </textarea>
+
+### CSS Variables
+
+Variables disponibles en este componente. Si quieres crear temas personalizados visita la sección [Themes](/themes)
+
+```css
+:root,
+[theme='light'] {
+  --grid-bg-primary: #FFF;
+  --grid-bg-secondary: #EDEDED;
+}
+```
