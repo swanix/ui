@@ -1,6 +1,19 @@
-![Swanix UI](https://swanix.org/assets/images/apple-touch-icon.png "Swanix - User Interface")
+<p align="center">
+    <img alt="Swanix" title="Swanix UI" src="https://swanix.org/assets/images/apple-touch-icon.png">
+</p>
+<h1 align="center"> Swanix UI </h1>
+<p align="center">
+    Experimental UI framework
+</p>
 
-Experimental UI framework. Work in progress...
+<p align="center">
+    <img alt="Swanix" title="Swanix Brand" src="https://img.shields.io/badge/status-beta-mediumpurple">
+    <img alt="Swanix" title="Swanix Brand" src="https://img.shields.io/badge/version-v0.3.6-blue">
+    <img alt="Swanix" title="Swanix Brand" src="https://img.shields.io/github/license/swanix/ui?color=blue">
+</p>
+
+
+---
 
 ## Requisitos
 
