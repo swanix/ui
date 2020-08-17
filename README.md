@@ -3,7 +3,7 @@
 </p>
 <h1 align="center"> Swanix UI </h1>
 <p align="center">
-    Experimental UI framework <br>
+    Experimental UI library <br>
     https://swanix.org/ui
 </p>
 
