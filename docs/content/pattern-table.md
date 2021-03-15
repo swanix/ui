@@ -2,8 +2,7 @@
 
 ### Basic table 
 
-<iframe class="code-preview" height="240px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="240">
 <table>
   <tbody>
     <tr>
@@ -34,8 +33,7 @@
 
 Utiliza la clase `theme-dark` para aplicar los colores del modo oscuro en este componente.
 
-<iframe class="code-preview" height="240px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="240">
 <table theme="dark">
   <tbody>
     <tr>

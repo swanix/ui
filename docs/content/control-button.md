@@ -4,8 +4,7 @@ Un botón es un elemento gráfico rectangular, cuadrado, ovalado o de formas var
 
 Los botones son elementos fundamentales para las interacciones con una aplicación. Dada la libertad para personalizar estos elementos se pueden crear diseños propios acordes con la estética de la aplicación. Sea cual sea la naturaleza o apariencia de un botón siempre existirán como constante los estados del mismo para comunicar al usuario su actividad, por lo general son: reposo, presionado, seleccionado e inactivo. Dichos estados también se presentan en la gran mayoría de controles interactivos y su importancia es clave para tener una retroalimentación coherente por parte del sistema.
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="300">
 <h5>Native Buttons</h5>
 <button class="is-basic">Button</button>
 <button class="is-primary">Button</button>
@@ -23,8 +22,7 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci�
 
 ### Dark Mode
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="300">
 <body theme="dark">
   <h5>Native Buttons</h5>
   <button class="is-basic">Button</button>
@@ -44,8 +42,7 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci�
 
 ### Shapes
 
-<iframe class="code-preview" height="100px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="100">
 <a href="#" class="button is-square">Button</a>
 <a href="#" class="button is-rounded">Button</a>
 <a href="#" class="button is-rounded-left">Button</a>
@@ -57,8 +54,7 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci�
 
 ### Button with icons
 
-<iframe class="code-preview" height="90px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="100">
 <button class="is-pill">
   <svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>
 </button>
@@ -88,8 +84,7 @@ Los botones son elementos fundamentales para las interacciones con una aplicaci�
 
 ### Button with icons (Dark Mode)
 
-<iframe class="code-preview" height="90px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="100">
 <body theme="dark">
 	<button class="is-pill">
 		<svg class="icon"><use xlink:href="dist/swanix-icons.svg#plus"></use></svg>

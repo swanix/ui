@@ -6,8 +6,7 @@ Los indicadores de progreso son elementos informativos que no permiten interacci
 
 Estos se ubican en el centro de la pantalla pero también se utilizan en los extremos superior o inferior. Incluso podemos verlo en diferentes controles de interfaz en barras de búsqueda y en botones como indicador de progreso, este último muy utilizado en iOS.
 
-<iframe class="code-preview" height="70px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="70">
 <div class="progress-bar">
   <span class="meter" style="width: 50%"></span>
 </div>

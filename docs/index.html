@@ -10,14 +10,13 @@
   <link rel="shortcut icon" href="https://swanix.org/assets/images/favicon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="https://swanix.org/assets/images/apple-touch-icon.png" />
   <!-- Styles -->
-  <link rel="stylesheet" href="https://swanix.org/assets/styles/docsify-custom.css">
+  <link href="https://cdn.jsdelivr.net/gh/swanix/tool-docs@latest/dist/tool-docs.css" rel="stylesheet">
 </head>
 <body>
-<div class="menu-container"></div>
 <div id="app"></div>
 <script>
   window.$docsify = {
-    name: "Swanix UI",
+    name: "UI",
     repo: 'swanix/ui',
     // themeColor: 'royalblue',
     basePath: 'content/',
@@ -35,29 +34,20 @@
     plugins: [
       function(hook, vm) {
         hook.doneEach(function() {
-          codePreviewCssFile = "dist/swanix.min.css";
-          // codePreviewCssFile2 = "dist/theme1.css";
-          // codePreviewJsFile = "";
+          loadCss = ["dist/swanix.min.css"];
+          loadJs = [];
+          setTimeout(initCodeEditor, 300);
         });
       }
     ]
   };
 </script>
-
-  <!-- Docsify -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Docsify plugins -->
-  <script src="https://unpkg.com/docsify-copy-code"></script>
-  <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!-- Codemirror -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/xml/xml.min.js"></script>
-  <!-- Docsify Codemirror -->
-  <link href="https://swanix.org/assets/scripts/docsify-codemirror.css" rel=stylesheet>
-  <script src="https://swanix.org/assets/scripts/docsify-codemirror.js"></script>
-  <!-- Custom menu -->
-  <script src="https://swanix.org/assets/scripts/menu-global.js"></script>
+<!-- Tool Docs -->
+<script src="https://swanix.org/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/swanix/tool-docs@latest/dist/tool-docs.js"></script>
+<!-- Tool Code -->
+<link href="https://cdn.jsdelivr.net/gh/swanix/tool-code@latest/dist/tool-code.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/swanix/tool-code@latest/dist/tool-code.js"></script>
 </body>
 </html>
 

@@ -6,8 +6,7 @@ Su apariencia visual es a menudo realista, tratando de parecer interruptores fí
 
 Otro tipo de botón conocido como Toggle Button tiene un funcionamiento similar, aunque en apariencia no trata de emular un interruptor, se comporta de la misma manera, un ejemplo de uso es en las opciones de funciones de los sistemas operativos cuando se activa la rotación de pantalla, uso de datos, wi-fi en la barra de notificaciones de Android o en paneles como el Control Center de iOS introducido en la versión 7 de este sistema operativo móvil.
 
-<iframe class="code-preview" height="130px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="130">
 <!-- ON -->
 <label class="label-switch">
 	<input type="checkbox" checked/>

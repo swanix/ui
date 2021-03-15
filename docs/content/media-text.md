@@ -6,8 +6,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Headings
 
-<iframe class="code-preview" height="420px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="420">
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -19,8 +18,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Paragraphs
 
-<iframe class="code-preview" height="380px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="380">
 <p>
 	Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a>
 	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam donec.
@@ -44,8 +42,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Ordered List
 
-<iframe class="code-preview" height="130px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="130">
 <ol>
   <li>List Item</li>
   <li>List Item</li>
@@ -55,8 +52,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Unordered List
 
-<iframe class="code-preview" height="130px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="130">
 <ul>
   <li>List Item 1</li>
   <li>List Item 2</li>
@@ -66,8 +62,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Definition List 
 
-<iframe class="code-preview" height="120px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="120">
 <dl>
   <dt>Definition List Title</dt>
   <dd>This is a definition list division.</dd>
@@ -76,15 +71,13 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Text Quote 
 
-<iframe class="code-preview" height="70px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="70">
 <q>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. - Quote</q>
 </textarea>
 
 ### Text Blockquote 
 
-<iframe class="code-preview" height="370px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="370">
 <blockquote>
   <q>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -100,8 +93,7 @@ Es común utilizar bloques de texto escrito en encabezados de contenido específ
 
 ### Text Pre - Code
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <pre>
 Lorem ipsum dolor sit amet, consectetuer adipiscing
 elit. Nullam dignissim convallis est. Quisque aliquam.
@@ -116,8 +108,7 @@ Maecenas ornare tortor.
 
 ### Misc (abbr, sub, sup, etc)
 
-<iframe class="code-preview" height="220px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="220">
 <p>
 	Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer
 	adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Nunc iaculis

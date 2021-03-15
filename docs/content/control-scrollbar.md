@@ -8,8 +8,7 @@ Las barras de desplazamientos han existido desde los inicios de la computación 
 
 En los sistemas operativos se representa con una barra en los extremos de la pantalla que sólo aparece cuando hacemos scroll con un gesto táctil. Aunque no es tan común, también suelen personalizarse para añadir una estética particular con colores afines a la aplicación móvil.
 
-<iframe class="code-preview scroll" height="350px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="350">
 <section >
   <h3>Scroll panel</h3>
   <p>

@@ -4,8 +4,7 @@
 
 ##### Brand
 
-<iframe class="code-preview" height="470px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="470">
 <div class="bg-brand1 padding">$brand1: #000000</div>
 <div class="bg-brand2 padding">$brand2: #808080</div>
 <div class="bg-brand3 padding">$brand3: #B3B3B3</div>
@@ -19,8 +18,7 @@
 
 ##### Grayscale
 
-<iframe class="code-preview" height="560px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="560">
 <div class="bg-white padding">$white: #FFFFFF</div>
 <div class="bg-gray1 padding">$gray1: #FAFAFA</div>
 <div class="bg-gray2 padding">$gray2: #F7F7F7</div>
@@ -36,8 +34,7 @@
 
 ##### Grayblue
 
-<iframe class="code-preview" height="470px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="470">
 <div class="bg-grayblue1 padding">$grayblue1: #F6F7F9</div>
 <div class="bg-grayblue2 padding">$grayblue2: #F0F1F5</div>
 <div class="bg-grayblue3 padding">$grayblue3: #EAECF1</div>

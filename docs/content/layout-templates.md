@@ -6,8 +6,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 [View demo](https://swanix.org/ui/demos/layout1)
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-cols sidebar-left" mode="dev">
   <div>Sidebar</div>
   <div class="grid two-rows header">
@@ -21,8 +20,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 [View demo](https://swanix.org/ui/demos/layout2)
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-cols sidebar-left" mode="dev">
   <div>Sidebar</div>
   <div class="grid three-rows header-footer">
@@ -37,8 +35,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 [View demo](https://swanix.org/ui/demos/layout3)
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows footer" mode="dev">
   <div class="grid three-cols sidebars">
     <div>Sidebar Left</div>
@@ -53,8 +50,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 [View demo](https://swanix.org/ui/demos/layout4)
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows header" mode="dev">
   <div>Header</div>
   <div class="grid three-cols sidebars">
@@ -67,8 +63,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 5
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-cols sidebar-left" mode="dev">
   <div>Sidebar</div>
   <div class="grid two-rows footer">
@@ -80,8 +75,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 6
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows footer" mode="dev">
   <div class="grid two-cols sidebar-left">
     <div>Sidebar Left</div>
@@ -93,8 +87,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 7
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows footer" mode="dev">
   <div class="grid two-cols sidebar-right">
     <div>Content</div>
@@ -106,8 +99,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 8
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows header" mode="dev">
   <div>Header</div>
   <div class="grid two-cols sidebar-left">
@@ -119,8 +111,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 9
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid two-rows header" mode="dev">
   <div>Header</div>
   <div class="grid two-cols sidebar-right">
@@ -133,8 +124,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 10
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid three-rows header-footer" mode="dev">
   <div>Header</div>
   <div class="grid two-cols sidebar-left">
@@ -147,8 +137,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 11
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid three-rows header-footer" mode="dev">
   <div>Header</div>
   <div class="grid two-cols sidebar-right">
@@ -161,8 +150,7 @@ Los layouts básicos se pueden combinar generando composiciones complejas. A con
 
 ### Layout 12
 
-<iframe class="code-preview" height="400px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="400">
 <div class="app grid three-rows header-footer" mode="dev">
   <div>Header</div>
   <div class="grid three-cols sidebars">

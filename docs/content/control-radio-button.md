@@ -4,8 +4,7 @@ Los botones de radio se utilizan por lo regular en formularios, para seleccionar
 
 Se conocen en inglés como option buttons o radio buttons y su utilización también se inspiran en una metáfora del mundo real. En los radios de lo autos se usaban grupos de botones para seleccionar estaciones predefinidas. En este esquema solo una de las estaciones podía estar seleccionada a la vez, cuando se elegía otra, se expulsaba el botón actual y se sintonizaba la nueva estación presionada. Esta misma solución se mantiene con los botones de radio en las interfaces gráficas.
 
-<iframe class="code-preview" height="145px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="145">
 <div>
 	<input id="radio1" type="radio" value="1" name="radio" checked="checked">
 	<label for="radio1"><span><span></span></span>Radio 1</label>
@@ -22,8 +21,7 @@ Se conocen en inglés como option buttons o radio buttons y su utilización tamb
 
 ### Dark Mode
 
-<iframe class="code-preview" height="145px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="145">
 <body theme="dark">
 <div>
 	<input id="radio1" type="radio" value="1" name="radio" checked="checked">

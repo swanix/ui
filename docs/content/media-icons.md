@@ -2,8 +2,7 @@
 
 Aunque en esencia también se trata de imágenes, los iconos tienen unas características propias como elementos de comunicación. Son gráficos útiles para utilizar en pestañas, menús de navegación y botones. Cada sistema operativo posee sus tamaños oficiales para representar iconos en pantalla, lo que permite definirlos de forma coherente en proporción a otros iconos de aplicaciones. 
 
-<iframe class="code-preview" height="460px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="460">
 <h5>Small</h5>
 <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>
 <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#search"></use></svg>
@@ -35,8 +34,7 @@ Aunque en esencia también se trata de imágenes, los iconos tienen unas caracte
 
 ### Dark Mode
 
-<iframe class="code-preview" height="460px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="460">
 <body theme="dark">
   <h5>Small</h5>
   <svg class="icon is-small"><use xlink:href="dist/swanix-icons.svg#home"></use></svg>

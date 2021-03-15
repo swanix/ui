@@ -1,6 +1,5 @@
 # Accordion
 
-<iframe class="code-preview" height="120px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="120">
 Coming soon...
 </textarea>

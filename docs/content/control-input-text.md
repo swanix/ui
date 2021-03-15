@@ -6,8 +6,7 @@ Los campos de inserción de texto se utilizan muy a menudo como cajones de búsq
 
 Este control es el elemento de interacción principal en aplicaciones de chat como WhatsApp y Line donde el usuario envía mensajes a través de campos de inserción de texto, en estos mensajes también se pueden incluir otros gráficos acompañando al texto como emoticonos y símbolos específicos de uso común en las aplicaciones mencionadas.
 
-<iframe class="code-preview" height="340px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="340">
 <!-- Basic Text -->
 <label for="text-input">Basic Text:</label>
 <input type="text" id="text-input" placeholder="Text field">
@@ -22,8 +21,7 @@ Este control es el elemento de interacción principal en aplicaciones de chat co
 
 ### Dark Mode
 
-<iframe class="code-preview" height="340px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="340">
 <body theme="dark">
 <!-- Basic Text -->
 <label for="text-input">Basic Text:</label>

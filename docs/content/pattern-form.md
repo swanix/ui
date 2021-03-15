@@ -1,7 +1,6 @@
 ### Form
 
-<iframe class="code-preview" height="260px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <fieldset>
   <legend>Legend</legend>
   <form>
@@ -17,8 +16,7 @@
 
 ### Dark Mode
 
-<iframe class="code-preview" height="260px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <body class="theme-dark">
 <fieldset>
   <legend>Legend</legend>

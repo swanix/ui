@@ -1,7 +1,6 @@
 # Card View
 
-<iframe class="code-preview" height="450px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="450">
 <section class="cardview">
     <article class="cardview-item">
       <a href="#">

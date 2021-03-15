@@ -4,8 +4,7 @@ Las cajas de chequeo son controles que se utilizan en formularios para seleccion
 
 En este último ejemplo tiene el mismo comportamiento de un interruptor, incluyendo una caja de chequeo que activa o desactiva una característica del sistema, muy común en aplicaciones móviles Android que por lo regular utilizan este control en las pantallas de configuración o en formularios específicos.
 
-<iframe class="code-preview" height="145px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="145">
 <div>
 	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">
 	<label for="checkbox1"><span></span>Checkbox 1</label>
@@ -22,8 +21,7 @@ En este último ejemplo tiene el mismo comportamiento de un interruptor, incluye
 
 ### Dark Mode
 
-<iframe class="code-preview" height="145px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="145">
 <body theme="dark">
 <div>
 	<input id="checkbox1" type="checkbox" value="1" name="checkbox" checked="checked">

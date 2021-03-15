@@ -5,8 +5,10 @@ Por defecto Swanix no impone una tipografía específica, para esto utiliza vari
 
 ### Playfair Display + Fauna One
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+
+
+
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -34,8 +36,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Open Sans + Prata
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -63,8 +64,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Alfa Slab + Gentium Book Basic
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -92,8 +92,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Nixie One + Libre Baskerville
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -121,8 +120,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Oswald + Quattrocento
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -150,8 +148,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Oswald + Open Sans
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -179,8 +176,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Sintony + Poppins
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.
@@ -207,8 +203,7 @@ Morbi imperdiet augue quis tellus.
 
 ### Rufina + Oxygen
 
-<iframe class="code-preview" height="280px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>
 <p>
 Lorem consectetuer adipiscing elit. Nullam dignissim convallis est.

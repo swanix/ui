@@ -1,7 +1,6 @@
 # Dialog
 
-<iframe class="code-preview" height="450px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="460">
 <!-- Modal template -->
 <div class="modal">
   <div class="modal-inner">

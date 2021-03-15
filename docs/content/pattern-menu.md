@@ -4,8 +4,7 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 ### Vertical
 
-<iframe class="code-preview" height="250px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="260">
 <ul class="menu">
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
@@ -17,8 +16,7 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 ### Horizontal
 
-<iframe class="code-preview" height="100px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="100">
 <ul class="menu is-horizontal">
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
@@ -32,8 +30,7 @@ Los menús son patrones utilizados en todo tipo de interfaces para navegar entre
 
 Puedes utilizar el atributo `theme="dark"` para aplicar los colores del modo oscuro en este componente.
 
-<iframe class="code-preview" height="520px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="520">
 <ul class="menu" theme="dark">
   <li class="menu-section">SECTION 1</li>
   <li><a href="#">Item 1</a></li>

@@ -6,8 +6,7 @@ Estas se conocen en inglés como dropdown lists y son muy empleadas para elegir 
 
 De forma similar, los menús desplegables ofrecen un comportamiento parecido a las listas desplegables pero se enfocan por lo general en la ejecución de acciones del sistema y en ofrecer opciones de navegación.
 
-<iframe class="code-preview" height="240px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="240">
 <!-- Small -->
 <label for="select">Small:</label>
 <select name="select" class="is-small">
@@ -35,8 +34,7 @@ De forma similar, los menús desplegables ofrecen un comportamiento parecido a l
 
 ### Dark Mode
 
-<iframe class="code-preview" height="240px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="240">
 <body theme="dark">
 <!-- Small -->
 <label for="select">Small:</label>

@@ -6,7 +6,6 @@ Como en el caso de los interruptores, siguen el estilo skeuomorphism y con frecu
 
 Este tipo de control se utiliza en los diferentes sistemas operativos móviles de manera común, en iOS y Windows Phone se conoce como slider, en Android como seekbar. Aunque varía su nombre, su función principal es similar sin importar el sistema operativo. Este control es impreciso y complejo de operar cuando se trata de definir un valor exacto por lo que es adecuado utilizarlo teniendo en cuenta esta limitación.
 
-<iframe class="code-preview" height="70px"></iframe>
-<textarea class="code-editor" name="code">
+<textarea code-editor="mixed" code-result-size="70">
 <input type="range" min="1" max="100" value="50">
 </textarea>
