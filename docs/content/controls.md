@@ -1,8 +1,6 @@
-<div class="docs-chapter-cover">
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
 # Interactive Controls
-
-</div>
 
 También llamados controles interactivos o widgets de interfaz. Son metáforas de modelos conceptuales preexistentes. Los controles permiten la transformación de la interfaz y son los que le otorgan las capacidades interactivas a la aplicación. Se utilizan de forma recurrente desde los años setenta en el diseño de interfaces gráficas y en la actualidad su empleo es tan generalizado que se han convertido en elementos comunes para los usuarios de cualquier tipo de producto informático o sistema operativo. 
 

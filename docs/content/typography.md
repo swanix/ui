@@ -1,12 +1,10 @@
-# Typography
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
+# Typography
 
 Por defecto Swanix no impone una tipografía específica, para esto utiliza variables de CSS que te permiten personalizar la tipografía de la interfaz. A continuación puedes encontrar algunos ejemplos de personalización inspirados en [MiLo Studio - Google Fonts Combinations](https://www.behance.net/gallery/35768979/Typography-Google-Fonts-Combinations)
 
 ### Playfair Display + Fauna One
-
-
-
 
 <textarea code-editor="mixed" code-result-size="280">
 <h2>Heading title</h2>

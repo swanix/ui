@@ -1,8 +1,6 @@
-<div class="docs-chapter-cover">
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
 # Patterns
-
-</div>
 
 Los patrones son soluciones a necesidades comunes que se utilizan para resolver un determinado problema de diseño. Estos problemas son repetitivos y factibles de encontrarse varias veces en el proceso de creación de un producto de software. El concepto surge por primera vez en la arquitectura de espacios físicos, fue acuñado por Christopher Alexander en los años setenta y popularizado en el mundo del software por los ingenieros Kent Beck y Ward Cunningham en el de diseño de interfaces gráficas durante los años ochenta. Desde entonces, se han utilizado de manera recurrente diversas convenciones que pueden tomarse como patrones o elementos estándar en el desarrollo de aplicaciones. 
 

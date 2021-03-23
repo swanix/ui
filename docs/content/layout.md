@@ -1,8 +1,6 @@
-<div class="docs-chapter-cover">
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
 # Layout
-
-</div>
 
 En inglés, la disposición de un diseño se conoce como layout, término muy utilizado en arquitectura y en la industria editorial donde se utilizan retículas de estructuras para ubicar en forma organizada el contenido de libros, revistas y carteles. De manera similar una pantalla digital también utiliza un layout que puede estar organizado y estructurada por medio de un contenedor principal y otros secundarios que representan paneles con textos, imágenes, video y controles interactivos. 
 

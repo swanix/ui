@@ -1,9 +1,6 @@
-<div class="docs-chapter-cover">
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
 # Multimedia Elements
-
-</div>
-
 
 Los elementos multimedia se han utilizado en el diseño de software desde los
 años setenta con la creación de las primeras interfaces gráficas, antecedentes
