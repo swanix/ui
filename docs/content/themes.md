@@ -1,6 +1,6 @@
 <figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
-# Temas personalizados
+# Themes
 
 Puedes crear nuevos temas o sobreescribir los estilos actuales definiendo el atributo HTML `theme`. Swanix incluye dos temas oficiales `theme="dark"` y `theme="light"` este último es el tema por defecto, si no se especifica ninguno en el `body` HTML o en un elemento específico se utilizará el tema `light`.
 
