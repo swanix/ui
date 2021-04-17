@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global -->
+    <title>Layout - Swanix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Experimental UI Framework">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon.png" />
+    <!-- Styles and fonts -->
+    <link href="assets/styles/swanix-black.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/styles/swanix.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- IE support -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="layout">
+  <!-- Header :::::::::::::::::::::: -->
+  <header class="layout-header fixed-top shadow-bottom">
+    <div class="navbar" data-scroll-header>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="/">
+      <svg class="main-logo" viewBox="0 0 92 92" width="50" height="50">
+        <use xlink:href="assets/images/logo.svg#logo"></use>
+        <use xlink:href="assets/images/logo.svg#logo-text"></use>
+      </svg>
+      </a>
+      <label class="label-switch">
+        <input id="swap-theme" type="checkbox" />
+        <div class="checkbox"></div>
+      </label>
+    </div>
+    <!-- Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="base">Base</a></li>
+        <li><a href="components">Components</a></li>
+        <li><a href="layout">Layout</a></li>
+        <li><a href="color">Color</a></li>
+      </ul>
+    </nav>
+    <!-- Menu button -->
+    <div class="menu-mobile-open">
+      <button class="btnMenu" type="button">
+         <svg class="icon"><use xlink:href="assets/images/icons.svg#menu"></use></svg>
+      </button>
+    </div>
+    <!-- Fade Screen -->
+    <div class="menu-modal-bg"></div>
+</div>
+  </header>
+  <!-- Content Area :::::::::::::::::::::: -->
+  <main class="layout-main" role="main">
+    <aside class="sidebar-menu fixed-left shadow-right" ss-container>
+                No hay items en el menú
+          </aside>
+    <section class="content-full gap-left">
+        
+<header class="hero size-m">
+    <div class="hero-content">
+      <div class="title-margin">
+        <h1>Layout</h1>
+      </div>
+    </div>
+</header>
+
+<!-- Templates :::::::::::::::::::::::::::::::::: -->
+<section id="basic-layouts" class="block">
+  <h2>Basic Layouts</h2>
+  <section class="section">
+  <div class="section-content">
+   <!-- Start Grid View :::::::::::::::::::: -->
+    <section class="gridview">
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout1"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout2"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout3"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout4"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout5"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout6"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#" target="_self" >
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout7"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#">
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout8"></use></svg>
+        </a>
+      </article>
+      <!-- Grid View item -->
+      <article class="gridview-item">
+        <a href="#" target="_self" >
+          <svg class="icon-xhuge"><use xlink:href="assets/images/layouts.svg#icon-layout9"></use></svg>
+        </a>
+      </article>
+    </section>
+    <!-- End Grid View :::::::::::::::::::: -->
+  </div>
+</section> 
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
+  <div class="js-toggle-hidden">
+    <pre><code class="language-markup line-numbers">&lt;section class=&quot;section&quot;&gt;
+  &lt;div class=&quot;section-content&quot;&gt;
+   &lt;!-- Start Grid View :::::::::::::::::::: --&gt;
+    &lt;section class=&quot;gridview&quot;&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout2&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout3&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout4&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout5&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout6&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot; target=&quot;_self&quot; &gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout7&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout8&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+      &lt;!-- Grid View item --&gt;
+      &lt;article class=&quot;gridview-item&quot;&gt;
+        &lt;a href=&quot;#&quot; target=&quot;_self&quot; &gt;
+          &lt;svg class=&quot;icon-xhuge&quot;&gt;&lt;use xlink:href=&quot;assets/images/layouts.svg#icon-layout9&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;!-- End Grid View :::::::::::::::::::: --&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  </div>
+</section>
+<!-- Grid Columns :::::::::::::::::::::::::::::::::: -->
+<section id="grid-columns" class="block">
+  <h2>Grid Columns</h2>
+  <!-- Section :::::::::::::::::::::::::::: -->
+<section class="section">
+  <div class="section-content">
+    <!-- Row 1 :::::::::::::::::::: -->
+    <article class="col1 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">1</h3>
+    </article>
+    <article class="col11 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">11 Cols</h3>
+    </article>
+    <!-- Row 2 :::::::::::::::::::: -->
+    <article class="col2 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">2 Cols</h3>
+    </article>
+    <article class="col10 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">10 Cols</h3>
+    </article>
+    <!-- Row 3 :::::::::::::::::::: -->
+    <article class="col3 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">3 Cols</h3>
+    </article>
+    <article class="col9 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">9 Cols</h3>
+    </article>
+    <!-- Row 4 :::::::::::::::::::: -->
+    <article class="col4 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">4 Cols</h3>
+    </article>
+    <article class="col8 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">8 Cols</h3>
+    </article>
+    <!-- Row 5 :::::::::::::::::::: -->
+    <article class="col5 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">5 Cols</h3>
+    </article>
+    <article class="col7 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">7 Cols</h3>
+    </article>
+    <!-- Row 6 :::::::::::::::::::: -->
+    <article class="col6 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">6 Cols</h3>
+    </article>
+    <article class="col6 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">6 Cols</h3>
+    </article>
+    <!-- Row 7 :::::::::::::::::::: -->
+    <article class="col7 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">7 Cols</h3>
+    </article>
+    <article class="col5 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">5 Cols</h3>
+    </article>
+    <!-- Row 8 :::::::::::::::::::: -->
+    <article class="col8 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">8 Cols</h3>
+    </article>
+    <article class="col4 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">4 Cols</h3>
+    </article>
+    <!-- Row 9 :::::::::::::::::::: -->
+    <article class="col9 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">9 Cols</h3>
+    </article>
+    <article class="col3 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">3 Cols</h3>
+    </article>
+    <!-- Row 10 :::::::::::::::::::: -->
+    <article class="col10 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">10 Cols</h3>
+    </article>
+    <article class="col2 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">2 Cols</h3>
+    </article>
+    <!-- Row 11 :::::::::::::::::::: -->
+    <article class="col11 bg-gray2 pad gap-bottom">
+        <h3 class="pad gray7">11 Cols</h3>
+    </article>
+    <article class="col1 bg-gray1 pad gap-bottom">
+        <h3 class="pad gray7">1</h3>
+    </article>
+  </div>
+</section> 
+  <!-- Code Example -->
+  <button class="js-toggle circle" data-tooltip="Show Code" data-tooltip-pos="right"><svg class="icon medium"><use xlink:href="assets/images/icons.svg#code"></use></svg></button>
+  <div class="js-toggle-hidden">
+    <pre><code class="language-markup line-numbers">&lt;!-- Section :::::::::::::::::::::::::::: --&gt;
+&lt;section class=&quot;section&quot;&gt;
+  &lt;div class=&quot;section-content&quot;&gt;
+    &lt;!-- Row 1 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col1 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;1&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col11 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;11 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 2 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col2 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;2 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col10 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;10 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 3 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col3 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;3 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col9 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;9 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 4 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col4 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;4 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col8 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;8 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 5 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col5 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;5 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col7 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;7 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 6 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col6 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;6 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col6 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;6 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 7 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col7 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;7 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col5 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;5 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 8 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col8 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;8 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col4 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;4 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 9 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col9 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;9 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col3 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;3 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 10 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col10 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;10 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col2 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;2 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;!-- Row 11 :::::::::::::::::::: --&gt;
+    &lt;article class=&quot;col11 bg-gray2 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;11 Cols&lt;/h3&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;col1 bg-gray1 pad gap-bottom&quot;&gt;
+        &lt;h3 class=&quot;pad gray7&quot;&gt;1&lt;/h3&gt;
+    &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  </div>
+</section>
+    </section>
+  </main>
+  <!-- Footer :::::::::::::::::::::: -->
+  <footer class="layout-footer">
+    <div class="centered">
+  <!-- Start Social buttons -->
+  <div class="social-links">
+    <a class="button circle" href="#">
+      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-facebook"></use></svg>
+    </a>
+    <a class="button circle" href="#">
+      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-twitter"></use></svg>
+    </a>
+    <a class="button circle" href="#">
+      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-youtube"></use></svg>
+    </a>
+    <a class="button circle" href="#">
+      <svg class="icon medium"><use xlink:href="assets/images/icons.svg#social-dribbble"></use></svg>
+    </a>
+  </div>
+  <!-- End Social buttons -->
+  <p class="pad">Swanix UI © 2015-2018</P>
+</div>
+  </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/scripts/swanix.min.js"></script>
+<script src="assets/scripts/other/theme-switch.js"></script>
+
+<script>
+  // Polyfills
+  svg4everybody();
+  objectFitImages();
+  // Smooth Scroll and Gum Shoe
+  smoothScroll.init({selectorHeader: '[data-scroll-header]'});
+  gumshoe.init();
+  // Modal Dialog
+  const modal = new VanillaModal({
+    clickOutside : false
+  });
+  // Slideshow
+  var element = document.querySelector('.slideshow'),
+     prevBtn = document.querySelector('.js-slideshow-prev'),
+     nextBtn = document.querySelector('.js-slideshow-next');
+  window.mySwipe = new Swipe(element, {
+    startSlide: 0,
+    auto: 3000,
+    draggable: true,
+    autoRestart: true,
+    continuous: true,
+    disableScroll: true,
+    stopPropagation: true,
+    callback: function(index, element) {},
+    transitionEnd: function(index, element) {}
+  });
+  prevBtn.onclick = mySwipe.prev;
+  nextBtn.onclick = mySwipe.next;
+</script>
+
+<!-- Syntax Highlighter -->
+<script src="assets/scripts/other/prism.js"></script>
+<link href="assets/scripts/other/prism.css" media="screen" rel="stylesheet" type="text/css">
+
+
+
+
+
+</body>
+</html>
